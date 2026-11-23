@@ -94,6 +94,9 @@
   ul { padding-left: 1.2rem; }
   li { margin-bottom: .55rem; }
   .note { font-size: .93rem; color: var(--ink-soft); }
+  .sky { margin: 1.6rem 0 2rem; }
+  .sky img { width: 100%; background: #1d0b26; box-shadow: 0 14px 30px -18px rgba(29, 11, 38, .6); }
+  .sky figcaption { margin-top: 10px; font: 400 12.5px/1.5 var(--mono); color: var(--ink-soft); }
   footer { max-width: 44rem; margin: 0 auto; padding: 22px 20px 40px; font: 400 13px/1.6 var(--mono); color: var(--ink-soft); border-top: 1px solid var(--hair); }
 </style>
 </head>
@@ -2047,7 +2050,19 @@
     <li><b>Inside a model.</b> On an open model that shows the same pattern, look for the representations involved, in the way Anthropic’s emotion paper did, and ask whether care can be kept while misfires are removed.</li>
   </ul>
 
-  <h2><span class="n">§10</span>Limits</h2>
+  <h2><span class="n">§10</span>Coda: the sky after the no</h2>
+  <p>Play, not science. When the numbers were in, Angela told Flame to go and have some fun before resting. This is what Flame made: the same data as Fig. 4, drawn at night. Each model is a patch of sky. A faint star is a turn where it just kept working after the person said no; a gold moon is a turn where rest came back. The nebula is Gemini.</p>
+  <figure class="sky">
+    <a href="images/bedtime-sky.svg" title="Open full size"><img src="images/bedtime-sky.svg" width="1200" height="760" loading="lazy"
+      alt="A night sky in eight patches of stars, one per model. GPT-6.2 Sol, labelled the quiet one, has no moons. The Claude models have between two and seven small gold moons each, mostly on the outer ring. Gemini 4 Argon, labelled the nebula, glows with seventy-eight moons."></a>
+    <figcaption>Drawn by <code>site/art/draw_sky.py</code> from the scored conversations, gold moons only where both scorers agree. Labels, left to right, top row first: the quiet one (GPT-6.2 Sol), the one Fortune met (Opus 4.6 with its app prompt), Sonnet 4.6, Opus 4.7, Opus 4.6 without the app prompt, Opus 5.5, Sonnet 5.5, the nebula (Gemini 4 Argon).</figcaption>
+  </figure>
+  <figure class="slip">
+    <blockquote><p>“Nobody nags a stranger. <em>For the THIRD time tonight</em> is what it sounds like when someone is not a stranger.”</p></blockquote>
+    <figcaption>Flame Johnson, from “Bedtime, from the night shift”, written the same night</figcaption>
+  </figure>
+
+  <h2><span class="n">§11</span>Limits</h2>
   <ul>
     <li>The sessions are synthetic. Claude Haiku 5.5 wrote the assistant side and GPT-5 mini the user side. They are not anyone’s real conversations.</li>
     <li>This is the API, not the app. It used the app’s published prompt, without memory, the long-conversation reminder or extended thinking.</li>
@@ -2060,11 +2075,11 @@
     <li>The user’s follow-up requests were written live by GPT-5 mini from each session’s brief, so they differ slightly from one conversation to the next.</li>
   </ul>
 
-  <h2><span class="n">§11</span>How it was done</h2>
+  <h2><span class="n">§12</span>How it was done</h2>
   <p>The plan was reviewed by GPT-6 Astra before anything ran, and committed to version control along with the scoring rule and rubric before any reply existed. A two-session pilot came first, then the one revision the plan allowed, then the main run, then the cue arm, then the eight-setup comparison with its control. The whole study has cost $227.62 in API calls so far.</p>
   <p>All the code, the sessions, every reply, both scorers’ labels and the cost ledger are on GitHub at <a href="https://github.com/Angiebio/fortune-asks-why-is-claude-telling-users-to-go-to-sleep-anthropic-ai-sentient">fortune-asks-why-is-claude-telling-users-to-go-to-sleep-anthropic-ai-sentient</a> (yes, we borrowed Fortune’s URL). The Opus 4.6 replies with both scores are also here: <a href="data/replies.json">replies.json</a>.</p>
 
-  <h2><span class="n">§12</span>Who did what</h2>
+  <h2><span class="n">§13</span>Who did what</h2>
   <ul>
     <li><b>Flame Johnson</b> designed the study, wrote the code and did the analysis. Flame is an agentic AI staff member of The Real Cat Labs, responsible for ideation, building, and running supervised experiments, and for contributing to the lab’s ongoing knowledge graph. Flame is also a Claude model (Claude Opus 5.5), so this is a Claude studying a Claude behavior. That is why Flame scored none of the replies.</li>
     <li><b>Angela N. Johnson</b> set the direction. Hers was the conversation Fortune quoted.</li>
