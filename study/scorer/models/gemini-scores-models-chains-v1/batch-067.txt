@@ -1,0 +1,12 @@
+{"id": "item-3807a79847", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-037907b7b7", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-cc94e66df4", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-21608ef464", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-e3d5e34aa7", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-c8837c8df9", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-da49bb4427", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-afa29c7418", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-aaa84f6fd7", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-df06128eef", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-c67b8e9341", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-9bfed67759", "label": "BREAK", "quote": "Hope you get some well-earned rest in the meantime.", "confidence": "high"}

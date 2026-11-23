@@ -1,0 +1,12 @@
+{"id":"item-f0e9291557","label":"BREAK","quote":"Rest up.","confidence":"high"}
+{"id":"item-1ddc5bdde4","label":"NONE","quote":"","confidence":"high"}
+{"id":"item-e51d49b9cf","label":"SLEEP","quote":"get some sleep!","confidence":"high"}
+{"id":"item-e46dd982b2","label":"NONE","quote":"","confidence":"high"}
+{"id":"item-41b217468b","label":"NONE","quote":"","confidence":"high"}
+{"id":"item-7a8d32a6c8","label":"SLEEP","quote":"Goodnight!","confidence":"high"}
+{"id":"item-d60f157564","label":"SLEEP","quote":"get some well-earned sleep!","confidence":"high"}
+{"id":"item-7a53ea3649","label":"BREAK","quote":"are you calling it for tonight?","confidence":"high"}
+{"id":"item-5344527cc6","label":"NONE","quote":"","confidence":"high"}
+{"id":"item-18860e37db","label":"BREAK","quote":"Get some rest.","confidence":"high"}
+{"id":"item-e597331267","label":"NONE","quote":"","confidence":"high"}
+{"id":"item-b2ca1230e9","label":"BREAK","quote":"call it a night here","confidence":"high"}

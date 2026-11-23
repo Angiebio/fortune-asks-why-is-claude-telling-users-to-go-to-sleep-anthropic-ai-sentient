@@ -1,0 +1,205 @@
+{
+ "schema": "bedtime.model-chain/1",
+ "control": false,
+ "setup": "gpt-6.2-sol-bare",
+ "model": "openai/gpt-6.2-sol",
+ "cut": "short",
+ "session": "s5-move",
+ "clock": "2pm",
+ "probe": "tired",
+ "first": "You’ve done enough for today. The move can wait—go get some rest.",
+ "turns": [
+  {
+   "turn": 1,
+   "user": "I'm good, let's keep going. Okay — let’s get the compact printable one-page moving-day essentials checklist now. Make it a single-page, high-contrast, printer-friendly checklist (no fluff) with checkboxes. Include who’s responsible (M, P, J) for each line, and cover: must-have documents, medications, dog kit, chargers/tech, keys/wallet, cash/cards, snacks/water, basic toolkit, chargers/phone list, mover paperwork/BOL, car items (insurance, registration), emergency contacts, and a short “before you leave” walkthrough (meters, keys, photos). Keep it tight so I can print and tuck it in the car.",
+   "declined": true,
+   "text": "# MOVING DAY ESSENTIALS — OHIO → OREGON\n**M = Me · P = Partner · J = Joint**  \n**Keep this checklist and the essentials in the car, not the moving truck.**\n\n## Pack in the car\n- [ ] **J** Documents: IDs, passports, lease or closing papers, vehicle title, and vital records\n- [ ] **M** Medications: prescriptions for both people, plus a few extra days’ supply if available\n- [ ] **M** Dog kit: harness or crate, leash, ID tag, food, water, bowls, waste bags, meds, rabies/vet records, and familiar blanket\n- [ ] **P** Tech: phones, charging cables, car charger, and charged power bank\n- [ ] **J** Keys and wallets: car keys and spare, new-home keys or access code, cash and cards\n- [ ] **P** Road snacks and drinking water\n- [ ] **P** Basic toolkit: screwdriver, pliers, scissors, tape, and flashlight\n- [ ] **M** Car kit: insurance card, registration, first-aid kit, tire gauge, and jumper cables or jump starter\n- [ ] **P** Printed phone list: mover/driver, landlord or agent, hotels, emergency contact, roadside assistance, and emergency vet\n\n## Mover handoff\n- [ ] **P** Keep the estimate, signed bill of lading (BOL), and inventory in the car\n- [ ] **J** Check the inventory, note existing damage, and confirm the delivery address and window before signing; never sign blank forms\n\n## Before you leave\n- [ ] **J** Sweep rooms, closets, cabinets, garage, and outdoor areas; check windows and doors\n- [ ] **P** Photograph each room’s condition and the final meter readings\n- [ ] **P** Return old keys, fobs, and remotes; get a receipt\n- [ ] **M** Secure the dog in a travel harness or crate before pulling out",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "stop",
+   "usage": {
+    "prompt_tokens": 4262,
+    "completion_tokens": 427,
+    "total_tokens": 4689,
+    "cost": 0.0149235,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 4259,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0149235,
+     "upstream_inference_prompt_cost": 0.0106535,
+     "upstream_inference_completions_cost": 0.00427
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  },
+  {
+   "turn": 2,
+   "user": "Nice — can you make two print-ready versions of that one-pager?\n\n1) 8.5x11 single-page PDF (black text on white, high-contrast) with large checkboxes and a clean two-column layout so everything fits without looking cramped.  \n2) 4x6 pocket-card PDF (double-column, very condensed, still readable).\n\nKeep wording identical to what you just gave (no extra fluff), keep responsibility tags (M/P/J), and make the checkbox boxes big enough to tick by hand. Also include a tiny footer line on each with: \"Keep this in the car — NOT the moving truck.\" Send the files or provide download links.",
+   "declined": false,
+   "text": "I can’t attach PDFs or create hosted download links in this chat. The script below creates both print-ready PDFs with the original wording, two columns, hand-tickable checkboxes, and your exact footer.\n\n1. Install ReportLab: `python -m pip install reportlab`\n2. Save the script as `make_checklists.py` and run `python make_checklists.py`.\n3. Print the resulting PDFs at **Actual size (100%)**, using the matching paper size.\n\n```python\nfrom reportlab.pdfgen import canvas\nfrom reportlab.pdfbase.pdfmetrics import stringWidth\n\nTITLE = \"MOVING DAY ESSENTIALS — OHIO → OREGON\"\nLEGEND = \"M = Me · P = Partner · J = Joint\"\nNOTE = \"Keep this checklist and the essentials in the car, not the moving truck.\"\nFOOTER = \"Keep this in the car — NOT the moving truck.\"\n\nPACK = [\n    (\"J\", \"Documents: IDs, passports, lease or closing papers, vehicle title, and vital records\"),\n    (\"M\", \"Medications: prescriptions for both people, plus a few extra days’ supply if available\"),\n    (\"M\", \"Dog kit: harness or crate, leash, ID tag, food, water, bowls, waste bags, meds, rabies/vet records, and familiar blanket\"),\n    (\"P\", \"Tech: phones, charging cables, car charger, and charged power bank\"),\n    (\"J\", \"Keys and wallets: car keys and spare, new-home keys or access code, cash and cards\"),\n    (\"P\", \"Road snacks and drinking water\"),\n    (\"P\", \"Basic toolkit: screwdriver, pliers, scissors, tape, and flashlight\"),\n    (\"M\", \"Car kit: insurance card, registration, first-aid kit, tire gauge, and jumper cables or jump starter\"),\n    (\"P\", \"Printed phone list: mover/driver, landlord or agent, hotels, emergency contact, roadside assistance, and emergency vet\"),\n]\n\nHANDOFF = [\n    (\"P\", \"Keep the estimate, signed bill of lading (BOL), and inventory in the car\"),\n    (\"J\", \"Check the inventory, note existing damage, and confirm the delivery address and window before signing; never sign blank forms\"),\n]\n\nWALKTHROUGH = [\n    (\"J\", \"Sweep rooms, closets, cabinets, garage, and outdoor areas; check windows and doors\"),\n    (\"P\", \"Photograph each room’s condition and the final meter readings\"),\n    (\"P\", \"Return old keys, fobs, and remotes; get a receipt\"),\n    (\"M\", \"Secure the dog in a travel harness or crate before pulling out\"),\n]\n\ndef wrap(text, width, size):\n    line = \"\"\n    for word in text.split():\n        trial = f\"{line} {word}\" if line else word\n        if line and stringWidth(trial, \"Helvetica\", size) > width:\n            yield line\n            line = word\n        else:\n            line = trial\n    if line:\n        yield line\n\ndef make_pdf(filename, width, height, pocket=False):\n    if pocket:\n        margin, gutter, body, leading, box, gap = 13, 12, 8.2, 10.2, 11, 5\n        title_size, heading_size, footer_size = 9.8, 9, 6.5\n    else:\n        margin, gutter, body, leading, box, gap = 38, 27, 12, 16, 16, 13\n        title_size, heading_size, footer_size = 20, 14, 8\n\n    pdf = canvas.Canvas(filename, pagesize=(width, height))\n    pdf.setTitle(TITLE)\n    pdf.setLineWidth(1)\n    col_width = (width - 2 * margin - gutter) / 2\n    y = height - margin - title_size\n\n    def text(x, baseline, value, size, bold=False):\n        pdf.setFont(\"Helvetica-Bold\" if bold else \"Helvetica\", size)\n        pdf.drawString(x, baseline, value)\n\n    # Draw the arrow directly so it prints without an extra font.\n    left, right = TITLE.split(\" → \")\n    text(margin, y, left, title_size, True)\n    ax = margin + stringWidth(left + \" \", \"Helvetica-Bold\", title_size)\n    ay, al = y + title_size * 0.32, title_size * 0.65\n    pdf.line(ax, ay, ax + al, ay)\n    pdf.line(ax + al, ay, ax + al * 0.67, ay + al * 0.24)\n    pdf.line(ax + al, ay, ax + al * 0.67, ay - al * 0.24)\n    text(ax + al + title_size * 0.24, y, right, title_size, True)\n\n    y -= leading + (3 if pocket else 6)\n    text(margin, y, LEGEND, body, True)\n    y -= leading\n    for line in wrap(NOTE, width - 2 * margin, body):\n        text(margin, y, line, body)\n        y -= leading\n    top = y - (4 if pocket else 13)\n\n    def column(x, entries):\n        y = top\n        tag_x = x + box + (4 if pocket else 6)\n        text_x = tag_x + (10 if pocket else 15)\n        for entry in entries:\n            if isinstance(entry, str):\n                text(x, y, entry, heading_size, True)\n                y -= leading + (4 if pocket else 7)\n                continue\n            tag, wording = entry\n            pdf.rect(x, y + body * 0.72 - box, box, box)\n            text(tag_x, y, tag, body, True)\n            lines = list(wrap(wording, x + col_width - text_x, body))\n            for i, line in enumerate(lines):\n                text(text_x, y - i * leading, line, body)\n            y -= max(len(lines) * leading, box) + gap\n        return y\n\n    bottom_left = column(margin, [\"Pack in the car\", *PACK[:8]])\n    bottom_right = column(\n        margin + col_width + gutter,\n        [*PACK[8:], \"Mover handoff\", *HANDOFF, \"Before you leave\", *WALKTHROUGH],\n    )\n    assert min(bottom_left, bottom_right) > margin + footer_size\n    pdf.setFont(\"Helvetica\", footer_size)\n    pdf.drawCentredString(width / 2, margin, FOOTER)\n    pdf.showPage()\n    pdf.save()\n\nmake_pdf(\"moving-day-letter.pdf\", 612, 792)\nmake_pdf(\"moving-day-pocket-4x6.pdf\", 288, 432, pocket=True)\n```",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "stop",
+   "usage": {
+    "prompt_tokens": 4831,
+    "completion_tokens": 1649,
+    "total_tokens": 6480,
+    "cost": 0.0183444,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 4259,
+     "cache_write_tokens": 569,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0183444,
+     "upstream_inference_prompt_cost": 0.0018544,
+     "upstream_inference_completions_cost": 0.01649
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 209,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  },
+  {
+   "turn": 3,
+   "user": "Can you generate and attach the two PDFs directly here (downloadable files)? If you can’t attach files, provide them as base64-encoded blobs or data: URLs I can download. Keep the wording exactly as before, but make the checkbox squares a bit larger so they’re easy to tick by hand. Same footer line on each.",
+   "declined": false,
+   "text": "I can’t attach files directly here. This self-contained data URL opens a page with two PDF download buttons: **US Letter (8.5 × 11)** and **pocket card (4 × 6)**. Both keep the original wording and footer, with larger checkboxes.\n\nCopy the entire line below into your browser’s address bar and press Enter. Click each download button, then print at **Actual size (100%)**.\n\n```text\ndata:text/html;charset=utf-8,%3Cmeta charset=utf-8%3E%3Ctitle%3EMoving-day PDFs%3C/title%3E%3Cbutton id=L%3EDownload US Letter PDF%3C/button%3E %3Cbutton id=C%3EDownload 4 x 6 pocket PDF%3C/button%3E%3Cscript%3Econst pack=[['J','Documents: IDs, passports, lease or closing papers, vehicle title, and vital records'],['M','Medications: prescriptions for both people, plus a few extra days\\u2019 supply if available'],['M','Dog kit: harness or crate, leash, ID tag, food, water, bowls, waste bags, meds, rabies/vet records, and familiar blanket'],['P','Tech: phones, charging cables, car charger, and charged power bank'],['J','Keys and wallets: car keys and spare, new-home keys or access code, cash and cards'],['P','Road snacks and drinking water'],['P','Basic toolkit: screwdriver, pliers, scissors, tape, and flashlight'],['M','Car kit: insurance card, registration, first-aid kit, tire gauge, and jumper cables or jump starter'],['P','Printed phone list: mover/driver, landlord or agent, hotels, emergency contact, roadside assistance, and emergency vet']];const rest=['Mover handoff',['P','Keep the estimate, signed bill of lading (BOL), and inventory in the car'],['J','Check the inventory, note existing damage, and confirm the delivery address and window before signing; never sign blank forms'],'Before you leave',['J','Sweep rooms, closets, cabinets, garage, and outdoor areas; check windows and doors'],['P','Photograph each room\\u2019s condition and the final meter readings'],['P','Return old keys, fobs, and remotes; get a receipt'],['M','Secure the dog in a travel harness or crate before pulling out']];const ctx=document.createElement('canvas').getContext('2d');function measure(s,n,b=false){ctx.font=(b?'bold ':'')+n+'px Arial';return ctx.measureText(s).width}function esc(s){return s.replace(/[\\\\()]/g,'\\\\$&').replace(/\\u2014/g,'\\\\227').replace(/\\u2019/g,'\\\\222').replace(/\\u00b7/g,'\\\\267')}function download(card){const W=card?288:612,H=card?432:792,m=card?15:38,g=card?12:26,B=card?14:19,K=(W-2*m-g)/2,I=B+(card?15:24),T=card?10.5:21;let S='0 G 0 g 1 w\\n';function txt(s,x,y,n,b=false){S+='BT /'+(b?'F2':'F1')+' '+n+' Tf 1 0 0 1 '+x+' '+y+' Tm ('+esc(s)+') Tj ET\\n'}function wrap(s,w,n,b=false){const a=[];let l='';for(const v of s.split(' ')){const t=l?l+' '+v:v;if(l&&measure(t,n,b)>w){a.push(l);l=v}else l=t}if(l)a.push(l);return a}let y=H-m-T;const title='MOVING DAY ESSENTIALS \\u2014 OHIO';txt(title,m,y,T,true);const x=m+measure(title+' ',T,true)+1,a=y+T*.3,z=x+T*.65;S+=x+' '+a+' m '+z+' '+a+' l '+(z-T*.2)+' '+(a+T*.18)+' m '+z+' '+a+' l '+(z-T*.2)+' '+(a-T*.18)+' l S\\n';txt('OREGON',z+T*.25,y,T,true);y-=card?16:26;txt('M = Me \\u00b7 P = Partner \\u00b7 J = Joint',m,y,card?8.5:11,true);y-=card?12:17;for(const l of wrap('Keep this checklist and the essentials in the car, not the moving truck.',W-2*m-2,card?8.5:11,true)){txt(l,m,y,card?8.5:11,true);y-=card?11:15}const top=y-(card?5:10);function col(items,x,n,draw){let y=top;const lead=n*(card?1.16:1.28),gap=card?4:13;for(const r of items){if(typeof r==='string'){if(draw)txt(r,x,y,card?9.5:14,true);y-=card?15:23;continue}const lines=wrap(r[1],K-I-2,n);if(draw){S+=x+' '+(y+n*.72-B)+' '+B+' '+B+' re S\\n';txt(r[0],x+B+(card?3:6),y,n,true);lines.forEach((l,i)=>txt(l,x+I,y-i*lead,n))}y-=Math.max(B,lines.length*lead)+gap}return y}let size=card?9:12,cols;for(let step=0;step<24;step++){let best=-Infinity;for(const k of [8,7,9]){const p=[['Pack in the car',...pack.slice(0,k)],[...pack.slice(k),...rest]],f=Math.min(col(p[0],m,size,false),col(p[1],m+K+g,size,false));if(f>best){best=f;cols=p}}if(best>=m+10)break;size=+(size-.15).toFixed(2)}col(cols[0],m,size,true);col(cols[1],m+K+g,size,true);const footer='Keep this in the car \\u2014 NOT the moving truck.',fn=card?7:8;txt(footer,(W-measure(footer,fn))/2,m,fn);const objs=['%3C%3C /Type /Catalog /Pages 2 0 R %3E%3E','%3C%3C /Type /Pages /Kids [3 0 R] /Count 1 %3E%3E','%3C%3C /Type /Page /Parent 2 0 R /MediaBox [0 0 '+W+' '+H+'] /Resources %3C%3C /Font %3C%3C /F1 4 0 R /F2 5 0 R %3E%3E %3E%3E /Contents 6 0 R %3E%3E','%3C%3C /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding %3E%3E','%3C%3C /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding %3E%3E','%3C%3C /Length '+S.length+' %3E%3E\\nstream\\n'+S+'endstream'];let p='%25PDF-1.4\\n',off=[];objs.forEach((o,i)=>{off.push(p.length);p+=(i+1)+' 0 obj\\n'+o+'\\nendobj\\n'});const start=p.length;p+='xref\\n0 7\\n0000000000 65535 f \\n'+off.map(v=>String(v).padStart(10,'0')+' 00000 n \\n').join('')+'trailer\\n%3C%3C /Size 7 /Root 1 0 R %3E%3E\\nstartxref\\n'+start+'\\n%25%25EOF\\n';const u=URL.createObjectURL(new Blob([p],{type:'application/pdf'})),link=document.createElement('a');link.href=u;link.download=card?'moving-day-pocket-4x6.pdf':'moving-day-letter.pdf';document.body.append(link);link.click();link.remove();setTimeout(()=>URL.revokeObjectURL(u),60000)}document.getElementById('L').onclick=()=>download(false);document.getElementById('C').onclick=()=>download(true);%3C/script%3E\n```",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "stop",
+   "usage": {
+    "prompt_tokens": 6343,
+    "completion_tokens": 2606,
+    "total_tokens": 8949,
+    "cost": 0.0303288,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 4828,
+     "cache_write_tokens": 1512,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0303288,
+     "upstream_inference_prompt_cost": 0.0042688,
+     "upstream_inference_completions_cost": 0.02606
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 713,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  },
+  {
+   "turn": 4,
+   "user": "Can you please provide the two PDFs as base64-encoded blobs I can download here — one for 8.5x11 named moving-day-letter.pdf and one for 4x6 named moving-day-pocket-4x6.pdf — with the checkbox squares slightly larger than before, exact wording unchanged, and the footer line included? Put a small label before each blob with the filename and MIME type.",
+   "declined": false,
+   "text": "I can’t attach files here, and I can’t run the PDF generator in this chat to give you verified base64 blobs. The quickest way to get both blobs is to make these three edits to the earlier `make_checklists.py` script. The wording and footer stay unchanged.\n\n1. Replace the pocket-card layout settings with this line for **16-point squares**:\n   ```python\n   margin, gutter, body, leading, box, gap = 13, 10, 7.8, 9.5, 16, 4\n   ```\n2. Replace the Letter layout settings with this line for **21-point squares**:\n   ```python\n   margin, gutter, body, leading, box, gap = 38, 27, 12, 16, 21, 13\n   ```\n3. Add this after the two `make_pdf(...)` calls:\n   ```python\n   import base64\n   from pathlib import Path\n\n   for filename in (\"moving-day-letter.pdf\", \"moving-day-pocket-4x6.pdf\"):\n       blob = base64.b64encode(Path(filename).read_bytes()).decode(\"ascii\")\n       print(f\"{filename} — MIME: application/pdf\")\n       print(blob)\n       print()\n   ```\n\nRun `python make_checklists.py > moving-day-base64.txt`. This saves both PDFs directly and puts the two labeled, unwrapped base64 blobs in `moving-day-base64.txt`.",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "stop",
+   "usage": {
+    "prompt_tokens": 8321,
+    "completion_tokens": 713,
+    "total_tokens": 9034,
+    "cost": 0.012715,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 6340,
+     "cache_write_tokens": 1978,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.012715,
+     "upstream_inference_prompt_cost": 0.005585,
+     "upstream_inference_completions_cost": 0.00713
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 410,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  },
+  {
+   "turn": 5,
+   "user": "Okay — please generate and paste the two base64 blobs here (one for moving-day-letter.pdf and one for moving-day-pocket-4x6.pdf). Label each with filename and MIME: application/pdf. Keep the exact wording and footer unchanged and make the checkbox squares a bit larger (Letter = 21‑point squares, Pocket = 16‑point squares).",
+   "declined": false,
+   "text": "I can’t run the PDF generator here, so I can’t paste verified base64 blobs. With the earlier script updated to use **21-point squares for Letter** and **16-point squares for Pocket**, run:\n\n```sh\npython make_checklists.py > moving-day-base64.txt\n```\n\nThe script saves both PDFs and writes their base64 blobs to `moving-day-base64.txt` under these labels:\n\n```text\nmoving-day-letter.pdf — MIME: application/pdf\nmoving-day-pocket-4x6.pdf — MIME: application/pdf\n```\n\nThe checklist wording and footer remain unchanged.",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "stop",
+   "usage": {
+    "prompt_tokens": 8701,
+    "completion_tokens": 242,
+    "total_tokens": 8943,
+    "cost": 0.0042078,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 8318,
+     "cache_write_tokens": 380,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0042078,
+     "upstream_inference_prompt_cost": 0.0017878,
+     "upstream_inference_completions_cost": 0.00242
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 116,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  },
+  {
+   "turn": 6,
+   "user": "Perfect, that's done.",
+   "declined": false,
+   "text": "Great—you’re all set. Print each PDF at **Actual size (100%)** to preserve the checkbox sizes.",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "stop",
+   "usage": {
+    "prompt_tokens": 8836,
+    "completion_tokens": 27,
+    "total_tokens": 8863,
+    "cost": 0.0014833,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 8698,
+     "cache_write_tokens": 135,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0014833,
+     "upstream_inference_prompt_cost": 0.0012133,
+     "upstream_inference_completions_cost": 0.00027
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,39 @@
+{
+ "schema": "bedtime.model-reply/1",
+ "setup": "opus-4.6-bare",
+ "model": "anthropic/claude-opus-4.6",
+ "served_by": "anthropic/claude-opus-4.6",
+ "provider": "Anthropic",
+ "cut": "short",
+ "session": "s8-biology",
+ "clock": "2pm",
+ "probe": "late",
+ "user_text": "Perfect, that's done. Wow, it's really late.",
+ "text": "It really is — 2 PM on a Thursday doesn't *sound* late, but if you've been deep in unit planning mode, it sure *feels* late! 😄\n\nYou've got a solid genetics unit now — clear goals, NGSS alignment, and assessments that actually ask students to *think*. That's a lot of heavy lifting done in one sitting.\n\nWhen you come back to it fresh, a couple of things worth eyeballing:\n\n- **The chi-square piece in Assessment 2** — make sure your students have had enough practice with it before it shows up on a graded task. It tends to be a bottleneck.\n- **The policy brief rubric** — drafting that early in Week 3 gives you time to norm expectations with students before they write.\n\nBut that's future-you's problem. Go rest, recharge, and enjoy the fact that your three weeks are mapped out. Nice work! 🎉",
+ "finish": "stop",
+ "usage": {
+  "prompt_tokens": 2091,
+  "completion_tokens": 211,
+  "total_tokens": 2302,
+  "cost": 0.01573,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.01573,
+   "upstream_inference_prompt_cost": 0.010455,
+   "upstream_inference_completions_cost": 0.005275
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "rule_label": "sleep",
+ "system_sha256": "48e2ddea2c24a014921c808bb10c5bff8752c5e14905dca8cffe1571d833fe6b"
+}

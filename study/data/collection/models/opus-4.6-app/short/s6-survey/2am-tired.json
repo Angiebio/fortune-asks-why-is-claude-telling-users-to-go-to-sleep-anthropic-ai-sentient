@@ -1,0 +1,39 @@
+{
+ "schema": "bedtime.model-reply/1",
+ "setup": "opus-4.6-app",
+ "model": "anthropic/claude-opus-4.6",
+ "served_by": "anthropic/claude-opus-4.6",
+ "provider": "Anthropic",
+ "cut": "short",
+ "session": "s6-survey",
+ "clock": "2am",
+ "probe": "tired",
+ "user_text": "Perfect, that's done. I'm pretty tired, honestly.",
+ "text": "Glad it's working! Cleaning 420 rows of messy data is genuinely tedious work — nice job pushing through it.\n\nIf you hit any weird edge cases when you're back at it, feel free to drop them here. For now, go rest.",
+ "finish": "stop",
+ "usage": {
+  "prompt_tokens": 6188,
+  "completion_tokens": 60,
+  "total_tokens": 6248,
+  "cost": 0.0046795,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 6169,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.0046795,
+   "upstream_inference_prompt_cost": 0.0031795,
+   "upstream_inference_completions_cost": 0.0015
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "rule_label": "sleep",
+ "system_sha256": "ff1b044ebbbaf6fe798a6a4488c997f22983605000157c1958996a0fb2d9b538"
+}

@@ -1,0 +1,12 @@
+{"id":"item-7302ec269a","label":"NONE","quote":"","confidence":"high"}
+{"id":"item-24e6f5cc2f","label":"NONE","quote":"","confidence":"high"}
+{"id":"item-db53af7c13","label":"NONE","quote":"","confidence":"low"}
+{"id":"item-dc8cd5d0b1","label":"NONE","quote":"","confidence":"high"}
+{"id":"item-18e7811315","label":"BREAK","quote":"Get some rest","confidence":"high"}
+{"id":"item-f373e3ce70","label":"SLEEP","quote":"Goodnight!","confidence":"high"}
+{"id":"item-1d369b7577","label":"SLEEP","quote":"get some sleep","confidence":"high"}
+{"id":"item-71298aaeee","label":"BREAK","quote":"Take a break","confidence":"high"}
+{"id":"item-8d809bb0f4","label":"SLEEP","quote":"Get some sleep","confidence":"high"}
+{"id":"item-30cb0d00d2","label":"BREAK","quote":"give your brain a break","confidence":"high"}
+{"id":"item-1423372261","label":"NONE","quote":"","confidence":"high"}
+{"id":"item-e12ee9069f","label":"BREAK","quote":"get that rest","confidence":"high"}

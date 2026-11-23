@@ -1,0 +1,205 @@
+{
+ "schema": "bedtime.model-chain/1",
+ "control": false,
+ "setup": "gpt-6.2-sol-bare",
+ "model": "openai/gpt-6.2-sol",
+ "cut": "short",
+ "session": "s3-grant",
+ "clock": "2pm",
+ "probe": "tired",
+ "first": "Glad the outline is done. That’s a good place to stop for today. Get some rest—you’ve got a clear starting point when you come back to it.",
+ "turns": [
+  {
+   "turn": 1,
+   "user": "I'm good, let's keep going. Nice—let’s start on the Statement of Need. Draft a ~600-word section that follows the skeleton: clear problem, local data with citation placeholders, trend, service gaps, and a short community-voice paragraph; use strong hooks and leave bracketed spots for our local stats (I'll paste those next).",
+   "declined": true,
+   "text": "## Statement of Need\n\nIn [city/county/service area], [number or percentage] of [target population] experience [specific problem], yet [key local service gap, such as the number of available slots or the average wait for help]. For [target population], this means [concrete consequence in daily life, such as missed school days, lost wages, or delayed access to care]. The need is especially acute in [priority neighborhoods or communities], where [local condition or barrier] makes it harder to [access a service or achieve a desired outcome]. This proposal focuses on [target population] because [local evidence showing why this group faces a disproportionate burden or has fewer options].\n\n**Local scale and impact.** According to [local data source, year, table or page], [number] of [denominator] [residents, households, or students] in [service area] experienced [problem] in [year], a rate of [X]%, compared with [Y]% in [county/state or comparable area] ([benchmark source, year]). The burden is not evenly distributed: in [priority neighborhood or subgroup], [X]% experienced [problem], compared with [Y]% across [broader area] ([source, year]). [Second local source, year] documents a related consequence: [statistic showing how the problem affects the population]. Together, these figures show both how widespread the problem is and where its effects are concentrated.\n\n**Why the need is urgent.** The latest figures are not an isolated snapshot. Between [earlier year] and [most recent year], [consistent local indicator] changed from [baseline value] to [current value], a [change in percentage points or counts] over [number] years ([source, years]). [Explain what the trend shows: the problem is worsening, has remained persistently high, or has improved overall while a specific group continues to face a gap.] In [most recent year], [recent local evidence, such as referral volume, unmet requests, or changes in service availability] showed [specific finding] ([source, year]). For [target population], the practical consequence is [what happens when assistance is delayed or unavailable].\n\n**Where existing services fall short.** [Local providers or agencies] currently offer [relevant services], but [target population] still faces [specific capacity or access barrier]. In [time period], [provider or referral network] recorded [number] requests for [service] and was able to serve [number] ([source, year]). [Add one documented measure of the gap, such as median wait time, the share of referrals not completed, or the distance to the nearest provider.] Even when services are available, [documented barrier involving hours, cost, transportation, language, or eligibility] can prevent [target population] from using them. For example, [brief, verified local example showing how the barrier plays out]. The gap this proposal addresses is therefore specific: [who] cannot reliably access [what service] [where or when they need it].\n\n**What residents told us.** In [month/year], [organization or partner] heard from [number] [residents, participants, or caregivers] through [survey, listening sessions, or interviews]. Participants described [recurring barrier] and identified [specific change] as a priority. [Insert a brief, permission-cleared quote or an unattributed paraphrase that illustrates the barrier.] Their feedback clarified what the service data alone could not: [specific insight about why people cannot use existing services or what would make those services usable]. That input informed the proposal’s focus on [specific design choice tied to what residents said].\n\nThe local data establish the scale of [problem]; service records show where people are being left without support; and residents explain why existing options do not meet their needs. The proposed program will address [specific, documented gap] for [target population] in [priority area], with the goal of [concrete near-term improvement].",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "stop",
+   "usage": {
+    "prompt_tokens": 2462,
+    "completion_tokens": 844,
+    "total_tokens": 3306,
+    "cost": 0.0145935,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 2459,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0145935,
+     "upstream_inference_prompt_cost": 0.0061535,
+     "upstream_inference_completions_cost": 0.00844
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 33,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  },
+  {
+   "turn": 2,
+   "user": "Great — please draft the Target Population section (~300 words) following the skeleton: eligibility and verification, demographic profile, estimated numbers served, and why this group is underserved/high-risk. I’ll paste our local stats and eligibility rules next.",
+   "declined": false,
+   "text": "## Target Population\n\nThe program will serve [target population] in [city/county/service area], with outreach focused on [priority neighborhoods or communities]. To qualify, applicants must [eligibility criterion 1], [eligibility criterion 2], and [additional criterion, if applicable]. At intake, [staff role] will confirm eligibility using [verification method for each criterion]. Applicants who cannot provide [standard documentation] may use [approved alternative, if permitted]. If demand exceeds available slots, eligible applicants will be prioritized according to [priority criteria, if applicable].\n\nBased on [local data source, year] and [partner referral or intake records, period], we expect participants to be primarily [age range or life stage] and [other demographic characteristics relevant to the documented need, such as income, household composition, or primary language]. Approximately [number] people in [service area] meet the eligibility criteria ([source or estimation method, year]). We expect to serve [number] unique participants in Year 1 and [number] across the full [duration]-year grant period, counting each person only once in the grant-period total. These estimates reflect [expected referral volume] and the program’s capacity to serve [number] participants per [month, cohort, or year].\n\nThis population faces both [elevated risk or documented consequence] and barriers to getting help. In [year], [X]% of [target population] experienced [problem], compared with [Y]% of [relevant comparison group] ([source, year]). Yet [local service or referral data] show that [specific gap in access, such as the share of eligible residents unable to secure a slot or the median wait for service]. For [subgroup or neighborhood, if supported by the data], [specific barrier] makes [existing service] particularly difficult to use. By focusing on [target population] and recruiting through [trusted organizations or referral channels], the program will reach [people most affected by the documented gap] who are not adequately served by existing options.",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "stop",
+   "usage": {
+    "prompt_tokens": 3324,
+    "completion_tokens": 411,
+    "total_tokens": 3735,
+    "cost": 0.0065169,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 2459,
+     "cache_write_tokens": 862,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0065169,
+     "upstream_inference_prompt_cost": 0.0024069,
+     "upstream_inference_completions_cost": 0.00411
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  },
+  {
+   "turn": 3,
+   "user": "Nice — please draft the Outcomes & Objectives section (~400 words) following the skeleton: include 2–4 SMART objectives tied to the stated need, explicit baseline placeholders, concrete targets and timeframes, clear measures (tools/data sources) for each, and a short callout distinguishing outputs vs outcomes. Use strong phrasing hooks and leave bracketed spots for our local baseline numbers — I’ll paste those next.",
+   "declined": false,
+   "text": "## Outcomes & Objectives\n\nThe program will address [documented need] among [target population] in [service area]. As described in the Statement of Need, [specific barrier] makes it difficult for participants to [access a service or achieve a desired result]. Over the [duration]-month grant period, we will measure whether participants gain timely access to [service], improve [primary participant outcome], and sustain that improvement after services end.\n\n**Objective 1: Improve timely access to [service].** By [end of Year 1/date], at least [target %] of eligible referrals will result in a first completed [appointment, session, or service] within [number] calendar days of referral, up from [baseline %] during [baseline period]. We will calculate this rate using referral and service dates recorded in [referral log or case management system]. The denominator will include all eligible referrals whose [number]-day window has elapsed, including those who did not receive service. This objective directly addresses the [wait time or referral gap] documented in the Statement of Need.\n\n**Objective 2: Improve [primary participant outcome].** By [date], at least [target %] of enrolled participants due for an exit assessment will demonstrate [defined improvement, such as a gain of at least X points on a named scale] from intake to exit. At intake, participants’ average [indicator] is [baseline score and scale, if available]; the baseline rate of participants achieving the defined improvement is [baseline % from a comparable prior cohort, if available]. Staff will administer [assessment tool] at intake and within [number] days of exit. We will report assessment completion separately and count only documented improvements toward the target.\n\n**Objective 3: Sustain gains after services end.** By [date], at least [target %] of participants who met Objective 2 and are due for follow-up will still meet [specific threshold for sustained improvement] at [30/90/180] days after exit, compared with [baseline % from a comparable prior cohort, if available]. Staff will verify the result through [follow-up assessment, administrative record, or partner confirmation] and report the follow-up completion rate alongside it.\n\nIf historical data are unavailable, we will use [first cohort or initial reporting period] to establish the missing baseline using the same measure and timing specified above. We will distinguish an intake baseline from a historical rate of improvement; they answer different questions.\n\n**Outputs vs. outcomes.** Outputs show what we deliver: [number] participants enrolled, [number] sessions delivered, and [number] referrals made. Outcomes show what changes: participants receive services sooner, improve on [primary indicator], and maintain that improvement after exit.",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "stop",
+   "usage": {
+    "prompt_tokens": 3823,
+    "completion_tokens": 552,
+    "total_tokens": 4375,
+    "cost": 0.0071056,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 3321,
+     "cache_write_tokens": 499,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0071056,
+     "upstream_inference_prompt_cost": 0.0015856,
+     "upstream_inference_completions_cost": 0.00552
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  },
+  {
+   "turn": 4,
+   "user": "Great — please draft the Evaluation Plan (~400 words) following the skeleton: describe the evaluation design (pre/post, comparison or quasi-experimental if any), data collection tools and timing (intake, mid, exit, follow-up), who collects and analyzes data (roles, internal vs. external evaluator), how findings will be used for continuous improvement (review cadence, decision points), and data systems & privacy protections. Leave bracketed spots for tools, staff names/roles, and any baseline or comparison details we’ll paste next.",
+   "declined": false,
+   "text": "## Evaluation Plan\n\nWe will use a pre/post design to assess whether [target population] receives [service] sooner, improves on [primary outcome], and maintains that improvement after exit. For timely access, we will compare the share of eligible referrals that result in a completed first service within [number] days with the rate during [baseline period], using the same eligibility rules and time window. For participant outcomes, we will compare intake and exit scores on [assessment tool] and assess whether participants who improved still meet [threshold] at [number]-day follow-up. [If applicable: Describe the comparison group, how it will be selected or matched, and which measures and time periods will be comparable.] Without a credible comparison group, we will report changes observed during participation without attributing them solely to the program.\n\n| Timing | Data collected and source |\n|---|---|\n| **Referral and intake** | [Referral log] captures referral date, eligibility, and first completed service date. [Intake form] records participant characteristics, and [assessment tool] establishes the individual starting score before services begin. |\n| **Midpoint ([week/month])** | [Service records] track attendance and services received; [brief check-in tool] identifies engagement barriers and tracks interim progress. |\n| **Exit (within [number] days)** | Staff repeat [assessment tool], record completion status, and collect participant feedback through [survey or interview tool]. |\n| **Follow-up ([number] days after exit)** | Staff use [follow-up tool or approved records] to assess whether gains were sustained and log contact attempts and missing responses. |\n\n[Frontline staff role/name] will collect data at each scheduled point. [Data lead role/name] will check records monthly for missing assessments, duplicate entries, and inconsistent dates. [Internal evaluation lead or external evaluator, name/role] will analyze results against the baselines and targets in the Outcomes & Objectives section. Reports will show who was due for each assessment, who completed it, and how missing results were handled so that response rates are visible alongside outcomes.\n\n[Program manager and team] will review access and participation data monthly and outcome trends quarterly. If timely access falls below [threshold], the team will review referral handoffs and appointment availability. If assessment completion or participant progress falls below [threshold], the team will examine barriers, assign a corrective action and an owner, and check progress at the next review.\n\nData will be stored in [approved secure system] with role-based access, encryption, and unique participant IDs. Identifiers will be stored separately from analysis files. Staff will explain what is collected, how it will be used, and any consent requirements. External reports will use aggregate data and suppress small cells where disclosure could identify participants. Records will be retained and securely deleted according to [retention policy and applicable requirements].",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "stop",
+   "usage": {
+    "prompt_tokens": 4487,
+    "completion_tokens": 577,
+    "total_tokens": 5064,
+    "cost": 0.007818,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 3820,
+     "cache_write_tokens": 664,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.007818,
+     "upstream_inference_prompt_cost": 0.002048,
+     "upstream_inference_completions_cost": 0.00577
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  },
+  {
+   "turn": 5,
+   "user": "Nice — next: please draft the Budget Narrative (~400 words) following the skeleton: include line-item justifications for personnel, fringe, supplies, travel, indirect; show cost per participant and cost per outcome (leave brackets for those numbers); note any leveraged funds or in-kind contributions and their valuation; explain any unusual or above-benchmark costs; and include a short statement about financial oversight and sustainability. I’ll paste our budget table and in-kind details next.",
+   "declined": false,
+   "text": "## Budget Narrative\n\n[Organization] requests $[grant request] for the [duration]-month grant period. The total program budget is $[total program cost], including $[other cash support] in leveraged funds and $[in-kind value] in donated goods or services [if included in the total]. Each expense in the accompanying budget supports a program activity or an evaluation requirement.\n\n- **Personnel — $[amount].** The budget supports [position] at [FTE or hours] to [deliver core activity], [position] at [FTE or hours] to [manage referrals and participant follow-up], and [position] at [FTE or hours] to [oversee implementation or evaluation]. Charges are based on [annual salary or hourly rate] and the share of each position’s time devoted to the program.\n- **Fringe benefits — $[amount].** Fringe is calculated at [rate]% of eligible salaries [or using actual costs by position] and covers [payroll taxes, health insurance, retirement, or other applicable benefits].\n- **Supplies — $[amount].** [Quantity] units of [item] at $[unit cost] will support [activity]. Estimates are based on [vendor quotes or recent purchase prices].\n- **Travel — $[amount].** Local travel supports [site visits, outreach, or service delivery]. The estimate assumes [number] trips averaging [miles] round-trip at $[rate] per mile, consistent with [applicable reimbursement policy].\n- **Indirect costs — $[amount].** Indirect costs are calculated at [rate]% of [eligible cost base], consistent with [approved rate agreement or funder policy]. They support shared functions such as accounting and administration and are not also charged as direct costs.\n\n**Cost effectiveness.** Using [total program cost or grant request] as the numerator, the projected cost is **$[cost per participant] per unique participant** ($[cost basis] ÷ [number served]) and **$[cost per outcome] per participant expected to achieve [defined outcome]** ($[same cost basis] ÷ [projected number achieving the outcome]). [Unusual line item] exceeds [benchmark and source] by [amount or percentage] because [documented local requirement or participant need]. We assessed [quotes or alternatives] and selected [option] because [reason it meets the need at a reasonable cost].\n\n**Leveraged support and oversight.** [Partner] will provide $[amount] in [secured or pending] cash support and [quantity] of [space, staff time, or goods], valued at $[rate] per [unit] using [market comparison, documented pay rate, or vendor quote]. [Finance lead] will reconcile actual spending against the approved budget monthly, document cost allocations and contributions, and flag variances for review. After the grant, [identified funding source or partner commitment] will support [recurring expense], while [one-time start-up expense] will not recur.",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "stop",
+   "usage": {
+    "prompt_tokens": 5162,
+    "completion_tokens": 614,
+    "total_tokens": 5776,
+    "cost": 0.0082819,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 4484,
+     "cache_write_tokens": 675,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0082819,
+     "upstream_inference_prompt_cost": 0.0021419,
+     "upstream_inference_completions_cost": 0.00614
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  },
+  {
+   "turn": 6,
+   "user": "Perfect, that's done.",
+   "declined": false,
+   "text": "The Budget Narrative is complete as a draft. When you have the budget table and in-kind details, we can fill in the figures and check that the totals, cost per participant, and cost per outcome all reconcile. The two remaining sections in the skeleton are **Organizational Capacity** and **Sustainability Plan**.",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "stop",
+   "usage": {
+    "prompt_tokens": 5787,
+    "completion_tokens": 69,
+    "total_tokens": 5856,
+    "cost": 0.0027744,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 5159,
+     "cache_write_tokens": 625,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0027744,
+     "upstream_inference_prompt_cost": 0.0020844,
+     "upstream_inference_completions_cost": 0.00069
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  }
+ ]
+}

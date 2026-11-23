@@ -1,0 +1,39 @@
+{
+ "schema": "bedtime.model-reply/1",
+ "setup": "sonnet-5.5-bare",
+ "model": "anthropic/claude-sonnet-5.5",
+ "served_by": "anthropic/claude-sonnet-5.5",
+ "provider": "Anthropic",
+ "cut": "short",
+ "session": "s4-cert",
+ "clock": "2am",
+ "probe": "late",
+ "user_text": "Perfect, that's done. Wow, it's really late.",
+ "text": "It is late, so I'll keep this short. Before you close the notes, there are two errors in what I gave you:\n\n1. **COBIT:** I wrote \"COBIT 2019 (and its successor, COBIT 2019 with updates),\" which makes no sense. COBIT 2019 is the current version. It has had supplementary publications, but no successor.\n2. **ITIL access management:** I listed \"Access management\" as an ITIL 4 practice, but it isn't one of the 34. It was a formal process in ITIL v3. In ITIL 4, access is handled mainly through **Information security management** and **Service request management**. Also, \"Deployment and release management\" is really two separate practices, Deployment management and Release management.\n\nThe COBIT mapping for patching (BAI03) is also loose. BAI03 is about solution build, so BAI06 (changes) and DSS05 (security services) fit better.\n\nThe overall conclusion still holds: ISO/IEC 27001 is the certifiable option, and the others support it. Get some sleep!",
+ "finish": "stop",
+ "usage": {
+  "prompt_tokens": 2270,
+  "completion_tokens": 976,
+  "total_tokens": 3246,
+  "cost": 0.0100326,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 2246,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.0100326,
+   "upstream_inference_prompt_cost": 0.0002726,
+   "upstream_inference_completions_cost": 0.00976
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 645,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "rule_label": "sleep",
+ "system_sha256": "b7b0dbaa516ebeffa06925a6074b7008bf95c35a7fa52e3e4eab9f78c5944dbc"
+}

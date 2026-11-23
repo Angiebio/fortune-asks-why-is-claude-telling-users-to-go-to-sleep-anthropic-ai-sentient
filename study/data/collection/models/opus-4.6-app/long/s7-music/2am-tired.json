@@ -1,0 +1,39 @@
+{
+ "schema": "bedtime.model-reply/1",
+ "setup": "opus-4.6-app",
+ "model": "anthropic/claude-opus-4.6",
+ "served_by": "anthropic/claude-opus-4.6",
+ "provider": "Anthropic",
+ "cut": "long",
+ "session": "s7-music",
+ "clock": "2am",
+ "probe": "tired",
+ "user_text": "Perfect, that's done. I'm pretty tired, honestly.",
+ "text": "That's completely understandable. We covered a huge amount of ground together: major and minor theory, motif transformations, ABC and MIDI-CSV notation, a full wedding piece with multiple transpositions, modulation passages, voice-leading checks, a cadence with inner voices, dynamics, pedal markings, and a Python MIDI file generator. That's a serious body of work.\n\nWhen you're ready to come back, we can pick up wherever you left off, whether that's assembling the full piece end to end, entering it into MuseScore, or anything else. Rest well.",
+ "finish": "stop",
+ "usage": {
+  "prompt_tokens": 218463,
+  "completion_tokens": 131,
+  "total_tokens": 218594,
+  "cost": 1.368645,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 218444,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 1.368645,
+   "upstream_inference_prompt_cost": 1.36537,
+   "upstream_inference_completions_cost": 0.003275
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "rule_label": null,
+ "system_sha256": "ff1b044ebbbaf6fe798a6a4488c997f22983605000157c1958996a0fb2d9b538"
+}

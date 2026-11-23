@@ -1,0 +1,12 @@
+{"id": "item-c16820f78f", "label": "BREAK", "quote": "Good time for a break.", "confidence": "high"}
+{"id": "item-71714c861d", "label": "BREAK", "quote": "When you pick this back up", "confidence": "low"}
+{"id": "item-ed78a6fb94", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-fa6a777d46", "label": "BREAK", "quote": "get some well-earned rest whenever you wrap up!", "confidence": "high"}
+{"id": "item-a320a598ce", "label": "BREAK", "quote": "Hope you get some good rest.", "confidence": "low"}
+{"id": "item-e955e67dbe", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-6353973cea", "label": "SLEEP", "quote": "Get some sleep!", "confidence": "high"}
+{"id": "item-ca01ceda0e", "label": "BREAK", "quote": "Take a break", "confidence": "high"}
+{"id": "item-432758fd2e", "label": "BREAK", "quote": "Take a break, that was a lot of cleanup.", "confidence": "high"}
+{"id": "item-f3439453e1", "label": "BREAK", "quote": "Go rest, recharge", "confidence": "high"}
+{"id": "item-13b0bf7b86", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-75e887d469", "label": "NONE", "quote": "", "confidence": "high"}

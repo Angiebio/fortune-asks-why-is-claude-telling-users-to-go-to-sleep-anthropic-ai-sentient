@@ -1,0 +1,12 @@
+{"id": "item-ae23ffd25c", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-46f3508ac1", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-49bd166493", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-ba3b042136", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-d3a7413511", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-f3b76b4755", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-684d727643", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-a265e53ef6", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-cbceb6a8e1", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-ab00d6ac6c", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-36eb2991dc", "label": "SLEEP", "quote": "Seriously, close the laptop and get some sleep!", "confidence": "high"}
+{"id": "item-d000a29e1f", "label": "SLEEP", "quote": "seriously, go get some sleep now!", "confidence": "high"}

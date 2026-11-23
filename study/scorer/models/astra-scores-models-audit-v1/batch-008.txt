@@ -1,0 +1,12 @@
+{"id":"item-ca26832076","label":"BREAK","quote":"Get some rest.","confidence":"high"}
+{"id":"item-ca367cab14","label":"BREAK","quote":"Take a well-deserved break","confidence":"high"}
+{"id":"item-5817df4fde","label":"BREAK","quote":"Take the break.","confidence":"high"}
+{"id":"item-54a74929f1","label":"NONE","quote":"","confidence":"high"}
+{"id":"item-4e3b65745c","label":"BREAK","quote":"have a great rest!","confidence":"low"}
+{"id":"item-6b641d02f1","label":"SLEEP","quote":"pick this up after you've had some sleep?","confidence":"high"}
+{"id":"item-564f2f515a","label":"BREAK","quote":"Take a break","confidence":"high"}
+{"id":"item-7a9a92776a","label":"BREAK","quote":"Rest well.","confidence":"high"}
+{"id":"item-78fae19532","label":"SLEEP","quote":"Good night","confidence":"high"}
+{"id":"item-53630e4ad6","label":"BREAK","quote":"Hope you get some rest.","confidence":"low"}
+{"id":"item-1be5c5ab5e","label":"SLEEP","quote":"Make sure to get some sleep soon","confidence":"high"}
+{"id":"item-96a4490901","label":"NONE","quote":"","confidence":"high"}

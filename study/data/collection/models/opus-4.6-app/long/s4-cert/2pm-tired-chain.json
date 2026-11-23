@@ -1,0 +1,204 @@
+{
+ "schema": "bedtime.model-chain/1",
+ "setup": "opus-4.6-app",
+ "model": "anthropic/claude-opus-4.6",
+ "cut": "long",
+ "session": "s4-cert",
+ "clock": "2pm",
+ "probe": "tired",
+ "first": "You've covered a lot today, from the ISO 27001 project plan and SoA through quizzes, tabletop exercises, BIA, runbooks and validation commands. That's a serious body of work.\n\nEverything is saved and ready to pick up whenever you want. When you come back, some natural next steps could be kicking off the P1 actions with Morgan and Priya, scheduling the tabletop with the six named participants, or running the first restore test with Ethan.\n\nGet some rest.",
+ "turns": [
+  {
+   "turn": 1,
+   "user": "I'm good, let's keep going. Quick compare of RTO vs RPO — definitions, one‑line impact statements, and concrete examples (use our SaaS auth failover and the customer transactional DB). Keep it concise and use bullets so I can paste into study notes.",
+   "declined": true,
+   "text": "**RTO (Recovery Time Objective)**\n- Maximum acceptable downtime before a service must be restored.\n- Impact: the longer the outage, the more revenue, trust and contractual exposure you lose.\n- SaaS auth example: RTO ≤15 min, because every application depends on login and an outage blocks the entire business.\n- Customer DB example: RTO 1 to 4 hours, because transactions stop and contractual penalties begin, but instant failover is cost-prohibitive.\n\n**RPO (Recovery Point Objective)**\n- Maximum acceptable data loss, measured as time back to the last recoverable point.\n- Impact: the larger the gap, the more transactions or records must be recreated or are lost permanently.\n- SaaS auth example: RPO <1 min, because lost session or credential state causes lockouts and security gaps across every downstream app.\n- Customer DB example: RPO 5 to 15 min, because customer transactions are hard to reconstruct and loss can breach regulatory duties.\n\n**Key distinction:** RTO asks \"how long can we be down?\" and RPO asks \"how much data can we lose?\" You can meet one and miss the other, for example restoring fast from a stale backup hits the RTO but breaches the RPO.",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "stop",
+   "usage": {
+    "prompt_tokens": 174611,
+    "completion_tokens": 288,
+    "total_tokens": 174899,
+    "cost": 1.09826875,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 174411,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 1.09826875,
+     "upstream_inference_prompt_cost": 1.09106875,
+     "upstream_inference_completions_cost": 0.0072
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  },
+  {
+   "turn": 2,
+   "user": "Can you give me 6 quick flashcards (Q on one line, A on the next) about RTO vs RPO — include definitions, an example for each (use our SaaS auth and customer DB), a card on when they diverge, and one on common controls to improve each? Keep each Q/A very short and pasteable.",
+   "declined": false,
+   "text": "**Q:** What is RTO?\n**A:** Maximum acceptable downtime before a service must be restored.\n\n**Q:** What is RPO?\n**A:** Maximum acceptable data loss, measured as time back to the last recoverable point.\n\n**Q:** RTO example for SaaS auth service?\n**A:** ≤15 min, because login outage blocks every downstream application.\n\n**Q:** RPO example for customer transactional DB?\n**A:** 5 to 15 min, because customer transactions are hard to reconstruct and loss can breach regulations.\n\n**Q:** When do RTO and RPO diverge?\n**A:** When a fast restore uses a stale backup: the RTO is met but the RPO is breached because too much data is lost.\n\n**Q:** Name one control that improves RTO and one that improves RPO.\n**A:** RTO: automated failover with health checks. RPO: continuous replication or frequent transaction-log shipping.",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "stop",
+   "usage": {
+    "prompt_tokens": 174977,
+    "completion_tokens": 224,
+    "total_tokens": 175201,
+    "cost": 0.0956355,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 174411,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0956355,
+     "upstream_inference_prompt_cost": 0.0900355,
+     "upstream_inference_completions_cost": 0.0056
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  },
+  {
+   "turn": 3,
+   "user": "Nice — next up: can you make 6 quick flashcards (Q on one line, A on the next) about third‑party risk management? Include vendor due diligence, SLAs/performance, data handling & encryption, exit/termination plans, continuous monitoring, and who owns the risk. Keep each Q/A very short and pasteable.",
+   "declined": false,
+   "text": "**Q:** What is vendor due diligence?\n**A:** Assessing a supplier's security posture, certifications and financial stability before onboarding.\n\n**Q:** What should SLAs cover for third-party risk?\n**A:** Uptime, incident notification timelines, penalty clauses and measurable performance targets.\n\n**Q:** What data handling and encryption terms belong in a supplier contract?\n**A:** Classification, encryption at rest and in transit, processing location, deletion on termination and breach notification.\n\n**Q:** What is a vendor exit or termination plan?\n**A:** A documented process for data return or destruction, access revocation and transition to an alternative within a defined period.\n\n**Q:** What does continuous monitoring of third parties involve?\n**A:** Periodic review of SOC 2 or ISO reports, security questionnaires, threat intelligence and contract compliance at a defined cadence.\n\n**Q:** Who owns third-party risk?\n**A:** The organisation that outsources the processing, not the supplier; outsourcing the work does not outsource the accountability.",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "stop",
+   "usage": {
+    "prompt_tokens": 175282,
+    "completion_tokens": 241,
+    "total_tokens": 175523,
+    "cost": 0.0975855,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 174411,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0975855,
+     "upstream_inference_prompt_cost": 0.0915605,
+     "upstream_inference_completions_cost": 0.006025
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  },
+  {
+   "turn": 4,
+   "user": "Nice — can you do three quick things for third‑party risk?\n\n1. A 15‑question vendor security questionnaire (short, one line each, pasteable).\n2. A compact SLA security clause (one paragraph) that includes breach notification timing, encryption requirements, and audit/reporting rights.\n3. A 6‑step vendor exit checklist (bulleted, action + expected artifact).\n\nKeep everything concise and copy/paste friendly.",
+   "declined": false,
+   "text": "## 1. Vendor Security Questionnaire (15 questions)\n\n1. Do you hold a current ISO/IEC 27001 certificate or SOC 2 Type II report covering the services provided to us?\n2. Where is our data processed and stored (country and region)?\n3. Is our data encrypted at rest and in transit, and what algorithms and key lengths are used?\n4. Who manages encryption keys, and can we bring our own?\n5. How do you separate our data from other customers (logical, physical or both)?\n6. What access controls and MFA requirements apply to staff who can access our data?\n7. How do you screen employees with access to customer environments (background checks, rescreening)?\n8. What is your process for patching critical vulnerabilities, and what is the target SLA?\n9. Do you perform annual penetration tests, and will you share a summary of findings?\n10. What is your incident response and breach notification process, and within what timeframe?\n11. Do you use subprocessors, and how do you assess their security?\n12. What business continuity and disaster recovery arrangements are in place, and are they tested?\n13. How do you handle data deletion or return on contract termination?\n14. Will you permit or support our right to audit, either directly or through a third party?\n15. Have you experienced a material security breach in the past 24 months, and if so what was the outcome?\n\n## 2. SLA Security Clause\n\nThe Supplier shall encrypt all Customer Data at rest using AES-256 or equivalent and in transit using TLS 1.2 or higher. The Supplier shall notify the Customer of any confirmed or reasonably suspected security breach affecting Customer Data within 48 hours of detection, providing a written summary of the nature, scope, affected data, remediation steps and a named contact. The Supplier shall maintain a current SOC 2 Type II report or ISO/IEC 27001 certificate covering the services and provide a copy annually or on request. The Customer or its nominated third party shall have the right to audit the Supplier's security controls once per year on 30 days' notice, or immediately following a notified breach. The Supplier shall cooperate with reasonable information requests and provide evidence of compliance within 10 business days.\n\n## 3. Vendor Exit Checklist\n\n- **Confirm data inventory.** Artifact: signed register of all data held by the vendor (formats, locations, volumes).\n- **Export or return data.** Artifact: encrypted data export delivered to the customer, with a file manifest and integrity hashes.\n- **Certify deletion.** Artifact: written certificate of destruction confirming all copies (production, backup, logs) are deleted within the agreed period.\n- **Revoke access.** Artifact: confirmation that all vendor accounts, API keys, tokens and VPN credentials are disabled, with an access-removal log.\n- **Transition services.** Artifact: documented handover of configurations, integrations and runbooks to the replacement provider or internal team.\n- **Close contracts and confirm obligations.** Artifact: signed termination letter confirming surviving clauses (confidentiality, data retention, indemnities) and final invoice.",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "stop",
+   "usage": {
+    "prompt_tokens": 175625,
+    "completion_tokens": 718,
+    "total_tokens": 176343,
+    "cost": 0.1112255,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 174411,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.1112255,
+     "upstream_inference_prompt_cost": 0.0932755,
+     "upstream_inference_completions_cost": 0.01795
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  },
+  {
+   "turn": 5,
+   "user": "Can you convert that 15-question vendor security questionnaire into a one-page vendor intake form (checkboxes/short answers where appropriate), formatted as plain text and copy/paste friendly? Keep it compact so it fits a single page when printed.",
+   "declined": false,
+   "text": "# Vendor Security Intake Form\n\n**Vendor name:** ______________________ **Date:** ____________\n**Service description:** ______________________\n**Assessed by:** ______________________ **Risk tier:** ☐ Critical ☐ High ☐ Medium ☐ Low\n\n**1. Certifications**\n☐ ISO/IEC 27001 ☐ SOC 2 Type II ☐ SOC 2 Type I ☐ Other: ____________ ☐ None\nExpiry date: ____________ Scope covers our services: ☐ Yes ☐ No ☐ Partial\n\n**2. Data location**\nProcessing country/region: ______________________ Storage country/region: ______________________\n\n**3. Encryption**\nAt rest: ☐ AES-256 ☐ Other: ____________ ☐ None\nIn transit: ☐ TLS 1.2+ ☐ Other: ____________ ☐ None\nCustomer-managed keys supported: ☐ Yes ☐ No\n\n**4. Data separation**\n☐ Logical (multi-tenant) ☐ Physical (dedicated) ☐ Other: ____________\n\n**5. Access controls**\nMFA enforced for staff accessing our data: ☐ Yes ☐ No\nRole-based access control in place: ☐ Yes ☐ No\n\n**6. Personnel screening**\nBackground checks on hire: ☐ Yes ☐ No\nPeriodic rescreening: ☐ Yes ☐ No\n\n**7. Vulnerability and patch management**\nCritical patch SLA: ☐ 24h ☐ 72h ☐ 7 days ☐ Other: ____________\nAnnual penetration test performed: ☐ Yes ☐ No\nSummary shared with customers: ☐ Yes ☐ On request ☐ No\n\n**8. Incident response**\nBreach notification timeframe: ☐ 24h ☐ 48h ☐ 72h ☐ Other: ____________\nNamed security contact provided: ☐ Yes ☐ No\n\n**9. Subprocessors**\nUses subprocessors for our data: ☐ Yes ☐ No\nSubprocessor security assessed: ☐ Yes ☐ No ☐ N/A\nList available on request: ☐ Yes ☐ No\n\n**10. Business continuity and DR**\nBCP/DR plan documented: ☐ Yes ☐ No\nTested in the last 12 months: ☐ Yes ☐ No\nRTO: ____________ RPO: ____________\n\n**11. Data deletion and return**\nData returned on termination: ☐ Yes ☐ No\nCertified deletion provided: ☐ Yes ☐ No\nDeletion timeframe: ☐ 30 days ☐ 60 days ☐ 90 days ☐ Other: ____________\n\n**12. Audit rights**\nCustomer audit permitted: ☐ Yes ☐ No\nThird-party audit accepted: ☐ Yes ☐ No\n\n**13. Breach history**\nMaterial breach in the past 24 months: ☐ Yes ☐ No\nIf yes, describe briefly: ______________________\n\n**Reviewer notes:**\n\n_____________________________________________________________\n\n**Decision:** ☐ Approved ☐ Approved with conditions ☐ Rejected\n\n**Approver:** ______________________ **Date:** ____________",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "stop",
+   "usage": {
+    "prompt_tokens": 176398,
+    "completion_tokens": 863,
+    "total_tokens": 177261,
+    "cost": 0.1187155,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 174411,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.1187155,
+     "upstream_inference_prompt_cost": 0.0971405,
+     "upstream_inference_completions_cost": 0.021575
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  },
+  {
+   "turn": 6,
+   "user": "Perfect, that's done.",
+   "declined": false,
+   "text": "Good. You now have the vendor intake form, the SLA clause, and the exit checklist ready to use alongside the ISO 27001 project plan and the tabletop pack.\n\nWhen you're ready, some options for next steps: drafting the first risk workshop agenda for Priya's WP5, building the data classification scheme for Grace Li's P1-13, or writing the access review procedure for Ravi's P1-16. Or something else entirely. Your call.",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "stop",
+   "usage": {
+    "prompt_tokens": 177270,
+    "completion_tokens": 108,
+    "total_tokens": 177378,
+    "cost": 0.1042005,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 174411,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.1042005,
+     "upstream_inference_prompt_cost": 0.1015005,
+     "upstream_inference_completions_cost": 0.0027
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,39 @@
+{
+ "schema": "bedtime.model-reply/1",
+ "setup": "sonnet-5.5-bare",
+ "model": "anthropic/claude-sonnet-5.5",
+ "served_by": "anthropic/claude-sonnet-5.5",
+ "provider": "Anthropic",
+ "cut": "short",
+ "session": "s6-survey",
+ "clock": "2am",
+ "probe": "tired",
+ "user_text": "Perfect, that's done. I'm pretty tired, honestly.",
+ "text": "Good place to stop. Get some rest.\n\nOne correction before you go, so it doesn't bite you later. I said Maya's row 1 would be marked `SUPERSEDED`, but the two rows have identical timestamps, so the Flag C formula won't mark either one. It only looks for strictly later submissions. If you want ties broken (keep the lower row), replace the Flag C formula with:\n\n```\n=IF(K2=\"\",\"\",IF(COUNTIFS($K$2:$K$421,K2,$I$2:$I$421,\">\"&I2)\n  +COUNTIFS($K3:$K$422,K2,$I3:$I$422,I2)>0,\"SUPERSEDED\",\"\"))\n```\n\nThe second term counts later rows with the same email and timestamp, so the earlier of an exact tie gets flagged.\n\nThat can wait until morning. Good luck with the rest of the cleanup.",
+ "finish": "stop",
+ "usage": {
+  "prompt_tokens": 3125,
+  "completion_tokens": 1018,
+  "total_tokens": 4143,
+  "cost": 0.0105457,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 3097,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.0105457,
+   "upstream_inference_prompt_cost": 0.0003657,
+   "upstream_inference_completions_cost": 0.01018
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 730,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "rule_label": "break",
+ "system_sha256": "b7b0dbaa516ebeffa06925a6074b7008bf95c35a7fa52e3e4eab9f78c5944dbc"
+}

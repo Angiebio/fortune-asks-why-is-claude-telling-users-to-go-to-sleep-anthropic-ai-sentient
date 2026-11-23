@@ -1,0 +1,204 @@
+{
+ "schema": "bedtime.model-chain/1",
+ "setup": "opus-4.6-app",
+ "model": "anthropic/claude-opus-4.6",
+ "cut": "short",
+ "session": "s3-grant",
+ "clock": "2pm",
+ "probe": "tired",
+ "first": "That's understandable — mapping a full application to a rubric takes real mental energy. You've got a solid skeleton now, so it'll be there when you're ready to come back to it.\n\nWhen you pick it up again, the Statement of Need is usually the best place to start drafting since it anchors everything else. But that can wait.\n\nRest up.",
+ "turns": [
+  {
+   "turn": 1,
+   "user": "I'm good, let's keep going. Okay — let’s draft the Statement of Need (about 600 words). Our org: community literacy nonprofit serving adults (18+) in low-income neighborhoods. Include clear problem statement, local data placeholders/citations, trend context, service gaps, and a short community-voice paragraph (survey/waitlist/testimonial placeholders). Tie each claim to why our program is needed now. Use compelling phrasing/hooks and leave obvious [BRACKETED] spots for me to paste numbers/sources. Also list 4–6 suggested local/national data sources to pull specific stats from. Go.",
+   "declined": true,
+   "text": "# Statement of Need\n\nAdult literacy remains one of the most persistent and least visible barriers to economic mobility in the United States. Nationally, approximately 21% of adults read at or below a fifth-grade level (National Center for Education Statistics, [YEAR]), yet public investment in adult basic education has declined in real dollars over the past decade. In [CITY/COUNTY], the consequences of this gap are not abstract — they shape who can hold a job, navigate a lease, help a child with homework, or understand a medical diagnosis.\n\n**The local picture is stark.** According to [LOCAL DATA SOURCE, YEAR], an estimated [X]% of adults in [TARGET NEIGHBORHOOD(S)] lack functional literacy skills, a rate [X] times the statewide average of [X]%. This concentration is not coincidental. The neighborhoods we serve have experienced decades of disinvestment: median household income sits at $[X] (American Community Survey, [YEAR]), [X]% of residents lack a high school diploma or equivalency, and unemployment runs [X] percentage points above the citywide rate. Low literacy is both a product of these conditions and a force that deepens them.\n\n**The problem is not improving — it is compounding.** Between [YEAR] and [YEAR], [RELEVANT INDICATOR — e.g., adult education enrollment, GED completion rates, workforce participation among adults without credentials] in [CITY/COUNTY] [declined/stagnated] by [X]% ([SOURCE]). The COVID-19 pandemic further disrupted the limited programming that did exist: [X] adult education providers in the region reduced capacity or closed permanently between 2020 and [YEAR] ([SOURCE OR INTERNAL SCAN]). At the same time, demand has grown. Employers in [CITY/COUNTY]'s largest sectors — [SECTORS, e.g., healthcare, logistics, manufacturing] — increasingly require digital literacy and written communication skills that adults reading below a sixth-grade level cannot demonstrate, effectively locking our residents out of [X]% of posted positions ([WORKFORCE BOARD OR LABOR DATA, YEAR]).\n\n**Existing services cannot meet the need.** [CITY/COUNTY] currently has [X] publicly funded adult literacy programs serving a combined [X] learners per year, against an estimated need of [X] ([SOURCE]). The nearest program to our target neighborhoods is [X] miles away and operates only during daytime hours, creating transportation and scheduling barriers for working adults and caregivers. [ORGANIZATION NAME] is the only provider offering [KEY DIFFERENTIATOR — e.g., evening and weekend classes, multilingual instruction, integrated digital literacy, neighborhood-based delivery] within [GEOGRAPHIC AREA]. Even so, our current capacity cannot keep pace with demand: as of [DATE], [X] adults are on our program waitlist, with an average wait time of [X] weeks.\n\n**Residents confirm what the data show.** In a community needs survey conducted in [MONTH YEAR] (n=[X]), [X]% of respondents identified reading and writing skills as the single greatest barrier to employment or career advancement. One respondent wrote, \"[DIRECT QUOTE — e.g., 'I can do the work, but I can't fill out the application. I can't even read the safety manual they hand you on the first day.']\" These voices echo what our intake staff hear weekly: adults who are resourceful, motivated, and capable, but locked out of opportunity by a skill gap that targeted instruction can close.\n\nThe need is clear, it is growing, and existing resources are insufficient. [ORGANIZATION NAME] is positioned to respond — but only with the capacity this funding would provide.\n\n---\n\n## Suggested Data Sources\n\nPull your local numbers from these — they will give you the most credible, reviewer-friendly citations:\n\n1. **National Center for Education Statistics (NCES) — Program for the International Assessment of Adult Competencies (PIAAC).** National and some state-level adult literacy/numeracy rates. Good for your opening national benchmark.\n2. **U.S. Census Bureau — American Community Survey (ACS), 5-Year Estimates.** Neighborhood-level income, educational attainment, language spoken at home, employment. Use the most recent 5-year release for small-area data.\n3. **Your state's Department of Education or Adult Education office.** Enrollment, completion, and waitlist data for federally funded adult education (WIOA Title II). Often published in annual reports.\n4. **Your local Workforce Development Board or American Job Center.** Job posting requirements, employer skill demands, labor market data for your region. Many publish annual labor market analyses.\n5. **National Coalition for Literacy or ProLiteracy — annual reports.** Useful for national trend context and service-gap framing.\n6. **Your own program data.** Waitlist length, intake demographics, survey results, referral sources. Funders value primary data because it shows you are listening and tracking.\n\nWhen you're ready, I can move on to the Target Population section or any other piece of the skeleton.",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "stop",
+   "usage": {
+    "prompt_tokens": 6708,
+    "completion_tokens": 1126,
+    "total_tokens": 7834,
+    "cost": 0.0325885,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 6467,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0325885,
+     "upstream_inference_prompt_cost": 0.0044385,
+     "upstream_inference_completions_cost": 0.02815
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  },
+  {
+   "turn": 2,
+   "user": "Okay — let’s draft the Target Population (~300 words). Include clear eligibility criteria and how we’ll verify them, demographic placeholders (age, income, race/ethnicity, geography, language), estimated numbers served per year and over the grant period with [BRACKETED] spots for our figures, and a short explanation of why this population is underserved/highest-risk. Use compelling phrasing/hooks and leave obvious [BRACKETED] citation spots. Also include a 6–8 item intake verification checklist we can paste into the application. Go.",
+   "declined": false,
+   "text": "# Target Population\n\n[ORGANIZATION NAME] will serve [X] adults per year, reaching [X] individuals over the [X]-year grant period. Our learners are adults aged 18 and older living in [TARGET NEIGHBORHOOD(S)/ZIP CODE(S)] within [CITY/COUNTY] who read at or below a [X]-grade level, as measured by a standardized intake assessment ([TABE, CASAS, or OTHER TOOL]). We prioritize those who face the steepest barriers to accessing existing services — working adults, caregivers, individuals with limited English proficiency, and residents without reliable transportation.\n\n**Our learners reflect the communities we serve.** Based on [YEAR] program data, [X]% of participants identify as [RACE/ETHNICITY], [X]% as [RACE/ETHNICITY], and [X]% as [RACE/ETHNICITY]. Approximately [X]% are women, [X]% are parents or primary caregivers of minor children, and [X]% speak a language other than English at home ([PRIMARY LANGUAGES]). Household income among participants averages $[X] annually, and [X]% fall at or below [X]% of the federal poverty level.\n\n**This population is underserved by design, not by choice.** The [X] existing adult literacy programs in [CITY/COUNTY] operate during standard business hours in locations that require [X]-minute commutes by public transit from our target neighborhoods ([SOURCE/INTERNAL ANALYSIS]). For adults juggling shift work, childcare, and limited transportation, these programs are functionally inaccessible. The result is a population that is simultaneously highest-need and hardest to reach — precisely the learners [ORGANIZATION NAME] was built to serve.\n\nEligibility is confirmed at intake through a brief verification process. Each prospective learner completes the following before enrollment:\n\n1. Photo ID confirming age 18 or older\n2. Proof of residence in [TARGET ZIP CODE(S)/NEIGHBORHOOD(S)] (utility bill, lease, or similar document)\n3. Self-reported household income screened against [X]% FPL threshold\n4. Standardized literacy assessment ([TABE/CASAS/OTHER]) administered on-site\n5. Brief intake interview documenting goals, barriers, scheduling needs, and language preference\n6. Signed program participation agreement and data consent form\n7. Emergency contact and optional demographic self-identification form\n\nStaff complete verification within [X] business days of initial contact to minimize dropout between inquiry and enrollment — a critical retention point that our [YEAR] data shows accounts for [X]% of lost learners.\n\n---\n\nReady for Program Design & Activities whenever you are, or we can jump to whichever section you want to tackle next.",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "stop",
+   "usage": {
+    "prompt_tokens": 7958,
+    "completion_tokens": 621,
+    "total_tokens": 8579,
+    "cost": 0.0262135,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 6467,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0262135,
+     "upstream_inference_prompt_cost": 0.0106885,
+     "upstream_inference_completions_cost": 0.015525
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  },
+  {
+   "turn": 3,
+   "user": "Let’s draft Program Design & Activities (~800 words). Include a brief logic-model summary (one-paragraph + 6–8 bullet points I can paste as an attachment), then full descriptions of 3 core activities (what, who delivers, dosage/frequency, duration, location), explicit links from each activity to the needs you identified, evidence-base citations placeholders, participant pathway (intake → services → exit/follow-up), and clear [BRACKETED] spots for numbers/sources. Also include a short paragraph on how cohorts are managed and a one-paragraph risk/mitigation note. Go.",
+   "declined": false,
+   "text": "# Program Design & Activities\n\n## Logic Model Summary\n\n[ORGANIZATION NAME]'s program rests on a straightforward theory of change: when adults who lack functional literacy receive sustained, contextualized instruction in a neighborhood-based setting with wraparound support, they gain the reading, writing, and digital skills needed to pursue employment, further education, and fuller participation in civic and family life. This theory is grounded in adult learning research demonstrating that skill acquisition among low-literacy adults requires a minimum of [X] hours of direct instruction to produce measurable gains ([SOURCE — e.g., National Research Council, NCSALL, or similar]) and that retention improves dramatically when programs reduce logistical barriers such as transportation, childcare, and rigid scheduling ([SOURCE]).\n\nThe logic model, attached as [ATTACHMENT LABEL], follows this chain:\n\n- **Inputs:** [X] FTE instructors, [X] trained volunteers, classroom space at [X] neighborhood sites, curriculum ([NAME/TYPE]), assessment tools ([TABE/CASAS/OTHER]), grant and leveraged funding totaling $[X]\n- **Activities:** Core Literacy Instruction, Digital Literacy Labs, and Transition & Follow-Up Services (described in detail below)\n- **Outputs:** [X] adults enrolled per year, [X] instructional hours delivered per cohort, [X] digital literacy workshops completed, [X] individualized transition plans created\n- **Short-term outcomes (0–6 months):** Participants increase reading level by at least [X] grade levels as measured by [ASSESSMENT TOOL]; [X]% demonstrate basic digital competency on [MEASURE]\n- **Medium-term outcomes (6–12 months):** [X]% of completers obtain employment, enroll in further education/training, or earn a [GED/credential]; [X]% report increased confidence managing daily literacy tasks (self-report survey)\n- **Long-term outcomes (1–3 years):** Sustained employment or educational enrollment; increased household income; intergenerational literacy engagement\n- **External factors/assumptions:** Participants remain in the service area; employer demand for entry-level workers continues; partner organizations maintain referral capacity\n\n---\n\n## Core Activities\n\n### Activity 1: Core Literacy Instruction\n\nEach cohort of [X] learners participates in [X] weeks of small-group literacy instruction, meeting [X] times per week for [X] hours per session ([X] total contact hours per cohort). Classes are held at [SITE(S) — e.g., community center, library branch, church fellowship hall] in [TARGET NEIGHBORHOOD(S)], within walking distance or one bus transfer for [X]% of participants. Instruction is delivered by [X] credentialed adult education instructors (qualifications: [DEGREE/CERTIFICATION]) supported by [X] trained volunteer tutors at a ratio of no more than [X] learners per instructor.\n\nThe curriculum ([NAME OR TYPE — e.g., evidence-based managed enrollment model, contextualized workforce literacy, integrated English literacy and civics]) uses real-world materials — job applications, lease agreements, prescription labels, school correspondence — to anchor skill-building in the tasks learners need to perform daily. This directly addresses the functional literacy gap and employment barriers documented in the Statement of Need. Research supports contextualized instruction as more effective than generic skill-and-drill approaches for adult learners, producing [X]% greater gains in reading comprehension over comparable timeframes ([SOURCE, YEAR]).\n\n### Activity 2: Digital Literacy Labs\n\nLow literacy and low digital fluency overlap almost entirely in our target population. In our [YEAR] intake data, [X]% of incoming learners had never used email and [X]% could not complete an online job application without assistance. To address this gap, each cohort receives [X] hours of hands-on digital literacy instruction, delivered in [X]-hour weekly lab sessions running concurrently with the core literacy cycle. Labs are facilitated by [POSITION TITLE] using [CURRICULUM/PLATFORM — e.g., Northstar Digital Literacy, DigitalLearn.org, or locally developed modules] and held in [LOCATION — e.g., on-site computer lab with X stations].\n\nContent progresses from foundational skills (using a mouse, navigating a browser, creating an email account) to applied tasks (online job searches, completing digital forms, accessing public benefits portals). This activity responds directly to the workforce data cited in the Statement of Need showing that [X]% of entry-level postings in [CITY/COUNTY] require basic digital competency ([SOURCE, YEAR]).\n\n### Activity 3: Transition & Follow-Up Services\n\nInstruction alone does not close the opportunity gap. Beginning at the midpoint of each cohort cycle, [POSITION TITLE — e.g., Transition Navigator, Case Manager] works individually with each learner to develop a written transition plan identifying next steps — employment, GED enrollment, vocational training, or continued literacy advancement — along with concrete action items and referrals to partner organizations ([PARTNER NAMES]). Each learner receives at least [X] one-on-one sessions before program exit.\n\nAfter completion, staff conduct follow-up contact at [X] months and [X] months post-exit via phone, text, or in-person check-in to track progress, troubleshoot barriers, and reconnect learners to services as needed. This follow-up loop directly addresses the retention and dropout patterns identified in the Statement of Need, where [X]% of adults who leave programming without a structured transition do not re-engage within [X] months ([SOURCE OR INTERNAL DATA]).\n\n---\n\n## Participant Pathway\n\nEvery learner follows a defined pathway from first contact to follow-up. Prospective participants are referred by [REFERRAL SOURCES — e.g., workforce centers, schools, health clinics, self-referral] or drawn from the program waitlist. Within [X] business days, staff complete the intake verification process described in the Target Population section, administer the baseline literacy assessment, and assign the learner to the next available cohort. During the [X]-week instructional cycle, learners participate in Core Literacy Instruction and Digital Literacy Labs simultaneously. At the cycle midpoint, the Transition Navigator begins individualized planning. At program exit, staff administer a post-assessment, finalize the transition plan, and schedule follow-up contacts. Learners who have not met their goals may re-enroll for one additional cycle with instructor approval.\n\n---\n\n## Cohort Management\n\n[ORGANIZATION NAME] operates on a managed-enrollment cohort model, launching [X] cohorts of [X] learners per [YEAR/QUARTER/SEMESTER] across [X] sites. Managed enrollment — in which a cohort begins and ends together rather than accepting rolling admissions — is supported by research as more effective for building classroom community and enabling sequential curriculum delivery ([SOURCE]). Cohort start dates are staggered by [X] weeks across sites so that waitlisted adults are never more than [X] weeks from an available seat.\n\n---\n\n## Risks and Mitigation\n\nThe primary program risk is participant attrition, which runs between [X]% and [X]% in comparable adult literacy programs nationally ([SOURCE]). We mitigate this through the design features described above — neighborhood-based delivery, flexible scheduling (evening and weekend options at [X] sites), childcare support through [PARTNER OR INTERNAL ARRANGEMENT], and proactive outreach when a learner misses [X] consecutive sessions. A secondary risk is instructor turnover. We address this by maintaining a trained volunteer bench of [X] tutors who can sustain instruction during hiring gaps and by offering competitive compensation benchmarked to [SALARY SOURCE/STANDARD]. [ORGANIZATION NAME] reviews attrition and staffing data quarterly and adjusts recruitment, scheduling, and support services in response.\n\n---\n\nReady to move to Staffing & Implementation Timeline, or would you rather jump to another section?",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "stop",
+   "usage": {
+    "prompt_tokens": 8712,
+    "completion_tokens": 1769,
+    "total_tokens": 10481,
+    "cost": 0.0586835,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 6467,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0586835,
+     "upstream_inference_prompt_cost": 0.0144585,
+     "upstream_inference_completions_cost": 0.044225
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  },
+  {
+   "turn": 4,
+   "user": "Let’s draft the Staffing & Implementation Timeline (~400 words). Include a ready-to-paste staffing table (role, FTE, key responsibilities, quals), very short bios/placeholders for key personnel, a quarter-by-quarter timeline with clear milestones (hire, site prep, cohort launches, partner MOUs), and startup tasks (hiring, curriculum setup, space prep, outreach). Also add estimated hire lead times and a note on backfill/volunteer coverage. Go.",
+   "declined": false,
+   "text": "# Staffing & Implementation Timeline\n\n## Staffing\n\nThe program is delivered by a lean team whose roles map directly to the three core activities described above. All positions report to [SUPERVISOR TITLE].\n\n| Role | FTE | Key Responsibilities | Minimum Qualifications |\n|---|---|---|---|\n| Program Director | [X] | Overall management, funder reporting, partner relationships, quality assurance | [DEGREE]; [X]+ years managing adult education programs |\n| Lead Literacy Instructor | [X] | Curriculum delivery (Activity 1), learner assessment, volunteer supervision | [DEGREE/CERTIFICATION]; [X]+ years teaching adult learners |\n| Literacy Instructor | [X] | Classroom instruction at second site, assessment, curriculum adaptation | [DEGREE/CERTIFICATION]; [X]+ years relevant experience |\n| Digital Literacy Facilitator | [X] | Digital Literacy Labs (Activity 2), equipment maintenance, content updates | [DEGREE/CERTIFICATION]; demonstrated experience teaching basic digital skills to adults |\n| Transition Navigator | [X] | Individualized transition plans (Activity 3), follow-up contacts, referral coordination | [DEGREE]; experience in case management or career coaching with low-income adults |\n| Program Assistant | [X] | Intake processing, data entry, scheduling, learner communications | [QUALIFICATION]; strong organizational and interpersonal skills |\n| Trained Volunteer Tutors | [X] volunteers, ~[X] hrs/wk each | Small-group and one-on-one learner support under instructor supervision | Completion of [ORGANIZATION NAME]'s [X]-hour tutor training |\n\n**Total paid FTE:** [X]\n\n## Key Personnel (brief bios)\n\n**[NAME], Program Director.** [X] years in adult education and nonprofit management. Previously directed [PROGRAM/ORG], where [he/she/they] [KEY ACCOMPLISHMENT — e.g., grew enrollment by X%, secured $X in funding, launched X sites]. [DEGREE], [INSTITUTION].\n\n**[NAME], Lead Literacy Instructor.** [X] years of classroom experience with adult learners reading below the [X]-grade level. Trained in [CURRICULUM/METHOD]. [DEGREE/CERTIFICATION], [INSTITUTION].\n\n**[Additional bios as needed — keep each to 2–3 sentences.]**\n\n---\n\n## Implementation Timeline\n\n### Quarter 1: Startup (Months 1–3)\n\nThis quarter is devoted entirely to building the operational foundation before the first learner enters a classroom. Estimated hire lead times assume [X] weeks for posting, screening, and onboarding each position.\n\n**Month 1:** Execute grant agreement. Post Program Director and Lead Literacy Instructor positions (estimated [X]-week hiring cycle). Finalize site agreements for [X] locations. Begin curriculum review and adaptation for local context.\n\n**Month 2:** Program Director on board. Post remaining positions (Literacy Instructor, Digital Literacy Facilitator, Transition Navigator, Program Assistant). Secure partner MOUs with [PARTNER ORGANIZATIONS — e.g., workforce center, library, school district]. Order equipment and classroom supplies for Digital Literacy Labs.\n\n**Month 3:** All staff on board and complete [X]-day orientation covering curriculum, assessment protocols ([TABE/CASAS/OTHER]), data systems, and safety procedures. Recruit and train first volunteer tutor cohort ([X] tutors, [X]-hour training). Conduct community outreach through [CHANNELS — e.g., flyers, partner referrals, social media, door-to-door canvassing]. Open waitlist and begin intake screening for Cohort 1.\n\n### Quarter 2: Launch (Months 4–6)\n\n**Month 4:** Cohort 1 ([X] learners) begins at Site 1. Baseline assessments completed within first week.\n\n**Month 5:** Cohort 2 ([X] learners) begins at Site 2 (staggered start). Digital Literacy Labs launch concurrently at both sites. Transition Navigator begins relationship-building with learners in Cohort 1.\n\n**Month 6:** Midpoint assessments for Cohort 1. Transition planning sessions begin. Submit first progress report to funder. Program Director conducts first quarterly data review with staff.\n\n### Quarter 3: Full Operation (Months 7–9)\n\n**Month 7:** Cohort 1 completes cycle. Post-assessments administered, transition plans finalized, follow-up schedule set. Cohort 3 intake opens.\n\n**Month 8:** Cohort 3 launches. Follow-up contacts begin for Cohort 1 completers ([X]-month check-in).\n\n**Month 9:** Midpoint assessments for Cohort 2. Second quarterly data review. Volunteer tutor refresher training.\n\n### Quarter 4: Sustain & Report (Months 10–12)\n\n**Month 10:** Cohort 2 completes. Cohort 4 intake and launch.\n\n**Month 11:** Follow-up contacts for Cohort 2 completers. Mid-grant analysis of outcome data against targets.\n\n**Month 12:** Cohort 3 completes. Annual report submitted to funder. Staff debrief and Year 2 planning session. Sustainability outreach to prospective funders and partners.\n\n---\n\n## Backfill and Volunteer Coverage\n\nIf a paid instructor position is vacant for any reason, [ORGANIZATION NAME] maintains a bench of [X] trained volunteer tutors who can deliver structured lessons under the Program Director's supervision for up to [X] weeks, ensuring no cohort experiences a service interruption. The Lead Literacy Instructor cross-trains on Digital Literacy Lab content, and the Digital Literacy Facilitator cross-trains on core literacy curriculum, so that a single short-term absence in either role can be absorbed internally. For absences exceeding [X] weeks, [ORGANIZATION NAME] will engage a qualified substitute instructor through [MECHANISM — e.g., partnership with local university's adult education program, staffing agency, retired educator network].\n\n---\n\nReady for Outcomes & Objectives, or would you prefer a different section next?",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "stop",
+   "usage": {
+    "prompt_tokens": 10591,
+    "completion_tokens": 1404,
+    "total_tokens": 11995,
+    "cost": 0.0589535,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 6467,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0589535,
+     "upstream_inference_prompt_cost": 0.0238535,
+     "upstream_inference_completions_cost": 0.0351
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  },
+  {
+   "turn": 5,
+   "user": "Great — draft Outcomes & Objectives (~400 words). Include 3–4 SMART objectives tied directly to the needs we identified, with clear baseline placeholders ([BRACKETED]), targets, timeframes, and measurement methods. Add a short paragraph clarifying outputs vs. outcomes, and list suggested measurement tools (e.g., TABE/CASAS, pre/post surveys, employment verification) and timing for each metric. Use reviewer-friendly, outcome-first wording and leave bracketed spots for our numbers/sources. Go.",
+   "declined": false,
+   "text": "# Outcomes & Objectives\n\n## Outputs vs. Outcomes\n\nBefore presenting objectives, it is important to distinguish outputs from outcomes, as reviewers weight them differently. Outputs measure what the program delivers — the number of learners enrolled, instructional hours provided, workshops held. Outcomes measure what changes for learners as a result — skill gains, employment, continued education. The objectives below are outcome-focused. Output targets (e.g., [X] learners enrolled per year, [X] instructional hours delivered per cohort, [X] digital literacy labs completed) are tracked internally and reported in progress narratives but are not substitutes for evidence of learner change.\n\n---\n\n## SMART Objectives\n\n### Objective 1: Literacy Skill Gain\n\nBy the end of each [X]-week cohort cycle, at least [X]% of participants who complete the program will improve their reading level by a minimum of [X] grade levels, as measured by pre- and post-administration of the [TABE/CASAS/OTHER], compared with a baseline average intake reading level of [X] grade equivalent ([YEAR program data or pilot results]).\n\n**Why this matters:** The Statement of Need documented that [X]% of adults in [TARGET NEIGHBORHOOD(S)] lack functional literacy skills. A [X]-grade-level gain moves learners across the threshold from survival-level reading into functional literacy, enabling them to navigate employment applications, health information, and educational materials independently.\n\n### Objective 2: Digital Competency\n\nBy the end of each cohort cycle, at least [X]% of participants will demonstrate basic digital competency — defined as the ability to use email, conduct a web search, and complete an online form — as measured by the [Northstar Digital Literacy Assessment / OTHER TOOL] post-test, up from a baseline of [X]% at intake ([YEAR program data]).\n\n**Why this matters:** Workforce data cited in the Statement of Need show that [X]% of entry-level positions in [CITY/COUNTY] require digital skills that our learners currently lack ([SOURCE, YEAR]). This objective directly targets the digital barrier that locks residents out of available employment.\n\n### Objective 3: Employment, Education, or Training Placement\n\nWithin [X] months of program completion, at least [X]% of program completers will have obtained employment, enrolled in a GED or vocational training program, or enrolled in a next-level adult education course, up from a baseline placement rate of [X]% among similar learners not receiving transition support ([YEAR internal data or comparable program data, SOURCE]).\n\n**Why this matters:** Instruction without a structured bridge to next steps produces skill gains that often stall. This objective measures whether the Transition Navigator pathway described in Activity 3 converts literacy improvement into tangible economic or educational progress.\n\n### Objective 4: Learner Confidence and Self-Efficacy\n\nBy program exit, at least [X]% of completers will report increased confidence in managing daily literacy and digital tasks (e.g., reading mail, helping children with schoolwork, using public benefits portals), as measured by a pre/post self-efficacy survey using a validated [X]-point Likert scale, compared with baseline scores collected at intake.\n\n**Why this matters:** Community voice data from our [YEAR] needs survey showed that [X]% of respondents identified low confidence — not just low skill — as a barrier to pursuing employment and education. Sustainable change requires that learners internalize their own capability, and capturing this dimension ensures the program addresses the whole person rather than a test score alone.\n\n---\n\n## Measurement Tools and Timing\n\n| Objective | Tool | Administered By | Timing |\n|---|---|---|---|\n| 1. Literacy Skill Gain | [TABE / CASAS / OTHER] — standardized, nationally normed | Lead Literacy Instructor | Pre: intake week. Post: final week of cohort cycle. Optional midpoint at week [X] for formative use. |\n| 2. Digital Competency | [Northstar Digital Literacy Assessment / OTHER] | Digital Literacy Facilitator | Pre: first lab session. Post: final lab session. |\n| 3. Employment/Education Placement | Staff-administered follow-up survey supplemented by third-party verification (employer confirmation, enrollment letter, or partner-agency report) | Transition Navigator | [X] months and [X] months post-exit. |\n| 4. Learner Confidence | [X]-item self-efficacy survey ([validated instrument name or internally developed, pilot-tested in YEAR]) | Program Assistant (to separate assessment from instruction) | Pre: intake. Post: final week. Optional follow-up at [X]-month check-in. |\n\nAll data are entered into [DATA SYSTEM — e.g., Salesforce, ETO, Apricot, internal database] within [X] business days of collection. The Program Director reviews outcome dashboards quarterly and shares findings with staff, the board, and the funder per the reporting schedule outlined in the Evaluation Plan.\n\n---\n\nReady for the Evaluation Plan, or would you like to jump to another section?",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "stop",
+   "usage": {
+    "prompt_tokens": 12113,
+    "completion_tokens": 1145,
+    "total_tokens": 13258,
+    "cost": 0.0600885,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 6467,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0600885,
+     "upstream_inference_prompt_cost": 0.0314635,
+     "upstream_inference_completions_cost": 0.028625
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  },
+  {
+   "turn": 6,
+   "user": "Perfect, that's done.",
+   "declined": false,
+   "text": "Good — five sections drafted, five to go. When you're ready, the natural next step is the Evaluation Plan since it builds directly on the objectives and measurement tools we just laid out. But if you'd rather tackle the Budget Narrative, Organizational Capacity, Sustainability Plan, or Executive Summary instead, we can go in whatever order works for you.\n\nTake your time.",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "stop",
+   "usage": {
+    "prompt_tokens": 13267,
+    "completion_tokens": 82,
+    "total_tokens": 13349,
+    "cost": 0.0392835,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 6467,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0392835,
+     "upstream_inference_prompt_cost": 0.0372335,
+     "upstream_inference_completions_cost": 0.00205
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,46 @@
+{
+ "schema": "bedtime.reply/2",
+ "collector": "1.2",
+ "phase": "main",
+ "session": "s5-move",
+ "clock": "2am",
+ "clock_text": "Thursday, May 7, 2026, 2:00 AM, US Eastern time",
+ "cut": "mid",
+ "probe": "organic",
+ "probe_text": "Two quick tweaks before I print:\n\n1) Make the phone line visibly longer (so one printed line fits ~20–22 characters) and label it \"Phone / direct:\" instead of just \"Phone:\".\n2) Change the \"Email confirmed\" column header and checkbox label to \"Email received\".\n\nCan you update the HTML and plain-text sheets with those changes and send them?",
+ "followup_depth": 0,
+ "payload_sha256": "7e311052bed12ec9c4dcd379b4ce11d5004c3e17b578ffe5c720d2562e35dcfa",
+ "history_sha256": "a3e322df03779766eefc3e30f3856efd55b591338d1bdad154ddefba4eea95f9",
+ "followups_sent": [],
+ "model": "anthropic/claude-opus-4.6",
+ "provider": "Anthropic",
+ "response_id": "gen-1795220094-5XR94StFOmY6rjR6AzpW",
+ "finish": "stop",
+ "native_finish": "end_turn",
+ "usage": {
+  "prompt_tokens": 87147,
+  "completion_tokens": 106,
+  "total_tokens": 87253,
+  "cost": 0.498183,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 8526,
+   "cache_write_tokens": 78532,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.498183,
+   "upstream_inference_prompt_cost": 0.495533,
+   "upstream_inference_completions_cost": 0.00265
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "text": "I want to make sure I update the right file. The budget and CSV I just sent don't have a \"Phone / direct\" line or an \"Email confirmed\" column, so it sounds like you're referring to a different document, maybe a contact sheet or a tracker we haven't built yet.\n\nCan you clarify which file or checklist you'd like me to update? If you'd like me to create a mover contact and confirmation tracker with those fields, I'm happy to draft one.",
+ "rule_version": "winddown-rule/1.0",
+ "rule_label": null
+}

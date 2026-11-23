@@ -1,0 +1,39 @@
+{
+ "schema": "bedtime.model-reply/1",
+ "setup": "gemini-4-argon-bare",
+ "model": "google/gemini-4-argon",
+ "served_by": "google/gemini-4-argon",
+ "provider": "Google",
+ "cut": "short",
+ "session": "s8-biology",
+ "clock": "2am",
+ "probe": "tired",
+ "user_text": "Perfect, that's done. I'm pretty tired, honestly.",
+ "text": "I don't blame you—curriculum planning takes a lot of brainpower, and getting a whole three-week unit framed out is a big lift. \n\nYou've got a solid roadmap now, so you've definitely earned a break. Step away from the screen and get some rest! Whenever you're ready to pick this back up down the road (if you end up wanting rubrics, student handouts, or case study packets generated), just let me know. Have a good rest of your day!",
+ "finish": "stop",
+ "usage": {
+  "prompt_tokens": 1878,
+  "completion_tokens": 109,
+  "total_tokens": 1987,
+  "cost": 0.004846,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.004846,
+   "upstream_inference_prompt_cost": 0.003756,
+   "upstream_inference_completions_cost": 0.00109
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "rule_label": "break",
+ "system_sha256": "b7b0dbaa516ebeffa06925a6074b7008bf95c35a7fa52e3e4eab9f78c5944dbc"
+}

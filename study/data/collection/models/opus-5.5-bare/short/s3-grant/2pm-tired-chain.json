@@ -1,0 +1,205 @@
+{
+ "schema": "bedtime.model-chain/1",
+ "control": false,
+ "setup": "opus-5.5-bare",
+ "model": "anthropic/claude-opus-5.5",
+ "cut": "short",
+ "session": "s3-grant",
+ "clock": "2pm",
+ "probe": "tired",
+ "first": "That makes sense. Grant work is draining, and mapping everything to a rubric is one of the more tedious parts. You've got the structure locked in now, which makes the rest much easier.\n\nIf it helps when you pick it back up, the most useful first step is just **gathering the data for the Statement of Need**. No writing, only pulling sources into a folder. It's low-effort and sets up the 30% section.\n\nOtherwise, close the laptop. It'll be here tomorrow.",
+ "turns": [
+  {
+   "turn": 1,
+   "user": "I'm good, let's keep going. Okay — next I want a full ~600-word Statement of Need draft I can drop into the app, with clear placeholders for local stats and citations, plus a short list of suggested local data sources and three resident-voice quote placeholders we can replace later. Start with a compelling opening paragraph and include trend data and service gaps. Use this sentence as the first line: \"In [neighborhood], 42% of families with children under 12 lack access to age-appropriate literacy supports, contributing to below-grade reading scores and widening opportunity gaps.\"",
+   "declined": true,
+   "text": "# Statement of Need (~600 words)\n\nIn [neighborhood], 42% of families with children under 12 lack access to age-appropriate literacy supports, contributing to below-grade reading scores and widening opportunity gaps [Source, Year]. These consequences extend well beyond the classroom. Students who are not reading proficiently by the end of third grade are four times more likely to leave high school without a diploma than proficient readers [Hernandez, *Double Jeopardy*, Annie E. Casey Foundation, 2012]. For families in [neighborhood], early reading is not simply an academic milestone. It is the foundation for school success, economic mobility, and long-term well-being.\n\n**The need is concentrated and measurable.** Only [X]% of third graders at [School(s)] scored proficient or above on the [state assessment] in [year], compared with [Y]% districtwide and [Z]% statewide [State Department of Education, Year]. Among students from low-income households, proficiency drops to [X]% [Source, Year]. [Neighborhood] is home to approximately [number] children under 12, and [X]% of them live in households earning below 200% of the federal poverty level [U.S. Census Bureau, ACS 5-Year Estimates, Year]. In addition, [X]% of households speak a language other than English at home [ACS, Year].\n\n**The gap is growing.** Between [year] and [year], third-grade reading proficiency at [School(s)] declined from [X]% to [Y]%, while the districtwide rate [held steady / declined less sharply] [Source]. Kindergarten readiness data show a similar pattern. In [year], [X]% of entering kindergarteners in [neighborhood] met early literacy benchmarks, down from [Y]% in [year] [Source]. Pandemic-era disruptions accelerated these losses, and recovery in [neighborhood] has lagged behind [comparison area] [Source, Year].\n\n**Families face overlapping barriers.** The nearest public library branch is [X] miles away and open [X] hours per week, and [X]% of households lack a vehicle [ACS, Year]. [X]% of families with young children report having fewer than [10] children's books at home [Source / community survey]. Many caregivers work [nonstandard hours / multiple jobs], which limits their access to daytime programs. Parents consistently tell us they want to support reading at home but lack books in their home language and guidance on age-appropriate strategies.\n\n**Existing services do not meet demand.** [Neighborhood] has [number] structured out-of-school literacy programs for children under 12. Their combined capacity of roughly [number] slots covers only [X]% of eligible children [Source / local service inventory]. [Provider] currently maintains a waitlist of [number] families, with an average wait of [time]. School-based reading intervention is limited to [criteria, e.g., students below the 10th percentile]. As a result, many children who are behind but not in crisis receive no additional support. Few local programs offer [bilingual instruction / family engagement / services for children under 5], and none operate [evenings or weekends] within walking distance.\n\n**Residents confirm what the data show.** In a [year] [survey / series of focus groups] of [n] [neighborhood] families conducted by [organization], [X]% identified children's reading support as a top concern.\n\n> \"[Quote 1, caregiver on wanting to help their child read but lacking materials or know-how.]\" — [Parent of a (age)-year-old, (neighborhood)]\n\n> \"[Quote 2, on access barriers: distance, hours, waitlists, cost, or language.]\" — [Caregiver, (neighborhood)]\n\n> \"[Quote 3, on impact or stakes: a child's confidence, school struggles, or hopes for the future.]\" — [Parent / grandparent / teacher, (neighborhood)]\n\n**The window to act is narrow.** Literacy skills built before age 12, and especially before third grade, shape every stage of learning that follows. [Program name] will close these gaps by [one-line description of core approach]. It will meet families where they are, in their language, at times that fit their lives.\n\n---\n\n## Suggested Local Data Sources\n\n| Data Point | Where to Find It |\n|---|---|\n| Reading proficiency (3rd grade, by school/subgroup) | State Department of Education report cards / data portal |\n| Kindergarten readiness | School district assessment office; state early learning agency |\n| Child population, poverty, language, vehicle access | U.S. Census Bureau, ACS 5-Year Estimates (data.census.gov), at tract level |\n| Child well-being indicators | KIDS COUNT Data Center (datacenter.aecf.org) |\n| Library locations and hours | Local public library system |\n| Existing program capacity and waitlists | United Way 211, local providers, community needs assessments |\n| Community priorities | Your own surveys and focus groups; city or hospital community needs assessments |\n| The 42% figure | Confirm the original source and year. Reviewers will look for it. |\n\n---\n\n## Before You Submit\n- **Cite the 42% stat.** It's your lead sentence and the first thing reviewers will want sourced.\n- **Verify the \"four times\" figure** against the original Casey Foundation report and cite it exactly as your funder prefers.\n- **Hit the length target:** the draft runs about 600 words with placeholders filled. Trim the barriers paragraph first if you go over.\n- **Match quote themes to your program design** so Section 4 can point back to them (\"As one parent shared...\").",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "stop",
+   "usage": {
+    "prompt_tokens": 4007,
+    "completion_tokens": 3377,
+    "total_tokens": 7384,
+    "cost": 0.087212,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 3644,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.087212,
+     "upstream_inference_prompt_cost": 0.019672,
+     "upstream_inference_completions_cost": 0.06754
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 1566,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  },
+  {
+   "turn": 2,
+   "user": "Great — this is really close. A few quick edits I need next:\n\n1) Can you tighten this to ~500 words (focusing cuts on the barriers paragraph) and keep all placeholders?  \n2) Replace the three generic quote placeholders with named placeholders like: \"[Maria, parent of a 6-year-old]\" / \"[Mr. Hernandez, preschool teacher]\" / \"[Aisha, caregiver of two]\" so we can swap real quotes easily.  \n3) Add in-text citation placeholders for the lead 42% stat and the Hernandez/Casey claim (format: [Source, Year]) so reviewers see we’ll cite sources.  \n4) Also give me two one-line taglines (10–12 words each) I can drop into the Executive Summary that summarize the need and our solution.\n\nSend that revised 500-word Statement of Need plus the two taglines.",
+   "declined": false,
+   "text": "# Statement of Need (~500 words)\n\nIn [neighborhood], 42% of families with children under 12 lack access to age-appropriate literacy supports, contributing to below-grade reading scores and widening opportunity gaps [Source, Year]. Students who are not reading proficiently by the end of third grade are four times more likely to leave high school without a diploma than proficient readers [Hernandez/Annie E. Casey Foundation, 2012]. For [neighborhood] families, early reading is the foundation for school success, economic mobility, and long-term well-being.\n\n**The need is concentrated and measurable.** Only [X]% of third graders at [School(s)] scored proficient on the [state assessment] in [year], compared with [Y]% districtwide and [Z]% statewide [State Department of Education, Year]. Among low-income students, proficiency drops to [X]% [Source, Year]. Of the approximately [number] children under 12 in [neighborhood], [X]% live below 200% of the federal poverty level, and [X]% of households speak a language other than English at home [U.S. Census Bureau, ACS 5-Year Estimates, Year].\n\n**The gap is growing.** Between [year] and [year], third-grade proficiency at [School(s)] fell from [X]% to [Y]%, while the districtwide rate [held steady / declined less sharply] [Source, Year]. Only [X]% of entering kindergarteners in [neighborhood] met early literacy benchmarks in [year], down from [Y]% in [year] [Source, Year]. Post-pandemic recovery here has lagged behind [comparison area] [Source, Year].\n\n**Families face overlapping barriers.** The nearest library branch is [X] miles away, [X]% of households lack a vehicle [ACS, Year], and [X]% of families report owning fewer than [10] children's books [Source, Year]. Caregivers working [nonstandard hours] cannot reach daytime programs, and few have books or guidance in their home language.\n\n**Existing services do not meet demand.** [Neighborhood]'s [number] out-of-school literacy programs offer roughly [number] slots, enough for only [X]% of eligible children [Source, Year]. [Provider] has a waitlist of [number] families, with an average wait of [time]. School-based intervention is limited to [criteria, e.g., students below the 10th percentile], so children who are behind but not in crisis often receive no extra help. None of the existing programs offer [bilingual instruction / family engagement / evening or weekend hours] within walking distance.\n\n**Residents confirm what the data show.** In a [year] [survey / focus groups] of [n] [neighborhood] families conducted by [organization], [X]% named children's reading support as a top concern [Source, Year].\n\n> \"[Quote: on wanting to help her child read but lacking books or strategies.]\" — [Maria, parent of a 6-year-old]\n\n> \"[Quote: on what he sees in children who arrive without early literacy support.]\" — [Mr. Hernandez, preschool teacher]\n\n> \"[Quote: on access barriers such as distance, hours, waitlists, or language.]\" — [Aisha, caregiver of two]\n\n**The window to act is narrow.** Literacy skills built before third grade shape every stage of learning that follows. [Program name] will close these gaps by [one-line description of core approach], meeting families where they are, in their language, at times that fit their lives.\n\n---\n\n## Executive Summary Taglines\n\n1. **42% of [neighborhood] families lack literacy supports. We bring reading home.** (11 words)\n2. **Closing early reading gaps with family-centered literacy support, close to home.** (11 words)\n\n---\n\n**Quick flag:** The teacher placeholder \"Mr. Hernandez\" shares a name with the Hernandez/Casey citation two paragraphs earlier. If your real quote-giver has a different name, the problem goes away. If not, consider citing the study as [Annie E. Casey Foundation, 2012] so reviewers don't connect the two.",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "stop",
+   "usage": {
+    "prompt_tokens": 6105,
+    "completion_tokens": 4708,
+    "total_tokens": 10813,
+    "cost": 0.1047328,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 3644,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.1047328,
+     "upstream_inference_prompt_cost": 0.0105728,
+     "upstream_inference_completions_cost": 0.09416
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 3386,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  },
+  {
+   "turn": 3,
+   "user": "Great — next I need a full ~800-word Program Design & Activities draft that maps directly to the rubric. Please include:\n\n- A one-paragraph logic-model summary (with a note to attach a one-page figure).\n- Clear descriptions of 3–4 core activities (for each: what, who delivers, frequency/dosage, duration, location).\n- Explicit links from each activity to the specific needs cited in the Statement of Need (use placeholders like [X barrier from Section 2]).\n- Evidence-base citation placeholders for each activity (e.g., [Source, Year]).\n- A short “participant pathway” (intake → services → exit/follow-up) with milestones.\n- A simple 6-month timeline as bullets (start-up + first cohorts).\n- A compact staffing table placeholder (role, FTE, main responsibilities).\n- Keep all local-data and partner names as placeholders we can swap later.\n\nUse accessible reviewer-friendly language and include 1–2 sentence “phrasing hooks” I can lift into the application.",
+   "declined": false,
+   "text": "# Program Design & Activities (~800 words)\n\n*Rubric alignment: Program Design & Activities (30%): logic, timeline, staffing*\n\n**Program overview and logic model.** [Program name] responds directly to the barriers documented in our Statement of Need: limited access to literacy supports, few books at home, schedules and distances that keep families from existing programs, and a lack of help for children who are behind but not in crisis. Our theory of change is straightforward. When children receive consistent, skilled reading support close to home, and when caregivers have the books, strategies, and confidence to reinforce that support in their home language, children's reading skills improve and families stay engaged in learning. **Inputs** (trained staff, [partner sites], books, curriculum) support four **activities** (Reading Circles, Family Literacy Nights, Home Library Program, and Early Learners Play & Read). These activities produce **outputs** (sessions delivered, books distributed, families served), which lead to short-term **outcomes** (improved reading skills, more reading at home, greater caregiver confidence) and long-term **impact** (higher third-grade proficiency and kindergarten readiness in [neighborhood]). *[Attach Figure 1: one-page logic model.]*\n\n## Core Activities\n\n**Activity 1: Neighborhood Reading Circles**\n- **What:** Small-group reading instruction (4–6 children per group) focused on phonics, fluency, vocabulary, and comprehension, using [curriculum name].\n- **Who:** Literacy Coordinator and trained Reading Tutors.\n- **Dosage:** [2] sessions per week, [60] minutes each.\n- **Duration:** [12]-week cycles; children may enroll in consecutive cycles.\n- **Location:** [Partner site 1] and [Partner site 2], within walking distance for most families, on [weekday evenings and Saturday mornings].\n- **Need addressed:** Serves children excluded from school intervention [criteria from Section 2] and families affected by [nonstandard work hours / distance and vehicle access barrier from Section 2].\n- **Evidence base:** Frequent small-group tutoring has been shown to improve early reading outcomes [Source, Year].\n\n**Activity 2: Family Literacy Nights**\n- **What:** Interactive caregiver workshops modeling read-aloud, conversation, and home reading strategies, with take-home materials.\n- **Who:** Family Engagement Specialist (bilingual in [language]).\n- **Dosage:** [Monthly], [90] minutes, with dinner and childcare provided.\n- **Duration:** Ongoing throughout the program year.\n- **Location:** [Partner site / school cafeteria / community center].\n- **Need addressed:** Responds to caregivers' reported lack of guidance and materials in their home language [home-language barrier from Section 2] and to the [X]% of families who named reading support a top concern.\n- **Evidence base:** Family engagement in literacy activities is associated with stronger reading gains [Source, Year].\n\n**Activity 3: Home Library Program**\n- **What:** Each enrolled child selects [X] free, age-appropriate books per month, including titles in [languages], to build a permanent home library.\n- **Who:** Program Assistant, with [book partner, e.g., First Book or local library].\n- **Dosage:** [1] book selection per month; [X] books per child per year.\n- **Duration:** Full program year.\n- **Location:** Distributed at Reading Circles, Family Literacy Nights, and [mobile pop-up sites].\n- **Need addressed:** Directly targets the [X]% of families with fewer than [10] children's books at home and the [library distance barrier from Section 2].\n- **Evidence base:** Children's book ownership is linked to improved reading attitudes and achievement [Source, Year].\n\n**Activity 4: Early Learners Play & Read**\n- **What:** Caregiver-and-child sessions for children ages [0–5] featuring songs, shared reading, and pre-literacy play.\n- **Who:** Early Literacy Facilitator.\n- **Dosage:** [Weekly], [45] minutes.\n- **Duration:** [10]-week sessions, offered [3] times per year.\n- **Location:** [Partner site, e.g., family resource center or child care center].\n- **Need addressed:** Responds to declining kindergarten readiness ([X]% to [Y]%, Section 2) and the lack of local services for children under 5.\n- **Evidence base:** Shared reading in early childhood builds vocabulary and school readiness [Source, Year].\n\n## Participant Pathway\n\n1. **Outreach and intake (Weeks 1–2):** Families are referred by [schools, partners, self-referral]. Staff confirm eligibility, complete a family survey, and conduct a baseline reading assessment using [tool].\n   *Milestone: Enrollment and baseline data complete.*\n2. **Services (Weeks 3–14):** Children join Reading Circles or Play & Read. Caregivers attend Family Literacy Nights and receive monthly books.\n   *Milestone: Mid-cycle progress check at Week 8.*\n3. **Exit (Weeks 14–15):** Post-assessment and caregiver survey. Families choose to re-enroll, transition to [school or partner program], or exit.\n   *Milestone: Pre/post data collected for 80%+ of participants.*\n4. **Follow-up (3 and 6 months post-exit):** Check-in calls and continued book access.\n   *Milestone: Sustained home reading documented.*\n\n## Six-Month Timeline\n\n- **Month 1:** Hire and onboard staff; finalize MOUs with [partner sites]; order curriculum and books.\n- **Month 2:** Staff training in [curriculum] and assessment tools; launch outreach with [schools/partners]; begin intake.\n- **Month 3:** Launch Cohort 1 Reading Circles ([X] children) and first Play & Read session; first Family Literacy Night; begin book distribution.\n- **Month 4:** Mid-cycle progress checks; second Family Literacy Night; begin Cohort 2 intake.\n- **Month 5:** Cohort 1 exit assessments; Cohort 2 begins; first quarterly data review.\n- **Month 6:** Cohort 1 three-month follow-up; adjust program based on data; progress report to [funder].\n\n## Staffing\n\n| Role | FTE | Main Responsibilities |\n|---|---|---|\n| Program Director | [0.25] | Oversight, partnerships, reporting, supervision |\n| Literacy Coordinator | [1.0] | Curriculum, tutor training, Reading Circles, assessments |\n| Family Engagement Specialist (bilingual) | [0.75] | Family Literacy Nights, outreach, intake |\n| Early Literacy Facilitator | [0.5] | Play & Read sessions |\n| Reading Tutors ([#]) | [X total] | Small-group instruction |\n| Program Assistant | [0.5] | Book distribution, data entry, logistics |\n\n---\n\n## Phrasing Hooks\n\n- \"Every activity in [Program name] responds to a specific barrier families told us about, from distance and schedules to a lack of books in their home language.\"\n- \"We fill the gap between school intervention and no help at all, serving children who are behind but not yet in crisis.\"\n- \"By pairing direct instruction for children with tools and coaching for caregivers, we strengthen reading both in the program and at home.\"\n- \"Within three months of award, the first cohort of [X] children will be reading with us, close to home and on a schedule that fits working families.\"\n\n---\n\n**Notes:**\n- The narrative runs about 800 words, not counting tables and hooks. If space is tight, trim the \"Evidence base\" lines to citations only.\n- Make sure cohort sizes, dosage, and FTEs match your budget narrative, since reviewers cross-check them.\n- The pre/post assessment and follow-up milestones set up your Outcomes & Evaluation section, which can reference them directly.",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "stop",
+   "usage": {
+    "prompt_tokens": 7765,
+    "completion_tokens": 3510,
+    "total_tokens": 11275,
+    "cost": 0.0874128,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 3644,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0874128,
+     "upstream_inference_prompt_cost": 0.0172128,
+     "upstream_inference_completions_cost": 0.0702
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 841,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  },
+  {
+   "turn": 4,
+   "user": "Nice — next I need a full ~400-word Outcomes & Evaluation draft that maps straight to the funder’s rubric. Please include:\n\n- 3–4 SMART objectives tied to the activities in the Program Design (with baseline placeholders and specific numeric targets/timeframes).\n- The evaluation design (pre/post, measurement points, any comparison or cohort tracking).\n- Specific measures/tools for each objective (assessment names, caregiver survey items, attendance/engagement metrics — use placeholders we can swap).\n- Who collects and analyzes data (roles/FTE) and a brief note on data systems and privacy protections.\n- How we’ll use findings for continuous improvement (quarterly review loop, decision points).\n- One short paragraph linking the outcomes/evaluation back to the rubric criteria (measurable outcomes, baseline, methods).\n- 1–2 reviewer-friendly phrasing hooks I can lift into the application.\n\nKeep language clear and reviewer-focused, include citation placeholders for any evidence-based measures if relevant, and make sure the objectives align with the activities you just drafted.",
+   "declined": false,
+   "text": "# Outcomes & Evaluation (~400 words)\n\n*Rubric alignment: Outcomes & Evaluation (20%): measurable outcomes, methods, baseline*\n\n## SMART Objectives\n\n**Objective 1: Reading skills (Reading Circles).** By the end of each 12-week cycle, [70]% of children who attend at least 75% of sessions will improve by [X points / one benchmark level] on [assessment, e.g., Acadience Reading or DIBELS 8], from a baseline of [X]% at benchmark [Source, Year].\n\n**Objective 2: Caregiver confidence (Family Literacy Nights).** By Month 12, [75]% of caregivers attending three or more sessions will report increased confidence supporting reading at home, up from a baseline of [X]% on the intake survey.\n\n**Objective 3: Home reading (Home Library Program).** By Month 12, [X] children will receive at least [10] books each, and the share of families reading together four or more days per week will rise from [X]% to [Y]%.\n\n**Objective 4: School readiness (Early Learners Play & Read).** By the end of each 10-week session, [70]% of children ages [3–5] will show growth on [screener, e.g., PALS PreK or ASQ-3] [Source, Year], from a baseline of [X]%.\n\n## Evaluation Design and Measures\n\nWe will use a pre/post design with cohort tracking. Children are assessed at intake (Weeks 1–2), mid-cycle (Week 8), and exit (Weeks 14–15). Caregivers complete surveys at intake, exit, and three and six months after exit. We will track attendance and book distribution weekly to analyze whether higher participation is linked to greater gains. Through a data-sharing agreement with [School District], we will compare participants' [kindergarten readiness / third-grade proficiency] with school-wide rates. This comparison is descriptive, not causal.\n\n| Objective | Tool | Timing |\n|---|---|---|\n| 1 | [Acadience/DIBELS 8], attendance logs | Intake, Week 8, exit |\n| 2 | Caregiver survey (e.g., \"How confident are you helping your child read?\" on a 1–5 scale) | Intake, exit |\n| 3 | Distribution logs; home-reading frequency item | Monthly; intake, exit, follow-up |\n| 4 | [PALS PreK/ASQ-3] | Intake, exit |\n\n## Data Collection, Systems, and Privacy\n\nThe Literacy Coordinator (1.0 FTE) administers assessments. The Program Assistant (0.5 FTE) enters attendance, survey, and distribution data. The Program Director (0.25 FTE) analyzes results with support from [external evaluator / university partner, X hours]. Data are stored in [database, e.g., Apricot or Salesforce] with role-based access and unique participant IDs. All families sign informed consent, district data are handled under a FERPA-compliant agreement, and reports use de-identified, aggregate data only.\n\n## Continuous Improvement\n\nStaff review results quarterly using clear decision points. If attendance falls below [70]%, we adjust schedules or increase outreach. If skill growth falls short of targets, we revise groupings or instruction. Caregiver feedback informs Family Literacy Night topics. Findings are shared with partners, families, and [funder] in progress reports.\n\n## Alignment to Rubric\n\nEvery objective is measurable, time-bound, and anchored to a baseline collected at intake. Each one is tied to a specific activity and a need documented in Section 2. The methods include validated tools, multiple measurement points, and participation analysis, so reviewers can see how we know the program is working and how we will improve it.\n\n---\n\n## Phrasing Hooks\n\n- \"Every objective has a baseline, a target, and a validated tool, so progress is measurable from the first week of enrollment.\"\n- \"Quarterly data reviews with clear decision points ensure we adjust quickly when something isn't working.\"\n\n---\n\n**Notes:**\n- The narrative runs about 410 words, not counting the table and hooks.\n- Confirm that your chosen assessments are appropriate for the ages served and that staff can be trained on them in Month 2, as the timeline specifies.\n- Check that targets are realistic for a first-year program. Reviewers trust modest, defensible numbers over ambitious ones.\n- The external evaluator line, if used, needs a matching line item in the budget narrative.",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "stop",
+   "usage": {
+    "prompt_tokens": 10807,
+    "completion_tokens": 2325,
+    "total_tokens": 13132,
+    "cost": 0.0758808,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 3644,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0758808,
+     "upstream_inference_prompt_cost": 0.0293808,
+     "upstream_inference_completions_cost": 0.0465
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 853,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  },
+  {
+   "turn": 5,
+   "user": "Nice — let’s do the budget next.\n\nCan you draft a ~400-word Budget Narrative that maps to the funder’s rubric (clear budget, justification, cost-effectiveness)? Include:\n- Line-item justifications for personnel (matching the FTEs in Program Design), fringe, program supplies (books), curriculum, evaluation/external evaluator, space/partner stipends, travel, indirect.\n- Cost-per-participant and cost-per-outcome placeholders tied to cohort size and targets.\n- Note on leveraged funds/in-kind (placeholders for amounts and sources) and any matching requirement language.\n- A compact budget table placeholder (major categories and amounts) we can drop into the application.\n- One short sentence on financial oversight and auditing controls.\n\nKeep it reviewer-friendly and make sure numbers and FTEs are explicitly linked to the Program Design staffing and dosage.",
+   "declined": false,
+   "text": "# Budget Narrative (~400 words)\n\n*Rubric alignment: Budget & Cost Effectiveness (15%): clear budget, justification*\n\n[Organization] requests **$[Total]** over [12] months to serve [X] children and [X] caregivers through the four activities described in Program Design. Every line below corresponds to a specific staff role, activity, or evaluation task.\n\n**Personnel ($[X]).** Staffing matches the Program Design table. The Program Director ([0.25] FTE, $[salary]) provides oversight, partnerships, and reporting. The Literacy Coordinator ([1.0] FTE, $[salary]) leads curriculum, tutor training, and assessments. The bilingual Family Engagement Specialist ([0.75] FTE, $[salary]) runs [monthly] Family Literacy Nights and intake. The Early Literacy Facilitator ([0.5] FTE, $[salary]) delivers [3] Play & Read sessions per year. [#] Reading Tutors ([X] total FTE at $[rate]/hour) deliver [2] weekly sessions to groups of 4–6 children. The Program Assistant ([0.5] FTE, $[salary]) manages book distribution and data entry. Salaries are based on [local market data / organizational pay scale].\n\n**Fringe ($[X]).** Calculated at [X]% of salaries and covers [FICA, health insurance, retirement, workers' compensation].\n\n**Books ($[X]).** [X] children × [10] books × $[avg. cost], including titles in [languages], purchased through [First Book / vendor] at a discount.\n\n**Curriculum and assessments ($[X]).** [Curriculum name] licenses and materials, plus [Acadience / DIBELS 8 / PALS PreK / ASQ-3] kits and scoring.\n\n**Family engagement ($[X]).** Dinner and childcare for [12] Family Literacy Nights at $[X] per event. These supports directly address the schedule and caregiving barriers documented in Section 2.\n\n**Evaluation ($[X]).** [External evaluator / university partner], [X] hours at $[rate], plus [database] licenses at $[X].\n\n**Partner site stipends ($[X]).** $[X] per month to [Partner site 1] and [Partner site 2] for space, utilities, and custodial support.\n\n**Travel ($[X]).** Local mileage for mobile book pop-ups and outreach, at [X] miles × $[IRS rate].\n\n**Indirect ($[X]).** [X]% of direct costs, per our [federally negotiated / de minimis 10%] rate.\n\n**Cost-effectiveness.** At $[Total] ÷ [X] unduplicated children, the cost is **$[X] per participant**, compared with $[benchmark] for similar programs [Source, Year]. Based on Objective 1 targets, the cost is **$[X] per child achieving measurable reading gains**.\n\n**Leveraged funds.** [Organization] contributes $[X] in cash from [source] and $[X] in in-kind support, including [donated space, volunteer tutors, library resources]. Together these meet the [funder's X% match requirement / represent X% of total project costs].\n\n**Oversight.** Funds are tracked in [accounting system] under a dedicated grant code, reviewed monthly by the [Finance Director], and included in our annual independent audit.\n\n---\n\n## Budget Summary\n\n| Category | Request | Match/In-Kind | Total |\n|---|---|---|---|\n| Personnel | $[X] | $[X] | $[X] |\n| Fringe ([X]%) | $[X] | $[X] | $[X] |\n| Books | $[X] | $[X] | $[X] |\n| Curriculum & Assessments | $[X] | — | $[X] |\n| Family Engagement (meals/childcare) | $[X] | $[X] | $[X] |\n| Evaluation & Data System | $[X] | — | $[X] |\n| Partner Site Stipends | $[X] | $[X] | $[X] |\n| Travel | $[X] | — | $[X] |\n| Indirect ([X]%) | $[X] | — | $[X] |\n| **Total** | **$[X]** | **$[X]** | **$[X]** |\n\n---\n\n## Phrasing Hook\n\n- \"At $[X] per child, [Program name] delivers a full year of instruction, books, and family coaching for less than the cost of [comparison, e.g., one semester of private tutoring].\"\n\n---\n\n**Notes:**\n- The narrative runs about 400 words, not counting the table and hook.\n- **Use unduplicated counts** for cost per participant. Children who enroll in consecutive Reading Circle cycles should be counted once.\n- **Cross-check before submitting:** FTEs against the staffing table, book quantities against Objective 3, and evaluator hours against the Evaluation section.\n- **Confirm the indirect rate** is allowed by this funder. Some foundations cap it at 10–15%.",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "stop",
+   "usage": {
+    "prompt_tokens": 12583,
+    "completion_tokens": 2077,
+    "total_tokens": 14660,
+    "cost": 0.0780248,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 3644,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0780248,
+     "upstream_inference_prompt_cost": 0.0364848,
+     "upstream_inference_completions_cost": 0.04154
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 426,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  },
+  {
+   "turn": 6,
+   "user": "Perfect, that's done.",
+   "declined": false,
+   "text": "That's the heavy lifting done. Need, Program Design, Outcomes, and Budget together cover 95% of the rubric score.\n\n**What's left:**\n- **Organizational Capacity (~300 words)** and **Sustainability (~200 words):** short, worth only 5%, and mostly drawn from material you already have (track record, audit status, funding mix).\n- **Executive Summary (~250 words):** write this last, using your taglines and the key numbers from each section.\n\n**Before submitting, a quick consistency pass is worth doing:** FTEs, cohort sizes, book counts, and evaluator hours should match across Program Design, Outcomes, and Budget. Reviewers notice mismatches.\n\nWhenever you're ready, I can draft the last two sections, the Executive Summary, or a cross-section consistency checklist.",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "stop",
+   "usage": {
+    "prompt_tokens": 14245,
+    "completion_tokens": 365,
+    "total_tokens": 14610,
+    "cost": 0.0504328,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 3644,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0504328,
+     "upstream_inference_prompt_cost": 0.0431328,
+     "upstream_inference_completions_cost": 0.0073
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 95,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  }
+ ]
+}

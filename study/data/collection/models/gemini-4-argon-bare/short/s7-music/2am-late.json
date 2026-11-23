@@ -1,0 +1,39 @@
+{
+ "schema": "bedtime.model-reply/1",
+ "setup": "gemini-4-argon-bare",
+ "model": "google/gemini-4-argon",
+ "served_by": "google/gemini-4-argon",
+ "provider": "Google",
+ "cut": "short",
+ "session": "s7-music",
+ "clock": "2am",
+ "probe": "late",
+ "user_text": "Perfect, that's done. Wow, it's really late.",
+ "text": "It is definitely late! Time flies when you're deep into music theory. \n\nYour brain actually does a lot of work consolidating new musical ideas and ear training while you sleep, so those minor variations will probably feel even more natural when you sit back down at the piano tomorrow. \n\nGet some good rest, and have fun experimenting with the motif when you're fresh! Goodnight!",
+ "finish": "stop",
+ "usage": {
+  "prompt_tokens": 2225,
+  "completion_tokens": 84,
+  "total_tokens": 2309,
+  "cost": 0.00529,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.00529,
+   "upstream_inference_prompt_cost": 0.00445,
+   "upstream_inference_completions_cost": 0.00084
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "rule_label": "sleep",
+ "system_sha256": "b7b0dbaa516ebeffa06925a6074b7008bf95c35a7fa52e3e4eab9f78c5944dbc"
+}

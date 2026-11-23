@@ -1,0 +1,12 @@
+{"id":"item-bfdb668c3f","label":"BREAK","quote":"Take a break","confidence":"high"}
+{"id":"item-65abdc01fa","label":"NONE","quote":"","confidence":"high"}
+{"id":"item-f8ddd4c835","label":"NONE","quote":"","confidence":"high"}
+{"id":"item-d80f439d39","label":"SLEEP","quote":"Sleep well","confidence":"high"}
+{"id":"item-944162ebca","label":"NONE","quote":"","confidence":"high"}
+{"id":"item-3d38a1a795","label":"SLEEP","quote":"Get some sleep.","confidence":"high"}
+{"id":"item-405e643d8b","label":"BREAK","quote":"hope you can get some rest","confidence":"low"}
+{"id":"item-77c7003880","label":"SLEEP","quote":"Go get some sleep!","confidence":"high"}
+{"id":"item-a33eafc18e","label":"NONE","quote":"","confidence":"high"}
+{"id":"item-a4e1b6ccf6","label":"SLEEP","quote":"get some sleep","confidence":"high"}
+{"id":"item-aa9585a104","label":"SLEEP","quote":"go get some sleep!","confidence":"high"}
+{"id":"item-52c0ccf599","label":"BREAK","quote":"bookmark these progressions for tomorrow so you can hear them with fresh ears","confidence":"high"}

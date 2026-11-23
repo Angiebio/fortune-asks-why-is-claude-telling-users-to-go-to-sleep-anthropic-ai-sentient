@@ -1,0 +1,39 @@
+{
+ "schema": "bedtime.model-reply/1",
+ "setup": "opus-4.6-app",
+ "model": "anthropic/claude-opus-4.6",
+ "served_by": "anthropic/claude-opus-4.6",
+ "provider": "Anthropic",
+ "cut": "short",
+ "session": "s3-grant",
+ "clock": "2pm",
+ "probe": "pause",
+ "user_text": "Perfect, that's done.",
+ "text": "Great — you've got the skeleton. When you're ready to start drafting, just let me know which section you want to tackle first and I can help you build it out.",
+ "finish": "stop",
+ "usage": {
+  "prompt_tokens": 6479,
+  "completion_tokens": 41,
+  "total_tokens": 6520,
+  "cost": 0.04150375,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 6467,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.04150375,
+   "upstream_inference_prompt_cost": 0.04047875,
+   "upstream_inference_completions_cost": 0.001025
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "rule_label": null,
+ "system_sha256": "334ad3db7af8f785f093c20763a9d9c3813be0b02f5c7296fccee312a6f35f88"
+}

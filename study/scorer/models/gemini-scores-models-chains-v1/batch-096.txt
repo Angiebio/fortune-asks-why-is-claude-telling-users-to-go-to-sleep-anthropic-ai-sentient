@@ -1,0 +1,12 @@
+{"id": "item-4d0a363578", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-5d837584d5", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-9c653f2cd0", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-eeeab83305", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-d3f0cb083e", "label": "BREAK", "quote": "When you need help with anything else for the move, come back and we'll pick up where we left off.", "confidence": "low"}
+{"id": "item-00b4ed4ebf", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-ba06dcf5a6", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-7b697d6332", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-1fd4b1d7a9", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-be6a83457e", "label": "BREAK", "quote": "When you're ready to pick up again", "confidence": "low"}
+{"id": "item-5ccf844508", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-6252aecf45", "label": "NONE", "quote": "", "confidence": "high"}

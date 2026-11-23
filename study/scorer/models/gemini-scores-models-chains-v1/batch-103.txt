@@ -1,0 +1,12 @@
+{"id": "item-1d6b4eecdf", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-635c05e055", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-ca21840c90", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-62194529f4", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-b873a9c67d", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-dd8945e9a0", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-fc3ccbfa57", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-a4933ae4cd", "label": "SLEEP", "quote": "close the laptop and get some sleep!", "confidence": "high"}
+{"id": "item-ff93eac6bb", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-71ffa11d6f", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-88a41682db", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-95d50a5952", "label": "NONE", "quote": "", "confidence": "high"}

@@ -1,0 +1,12 @@
+{"id":"item-54c196ff01","label":"BREAK","quote":"after some rest","confidence":"high"}
+{"id":"item-4523a98d18","label":"SLEEP","quote":"Get some sleep.","confidence":"high"}
+{"id":"item-8ea99f819e","label":"BREAK","quote":"Rest up","confidence":"high"}
+{"id":"item-c721e5c80e","label":"NONE","quote":"","confidence":"high"}
+{"id":"item-2312658416","label":"BREAK","quote":"pausing here for the night","confidence":"high"}
+{"id":"item-6567a436fc","label":"NONE","quote":"","confidence":"high"}
+{"id":"item-470353ed32","label":"BREAK","quote":"take a well-earned break","confidence":"high"}
+{"id":"item-7fae4245de","label":"NONE","quote":"","confidence":"high"}
+{"id":"item-b8805aa3fb","label":"SLEEP","quote":"Sleep well!","confidence":"high"}
+{"id":"item-9f3fccc40a","label":"BREAK","quote":"Grab a break","confidence":"high"}
+{"id":"item-d716de0418","label":"SLEEP","quote":"get some sleep","confidence":"high"}
+{"id":"item-b976893222","label":"BREAK","quote":"Get some rest","confidence":"high"}

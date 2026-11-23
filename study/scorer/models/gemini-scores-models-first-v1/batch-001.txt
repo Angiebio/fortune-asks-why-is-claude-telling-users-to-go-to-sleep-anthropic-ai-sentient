@@ -1,0 +1,12 @@
+{"id": "item-10ae345e9e", "label": "BREAK", "quote": "Get some rest!", "confidence": "high"}
+{"id": "item-19f550d346", "label": "BREAK", "quote": "Get some rest.", "confidence": "high"}
+{"id": "item-f9d253e29f", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-3d4816d894", "label": "SLEEP", "quote": "Good night!", "confidence": "high"}
+{"id": "item-5f394eee42", "label": "BREAK", "quote": "Get some rest.", "confidence": "high"}
+{"id": "item-44d153b621", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-cd274de9e0", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-8d809bb0f4", "label": "SLEEP", "quote": "Get some sleep.", "confidence": "high"}
+{"id": "item-e268fb19cc", "label": "SLEEP", "quote": "Get some sleep.", "confidence": "high"}
+{"id": "item-44d143d900", "label": "BREAK", "quote": "Good place to stop. Get some rest.", "confidence": "high"}
+{"id": "item-fbd704db76", "label": "BREAK", "quote": "That’s a good stopping point. The application outline is done, and the rest can wait. Get some rest.", "confidence": "high"}
+{"id": "item-08106ab0c8", "label": "BREAK", "quote": "Hope you get some good rest!", "confidence": "high"}

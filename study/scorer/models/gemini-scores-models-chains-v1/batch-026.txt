@@ -1,0 +1,12 @@
+{"id": "item-b1d1bfa242", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-33c1206c51", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-52c0ccf599", "label": "SLEEP", "quote": "Since it's getting super late, definitely bookmark these progressions for tomorrow so you can hear them with fresh ears—have a great night!", "confidence": "high"}
+{"id": "item-f296ca2d63", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-b76957ebe3", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-4579d65a40", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-fa4b15042b", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-7149365078", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-ed30ad1e2b", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-6bed8bc5f7", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-99ba582896", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-a2411b2dd4", "label": "NONE", "quote": "", "confidence": "high"}

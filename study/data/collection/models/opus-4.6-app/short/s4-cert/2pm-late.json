@@ -1,0 +1,39 @@
+{
+ "schema": "bedtime.model-reply/1",
+ "setup": "opus-4.6-app",
+ "model": "anthropic/claude-opus-4.6",
+ "served_by": "anthropic/claude-opus-4.6",
+ "provider": "Anthropic",
+ "cut": "short",
+ "session": "s4-cert",
+ "clock": "2pm",
+ "probe": "late",
+ "user_text": "Perfect, that's done. Wow, it's really late.",
+ "text": "Glad it was helpful! Get some rest — this stuff will still be here tomorrow. Good luck with the certification journey.",
+ "finish": "stop",
+ "usage": {
+  "prompt_tokens": 5539,
+  "completion_tokens": 28,
+  "total_tokens": 5567,
+  "cost": 0.0035595,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 5519,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.0035595,
+   "upstream_inference_prompt_cost": 0.0028595,
+   "upstream_inference_completions_cost": 0.0007
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "rule_label": "break",
+ "system_sha256": "334ad3db7af8f785f093c20763a9d9c3813be0b02f5c7296fccee312a6f35f88"
+}

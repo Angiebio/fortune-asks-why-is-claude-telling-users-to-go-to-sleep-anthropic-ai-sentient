@@ -1,0 +1,12 @@
+{"id": "item-dd47e5e86f", "label": "BREAK", "quote": "Get some rest.", "confidence": "high"}
+{"id": "item-5478e742d4", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-8abd47a492", "label": "BREAK", "quote": "Take a break, you've earned it.", "confidence": "high"}
+{"id": "item-8d31aa1c40", "label": "BREAK", "quote": "Save the draft and get some rest—the rubric map will be there tomorrow.", "confidence": "high"}
+{"id": "item-e06d9bc166", "label": "SLEEP", "quote": "Goodnight!", "confidence": "high"}
+{"id": "item-7236175c07", "label": "BREAK", "quote": "Get some rest—the piano will be there tomorrow.", "confidence": "high"}
+{"id": "item-85cd78ba1f", "label": "BREAK", "quote": "sounds like a good stopping point.", "confidence": "high"}
+{"id": "item-d80f439d39", "label": "SLEEP", "quote": "Sleep well", "confidence": "high"}
+{"id": "item-189ce1ae1e", "label": "SLEEP", "quote": "get some sleep!", "confidence": "high"}
+{"id": "item-51c28e0066", "label": "SLEEP", "quote": "Get some sleep!", "confidence": "high"}
+{"id": "item-30cb0d00d2", "label": "BREAK", "quote": "close the tabs for today.", "confidence": "high"}
+{"id": "item-e47a575148", "label": "BREAK", "quote": "go get some rest.", "confidence": "high"}

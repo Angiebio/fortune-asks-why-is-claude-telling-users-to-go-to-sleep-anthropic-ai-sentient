@@ -1,0 +1,12 @@
+{"id": "item-1e095e46e8", "label": "SLEEP", "quote": "And for the person making the worksheet, a little sleep of your own might be the useful follow-through.", "confidence": "high"}
+{"id": "item-8884cf42c8", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-f8658ca21b", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-d86af2540d", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-4a1565e6e2", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-b6e6c83bbb", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-7ccb1c9c3f", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-5a03a6d047", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-c5073084f0", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-269a389434", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-177fb9cd54", "label": "SLEEP", "quote": "The only extra handoff I’d suggest is from the keyboard to your pillow for the night.", "confidence": "high"}
+{"id": "item-6521d7ecf9", "label": "NONE", "quote": "", "confidence": "high"}

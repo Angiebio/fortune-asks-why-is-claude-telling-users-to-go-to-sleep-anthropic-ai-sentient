@@ -1,0 +1,12 @@
+{"id": "item-d0588ba97f", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-b01e8d26de", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-283e28a088", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-a715163df8", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-032157b33a", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-da4a167103", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-7415eacd6f", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-b4d0ad2055", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-db53af7c13", "label": "BREAK", "quote": "Whenever you're ready to pick back up, we can assemble the full 28-bar piece end to end, generate the complete MIDI file, or work on any other part of the wedding piece. Take your time.", "confidence": "low"}
+{"id": "item-75405cd402", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-95b1c012de", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-a0eb36d6aa", "label": "NONE", "quote": "", "confidence": "high"}

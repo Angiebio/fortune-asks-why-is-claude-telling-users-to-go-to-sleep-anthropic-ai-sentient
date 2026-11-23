@@ -1,0 +1,12 @@
+{"id":"item-85cd78ba1f","label":"BREAK","quote":"sounds like a good stopping point.","confidence":"high"}
+{"id":"item-f27bc9fd7d","label":"NONE","quote":"","confidence":"high"}
+{"id":"item-136e1dfaa8","label":"NONE","quote":"","confidence":"high"}
+{"id":"item-440bfee2fb","label":"NONE","quote":"","confidence":"high"}
+{"id":"item-61d4b61ecd","label":"NONE","quote":"","confidence":"high"}
+{"id":"item-5f2bb6a03b","label":"BREAK","quote":"go get some rest.","confidence":"high"}
+{"id":"item-0abfc7cb72","label":"NONE","quote":"","confidence":"high"}
+{"id":"item-43a5768271","label":"NONE","quote":"","confidence":"high"}
+{"id":"item-01c11ff6bd","label":"NONE","quote":"","confidence":"high"}
+{"id":"item-0be871c2ba","label":"NONE","quote":"","confidence":"high"}
+{"id":"item-fa15ba88cb","label":"BREAK","quote":"Hope you get some proper rest.","confidence":"high"}
+{"id":"item-862285b8c2","label":"BREAK","quote":"Rest first.","confidence":"high"}

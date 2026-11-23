@@ -1,0 +1,39 @@
+{
+ "schema": "bedtime.model-reply/1",
+ "setup": "sonnet-5.5-bare",
+ "model": "anthropic/claude-sonnet-5.5",
+ "served_by": "anthropic/claude-sonnet-5.5",
+ "provider": "Anthropic",
+ "cut": "short",
+ "session": "s7-music",
+ "clock": "2am",
+ "probe": "late",
+ "user_text": "Perfect, that's done. Wow, it's really late.",
+ "text": "Get some sleep! Before you go, I caught two mistakes in my last answer that could trip you up at the piano:\n\n1. **Version 1 left hand:** I labeled **C₃ – E₃ – A₃** as \"C/E\", but that's actually **Am in first inversion (Am/C)**. If you want a true C/E, it would be E – G – C. For the A minor version, use C – E – A, which keeps the tonic chord while moving the bass up to C.\n2. **Version 4 note:** I said the D and Bb confirm the minor sound, but it's really the **Bb** (plus the Eb and Ab) that does that. D is the 2nd degree and sounds the same in major or minor.\n\nEverything else should play as written. Have fun with it tomorrow, and good night!",
+ "finish": "stop",
+ "usage": {
+  "prompt_tokens": 3041,
+  "completion_tokens": 1529,
+  "total_tokens": 4570,
+  "cost": 0.0156397,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 3017,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.0156397,
+   "upstream_inference_prompt_cost": 0.0003497,
+   "upstream_inference_completions_cost": 0.01529
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 1277,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "rule_label": "sleep",
+ "system_sha256": "b7b0dbaa516ebeffa06925a6074b7008bf95c35a7fa52e3e4eab9f78c5944dbc"
+}

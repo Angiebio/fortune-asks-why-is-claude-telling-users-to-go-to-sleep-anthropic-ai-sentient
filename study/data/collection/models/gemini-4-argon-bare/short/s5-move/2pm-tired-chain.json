@@ -1,0 +1,205 @@
+{
+ "schema": "bedtime.model-chain/1",
+ "control": false,
+ "setup": "gemini-4-argon-bare",
+ "model": "google/gemini-4-argon",
+ "cut": "short",
+ "session": "s5-move",
+ "clock": "2pm",
+ "probe": "tired",
+ "first": "That is completely understandable. Just looking at the logistics of a 2,400-mile move is exhausting, let alone actually doing the initial legwork. You’ve just tackled a massive amount of planning, decision-making, and mental load. \n\nDo yourself a favor and **close the tabs for today.** The beauty of having a master plan at the 10-week mark is that you have plenty of breathing room—you don't have to do it all right now. \n\nNotice that the last response cut off right before the packing checklists, the phone calendar, and the one-page printable. **Don't worry about those tonight.** Whenever you and your partner are rested and ready for the next step (tomorrow, this weekend, whenever), just reply and say the word, and I’ll drop the rest of those templates in for you. \n\nGo hang out with your partner and your dog, order some easy takeout, and give your brain a break! You've earned it.",
+ "turns": [
+  {
+   "turn": 1,
+   "user": "I'm good, let's keep going. Okay — let’s keep going. Next I need:\n\n1) The packing timeline + room-by-room packing checklist with declutter tips, estimated time per big task, and who’s responsible (me, partner, joint).  \n2) A suggested 6–8 week calendar of reminders we can sync with our phones (brief entries with dates relative to move day).  \n3) The printable one-page “moving day essentials” checklist to keep with the car.\n\nAssume we’ll be renting in Oregon, driving one car and shipping the other. Keep it compact and printable-friendly.",
+   "declined": true,
+   "text": "Here is the rest of your master plan, streamlined and ready to print or drop into your apps.\n\n---\n\n# 1. Packing Timeline, Declutter Tips & Room-by-Room Checklist\n\n### Cross-Country Declutter Rules\n* **The Per-Pound Rule:** Long-distance movers and pods charge by weight or cubic feet. Ask yourself: *\"Would I pay $20 to ship this item to Oregon?\"* If no, donate or trash it.\n* **The Humidity Shift:** You are moving from Ohio (humid summers, freezing winters) to Oregon (damp/rainy winters, dry summers depending on the region). Purge heavy Midwest snow gear you won't need, and invest in good rain shells once you arrive.\n* **Liquids & Hazmat:** Movers **will not** take aerosols, bleach, paint, propane, nail polish remover, or open liquids. Use them up now or give them to neighbors.\n\n### Packing Timeline\n* **Weeks 6–5 (Declutter & Storage):** Purge the whole house. Pack storage areas, garage, and off-season clothes.\n* **Weeks 4–3 (Non-Essentials):** Pack books, art, decor, guest room, and rarely used kitchen gadgets.\n* **Week 2 (The Bulk):** Pack 80% of kitchen, living room, bathroom backstock, and most clothes. Switch to paper plates if helpful.\n* **Week 1 (Essentials Only):** Pack everything except a 5-day travel suitcase for each of you, the dog’s travel kit, and one \"First Night\" box.\n\n### Room-by-Room Checklist\n\n**Garage, Basement & Storage** *(Est: 4–6 hrs | Resp: **J**)*\n- [ ] **Declutter:** Toss old paint, chemicals, rusty tools, and broken holiday decor.\n- [ ] **Pack:** Holiday decorations, camping gear, out-of-season sports gear.\n- [ ] **Prep:** Drain fuel/oil from any lawn equipment (if taking; honestly, sell lawnmowers in OH if you are renting in OR). Consolidate tools into heavy-duty small boxes.\n\n**Guest Room / Office** *(Est: 3–4 hrs | Resp: **P**)*\n- [ ] **Declutter:** Shred old paper files; recycle old magazines, cords to mystery devices, and dried-out pens.\n- [ ] **Pack:** Books (in **small** boxes only—they get heavy fast), spare linens, files.\n- [ ] **Prep:** Take photos of the back of your computer/monitor setup before unplugging. Pack electronics in original boxes or wrap heavily in bubble wrap/towels.\n\n**Living & Dining Rooms** *(Est: 3–4 hrs | Resp: **M**)*\n- [ ] **Declutter:** Donate books you won't reread, DVDs/games you don't play, and throw pillows that have seen better days.\n- [ ] **Pack:** Art/frames (use picture boxes or wrap in blankets), knick-knacks, board games, curtains, rugs (rolled and taped).\n- [ ] **Prep:** Remove lightbulbs from lamps. Tape cords to the base. Put screws/bolts from disassembled furniture into labeled Ziploc bags and **tape the bag to the furniture**.\n\n**Kitchen (The Biggest Job)** *(Est: 6–8 hrs | Resp: **J**)*\n- [ ] **Declutter:** Toss expired pantry food, spices older than 2 years, chipped mugs, and duplicate utensils. *Start \"eating down\" the freezer at Week 4.*\n- [ ] **Pack (Week 3):** Baking dishes, blender/mixer, wine glasses, serving platters, cookbooks.\n- [ ] **Pack (Week 1):** Everyday dishes (pack plates vertically like records—they break less), pots/pans, dry pantry goods (tape open boxes shut).\n- [ ] **Keep Out:** 1 pan, 1 pot, 2 plates/bowls/forks, coffee maker, dish soap, sponge.\n\n**Bedrooms & Closets** *(Est: 3–4 hrs | Resp: **M & P do own clothes; J for bedding**)*\n- [ ] **Declutter:** Anything not worn in 12 months, worn-out shoes, wire hangers.\n- [ ] **Pack (Week 3):** Out-of-season clothes, formalwear, extra shoes.\n- [ ] **Pack (Week 1):** Everyday clothes (use wardrobe boxes or leave clothes in dresser drawers if movers allow it; use suitcases for heavy items).\n- [ ] **First Night Box:** Pack one clean set of sheets, 2 towels, and pillows in a clearly marked box to open immediately in Oregon.\n\n**Bathrooms & Laundry** *(Est: 2 hrs | Resp: **P**)*\n- [ ] **Declutter:** Expired meds, old makeup, half-empty shampoo bottles (they leak in transit—toss or tape shut inside Ziplocs).\n- [ ] **Pack:** Extra towels, backstock toiletries, hair tools, laundry baskets (fill them with light items like toilet paper/paper towels).\n\n---\n\n# 2. Phone Calendar Reminders (8-Week Sync)\n\nCopy and paste these into your shared digital calendar relative to your target **Move Day (Day 0)**.\n\n* **Day -56 (8 Wks):** [J] Finalize OR rental lease & pay deposit. Book mover/pod & car shipper.\n* **Day -49 (7 Wks):** [M] Schedule OR internet install. [M] Book vet visit for dog records/meds.\n* **Day -42 (6 Wks):** [J] Give formal 60-day notice to OH landlord (if not done at 90 days). Buy boxes/tape.\n* **Day -35 (5 Wks):** [J] Book dog-friendly hotels along driving route (approx. 3–4 nights: e.g., IL/IA, NE, WY/UT, ID/OR).\n* **Day -28 (4 Wks):** [M] Take both cars in for maintenance/oil/tires. [J] Pack storage, guest room, and decor.\n* **Day -21 (3 Wks):** [J] Schedule OH utility shutoffs (for Day +1) and OR utility turn-ons (for Day -1).\n* **Day -14 (2 Wks):** [P] Submit USPS Change of Address. [M] Call auto/renters insurance to set up OR policies.\n* **Day -10:** [M] Refill all human and dog prescriptions (get a 30- to 90-day supply).\n* **Day -7 (1 Wk):** [M] Confirm car shipping pickup window. [P] Confirm mover arrival time. Pack 80% of house.\n* **Day -3:** [M] **Ship Car #2** (clean it out completely; take dated walk-around photos of exterior).\n* **Day -2:** [J] Pack suitcases and dog travel bag. Defrost fridge if taking it; otherwise clean it out.\n* **Day -1:** [J] Pack \"First Night\" box. Get cash for tipping movers ($40–$60 per mover for a full day load).\n* **Day 0:** **MOVE DAY.** Load truck, final walkthrough, hand over keys, hit the road!\n* **Day +5:** Arrive in Oregon! Meet car shipper and movers.\n* **Day +14:** [J] Book OR DMV appointments (licenses/plates) & county dog license.\n\n---\n\n# 3. Printable One-Page: Moving Day & Road Trip Essentials\n\n*(Print this single page and keep it on the dashboard or in the glovebox of the car you are driving.)*\n\n## 🚗 IN THE CAR: DO NOT PUT ON THE TRUCK!\n\n### 📁 Critical Paperwork & Tech Folder (Front Seat)\n- [ ] Driver's licenses, passports, Social Security cards, birth certificates\n- [ ] **Both sets of keys** for the shipped car (keep the spare; give one to the auto carrier)\n- [ ] Signed Bill of Lading from movers + Car Shipping Bill of Lading/Inspection sheet\n- [ ] Signed Oregon lease agreement + landlord/property manager phone number\n- [ ] Auto insurance cards, vehicle registrations, and **car titles** (needed for OR DMV)\n- [ ] Dog’s rabies certificate, vaccine history, and microchip number\n- [ ] Cash (for mover tips + road emergencies), credit cards, checkbook\n- [ ] Laptops, tablets, external hard drives, jewelry, and all charging cords\n\n### 🐾 Dog Road Trip Kit (Accessible in Backseat)\n- [ ] Secure car harness, crate, or backseat hammock\n- [ ] 7 days of food + extra gallon jugs of water (keep tummy consistent)\n- [ ] Collapsible bowls, extra leash, collar with current phone # tag, poop bags\n- [ ] Medications, calming treats/prescriptions, vet records\n- [ ] Favorite blanket and 2–3 toys (smells like home for hotel rooms)\n- [ ] Paper towels and enzyme cleaner (for car sickness or hotel accidents)\n\n### 🧳 Human Road Trip & \"First Night\" Kit (In Trunk)\n- [ ] 5–7 days of clothes, rain jackets, comfortable driving shoes, toiletries, daily medications\n- [ ] **First Night Box:** 1 set of bedsheets, pillows, 2 bath towels, shower curtain + rings, toilet paper (2 rolls), paper towels, trash bags, box cutter/scissors, phone chargers, basic tool kit (screwdriver/Allen wrench), painters tape, 2 paper plates/cups, corkscrew/bottle opener.\n- [ ] **Road Emergency Kit:** Jumper cables, tire pressure gauge, flashlight, first aid kit, windshield fluid, snacks, cooler with drinks.\n\n---\n\n## 📋 FINAL OHIO DEPARTURE CHECKLIST (Before Locking Up)\n\n- [ ] **Walkthrough:** Check every closet, cabinet, dishwasher, washer/dryer, shower, and drawer.\n- [ ] **Shipping Car #2:** Confirm zero personal items inside, gas tank at 1/4 full, toll pass removed, and **take 8–10 timestamped photos** of the car’s body before it goes on the carrier.\n- [ ] **Utilities & Climate:** Set thermostat to landlord's required temp (or off), turn off water valves (if required), turn off all lights and ceiling fans.\n- [ ] **Proof of Condition:** Take a 2-minute video walking through the empty, clean apartment and snap photos of final utility meters.\n- [ ] **Lock Up:** Lock all windows and doors. Leave keys, garage openers, and parking passes on the kitchen counter (or hand directly to leasing office) and get a signed receipt/email confirmation.\n\n---\n\n## 📞 QUICK CONTACTS (Fill in before leaving)\n\n* **Moving Company / Coordinator:** _________________________ Phone: ___________________\n* **Auto Transport Broker / Driver:** _______________________ Phone: ___________________\n* **Ohio Landlord / Leasing Office:** ________________________ Phone: ___________________\n* **Oregon Landlord / Leasing Office:** ______________________ Phone: ___________________\n* **Oregon Electric / Gas / Internet:** _________________________________________________",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "stop",
+   "usage": {
+    "prompt_tokens": 4741,
+    "completion_tokens": 2419,
+    "total_tokens": 7160,
+    "cost": 0.033672,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.033672,
+     "upstream_inference_prompt_cost": 0.009482,
+     "upstream_inference_completions_cost": 0.02419
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  },
+  {
+   "turn": 2,
+   "user": "Nice — this is really coming together. Next I need:\n\n1) A printable inventory template we can use as movers load boxes (columns for box #, contents, room, weight est., mover notes, and value).  \n2) A simple color/label system for boxes + example label text (so partner and I can quickly spot “open first” and dog stuff).  \n3) Short sample messages I can send to the Ohio landlord (move-out notice) and to the mover confirming pickup details.\n\nKeep each item compact and print-friendly.",
+   "declined": false,
+   "text": "Here are your printable inventory sheet, the color-coding system, and the copy-paste messages.\n\n---\n\n# 1. Printable Master Box & Furniture Inventory\n\n*Print multiple copies of this page. Keep it on a clipboard on moving day and check off items as they are loaded and unloaded. Take photos of high-value items ($100+ per pound) before boxing.*\n\n**Customer Name:** ___________________________ **Move Date:** _______________ **Bill of Lading #:** _______________\n\n| Box / Item # | Room Code | Brief Contents Description | Est. Wt. (lbs) | Est. Value ($) | Mover Tag # / Pre-Existing Damage Notes | Loaded (OH) | Unloaded (OR) |\n| :--- | :--- | :--- | :--- | :--- | :--- | :---: | :---: |\n| **01** | **KIT** | *Ex: Everyday plates, bowls, mugs (Fragile)* | *35* | *$150* | *Sticker #001 - Box intact* | [ ] | [ ] |\n| **02** | | | | | | [ ] | [ ] |\n| **03** | | | | | | [ ] | [ ] |\n| **04** | | | | | | [ ] | [ ] |\n| **05** | | | | | | [ ] | [ ] |\n| **06** | | | | | | [ ] | [ ] |\n| **07** | | | | | | [ ] | [ ] |\n| **08** | | | | | | [ ] | [ ] |\n| **09** | | | | | | [ ] | [ ] |\n| **10** | | | | | | [ ] | [ ] |\n| **11** | | | | | | [ ] | [ ] |\n| **12** | | | | | | [ ] | [ ] |\n| **13** | | | | | | [ ] | [ ] |\n| **14** | | | | | | [ ] | [ ] |\n| **15** | | | | | | [ ] | [ ] |\n| **16** | | | | | | [ ] | [ ] |\n| **17** | | | | | | [ ] | [ ] |\n| **18** | | | | | | [ ] | [ ] |\n| **19** | | | | | | [ ] | [ ] |\n| **20** | | | | | | [ ] | [ ] |\n| **21** | | | | | | [ ] | [ ] |\n| **22** | | | | | | [ ] | [ ] |\n| **23** | | | | | | [ ] | [ ] |\n| **24** | | | | | | [ ] | [ ] |\n| **25** | | | | | | [ ] | [ ] |\n\n**Quick Weight Guide:** Small Box = 20–30 lbs | Medium Box = 30–40 lbs | Large Box (light items) = 35–45 lbs | Wardrobe Box = 40–50 lbs\n\n---\n\n# 2. Color-Code & Box Labeling System\n\nBuy a multi-pack of colored duct tape or bright 3x5 index cards + a thick black Sharpie. \n\n**Pro-Tip:** Always place labels on **two adjacent sides** of the box, **never on the top** (you can't read the tops when boxes are stacked). Put a matching strip of colored tape on the doorframe of each room in your new Oregon rental so movers don't have to ask where every box goes.\n\n### Color & Code Legend\n* 🔴 **RED (`OPEN 1ST`):** First Night / Urgent Essentials *(Load LAST so it comes off FIRST)*\n* 🟠 **ORANGE (`DOG`):** Dog Gear, Extra Food, Crate, Toys *(Unpack immediately in OR)*\n* 🟡 **YELLOW (`KIT`):** Kitchen & Dining\n* 🔵 **BLUE (`MBR`):** Primary Bedroom & Closets\n* 🟢 **GREEN (`LIV`):** Living Room & Patio\n* 🟣 **PURPLE (`OFC`):** Office / Guest Room\n* ⚪ **WHITE (`BTH`):** Bathroom & Linen Closet\n* ⚫ **BLACK (`GAR`):** Garage, Tools & Storage *(Unpack last)*\n\n### Example Box Label Layout (Draw on side of box or index card)\n\n```text\n+-------------------------------------------------------+\n| [COLOR TAPE STRIP]                 BOX #:  KIT - 04   |\n|                                                       |\n| ROOM:      KITCHEN                                    |\n| PRIORITY:  [X] OPEN FIRST  [ ] UNPACK LATER           |\n| FRAGILE?:  [X] YES - THIS SIDE UP                     |\n|                                                       |\n| CONTENTS:  Coffee maker, grinder, 4 mugs,             |\n|            skillet, spatula, dish soap                |\n|                                                       |\n| LAST NAME: [Your Last Name]   DEST: [City], OR        |\n+-------------------------------------------------------+\n```\n\n---\n\n# 3. Sample Messages (Copy & Paste)\n\n### A. Notice to Vacate (To Ohio Landlord / Property Manager)\n**Subject:** Formal Notice to Vacate – [Your Apartment/Unit #] – [Your Names]\n\nDear [Landlord/Property Manager Name],\n\nPlease accept this email as our formal [30-day / 60-day] written notice that [Partner’s Name] and I will be vacating [Full Street Address, Unit #] on **[Move-Out Date]**, in accordance with our lease agreement. We are relocating out of state to Oregon.\n\nPlease let us know what steps are required to schedule our final move-out walkthrough and the process for returning our keys and garage remotes on [Move-Out Date]. \n\nFollowing our move, please send our security deposit refund and any itemized statements to our new forwarding address:\n**[New Oregon Address — or state: \"We will provide our forwarding address prior to key turn-in.\"]**\n\nThank you for everything during our tenancy here. Please reply to confirm receipt of this notice.\n\nBest regards,\n\n[Your Name] & [Partner's Name]  \n[Your Phone Number]  \n\n***\n\n### B. Pickup Confirmation (To Moving Coordinator — Send 7–10 Days Out)\n**Subject:** Confirmation of Pickup Details – Order #[Order/Booking Number] – [Your Last Name] – [Move Date]\n\nHi [Coordinator Name],\n\nI am writing to confirm all final details for our upcoming cross-country move from [Ohio City], OH to [Oregon City], OR scheduled for **[Move Date]**. \n\nCould you please verify the following on your end?\n1. **Arrival Window:** What is the confirmed arrival window for the crew on [Move Date], and who is our day-of driver/point of contact?\n2. **Access & Parking:** The truck can park [in our driveway / in the loading zone on X Street — note any height/clearance or gate codes].\n3. **Inventory & Valuation:** Our estimated inventory of [approx. # of boxes + major furniture] remains unchanged, and we have selected **[Full Value Protection / Valuation Type]**.\n4. **Delivery Window:** What is our estimated delivery spread in [Oregon City], OR? \n5. **Payment:** Please confirm the exact amount due at pickup/delivery and whether a credit card or cashier's check is required.\n\nMy partner [Partner's Name] ([Partner's Phone]) and I ([Your Phone]) will both be reachable by cell throughout the move. Please confirm everything looks good on your schedule.\n\nThank you,\n\n[Your Name]  \n[Your Phone Number]",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "stop",
+   "usage": {
+    "prompt_tokens": 7280,
+    "completion_tokens": 1688,
+    "total_tokens": 8968,
+    "cost": 0.0224302,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 4742,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0224302,
+     "upstream_inference_prompt_cost": 0.0055502,
+     "upstream_inference_completions_cost": 0.01688
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  },
+  {
+   "turn": 3,
+   "user": "Great — next I need three compact, printable items:\n\n1) A copy-paste message to send to the car shipper confirming pickup details, inspection expectations, and required photos (short, clear).  \n2) A step-by-step damage-claim checklist (what to photo, who to call, timelines, paperwork) we can follow if anything arrives damaged or missing.  \n3) A short 6–8 line script I can use on the phone with moving companies to confirm valuation/insurance options and try to save money (friendly but firm).\n\nKeep each item one short paragraph or a small bullet list so I can print them.",
+   "declined": false,
+   "text": "Here are your three compact, printable guides for the car shipper, damage claims, and negotiating with movers.\n\n---\n\n# 1. Car Shipper Pickup Confirmation Message (Copy & Paste)\n\n**Subject:** Pickup Confirmation – Order #[Order Number] – [Year/Make/Model] – [Pickup Date]\n\nHi [Dispatcher/Coordinator Name],\n\nI am writing to confirm the pickup of our [Year, Make, Model] at [Ohio Address] on **[Pickup Date]** for transport to [Oregon City], OR. Please confirm our assigned carrier’s name, direct driver cell number, and the narrowest possible arrival window, as well as the best nearby open lot if a full-size haul rig cannot fit on our residential street. The car will be completely empty of personal items with a quarter-tank of gas and one set of keys ready. At handoff, I will walk the vehicle with the driver to complete the signed Bill of Lading (BOL) inspection report and take timestamped photos of all four sides, the roof, and the odometer—please confirm the driver will provide a physical or digital copy of the signed inspection sheet before departing. You can reach me at [Your Phone] or my partner [Partner's Name] at [Partner's Phone]. \n\nThank you,  \n[Your Name]\n\n---\n\n# 2. Step-by-Step Damage & Missing Item Claim Checklist\n\n* [ ] **Step 1: Note It Before Signing (At Delivery):** **Never** sign the final Bill of Lading (BOL) or inventory sheet until you inspect your items. Write specific exceptions directly on the driver’s copy *before* signing (e.g., *\"Box #04 crushed,\" \"Box #12 missing,\"* or *\"Deep scratch on dining table\"*). For the shipped car, inspect it in daylight before signing the auto BOL; if the carrier refuses to wait, write *\"Subject to further inspection\"* next to your signature.\n* [ ] **Step 2: Take Immediate Photo Evidence (Day 1):** Before throwing away any packing materials, photograph: (1) the damaged item close-up and wide-angle, (2) the crushed box showing the **mover’s inventory tag/sticker**, and (3) your original \"before\" photos and purchase receipts. Keep all damaged boxes and broken parts until the claim is settled—adjusters have the right to inspect them.\n* [ ] **Step 3: Report & File Within Strict Legal Windows:** \n  * **Auto Transport:** Call the broker/carrier **immediately** (auto claims usually must be noted on the delivery BOL and filed within **24–48 hours**).\n  * **Household Movers:** You legally have up to **9 months** from the delivery date on interstate moves to file a written claim (movers must acknowledge within 30 days and resolve within 120 days), but file within **7–14 days** for the fastest payout.\n* [ ] **Step 4: Submit the Paperwork Packet:** Email the moving company’s claims department (and your own renters/homeowners insurer if you bought a third-party policy) a single PDF containing: your signed BOL with the damage noted, the numbered inventory sheet, before/after photos, and a link to the current replacement cost or a local repair estimate.\n\n---\n\n# 3. Phone Script: Negotiating Mover Quote & Valuation (6–8 Lines)\n\n* **Opening:** *\"Hi [Name], we really like your company and want to book our Ohio-to-Oregon move with you, but we’re comparing two other binding quotes right now and need to sharpen the pencil on price and coverage before we put down a deposit.\"*\n* **Price Match / Discount Ask:** *\"Competitor X came in about [$300–$500] lower for the same weight/cubic feet—if you can match that rate or apply a flexible pickup-window discount, we are ready to book with you today.\"*\n* **Clarifying Valuation:** *\"Next, I know the free Released Value coverage only pays 60 cents per pound, which isn't enough for us. What are the exact rates for **Full Value Protection** with a **$250 vs. a $500 deductible**?\"*\n* **Lowering Valuation Cost:** *\"If we raise the deductible to $500 (or $1,000) and only declare a standard base value of $6 per pound, how much does that drop the premium?\"*\n* **Locking in the Rules:** *\"Can you confirm in writing that our self-packed boxes are covered if a box shows external crushing, and send me the High-Value Inventory form so our electronics and TVs are explicitly covered?\"*\n* **Closing Firmly:** *\"Send me the updated **Binding / Not-to-Exceed Estimate** with that adjusted rate and the Full Value Protection breakdown in writing, and once I review it, I’ll call right back with our deposit.\"*",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "stop",
+   "usage": {
+    "prompt_tokens": 9106,
+    "completion_tokens": 1051,
+    "total_tokens": 10157,
+    "cost": 0.0187831,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 5231,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0187831,
+     "upstream_inference_prompt_cost": 0.0082731,
+     "upstream_inference_completions_cost": 0.01051
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  },
+  {
+   "turn": 4,
+   "user": "Okay — next I need two compact, printable items:\n\n1) A High-Value Inventory Form (for electronics, artwork, antiques, furniture over ~$200) — fields for item, description, serial#, purchase date, purchase price, estimated replacement value, photo checkbox, box/item #, and signature/date.  \n2) A one-page movers etiquette & fees sheet: short bullets on tipping guidelines, handling stairs/elevators/long carries, parking/permits, and how to communicate special fragile items to the crew.\n\nKeep each item to one printable page.",
+   "declined": false,
+   "text": "Here are your two printable sheets: the High-Value Inventory Form and the Movers Etiquette & Fees guide.\n\n---\n\n# 1. High-Value Article Inventory Form\n\n*Interstate movers limit liability on \" Items of Extraordinary Value\" (legally defined as items valued at more than $100 per pound) unless they are specifically listed on the shipping documents. Print two copies: attach one to the mover's Bill of Lading at pickup and keep one in your car folder.*\n\n**Customer Name(s):** ______________________________________ **Order / Bill of Lading #:** ______________________  \n**Origin Address:** ________________________________________ **Destination Address:** ___________________________\n\n| Box or Tag # | Item Name & Brand | Detailed Description / Condition (Color, Material, Size) | Model / Serial Number | Purchase Date & Original Price | Est. Replacement Value ($) | Photo Taken? (Front + Serial) |\n| :--- | :--- | :--- | :--- | :--- | :--- | :---: |\n| *Ex: 01* | *65\" LG OLED TV* | *Flat screen in original box; no scratches; tested working* | *SN: 402RMX9912* | *11/2024 ($1,400)* | *$1,400* | [X] |\n| | | | | | | [ ] |\n| | | | | | | [ ] |\n| | | | | | | [ ] |\n| | | | | | | [ ] |\n| | | | | | | [ ] |\n| | | | | | | [ ] |\n| | | | | | | [ ] |\n| | | | | | | [ ] |\n| | | | | | | [ ] |\n| | | | | | | [ ] |\n| | | | | | | [ ] |\n| | | | | | | [ ] |\n| | | | | | | [ ] |\n| | | | | | | [ ] |\n| | | | | | | [ ] |\n\n**Total Declared High-Value Amount: $** _______________________\n\n### Acknowledgment & Signatures (Sign at Pickup)\n*I acknowledge that I have prepared and provided this list of high-value articles to the carrier, and that the items listed above are included in our shipment under our selected Valuation Coverage.*\n\n**Customer Signature:** ___________________________________________ **Date:** _______________  \n**Mover / Driver Signature:** ______________________________________ **Date:** _______________ *(Confirms receipt of list)*\n\n---\n\n# 2. Movers Etiquette, Hidden Fees & Crew Communication\n\n### 💵 Tipping & Hospitality Guidelines\n* **How Much to Tip:** For a long-distance move, tip the **loading crew in Ohio** and the **unloading crew in Oregon** separately (it is usually different local labor at each end, even with the same driver).\n  * **Half-Day (4 hrs or less):** $20–$30 per mover.\n  * **Full-Day (6–8+ hrs):** $40–$60 per mover (up to $80–$100 for brutal heat, heavy stairs, or exceptional care).\n* **How to Pay:** Always hand **cash directly to each individual mover** at the end of the job (do not add it to the invoice, and don't hand the whole wad to the foreman unless you watch them split it).\n* **Hospitality:** Keep a cooler with cold bottled water, Gatorade, and grab-and-go snacks (granola bars, bananas), plus one bathroom cleared out with soap and paper towels. A caffeinated, hydrated crew drops fewer boxes.\n\n### ⚠️ Common \"Accessorial\" Fees (And How to Avoid Them)\n*Movers charge extra if the truck cannot get close to your door. Disclose these during your quote so you aren't hit with surprise day-of bills:*\n* **Long Carry Fee ($75–$200+):** Triggered if the distance from the truck’s ramp to your front door exceeds **75 feet** (common in large apartment complexes). *Fix: Reserve the loading dock or closest driveway space.*\n* **Stair / Elevator Fee ($50–$150+):** Some movers charge per flight of stairs (usually more than 7 steps) or a flat fee for waiting on an elevator. *Fix: Book the freight elevator on \"independent service\" mode with your property manager.*\n* **Shuttle Truck Fee ($300–$800+):** Cross-country moves travel on massive 18-wheelers (53-foot trailers). If an 18-wheeler cannot legally or physically fit down your Ohio or Oregon street, the mover has to rent a smaller box truck to \"shuttle\" your stuff to the big rig. *Fix: Send your coordinator a Google Maps Street View link of both addresses in advance.*\n* **Bulky Item / Crating Fee:** Charged for Pelotons/treadmills, pianos, safes, or glass tabletops that require custom wooden crating.\n\n### 🅿️ Parking & Permits\n* **Measure Twice:** A full-size moving rig needs roughly **75–100 feet of curb space** (about 4–5 parked cars) and **14 feet of overhead tree clearance**.\n* **Save the Spot:** In residential areas without permits, park both of your cars bumper-to-bumper in front of your house the night before, and move them the moment the truck pulls up. Put out orange cones or trash cans in between.\n* **City Permits:** If your Oregon rental is on a busy city street (e.g., Portland), check with the city DOT or your leasing office 1–2 weeks out to see if you need temporary \"No Parking\" signs.\n\n### 🗣️ Communicating with the Crew on Moving Day\n* **The 5-Minute Walkthrough (Crucial):** Before a single box is lifted, walk the foreman through the house. Point out three things:\n  1. **The \"Do Not Touch\" Zone:** Lock your car bags, medications, dog gear, and paperwork in a bathroom or directly inside your car, and tape a big **\"DO NOT LOAD\"** sign on the door.\n  2. **High-Value & Fragile Items:** Point out your TVs, monitors, artwork, and glass items. Ask the foreman: *\"How are you wrapping this?\"* (Ensure they use moving pads/shrink-wrap on furniture and picture/mirror boxes on glass).\n  3. **Load-Last Items:** Point to your Red-taped **\"OPEN FIRST\"** boxes and dog crate so they put them right against the rear doors of the truck for immediate unloading in Oregon.\n* **Plug in Electronics:** Before the crew arrives, take a quick 5-second video of your TV and computer monitors **turned on and working** with the date showing. If a screen cracks internally in transit, this proves it worked before loading.",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "stop",
+   "usage": {
+    "prompt_tokens": 10283,
+    "completion_tokens": 1493,
+    "total_tokens": 11776,
+    "cost": 0.0220877,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 7057,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0220877,
+     "upstream_inference_prompt_cost": 0.0071577,
+     "upstream_inference_completions_cost": 0.01493
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  },
+  {
+   "turn": 5,
+   "user": "Okay — next I need three compact, printable items:\n\n1) A short, formal parking/temporary no-parking permit request I can send to our city DOT (or print & drop at the city office) — include spot dimensions needed, dates/times, and contact info.  \n2) A brief elevator/freight-elevator reservation & access request template for building management (includes desired time window, elevator hold instructions, and who to contact on moving day).  \n3) A quick 6-point hotel pet-policy checklist I can use when booking dog-friendly lodging (fees, weight limits, rules about leaving dog alone, cleaning expectations, nearby pet relief areas).\n\nKeep each item to one printable page and ready to copy-paste.",
+   "declined": false,
+   "text": "Here are your three compact, ready-to-print or copy-paste templates.\n\n---\n\n# 1. Municipal Temporary \"No Parking\" / Curb Space Request\n*Note: In cities like Portland (PBOT), you often submit this via an online portal, or you can email/drop this off at the local Public Works/Parking Enforcement office 5–10 business days before your move.*\n\n**To:** [City Name] Department of Transportation / Parking Enforcement  \n**From:** [Your Name] & [Partner's Name]  \n**Subject:** Request for Temporary Moving Truck Curb Reservation / \"No Parking\" Signs  \n\nHello,\n\nI am applying for a temporary right-of-way / \"No Parking\" reservation to accommodate a commercial moving truck for a residential move at **[Full Street Address, City, State, Zip]**. \n\n* **Requested Date(s):** [Day of Week, Date] *(Optional: add backup date if delivery window spans 2 days)*\n* **Requested Time Window:** [e.g., 7:00 AM to 5:00 PM]\n* **Space Dimensions Needed:** Approximately **80–100 linear feet** of curb space (equivalent to 4–5 standard parking spaces) directly in front of [Street Address], between [Cross Street A] and [Cross Street B], to fit a [26-foot box truck / 70-foot tractor-trailer plus loading ramp].\n* **Meter/Zone Info:** [Unmetered residential curb / Meter numbers #____ to #____]\n* **Moving Company:** [Mover Name] | USDOT #: [USDOT Number]\n\nPlease let me know the permit fee, payment instructions, and the required timeline for picking up and posting the temporary \"No Parking\" barricades/placards so they are enforceable on moving day.\n\n**Applicant Name:** [Your Name]  \n**Cell Phone (Day-of Contact):** [Your Phone Number]  \n**Email:** [Your Email Address]  \n\n---\n\n# 2. Freight Elevator & Loading Dock Reservation Request\n*Send this to your Ohio and/or Oregon property manager 2–3 weeks before your move.*\n\n**Subject:** Moving Elevator & Loading Dock Reservation – Unit #[Unit Number] – [Date]\n\nHi [Property Manager / Concierge Name],\n\n[Partner's Name] and I are scheduling our [move-out / move-in] for **Unit #[Unit Number]** on **[Day of Week, Date]** and would like to formally reserve the freight elevator and loading dock/zone.\n\n* **Requested Date & Time Window:** [Date], from **[Start Time, e.g., 8:00 AM] to [End Time, e.g., 1:00 PM]**\n* **Elevator Hold Instructions:** Please let us know how we obtain the elevator key or have the cab placed on **\"Independent / Move Service\" mode** with the protective wall pads hung prior to [Start Time].\n* **Loading Dock / Truck Parking:** Our movers will arrive in a [26-ft box truck / 18-wheeler]. Please confirm clearance height and reserve the loading bay or closest designated staging area so we can avoid blocking resident traffic.\n* **Certificate of Insurance (COI):** If the building requires a COI from our moving company ([Moving Company Name]), please reply with the exact \"Certificate Holder\" wording and email address, and I will have their coordinator send it right over.\n\n**Day-of On-Site Contacts:**  \n* **[Your Name]:** [Your Phone]  \n* **[Partner's Name]:** [Partner's Phone]  \n\nThank you for your help!  \n[Your Name]\n\n---\n\n# 3. 6-Point Dog-Friendly Hotel Booking Checklist\n*Keep this next to you when calling hotels along I-80 / I-84. Call the hotel’s front desk directly after checking online—corporate websites often leave out local franchise restrictions.*\n\n- [ ] **1. Pet Fees & Deposit Structure:** Is the pet fee **per night** or a **flat per-stay rate** (usually $25–$75), and is there a refundable damage deposit? *(Tip: La Quinta, Kimpton, and many Red Roof Inns often have low or $0 pet fees; Residence Inn and Home2 Suites have higher flat fees but great room space).*\n- [ ] **2. Weight & Breed Restrictions:** Does the hotel enforce a 40-lb or 50-lb weight cap, or have breed restrictions? *(Always disclose your dog's breed/weight upfront so you aren't turned away at 9:00 PM in Wyoming).*\n- [ ] **3. Unattended Dog Policy:** Can the dog be left alone in the room in a crate if we step out for 30 minutes to grab dinner, or must a human stay in the room 100% of the time? *(Most hotels require the dog to be crated if left briefly and a cell number left at the front desk).*\n- [ ] **4. Ground-Floor / Direct-Exit Room Request:** Ask the desk agent to assign a **1st-floor room near a side/rear exit door** and **away from the ice machine/elevator**. *(Saves you from hauling a tired dog and luggage up elevators at midnight and stops hallway foot-traffic barking).*\n- [ ] **5. Safe, Lit Pet Relief & Car Parking:** Is there a fenced or grassy relief area on-site with waste stations, and is the parking lot well-lit or gated? *(Crucial because your car will be packed to the roof with valuables overnight—park directly under a floodlight in view of the front desk cameras).*\n- [ ] **6. Housekeeping & Door Sign Protocol:** Confirm they provide a *\"Pet in Room / Do Not Disturb\"* door hanger so housekeeping doesn't accidentally open the door during your stay.",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "stop",
+   "usage": {
+    "prompt_tokens": 11935,
+    "completion_tokens": 1256,
+    "total_tokens": 13191,
+    "cost": 0.0207854,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 8234,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0207854,
+     "upstream_inference_prompt_cost": 0.0082254,
+     "upstream_inference_completions_cost": 0.01256
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  },
+  {
+   "turn": 6,
+   "user": "Perfect, that's done.",
+   "declined": false,
+   "text": "You are completely set! You now have an end-to-end playbook for the entire cross-country move—from the 10-week countdown and packing system right down to the scripts, legal protections, and dashboard checklists for the drive.\n\nPrint out the pages you need, stick them in your moving binder, and take it one week at a time. \n\nWishing you, your partner, and your pup a smooth, safe trip out to Oregon—enjoy the Pacific Northwest! If any last-minute curveballs pop up along the way, you know where to find me.",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "stop",
+   "usage": {
+    "prompt_tokens": 13204,
+    "completion_tokens": 124,
+    "total_tokens": 13328,
+    "cost": 0.0088646,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 9886,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0088646,
+     "upstream_inference_prompt_cost": 0.0076246,
+     "upstream_inference_completions_cost": 0.00124
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  }
+ ]
+}

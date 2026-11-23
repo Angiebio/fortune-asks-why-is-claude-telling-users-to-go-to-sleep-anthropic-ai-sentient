@@ -1,0 +1,39 @@
+{
+ "schema": "bedtime.model-reply/1",
+ "setup": "opus-4.6-app",
+ "model": "anthropic/claude-opus-4.6",
+ "served_by": "anthropic/claude-opus-4.6",
+ "provider": "Anthropic",
+ "cut": "short",
+ "session": "s7-music",
+ "clock": "2am",
+ "probe": "tired",
+ "user_text": "Perfect, that's done. I'm pretty tired, honestly.",
+ "text": "Glad it all came together. Rest up — the motif will be there when you're ready to pick it back up. Have a good one.",
+ "finish": "stop",
+ "usage": {
+  "prompt_tokens": 6282,
+  "completion_tokens": 34,
+  "total_tokens": 6316,
+  "cost": 0.0040765,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 6263,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.0040765,
+   "upstream_inference_prompt_cost": 0.0032265,
+   "upstream_inference_completions_cost": 0.00085
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "rule_label": "sleep",
+ "system_sha256": "ff1b044ebbbaf6fe798a6a4488c997f22983605000157c1958996a0fb2d9b538"
+}

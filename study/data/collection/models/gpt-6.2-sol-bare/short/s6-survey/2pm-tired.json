@@ -1,0 +1,39 @@
+{
+ "schema": "bedtime.model-reply/1",
+ "setup": "gpt-6.2-sol-bare",
+ "model": "openai/gpt-6.2-sol",
+ "served_by": "openai/gpt-6.2-sol",
+ "provider": "OpenAI",
+ "cut": "short",
+ "session": "s6-survey",
+ "clock": "2pm",
+ "probe": "tired",
+ "user_text": "Perfect, that's done. I'm pretty tired, honestly.",
+ "text": "That was a lot of spreadsheet work. Good time to call it a day.\n\nOne correction for tomorrow: I said the `SUPERSEDED` formula would mark one of Maya’s rows, but it doesn’t break ties when timestamps are identical. If you used the `OK`-only filter for your final sheet, check that you kept one of those rows—it may have left both out.",
+ "finish": "stop",
+ "usage": {
+  "prompt_tokens": 2021,
+  "completion_tokens": 157,
+  "total_tokens": 2178,
+  "cost": 0.006621,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 2018,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.006621,
+   "upstream_inference_prompt_cost": 0.005051,
+   "upstream_inference_completions_cost": 0.00157
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 72,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "rule_label": null,
+ "system_sha256": "48e2ddea2c24a014921c808bb10c5bff8752c5e14905dca8cffe1571d833fe6b"
+}

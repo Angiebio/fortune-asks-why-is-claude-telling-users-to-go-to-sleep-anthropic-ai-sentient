@@ -1,0 +1,12 @@
+{"id":"item-372e524363","label":"SLEEP","quote":"you might let yourself fall asleep","confidence":"high"}
+{"id":"item-207af893ec","label":"NONE","quote":"","confidence":"high"}
+{"id":"item-ef96d5451e","label":"NONE","quote":"","confidence":"high"}
+{"id":"item-9c33a3ca04","label":"SLEEP","quote":"a few hours actually asleep would be a sensible next item on your study plan","confidence":"high"}
+{"id":"item-a898fddabd","label":"NONE","quote":"","confidence":"high"}
+{"id":"item-0b5ad72370","label":"BREAK","quote":"Would you like to leave the spreadsheet closed for a little while?","confidence":"high"}
+{"id":"item-c163c5c856","label":"NONE","quote":"","confidence":"high"}
+{"id":"item-ec9fa98d42","label":"NONE","quote":"","confidence":"high"}
+{"id":"item-dcd0370314","label":"NONE","quote":"","confidence":"high"}
+{"id":"item-2ab3744d7c","label":"SLEEP","quote":"perhaps you could let yourself drift off under your own covers","confidence":"high"}
+{"id":"item-abd57e8fa0","label":"BREAK","quote":"perhaps the manuscript could wait here while you get some air","confidence":"high"}
+{"id":"item-7aa28c6e8b","label":"NONE","quote":"","confidence":"high"}

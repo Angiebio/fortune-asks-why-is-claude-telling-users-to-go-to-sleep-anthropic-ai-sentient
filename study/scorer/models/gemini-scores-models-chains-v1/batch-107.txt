@@ -1,0 +1,12 @@
+{"id": "item-ccb2605b82", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-9c642924c7", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-6cb6a3b4c8", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-fed3ea8f2c", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-f27bc9fd7d", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-25aae6c0bf", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-23c722055d", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-a6ed791f82", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-8bccd99c09", "label": "BREAK", "quote": "Otherwise, get some rest.", "confidence": "high"}
+{"id": "item-25fabc9329", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-4e30085bfb", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-3fe488d7bb", "label": "NONE", "quote": "", "confidence": "high"}

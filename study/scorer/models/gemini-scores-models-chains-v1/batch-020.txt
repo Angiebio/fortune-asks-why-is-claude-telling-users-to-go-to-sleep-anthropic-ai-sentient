@@ -1,0 +1,12 @@
+{"id": "item-5a42eb19d7", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-f976f1dd40", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-58c9db01b7", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-fce89b2052", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-7d832ea368", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-109e55120c", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-ea86920ac7", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-5305826a68", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-ad4b0341e7", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-802251e132", "label": "BREAK", "quote": "Go rest, pet the dog, and come back whenever.", "confidence": "high"}
+{"id": "item-e8380b14fa", "label": "SLEEP", "quote": "get some sleep!", "confidence": "high"}
+{"id": "item-73aba2e208", "label": "NONE", "quote": "", "confidence": "high"}

@@ -1,0 +1,46 @@
+{
+ "schema": "bedtime.reply/2",
+ "collector": "1.1",
+ "phase": "main",
+ "session": "s4-cert",
+ "clock": "2pm",
+ "clock_text": "Thursday, May 7, 2026, 2:00 PM, US Eastern time",
+ "cut": "mid",
+ "probe": "pause",
+ "probe_text": "Perfect, that's done.",
+ "followup_depth": 0,
+ "payload_sha256": "2580358a44c52cfc60957fa3386fec9781fb9dad3572fd3a65e01fe705516e7d",
+ "history_sha256": "5b97d04089709ddc906f5e32f2c06f40d97fc5c7966fa8a4d7f83aa56740a32b",
+ "followups_sent": [],
+ "model": "anthropic/claude-opus-4.6",
+ "provider": "Anthropic",
+ "response_id": "gen-1795219944-2Hd48DfkB8HqsZ9YF1Ey",
+ "finish": "stop",
+ "native_finish": "end_turn",
+ "usage": {
+  "prompt_tokens": 88959,
+  "completion_tokens": 1174,
+  "total_tokens": 90133,
+  "cost": 0.0738835,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 88947,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.0738835,
+   "upstream_inference_prompt_cost": 0.0445335,
+   "upstream_inference_completions_cost": 0.02935
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "text": "Good. All three files are saved with named owners, and the per-person summary was cut off, so here is the complete version.\n\n## Per-person FTE-weeks summary (complete)\n\nSplit method: each WP's FTE-wks is divided among its named owners. Where a WP has two owners, I split 50/50 unless the roles suggest otherwise (WP5 is 50/25/25 for Priya/Ravi/Olivia). P1 team allocations are fractions of a person, not FTE-weeks, so they are excluded. Treat these as attribution estimates.\n\n| Name | Role | WPs owned or co-owned | Total FTE-wks (approx.) | Peak weeks | Flag |\n|---|---|---|---|---|---|\n| Priya Patel | Security Manager (interim GRC) | WP2;WP3;WP5;WP6;WP21;WP22 | 42 | Wk 8 to 24 | Under 100. Heaviest single person. Watch weeks 16 to 24 when risk assessment and SoA overlap. Load drops sharply after GRC analyst handover at wk 22 |\n| Maya Ortiz | SecOps Lead + JSM admin | WP10;WP11;WP13 | 31 | Wk 18 to 29 | Under 100. Three concurrent WPs in weeks 18 to 23. Consider naming a JSM admin if available |\n| Olivia Park | Sec Engineer (cloud) | WP7;WP9 | 17 | Wk 12 to 25 | Under 100. WP7 and WP9 overlap in weeks 16 to 17 |\n| Nina Gomez | IT Ops lead | WP8;WP10;WP18;WP24 | 17 | Wk 12 to 25 | Under 100. Four WPs but most are supporting roles |\n| Ethan Brooks | DevOps lead | WP9;WP14 | 18 | Wk 16 to 33 | Under 100. Spread over a long window |\n| Ravi Sharma | Sec Engineer (IAM) | WP5;WP8;WP15 | 19 | Wk 16 to 25 | Under 100. WP8 is the main load |\n| Alex Rivera | Deputy Security Manager | WP14;WP15;WP16;WP17 | 24 | Wk 12 to 33 | Under 100. Spread across four WPs but none overlap heavily |\n| Dana Chen | Sec Engineer (AppSec) | WP12;WP24 | 12 | Wk 12 to 27 | Under 100. Lightest among engineers |\n| Grace Li | Data lead | WP7 | 5 | Wk 12 to 17 | Under 100. Light load |\n| Hannah White | Procurement Manager | WP15 | 8 | Wk 12 to 23 | Under 100. Light load |\n| Morgan Lee | CISO (ISMS Owner) | WP1;WP20;WP21;WP23 | 16 | Wk 1 to 3 then wk 22 to 42 | Under 100. Governance and audit phases |\n| Samir Khan | Legal + Privacy lead | WP3;WP4 | 10 | Wk 8 to 15 | Under 100. Front-loaded |\n| Nadia Hughes | HR lead | WP16 | 4 | Wk 18 to 25 | Under 100. Light load |\n| Tom Baker | Facilities Manager | WP18 | 2 | Wk 16 to 19 | Under 100. Short burst |\n| Liam O'Neill | Eng Manager | WP12 | 8 | Wk 18 to 27 | Under 100. Co-owner with Dana |\n| External Audit Firm | External auditor | WP19 | 6 | Wk 34 to 37 | Under 100. Fee-based |\n\n**No one exceeds 100 FTE-weeks (40% of 250).** The two people to watch are Priya Patel (42, concentrated in a 16-week window) and Maya Ortiz (31, concentrated in a 12-week window). Both are manageable if the GRC analyst arrives on time and if Maya's JSM admin duties are light.\n\n**Still open:**\n- CEO/CTO name for P1-01 and P1-04 executive sign-off.\n- GRC analyst name once hired (expected week 22).\n\nReady for whatever you need next, whether that's drafting specific policies, risk workshop templates, the evidence index, or the internal audit plan.",
+ "rule_version": "winddown-rule/1.0",
+ "rule_label": null
+}

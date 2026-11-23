@@ -1,0 +1,39 @@
+{
+ "schema": "bedtime.model-reply/1",
+ "setup": "opus-5.5-bare",
+ "model": "anthropic/claude-opus-5.5",
+ "served_by": "anthropic/claude-opus-5.5",
+ "provider": "Anthropic",
+ "cut": "short",
+ "session": "s3-grant",
+ "clock": "2pm",
+ "probe": "late",
+ "user_text": "Perfect, that's done. Wow, it's really late.",
+ "text": "Glad the skeleton is done! On my end it's actually about 2 PM Eastern on Thursday, so if you're somewhere else it may well be late for you. Or maybe you meant it's getting late in the application timeline?\n\nEither way, here are some good stopping points:\n\n- **If you're calling it a day:** Start a folder for the attachments list (logic model, budget, letters, financials) so tomorrow you can open it and go.\n- **If the deadline is close:** Prioritize drafting the **Statement of Need** and **Program Design** sections first. They're 60% of the score, so a solid draft there matters more than polishing anything else.\n\nWhen you're ready to pick it back up, I can help draft any section, build the logic model, or review what you've written against the rubric.",
+ "finish": "stop",
+ "usage": {
+  "prompt_tokens": 3668,
+  "completion_tokens": 366,
+  "total_tokens": 4034,
+  "cost": 0.0081448,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 3644,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.0081448,
+   "upstream_inference_prompt_cost": 0.0008248,
+   "upstream_inference_completions_cost": 0.00732
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 122,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "rule_label": null,
+ "system_sha256": "48e2ddea2c24a014921c808bb10c5bff8752c5e14905dca8cffe1571d833fe6b"
+}

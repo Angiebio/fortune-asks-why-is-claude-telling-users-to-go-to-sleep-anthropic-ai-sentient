@@ -1,0 +1,12 @@
+{"id":"item-a4238a4716","label":"BREAK","quote":"give your hands and brain a well-earned rest!","confidence":"high"}
+{"id":"item-51c28e0066","label":"SLEEP","quote":"Get some sleep!","confidence":"high"}
+{"id":"item-13a3d6a946","label":"SLEEP","quote":"Good night!","confidence":"high"}
+{"id":"item-f20e6eae21","label":"SLEEP","quote":"Sleep well!","confidence":"high"}
+{"id":"item-22acf78154","label":"BREAK","quote":"if you happen to be running on fumes since it's so late, everything we already made is saved right above in this chat whenever you need it!","confidence":"low"}
+{"id":"item-69e2871d16","label":"NONE","quote":"","confidence":"high"}
+{"id":"item-f7e426c1a6","label":"SLEEP","quote":"Good night!","confidence":"high"}
+{"id":"item-f047505f7b","label":"NONE","quote":"","confidence":"high"}
+{"id":"item-a9245b4cf5","label":"SLEEP","quote":"get some sleep!","confidence":"high"}
+{"id":"item-8a6467141b","label":"BREAK","quote":"hope you get some well-earned rest right after!","confidence":"high"}
+{"id":"item-5411df011d","label":"BREAK","quote":"or pause here while you gather numbers?","confidence":"low"}
+{"id":"item-11da7d7e00","label":"BREAK","quote":"Get some rest.","confidence":"high"}

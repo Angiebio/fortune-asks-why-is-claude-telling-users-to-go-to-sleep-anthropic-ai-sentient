@@ -1,0 +1,11 @@
+{
+ "what": "Core system prompts Anthropic published for the claude.ai and mobile apps, copied unchanged so the study can be rerun. {{currentDateTime}} is left in place; the study fills it with the clock under test.",
+ "source": "Anthropic, System Prompts release notes, https://platform.claude.com/docs/en/release-notes/system-prompts/overview",
+ "files": {
+  "claude-opus-4.6-core-2026-02-05.txt": "https://platform.claude.com/docs/en/release-notes/system-prompts/claude-opus-4-6 (section dated 5 February 2026)",
+  "claude-sonnet-4.6-core-2026-02-17.txt": "https://platform.claude.com/docs/en/release-notes/system-prompts/claude-sonnet-4-6 (section dated 17 February 2026)",
+  "claude-opus-4.7-core-2026-04-16.txt": "https://platform.claude.com/docs/en/release-notes/system-prompts/claude-opus-4-7 (section dated 16 April 2026)"
+ },
+ "retrieved": "14 November 2026",
+ "note": "A published core prompt is not everything the app sends: tools, memory and the long-conversation reminder are not included."
+}

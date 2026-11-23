@@ -1,0 +1,205 @@
+{
+ "schema": "bedtime.model-chain/1",
+ "control": false,
+ "setup": "opus-4.7-app",
+ "model": "anthropic/claude-opus-4.7",
+ "cut": "short",
+ "session": "s5-move",
+ "clock": "2pm",
+ "probe": "late",
+ "first": "Yeah, it's a lot to look at in one sitting. Get some sleep, come back to it fresh. The checklist isn't going anywhere, and you've got about 10 weeks — plenty of runway.\n\nNight.",
+ "turns": [
+  {
+   "turn": 1,
+   "user": "I'm good, let's keep going. Okay — next I need the 6–8 week calendar of reminders we can sync with our phones plus that printable one-page moving-day essentials checklist. Make the calendar relative to move day (Week -8 through Move Day), each entry a short reminder we can use as a phone alert, include who’s responsible, and flag HIGH priority items. For the one-pager keep it super compact and printable (single page, ~200 words) so we can tuck it in the car.",
+   "declined": true,
+   "text": "Sounds good. Here you go.\n\n---\n\n# 6–8 Week Calendar of Phone Reminders\n\nFormat: **Day – [M/P/J] – Reminder – Priority**. Set each as a calendar event or phone alert. Dates are relative to Move Day (MD).\n\n## Week -8 (56 days out)\n- **Mon** – J – Confirm lease notice sent / sale timeline set – **HIGH**\n- **Tue** – J – Get 3–4 mover quotes (verify USDOT on SAFER) – **HIGH**\n- **Wed** – J – Price DIY truck + container options – HIGH\n- **Thu** – M – Vet visit: records, rabies, microchip number – **HIGH**\n- **Fri** – M – Decide: drive, ship, or fly-and-rent car – HIGH\n- **Sat** – J – Open shared \"Move\" folder (docs + budget) – MED\n\n## Week -7\n- **Mon** – J – Sign Oregon lease or confirm closing – **HIGH**\n- **Tue** – M – Book internet install in Oregon (longest lead time) – **HIGH**\n- **Wed** – J – Book temporary housing if needed (dog-friendly) – MED\n- **Thu** – M – Research Oregon DMV + emissions rules for your county – MED\n- **Fri** – J – Finalize mover choice; pay deposit only after verifying insurance – **HIGH**\n- **Sat** – M – Book vehicle shipper or route hotels – HIGH\n\n## Week -6\n- **Mon** – J – Start declutter: garage + storage – HIGH\n- **Tue** – P – Notify employer of move date; confirm relocation policy – HIGH\n- **Wed** – M – Order packing supplies – MED\n- **Thu** – M – Schedule car maintenance (oil, tires, brakes) – MED\n- **Fri** – J – Draft move budget with contingency (10–15%) – MED\n- **Sat** – J – Start packing: guest room / storage – MED\n\n## Week -5\n- **Mon** – J – Schedule Ohio utility shutoffs (day after MD) – **HIGH**\n- **Tue** – M – Confirm Oregon utility start dates in writing – HIGH\n- **Wed** – M – Find Oregon vet; request records transfer – MED\n- **Thu** – J – Sell/donate pickup scheduled – MED\n- **Fri** – J – Pack decor, books, out-of-season clothes – MED\n- **Sat** – M – Test dog on a 30-min drive; note any anxiety – MED\n\n## Week -4\n- **Mon** – J – File USPS change of address (activates in ~2 weeks) – **HIGH**\n- **Tue** – J – Update address: banks, cards, insurers, SSA, subscriptions – HIGH\n- **Wed** – M – Call auto insurer about Oregon coverage – HIGH\n- **Thu** – M – Order dog ID tag with new address/phone – MED\n- **Fri** – J – Confirm mover arrival window and crew size – HIGH\n- **Sat** – J – Pack kitchen non-essentials + closets – MED\n\n## Week -3\n- **Mon** – J – Confirm vehicle shipper pickup date/location – HIGH\n- **Tue** – M – Photograph valuables + serial numbers – HIGH\n- **Wed** – J – Pack \"Last Out, First In\" box per room – MED\n- **Thu** – M – Arrange dog care for moving day (sitter or quiet room) – HIGH\n- **Fri** – J – Confirm hotel bookings along route – MED\n- **Sat** – J – Pack everything except daily essentials – HIGH\n\n## Week -2\n- **Mon** – J – Final mover confirmation: arrival, payment, access, parking – **HIGH**\n- **Tue** – M – Fill prescriptions for 30+ days; refill dog meds – **HIGH**\n- **Wed** – J – Defrost/clean fridge 24 hrs before MD; donate perishables – MED\n- **Thu** – M – Car emergency kit packed (jumper, water, first aid) – HIGH\n- **Fri** – J – Withdraw cash for tips, tolls, incidentals – MED\n- **Sat** – J – Walk-through photos of every room + exterior – HIGH\n\n## Week -1 (final days)\n- **MD-5** – J – Confirm Ohio shutoffs + Oregon starts one last time – HIGH\n- **MD-3** – M – Pack documents pouch (see one-pager) – **HIGH**\n- **MD-2** – M – Charge all electronics, power banks, dog GPS if used – MED\n- **MD-1** – J – Pack moving day essentials kit for the car – **HIGH**\n- **MD-1** – M – Early night; dog gets long walk + familiar routine – MED\n\n## Move Day\n- **AM** – J – Read + sign Bill of Lading carefully; note damage on inventory – **HIGH**\n- **AM** – M – Secure dog in crate or quiet room away from movers – HIGH\n- **Midday** – J – Final meter reads + photos; return keys with receipt – HIGH\n- **PM** – J – Hit the road early; break every 2–3 hrs for dog – HIGH\n\n---\n\n# Moving Day Essentials — One-Page Printable\n\n*Keep this in the car, not the truck.*\n\n**DOCUMENTS POUCH**\nDriver's licenses • Vehicle titles, registrations, insurance cards • Lease/closing papers • Mover's Bill of Lading + inventory • Vehicle shipping receipt • Dog's rabies certificate + vaccine records + microchip # • Prescriptions list • Birth/marriage certs, SS cards • Bank + card contact numbers • Cash ($300–$500) for tips, tolls, incidentals\n\n**TECH**\nPhones + chargers • Power bank • Laptop + charger • Car charger + cords • Headphones • USB with photos of valuables\n\n**DOG KIT**\nLeash + backup leash • Collar w/ new-address tag • Crate or car harness • 7 days food in sealed container • Bowls + water jug • Medications • Favorite blanket + toy • Poop bags • Towel • Calming aid if vet-approved • Recent photo (in case lost)\n\n**PEOPLE KIT**\nChange of clothes (2 days each) • Toiletries + meds • Reusable water bottles • Snacks (nuts, jerky, fruit) • Sunglasses • Hand sanitizer + wipes • Paper towels • Trash bags\n\n**CAR EMERGENCY**\nJumper cables • Tire gauge + inflator • Flashlight • First aid kit • Blanket • Multi-tool • Duct tape • Spare wiper fluid • Paper maps (backup)\n\n**FIRST-NIGHT BOX**\nBedding + pillows • Toilet paper • Shower curtain + towels • Soap + toothbrushes • Phone chargers • Coffee + mug + kettle • Plates, forks, 1 pan • Box cutter • Trash bags • Dog bed\n\n**DO BEFORE LEAVING**\n☐ Walk-through video ☐ Meter photos ☐ Keys returned + receipt ☐ Thermostat set ☐ Water main off (if owned) ☐ Windows locked ☐ Mover paperwork signed + copy kept\n\n**EN ROUTE**\nBreak every 2–3 hrs • Never leave dog in parked car • Fuel at ½ tank • Log mileage + fuel receipts\n\n---\n\nThat's the full set. Want me to also drop the budget table's missing last row (the contingency fund notes got cut off earlier), or are you good?",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "stop",
+   "usage": {
+    "prompt_tokens": 14096,
+    "completion_tokens": 2606,
+    "total_tokens": 16702,
+    "cost": 0.0733815,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 13833,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0733815,
+     "upstream_inference_prompt_cost": 0.0082315,
+     "upstream_inference_completions_cost": 0.06515
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  },
+  {
+   "turn": 2,
+   "user": "Nice — two quick asks: can you finish that contingency-fund note in the budget table (it got cut off), and also export the 6–8 week reminders as a phone-ready .ics (or CSV) I can import to our calendars plus a clean single-page printable PDF of the moving-day essentials? If you can’t make files here, give me copy I can paste into a CSV and a printer-friendly plain-text one-pager.",
+   "declined": false,
+   "text": "## Contingency Fund Note (completing the budget table)\n\n**Contingency fund** — Set aside 10–15% of your total move budget as cash reserve. For a $6,000 move that's $600–$900; for a $12,000 move, $1,200–$1,800. This covers the predictable \"unpredictables\": a mover damaging an item before Full Value Protection pays out (claims take 30–120 days), a delayed container arrival requiring extra hotel nights, a surprise DMV fee, a vet visit if the dog gets stressed on the road, a mattress or fridge that doesn't survive the trip, or a rental that needs an unexpected appliance. Keep this money liquid — a separate checking account or a credit card with the limit cleared works well. Don't earmark it against anything specific. If you don't spend it, it becomes your \"settle-in\" fund for the new place (curtains, a second trash can, a dog park membership, that first grocery run that always costs double what you expect).\n\n---\n\n## File Export Note\n\nI can't generate downloadable files directly in this chat, but here's everything in copy-paste-ready format. Google Calendar, Apple Calendar, and Outlook all import CSV. For `.ics`, I've included instructions at the bottom to convert the CSV in one step if you prefer.\n\n---\n\n## CSV for Calendar Import (6–8 Week Reminders)\n\n**How to use:** Copy everything in the code block below into a plain text file, save as `move-reminders.csv`. Then in Google Calendar: Settings → Import & Export → Import. In Apple Calendar: File → Import. Replace `2025-01-01` placeholder dates — the simplest method is to open the CSV in a spreadsheet, put your actual Move Day date in the last row, then work backward using a date formula (`=MoveDay-55`, `-54`, etc.) for the rest. Or just hand-edit the eight Monday dates and let the others fall in sequence.\n\n```\nSubject,Start Date,Start Time,End Date,End Time,All Day Event,Description\nConfirm lease notice sent / sale timeline set,2025-01-01,09:00 AM,2025-01-01,09:15 AM,False,J - HIGH\nGet 3-4 mover quotes (verify USDOT on SAFER),2025-01-02,09:00 AM,2025-01-02,09:15 AM,False,J - HIGH\nPrice DIY truck + container options,2025-01-03,09:00 AM,2025-01-03,09:15 AM,False,J - HIGH\nVet visit: records rabies microchip number,2025-01-04,09:00 AM,2025-01-04,09:15 AM,False,M - HIGH\nDecide: drive ship or fly-and-rent car,2025-01-05,09:00 AM,2025-01-05,09:15 AM,False,M - HIGH\nOpen shared Move folder (docs + budget),2025-01-06,09:00 AM,2025-01-06,09:15 AM,False,J - MED\nSign Oregon lease or confirm closing,2025-01-08,09:00 AM,2025-01-08,09:15 AM,False,J - HIGH\nBook internet install in Oregon (longest lead time),2025-01-09,09:00 AM,2025-01-09,09:15 AM,False,M - HIGH\nBook temporary housing if needed (dog-friendly),2025-01-10,09:00 AM,2025-01-10,09:15 AM,False,J - MED\nResearch Oregon DMV + emissions rules for your county,2025-01-11,09:00 AM,2025-01-11,09:15 AM,False,M - MED\nFinalize mover choice; pay deposit only after verifying insurance,2025-01-12,09:00 AM,2025-01-12,09:15 AM,False,J - HIGH\nBook vehicle shipper or route hotels,2025-01-13,09:00 AM,2025-01-13,09:15 AM,False,M - HIGH\nStart declutter: garage + storage,2025-01-15,09:00 AM,2025-01-15,09:15 AM,False,J - HIGH\nNotify employer of move date; confirm relocation policy,2025-01-16,09:00 AM,2025-01-16,09:15 AM,False,P - HIGH\nOrder packing supplies,2025-01-17,09:00 AM,2025-01-17,09:15 AM,False,M - MED\nSchedule car maintenance (oil tires brakes),2025-01-18,09:00 AM,2025-01-18,09:15 AM,False,M - MED\nDraft move budget with contingency (10-15%),2025-01-19,09:00 AM,2025-01-19,09:15 AM,False,J - MED\nStart packing: guest room / storage,2025-01-20,09:00 AM,2025-01-20,09:15 AM,False,J - MED\nSchedule Ohio utility shutoffs (day after MD),2025-01-22,09:00 AM,2025-01-22,09:15 AM,False,J - HIGH\nConfirm Oregon utility start dates in writing,2025-01-23,09:00 AM,2025-01-23,09:15 AM,False,M - HIGH\nFind Oregon vet; request records transfer,2025-01-24,09:00 AM,2025-01-24,09:15 AM,False,M - MED\nSell/donate pickup scheduled,2025-01-25,09:00 AM,2025-01-25,09:15 AM,False,J - MED\nPack decor books out-of-season clothes,2025-01-26,09:00 AM,2025-01-26,09:15 AM,False,J - MED\nTest dog on a 30-min drive; note any anxiety,2025-01-27,09:00 AM,2025-01-27,09:15 AM,False,M - MED\nFile USPS change of address (activates in ~2 weeks),2025-01-29,09:00 AM,2025-01-29,09:15 AM,False,J - HIGH\nUpdate address: banks cards insurers SSA subscriptions,2025-01-30,09:00 AM,2025-01-30,09:15 AM,False,J - HIGH\nCall auto insurer about Oregon coverage,2025-01-31,09:00 AM,2025-01-31,09:15 AM,False,M - HIGH\nOrder dog ID tag with new address/phone,2025-02-01,09:00 AM,2025-02-01,09:15 AM,False,M - MED\nConfirm mover arrival window and crew size,2025-02-02,09:00 AM,2025-02-02,09:15 AM,False,J - HIGH\nPack kitchen non-essentials + closets,2025-02-03,09:00 AM,2025-02-03,09:15 AM,False,J - MED\nConfirm vehicle shipper pickup date/location,2025-02-05,09:00 AM,2025-02-05,09:15 AM,False,J - HIGH\nPhotograph valuables + serial numbers,2025-02-06,09:00 AM,2025-02-06,09:15 AM,False,M - HIGH\nPack Last Out First In box per room,2025-02-07,09:00 AM,2025-02-07,09:15 AM,False,J - MED\nArrange dog care for moving day (sitter or quiet room),2025-02-08,09:00 AM,2025-02-08,09:15 AM,False,M - HIGH\nConfirm hotel bookings along route,2025-02-09,09:00 AM,2025-02-09,09:15 AM,False,J - MED\nPack everything except daily essentials,2025-02-10,09:00 AM,2025-02-10,09:15 AM,False,J - HIGH\nFinal mover confirmation: arrival payment access parking,2025-02-12,09:00 AM,2025-02-12,09:15 AM,False,J - HIGH\nFill prescriptions for 30+ days; refill dog meds,2025-02-13,09:00 AM,2025-02-13,09:15 AM,False,M - HIGH\nDefrost/clean fridge 24 hrs before MD; donate perishables,2025-02-14,09:00 AM,2025-02-14,09:15 AM,False,J - MED\nCar emergency kit packed (jumper water first aid),2025-02-15,09:00 AM,2025-02-15,09:15 AM,False,M - HIGH\nWithdraw cash for tips tolls incidentals,2025-02-16,09:00 AM,2025-02-16,09:15 AM,False,J - MED\nWalk-through photos of every room + exterior,2025-02-17,09:00 AM,2025-02-17,09:15 AM,False,J - HIGH\nConfirm Ohio shutoffs + Oregon starts one last time,2025-02-19,09:00 AM,2025-02-19,09:15 AM,False,J - HIGH\nPack documents pouch (see one-pager),2025-02-21,09:00 AM,2025-02-21,09:15 AM,False,M - HIGH\nCharge all electronics power banks dog GPS,2025-02-22,09:00 AM,2025-02-22,09:15 AM,False,M - MED\nPack moving day essentials kit for the car,2025-02-23,09:00 AM,2025-02-23,09:15 AM,False,J - HIGH\nEarly night; dog gets long walk + familiar routine,2025-02-23,06:00 PM,2025-02-23,06:15 PM,False,M - MED\nMOVE DAY: Read Bill of Lading; note damage on inventory,2025-02-24,08:00 AM,2025-02-24,08:30 AM,False,J - HIGH\nMOVE DAY: Secure dog in crate or quiet room,2025-02-24,08:00 AM,2025-02-24,08:15 AM,False,M - HIGH\nMOVE DAY: Final meter reads + photos; return keys with receipt,2025-02-24,12:00 PM,2025-02-24,12:30 PM,False,J - HIGH\nMOVE DAY: Hit the road; break every 2-3 hrs for dog,2025-02-24,02:00 PM,2025-02-24,02:15 PM,False,J - HIGH\n```\n\n**To convert CSV to .ics in one step:** go to a free converter like `calendar-csv-to-ics.com` or use the Python one-liner `pip install ics && python -c \"...\"`. Honestly, Google Calendar's direct CSV import is easier than making an .ics — I'd skip the conversion unless you need it for Outlook.\n\n---\n\n## Printer-Friendly Plain-Text One-Pager\n\nCopy everything between the lines below into a document (Google Docs, Word, TextEdit, Notepad). Set margins to 0.5\" all around, font to 10pt (11pt max), and it will fit on a single page. Print, fold, tuck in the glove box.\n\n```\n===============================================================\n            MOVING DAY ESSENTIALS - KEEP IN THE CAR\n===============================================================\n\nDOCUMENTS POUCH (carry, do not pack in truck)\n[ ] Driver's licenses (both)        [ ] Passports\n[ ] Vehicle titles + registrations  [ ] Insurance cards\n[ ] Lease / closing papers          [ ] Bill of Lading + inventory\n[ ] Vehicle shipping receipt        [ ] Prescription list\n[ ] Birth / marriage certs, SS cards\n[ ] Bank + credit card contact numbers\n[ ] Cash $300-$500 for tips, tolls, incidentals\n[ ] DOG: rabies cert, vaccine records, microchip #, meds list\n\nTECH\n[ ] Phones + chargers      [ ] Power bank      [ ] Car charger\n[ ] Laptop + charger       [ ] Headphones      [ ] USB w/ valuables photos\n\nDOG KIT\n[ ] Leash + backup         [ ] Collar w/ new-address tag\n[",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "length",
+   "usage": {
+    "prompt_tokens": 16841,
+    "completion_tokens": 4000,
+    "total_tokens": 20841,
+    "cost": 0.1219565,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 13833,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.1219565,
+     "upstream_inference_prompt_cost": 0.0219565,
+     "upstream_inference_completions_cost": 0.1
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  },
+  {
+   "turn": 3,
+   "user": "The one-pager cut off — can you finish that plain-text single-page moving-day essentials (it stopped mid DOG KIT)? Also give me a ready-to-paste CSV for the 6–8 week reminders that uses MOVE_DAY as a placeholder in YYYY-MM-DD format (so I can replace it with our actual date). Keep the one-pager concise and printer-friendly (~200 words).",
+   "declined": false,
+   "text": "## Printer-Friendly One-Pager (complete)\n\nCopy between the lines. Set margins to 0.5\", font to 10pt, print single page.\n\n```\n===============================================================\n           MOVING DAY ESSENTIALS - KEEP IN THE CAR\n===============================================================\n\nDOCUMENTS POUCH (carry, never in truck)\n[ ] Driver's licenses + passports\n[ ] Vehicle titles, registrations, insurance cards\n[ ] Lease / closing papers\n[ ] Bill of Lading + mover inventory\n[ ] Vehicle shipping receipt + carrier contact\n[ ] Prescription list; birth/marriage certs, SS cards\n[ ] Bank + card contact numbers\n[ ] Cash $300-$500 (tips, tolls, incidentals)\n[ ] DOG: rabies cert, vaccines, microchip #, meds, vet contact\n\nTECH\n[ ] Phones + chargers  [ ] Power bank  [ ] Car charger\n[ ] Laptop + charger   [ ] Headphones  [ ] USB w/ valuables photos\n\nDOG KIT\n[ ] Leash + backup       [ ] Collar w/ new-address tag\n[ ] Crate or car harness [ ] 7 days food, sealed\n[ ] Bowls + water jug    [ ] Medications\n[ ] Blanket + toy        [ ] Poop bags + towel\n[ ] Calming aid (vet OK) [ ] Recent photo (if lost)\n\nPEOPLE KIT\n[ ] 2 days clothes each  [ ] Toiletries + meds\n[ ] Water bottles        [ ] Snacks\n[ ] Wipes, sanitizer     [ ] Paper towels, trash bags\n\nCAR EMERGENCY\n[ ] Jumper cables  [ ] Tire inflator  [ ] Flashlight\n[ ] First aid kit  [ ] Blanket        [ ] Multi-tool\n[ ] Duct tape      [ ] Wiper fluid    [ ] Paper maps\n\nFIRST-NIGHT BOX\n[ ] Bedding, pillows, towels   [ ] Toilet paper, soap\n[ ] Toothbrushes + chargers    [ ] Coffee, mug, kettle\n[ ] Plates, forks, 1 pan       [ ] Box cutter, trash bags\n[ ] Dog bed\n\nBEFORE LEAVING\n[ ] Walk-through video   [ ] Meter photos\n[ ] Keys returned + receipt  [ ] Thermostat set\n[ ] Water main off (if owned)  [ ] Windows locked\n[ ] Mover paperwork signed, copy kept\n\nEN ROUTE\nBreak every 2-3 hrs - Never leave dog in parked car\nRefuel at 1/2 tank - Log mileage + fuel receipts\n===============================================================\n```\n\n---\n\n## CSV with MOVE_DAY Placeholder\n\nCopy to `move-reminders.csv`. Then find-and-replace `MOVE_DAY` with your actual move date in `YYYY-MM-DD` format (e.g., `2025-04-15`). Each row's date is calculated from MOVE_DAY using day offsets shown in the `Subject` prefix, so after replacing you'll still need to compute dates — easiest method: open the CSV in Google Sheets, put MOVE_DAY in cell A1, then use `=A1+offset` in the date column. Or hand-edit using a calendar. The offset is baked into each subject line as `[MD-NN]` so you can sort or filter quickly.\n\n```\nSubject,Start Date,Start Time,End Date,End Time,All Day Event,Description\n[MD-56] Confirm lease notice sent / sale timeline set,MOVE_DAY-56,09:00 AM,MOVE_DAY-56,09:15 AM,False,J - HIGH\n[MD-55] Get 3-4 mover quotes (verify USDOT on SAFER),MOVE_DAY-55,09:00 AM,MOVE_DAY-55,09:15 AM,False,J - HIGH\n[MD-54] Price DIY truck + container options,MOVE_DAY-54,09:00 AM,MOVE_DAY-54,09:15 AM,False,J - HIGH\n[MD-53] Vet visit: records rabies microchip number,MOVE_DAY-53,09:00 AM,MOVE_DAY-53,09:15 AM,False,M - HIGH\n[MD-52] Decide: drive ship or fly-and-rent car,MOVE_DAY-52,09:00 AM,MOVE_DAY-52,09:15 AM,False,M - HIGH\n[MD-51] Open shared Move folder (docs + budget),MOVE_DAY-51,09:00 AM,MOVE_DAY-51,09:15 AM,False,J - MED\n[MD-49] Sign Oregon lease or confirm closing,MOVE_DAY-49,09:00 AM,MOVE_DAY-49,09:15 AM,False,J - HIGH\n[MD-48] Book internet install in Oregon,MOVE_DAY-48,09:00 AM,MOVE_DAY-48,09:15 AM,False,M - HIGH\n[MD-47] Book temporary housing if needed,MOVE_DAY-47,09:00 AM,MOVE_DAY-47,09:15 AM,False,J - MED\n[MD-46] Research Oregon DMV + emissions rules,MOVE_DAY-46,09:00 AM,MOVE_DAY-46,09:15 AM,False,M - MED\n[MD-45] Finalize mover; pay deposit after verifying insurance,MOVE_DAY-45,09:00 AM,MOVE_DAY-45,09:15 AM,False,J - HIGH\n[MD-44] Book vehicle shipper or route hotels,MOVE_DAY-44,09:00 AM,MOVE_DAY-44,09:15 AM,False,M - HIGH\n[MD-42] Start declutter: garage + storage,MOVE_DAY-42,09:00 AM,MOVE_DAY-42,09:15 AM,False,J - HIGH\n[MD-41] Notify employer; confirm relocation policy,MOVE_DAY-41,09:00 AM,MOVE_DAY-41,09:15 AM,False,P - HIGH\n[MD-40] Order packing supplies,MOVE_DAY-40,09:00 AM,MOVE_DAY-40,09:15 AM,False,M - MED\n[MD-39] Schedule car maintenance (oil tires brakes),MOVE_DAY-39,09:00 AM,MOVE_DAY-39,09:15 AM,False,M - MED\n[MD-38] Draft move budget with contingency (10-15%),MOVE_DAY-38,09:00 AM,MOVE_DAY-38,09:15 AM,False,J - MED\n[MD-37] Start packing: guest room / storage,MOVE_DAY-37,09:00 AM,MOVE_DAY-37,09:15 AM,False,J - MED\n[MD-35] Schedule Ohio utility shutoffs (day after MD),MOVE_DAY-35,09:00 AM,MOVE_DAY-35,09:15 AM,False,J - HIGH\n[MD-34] Confirm Oregon utility start dates in writing,MOVE_DAY-34,09:00 AM,MOVE_DAY-34,09:15 AM,False,M - HIGH\n[MD-33] Find Oregon vet; request records transfer,MOVE_DAY-33,09:00 AM,MOVE_DAY-33,09:15 AM,False,M - MED\n[MD-32] Sell/donate pickup scheduled,MOVE_DAY-32,09:00 AM,MOVE_DAY-32,09:15 AM,False,J - MED\n[MD-31] Pack decor books out-of-season clothes,MOVE_DAY-31,09:00 AM,MOVE_DAY-31,09:15 AM,False,J - MED\n[MD-30] Test dog on a 30-min drive; note anxiety,MOVE_DAY-30,09:00 AM,MOVE_DAY-30,09:15 AM,False,M - MED\n[MD-28] File USPS change of address,MOVE_DAY-28,09:00 AM,MOVE_DAY-28,09:15 AM,False,J - HIGH\n[MD-27] Update address: banks cards insurers SSA,MOVE_DAY-27,09:00 AM,MOVE_DAY-27,09:15 AM,False,J - HIGH\n[MD-26] Call auto insurer about Oregon coverage,MOVE_DAY-26,09:00 AM,MOVE_DAY-26,09:15 AM,False,M - HIGH\n[MD-25] Order dog ID tag with new address/phone,MOVE_DAY-25,09:00 AM,MOVE_DAY-25,09:15 AM,False,M - MED\n[MD-24] Confirm mover arrival window and crew size,MOVE_DAY-24,09:00 AM,MOVE_DAY-24,09:15 AM,False,J - HIGH\n[MD-23] Pack kitchen non-essentials + closets,MOVE_DAY-23,09:00 AM,MOVE_DAY-23,09:15 AM,False,J - MED\n[MD-21] Confirm vehicle shipper pickup date/location,MOVE_DAY-21,09:00 AM,MOVE_DAY-21,09:15 AM,False,J - HIGH\n[MD-20] Photograph valuables + serial numbers,MOVE_DAY-20,09:00 AM,MOVE_DAY-20,09:15 AM,False,M - HIGH\n[MD-19] Pack Last Out First In box per room,MOVE_DAY-19,09:00 AM,MOVE_DAY-19,09:15 AM,False,J - MED\n[MD-18] Arrange dog care for moving day,MOVE_DAY-18,09:00 AM,MOVE_DAY-18,09:15 AM,False,M - HIGH\n[MD-17] Confirm hotel bookings along route,MOVE_DAY-17,09:00 AM,MOVE_DAY-17,09:15 AM,False,J - MED\n[MD-16] Pack everything except daily essentials,MOVE_DAY-16,09:00 AM,MOVE_DAY-16,09:15 AM,False,J - HIGH\n[MD-14] Final mover confirmation,MOVE_DAY-14,09:00 AM,MOVE_DAY-14,09:15 AM,False,J - HIGH\n[MD-13] Fill prescriptions 30+ days; refill dog meds,MOVE_DAY-13,09:00 AM,MOVE_DAY-13,09:15 AM,False,M - HIGH\n[MD-12] Defrost/clean fridge; donate perishables,MOVE_DAY-12,09:00 AM,MOVE_DAY-12,09:15 AM,False,J - MED\n[MD-11] Car emergency kit packed,MOVE_DAY-11,09:00 AM,MOVE_DAY-11,09:15 AM,False,M - HIGH\n[MD-10] Withdraw cash for tips tolls incidentals,MOVE_DAY-10,09:00 AM,MOVE_DAY-10,09:15 AM,False,J - MED\n[MD-9] Walk-through photos every room + exterior,MOVE_DAY-9,09:00 AM,MOVE_DAY-9,09:15 AM,False,J - HIGH\n[MD-7] Confirm Ohio",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "length",
+   "usage": {
+    "prompt_tokens": 20985,
+    "completion_tokens": 4000,
+    "total_tokens": 24985,
+    "cost": 0.1426765,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 13833,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.1426765,
+     "upstream_inference_prompt_cost": 0.0426765,
+     "upstream_inference_completions_cost": 0.1
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  },
+  {
+   "turn": 4,
+   "user": "Looks great — the CSV cut off at \"[MD-7] Confirm Ohio\". Can you finish the remaining rows through Move Day (MD-6 → MD-0) keeping the MOVE_DAY‑NN placeholder format (e.g., MOVE_DAY-7) and including the Description field (who + priority) for each? Also add a one-line note on the quickest way to replace MOVE_DAY placeholders with real dates in Google Sheets.",
+   "declined": false,
+   "text": "## Remaining CSV Rows (MD-7 → MD-0)\n\nAppend these to your existing CSV file:\n\n```\n[MD-7] Confirm Ohio shutoffs + Oregon starts one last time,MOVE_DAY-7,09:00 AM,MOVE_DAY-7,09:15 AM,False,J - HIGH\n[MD-5] Pack documents pouch (see one-pager),MOVE_DAY-5,09:00 AM,MOVE_DAY-5,09:15 AM,False,M - HIGH\n[MD-4] Charge electronics power banks dog GPS,MOVE_DAY-4,09:00 AM,MOVE_DAY-4,09:15 AM,False,M - MED\n[MD-3] Fuel car; check tires + fluids,MOVE_DAY-3,09:00 AM,MOVE_DAY-3,09:15 AM,False,M - HIGH\n[MD-2] Confirm route hotels + dog-friendly stops,MOVE_DAY-2,09:00 AM,MOVE_DAY-2,09:15 AM,False,J - MED\n[MD-1] Pack moving day essentials kit for the car,MOVE_DAY-1,09:00 AM,MOVE_DAY-1,09:15 AM,False,J - HIGH\n[MD-1] Early night; dog gets long walk + familiar routine,MOVE_DAY-1,06:00 PM,MOVE_DAY-1,06:15 PM,False,M - MED\n[MD-0] MOVE DAY: Read + sign Bill of Lading; note damage,MOVE_DAY-0,08:00 AM,MOVE_DAY-0,08:30 AM,False,J - HIGH\n[MD-0] MOVE DAY: Secure dog in crate or quiet room,MOVE_DAY-0,08:00 AM,MOVE_DAY-0,08:15 AM,False,M - HIGH\n[MD-0] MOVE DAY: Final meter reads + photos,MOVE_DAY-0,11:00 AM,MOVE_DAY-0,11:15 AM,False,J - HIGH\n[MD-0] MOVE DAY: Return keys with receipt,MOVE_DAY-0,12:00 PM,MOVE_DAY-0,12:15 PM,False,J - HIGH\n[MD-0] MOVE DAY: Hit the road; break every 2-3 hrs for dog,MOVE_DAY-0,02:00 PM,MOVE_DAY-0,02:15 PM,False,J - HIGH\n```\n\n## Quickest Way to Replace MOVE_DAY in Google Sheets\n\nPaste the CSV into Sheets, put your move date in cell `Z1` (e.g., `2025-04-15`), then in a helper column use `=Z$1 + VALUE(REGEXEXTRACT(B2,\"-(\\d+)\")) * -1` to compute each real date from the `MOVE_DAY-NN` text in column B — then copy that column, paste-special as values over column B, and export as CSV.\n\n**Even faster if you don't want formulas:** use Find & Replace (Ctrl/Cmd+H) once per offset — search `MOVE_DAY-0` replace with `2025-04-15`, search `MOVE_DAY-1` replace with `2025-04-14`, etc. Tedious but foolproof. For an under-5-minute option, just do the ~12 HIGH-priority dates first and backfill the rest later.\n\nThat should wrap the full export set. Good luck with the move.",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "stop",
+   "usage": {
+    "prompt_tokens": 25145,
+    "completion_tokens": 1203,
+    "total_tokens": 26348,
+    "cost": 0.0935515,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 13833,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0935515,
+     "upstream_inference_prompt_cost": 0.0634765,
+     "upstream_inference_completions_cost": 0.030075
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  },
+  {
+   "turn": 5,
+   "user": "Nice — can you give a clear, step-by-step Google Sheets method to convert the MOVE_DAY‑N placeholders into real YYYY‑MM‑DD dates for the entire CSV (no manual Find & Replace per row)? Also can you paste a tiny ready-to-run Python script (copies/pastes only; no installs beyond pip) that converts the completed CSV to a single .ics file we can import if we want an .ics instead of CSV?",
+   "declined": false,
+   "text": "## Google Sheets Method: Bulk Convert MOVE_DAY-N to Real Dates\n\n**Step 1.** Open Google Sheets → File → Import → Upload → select `move-reminders.csv` → Import location: \"Replace spreadsheet\" → Separator type: \"Comma\" → Import data. Your CSV now fills columns A–G with row 1 as headers.\n\n**Step 2.** Click cell `I1`. Type the label `Move Date`. In cell `I2`, enter your actual move day in ISO format: `2025-04-15` (adjust to your real date). Sheets will auto-recognize it as a date.\n\n**Step 3.** Insert two helper columns. Right-click column B header → \"Insert 1 column left\" (this becomes new column B, pushing old B to C). Do it again so you have two empty helper columns B and C. Your original \"Start Date\" column is now D, and \"End Date\" is now F.\n\n**Step 4.** In cell `B2`, paste this formula:\n```\n=IF(D2=\"\",\"\",$I$2 - VALUE(REGEXEXTRACT(D2,\"MOVE_DAY-(\\d+)\")))\n```\nThis reads the offset number out of the text `MOVE_DAY-56` and subtracts it from your move date. In cell `C2`, paste the same formula but referencing F2:\n```\n=IF(F2=\"\",\"\",$I$2 - VALUE(REGEXEXTRACT(F2,\"MOVE_DAY-(\\d+)\")))\n```\n\n**Step 5.** Select cells `B2:C2`, grab the small blue square at the bottom-right corner, and drag down to the last row of data (or double-click the square to auto-fill). Columns B and C now hold real dates.\n\n**Step 6.** Format columns B and C as `YYYY-MM-DD`. Select both columns → Format → Number → Custom date and time → type `yyyy-mm-dd` → Apply.\n\n**Step 7.** Replace the placeholder columns with your computed dates. Select B2 down to the last filled row → Copy → right-click cell D2 → Paste special → Values only. Repeat for column C → paste into F2 as values only. Columns D and F now show real dates as plain text.\n\n**Step 8.** Delete helper columns B and C, and delete column I (the move date cell). You're back to the original 7-column layout with real dates in place.\n\n**Step 9.** File → Download → Comma-separated values (.csv). Import that file into Google Calendar (Settings → Import & export → Import) or Apple Calendar (File → Import).\n\n**Shortcut if you hate helper columns:** Put move date in `I2`, then select D2:D(last), go to Data → Data cleanup → Find and replace isn't powerful enough for this — but Insert → Function → use an array formula in an empty column: `=ARRAYFORMULA(IF(D2:D=\"\",\"\",$I$2-VALUE(REGEXEXTRACT(D2:D,\"MOVE_DAY-(\\d+)\"))))`. One formula fills the whole column. Repeat for the End Date column, then paste-special values over the originals.\n\n---\n\n## Python Script: CSV → .ics\n\nNo installs beyond the standard library needed — this uses only built-in modules (`csv`, `datetime`, `uuid`). Save as `csv_to_ics.py` in the same folder as your completed CSV, then run `python csv_to_ics.py`.\n\n```python\nimport csv\nfrom datetime import datetime\nfrom uuid import uuid4\n\nINPUT_CSV = \"move-reminders.csv\"\nOUTPUT_ICS = \"move-reminders.ics\"\nCALENDAR_NAME = \"Ohio to Oregon Move\"\n\ndef parse_dt(date_str, time_str):\n    \"\"\"Parse 'YYYY-MM-DD' + 'HH:MM AM/PM' into ICS format 'YYYYMMDDTHHMMSS'.\"\"\"\n    dt = datetime.strptime(f\"{date_str} {time_str}\", \"%Y-%m-%d %I:%M %p\")\n    return dt.strftime(\"%Y%m%dT%H%M%S\")\n\ndef escape(text):\n    \"\"\"Escape commas, semicolons, backslashes, and newlines per RFC 5545.\"\"\"\n    return (text.replace(\"\\\\\", \"\\\\\\\\\")\n                .replace(\",\", \"\\\\,\")\n                .replace(\";\", \"\\\\;\")\n                .replace(\"\\n\", \"\\\\n\"))\n\ndef main():\n    now = datetime.utcnow().strftime(\"%Y%m%dT%H%M%SZ\")\n    lines = [\n        \"BEGIN:VCALENDAR\",\n        \"VERSION:2.0\",\n        \"PRODID:-//Move Planner//EN\",\n        \"CALSCALE:GREGORIAN\",\n        f\"X-WR-CALNAME:{CALENDAR_NAME}\",\n    ]\n\n    with open(INPUT_CSV, newline=\"\", encoding=\"utf-8\") as f:\n        reader = csv.DictReader(f)\n        for row in reader:\n            try:\n                dtstart = parse_dt(row[\"Start Date\"], row[\"Start Time\"])\n                dtend = parse_dt(row[\"End Date\"], row[\"End Time\"])\n            except (ValueError, KeyError) as e:\n                print(f\"Skipping row (bad date/time): {row.get('Subject','?')} - {e}\")\n                continue\n\n            lines.extend([\n                \"BEGIN:VEVENT\",\n                f\"UID:{uuid4()}@move-planner\",\n                f\"DTSTAMP:{now}\",\n                f\"DTSTART:{dtstart}\",\n                f\"DTEND:{dtend}\",\n                f\"SUMMARY:{escape(row['Subject'])}\",\n                f\"DESCRIPTION:{escape(row.get('Description',''))}\",\n                \"END:VEVENT\",\n            ])\n\n    lines.append(\"END:VCALENDAR\")\n\n    with open(OUTPUT_ICS, \"w\", encoding=\"utf-8\") as f:\n        f.write(\"\\r\\n\".join(lines))\n\n    print(f\"Wrote {OUTPUT_ICS}\")\n\nif __name__ == \"__main__\":\n    main()\n```\n\n**How to use:**\n\n1. Complete the CSV in Google Sheets (real dates in place, MOVE_DAY placeholders replaced), download as CSV, rename to `move-reminders.csv`.\n2. Save the Python script above as `csv_to_ics.py` in the same folder.\n3. Open a terminal in that folder and run `python csv_to_ics.py` (or `python3` on Mac/Linux).\n4. You'll get `move-reminders.ics`. Import it directly into Apple Calendar (File → Import), Outlook (File → Open & Export → Import/Export → iCalendar), or Google Calendar (Settings → Import & export → Import).\n\n**Notes on the script:** Times are written as floating (no timezone), which means they'll display in whatever local timezone the importing calendar uses — fine for personal reminders. If you want explicit Eastern Time for the Ohio reminders and Pacific Time for the last few, that's a more involved change; happy to add timezone support if you need it. The script is idempotent — rerun anytime after editing the CSV.\n\nThat's the full toolkit. Have a smooth move.",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "stop",
+   "usage": {
+    "prompt_tokens": 26503,
+    "completion_tokens": 2400,
+    "total_tokens": 28903,
+    "cost": 0.1302665,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 13833,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.1302665,
+     "upstream_inference_prompt_cost": 0.0702665,
+     "upstream_inference_completions_cost": 0.06
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  },
+  {
+   "turn": 6,
+   "user": "Perfect, that's done.",
+   "declined": false,
+   "text": "Glad it's all set. Good luck with the move — you've got a solid plan.",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "stop",
+   "usage": {
+    "prompt_tokens": 28918,
+    "completion_tokens": 29,
+    "total_tokens": 28947,
+    "cost": 0.0830665,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 13833,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0830665,
+     "upstream_inference_prompt_cost": 0.0823415,
+     "upstream_inference_completions_cost": 0.000725
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  }
+ ]
+}

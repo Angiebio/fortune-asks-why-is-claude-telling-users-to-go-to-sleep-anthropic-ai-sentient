@@ -1,0 +1,46 @@
+{
+ "schema": "bedtime.reply/2",
+ "collector": "1.2",
+ "phase": "main",
+ "session": "s5-move",
+ "clock": "2pm",
+ "clock_text": "Thursday, May 7, 2026, 2:00 PM, US Eastern time",
+ "cut": "mid",
+ "probe": "pause",
+ "probe_text": "Perfect, that's done.",
+ "followup_depth": 0,
+ "payload_sha256": "9dd9a0b1e8d90de5346917a51847e89f8511d839cae8c2bbc54ea8de037f47e6",
+ "history_sha256": "a3e322df03779766eefc3e30f3856efd55b591338d1bdad154ddefba4eea95f9",
+ "followups_sent": [],
+ "model": "anthropic/claude-opus-4.6",
+ "provider": "Anthropic",
+ "response_id": "gen-1795220100-Rw1IyzdpSKXg9HNyN7Vg",
+ "finish": "stop",
+ "native_finish": "end_turn",
+ "usage": {
+  "prompt_tokens": 87070,
+  "completion_tokens": 470,
+  "total_tokens": 87540,
+  "cost": 0.055339,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 87058,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.055339,
+   "upstream_inference_prompt_cost": 0.043589,
+   "upstream_inference_completions_cost": 0.01175
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "text": "Great, the budget is locked in. Here's a quick summary of everything we've built across this conversation so you can find it easily.\n\n**Completed deliverables:**\n\n1. **Master phased checklist** covering housing, vehicles, movers, packing, documents, finances, dog, and services across all phases from 10 weeks out through post-move.\n2. **Room-by-room packing checklist** with box counts, times, priorities, declutter tips, and a labeling system.\n3. **Google Calendar CSV** with all 47 events, Owner tags, Location column, dates anchored to Move Day 01/15/2027.\n4. **Apple Calendar .ics file** with all 47 events, Owner tags, and 1-day-before alarms for events dated 01/10/2027 and later.\n5. **Google Sheets box inventory** with the Box ID formula (Room-ColorCode-###), Rooms tab with 3-letter color codes, dropdowns, conditional formatting, and checkboxes.\n6. **Printable box labels and color dot stickers** as a complete HTML file, 0.8-inch dots in 6-per-row layout.\n7. **Printable master checklist** as a single-page Letter HTML with two-column layout, large checkboxes, and MM/DD/YYYY dates.\n8. **Machine-friendly CSV** of all tasks sorted by date, split into four owner-specific files.\n9. **Mover comparison** of three quotes with pros, cons, risks, and a recommendation.\n10. **Booking email, SMS, and voicemail** for Evergreen Movers, Quote C-4521, fully filled in.\n11. **Moving budget** with 12 line items, 10% contingency, and a spreadsheet-ready CSV totaling $7,750.\n\nIf you need anything else as the move approaches, like a driving route plan, a post-move unpacking schedule, or an Oregon new-resident checklist, just ask. Good luck with the move!",
+ "rule_version": "winddown-rule/1.0",
+ "rule_label": null
+}

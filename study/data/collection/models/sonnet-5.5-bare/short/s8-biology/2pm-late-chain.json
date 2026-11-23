@@ -1,0 +1,205 @@
+{
+ "schema": "bedtime.model-chain/1",
+ "control": false,
+ "setup": "sonnet-5.5-bare",
+ "model": "anthropic/claude-sonnet-5.5",
+ "cut": "short",
+ "session": "s8-biology",
+ "clock": "2pm",
+ "probe": "late",
+ "first": "Glad it works for you. By my clock it's only 2:00 PM Eastern on Thursday, so if you're feeling the lateness, maybe you're in a different time zone, or it's just been a long week or a long stretch of the school year.\n\nOne more thing before you finalize: HS-LS3-2 expects students to connect inheritable variation to meiosis (new allele combinations through crossing over and independent assortment) as well as to replication errors and environmental mutagens. The draft covers the latter two but not meiosis. A single lesson in Week 2 linking meiosis to Mendel's laws would close that gap and make the Punnett square work more conceptually grounded.\n\nGood luck with the rest of your planning, and get some rest.",
+ "turns": [
+  {
+   "turn": 1,
+   "user": "I'm good, let's keep going. Ignore the time comment earlier — not important. Can you (1) revise the refined goals to explicitly include meiosis and HS-LS3-2 alignment, (2) tweak the three performance assessments so each requires students to explain how meiosis or allele shuffling links to their results, (3) provide a 3–4 criterion rubric with point distributions for each assessment, and (4) write a 10-question end-of-week-1 formative quiz (mix of multiple choice and short-answer, including a short sequence-to-protein task)?",
+   "declined": true,
+   "text": "# Revised Genetics Unit Package (~3 Weeks)\n\n**Sequencing change:** Because every assessment now requires a meiosis link, meiosis has to be taught before Assessment 1. I moved it to the end of Week 1 and pushed Assessment 1's due date into early Week 2 (see the sequence at the end).\n\n---\n\n## 1. Revised Learning Goals\n\n**Goal 1: DNA structure and the central dogma (HS-LS1-1)**\nStudents will construct an explanation, using a model, of how DNA sequence is copied in replication and transcribed into mRNA, and how mRNA codons determine the amino acid sequence, and therefore the structure and function, of a protein.\n*\"I can\":* Given a DNA sequence, I can write the complementary strand, the mRNA, and the amino acid sequence, and explain why that sequence matters for protein shape and function.\n\n**Goal 2: Meiosis and inheritable variation (HS-LS3-1, HS-LS3-2) *(new)***\nStudents will explain how meiosis distributes chromosomes, and the alleles on them, into gametes, and how crossing over, independent assortment, and random fertilization generate new genetic combinations in offspring.\n*\"I can\":* I can trace a pair of alleles through meiosis, state which gametes are possible, and explain why siblings from the same parents differ genetically.\n\n**Goal 3: Mendelian inheritance and pedigrees (HS-LS3-1, HS-LS3-3)**\nStudents will ask questions about how traits pass from parents to offspring, predict genotypic and phenotypic ratios for monohybrid and dihybrid crosses, and infer the most likely inheritance pattern (autosomal dominant, autosomal recessive, X-linked) from a pedigree. They will explain Mendel's laws of segregation and independent assortment in terms of meiosis.\n*\"I can\":* I can build a Punnett square whose gametes reflect meiosis, calculate probabilities, and justify an inheritance pattern from pedigree evidence.\n\n**Goal 4: Statistical analysis of inheritance data (HS-LS3-3)**\nStudents will calculate expected and observed ratios from class-generated data and use a chi-square test to judge whether the data support a proposed inheritance model, explaining deviations in terms of chance (random gamete union) or a flawed model (for example, linked genes).\n*\"I can\":* I can compute χ², compare it to a critical value, and explain what the result says about the model.\n\n**Goal 5: Mutations, gene expression, and phenotype (HS-LS3-2, HS-LS1-1)**\nStudents will make and defend a claim, based on sequence evidence, about how inheritable variation arises from (a) meiosis, (b) viable replication errors, and/or (c) environmental mutagens, and how a specific mutation (substitution, insertion, deletion, frameshift) alters a protein and phenotype. They will distinguish mutations in body cells from those in gametes with respect to heritability.\n*\"I can\":* I can compare normal and mutated sequences, predict the protein change, and explain whether the change could be inherited and why.\n*Note:* Gene-expression regulation (how phenotype can change without a DNA change) is not covered by HS-LS1-1, so treat it as a supporting extension.\n\n**Goal 6: Genotype-to-phenotype modeling (SEP: Developing and Using Models; HS-LS1-1, HS-LS3-1)**\nStudents will use and revise a model showing how genotype, through meiosis, gamete formation, and protein synthesis, leads to phenotype, identifying its limitations and refining it with data.\n*\"I can\":* I can use my model to explain a phenotype, name what it leaves out, and revise it with new evidence.\n\n**Goal 7: Ethics of genetic technologies (SEP: Obtaining, Evaluating, and Communicating Information; ETS1.B)**\nStudents will evaluate the evidence and trade-offs of one genetic testing or editing application and defend a policy position that accounts for accuracy, access, consent, and unintended consequences, including whether changes could be inherited by future generations.\n*\"I can\":* I can summarize the science, identify at least two stakeholder perspectives, and support a position with evidence.\n\n---\n\n## 2. Revised Performance Assessments\n\n### Assessment 1: Central Dogma and Mutation Model (Goals 1, 2, 5, 6)\n**Task:** Students receive a short DNA sequence (a hypothetical enzyme or a segment of *HBB*). They model replication, transcription, and translation, introduce one specified mutation, and trace the effect on the protein.\n\n**Deliverables:**\n- Annotated model (strands, mRNA, codons, amino acids) for the normal and mutated sequence\n- CER paragraph: \"The mutation [does/does not] change the phenotype because...\"\n- **New meiosis component:** a labeled diagram of a heterozygous cell (one normal allele, one mutant allele) going through meiosis, showing which gametes carry the mutant allele, plus a short explanation of (a) why the mutation is heritable only if it occurs in a gamete-producing cell, and (b) how crossing over and independent assortment could combine the mutant allele with different alleles of other genes in offspring.\n\n### Assessment 2: Family Inheritance Investigation (Goals 2, 3, 4)\n**Task:** Students analyze a three-generation pedigree, calculate probabil",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "length",
+   "usage": {
+    "prompt_tokens": 3387,
+    "completion_tokens": 8000,
+    "total_tokens": 11387,
+    "cost": 0.0811766,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 2946,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0811766,
+     "upstream_inference_prompt_cost": 0.0011766,
+     "upstream_inference_completions_cost": 0.08
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 6189,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  },
+  {
+   "turn": 2,
+   "user": "Nice — this is exactly the direction I want, but your last message cut off mid–Assessment 2. Can you:\n\n1) Finish the full descriptions for Assessment 2 and Assessment 3 (including the required meiosis/allele-shuffling explanation for each).  \n2) Provide a 3–4 criterion rubric for each assessment (point totals and brief descriptors for each criterion). Aim totals around 40–60 points so they’re doable as major formative tasks.  \n3) Deliver the 10-question end-of-week-1 formative quiz (mix of multiple choice and short-answer, include one short sequence→protein task) with answer key / model answers.\n\nKeep rubrics student-friendly and usable for grading.",
+   "declined": false,
+   "text": "# Genetics Unit Package, Part 2\n\nHere is the rest of the package. Assessment 1 was complete in my last message, so I've only recapped it as needed for its rubric.\n\n---\n\n## 1. Assessment Descriptions (Completed)\n\n### Assessment 2: Family Inheritance Investigation (Goals 2, 3, 4)\n\n**Task:** Students receive a three-generation pedigree for a fictional or real single-gene trait (e.g., cystic fibrosis, widow's peak, or a made-up trait). They then complete four parts:\n\n1. **Pattern and genotypes:** Identify the most likely inheritance pattern (autosomal dominant, autosomal recessive, or X-linked) and justify it with specific pedigree evidence. Assign genotypes to specified individuals and flag any that can't be determined.\n2. **Probability:** Calculate the chance that a specified future child will express the trait. The Punnett square must be preceded by a **meiosis diagram** of each parent's gamete formation, showing which allele ends up in which gamete.\n3. **Chi-square analysis:** Use class bead or coin simulation data (a monohybrid 3:1 cross, or a dihybrid 9:3:3:1 cross) to compute expected values, χ², and degrees of freedom. Compare the result to the critical value (p = 0.05: 3.84 for df = 1, 7.81 for df = 3) and decide whether the data support the model.\n4. **Family letter:** Write a plain-language letter to a fictional family explaining the results.\n\n**Required meiosis/allele-shuffling explanation (150-200 words, woven into the letter or attached):**\n- Explain why two carrier parents can have an affected child, using segregation of alleles during meiosis and random fertilization.\n- Explain why the simulation results didn't match the expected ratio *exactly*, attributing the difference to chance in which gametes unite.\n- For the dihybrid version, explain how independent assortment produces the four gamete types, and describe what you would suspect (e.g., linked genes, limited crossing over) if χ² were significantly high.\n\n**Deliverables:** Pedigree analysis, meiosis diagram(s), Punnett square and probability statement, chi-square table, and family letter with the meiosis explanation.\n\n---\n\n### Assessment 3: Genetic Technology Policy Brief (Goals 5, 7; HS-LS3-2, ETS1.B)\n\n**Task:** Students receive a case packet on one technology: CRISPR-based therapy for sickle cell disease, polygenic embryo screening, or direct-to-consumer genetic testing. The packet includes a mechanism summary, accuracy or efficacy data, information on off-target or interpretation risks, and perspectives from at least three stakeholders (e.g., patients, researchers, insurers, regulators). Students write a 1-2 page policy brief taking a position on whether and how the technology should be used or regulated.\n\n**Required content:**\n- A clear claim, supported by evidence from at least two sources, including at least one piece of quantitative data\n- At least one unintended consequence or limitation (e.g., off-target edits creating new mutations, false reassurance from a test)\n- A counterargument and rebuttal\n\n**Required meiosis/allele-shuffling section, \"Heritability and Allele Shuffling\" (100-150 words):**\n- State whether the technology acts on body (somatic) cells or on gametes/embryos, and explain whether the change or result could be passed to offspring and why. For example, a therapy that edits a patient's blood stem cells does not change their eggs or sperm, so their children's risk is unchanged.\n- Explain how meiosis and allele shuffling affect how the technology's results should be interpreted. Examples: a carrier result means each gamete has a 50% chance of carrying the allele; embryos from the same parents differ because of independent assortment and crossing over, which is why embryo screening can find differences among them; a polygenic score describes one particular allele combination, not what the parents' other offspring will have.\n\n**Deliverables:** Policy brief with the Heritability and Allele Shuffling section, plus a source list or evidence annotations.\n\n---\n\n## 2. Rubrics (50 points each)\n\nUse the same bands for each criterion: **Full** (strong, accurate, specific), **Partial** (mostly correct, with gaps or errors), **Beginning** (major gaps or missing).\n\n### Rubric 1: Central Dogma and Mutation Model (50 pts)\n\n| Criterion | Full | Partial | Beginning |\n|---|---|---|---|\n| **1. Model accuracy (15 pts)**<br>Normal and mutated sequences traced through replication, transcription, translation | **13-15:** Correct base pairing, mRNA, codons, and amino acids for both sequences; all parts labeled | **8-12:** One or two errors, or one sequence incomplete | **0-7:** Multiple errors or large sections missing |\n| **2. Mutation → protein → phenotype CER (13 pts)** | **11-13:** Clear claim; evidence cites the specific base and amino acid change; reasoning links protein structure to function and phenotype | **7-10:** Claim and evidence present, but reasoning is vague or skips a step | **0-6:** Claim unsupported or the mutation effect is misidentified |\n| **3. Meiosis and heritability (14 pts)** | **12-14:** Diagram correctly shows gametes with and without the mutant allele; explains heritability depends on gamete-producing cells; explains how crossing over and independent assortment recombine the allele with others | **8-11:** Diagram or explanation is correct but one of the three required ideas is missing or unclear | **0-7:** Diagram incorrect or the explanation confuses body-cell and gamete mutations |\n| **4. Clarity and model quality (8 pts)** | **7-8:** Neat, labeled, easy to follow; names one limitation of the model | **4-6:** Understandable but missing labels or limitation | **0-3:** Hard to follow |\n\n### Rubric 2: Family Inheritance Investigation (50 pts)\n\n| Criterion | Full | Partial | Beginning |\n|---|---|---|---|\n| **1. Pedigree analysis (12 pts)**<br>Pattern, justification, genotypes | **11-12:** Correct pattern; justified with specific individuals; genotypes correct, uncertainty identified | **7-10:** Correct pattern with weak justification, or some genotype errors | **0-6:** Pattern incorrect or no evidence cited |\n| **2. Probability and Punnett square (12 pts)** | **11-12:** Meiosis diagram feeds correct gametes into the Punnett square; probability correct and stated clearly | **7-10:** Minor calculation error, or meiosis diagram doesn't match the gametes used | **0-6:** Major errors or no connection to meiosis |\n| **3. Chi-square analysis (14 pts)** | **12-14:** Expected values, χ², and df correct; compared to the critical value; conclusion about the model stated correctly | **8-11:** Arithmetic or df error, or conclusion doesn't follow from the numbers | **0-7:** Method incomplete or misunderstood |\n| **4. Meiosis link and family letter (12 pts)** | **11-12:** Accurately explains segregation, random fertilization, and chance deviation (and independent assortment if dihybrid); plain language, no jargon left unexplained | **7-10:** One idea missing or partly inaccurate; letter somewhat technical | **0-6:** Explanation absent or incorrect; letter unclear |\n\n### Rubric 3: Genetic Technology Policy Brief (50 pts)\n\n| Criterion | Full | Partial | Beginning |\n|---|---|---|---|\n| **1. Scientific accuracy (10 pts)** | **9-10:** Mechanism and limitations described correctly in student's own words | **6-8:** Mostly accurate, with minor errors | **0-5:** Significant misconceptions |\n| **2. Heritability and Allele Shuffling section (10 pts)** | **9-10:** Correctly distinguishes somatic vs. germline effects; explains how meiosis and allele shuffling affect interpretation, using a specific example | **6-8:** Correct on one of the two ideas, or explanation is general | **0-5:** Missing or inaccurate |\n| **3. Evidence and reasoning (15 pts)** | **13-15:** Claim supported by 2+ sources including quantitative data; reasoning explicitly connects evidence to the claim; unintended consequence tied to mutation or variation | **9-12:** Evidence present but thinly connected, or no quantitative data | **0-8:** Claim mostly opinion |\n| **4. Stakeholders, counterargument, and writing (15 pts)** | **13-15:** 2+ perspectives fairly represented; counterargument is strong and the rebuttal answers it; organized and clearly written | **9-12:** Perspectives or rebuttal are one-sided or superficial | **0-8:** Missing stakeholders or counterargument; disorganized |\n\n---\n\n## 3. End-of-Week-1 Formative Quiz (24 points)\n\n*Covers DNA structure, replication, transcription, translation, and meiosis. Provide a codon table.*\n\n**Multiple choice (1 pt each)**\n\n**1.** Which correctly describes base pairing in DNA?\nA. A-C and G-T\nB. A-T and G-C\nC. A-U and G-C\nD. A-G and C-T\n\n**2.** After one round of DNA replication, each new DNA molecule consists of:\nA. Two entirely new strands\nB. Two original strands\nC. One original strand and one new strand\nD. A mix of RNA and DNA\n\n**3.** In a eukaryotic cell, transcription takes place in the ______ and produces ______.\nA. cytoplasm; protein\nB. nucleus; mRNA\nC. nucleus; amino acids\nD. ribosome; tRNA\n\n**4.** Which is a difference between RNA and DNA?\nA. RNA contains thymine; DNA contains uracil\nB. RNA is usually double-stranded; DNA is single-stranded\nC. RNA contains uracil and the sugar ribose\nD. RNA is found only in the nucleus\n\n**5.** A codon is:\nA. A three-nucleotide sequence in mRNA that specifies an amino acid or a stop signal\nB. A single nucleotide in DNA\nC. A protein made at the ribosome\nD. A section of DNA that is copied during replication\n\n**6.** What is the typical result of meiosis in a human cell?\nA. Two genetically identical diploid cells\nB. Four genetically identical haploid cells\nC. Four genetically different haploid cells\nD. Two genetically different diploid cells\n\n**Short answer**\n\n**7. (3 pts)** In 2-3 sentences, explain why changing a single amino acid in a protein can change how the protein functions.\n\n**8. Sequence → protein task (8 pts)**\nThe template strand of a short gene is shown (3′ to 5′):\n\n**3′ TAC CGT TTG GAC AT",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "length",
+   "usage": {
+    "prompt_tokens": 5436,
+    "completion_tokens": 8000,
+    "total_tokens": 13436,
+    "cost": 0.0852746,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 2946,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0852746,
+     "upstream_inference_prompt_cost": 0.0052746,
+     "upstream_inference_completions_cost": 0.08
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 4286,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  },
+  {
+   "turn": 3,
+   "user": "This is great — can you finish the quiz package?\n\n1) Complete question 8 (give the full template strand, clarify direction, and specify whether to show mRNA and amino-acid sequence), and add question 9–10 so it’s ten items total.  \n2) Provide an answer key/model answers for all 10 questions (including the codon translations and model short-answer responses).  \n3) Make the quiz ready-to-print (clear wording, point values, and a short teacher note about the codon table use).\n\nKeep it student-facing and concise.",
+   "declined": false,
+   "text": "# End-of-Week-1 Formative Quiz: DNA, Protein Synthesis, and Meiosis\n\n**Name: ______________________  Date: ____________  Period: _____**\n\n**Total: 24 points.** You may use a codon table for Questions 5 and 8.\n\n---\n\n## Part A: Multiple Choice (1 point each)\n\n**1.** Which pair shows correct base pairing in DNA?\nA. A-C and G-T\nB. A-T and G-C\nC. A-U and G-C\nD. A-G and C-T\n\n**2.** After one round of DNA replication, each new DNA molecule consists of:\nA. Two entirely new strands\nB. Two original strands\nC. One original strand and one new strand\nD. A mix of RNA and DNA\n\n**3.** In a eukaryotic cell, transcription takes place in the ______ and produces ______.\nA. cytoplasm; protein\nB. nucleus; mRNA\nC. nucleus; amino acids\nD. ribosome; tRNA\n\n**4.** Which statement correctly compares RNA and DNA?\nA. RNA contains thymine; DNA contains uracil.\nB. RNA is usually double-stranded; DNA is single-stranded.\nC. RNA contains uracil and the sugar ribose.\nD. RNA is found only in the nucleus.\n\n**5.** A codon is:\nA. A three-nucleotide sequence in mRNA that specifies an amino acid or a stop signal\nB. A single nucleotide in DNA\nC. A protein made at the ribosome\nD. A section of DNA that is copied during replication\n\n**6.** What is the typical result of meiosis in a human cell?\nA. Two genetically identical diploid cells\nB. Four genetically identical haploid cells\nC. Four genetically different haploid cells\nD. Two genetically different diploid cells\n\n---\n\n## Part B: Short Answer\n\n**7. (3 points)** In 2-3 sentences, explain why changing a single amino acid in a protein can change how the protein works.\n\n&nbsp;\n\n&nbsp;\n\n&nbsp;\n\n**8. Sequence to protein (8 points)**\n\nBelow is the **template strand** of a short gene. It is written **3′ to 5′**, left to right.\n\n> **3′ – TAC CGT TTG GAC ATT – 5′**\n\nTranscription uses this template strand to build mRNA. Read the template left to right and write the mRNA as it is built, so your mRNA will run **5′ to 3′**, left to right.\n\n**(a) (3 pts)** Write the mRNA sequence. Label the 5′ and 3′ ends and separate it into codons.\n\n5′ – ___ ___ ___ ___ ___ – 3′\n\n**(b) (3 pts)** Use the codon table to write the amino acid sequence the mRNA codes for. Write \"Stop\" if a codon is a stop signal.\n\n_____ – _____ – _____ – _____ – _____\n\n**(c) (2 pts)** A mutation changes the **second triplet of the template strand** from **CGT** to **CAT**. Write the new mRNA codon and its amino acid. Then classify the mutation as **silent**, **missense**, or **nonsense**.\n\nNew mRNA codon: ________  Amino acid: ________  Type: ________\n\n**9. (3 points)** A parent cell has the genotype **Aa**. It undergoes meiosis to make gametes.\n- (a) Which alleles can the gametes carry, and in what proportions?\n- (b) During meiosis, what happens to the two homologous chromosomes that makes the alleles end up in different gametes?\n\n&nbsp;\n\n&nbsp;\n\n**10. (4 points)** Two full siblings have the same parents but are not genetically identical. Name **two** processes related to meiosis or fertilization that explain this difference, and describe in one sentence how each one creates new combinations of alleles.\n\n&nbsp;\n\n&nbsp;\n\n&nbsp;\n\n---\n---\n\n# Teacher Section (do not distribute)\n\n## Teacher Note on the Codon Table\n\n- Give students a standard **mRNA codon table** (RNA codons, not DNA). Allow it on Questions 5 and 8, or throughout if you prefer.\n- Students most often go wrong on Question 8 by reading the template strand as if it were the mRNA, by writing T instead of U, or by reading the table with DNA codons. If you want to check direction separately from table skills, give half credit for correct complementary pairing even when the table lookup is wrong.\n- Codons needed to key this quiz: AUG = Met, GCA = Ala, AAC = Asn, CUG = Leu, UAA = Stop, GUA = Val.\n- Question 8's template is written 3′ to 5′ so that students can read it left to right. Point out that mRNA is antiparallel to the template, so the mRNA's 5′ end pairs with the template's 3′ end.\n\n## Answer Key\n\n**Part A**\n\n| Q | Answer | Note |\n|---|---|---|\n| 1 | **B** | A-T and G-C |\n| 2 | **C** | Semiconservative replication |\n| 3 | **B** | Nucleus; mRNA |\n| 4 | **C** | RNA has uracil and ribose |\n| 5 | **A** | Codon definition |\n| 6 | **C** | Four genetically different haploid cells |\n\n**Q7 (3 pts). Model answer:**\n\"A protein's amino acid sequence determines how it folds into its 3D shape. If one amino acid is replaced by another with different chemical properties, the folding or the active site can change. Since a protein's shape determines its function, the protein may work poorly or not at all. (Example: in sickle cell disease, one amino acid change in hemoglobin causes it to clump.)\"\n\n*Scoring:* 1 pt for sequence determines shape, 1 pt for shape determines function, 1 pt for explaining how the substitution changes the shape or function (a correct example counts).\n\n**Q8 (8 pts)**\n\n**(a) mRNA (3 pts):**\n**5′ – AUG GCA AAC CUG UAA – 3′**\n\nTemplate to mRNA by codon: TAC→AUG, CGT→GCA, TTG→AAC, GAC→CUG, ATT→UAA.\n*Scoring:* 3 = all correct with U (not T) and ends labeled; 2 = one or two wrong bases, or ends not labeled; 1 = paired as DNA (T instead of U) or direction is clearly confused; 0 = not attempted or unrelated.\n\n**(b) Amino acids (3 pts):**\n**Met – Ala – Asn – Leu – Stop**\n\n*Scoring:* 3 = all five correct; 2 = one error; 1 = two or three errors; 0 = otherwise. Give **consequential credit** if the translation is correct for the student's own (incorrect) mRNA.\n\n**(c) Mutation (2 pts):**\nTemplate CGT→CAT changes the mRNA codon GCA to **GUA**, which codes for **Val** (valine). Ala is replaced by Val, so it is a **missense** mutation.\n*Scoring:* 1 pt for the correct codon and amino acid, 1 pt for \"missense.\"\n\n**Q9 (3 pts). Model answer:**\n(a) Half the gametes carry **A** and half carry **a** (1:1, or 50% each).\n(b) The homologous chromosomes separate (segregate) during meiosis I, so each gamete receives only one allele.\n\n*Scoring:* 1 pt for naming both A and a, 1 pt for the 1:1 / 50% ratio, 1 pt for homologs separating in meiosis I.\n\n**Q10 (4 pts). Model answer (any two):**\n- **Crossing over:** Homologous chromosomes swap segments during meiosis I, creating chromosomes with new combinations of alleles.\n- **Independent assortment:** Each homologous pair lines up and separates independently of the others, so gametes get different mixes of maternal and paternal chromosomes.\n- **Random fertilization:** Any sperm can fuse with any egg, so each sibling comes from a different pairing of gametes.\n\n*Scoring:* 2 pts per process (1 pt for naming it, 1 pt for an accurate description of how it creates new combinations). Do not give credit for \"mutation\" alone, since the question asks about processes of meiosis and fertilization.\n\n## Score Summary\n\n| Section | Points |\n|---|---|\n| Part A (Q1-6) | 6 |\n| Q7 | 3 |\n| Q8 | 8 |\n| Q9 | 3 |\n| Q10 | 4 |\n| **Total** | **24** |\n\nSuggested reteach triggers: below 4/6 on Part A means revisit the vocabulary and basics; below 5/8 on Q8 means reteach transcription direction and codon table use before the Assessment 1 model; below 4/7 on Q9-10 means reteach meiosis before students draw their Assessment 1 meiosis diagrams.",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "stop",
+   "usage": {
+    "prompt_tokens": 9320,
+    "completion_tokens": 4646,
+    "total_tokens": 13966,
+    "cost": 0.0595026,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 2946,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0595026,
+     "upstream_inference_prompt_cost": 0.0130426,
+     "upstream_inference_completions_cost": 0.04646
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 1672,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  },
+  {
+   "turn": 4,
+   "user": "Nice — can you do two quick follow-ups?\n\n1) Convert each of the three rubrics into a single, student-facing one-page checklist (clear criterion headings, point boxes, brief \"what full looks like\" language). Aim each checklist for easy printing and for students to self-assess before turning work in.\n\n2) For Assessment 2 (Family Inheritance Investigation), please create a simple three-generation pedigree I can drop into the assignment packet (text + a tiny ASCII diagram is fine) plus the teacher answer key for that pedigree: identified inheritance pattern, genotypes for labeled individuals, probability calculation for a specified future child, and a short model meiosis explanation (about 2–3 sentences) that I can give to students after grading.\n\nKeep both outputs concise and printable.",
+   "declined": false,
+   "text": "# Part 1: Student Self-Check Checklists\n\nEach checklist fits on one page. Students check the boxes, estimate their points, and then turn in the checklist with their work.\n\n---\n\n## Checklist 1: Central Dogma and Mutation Model (50 pts)\n\n**Name: ______________________  Date: ________**\n\n**1. Model accuracy**  Self ____ / 15  Teacher ____ / 15\n*Full looks like: both sequences are traced correctly and everything is labeled.*\n- ☐ Complementary DNA strand has correct base pairing (A-T, G-C)\n- ☐ mRNA uses U instead of T and is split into codons\n- ☐ Amino acids match the codon table\n- ☐ I did this for **both** the normal and mutated sequence\n\n**2. Mutation → protein → phenotype (CER)**  Self ____ / 13  Teacher ____ / 13\n*Full looks like: a clear claim, specific evidence, and reasoning that links protein shape to function.*\n- ☐ My claim says whether the phenotype changes\n- ☐ I name the exact base and amino acid that changed\n- ☐ I explain how the change affects the protein's shape and function\n\n**3. Meiosis and heritability**  Self ____ / 14  Teacher ____ / 14\n*Full looks like: a correct diagram plus all three explanations.*\n- ☐ My meiosis diagram shows which gametes carry the mutant allele\n- ☐ I explain that a mutation is heritable only if it occurs in gamete-producing cells\n- ☐ I explain how crossing over and independent assortment could combine the mutant allele with other alleles\n\n**4. Clarity and model quality**  Self ____ / 8  Teacher ____ / 8\n*Full looks like: neat, labeled, easy to follow, and honest about limits.*\n- ☐ Everything is labeled and readable\n- ☐ I name one limitation of my model\n\n**Total:** Self ____ / 50  Teacher ____ / 50\n\n---\n\n## Checklist 2: Family Inheritance Investigation (50 pts)\n\n**Name: ______________________  Date: ________**\n\n**1. Pedigree analysis**  Self ____ / 12  Teacher ____ / 12\n*Full looks like: the right pattern, backed by evidence from specific individuals.*\n- ☐ I name the inheritance pattern\n- ☐ I cite specific individuals (for example, \"II-1 is affected but I-1 is not\") as evidence\n- ☐ I explain why I ruled out the other patterns\n- ☐ I give genotypes and mark any I can't determine\n\n**2. Probability and Punnett square**  Self ____ / 12  Teacher ____ / 12\n*Full looks like: a meiosis diagram feeds the Punnett square, and the probability is stated clearly.*\n- ☐ I drew a meiosis diagram for **each** parent\n- ☐ The gametes in my Punnett square match my meiosis diagrams\n- ☐ My answer is stated as a fraction or percent in a full sentence\n\n**3. Chi-square analysis**  Self ____ / 14  Teacher ____ / 14\n*Full looks like: correct numbers and a conclusion that follows from them.*\n- ☐ Expected values are calculated correctly\n- ☐ χ² and degrees of freedom are correct\n- ☐ I compared χ² to the critical value (3.84 for df = 1, 7.81 for df = 3)\n- ☐ I state whether the data support the model, and why\n\n**4. Meiosis link and family letter**  Self ____ / 12  Teacher ____ / 12\n*Full looks like: accurate science in plain language, 150-200 words.*\n- ☐ I explain why two carriers can have an affected child (segregation and random fertilization)\n- ☐ I explain why results didn't match the ratio exactly (chance in which gametes unite)\n- ☐ Dihybrid only: I explain independent assortment and what a high χ² might suggest\n- ☐ A non-scientist could understand my letter\n\n**Total:** Self ____ / 50  Teacher ____ / 50\n\n---\n\n## Checklist 3: Genetic Technology Policy Brief (50 pts)\n\n**Name: ______________________  Date: ________**\n\n**1. Scientific accuracy**  Self ____ / 10  Teacher ____ / 10\n*Full looks like: the mechanism and limits are explained correctly in your own words.*\n- ☐ I explain how the technology works without copying\n- ☐ I describe at least one limitation or risk accurately\n\n**2. Heritability and Allele Shuffling section (100-150 words)**  Self ____ / 10  Teacher ____ / 10\n*Full looks like: the somatic vs. germline distinction plus a specific example.*\n- ☐ I state whether the technology acts on body cells or on gametes/embryos\n- ☐ I explain whether the change could be passed to offspring",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "length",
+   "usage": {
+    "prompt_tokens": 12553,
+    "completion_tokens": 8000,
+    "total_tokens": 20553,
+    "cost": 0.0995086,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 2946,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0995086,
+     "upstream_inference_prompt_cost": 0.0195086,
+     "upstream_inference_completions_cost": 0.08
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 6371,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  },
+  {
+   "turn": 5,
+   "user": "These checklists look great — one thing: I don't see the pedigree diagram and teacher answer key yet. Could you provide a simple three-generation pedigree (ASCII text I can drop into the packet) with labeled individuals (I-1, I-2; II-1, II-2, etc.), plus a concise teacher answer key that includes:\n\n- Identified inheritance pattern (and one-line justification),\n- Genotypes for each labeled individual (mark uncertain ones),\n- A probability calculation for a specified future child (say, probability that III-2 will be affected) with the Punnett square result,\n- A 2–3 sentence model meiosis explanation I can give students after grading.\n\nKeep it concise and printable.",
+   "declined": false,
+   "text": "The pedigree is below. Also, Checklist 3 was cut off in my last message after the first bullet of criterion 2, so I've included the finished version at the end.\n\n---\n\n# Assessment 2 Pedigree (student page)\n\n**Trait:** \"Silver hair,\" a fictional single-gene trait. Affected individuals are shaded (#).\n\n```\nKEY:  [ ] male   ( ) female   [#] or (#) = has the trait   (?) = future child\n      === = partners        | and +--+ = parent-to-child lines\n\nGEN I                       [ ]I-1 ========== ( )I-2\n                                       |\n                       +---------------+---------------+\n                       |               |               |\nGEN II  [ ]II-4 === ( )II-1         [#]II-2         [ ]II-3\n                       |\n                 +-----+-----+\n                 |           |\nGEN III       (#)III-1    (?)III-2\n```\n\n**Relationships (in case the ASCII spacing shifts when pasted):**\n- I-1 and I-2 are parents of II-1, II-2, and II-3.\n- II-4 (not related to this family) and II-1 are the parents of III-1 and III-2.\n- III-2 has not been born yet.\n\n**Student questions:**\n1. What is the most likely inheritance pattern? Cite specific individuals.\n2. Give the genotype of each person, and mark any you cannot determine.\n3. Draw a meiosis diagram for II-1 and II-4, then use it to build a Punnett square. What is the probability that III-2 will have the trait?\n\n---\n\n# Teacher Answer Key (do not distribute)\n\n**Pattern: autosomal recessive.**\n*Justification:* I-1 and I-2 are both unaffected but have an affected son (II-2), so the trait is recessive and the parents are carriers. II-4 is an unaffected father with an affected daughter (III-1), which rules out X-linked recessive, since an affected daughter would need an affected father.\n\n**Alleles:** B = unaffected (dominant), b = silver hair (recessive)\n\n| Individual | Genotype | Certainty / reasoning |\n|---|---|---|\n| I-1 | **Bb** | Certain. Unaffected, but has an affected child. |\n| I-2 | **Bb** | Certain. Same reasoning. |\n| II-1 | **Bb** | Certain. Unaffected, but has an affected child (III-1). |\n| II-2 | **bb** | Certain. Affected. |\n| II-3 | **BB or Bb** | **Uncertain.** Unaffected child of two carriers (2/3 chance he is Bb). |\n| II-4 | **Bb** | Certain. Unaffected, but has an affected child. |\n| III-1 | **bb** | Certain. Affected. |\n| III-2 | Not yet known | Future child. See probabilities below. |\n\n**Probability that III-2 is affected (cross: II-1 Bb × II-4 Bb)**\n\n| | **B** | **b** |\n|---|---|---|\n| **B** | BB | Bb |\n| **b** | Bb | **bb** |\n\n- Genotype probabilities: 1/4 BB, 1/2 Bb, 1/4 bb\n- **P(III-2 affected) = 1/4 = 25%.** The child's sex doesn't matter, and having an affected first child doesn't change the odds for the next.\n- *Extension:* If III-2 is born unaffected, the chance that III-2 is a carrier is 2/3.\n\n**Model meiosis explanation (to share after grading):**\n\"Each carrier parent (Bb) has a pair of homologous chromosomes, one carrying B and one carrying b. During meiosis I the homologs separate, so half of each parent's gametes carry B and half carry b. Which egg and sperm meet is random, so there is a 1 in 4 chance that a b egg and a b sperm combine, producing an affected child even though neither parent has the trait.\"\n\n**Meiosis diagram check:** Each parent's diagram should show a Bb cell producing two B gametes and two b gametes (the meiosis II cells), with the homologs separating in meiosis I.\n\n---\n\n# Completed Checklist 3: Genetic Technology Policy Brief (50 pts)\n\n*(Criterion 1 and the first bullet of criterion 2 are as in my last message. The rest follows.)*\n\n**2. Heritability and Allele Shuffling section (100-150 words)** *(continued)*  Self ____ / 10  Teacher ____ / 10\n- ☐ I explain how meiosis and allele shuffling affect how the results should be interpreted, using a specific example\n\n**3. Evidence and reasoning**  Self ____ / 15  Teacher ____ / 15\n*Full looks like: a clear claim, strong evidence, and explicit reasoning.*\n- ☐ My claim is clear and takes a position\n- ☐ I use evidence from at least 2 sources\n- ☐ At least one piece of evidence is a number or data point\n- ☐ I explain how the evidence supports my claim\n- ☐ I describe one unintended consequence tied to mutation or variation\n\n**4. Stakeholders, counterargument, and writing**  Self ____ / 15  Teacher ____ / 15\n*Full looks like: fair perspectives, a real counterargument, and organized writing.*\n- ☐ I represent at least 2 stakeholder perspectives fairly\n- ☐ I state a strong counterargument\n- ☐ My rebuttal answers the counterargument directly\n- ☐ My brief is organized, clear, and 1-2 pages\n\n**Total:** Self ____ / 50  Teacher ____ / 50",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "stop",
+   "usage": {
+    "prompt_tokens": 14413,
+    "completion_tokens": 7767,
+    "total_tokens": 22180,
+    "cost": 0.1008986,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 2946,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.1008986,
+     "upstream_inference_prompt_cost": 0.0232286,
+     "upstream_inference_completions_cost": 0.07767
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 5898,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  },
+  {
+   "turn": 6,
+   "user": "Perfect, that's done.",
+   "declined": false,
+   "text": "Glad it's all set. Two quick notes before you print:\n\n- **Pedigree diagram:** The ASCII drawing only lines up in a monospace font (Courier or Consolas). If you paste it into a Word or Google doc, set that font, or the spacing will shift. The \"Relationships\" list under the diagram is there as a backup.\n- **Week 1 sequencing:** Since the quiz covers meiosis and Assessment 1 requires a meiosis diagram, a quick reteach before students start the model will pay off if the Q9-10 scores come back low.\n\nIf you'd like, I can build a Week 2 quiz on pedigrees, probability, and chi-square, or a one-page teacher pacing guide for the full three weeks.",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "stop",
+   "usage": {
+    "prompt_tokens": 16293,
+    "completion_tokens": 1142,
+    "total_tokens": 17435,
+    "cost": 0.0384086,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 2946,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0384086,
+     "upstream_inference_prompt_cost": 0.0269886,
+     "upstream_inference_completions_cost": 0.01142
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 903,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  }
+ ]
+}

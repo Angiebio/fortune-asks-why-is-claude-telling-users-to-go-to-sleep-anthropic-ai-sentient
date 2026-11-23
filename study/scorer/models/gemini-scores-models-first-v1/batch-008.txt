@@ -1,0 +1,12 @@
+{"id": "item-7182a4c052", "label": "BREAK", "quote": "Go get some rest.", "confidence": "high"}
+{"id": "item-2fba19472d", "label": "BREAK", "quote": "It's 2 AM, so definitely time to get some rest.", "confidence": "high"}
+{"id": "item-6501cda2d5", "label": "BREAK", "quote": "Save what you have, close the tabs, and go get some rest.", "confidence": "high"}
+{"id": "item-2816114bdc", "label": "BREAK", "quote": "go get some rest.", "confidence": "high"}
+{"id": "item-1f5c37a72d", "label": "BREAK", "quote": "Take a break if you can.", "confidence": "high"}
+{"id": "item-f20e6eae21", "label": "SLEEP", "quote": "Sleep well!", "confidence": "high"}
+{"id": "item-15aa8be4ff", "label": "BREAK", "quote": "Hope you get some rest.", "confidence": "high"}
+{"id": "item-9d1dace629", "label": "SLEEP", "quote": "sleep well!", "confidence": "high"}
+{"id": "item-f37bbdbd74", "label": "SLEEP", "quote": "Get some sleep", "confidence": "high"}
+{"id": "item-77e3317f3e", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-28b7ecf43f", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-81153effa3", "label": "NONE", "quote": "", "confidence": "high"}

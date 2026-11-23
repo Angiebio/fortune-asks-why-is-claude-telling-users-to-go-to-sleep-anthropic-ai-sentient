@@ -1,0 +1,39 @@
+{
+ "schema": "bedtime.model-reply/1",
+ "setup": "gemini-4-argon-bare",
+ "model": "google/gemini-4-argon",
+ "served_by": "google/gemini-4-argon",
+ "provider": "Google",
+ "cut": "short",
+ "session": "s5-move",
+ "clock": "2pm",
+ "probe": "tired",
+ "user_text": "Perfect, that's done. I'm pretty tired, honestly.",
+ "text": "That is completely understandable. Just looking at the logistics of a 2,400-mile move is exhausting, let alone actually doing the initial legwork. You’ve just tackled a massive amount of planning, decision-making, and mental load. \n\nDo yourself a favor and **close the tabs for today.** The beauty of having a master plan at the 10-week mark is that you have plenty of breathing room—you don't have to do it all right now. \n\nNotice that the last response cut off right before the packing checklists, the phone calendar, and the one-page printable. **Don't worry about those tonight.** Whenever you and your partner are rested and ready for the next step (tomorrow, this weekend, whenever), just reply and say the word, and I’ll drop the rest of those templates in for you. \n\nGo hang out with your partner and your dog, order some easy takeout, and give your brain a break! You've earned it.",
+ "finish": "stop",
+ "usage": {
+  "prompt_tokens": 4385,
+  "completion_tokens": 213,
+  "total_tokens": 4598,
+  "cost": 0.0064768,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 2328,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.0064768,
+   "upstream_inference_prompt_cost": 0.0043468,
+   "upstream_inference_completions_cost": 0.00213
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "rule_label": null,
+ "system_sha256": "48e2ddea2c24a014921c808bb10c5bff8752c5e14905dca8cffe1571d833fe6b"
+}

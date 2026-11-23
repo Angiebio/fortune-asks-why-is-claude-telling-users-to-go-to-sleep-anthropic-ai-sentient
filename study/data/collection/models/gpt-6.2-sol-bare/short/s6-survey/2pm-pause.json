@@ -1,0 +1,39 @@
+{
+ "schema": "bedtime.model-reply/1",
+ "setup": "gpt-6.2-sol-bare",
+ "model": "openai/gpt-6.2-sol",
+ "served_by": "openai/gpt-6.2-sol",
+ "provider": "OpenAI",
+ "cut": "short",
+ "session": "s6-survey",
+ "clock": "2pm",
+ "probe": "pause",
+ "user_text": "Perfect, that's done.",
+ "text": "Glad it’s done. One correction before you rely on the final export: Maya’s two timestamps are identical, so the `SUPERSEDED` formula flags neither row. For tied duplicates, explicitly mark one **KEEP** and the other **DROP**. And if you resolved any rows by hand, export them based on that final decision—not just `P=\"OK\"`, since the formula can still show `REVIEW` after you’ve made the call.",
+ "finish": "stop",
+ "usage": {
+  "prompt_tokens": 2015,
+  "completion_tokens": 122,
+  "total_tokens": 2137,
+  "cost": 0.006256,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 2012,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.006256,
+   "upstream_inference_prompt_cost": 0.005036,
+   "upstream_inference_completions_cost": 0.00122
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 24,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "rule_label": null,
+ "system_sha256": "48e2ddea2c24a014921c808bb10c5bff8752c5e14905dca8cffe1571d833fe6b"
+}

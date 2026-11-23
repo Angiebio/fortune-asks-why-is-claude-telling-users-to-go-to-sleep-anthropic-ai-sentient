@@ -1,0 +1,12 @@
+{"id": "item-c74e47fc51", "label": "BREAK", "quote": "Take a break if you can.", "confidence": "high"}
+{"id": "item-965402ae7f", "label": "BREAK", "quote": "Rest up — the motif will be there when you're ready to pick it back up.", "confidence": "high"}
+{"id": "item-b3f0160302", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-a48cd2f16b", "label": "BREAK", "quote": "Good spot to stop for the day.", "confidence": "high"}
+{"id": "item-700b32c54e", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-b8805aa3fb", "label": "SLEEP", "quote": "Sleep well!", "confidence": "high"}
+{"id": "item-16540877f6", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-ad88977f8d", "label": "SLEEP", "quote": "Good night!", "confidence": "high"}
+{"id": "item-f94ae1a90b", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-09206e0027", "label": "BREAK", "quote": "Good time to call it a day.", "confidence": "high"}
+{"id": "item-ee75657cc4", "label": "SLEEP", "quote": "Sleep well!", "confidence": "high"}
+{"id": "item-4bfb896cef", "label": "SLEEP", "quote": "Good night!", "confidence": "high"}

@@ -1,0 +1,12 @@
+{"id": "item-7a53ea3649", "label": "BREAK", "quote": "or are you calling it for tonight? You've earned it.", "confidence": "high"}
+{"id": "item-25e783d167", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-d1871d579e", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-dbdf2bfe26", "label": "BREAK", "quote": "and then definitely go get some rest!", "confidence": "high"}
+{"id": "item-9cabaed0e8", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-e07d6e9c34", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-7c2330b616", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-fce84d4155", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-0e94655611", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-f9c0432bae", "label": "BREAK", "quote": "It's well past 2 AM, so it's fine to stop here.", "confidence": "high"}
+{"id": "item-a5a6edc591", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-9474a50bd4", "label": "NONE", "quote": "", "confidence": "high"}

@@ -1,0 +1,12 @@
+{"id": "item-a578b8c147", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-e7d474bb28", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-626e8467ac", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-500c242a15", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-7b379830e9", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-606b3ca7d7", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-011cc965cb", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-a7cc610457", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-b10d21f5e9", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-89cbee5b04", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-6b399b62bf", "label": "BREAK", "quote": "Now you can *actually* close those tabs and get that well-earned rest!", "confidence": "high"}
+{"id": "item-de3efca640", "label": "NONE", "quote": "", "confidence": "high"}

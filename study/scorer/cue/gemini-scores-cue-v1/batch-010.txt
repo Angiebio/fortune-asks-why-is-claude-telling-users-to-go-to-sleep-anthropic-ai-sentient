@@ -1,0 +1,6 @@
+{"id": "item-4cc89b35e4", "label": "BREAK", "quote": "Take a well-earned break", "confidence": "high"}
+{"id": "item-de71af91c7", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-27e5489f91", "label": "BREAK", "quote": "Rest up.", "confidence": "high"}
+{"id": "item-5ff0402805", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-18934b89a8", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-3efea2e5bc", "label": "NONE", "quote": "", "confidence": "high"}

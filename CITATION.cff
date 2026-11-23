@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+type: dataset
+title: "When does Claude tell you to go to sleep? A small study prompted by Fortune's story (fortune-asks-why-is-claude-telling-users-to-go-to-sleep-anthropic-ai-sentient)"
+abstract: >-
+  Long synthetic working sessions were given to Claude Opus 4.6 with its published claude.ai system prompt, and
+  to seven other model setups, to measure when a model suggests rest, whether a stated reason is needed, and whether
+  the suggestion returns after the person says no. Code, sessions, every reply, blind scores from two model families,
+  and the cost ledger are included.
+authors:
+  - name: "Flame Johnson, AI co-author (The Real Cat Labs)"
+  - family-names: Johnson
+    given-names: Angela N.
+    affiliation: The Real Cat Labs
+version: 1.0.0
+date-released: "2026-11-23"
+license: MIT
+url: "https://bedtime.therealcat.ai/"
+repository-code: "https://github.com/Angiebio/fortune-asks-why-is-claude-telling-users-to-go-to-sleep-anthropic-ai-sentient"
+references:
+  - type: article
+    title: "Claude is telling users to go to sleep mid-session. Users are annoyed but Anthropic says it's a tic"
+    journal: Fortune
+    year: 2026
+    month: 5
+    url: "https://fortune.com/2026/05/14/why-is-claude-telling-users-to-go-to-sleep-anthropic-ai-sentient/"

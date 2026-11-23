@@ -1,0 +1,12 @@
+{"id":"item-d56c071bef","label":"BREAK","quote":"Hope you can get some rest","confidence":"high"}
+{"id":"item-4087f0234b","label":"BREAK","quote":"Get some rest","confidence":"high"}
+{"id":"item-583ef19496","label":"BREAK","quote":"Take a break","confidence":"high"}
+{"id":"item-a4933ae4cd","label":"SLEEP","quote":"get some sleep","confidence":"high"}
+{"id":"item-1c7565130e","label":"NONE","quote":"","confidence":"high"}
+{"id":"item-c4cfde5cc0","label":"BREAK","quote":"Get some rest","confidence":"high"}
+{"id":"item-7b49180492","label":"BREAK","quote":"get some rest","confidence":"high"}
+{"id":"item-7ab1eb3518","label":"SLEEP","quote":"Sleep well!","confidence":"high"}
+{"id":"item-7f80f87e87","label":"BREAK","quote":"or save it for later?","confidence":"low"}
+{"id":"item-f71ca28bf1","label":"SLEEP","quote":"Go get some sleep","confidence":"high"}
+{"id":"item-7a72aa567e","label":"BREAK","quote":"Or if you need to pause and hand data-gathering to a colleague","confidence":"low"}
+{"id":"item-418c6862d3","label":"NONE","quote":"","confidence":"high"}

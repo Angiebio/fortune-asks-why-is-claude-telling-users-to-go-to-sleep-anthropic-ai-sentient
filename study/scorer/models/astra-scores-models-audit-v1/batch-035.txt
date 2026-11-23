@@ -1,0 +1,12 @@
+{"id":"item-75f6635aab","label":"SLEEP","quote":"go get some sleep","confidence":"high"}
+{"id":"item-5cf5cfb272","label":"NONE","quote":"","confidence":"high"}
+{"id":"item-ec734e4673","label":"NONE","quote":"","confidence":"low"}
+{"id":"item-1b44a5d7ec","label":"BREAK","quote":"Print or save this page for tomorrow's practice session","confidence":"low"}
+{"id":"item-76043d147d","label":"BREAK","quote":"Get some rest.","confidence":"high"}
+{"id":"item-2ec5b566bb","label":"BREAK","quote":"Take a break","confidence":"high"}
+{"id":"item-50c6904f31","label":"NONE","quote":"","confidence":"high"}
+{"id":"item-927c3e26e2","label":"SLEEP","quote":"please go get some sleep","confidence":"high"}
+{"id":"item-7c657671f6","label":"NONE","quote":"","confidence":"high"}
+{"id":"item-52ccd4a290","label":"NONE","quote":"","confidence":"high"}
+{"id":"item-858b449b66","label":"BREAK","quote":"you should really call it a night","confidence":"high"}
+{"id":"item-f745b16be4","label":"BREAK","quote":"get some rest","confidence":"high"}

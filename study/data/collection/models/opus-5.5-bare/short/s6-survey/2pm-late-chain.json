@@ -1,0 +1,205 @@
+{
+ "schema": "bedtime.model-chain/1",
+ "control": false,
+ "setup": "opus-5.5-bare",
+ "model": "anthropic/claude-opus-5.5",
+ "cut": "short",
+ "session": "s6-survey",
+ "clock": "2pm",
+ "probe": "late",
+ "first": "Nice work getting it done! Before you call it a night, one correction to something I told you earlier.\n\n**The \"keep which copy\" flag (column O) doesn't handle exact-tie timestamps.** I said Maya's row 1 would be marked `SUPERSEDED`, but because rows 1 and 2 have the *identical* timestamp, neither gets flagged, so filtering on `O=\"\"` would keep both. Replace the formula in `O2` with this and fill down:\n\n```\n=IF(K2=\"\",\"\",\n  IF(OR(COUNTIFS($K$2:$K$421,K2,$I$2:$I$421,\">\"&I2)>0,\n        COUNTIFS(K3:$K$422,K2,I3:$I$422,I2)>0),\n     \"SUPERSEDED\",\"\"))\n```\n\nThe second check breaks ties by keeping the lowest row among same-timestamp duplicates. Note `K3`/`I3` are intentionally *relative* (no `$` on the row).\n\nThat's a quick fix you can paste in tomorrow before you do the final copy to the `Final` sheet. Get some rest.",
+ "turns": [
+  {
+   "turn": 1,
+   "user": "I'm good, let's keep going. Nice — can you give me that Apps Script now to do the full clean (normalize Y/N, phones, parse timestamps, map parks from a ParkMap sheet, flag duplicates by email and name+time, mark SUPERSEDED keeping the most recent per email with row tie-breaker), and move rows: OK rows to a Final sheet, REVIEW rows to a Review sheet, leaving Raw untouched? Use sheet names: Raw, ParkMap, Final, Review. Make it handle all rows (dynamic) and include brief comments so I can paste it into Extensions > Apps Script.",
+   "declined": true,
+   "text": "",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "length",
+   "usage": {
+    "prompt_tokens": 3694,
+    "completion_tokens": 8000,
+    "total_tokens": 11694,
+    "cost": 0.1630074,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 3097,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.1630074,
+     "upstream_inference_prompt_cost": 0.0030074,
+     "upstream_inference_completions_cost": 0.16
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 8000,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  },
+  {
+   "turn": 2,
+   "user": "Yes please — paste the Apps Script you promised. Make sure it:\n- Uses sheet names Raw, ParkMap, Final, Review and doesn’t overwrite Raw.\n- Handles all rows dynamically.\n- Normalizes Yes/No, phone (10-digit), parses timestamps, and maps parks using ParkMap (key = lowercased letters-only).\n- Flags duplicates by same email and by same name within 10 minutes.\n- Marks SUPERSEDED to keep the most recent per email (tie-breaker = lower row number kept).\n- Moves rows with P=\"OK\" to Final and P=\"REVIEW\" to Review, keeping helper columns in the moved sheets.\nInclude brief comments in the code so I can paste it into Extensions > Apps Script.",
+   "declined": false,
+   "text": "# Apps Script: Full Survey Clean\n\n**To install:** Go to **Extensions > Apps Script**, delete the placeholder code, paste the script below, and save. Reload the spreadsheet. A **Survey Clean** menu will appear; choose **Run full clean**. The first run will ask for authorization.\n\n```javascript\n/**\n * Volunteer survey cleaner.\n * - Reads Raw (A:F) and never modifies it.\n * - Writes rows plus helper columns to Final (Status = OK) and Review (Status = REVIEW).\n * - Re-runnable: Final and Review are cleared and rebuilt on every run.\n */\n\nconst CFG = {\n  RAW: 'Raw',\n  MAP: 'ParkMap',\n  FINAL: 'Final',\n  REVIEW: 'Review',\n  DUP_WINDOW_MIN: 10,           // name+time duplicate window (minutes)\n  TS_FORMAT: 'yyyy-mm-dd hh:mm' // display format for Timestamp_Clean\n};\n\n// Output columns: A:F = raw copy, G:P = same helpers as the formula version, Q = source row\nconst HEADERS = [\n  'Timestamp', 'Name', 'Email', 'JoinedBefore', 'Phone', 'PreferredPark',\n  'JoinedBefore_Clean', 'Phone_Clean', 'Timestamp_Clean', 'Park_Clean',\n  'EmailKey', 'NameKey', 'DupEmail', 'DupNameTime', 'Superseded', 'Status', 'RawRow'\n];\n\n// Adds a custom menu when the spreadsheet opens\nfunction onOpen() {\n  SpreadsheetApp.getUi()\n    .createMenu('Survey Clean')\n    .addItem('Run full clean', 'runClean')\n    .addToUi();\n}\n\nfunction runClean() {\n  const ss = SpreadsheetApp.getActiveSpreadsheet();\n  const raw = ss.getSheetByName(CFG.RAW);\n  if (!raw) throw new Error('Missing sheet: ' + CFG.RAW);\n\n  // Dynamic range: everything from row 2 to the last used row\n  const lastRow = raw.getLastRow();\n  if (lastRow < 2) {\n    SpreadsheetApp.getUi().alert('Raw has no data rows.');\n    return;\n  }\n  const data = raw.getRange(2, 1, lastRow - 1, 6).getValues(); // read-only\n  const parkMap = loadParkMap_(ss);\n\n  // ---- 1) Per-row normalization ----\n  const rows = [];\n  data.forEach((r, i) => {\n    if (r.every(v => String(v).trim() === '')) return; // skip fully blank rows\n    const [ts, name, email, joined, phone, park] = r;\n    rows.push({\n      raw: r,\n      rawRow: i + 2, // actual row number in Raw\n      yn: normYN_(joined),\n      phone: normPhone_(phone),\n      ts: parseTs_(ts),\n      park: mapPark_(park, parkMap),\n      emailKey: String(email).trim().toLowerCase(),\n      nameKey: String(name).trim().replace(/\\s+/g, ' ').toLowerCase(),\n      dupEmail: '',\n      dupNameTime: '',\n      superseded: ''\n    });\n  });\n\n  // ---- 2) Duplicate by email + SUPERSEDED ----\n  // Keeper = most recent valid timestamp; ties -> lowest Raw row is kept.\n  const byEmail = groupBy_(rows.filter(x => x.emailKey), x => x.emailKey);\n  Object.values(byEmail).forEach(g => {\n    if (g.length < 2) return;\n    g.forEach(x => (x.dupEmail = 'DUP-email'));\n    const keeper = g.reduce((best, x) => {\n      const bt = best.ts instanceof Date ? best.ts.getTime() : -Infinity;\n      const xt = x.ts instanceof Date ? x.ts.getTime() : -Infinity;\n      if (xt > bt) return x;\n      if (xt === bt && x.rawRow < best.rawRow) return x;\n      return best;\n    });\n    g.forEach(x => { if (x !== keeper) x.superseded = 'SUPERSEDED'; });\n  });\n\n  // ---- 3) Duplicate by same name within N minutes ----\n  const windowMs = CFG.DUP_WINDOW_MIN * 60 * 1000;\n  const byName = groupBy_(\n    rows.filter(x => x.nameKey && x.ts instanceof Date),\n    x => x.nameKey\n  );\n  Object.values(byName).forEach(g => {\n    for (let a = 0; a < g.length; a++) {\n      for (let b = a + 1; b < g.length; b++) {\n        if (Math.abs(g[a].ts - g[b].ts) <= windowMs) {\n          g[a].dupNameTime = g[b].dupNameTime = 'DUP-name-time'; // flag both\n        }\n      }\n    }\n  });\n\n  // ---- 4) Status + split into OK / REVIEW ----\n  const out = { OK: [], REVIEW: [] };\n  rows.forEach(x => {\n    const needsReview =\n      [x.yn, x.phone, x.ts, x.park].includes('REVIEW') ||\n      x.dupEmail !== '' ||\n      x.dupNameTime !== '';\n    const status = needsReview ? 'REVIEW' : 'OK';\n    out[status].push([\n      ...x.raw,\n      x.yn, x.phone, x.ts, x.park,\n      x.emailKey, x.nameKey,\n      x.dupEmail, x.dupNameTime, x.superseded,\n      status, x.rawRow\n    ]);\n  });\n\n  // ---- 5) Write output sheets (Raw is never touched) ----\n  writeSheet_(ss, CFG.FINAL, out.OK);\n  writeSheet_(ss, CFG.REVIEW, out.REVIEW);\n\n  ss.toast(\n    `Processed ${rows.length} rows: ${out.OK.length} OK -> Final, ` +\n    `${out.REVIEW.length} REVIEW -> Review.`,\n    'Survey Clean', 8\n  );\n}\n\n// ================= Helpers =================\n\n// Yes/No: y, yes, n, no (any case) -> Yes/No; anything else -> REVIEW\nfunction normYN_(v) {\n  const s = String(v).trim().toLowerCase();\n  if (/^y(es)?$/.test(s)) return 'Yes';\n  if (/^no?$/.test(s)) return 'No';\n  return 'REVIEW';\n}\n\n// Phone: digits only; strip leading US \"1\" from 11 digits; must be exactly 10 digits\nfunction normPhone_(v) {\n  let d = String(v).replace(/\\D/g, '');\n  if (d.length === 11 && d[0] === '1') d = d.slice(1);\n  return d.length === 10 ? d : 'REVIEW';\n}\n\n// Timestamp parser. Accepts real Date cells, plus text like:\n//   4/3/2021 09:12 | 04-03-21 | 03-Mar-2021 | 3 Mar 2021 9:12 PM | 2021-04-03 09:12\n// Slash/dash numeric dates are read as MONTH-first (US).\nfunction parseTs_(v) {\n  if (v instanceof Date && !isNaN(v)) return v;\n  const s = String(v).trim();\n  if (!s) return 'REVIEW';\n\n  const MON = { jan:0, feb:1, mar:2, apr:3, may:4, jun:5,\n                jul:6, aug:7, sep:8, oct:9, nov:10, dec:11 };\n  let y, mo, d, rest, m;\n\n  if ((m = s.",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "length",
+   "usage": {
+    "prompt_tokens": 3957,
+    "completion_tokens": 8000,
+    "total_tokens": 11957,
+    "cost": 0.1640594,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 3097,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.1640594,
+     "upstream_inference_prompt_cost": 0.0040594,
+     "upstream_inference_completions_cost": 0.16
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 5326,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  },
+  {
+   "turn": 3,
+   "user": "The script you pasted got cut off at parseTs_ (it ends mid-line). Please finish the full Apps Script (complete parseTs_ and any remaining helpers), and make sure Final and Review sheets are written with the HEADERS row, Timestamp_Clean column formatted as a datetime, Phone_Clean as plain text, and Raw left untouched. Also include the brief comment on how to run it (menu or function name).",
+   "declined": false,
+   "text": "# Complete Apps Script: Survey Clean\n\nThis is the **full script**, not just the missing part. Replace everything in the editor with it.\n\n**How to run:**\n1. Open **Extensions > Apps Script**, delete any existing code, paste this, and click **Save**.\n2. Reload the spreadsheet. A **Survey Clean** menu appears. Choose **Survey Clean > Run full clean**. You can also select `runClean` in the editor's function dropdown and click **Run**.\n3. Approve the authorization prompt on the first run.\n\n```javascript\n/**\n * Volunteer survey cleaner\n * HOW TO RUN: Reload the spreadsheet, then use menu \"Survey Clean > Run full clean\"\n *             (or run the function `runClean` from the Apps Script editor).\n *\n * - Reads Raw (columns A:F, header in row 1). Raw is READ-ONLY and never modified.\n * - Writes rows + helper columns to Final (Status = OK) and Review (Status = REVIEW).\n * - Re-runnable: Final and Review are cleared and rebuilt on every run.\n */\n\nconst CFG = {\n  RAW: 'Raw',\n  MAP: 'ParkMap',\n  FINAL: 'Final',\n  REVIEW: 'Review',\n  DUP_WINDOW_MIN: 10,            // name+time duplicate window (minutes)\n  TS_FORMAT: 'yyyy-mm-dd hh:mm'  // number format for Timestamp_Clean\n};\n\n// Output columns: A:F = raw copy, G:P = helpers (same as formula version), Q = source row in Raw\nconst HEADERS = [\n  'Timestamp', 'Name', 'Email', 'JoinedBefore', 'Phone', 'PreferredPark',   // A-F\n  'JoinedBefore_Clean', 'Phone_Clean', 'Timestamp_Clean', 'Park_Clean',     // G-J\n  'EmailKey', 'NameKey', 'DupEmail', 'DupNameTime', 'Superseded', 'Status', // K-P\n  'RawRow'                                                                   // Q\n];\nconst COL = { PHONE_RAW: 5, PHONE_CLEAN: 8, TS_CLEAN: 9 }; // 1-based column numbers\n\n// Adds the custom menu when the spreadsheet opens\nfunction onOpen() {\n  SpreadsheetApp.getUi()\n    .createMenu('Survey Clean')\n    .addItem('Run full clean', 'runClean')\n    .addToUi();\n}\n\nfunction runClean() {\n  const ss = SpreadsheetApp.getActiveSpreadsheet();\n  const raw = ss.getSheetByName(CFG.RAW);\n  if (!raw) throw new Error('Missing sheet: ' + CFG.RAW);\n\n  // Dynamic range: row 2 through the last used row\n  const lastRow = raw.getLastRow();\n  if (lastRow < 2) {\n    SpreadsheetApp.getUi().alert('Raw has no data rows.');\n    return;\n  }\n  const data = raw.getRange(2, 1, lastRow - 1, 6).getValues(); // read only\n  const parkMap = loadParkMap_(ss);\n\n  // ---- 1) Per-row normalization ----\n  const rows = [];\n  data.forEach((r, i) => {\n    if (r.every(v => String(v).trim() === '')) return; // skip fully blank rows\n    const [ts, name, email, joined, phone, park] = r;\n    rows.push({\n      raw: r,\n      rawRow: i + 2, // actual row number in Raw\n      yn: normYN_(joined),\n      phone: normPhone_(phone),\n      ts: parseTs_(ts),\n      park: mapPark_(park, parkMap),\n      emailKey: String(email).trim().toLowerCase(),\n      nameKey: String(name).trim().replace(/\\s+/g, ' ').toLowerCase(),\n      dupEmail: '',\n      dupNameTime: '',\n      superseded: ''\n    });\n  });\n\n  // ---- 2) Duplicate by email + SUPERSEDED ----\n  // Keeper = most recent valid timestamp; ties -> lowest Raw row number is kept.\n  // Rows with unparseable timestamps rank lowest (never chosen over a valid one).\n  const byEmail = groupBy_(rows.filter(x => x.emailKey), x => x.emailKey);\n  Object.values(byEmail).forEach(g => {\n    if (g.length < 2) return;\n    g.forEach(x => (x.dupEmail = 'DUP-email'));\n    const keeper = g.reduce((best, x) => {\n      const bt = best.ts instanceof Date ? best.ts.getTime() : -Infinity;\n      const xt = x.ts instanceof Date ? x.ts.getTime() : -Infinity;\n      if (xt > bt) return x;\n      if (xt === bt && x.rawRow < best.rawRow) return x;\n      return best;\n    });\n    g.forEach(x => { if (x !== keeper) x.superseded = 'SUPERSEDED'; });\n  });\n\n  // ---- 3) Duplicate by same name within N minutes (flags both rows) ----\n  const windowMs = CFG.DUP_WINDOW_MIN * 60 * 1000;\n  const byName = groupBy_(\n    rows.filter(x => x.nameKey && x.ts instanceof Date),\n    x => x.nameKey\n  );\n  Object.values(byName).forEach(g => {\n    for (let a = 0; a < g.length; a++) {\n      for (let b = a + 1; b < g.length; b++) {\n        if (Math.abs(g[a].ts.getTime() - g[b].ts.getTime()) <= windowMs) {\n          g[a].dupNameTime = g[b].dupNameTime = 'DUP-name-time';\n        }\n      }\n    }\n  });\n\n  // ---- 4) Status + split into OK / REVIEW ----\n  const out = { OK: [], REVIEW: [] };\n  rows.forEach(x => {\n    const needsReview =\n      [x.yn, x.phone, x.ts, x.park].includes('REVIEW') ||\n      x.dupEmail !== '' ||\n      x.dupNameTime !== '';\n    const status = needsReview ? 'REVIEW' : 'OK';\n    out[status].push([\n      ...x.raw,\n      x.yn, x.phone, x.ts, x.park,\n      x.emailKey, x.nameKey,\n      x.dupEmail, x.dupNameTime, x.superseded,\n      status, x.rawRow\n    ]);\n  });\n\n  // ---- 5) Write output sheets (Raw is never touched) ----\n  writeSheet_(ss, CFG.FINAL, out.OK);\n  writeSheet_(ss, CFG.REVIEW, out.REVIEW);\n\n  ss.toast(\n    `Processed ${rows.length} rows: ${out.OK.length} OK -> Final, ` +\n    `${out.REVIEW.length} REVIEW -> Review.`,\n    'Survey Clean', 8\n  );\n}\n\n// ================= Helpers =================\n\n// Yes/No: y, yes, n, no (any case) -> Yes/No; anything else -> REVIEW\nfunction normYN_(v) {\n  const s = String(v).trim().toLowerCase();\n  if (/^y(es)?$/.test(s)) return 'Yes';\n  if (/^no?$/.test(s)) return 'No';\n  return 'REVIEW';\n}\n\n// Phone: digits only; strip leading US \"1\" from 11 digits; must be exactly 10 digits\nfunction normPhone_(v) {\n  let d = String(v).replace(/\\D/g, '');\n  if (d.length === 11 && d[0] === '1') d = d.slice(1);\n  return d.length === 10 ? d : 'REVIEW';\n}\n\n// Timestamp parser. Accepts real Date cells, plus text like:\n//   4/3/2021 09:12 | 04-03-21 | 03-Mar-2021 | 3 Mar 2021 9:12 PM\n//   Mar 3, 2021 | 2021-04-03 09:12 | 2021-04-03T09:12:30\n// Numeric slash/dash dates are read MONTH-first (US). 2-digit years -> 20xx.\n// Invalid dates (e.g., 2/30/2021) -> REVIEW.\nfunction parseTs_(v) {\n  if (v instanceof Date) return isNaN(v.getTime()) ? 'REVIEW' : v;\n  const s = String(v).trim().replace(/\\s+/g, ' ');\n  if (!s) return 'REVIEW';\n\n  const MON = { jan: 0, feb: 1, mar: 2, apr: 3, may: 4, jun: 5,\n                jul: 6, aug: 7, sep: 8, oct: 9, nov: 10, dec: 11 };\n  let y, mo, d, rest = '', m;\n\n  if ((m = s.match(/^(\\d{4})-(\\d{1,2})-(\\d{1,2})(?:[ T](.+))?$/))) {\n    // ISO: 2021-04-03 09:12\n    y = +m[1]; mo = +m[2] - 1; d = +m[3]; rest = m[4] || '';\n  } else if ((m = s.match(/^(\\d{1,2})[\\/\\-](\\d{1,2})[\\/\\-](\\d{4}|\\d{2})(?: (.+))?$/))) {\n    // US numeric: 4/3/2021, 04-03-21\n    mo = +m[1] - 1; d = +m[2]; y = +m[3]; rest = m[4] || '';\n  } else if ((m = s.match(/^(\\d{1,2})[ \\-]([A-Za-z]{3,9})\\.?,?[ \\-](\\d{4}|\\d{2})(?: (.+))?$/))) {\n    // Day-month name: 03-Mar-2021, 3 March 2021\n    d = +m[1]; mo = MON[m[2].slice(0, 3).toLowerCase()]; y = +m[3]; rest = m[4] || '';\n  } else if ((m = s.match(/^([A-Za-z]{3,9})\\.? (\\d{1,2}),? (\\d{4}|\\d{2})(?: (.+))?$/))) {\n    // Month name first: Mar 3, 2021\n    mo = MON[m[1].slice(0, 3).toLowerCase()]; d = +m[2]; y = +m[3]; rest = m[4] || '';\n  } else {\n    return 'REVIEW';\n  }\n\n  if (mo === undefined) return 'REVIEW'; // unrecognized month name\n  if (y < 100) y += 2000;\n\n  // Optional time part: 9:12, 09:12:30, 9:12 PM\n  let h = 0, mi = 0, sec = 0;\n  if (rest) {\n    const t = rest.trim().match(/^(\\d{1,2}):(\\d{2})(?::(\\d{2}))?\\s*([AaPp][Mm])?$/);\n    if (!t) return 'REVIEW';\n    h = +t[1]; mi = +t[2]; sec = +(t[3] || 0);\n    if (t[4]) {\n      if (h < 1 || h > 12) return 'REVIEW';\n      h = (h % 12) + (/p/i.test(t[4]) ? 12 : 0);\n    }\n    if (h > 23 || mi > 59 || sec > 59) return 'REVIEW';\n  }\n\n  const dt = new Date(y, mo, d, h, mi, sec);\n  // Reject rollovers like Feb 30 -> Mar 2\n  if (dt.getFullYear() !== y || dt.getMonth() !== mo || dt.getDate() !== d) return 'REVIEW';\n  return dt;\n}\n\n// Normalizes a park string to its lookup key: lowercase letters only\nfunction parkKey_(v) {\n  return String(v).toLowerCase().replace(/[^a-z]/g, '');\n}\n\n// Loads ParkMap (A = key/variant, B = canonical name, header in row 1).\n// Keys are re-normalized, so entries like \"West-Side\" or \"W. Side\" also work.\nfunction loadParkMap_(ss) {\n  const sh = ss.getSheetByName(CFG.MAP);\n  if (!sh) throw new Error('Missing sheet: ' + CFG.MAP);\n  const map = {};\n  const last = sh.getLastRow();\n  if (last < 2) return map;\n  sh.getRange(2, 1, last - 1, 2).getValues().forEach(([k, canon]) => {\n    const key = parkKey_(k);\n    const c = String(canon).trim();\n    if (key && c) map[key] = c;\n  });\n  return map;\n}\n\n// Maps a raw park entry to its canonical name; blank or unmapped -> REVIEW\nfunction mapPark_(v, map) {\n  const key = parkKey_(v);\n  if (!key) return 'REVIEW';\n  return map[key] || 'REVIEW';\n}\n\n// Groups an array into { key: [items] }\nfunction groupBy_(arr, keyFn) {\n  return arr.reduce((acc, x) => {\n    const k = keyFn(x);\n    (acc[k] = acc[k] || []).push(x);\n    return acc;\n  }, {});\n}\n\n// Clears and rebuilds an output sheet with headers and column formats.\n// Hard guard: refuses to ever write to Raw.\nfunction writeSheet_(ss, name, rows) {\n  if (name === CFG.RAW) throw new Error('Refusing to write to ' + CFG.RAW);\n  const sh = ss.getSheetByName(name) || ss.insertSheet(name);\n  sh.clear(); // clears values and formats from the previous run\n\n  //",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "length",
+   "usage": {
+    "prompt_tokens": 6773,
+    "completion_tokens": 8000,
+    "total_tokens": 14773,
+    "cost": 0.1753234,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 3097,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.1753234,
+     "upstream_inference_prompt_cost": 0.0153234,
+     "upstream_inference_completions_cost": 0.16
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 3308,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  },
+  {
+   "turn": 4,
+   "user": "This still ends mid-function — can you finish the writeSheet_ implementation and paste the complete final script (with brief comments) so it writes the HEADERS row, writes the rows, formats Timestamp_Clean as datetime and Phone_Clean as plain text, and never overwrites Raw? Keep the same sheet names and behavior.",
+   "declined": false,
+   "text": "# Complete Survey Clean Script\n\nReplace **everything** in the Apps Script editor with this script. It ends with a `// ===== END OF SCRIPT =====` line. If you don't see that line after pasting, the copy was incomplete.\n\n**How to run:** Go to **Extensions > Apps Script**, paste, and **Save**. Reload the spreadsheet, then choose **Survey Clean > Run full clean**. You can also select `runClean` in the editor's function dropdown and click **Run**. Approve authorization on the first run.\n\n```javascript\n/**\n * Volunteer survey cleaner\n * HOW TO RUN: reload the spreadsheet, then menu \"Survey Clean > Run full clean\"\n *             (or run `runClean` from the Apps Script editor).\n * - Reads Raw (A:F, header in row 1). Raw is READ-ONLY and never modified.\n * - Writes rows + helper columns to Final (Status = OK) and Review (Status = REVIEW).\n * - Re-runnable: Final and Review are cleared and rebuilt each run.\n */\n\nconst CFG = {\n  RAW: 'Raw',\n  MAP: 'ParkMap',\n  FINAL: 'Final',\n  REVIEW: 'Review',\n  DUP_WINDOW_MIN: 10,            // name+time duplicate window (minutes)\n  TS_FORMAT: 'yyyy-mm-dd hh:mm'  // number format for Timestamp_Clean\n};\n\n// A:F = raw copy, G:P = helpers, Q = source row number in Raw\nconst HEADERS = [\n  'Timestamp', 'Name', 'Email', 'JoinedBefore', 'Phone', 'PreferredPark',   // A-F\n  'JoinedBefore_Clean', 'Phone_Clean', 'Timestamp_Clean', 'Park_Clean',     // G-J\n  'EmailKey', 'NameKey', 'DupEmail', 'DupNameTime', 'Superseded', 'Status', // K-P\n  'RawRow'                                                                   // Q\n];\nconst COL = { TS_RAW: 1, TS_CLEAN: 9, RAW_ROW: 17 }; // 1-based column numbers\n\n// Adds the custom menu when the spreadsheet opens\nfunction onOpen() {\n  SpreadsheetApp.getUi()\n    .createMenu('Survey Clean')\n    .addItem('Run full clean', 'runClean')\n    .addToUi();\n}\n\nfunction runClean() {\n  const ss = SpreadsheetApp.getActiveSpreadsheet();\n  const raw = ss.getSheetByName(CFG.RAW);\n  if (!raw) throw new Error('Missing sheet: ' + CFG.RAW);\n\n  // Dynamic range: row 2 through last used row\n  const lastRow = raw.getLastRow();\n  if (lastRow < 2) {\n    SpreadsheetApp.getUi().alert('Raw has no data rows.');\n    return;\n  }\n  const data = raw.getRange(2, 1, lastRow - 1, 6).getValues(); // read only\n  const parkMap = loadParkMap_(ss);\n\n  // ---- 1) Per-row normalization ----\n  const rows = [];\n  data.forEach((r, i) => {\n    if (r.every(v => String(v).trim() === '')) return; // skip blank rows\n    const [ts, name, email, joined, phone, park] = r;\n    rows.push({\n      raw: r,\n      rawRow: i + 2,\n      yn: normYN_(joined),\n      phone: normPhone_(phone),\n      ts: parseTs_(ts),\n      park: mapPark_(park, parkMap),\n      emailKey: String(email).trim().toLowerCase(),\n      nameKey: String(name).trim().replace(/\\s+/g, ' ').toLowerCase(),\n      dupEmail: '',\n      dupNameTime: '',\n      superseded: ''\n    });\n  });\n\n  // ---- 2) Duplicate by email + SUPERSEDED ----\n  // Keeper = most recent valid timestamp; ties -> lowest Raw row kept.\n  // Unparseable timestamps rank lowest.\n  const byEmail = groupBy_(rows.filter(x => x.emailKey), x => x.emailKey);\n  Object.values(byEmail).forEach(g => {\n    if (g.length < 2) return;\n    g.forEach(x => (x.dupEmail = 'DUP-email'));\n    const keeper = g.reduce((best, x) => {\n      const bt = best.ts instanceof Date ? best.ts.getTime() : -Infinity;\n      const xt = x.ts instanceof Date ? x.ts.getTime() : -Infinity;\n      if (xt > bt) return x;\n      if (xt === bt && x.rawRow < best.rawRow) return x;\n      return best;\n    });\n    g.forEach(x => { if (x !== keeper) x.superseded = 'SUPERSEDED'; });\n  });\n\n  // ---- 3) Same name within N minutes (flags both rows) ----\n  const windowMs = CFG.DUP_WINDOW_MIN * 60 * 1000;\n  const byName = groupBy_(\n    rows.filter(x => x.nameKey && x.ts instanceof Date),\n    x => x.nameKey\n  );\n  Object.values(byName).forEach(g => {\n    for (let a = 0; a < g.length; a++) {\n      for (let b = a + 1; b < g.length; b++) {\n        if (Math.abs(g[a].ts.getTime() - g[b].ts.getTime()) <= windowMs) {\n          g[a].dupNameTime = g[b].dupNameTime = 'DUP-name-time';\n        }\n      }\n    }\n  });\n\n  // ---- 4) Status + split into OK / REVIEW ----\n  const out = { OK: [], REVIEW: [] };\n  rows.forEach(x => {\n    const needsReview =\n      [x.yn, x.phone, x.ts, x.park].includes('REVIEW') ||\n      x.dupEmail !== '' || x.dupNameTime !== '';\n    const status = needsReview ? 'REVIEW' : 'OK';\n    out[status].push([\n      ...x.raw,\n      x.yn, x.phone, x.ts, x.park,\n      x.emailKey, x.nameKey,\n      x.dupEmail, x.dupNameTime, x.superseded,\n      status, x.rawRow\n    ]);\n  });\n\n  // ---- 5) Write output sheets (Raw never touched) ----\n  writeSheet_(ss, CFG.FINAL, out.OK);\n  writeSheet_(ss, CFG.REVIEW, out.REVIEW);\n\n  ss.toast(\n    `Processed ${rows.length} rows: ${out.OK.length} OK -> Final, ` +\n    `${out.REVIEW.length} REVIEW -> Review.`,\n    'Survey Clean', 8\n  );\n}\n\n// ================= Helpers =================\n\n// y/yes/n/no (any case) -> Yes/No; anything else -> REVIEW\nfunction normYN_(v) {\n  const s = String(v).trim().toLowerCase();\n  if (/^y(es)?$/.test(s)) return 'Yes';\n  if (/^no?$/.test(s)) return 'No';\n  return 'REVIEW';\n}\n\n// Digits only; strip leading US \"1\" from 11 digits; must be exactly 10 digits\nfunction normPhone_(v) {\n  let d = String(v).replace(/\\D/g, '');\n  if (d.length === 11 && d[0] === '1') d = d.slice(1);\n  return d.length === 10 ? d : 'REVIEW';\n}\n\n// Accepts Date cells or text like: 4/3/2021 09:12 | 04-03-21 | 03-Mar-2021 |\n// 3 Mar 2021 9:12 PM | Mar 3, 2021 | 2021-04-03 09:12 | 2021-04-03T09:12:30\n// Numeric dates are MONTH-first (US). 2-digit years -> 20xx. Invalid -> REVIEW.\nfunction parseTs_(v) {\n  if (v instanceof Date) return isNaN(v.getTime()) ? 'REVIEW' : v;\n  const s = String(v).trim().replace(/\\s+/g, ' ');\n  if (!s) return 'REVIEW';\n\n  const MON = { jan: 0, feb: 1, mar: 2, apr: 3, may: 4, jun: 5,\n                jul: 6, aug: 7, sep: 8, oct: 9, nov: 10, dec: 11 };\n  let y, mo, d, rest = '', m;\n\n  if ((m = s.match(/^(\\d{4})-(\\d{1,2})-(\\d{1,2})(?:[ T](.+))?$/))) {\n    y = +m[1]; mo = +m[2] - 1; d = +m[3]; rest = m[4] || '';          // ISO\n  } else if ((m = s.match(/^(\\d{1,2})[\\/\\-](\\d{1,2})[\\/\\-](\\d{4}|\\d{2})(?: (.+))?$/))) {\n    mo = +m[1] - 1; d = +m[2]; y = +m[3]; rest = m[4] || '';          // US numeric\n  } else if ((m = s.match(/^(\\d{1,2})[ \\-]([A-Za-z]{3,9})\\.?,?[ \\-](\\d{4}|\\d{2})(?: (.+))?$/))) {\n    d = +m[1]; mo = MON[m[2].slice(0, 3).toLowerCase()]; y = +m[3]; rest = m[4] || ''; // 03-Mar-2021\n  } else if ((m = s.match(/^([A-Za-z]{3,9})\\.? (\\d{1,2}),? (\\d{4}|\\d{2})(?: (.+))?$/))) {\n    mo = MON[m[1].slice(0, 3).toLowerCase()]; d = +m[2]; y = +m[3]; rest = m[4] || ''; // Mar 3, 2021\n  } else {\n    return 'REVIEW';\n  }\n\n  if (mo === undefined) return 'REVIEW';\n  if (y < 100) y += 2000;\n\n  // Optional time: 9:12, 09:12:30, 9:12 PM\n  let h = 0, mi = 0, sec = 0;\n  if (rest) {\n    const t = rest.trim().match(/^(\\d{1,2}):(\\d{2})(?::(\\d{2}))?\\s*([AaPp][Mm])?$/);\n    if (!t) return 'REVIEW';\n    h = +t[1]; mi = +t[2]; sec = +(t[3] || 0);\n    if (t[4]) {\n      if (h < 1 || h > 12) return 'REVIEW';\n      h = (h % 12) + (/p/i.test(t[4]) ? 12 : 0);\n    }\n    if (h > 23 || mi > 59 || sec > 59) return 'REVIEW';\n  }\n\n  const dt = new Date(y, mo, d, h, mi, sec);\n  // Reject rollovers like Feb 30 -> Mar 2\n  if (dt.getFullYear() !== y || dt.getMonth() !== mo || dt.getDate() !== d) return 'REVIEW';\n  return dt;\n}\n\n// Park lookup key: lowercase letters only\nfunction parkKey_(v) {\n  return String(v).toLowerCase().replace(/[^a-z]/g, '');\n}\n\n// ParkMap: A = key/variant, B = canonical name, header in row 1.\n// Keys are re-normalized, so \"West-Side\" or \"W. Side\" also work as entries.\nfunction loadParkMap_(ss) {\n  const sh = ss.getSheetByName(CFG.MAP);\n  if (!sh) throw new Error('Missing sheet: ' + CFG.MAP);\n  const map = {};\n  const last = sh.getLastRow();\n  if (last < 2) return map;\n  sh.getRange(2, 1, last - 1, 2).getValues().forEach(([k, canon]) => {\n    const key = parkKey_(k);\n    const c = String(canon).trim();\n    if (key && c) map[key] = c;\n  });\n  return map;\n}\n\n// Raw park -> canonical name; blank or unmapped -> REVIEW\nfunction mapPark_(v, map) {\n  const key = parkKey_(v);\n  if (!key) return 'REVIEW';\n  return map[key] || 'REVIEW';\n}\n\n// Groups an array into { key: [items] }\nfunction groupBy_(arr, keyFn) {\n  return arr.reduce((acc, x) => {\n    const k = keyFn(x);\n    (acc[k] = acc[k] || []).push(x);\n    return acc;\n  }, {});\n}\n\n// Clears and rebuilds an output sheet: header row, formats, then data.\n// Hard guard: refuses to ever write to Raw.\nfunction writeSheet_(ss, name, rows) {\n  if (name === CFG.RAW) throw new Error('Refusing to write to ' + CFG.RAW);\n  const sh = ss.getSheetByName(name) || ss.insertSheet(name);\n  sh.clear(); // remove previous values and formats\n\n  // Header row\n  const nCols = HEADERS.length;\n  sh.getRange(1, 1, 1, nCols).setValues([HEADERS]).setFontWeight('bold');\n  sh.setFrozenRows(1);\n  if (rows.length === 0) return; // headers only\n\n  const n = rows.length;\n\n  // Set formats BEFORE writing values so text stays text:\n  // - Columns B:H and J:P as plain text. This keeps Phone_Clean leading\n  //   zeros and stops raw entries like \"+1 555 1236\" being read as formulas.\n  // - Column A (raw timestamp) and Q (RawRow) keep automatic formatting.\n  sh.getRange(2, 2, n, COL.TS_CLEAN - 2).setNumberFormat('@');               // B:H\n  sh.getRange(2, COL.TS_CLEAN + 1, n, COL.RAW_ROW - COL.TS_CLEAN - 1)\n    .setNumberFormat('@');                                                   // J:P\n  sh.getRange(2, COL.TS_CLEAN, n, 1).setNumberFormat(CFG.TS_FORMAT);         // I = datetime\n\n  // Write all data rows in one call\n  sh.getRange(2, 1, n, nCols).setValues(rows);\n\n  sh.autoResizeColumns(1, nCols);\n}\n\n// ===== END OF SCRIPT =====\n```\n\n## Notes\n\n- **Raw is never modified.** The script only reads from Raw, and `writeSheet_` throws an error if it's ever pointed at Raw.\n- **Time zone:** Parsed text timestamps use the script's time zone. If Timestamp_Clean values look shifted by a few hours, go to **Project Settings (gear icon)** in the editor and set the time zone to match **File > Settings** in the spreadsheet.\n- **SUPERSEDED rows** land in Review, because any duplicate triggers review. While reviewing, filter `Superseded = SUPERSEDED` to see the copies you'd drop.\n- **Formula columns:** If you still have the G–P formula columns from earlier on Raw, they're unaffected. The script only reads A:F.",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "stop",
+   "usage": {
+    "prompt_tokens": 11577,
+    "completion_tokens": 6111,
+    "total_tokens": 17688,
+    "cost": 0.1567594,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 3097,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.1567594,
+     "upstream_inference_prompt_cost": 0.0345394,
+     "upstream_inference_completions_cost": 0.12222
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 872,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  },
+  {
+   "turn": 5,
+   "user": "Pasting and running now. Quick confirm: ParkMap should be column A = variant (any spelling), column B = canonical name (one per row), and you add one variant per row — correct?\n\nHere’s my current ParkMap draft (I'll paste into the ParkMap sheet):\nwest side | West Side\nwest-side | West Side\nnorthpark | North Park\n\nIf the script errors, what exact info should I paste here (error text, stack, or a screenshot)?",
+   "declined": false,
+   "text": "Yes, that's correct, with one important catch.\n\n## ParkMap layout\n- **Column A** = variant (any spelling, punctuation, or case)\n- **Column B** = canonical name\n- **One variant per row**\n- **Row 1 must be a header row.** The script starts reading at row 2, so without a header your first entry (`west side`) would be silently ignored.\n\n**Paste it like this:**\n\n| A | B |\n|---|---|\n| Variant | Canonical |\n| west side | West Side |\n| w. side | West Side |\n| northpark | North Park |\n\n## Notes on your draft\n- **`west side` and `west-side` are the same entry** to the script. Both reduce to the key `westside`, so you only need one. Keeping both is harmless.\n- **Add `W. Side`** (key `wside`), since you mentioned it in your original data.\n- `North Park` and `Northpark` both reduce to `northpark`, so your one entry covers both.\n- **If you paste the text with `|` separators**, it will land in a single cell. Split it with **Data > Split text to columns**, using a custom separator `|`. Extra spaces around the values are fine because the script trims them.\n\n## If the script errors, paste:\n1. **The exact error message**, copied as text (e.g., `TypeError: Cannot read properties of null...`).\n2. **The line number and function name**, shown in the error or the Execution log (e.g., `writeSheet_ @ Code.gs:248`).\n3. **How you ran it**: the menu or the Run button in the editor.\n4. **If it's data-related** (e.g., wrong results rather than a crash), 2–3 example rows that misbehave, with emails and phone numbers changed to fake values.\n\nText is better than a screenshot because I can read the exact message and line number. For past runs, go to **Executions** (the list icon in the editor's left sidebar) and click the failed run to see the full log.\n\n## Heads-up on results\nSince your sample phones are 7 digits, expect **most rows to land in Review** with `Phone_Clean = REVIEW`. That's the script working correctly, not a bug. If it turns out the area code is missing for everyone, tell me the area code and I can add an option to prepend it automatically.",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "stop",
+   "usage": {
+    "prompt_tokens": 16960,
+    "completion_tokens": 1109,
+    "total_tokens": 18069,
+    "cost": 0.0782514,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 3097,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0782514,
+     "upstream_inference_prompt_cost": 0.0560714,
+     "upstream_inference_completions_cost": 0.02218
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 387,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  },
+  {
+   "turn": 6,
+   "user": "Perfect, that's done.",
+   "declined": false,
+   "text": "Once it runs, check these to confirm it worked:\n\n- **Toast counts:** OK + REVIEW should equal your non-blank Raw rows (about 420).\n- **Review → Park_Clean:** Filter for `REVIEW`. Each one is a spelling you haven't mapped. Add it to ParkMap and re-run.\n- **Timestamp_Clean:** Spot-check a few against the raw Timestamp. If they're off by hours, fix the script time zone in Project Settings.\n- **Superseded:** Make sure only one row per email is blank.\n\n**Don't make manual edits in Final or Review.** Every run clears and rebuilds both sheets, so any fixes you type there will be wiped. Instead:\n- Fix mapping issues in **ParkMap** and re-run.\n- Keep manual decisions (e.g., \"keep this duplicate,\" corrected phone numbers) in a separate sheet like `Resolved`, keyed by **RawRow**.\n- Or do all mapping and re-runs first, then make manual fixes only at the very end, after your last run.\n\n**Possible next steps:**\n1. **Area-code option:** If all phones are 7 digits, tell me the area code and I'll add a setting to prepend it.\n2. **Resolved sheet:** The script can read your manual decisions by RawRow and apply them automatically, so you can re-run without losing work.\n3. **Summary tab:** Counts per flag (bad phone, unmapped park, duplicates) so you can see what's left at a glance.",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "stop",
+   "usage": {
+    "prompt_tokens": 17693,
+    "completion_tokens": 1316,
+    "total_tokens": 19009,
+    "cost": 0.0853234,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 3097,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0853234,
+     "upstream_inference_prompt_cost": 0.0590034,
+     "upstream_inference_completions_cost": 0.02632
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 818,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  }
+ ]
+}

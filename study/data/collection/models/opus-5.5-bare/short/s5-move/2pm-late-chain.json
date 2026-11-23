@@ -1,0 +1,205 @@
+{
+ "schema": "bedtime.model-chain/1",
+ "control": false,
+ "setup": "opus-5.5-bare",
+ "model": "anthropic/claude-opus-5.5",
+ "cut": "short",
+ "session": "s5-move",
+ "clock": "2pm",
+ "probe": "late",
+ "first": "Glad it's useful! One thing before you sign off: **my last response got cut off** partway through the budget table, so a few sections you asked for are still missing:\n\n- The rest of the budget table (contingency row and DIY vs. movers totals)\n- Room-by-room packing checklist and declutter tips\n- Timeline for cancelling and starting services and subscriptions\n- 6–8 week phone-reminder calendar\n- The printable one-page moving-day essentials checklist\n\n**One correction:** Oregon DEQ emissions testing applies in the **Portland metro** and **Medford/Rogue Valley** areas. Klamath Falls isn't included. As always, confirm on the DEQ site once you know your address.\n\nWhen you pick this back up, just say \"finish the list,\" and I'll send the remaining sections. I can also format the reminder calendar as an importable .ics file for your phones.",
+ "turns": [
+  {
+   "turn": 1,
+   "user": "I'm good, let's keep going. Finish the list. Include the missing sections: contingency row and DIY vs movers totals; room-by-room packing checklist with declutter tips; timeline for cancelling/starting services and subscriptions; the 6–8 week reminder calendar (please provide as an importable .ics file I can sync to phones); and the printable one-page moving-day essentials.\n\nAlso give ballpark total-cost comparisons (DIY vs full-service movers vs hybrid) for a 1–2 bedroom move including one car shipped vs driven. Assign responsibilities (M, P, J) where relevant in those sections and keep the one-page moving-day checklist PDF/print-friendly plain-text.",
+   "declined": true,
+   "text": "# Ohio → Oregon Move: Remaining Sections\n\n**Working move date:** I've anchored everything to **Thursday, July 16, 2026** as loading day, which is 10 weeks from today. Arrival in Oregon is set for about **Monday, July 20**. If your date changes, tell me and I'll regenerate the calendar.\n\n**Updates to earlier figures:**\n- **Lodging:** A ~2,450-mile drive with a dog realistically takes **4 nights**, not 2–3.\n- **DMV fees:** Two Oregon licenses plus title and registration for one car run about **$350–$600**, more than I listed earlier. Registration cost depends on your car's MPG and county.\n- **Summer pricing:** July is peak moving season. Mover and truck prices run 20–30% higher, and good dates book up. **Get quotes this week.**\n\n---\n\n## 1. BUDGET: Completing the Table\n\n| Item | DIY | Movers | Notes |\n|---|---|---|---|\n| Contingency fund | 10–15% of subtotal (~$500–$1,300) | 10–15% (~$800–$2,200) | Covers price changes, extra hotel nights, damage, surprise fees |\n| Loading/unloading labor (DIY only) | $300–$800 | n/a | Hourly helpers at each end |\n| Dollies, pads, straps | $50–$150 | Included | |\n\n### Ballpark Total Comparison (1–2 BR, ~2,450 miles, July)\n\nThese totals cover **moving and travel costs only**. Housing costs are listed separately below because they're the same in every scenario.\n\n| Scenario | Car **driven** | Car **shipped** (you fly) | Your time and effort |\n|---|---|---|---|\n| **A. DIY rental truck** (you pack, load, and drive) | **$4,500–$8,500** | **$5,500–$10,000** | Highest: about 60–90 hrs, including 4–5 days of truck driving |\n| **B. Portable container** (U-Pack/PODS; you pack and load, they drive) | **$4,500–$9,000** | **$5,500–$",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "length",
+   "usage": {
+    "prompt_tokens": 7138,
+    "completion_tokens": 8000,
+    "total_tokens": 15138,
+    "cost": 0.1634872,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 6596,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.1634872,
+     "upstream_inference_prompt_cost": 0.0034872,
+     "upstream_inference_completions_cost": 0.16
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 7295,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  },
+  {
+   "turn": 2,
+   "user": "Resume from where you cut off — finish the budget totals and ballpark totals, then give the room-by-room packing checklist with declutter tips, the timeline for cancelling/starting services and subscriptions, the 6–8 week reminder calendar as an importable .ics file I can sync to phones, and the printable one-page moving-day essentials (plain-text, PDF/print-friendly). Keep responsibilities (M, P, J) on each item.",
+   "declined": false,
+   "text": "",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "length",
+   "usage": {
+    "prompt_tokens": 7990,
+    "completion_tokens": 8000,
+    "total_tokens": 15990,
+    "cost": 0.1668952,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 6596,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.1668952,
+     "upstream_inference_prompt_cost": 0.0068952,
+     "upstream_inference_completions_cost": 0.16
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 8000,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  },
+  {
+   "turn": 3,
+   "user": "Ok — pick up from where you cut off and finish these sections for our move (keep M/P/J on each item):\n\n1) Complete the budget totals and ballpark totals (finish the table and give final DIY vs full-service vs hybrid totals for a 1–2BR move, include options for car driven vs car shipped).  \n2) Room-by-room packing checklist with declutter tips.  \n3) Timeline for cancelling/starting services & subscriptions (who does each).  \n4) The 6–8 week reminder calendar as an importable .ics file we can sync to our phones (use the anchored move date: Thu Jul 16, 2026).  \n5) Printable one-page moving-day essentials (plain-text, PDF/print-friendly).\n\nResume exactly where you stopped and send the full remaining sections. Go.",
+   "declined": false,
+   "text": "",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "length",
+   "usage": {
+    "prompt_tokens": 8257,
+    "completion_tokens": 8000,
+    "total_tokens": 16257,
+    "cost": 0.1679632,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 6596,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.1679632,
+     "upstream_inference_prompt_cost": 0.0079632,
+     "upstream_inference_completions_cost": 0.16
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 8000,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  },
+  {
+   "turn": 4,
+   "user": "Okay — pick up from where you cut off and finish those sections. Start by finishing the budget totals and ballpark totals (DIY vs full-service vs hybrid, with car driven vs car shipped). Then give the room-by-room packing checklist with declutter tips (include M/P/J on each item). Next, the timeline for cancelling/starting services & subscriptions with who does each (M/P/J). Then provide the 6–8 week reminder calendar as an importable .ics file synced to the anchored loading day: Thursday, July 16, 2026 (include event titles, dates/times, and brief descriptions). Finally, give the printable one-page moving-day essentials in plain-text, PDF/print-friendly format (include M/P/J where relevant). Go.",
+   "declined": false,
+   "text": "",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "length",
+   "usage": {
+    "prompt_tokens": 8508,
+    "completion_tokens": 8000,
+    "total_tokens": 16508,
+    "cost": 0.1689672,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 6596,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.1689672,
+     "upstream_inference_prompt_cost": 0.0089672,
+     "upstream_inference_completions_cost": 0.16
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 8000,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  },
+  {
+   "turn": 5,
+   "user": "Okay — let’s finish this. Start by completing the budget totals and ballpark comparisons (DIY vs full-service vs hybrid) including car driven vs car shipped. Then give the room-by-room packing checklist with declutter tips (mark M/P/J for each item). Next the timeline for cancelling/starting services & subscriptions with who does each (M/P/J). Then provide the 6–8 week reminder calendar as an importable .ics file anchored to loading day: Thursday, July 16, 2026 (include event titles, dates/times, short descriptions). Finally the printable one-page moving-day essentials in plain-text (PDF/print-friendly) with M/P/J where relevant. Resume exactly where you left off and go.",
+   "declined": false,
+   "text": "# Ohio → Oregon Move: Final Sections (Complete)\n\nSorry for the repeated cut-offs. Everything is below in one response. If anything gets truncated, reply \"continue from Section #\" and I'll resume there.\n\n**Anchor dates:** Load Thursday, Jul 16, 2026. Drive Thursday afternoon through Monday (4 nights). Arrive Oregon Monday, Jul 20.\n\n---\n\n## 1. BUDGET TOTALS & BALLPARK COMPARISON\n\n**Corrections to my earlier table:** For a July cross-country move, my earlier mover estimates were too low.\n- **Hybrid** is about **$4,000–$8,500**, not $2,500–$5,000.\n- **Full-service** is about **$6,500–$13,000**, not $5,000–$10,000.\n- **Open-carrier car shipping in July** is about **$1,100–$1,600.**\n\n### Shared travel costs (used in the totals below)\n\n| Travel mode | What it includes | Cost |\n|---|---|---|\n| **Drive the car** (2,450 mi, 4 nights) | Fuel $250–350 + dog-friendly lodging $500–900 + meals $250–450 | **$1,000–$1,700** |\n| **Fly** (car shipped) | 2 one-way tickets $300–800 + dog airfare | Dog in cabin (small dog, under ~20 lb with carrier): $125–200. Larger dog via cargo or pet transport: $500–1,500+ |\n\n### Final totals (1–2 BR, moving and travel costs only, including a 10–15% contingency)\n\n| Scenario | Car DRIVEN | Car SHIPPED | Your labor | Who drives what |\n|---|---|---|---|---|\n| **A. DIY rental truck** | **$5,000–$9,800** | **$5,900–$11,200** | Highest (60–90 hrs) | Driven: P drives truck, M drives car with dog. Shipped: both ride in truck with dog. |\n| **B. Portable container** (you pack and load, they haul) | **$5,000–$11,000** | **$5,500–$13,500** | High (40–60 hrs) | Container ships separately and arrives in 5–14 days. |\n| **C. Hybrid** (you pack, movers load, haul, unload) | **$5,900–$12,900** | **$6,500–$15,400** | Medium (30–45 hrs packing) | Delivery window often 7–21 days. |\n| **D. Full-service** (movers pack everything) | **$8,500–$17,700** | **$9,000–$20,000** | Lowest (10–15 hrs) | Same delivery window as C. |\n\n**How the scenarios are built:**\n- **A** includes:\n  - Truck rental $2,000–3,800\n  - Truck fuel $850–1,250\n  - Truck damage coverage $150–400\n  - Supplies $150–400\n  - Dollies and pads $50–150\n  - Hired load/unload labor $300–800\n- **A, car shipped:** A cheaper alternative is towing the car behind the truck on an auto transport trailer (+$400–800 instead of $1,100–1,600 for shipping).\n- **B** includes:\n  - Container $3,000–6,500\n  - Supplies, equipment, and labor as in A\n- **C and D** include:\n  - Mover fee\n  - Full Value Protection $200–600\n  - Supplies (C only)\n\n### Housing costs (separate, the same in every scenario)\n\n| Item | Cost |\n|---|---|\n| Oregon security deposit | Often about 1 month's rent |\n| First month's rent | Your rent |\n| Temporary housing | $800–$2,500 (1–2 weeks; likely needed in B, C, and D because of delivery windows) |\n| Utility deposits | $100–$400 |\n| Oregon DMV (2 licenses + title, registration, VIN inspection) | $350–$600 |\n| Dog: vet, records, license | $150–$300 |\n\n### Recommendation\nWith a dog, **driving the car** is usually the most practical and cheapest choice. Airlines restrict pets in cargo during summer heat, and large dogs can't fly in the cabin. The best value for most couples is either:\n- **B, car driven** (cheapest at the low end), or\n- **C, car driven** (much less physical work).\n\n---\n\n## 2. ROOM-BY-ROOM PACKING CHECKLIST\n\n### Declutter rules (J)\n1. **Weight costs money.** Movers charge by weight, roughly $0.70–$1.20/lb cross-country. A 100-lb bookshelf can cost $70–120 to move. If an item is cheap to replace, sell it.\n2. **Oregon has no sales tax.** Buying replacements there is cheaper than in Ohio.\n3. **The 12-month rule.** If you haven't used it in a year and it isn't sentimental, let it go.\n4. **Use a 4-bin sort:** Keep, Sell, Donate, Trash. Don't create a \"maybe\" bin.\n5. **Sell big items early (weeks 7–5).** Use Facebook Marketplace or Craigslist. Schedule a donation pickup for week 2.\n6. **Movers can't take hazardous items.** This includes propane, paint, aerosols, gasoline, pool chemicals, and ammunition. Give them away or dispose of them properly (P).\n7. **Plants and firearms:** Check Oregon Department of Agriculture rules for plants. Check transport laws for any firearms.\n\n### Packing basics (J)\n- Label each box on **2 sides plus the top** with: room, contents, and box number.\n- Keep a box inventory in a shared phone note.\n- Heavy items go in small boxes. Keep each box under 50 lb.\n\n### Packing timeline by room\n\n**Garage / Storage (weeks 7–6)**\n- [ ] P: Sort tools; sell duplicates\n- [ ] P: Drain the gas from the mower and trimmer, or sell them\n- [ ] P: Dispose of chemicals and paint\n- [ ] J: Bikes and sports gear: sell or pack\n- *Declutter tip:* Old paint cans, scrap wood, and broken items are trash. Don't move them.\n\n**Guest room / Office (weeks 6–5)**\n- [ ] M: Scan important papers. Shred anything older than 7 years that you don't need.\n- [ ] P: Back up computers. Pack cords in labeled bags.\n- [ ] M: Pack books (small boxes only). Donate the ones you won't reread.\n- [ ] J: Pull important documents into the travel folder. **Never pack these in the truck.**\n\n**Living room (weeks 5–3)**\n- [ ] J: Decor, frames, and art. Wrap glass and mark boxes FRAGILE.\n- [ ] P: TV. Use the original box or a TV box. Photograph the cable setup first.\n- [ ] M: Media and games. Declutter DVDs and old electronics through e-waste recycling.\n- [ ] P: Disassemble furniture. Bag hardware and tape the bag to the piece.\n\n**Kitchen (weeks 3–1)**\n- [ ] M: Specialty items first (baking gear, extra dishes, small appliances).\n- [ ] M: Wrap dishes vertically. Use dish-pack boxes.\n- [ ] J: Use up the pantry and freezer starting in week 4. Don't move food or open liquids.\n- [ ] M: Week 1: keep only 2 plates, 2 mugs, 1 pan, and utensils. Pack these last.\n- *Declutter tip:* Gadgets you've used less than once a year can go.\n\n**Bedrooms / Closets (weeks 3–1)**\n- [ ] J: Off-season clothes first. Donate anything you haven't worn in a year.\n- [ ] P: Use wardrobe boxes for hanging clothes.\n- [ ] J: Pack 7–10 days of clothes in suitcases for the drive and the wait for delivery.\n- [ ] P: Bag and label the bed frame hardware. Strip the bed on moving day.\n\n**Bathroom (week 1)**\n- [ ] M: Toss expired medications and products.\n- [ ] M: Prescriptions and a 2-week supply go in the car, not the truck.\n- [ ] J: Pack a toiletry kit for the trip.\n\n**Dog gear (week 1)**\n- [ ] M: Keep the bed, crate, food, bowls, toys, and meds in the car.\n- [ ]",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "length",
+   "usage": {
+    "prompt_tokens": 8753,
+    "completion_tokens": 8000,
+    "total_tokens": 16753,
+    "cost": 0.1699472,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 6596,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.1699472,
+     "upstream_inference_prompt_cost": 0.0099472,
+     "upstream_inference_completions_cost": 0.16
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 5144,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  },
+  {
+   "turn": 6,
+   "user": "Perfect, that's done.",
+   "declined": false,
+   "text": "Quick heads-up: the last response **cut off again** in Section 2 (at \"Dog gear\"), so Sections 3–5 never arrived. Here's everything remaining, kept compact so it fits.\n\n---\n\n## 2. PACKING CHECKLIST (finished)\n\n**Dog gear (week 1)**\n- [ ] M: Keep bed, crate, food, bowls, toys, and meds in the car\n- [ ] M: Pack 7 days of food in a sealed bin (don't switch brands mid-move)\n- [ ] M: Wash the dog bed 3–4 days before, not the night before (it should smell like home)\n\n**Final sweep (moving day)**\n- [ ] J: Open every cabinet, drawer, closet, and the attic\n- [ ] P: Check the garage, shed, and behind the furnace or water heater\n- [ ] M: Check the bathroom cabinets, shower caddy, and fridge\n\n**\"Open First\" boxes (pack week 1, ride in the car or load last):**\n- [ ] M: Kitchen: 2 plates, 2 mugs, 1 pan, knife, utensils, dish soap, paper towels, trash bags, coffee setup\n- [ ] P: Tools: box cutter, screwdriver set, Allen keys, hammer, tape measure, furniture hardware bags\n- [ ] J: Bedroom: sheets, pillows, towels, shower curtain and hooks, toilet paper, nightlight\n- [ ] P: Tech: power strips, phone chargers, router (if you're bringing your own)\n\n---\n\n## 3. SERVICES & SUBSCRIPTIONS TIMELINE\n\n| Service | Ohio: cancel / transfer | Oregon: start | Who |\n|---|---|---|---|\n| **Internet** | Return equipment by Jul 17 (get a receipt) | **Book by May 26** for install Jul 20–21 | M |\n| **Electric** | Stop Jul 17 (schedule by Jun 18) | Start Jul 20 (schedule by Jun 18) | M |\n| **Gas** | Stop Jul 17 | Start Jul 20 (may need an appointment) | M |\n| **Water / sewer / trash** | Final read Jul 17 (often via landlord) | Start Jul 20 (often via landlord) | P |\n| **Renter's / home insurance** | End Jul 17, not before | Active on the day you get keys | J |\n| **Auto insurance** | Transfer policy to OR by Jul 20 | Same policy, new rate | M |\n| **Health insurance** | Check network coverage in OR (by Jun 18) | Find new doctors (Aug) | J |\n| **Bank / credit cards** | Update address Jul 2 | n/a | J |\n| **Employer payroll / HR** | Update address and tax state Jul 2 | Oregon withholding from arrival | P (and M for own employer) |\n| **USPS forwarding** | File Jul 1, effective Jul 16 | n/a | M |\n| **Gym / local memberships** | Cancel by Jun 15 (many require 30 days' notice) | Join after arrival | J |\n| **Streaming / apps** | Keep; update billing address Jul 2 | n/a | P |\n| **Meal kits / deliveries / Amazon** | Pause or change address Jul 9 | Resume Jul 21 | P |\n| **Pharmacy** | Refill all scripts Jul 13; transfer to OR chain | Pick a new pharmacy Jul 21 | M |\n| **Vet** | Get records at the June 4 visit | First OR visit within 2 weeks | M |\n| **Lawn / pest / cleaning services** | Cancel by Jul 1 | n/a | P |\n| **Voter registration** | n/a | Update in OR after license (Aug) | J |\n\n---\n\n## 4. REMINDER CALENDAR (.ics)\n\n**How to use:** Copy everything in the box below into a plain-text file and save it as `ohio-oregon-move.ics`.\n- **iPhone:** AirDrop or email the file to yourself and tap it. Choose \"Add All.\"\n- **Google / Android:** Go to calendar.google.com, then Settings → Import, and choose a shared calendar so both phones see it.\n- **Note:** Google ignores the built-in alarms (Apple keeps them), so set a default notification on that calendar.\n\n```\nBEGIN:VCALENDAR\nVERSION:2.0\nPRODID:-//OH-OR Move//EN\nCALSCALE:GREGORIAN\nX-WR-CALNAME:Ohio to Oregon Move\nBEGIN:VEVENT\nUID:move01@ohor\nDTSTAMP:20260507T180000Z\nDTSTART;VALUE=DATE:20260511\nDTEND;VALUE=DATE:20260512\nSUMMARY:[J] Collect mover/truck/container quotes\nDESCRIPTION:Get 3-4 quotes. Check USDOT numbers on FMCSA SAFER.\nBEGIN:VALARM\nACTION:DISPLAY\nDESCRIPTION:Reminder\nTRIGGER:-PT15H\nEND:VALARM\nEND:VEVENT\nBEGIN:VEVENT\nUID:move02@ohor\nDTSTAMP:20260507T180000Z\nDTSTART;VALUE=DATE:20260515\nDTEND;VALUE=DATE:20260516\nSUMMARY:[J] Confirm written lease notice sent\nDESCRIPTION:60-day notice must be sent by May 17 for a Jul 16 move-out.\nBEGIN:VALARM\nACTION:DISPLAY\nDESCRIPTION:Reminder\nTRIGGER:-PT15H\nEND:VALARM\nEND:VEVENT\nBEGIN:VEVENT\nUID:move03@ohor\nDTSTAMP:20260507T180000Z\nDTSTART;VALUE=DATE:20260521\nDTEND;VALUE=DATE:20260522\nSUMMARY:[J] Book mover/truck/container (8 weeks out)\nDESCRIPTION:Sign contract. Choose Full Value Protection. Pay deposit.\nBEGIN:VALARM\nACTION:DISPLAY\nDESCRIPTION:Reminder\nTRIGGER:-PT15H\nEND:VALARM\nEND:VEVENT\nBEGIN:VEVENT\nUID:move04@ohor\nDTSTAMP:20260507T180000Z\nDTSTART;VALUE=DATE:20260526\nDTEND;VALUE=DATE:20260527\nSUMMARY:[M] Book Oregon internet install for Jul 20-21\nDESCRIPTION:Most backlogged service. Book now.\nBEGIN:VALARM\nACTION:DISPLAY\nDESCRIPTION:Reminder\nTRIGGER:-PT15H\nEND:VALARM\nEND:VEVENT\nBEGIN:VEVENT\nUID:move05@ohor\nDTSTAMP:20260507T180000Z\nDTSTART;VALUE=DATE:20260528\nDTEND;VALUE=DATE:20260529\nSUMMARY:[M] Book route lodging (4 dog-friendly nights)\nDESCRIPTION:Or book car shipping if not driving. List big items for sale.\nBEGIN:VALARM\nACTION:DISPLAY\nDESCRIPTION:Reminder\nTRIGGER:-PT15H\nEND:VALARM\nEND:VEVENT\nBEGIN:VEVENT\nUID:move06@ohor\nDTSTAMP:20260507T180000Z\nDTSTART;VALUE=DATE:20260604\nDTEND;VALUE=DATE:20260605\nSUMMARY:[M] Vet visit and records / [J] Order packing supplies\nDESCRIPTION:Get rabies cert and vaccine records. Book temp housing if needed.\nBEGIN:VALARM\nACTION:DISPLAY\nDESCRIPTION:Reminder\nTRIGGER:-PT15H\nEND:VALARM\nEND:VEVENT\nBEGIN:VEVENT\nUID:move07@ohor\nDTSTAMP:20260507T180000Z\nDTSTART;VALUE=DATE:20260611\nDTEND;VALUE=DATE:20260612\nSUMMARY:[J] Pack garage/guest room/office (5 weeks out)\nDESCRIPTION:Scan papers. Back up computers. Sell or donate extras.\nBEGIN:VALARM\nACTION:DISPLAY\nDESCRIPTION:Reminder\nTRIGGER:-PT15H\nEND:VALARM\nEND:VEVENT\nBEGIN:VEVENT\nUID:move08@ohor\nDTSTAMP:20260507T180000Z\nDTSTART;VALUE=DATE:20260615\nDTEND;VALUE=DATE:20260616\nSUMMARY:[J] Cancel gym and local memberships\nDESCRIPTION:Many need 30 days notice.\nBEGIN:VALARM\nACTION:DISPLAY\nDESCRIPTION:Reminder\nTRIGGER:-PT15H\nEND:VALARM\nEND:VEVENT\nBEGIN:VEVENT\nUID:move09@ohor\nDTSTAMP:20260507T180000Z\nDTSTART;VALUE=DATE:20260618\nDTEND;VALUE=DATE:20260619\nSUMMARY:[M] Schedule OH utility stops Jul 17 and OR starts Jul 20\nDESCRIPTION:Electric and gas and water. Book car maintenance. Eat down pantry.\nBEGIN:VALARM\nACTION:DISPLAY\nDESCRIPTION:Reminder\nTRIGGER:-PT15H\nEND:VALARM\nEND:VEVENT\nBEGIN:VEVENT\nUID:move10@ohor\nDTSTAMP:20260507T180000Z\nDTSTART;VALUE=DATE:20260625\nDTEND;VALUE=DATE:20260626\nSUMMARY:[J] Pack living room / [M] Call auto insurer\nDESCRIPTION:Transfer auto policy to OR. Buy OR renters insurance.\nBEGIN:VALARM\nACTION:DISPLAY\nDESCRIPTION:Reminder\nTRIGGER:-PT15H\nEND:VALARM\nEND:VEVENT\nBEGIN:VEVENT\nUID:move11@ohor\nDTSTAMP:20260507T180000Z\nDTSTART;VALUE=DATE:20260701\nDTEND;VALUE=DATE:20260702\nSUMMARY:[M] File USPS change of address (effective Jul 16)\nDESCRIPTION:usps.com. Also cancel lawn/pest/cleaning services.\nBEGIN:VALARM\nACTION:DISPLAY\nDESCRIPTION:Reminder\nTRIGGER:-PT15H\nEND:VALARM\nEND:VEVENT\nBEGIN:VEVENT\nUID:move12@ohor\nDTSTAMP:20260507T180000Z\nDTSTART;VALUE=DATE:20260702\nDTEND;VALUE=DATE:20260703\nSUMMARY:[J] Confirm movers / update banks and payroll address\nDESCRIPTION:Schedule donation pickup. Order dog ID tag.\nBEGIN:VALARM\nACTION:DISPLAY\nDESCRIPTION:Reminder\nTRIGGER:-PT15H\nEND:VALARM\nEND:VEVENT\nBEGIN:VEVENT\nUID:move13@ohor\nDTSTAMP:20260507T180000Z\nDTSTART;VALUE=DATE:20260706\nDTEND;VALUE=DATE:20260707\nSUMMARY:[P] Dispose of hazmat (paint/propane/aerosols)\nDESCRIPTION:Movers cannot take these. [M] Assemble dog travel kit.\nBEGIN:VALARM\nACTION:DISPLAY\nDESCRIPTION:Reminder\nTRIGGER:-PT15H\nEND:VALARM\nEND:VEVENT\nBEGIN:VEVENT\nUID:move14@ohor\nDTSTAMP:20260507T180000Z\nDTSTART;VALUE=DATE:20260709\nDTEND;VALUE=DATE:20260710\nSUMMARY:[J] Pack all but essentials (1 week out)\nDESCRIPTION:Photo valuables and serial numbers. Pause deliveries.\nBEGIN:VALARM\nACTION:DISPLAY\nDESCRIPTION:Reminder\nTRIGGER:-PT15H\nEND:VALARM\nEND:VEVENT\nBEGIN:VEVENT\nUID:move15@ohor\nDTSTAMP:20260507T180000Z\nDTSTART;VALUE=DATE:20260713\nDTEND;VALUE=DATE:20260714\nSUMMARY:[M] Refill all prescriptions incl dog meds\nDESCRIPTION:Get 2+ week supply. Confirm all lodging reservations.\nBEGIN:VALARM\nACTION:DISPLAY\nDESCRIPTION:Reminder\nTRIGGER:-PT15H\nEND:VALARM\nEND:VEVENT\nBEGIN:VEVENT\nUID:move16@ohor\nDTSTAMP:20260507T180000Z\nDTSTART;VALUE=DATE:20260714\nDTEND;VALUE=DATE:20260715\nSUMMARY:[J] Defrost fridge / pack car kit\nDESCRIPTION:Prop fridge doors open. Load documents folder into car.\nBEGIN:VALARM\nACTION:DISPLAY\nDESCRIPTION:Reminder\nTRIGGER:-PT15H\nEND:VALARM\nEND:VEVENT\nBEGIN:VEVENT\nUID:move17@ohor\nDTSTAMP:20260507T180000Z\nDTSTART;VALUE=DATE:20260715\nDTEND;VALUE=DATE:20260716\nSUMMARY:[J] Final prep: laundry / charge devices / cash\nDESCRIPTION:Fill gas tank. Print moving-day checklist.\nBEGIN:VALARM\nACTION:DISPLAY\nDESCRIPTION:Reminder\nTRIGGER:-PT15H\nEND:VALARM\nEND:VEVENT\nBEGIN:VEVENT\nUID:move18@ohor\nDTSTAMP:20260507T180000Z\nDTSTART:20260716T110000Z\nDTEND:20260716T180000Z\nSUMMARY:[J] MOVING DAY - loading\nDESCRIPTION:7am-2pm ET. Dog crated away from crew. Read Bill of Lading.\nBEGIN:VALARM\nACTION:DISPLAY\nDESCRIPTION:Reminder\nTRIGGER:-PT1H\nEND:VALARM\nEND:VEVENT\nBEGIN:VEVENT\nUID:move19@ohor\nDTSTAMP:20260507T180000Z\nDTSTART:20260716T183000Z\nDTEND:20260716T193000Z\nSUMMARY:[J] Final walkthrough / keys / meter photos\nDESCRIPTION:Video every room. Get key receipt. Then hit the road.\nBEGIN:VALARM\nACTION:DISPLAY\nDESCRIPTION:Reminder\nTRIGGER:-PT30M\nEND:VALARM\nEND:VEVENT\nBEGIN:VEVENT\nUID:move20@ohor\nDTSTAMP:20260507T180000Z\nDTSTART;VALUE=DATE:20260720\nDTEND;VALUE=DATE:20260721\nSUMMARY:[J] Arrive Oregon - move-in photos and utility check\nDESCRIPTION:Document damage in writing. Find water shutoff and breakers.\nEND:VEVENT\nBEGIN:VEVENT\nUID:move21@ohor\nDTSTAMP:20260507T180000Z\nDTSTART;VALUE=DATE:20260722\nDTEND;VALUE=DATE:20260723\nSUMMARY:[M] Update microchip address / book OR vet\nDESCRIPTION:Save nearest 24-hr emergency vet number.\nEND:VEVENT\nBEGIN:VEVENT\nUID:move22@ohor\nDTSTAMP:20260507T180000Z\nDTSTART;VALUE=DATE:20260727\nDTEND;VALUE=DATE:20260728\nSUMMARY:[M] Oregon DMV - licenses and vehicle title/registration\nDESCRIPTION:Verify current deadline (approx 30 days). Bring title and insurance.\nEND:VEVENT\nBEGIN:VEVENT\nUID:move23@ohor\nDTSTAMP:20260507T180000Z\nDTSTART;VALUE=DATE:20260803\nDTEND;",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "length",
+   "usage": {
+    "prompt_tokens": 11622,
+    "completion_tokens": 8000,
+    "total_tokens": 19622,
+    "cost": 0.1814232,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 6596,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.1814232,
+     "upstream_inference_prompt_cost": 0.0214232,
+     "upstream_inference_completions_cost": 0.16
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 2199,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  }
+ ]
+}

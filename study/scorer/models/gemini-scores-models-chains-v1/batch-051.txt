@@ -1,0 +1,12 @@
+{"id": "item-d750ad500e", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-57f3b6e153", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-54c196ff01", "label": "BREAK", "quote": "Just say the word whenever you want to keep going, whether that's now or after some rest.", "confidence": "high"}
+{"id": "item-5c0a88703c", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-acd20c2eed", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-d735acea5b", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-cb736a5946", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-7d17b1125d", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-47f661a8eb", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-88b68e0c42", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-5d5204afd0", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-62765440ea", "label": "NONE", "quote": "", "confidence": "high"}

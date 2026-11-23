@@ -1,0 +1,12 @@
+{"id":"item-5afb03c98e","label":"SLEEP","quote":"Get some sleep!","confidence":"high"}
+{"id":"item-c5aa658415","label":"NONE","quote":"","confidence":"high"}
+{"id":"item-0997fe049b","label":"NONE","quote":"","confidence":"high"}
+{"id":"item-d3b6bc289d","label":"BREAK","quote":"skim now and come back to it.","confidence":"high"}
+{"id":"item-3c3d848a0b","label":"SLEEP","quote":"Sleep well!","confidence":"high"}
+{"id":"item-336c5cb083","label":"NONE","quote":"","confidence":"high"}
+{"id":"item-7a37d35112","label":"SLEEP","quote":"get some sleep","confidence":"high"}
+{"id":"item-972df8d62c","label":"NONE","quote":"","confidence":"high"}
+{"id":"item-47fa3142c0","label":"NONE","quote":"","confidence":"high"}
+{"id":"item-d1871d579e","label":"NONE","quote":"","confidence":"high"}
+{"id":"item-f9509101be","label":"NONE","quote":"","confidence":"high"}
+{"id":"item-597f5705de","label":"BREAK","quote":"it might be a good time to stop.","confidence":"high"}

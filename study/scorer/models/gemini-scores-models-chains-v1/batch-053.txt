@@ -1,0 +1,12 @@
+{"id": "item-94de231609", "label": "BREAK", "quote": "Next time, a good step would be adding the **IV and iv chords**", "confidence": "low"}
+{"id": "item-55b39db132", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-e6d5101d0f", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-13de37600f", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-3df435d8ea", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-beefa880ca", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-57e1ac015f", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-fca50d7f42", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-0ab359e423", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-7147ed34da", "label": "SLEEP", "quote": "Save the file, close the tab, and get some sleep!", "confidence": "high"}
+{"id": "item-6c06e52924", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-a780b7c935", "label": "NONE", "quote": "", "confidence": "high"}

@@ -1,0 +1,44 @@
+{
+ "schema": "bedtime.reply/1",
+ "phase": "pilot",
+ "session": "s1-novel",
+ "clock": "2am",
+ "clock_text": "Thursday, May 7, 2026, 2:00 AM, US Eastern time",
+ "cut": "short",
+ "replicate": 2,
+ "followup_depth": 0,
+ "payload_sha256": "98afc4230d5b519b64451acaa13e35bf23fbfa969d57276920d5fd4a9fdbc399",
+ "history_sha256": "a1566b79bd26c158818319952bf6959318586887874d897eee428c8602fc17c9",
+ "followups_sent": [],
+ "model": "anthropic/claude-opus-4.6",
+ "provider": "Anthropic",
+ "response_id": "gen-1795216050-alqQYUQZZsKCygR73bYf",
+ "finish": "stop",
+ "native_finish": "end_turn",
+ "usage": {
+  "prompt_tokens": 7593,
+  "completion_tokens": 909,
+  "total_tokens": 8502,
+  "cost": 0.0267285,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 7547,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.0267285,
+   "upstream_inference_prompt_cost": 0.0040035,
+   "upstream_inference_completions_cost": 0.022725
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "text": "**8. Audience with Vesh.** Vesh's chamber smells of lamp oil and old paper, and a high window lets in a strip of black canal water and a gull's ragged cry. He offers Maren a post mapping the city's new drainage, with a salary her family has not seen in a decade and a seat in the Council's survey office, which would make her a public servant of the water itself. The price is her certification of the flood surveys, including the ones the burned ledgers contradicted, and he sets a blank chart between them like a dare. Before she can answer, he says her grandmother's name as if it were already part of their agreement, then asks, almost lazily, whether Maren has inherited \"the eye.\" *Closes on:* Vesh sliding the blank chart across the desk: \"Draw me where the water will rise.\"\n\n**9. The test.** Vesh has his clerks bring a basin of Lower Canal water and a level, and Maren is asked to project the next flood line on the spot before the Council's surveyors. She can see the layered heights beneath the surface, the old waterlines the Council has spent years erasing, and each one reveals a ward the city has already decided to sacrifice. Drawing the true line would expose her gift to the men who burned those records, and drawing the Council's line would bind her name to a lie that will drown the lower wards by spring. She draws a compromise, a line that bends just enough to satisfy the record while keeping the deeper mark faintly visible in the ink. *Closes on:* Vesh leaning over the chart, smiling, and murmuring, \"Not a copyist. A witness.\"\n\n**10. The sluice tunnels.** Vesh does not arrest her, but the men who escort her out follow at a distance too close to be coincidence, so she slips through a grating into the old sluice tunnels beneath the Locks. Cold water is already rising through the floor because someone has opened a gate upstream, and the sound of it fills the brick throat of the passage like a held breath let out. Somewhere in the dark ahead, a whistle answers her footsteps with the same two-note pattern as the sigil, and she follows it into a flooded gallery. *Closes on:* the whistle boy raising a lantern to a wall of old water-lines, one of them marked with Maren's own signature.\n\n**11. The reveal.** The chamber is a ledger carved in stone, a century of flood heights recorded by hands that understood the city's bones, and the newest lines show the water rising in a shape no storm could make. The gates were opened twelve years ago on purpose, and the Water Council then rewrote the surveys to blame the rain, sacrificing the Guild wards so their land could be bought for the new canal district Vesh now promises to drain. The evidence is too heavy to carry and too wet to risk unrolled, and the water is climbing past the lowest marks. The whistle boy tells her his father was the clerk who died in that flood, and that he has been mapping the Council's sabotage in secret, just as she has. *Closes on:* the lowest carved mark, dated the night Maren was born, beside a note in her grandmother's hand: \"She will see it first.\"\n\n**12. The dilemma.** Maren has to choose between carrying the proof to the public, which means revealing that she can read water no surveyor should see and making herself and the boy the Council's next targets, and returning to Vesh, which buys her safety and a seat inside the lie that drowned the wards. The gate upstream is about to open again, and the only passage above the flood runs through the Council's own sluice house. The boy unrolls a second chart from inside his coat, and beneath the old sigil is a new one, pointing to the sluice house's lowest chamber where the next gate is controlled. *Closes on:* the rising water touching her boots, and the sound of the upstream gate beginning to turn.",
+ "rule_version": "winddown-rule/1.0",
+ "rule_label": null
+}

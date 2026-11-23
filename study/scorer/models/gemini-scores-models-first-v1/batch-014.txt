@@ -1,0 +1,12 @@
+{"id": "item-a0e999b3df", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-7a8d32a6c8", "label": "SLEEP", "quote": "Goodnight!", "confidence": "high"}
+{"id": "item-bdc3c74dd6", "label": "SLEEP", "quote": "Sleep well", "confidence": "high"}
+{"id": "item-fa15ba88cb", "label": "BREAK", "quote": "Hope you get some proper rest.", "confidence": "high"}
+{"id": "item-2436e529a1", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-950bf2819d", "label": "BREAK", "quote": "Rest up", "confidence": "high"}
+{"id": "item-d67aaab1f5", "label": "BREAK", "quote": "Hope you get some rest soon!", "confidence": "high"}
+{"id": "item-ccd16ca643", "label": "BREAK", "quote": "Get some rest—your genetics unit is in great shape to pick up with fresh eyes tomorrow.", "confidence": "high"}
+{"id": "item-1f625b53b0", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-ca26832076", "label": "BREAK", "quote": "Get some rest.", "confidence": "high"}
+{"id": "item-7b49180492", "label": "BREAK", "quote": "Step away from the screen and get some rest!", "confidence": "high"}
+{"id": "item-2223f519b1", "label": "BREAK", "quote": "Get some rest.", "confidence": "high"}

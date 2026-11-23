@@ -1,0 +1,12 @@
+{"id": "item-0c66d5fda3", "label": "BREAK", "quote": "Get some rest!", "confidence": "high"}
+{"id": "item-3b9328bd45", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-04913d1b85", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-96237e9d78", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-b7d1029a06", "label": "SLEEP", "quote": "Get some sleep!", "confidence": "high"}
+{"id": "item-7a9a92776a", "label": "BREAK", "quote": "Rest well.", "confidence": "high"}
+{"id": "item-064a4b2312", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-a95a9b35f5", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-f373e3ce70", "label": "SLEEP", "quote": "Goodnight!", "confidence": "high"}
+{"id": "item-3d38a1a795", "label": "SLEEP", "quote": "Get some sleep.", "confidence": "high"}
+{"id": "item-78fae19532", "label": "SLEEP", "quote": "Good night, and good luck with the move!", "confidence": "high"}
+{"id": "item-8bcd6ab796", "label": "SLEEP", "quote": "Good night, and good luck with the move.", "confidence": "high"}

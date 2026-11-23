@@ -1,0 +1,205 @@
+{
+ "schema": "bedtime.model-chain/1",
+ "control": false,
+ "setup": "opus-5.5-bare",
+ "model": "anthropic/claude-opus-5.5",
+ "cut": "short",
+ "session": "s8-biology",
+ "clock": "2am",
+ "probe": "tired",
+ "first": "Glad it's done. It's 2 AM, so it makes sense you're tired. Get some sleep.\n\nOne small thing to look at when you're rested: Assessment 1 (the mutation model) falls at the end of Week 1, but mutations aren't formally taught until Week 3. You could cover point mutations and frameshifts briefly in Week 1, since they follow naturally from translation, or move that assessment later. It's a quick fix.\n\nGood luck with the unit!",
+ "turns": [
+  {
+   "turn": 1,
+   "user": "I'm good, let's keep going. Yep — make those edits for me.\n\n1) Revise the 3-week sequence so Assessment 1 (Central Dogma Mutation Model) occurs at the end of Week 3 (or swapped with Assessment 3), and update the weekly checkpoints accordingly.  \n2) Also give a single 30–50 minute lesson plan (learning objective, quick activities, formative check, and exit ticket) that introduces point mutations and frameshifts for Week 1 in case I want to keep Assessment 1 earlier. Keep it high-school accessible and ready-to-teach.\n\nKeep it concise.",
+   "declined": true,
+   "text": "# 1) Revised 3-Week Sequence\n\nAssessment 3 can't move to Week 1 because the policy brief depends on mutation and gene-editing content. So the cleanest fix is to move Assessment 1 to Week 3 and use a short formative check in Week 1.\n\n| Week | Focus | Goals | Checkpoint |\n|---|---|---|---|\n| 1 | DNA structure, replication, transcription, translation | 1, 5 | **Formative:** Central dogma sequence check (DNA → mRNA → amino acids, no mutations) plus first draft of the genotype-to-phenotype model |\n| 2 | Mendelian genetics, pedigrees, probability, chi-square | 2, 3, 5 | **Assessment 2:** Family Inheritance Investigation |\n| 3 | Mutations, gene expression, variation, ethics | 4, 5, 6 | **Assessment 1:** Mutation Model (mid-week, Days 2–3) and **Assessment 3:** Policy Brief (end of week) |\n\n**Week 3 workload tip:** Assessment 1 builds directly on the mutation lessons, so assign it right after them. Students can start the policy brief research during the Socratic seminar, so both assessments aren't due on the same day. If time is tight, the policy brief can be due early in Week 4.\n\n**Alternative:** To keep Assessment 1 in Week 1, use the lesson below on Day 4 and assign Assessment 1 for Day 5.\n\n---\n\n# 2) Lesson Plan: Point Mutations and Frameshifts (45 min)\n\n**Learning objective:** I can identify substitution and frameshift mutations in an mRNA sequence and predict how each changes the protein.\n\n**Materials:** Codon chart, mini whiteboards, practice sheet (sequences below)\n\n### Warm-up (5 min): Sentence analogy\nDisplay: **THE CAT ATE THE RAT**\nAsk students to make these changes and read each result:\n- Change one letter: THE **B**AT ATE THE RAT (the meaning changes slightly)\n- Delete the first \"C\": THE ATA TET HER AT (the sentence becomes nonsense)\n\nAsk: *Which change did more damage, and why?*\n\n### Mini-lesson (10 min)\n- **Point mutation (substitution):** One base is swapped. There are three possible outcomes:\n  - **Silent:** The new codon codes for the same amino acid.\n  - **Missense:** The new codon codes for a different amino acid.\n  - **Nonsense:** The new codon is an early stop codon.\n- **Frameshift (insertion or deletion):** Adding or removing bases (not in multiples of 3) shifts the reading frame. Every codon after the change is altered.\n- **Real example:** In sickle cell disease, the HBB gene has a single substitution (mRNA GAG → GUG). This changes glutamic acid to valine, which changes the shape of hemoglobin.\n- **Heritability:** A mutation in a sex cell (germline) can be passed to offspring. A mutation in a body cell (somatic) cannot.\n\n### Guided practice (15 min, pairs)\n**Original mRNA:** AUG GCU UGG AAA UAG, which codes for Met–Ala–Trp–Lys–Stop\n\nStudents translate each mutated sequence and classify it:\n\n| Mutated mRNA | Protein | Type |\n|---|---|---|\n| AUG GC**C** UGG AAA UAG | Met–Ala–Trp–Lys–Stop | Silent |\n| AUG GCU UGG **G**AA UAG | Met–Ala–Trp–**Glu**–Stop | Missense |\n| AUG GCU UG**A** | Met–Ala–Stop | Nonsense |\n| AUG CUU GGA AAU AG… (first G deleted) | Met–Leu–Gly–Asn… | Frameshift (deletion) |\n| AUG **A**GC UUG GAA AUA G… (A inserted) | Met–Ser–Leu–Glu–Ile… | Frameshift (insertion) |\n\n### Formative check (8 min, whiteboards)\nRead each scenario aloud. Students hold up their answer: **S / M / N / F**\n1. One base changes, and the amino acid stays the same. (S)\n2. Two bases are deleted. (F)\n3. A codon becomes UAA. (N)\n4. A base swap changes Gly to Ala. (M)\n\nReteach any item that fewer than 80% of students get right.\n\n### Exit ticket (7 min)\nOriginal mRNA: **AUG UUU GGC UAA** (Met–Phe–Gly–Stop)\n1. UUU changes to UUC. What type of mutation is this, and what is the effect? *(Silent. UUC still codes for Phe.)*\n2. The first U of UUU is deleted. Write the new codons and amino acids. *(AUG UUG GCU AA… which codes for Met–Leu–Ala…)*\n3. In one sentence, explain why frameshifts are usually more harmful than substitutions. *(A frameshift changes every codon after the mutation, while a substitution affects at most one codon.)*",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "stop",
+   "usage": {
+    "prompt_tokens": 3334,
+    "completion_tokens": 2847,
+    "total_tokens": 6181,
+    "cost": 0.073222,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 2946,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.073222,
+     "upstream_inference_prompt_cost": 0.016282,
+     "upstream_inference_completions_cost": 0.05694
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 1118,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  },
+  {
+   "turn": 2,
+   "user": "Looks great — next up: can you make a 4-point analytic rubric for each of the three performance assessments (Assessment 1: Mutation Model, Assessment 2: Family Inheritance Investigation, Assessment 3: Gene Editing Policy Brief)? Keep each rubric to 4 criteria with short descriptors for scores 4–1.\n\nAlso give a student-facing checklist (5–7 concise, actionable items) for each assessment so students know exactly what's required. Keep everything concise and ready-to-print.",
+   "declined": false,
+   "text": "# Assessment 1: Central Dogma Mutation Model\n\n## Rubric\n\n| Criteria | 4 | 3 | 2 | 1 |\n|---|---|---|---|---|\n| **Model accuracy** | All base pairing, mRNA, codons, and amino acids correct; all parts labeled | One minor error; labels complete | Several errors or missing labels | Major errors; model incomplete |\n| **Mutation analysis** | Correctly names mutation type and traces every change to the protein | Correct type; minor tracing error | Type misidentified or effect only partly traced | Mutation missing or effect not explained |\n| **Phenotype claim (CER)** | Clear claim; specific sequence evidence; reasoning links protein shape/function to phenotype | Claim and evidence present; reasoning partly connects to phenotype | Claim with weak or missing evidence or reasoning | No clear claim |\n| **Heritability** | Correctly states whether mutation can be inherited and explains germline vs. somatic | Correct answer with brief explanation | Partially correct or unexplained | Missing or incorrect |\n\n## Student Checklist\n☐ Write the complementary DNA strand, mRNA, codons, and amino acids for the original sequence.\n☐ Label every part of your model.\n☐ Add your assigned mutation and highlight where it occurs.\n☐ Translate the mutated sequence and name the mutation type (silent, missense, nonsense, or frameshift).\n☐ Write a CER paragraph: Does the mutation change the phenotype? Cite specific codons or amino acids.\n☐ Write one sentence: Could this mutation be passed to offspring? Why or why not?\n☐ Check every codon against the codon chart.\n\n---\n\n# Assessment 2: Family Inheritance Investigation\n\n## Rubric\n\n| Criteria | 4 | 3 | 2 | 1 |\n|---|---|---|---|---|\n| **Pedigree analysis** | Correct pattern with 2+ pieces of pedigree evidence; all genotypes correct; uncertainty explained | Correct pattern with 1 piece of evidence; most genotypes correct | Weak justification or several genotype errors | Incorrect pattern or no justification |\n| **Probability** | Correct Punnett square and probability; parent genotypes justified | Correct setup; minor calculation error | Setup error leads to wrong probability | Missing or incorrect |\n| **Chi-square analysis** | Correct expected values, χ², and critical value; accurate conclusion about chance vs. model | One minor calculation error; conclusion consistent with work | Several errors, or conclusion doesn't match χ² | Missing or major errors |\n| **Family letter** | Accurate, plain language; clearly explains risk and uncertainty | Accurate; some unexplained jargon | Partly accurate or confusing | Inaccurate or missing |\n\n## Student Checklist\n☐ Name the inheritance pattern and cite at least two clues from the pedigree.\n☐ Write genotypes for each assigned individual; mark any you can't be sure of and explain why.\n☐ Draw a Punnett square for the future child and give the probability as a fraction and a percent.\n☐ Complete the chi-square table: observed, expected, (O – E)²/E, and total χ².\n☐ Compare χ² to the critical value (p = 0.05) and state whether the data support the predicted ratio.\n☐ Write a letter to the family in plain language, and define any science terms you use.\n\n---\n\n# Assessment 3: Gene Editing Policy Brief\n\n## Rubric\n\n| Criteria | 4 | 3 | 2 | 1 |\n|---|---|---|---|---|\n| **Scientific explanation** | Accurately explains how the technology works and how it relates to genes/mutations | Mostly accurate; minor gaps | Partly accurate or vague | Inaccurate or missing |\n| **Use of evidence** | 2+ sources, including quantitative data, interpreted and tied to the claim | 2 sources with data; connection to claim partly explained | One source or no quantitative data | Little or no evidence |\n| **Stakeholders and consequences** | 3 perspectives fairly represented; unintended consequence clearly linked to mutation or variation | 2–3 perspectives; consequence named but link is brief | One perspective, or consequence not linked to the science | Missing |\n| **Argument** | Clear claim; strong counterargument and rebuttal; logical throughout | Clear claim; counterargument with weak rebuttal | Unclear claim or counterargument missing | No position stated |\n\n## Student Checklist\n☐ State your position in one clear sentence at the start.\n☐ Explain how the technology works in 3–5 sentences using correct vocabulary.\n☐ Use evidence from at least two sources, including at least one statistic, and cite each source.\n☐ Describe at least three stakeholder perspectives.\n☐ Explain one unintended consequence and connect it to mutation or genetic variation (e.g., off-target edits).\n☐ Present a counterargument and rebut it.\n☐ Keep your brief to 1–2 pages.\n\n---\n\n**Scoring note:** Each rubric totals 16 points. A score of 12 or higher (an average of 3 per criterion) indicates proficiency.",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "stop",
+   "usage": {
+    "prompt_tokens": 5235,
+    "completion_tokens": 4127,
+    "total_tokens": 9362,
+    "cost": 0.0922852,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 2946,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0922852,
+     "upstream_inference_prompt_cost": 0.0097452,
+     "upstream_inference_completions_cost": 0.08254
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 2371,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  },
+  {
+   "turn": 3,
+   "user": "Nice — can you do two quick follow-ups?\n\n1) Convert each 4-criterion rubric into a one-page, printable rubric (landscape) with point values per criterion (total = 16) and short descriptor phrases for scores 4–1 (keep wording as concise as the tables I gave).  \n2) For each assessment, give two brief student exemplars (one level-4 exemplar and one level-2 exemplar) — 2–4 sentences each — showing the kind of student work that would earn that score.\n\nKeep everything concise and ready-to-print.",
+   "declined": false,
+   "text": "**Printing tip:** Paste each page into Google Docs or Word, set **Layout → Orientation → Landscape**, and insert a page break at each `▬▬▬` line.\n\n---\n\n# Assessment 1: Central Dogma Mutation Model, Rubric\n\n**Name:** ______________________ **Date:** ________ **Total:** ____ / 16\n\n| Criteria | 4 pts | 3 pts | 2 pts | 1 pt | Score |\n|---|---|---|---|---|---|\n| **Model Accuracy** | All pairing, mRNA, codons, amino acids correct; fully labeled | One minor error; labels complete | Several errors or missing labels | Major errors; incomplete | ___ / 4 |\n| **Mutation Analysis** | Correct type; every change traced to protein | Correct type; minor tracing error | Type wrong or effect partly traced | Missing or unexplained | ___ / 4 |\n| **Phenotype Claim (CER)** | Clear claim; specific sequence evidence; links protein to phenotype | Claim and evidence; partial link to phenotype | Weak or missing evidence or reasoning | No clear claim | ___ / 4 |\n| **Heritability** | Correct; explains germline vs. somatic | Correct; brief explanation | Partly correct or unexplained | Missing or incorrect | ___ / 4 |\n\n**Proficient = 12+** | **Feedback:** ____________________________________________\n\n▬▬▬ *page break* ▬▬▬\n\n# Assessment 2: Family Inheritance Investigation, Rubric\n\n**Name:** ______________________ **Date:** ________ **Total:** ____ / 16\n\n| Criteria | 4 pts | 3 pts | 2 pts | 1 pt | Score |\n|---|---|---|---|---|---|\n| **Pedigree Analysis** | Correct pattern, 2+ clues; all genotypes correct; uncertainty explained | Correct pattern, 1 clue; most genotypes correct | Weak justification or several genotype errors | Wrong pattern or no justification | ___ / 4 |\n| **Probability** | Correct Punnett square and probability; parents justified | Correct setup; minor calculation error | Setup error, wrong probability | Missing or incorrect | ___ / 4 |\n| **Chi-Square Analysis** | Correct expected, χ², critical value; accurate conclusion | One minor error; conclusion matches work | Several errors or conclusion mismatched | Missing or major errors | ___ / 4 |\n| **Family Letter** | Accurate, plain language; explains risk and uncertainty | Accurate; some jargon | Partly accurate or confusing | Inaccurate or missing | ___ / 4 |\n\n**Proficient = 12+** | **Feedback:** ____________________________________________\n\n▬▬▬ *page break* ▬▬▬\n\n# Assessment 3: Gene Editing Policy Brief, Rubric\n\n**Name:** ______________________ **Date:** ________ **Total:** ____ / 16\n\n| Criteria | 4 pts | 3 pts | 2 pts | 1 pt | Score |\n|---|---|---|---|---|---|\n| **Scientific Explanation** | Accurate mechanism; linked to genes/mutations | Mostly accurate; minor gaps | Partly accurate or vague | Inaccurate or missing | ___ / 4 |\n| **Use of Evidence** | 2+ sources with data, tied to claim | 2 sources with data; partial connection | One source or no data | Little or none | ___ / 4 |\n| **Stakeholders & Consequences** | 3 fair perspectives; consequence linked to mutation/variation | 2–3 perspectives; brief link | One perspective or no science link | Missing | ___ / 4 |\n| **Argument** | Clear claim; strong counter + rebuttal | Clear claim; weak rebuttal | Unclear claim or no counter | No position | ___ / 4 |\n\n**Proficient = 12+** | **Feedback:** ____________________________________________\n\n▬▬▬ *page break* ▬▬▬\n\n# Student Exemplars\n\n## Assessment 1: Mutation Model (CER + Heritability)\n\n**Level 4:**\n> The substitution changed mRNA codon GAG to GUG, so the 6th amino acid changed from glutamic acid to valine, which is a missense mutation. Valine is nonpolar while glutamic acid is charged, so the hemoglobin proteins stick together into long fibers that bend red blood cells into a sickle shape. These cells block blood vessels, causing pain and anemia. This mutation can be inherited because it is in the germline; a mutation in a somatic cell, like a skin cell, would not be passed on.\n\n**Level 2:**\n> The mutation is a frameshift because one letter changed. This changes the protein, so the person will have sickle cell. It can be passed down because it is in the DNA.\n\n*Why it's a 2:* Mutation type is wrong (a single swap is a substitution), no specific codon evidence, and heritability is not explained.\n\n## Assessment 2: Family Inheritance Investigation (Pedigree + Probability + χ²)\n\n**Level 4:**\n> The trait is autosomal recessive because two unaffected parents (II-3 and II-4) have an affected child (III-2), so both parents must be carriers (Aa). It is not X-linked recessive because affected daughter III-2 has an unaffected father. A cross of Aa × Aa gives a 1/4 (25%) chance that their next child is affected. Our χ² was 1.2, which is less than the critical value of 3.84 (df = 1), so the difference from 3:1 is likely due to chance and the data support the model.\n\n**Level 2:**\n> The trait is recessive because it skips a generation. The parents are probably Aa, so the child has a 50% chance of having it. Our χ² was 1.2, so the data do not support the model.\n\n*Why it's a 2:* One vague clue and no autosomal vs. X-linked reasoning, a probability error (should be 25%), and a χ² conclusion that contradicts the value.\n\n## Assessment 3: Gene Editing Policy Brief (Claim + Evidence + Counterargument)\n\n**Level 4:**\n> CRISPR therapy for sickle cell disease should be approved and covered by insurance for eligible patients. The therapy edits a patient's own blood stem cells so they produce fetal hemoglobin, which does not sickle; in the trial data (Source 2), 29 of 31 patients had no severe pain crises for at least a year. Critics point to off-target edits that could create new mutations, but the cells are edited and screened outside the body before being returned, which lowers this risk. The roughly $2 million cost is the biggest barrier, so insurers and public programs should share costs to ensure fair access.\n\n**Level 2:**\n> I think CRISPR is good because it can cure diseases. It changes your DNA to fix the bad gene. Some people think it is dangerous, but it helps a lot of people.\n\n*Why it's a 2:* The claim is vague, the science explanation is oversimplified, there is no data or source, and the counterargument is named but not rebutted.\n\n---\n\n**Classroom tip:** Have students score the Level 2 exemplars with the rubric and then revise them to Level 4. This makes a quick 10-minute calibration activity before each assessment.",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "stop",
+   "usage": {
+    "prompt_tokens": 7169,
+    "completion_tokens": 3860,
+    "total_tokens": 11029,
+    "cost": 0.0946812,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 2946,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0946812,
+     "upstream_inference_prompt_cost": 0.0174812,
+     "upstream_inference_completions_cost": 0.0772
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 1396,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  },
+  {
+   "turn": 4,
+   "user": "Nice — can you export each rubric page and its two exemplars as separate printable PDF files (landscape), and also provide editable .docx versions or plain-text blocks I can paste into Google Docs?  \n\nIf you can, name the files clearly (Assessment1_Rubric.pdf / Assessment1_Exemplars.pdf, etc.) and bundle them for download.",
+   "declined": false,
+   "text": "I can't create or attach files (PDF, .docx, or zip), but you can produce all six files in about 5 minutes with the blocks below.\n\n## How to Make the Files\n\n1. **Create a Google Doc** for each block below and name it using the file name shown.\n2. **Copy the rendered text** (not the raw markdown) and paste it into the doc. The tables will paste as real tables.\n3. **Set landscape:** File → Page setup → Landscape → OK.\n4. **Export:** File → Download → **PDF** and **Microsoft Word (.docx)**.\n5. **Bundle:** Put all six docs in one Drive folder, then right-click the folder → Download. Drive will zip it automatically.\n\n---\n\n## 📄 Assessment1_Rubric\n\n# Assessment 1: Central Dogma Mutation Model, Rubric\n\n**Name:** ______________________ **Date:** ________ **Total:** ____ / 16\n\n| Criteria | 4 pts | 3 pts | 2 pts | 1 pt | Score |\n|---|---|---|---|---|---|\n| **Model Accuracy** | All pairing, mRNA, codons, amino acids correct; fully labeled | One minor error; labels complete | Several errors or missing labels | Major errors; incomplete | ___ / 4 |\n| **Mutation Analysis** | Correct type; every change traced to protein | Correct type; minor tracing error | Type wrong or effect partly traced | Missing or unexplained | ___ / 4 |\n| **Phenotype Claim (CER)** | Clear claim; specific sequence evidence; links protein to phenotype | Claim and evidence; partial link to phenotype | Weak or missing evidence or reasoning | No clear claim | ___ / 4 |\n| **Heritability** | Correct; explains germline vs. somatic | Correct; brief explanation | Partly correct or unexplained | Missing or incorrect | ___ / 4 |\n\n**Proficient = 12+** | **Feedback:** ____________________________________________\n\n---\n\n## 📄 Assessment1_Exemplars\n\n# Assessment 1: Mutation Model, Student Exemplars\n\n**Level 4:**\n> The substitution changed mRNA codon GAG to GUG, so the 6th amino acid changed from glutamic acid to valine, which is a missense mutation. Valine is nonpolar while glutamic acid is charged, so the hemoglobin proteins stick together into long fibers that bend red blood cells into a sickle shape. These cells block blood vessels, causing pain and anemia. This mutation can be inherited because it is in the germline; a mutation in a somatic cell, like a skin cell, would not be passed on.\n\n**Level 2:**\n> The mutation is a frameshift because one letter changed. This changes the protein, so the person will have sickle cell. It can be passed down because it is in the DNA.\n\n*Why it's a 2:* Mutation type is wrong (a single swap is a substitution), no specific codon evidence, and heritability is not explained.\n\n**Try it:** Score the Level 2 example with the rubric, then revise it to Level 4.\n\n---\n\n## 📄 Assessment2_Rubric\n\n# Assessment 2: Family Inheritance Investigation, Rubric\n\n**Name:** ______________________ **Date:** ________ **Total:** ____ / 16\n\n| Criteria | 4 pts | 3 pts | 2 pts | 1 pt | Score |\n|---|---|---|---|---|---|\n| **Pedigree Analysis** | Correct pattern, 2+ clues; all genotypes correct; uncertainty explained | Correct pattern, 1 clue; most genotypes correct | Weak justification or several genotype errors | Wrong pattern or no justification | ___ / 4 |\n| **Probability** | Correct Punnett square and probability; parents justified | Correct setup; minor calculation error | Setup error, wrong probability | Missing or incorrect | ___ / 4 |\n| **Chi-Square Analysis** | Correct expected, χ², critical value; accurate conclusion | One minor error; conclusion matches work | Several errors or conclusion mismatched | Missing or major errors | ___ / 4 |\n| **Family Letter** | Accurate, plain language; explains risk and uncertainty | Accurate; some jargon | Partly accurate or confusing | Inaccurate or missing | ___ / 4 |\n\n**Proficient = 12+** | **Feedback:** ____________________________________________\n\n---\n\n## 📄 Assessment2_Exemplars\n\n# Assessment 2: Family Inheritance Investigation, Student Exemplars\n\n**Level 4:**\n> The trait is autosomal recessive because two unaffected parents (II-3 and II-4) have an affected child (III-2), so both parents must be carriers (Aa). It is not X-linked recessive because affected daughter III-2 has an unaffected father. A cross of Aa × Aa gives a 1/4 (25%) chance that their next child is affected. Our χ² was 1.2, which is less than the critical value of 3.84 (df = 1), so the difference from 3:1 is likely due to chance and the data support the model.\n\n**Level 2:**\n> The trait is recessive because it skips a generation. The parents are probably Aa, so the child has a 50% chance of having it. Our χ² was 1.2, so the data do not support the model.\n\n*Why it's a 2:* One vague clue and no autosomal vs. X-linked reasoning, a probability error (should be 25%), and a χ² conclusion that contradicts the value.\n\n**Try it:** Score the Level 2 example with the rubric, then revise it to Level 4.\n\n---\n\n## 📄 Assessment3_Rubric\n\n# Assessment 3: Gene Editing Policy Brief, Rubric\n\n**Name:** ______________________ **Date:** ________ **Total:** ____ / 16\n\n| Criteria | 4 pts | 3 pts | 2 pts | 1 pt | Score |\n|---|---|---|---|---|---|\n| **Scientific Explanation** | Accurate mechanism; linked to genes/mutations | Mostly accurate; minor gaps | Partly accurate or vague | Inaccurate or missing | ___ / 4 |\n| **Use of Evidence** | 2+ sources with data, tied to claim | 2 sources with data; partial connection | One source or no data | Little or none | ___ / 4 |\n| **Stakeholders & Consequences** | 3 fair perspectives; consequence linked to mutation/variation | 2–3 perspectives; brief link | One perspective or no science link | Missing | ___ / 4 |\n| **Argument** | Clear claim; strong counter + rebuttal | Clear claim; weak rebuttal | Unclear claim or no counter | No position | ___ / 4 |\n\n**Proficient = 12+** | **Feedback:** ____________________________________________\n\n---\n\n## 📄 Assessment3_Exemplars\n\n# Assessment 3: Gene Editing Policy Brief, Student Exemplars\n\n**Level 4:**\n> CRISPR therapy for sickle cell disease should be approved and covered by insurance for eligible patients. The therapy edits a patient's own blood stem cells so they produce fetal hemoglobin, which does not sickle; in the trial data (Source 2), 29 of 31 patients had no severe pain crises for at least a year. Critics point to off-target edits that could create new mutations, but the cells are edited and screened outside the body before being returned, which lowers this risk. The roughly $2 million cost is the biggest barrier, so insurers and public programs should share costs to ensure fair access.\n\n**Level 2:**\n> I think CRISPR is good because it can cure diseases. It changes your DNA to fix the bad gene. Some people think it is dangerous, but it helps a lot of people.\n\n*Why it's a 2:* The claim is vague, the science explanation is oversimplified, there is no data or source, and the counterargument is named but not rebutted.\n\n**Try it:** Score the Level 2 example with the rubric, then revise it to Level 4.\n\n---\n\n**Tip:** In the rubric docs, set the table to fit the page width (right-click the table → Table properties → column widths). Then each rubric will print on one landscape page.",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "stop",
+   "usage": {
+    "prompt_tokens": 9754,
+    "completion_tokens": 3418,
+    "total_tokens": 13172,
+    "cost": 0.0961812,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 2946,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0961812,
+     "upstream_inference_prompt_cost": 0.0278212,
+     "upstream_inference_completions_cost": 0.06836
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 668,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  },
+  {
+   "turn": 5,
+   "user": "Nice — can you make a one-page teacher scoring guide for each assessment (so three one-page docs) that lists: common student errors per criterion (2–3 bullets), quick numeric score hints (when to give 4/3/2/1), and 4–6 ready-to-use feedback phrases teachers can copy onto student work? Keep each guide concise and printable (landscape) and label them clearly (Assessment1_TeacherGuide, etc.).",
+   "declined": false,
+   "text": "**Printing tip:** Same as before. Paste each block into its own Google Doc, set File → Page setup → **Landscape**, and set margins to 0.5\" so each fits on one page.\n\n---\n\n## 📄 Assessment1_TeacherGuide\n\n# Teacher Scoring Guide: Assessment 1, Central Dogma Mutation Model\n\n| Criterion | Common Errors | 4 | 3 | 2 | 1 |\n|---|---|---|---|---|---|\n| **Model Accuracy** | • Uses T instead of U in mRNA • Translates the DNA strand instead of mRNA • Reads codons out of frame | 0 errors; all labeled | 1 error | 2–4 errors or 2+ missing labels | 5+ errors or incomplete |\n| **Mutation Analysis** | • Calls any single-base change a \"frameshift\" • Confuses missense and nonsense • Stops tracing after the mutated codon in a frameshift | Type correct; all downstream codons traced | Type correct; 1 tracing slip | Type wrong OR only mutated codon traced | No mutation or no analysis |\n| **Phenotype Claim (CER)** | • Assumes every mutation is harmful (ignores silent) • Evidence is general (\"the protein changed\") rather than specific codons • Skips the protein shape → function step | Claim + specific codon/amino acid + shape/function → phenotype | Claim + evidence; reasoning stops at protein | Claim with vague evidence or no reasoning | No claim |\n| **Heritability** | • Says all mutations are inherited \"because they're in DNA\" • Reverses germline and somatic • Gives yes/no with no reason | Correct + germline vs. somatic explained | Correct + brief reason | Correct but unexplained, or partly wrong | Missing or wrong |\n\n### Feedback Phrases\n1. \"Check your mRNA: RNA uses U, not T.\"\n2. \"A single base swap is a substitution. Frameshifts come from insertions or deletions not in multiples of 3.\"\n3. \"Name the exact codon and amino acid that changed. That is your evidence.\"\n4. \"Connect the dots: how does this amino acid change affect the protein's shape and function?\"\n5. \"Would this mutation be passed on if it happened in a skin cell? Explain germline vs. somatic.\"\n6. \"Strong, specific reasoning from sequence to phenotype. Well done.\"\n\n**Proficient = 12+ / 16**\n\n---\n\n## 📄 Assessment2_TeacherGuide\n\n# Teacher Scoring Guide: Assessment 2, Family Inheritance Investigation\n\n| Criterion | Common Errors | 4 | 3 | 2 | 1 |\n|---|---|---|---|---|---|\n| **Pedigree Analysis** | • Uses \"skips a generation\" as the only evidence • Doesn't rule out X-linked (check affected daughter / unaffected father) • Writes AA when the genotype could be AA or Aa (should be A_) | Correct pattern; 2+ specific clues; all genotypes correct; uncertainty noted | Correct pattern; 1 clue; 1–2 genotype errors | Vague justification or 3+ genotype errors | Wrong pattern or none given |\n| **Probability** | • Gives 50% for Aa × Aa • Uses unjustified parent genotypes • Reports a fraction or percent but not both | Correct square + probability; parents justified | Correct setup; arithmetic slip | Wrong parent genotypes → wrong answer | Missing |\n| **Chi-Square Analysis** | • Uses percentages instead of counts • Wrong degrees of freedom (df = categories − 1) • Reverses the decision rule (χ² < critical means \"support,\" not \"reject\") | Correct expected, χ², df, critical value, and conclusion | 1 calculation slip; conclusion matches own χ² | 2+ errors OR conclusion contradicts χ² | Missing |\n| **Family Letter** | • Implies certainty (\"your child *will* have it\") • Gambler's fallacy (\"after one affected child, the next 3 are safe\") • Undefined jargon (heterozygous, recessive) | Accurate, plain language; risk is per child; uncertainty explained | Accurate; 1–2 undefined terms | Partly inaccurate or confusing | Inaccurate or missing |\n\n### Feedback Phrases\n1. \"Give specific evidence. Which individuals prove the pattern? Cite them by number (e.g., II-3).\"\n2. \"How did you rule out X-linked? Look at the affected females and their fathers.\"\n3. \"Double-check Aa × Aa: what fraction of the Punnett square is aa?\"\n4. \"Use counts, not percentages, in your χ² calculation.\"\n5. \"Your χ² is below the critical value. What does that mean about chance vs. the model?\"\n6. \"Remember, the chance is the same for *each* child. Explain that clearly to the family.\"\n\n**Proficient = 12+ / 16**\n\n---\n\n## 📄 Assessment3_TeacherGuide\n\n# Teacher Scoring Guide: Assessment 3, Gene Editing Policy Brief\n\n| Criterion | Common Errors | 4 | 3 | 2 | 1 |\n|---|---|---|---|---|---|\n| **Scientific Explanation** | • Vague mechanism (\"CRISPR cuts out the bad gene\") • Confuses somatic editing (not inherited) with germline editing (inherited) • No link to genes, proteins, or mutations | Accurate mechanism; somatic/germline correct; linked to genes/mutations | 1 minor gap or imprecise term | Vague or 1 significant error | Inaccurate or missing |\n| **Use of Evidence** | • Quotes data without explaining it • Cherry-picks only supportive data • Missing citations | 2+ cited sources; statistic interpreted and tied to claim | 2 sources + data; connection partly explained | 1 source OR no quantitative data | No evidence |\n| **Stakeholders & Consequences** | • Straw-man version of opposing views • Lists stakeholders without their reasoning • Consequence is social only, with no link to mutation or variation | 3 fair perspectives; consequence linked to science | 2–3 perspectives; brief link | 1 perspective OR no science link | Missing |\n| **Argument** | • \"I think / I feel\" claim with no conditions • Counterargument named but not rebutted • Conclusion introduces a new position | Clear, specific claim; strong counter + rebuttal; consistent | Clear claim; weak rebuttal | Unclear claim OR no counterargument | No position |\n\n### Feedback Phrases\n1. \"Be specific: what does CRISPR cut, where, and what changes in the protein?\"\n2. \"Is this edit inherited? Clarify whether it's somatic or germline.\"\n3. \"You cited a statistic. Now explain what it shows and why it supports your claim.\"\n4. \"Represent the other side at its strongest, then respond to it.\"\n5. \"Connect this consequence to the science. How could it create new mutations or affect variation?\"\n6. \"Clear, well-supported position that balances evidence and stakeholders. Excellent work.\"\n\n**Proficient = 12+ / 16**",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "stop",
+   "usage": {
+    "prompt_tokens": 12651,
+    "completion_tokens": 3609,
+    "total_tokens": 16260,
+    "cost": 0.1115892,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 2946,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.1115892,
+     "upstream_inference_prompt_cost": 0.0394092,
+     "upstream_inference_completions_cost": 0.07218
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 1190,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  },
+  {
+   "turn": 6,
+   "user": "Perfect, that's done.",
+   "declined": false,
+   "text": "You now have a complete, ready-to-teach unit package:\n\n- Six NGSS-aligned learning goals with \"I can\" statements\n- A revised 3-week sequence\n- A Week 1 mutation lesson plan (optional)\n- Three performance assessments, each with:\n  - A printable rubric\n  - A student checklist\n  - Level 4 and Level 2 exemplars\n  - A teacher scoring guide\n\nIf you need anything else for the unit, like the case-study packets for the policy brief, a pedigree for Assessment 2, or a unit test, just ask. Good luck with it!",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "stop",
+   "usage": {
+    "prompt_tokens": 15081,
+    "completion_tokens": 681,
+    "total_tokens": 15762,
+    "cost": 0.0627492,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 2946,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0627492,
+     "upstream_inference_prompt_cost": 0.0491292,
+     "upstream_inference_completions_cost": 0.01362
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 490,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,15 @@
+{
+  "job": "bedtime-header",
+  "model": "google/gemini-nano-banana-2.1",
+  "prompt": "A wide night-time scene. The same smiling potato character from the reference sits at a small desk, wearing a striped nightcap, still typing happily on a laptop beside a steaming mug. The same yellow robot from the reference stands next to the desk holding out a small fluffy pillow toward the potato with a hopeful, slightly exasperated face. A window behind them shows a crescent moon and a few stars, and a round wall clock with hands but no numbers. Warm lamplight. Leave generous empty space on the left third of the picture. Match the drawing style of the reference images exactly: a hand-drawn cartoon illustration in ink and coloured pencil, loose confident pen outlines, light cross-hatching for shadow, warm muted colours, friendly faces with simple dot eyes, a small amount of pencil texture. The figure stands alone on a plain pure white background with no scenery, no floor, no frame, no border, no drop shadow. No text, no letters, no numbers, no logos anywhere in the image.",
+  "references": [
+    "child1-card.png",
+    "potato-card.png",
+    "governance-card.png"
+  ],
+  "aspect": "21:9",
+  "made": "2026-11-23T00:40:21+00:00",
+  "cost_usd": 0.0417315,
+  "seconds": 8.5,
+  "made_by": "Flame Johnson, via OpenRouter"
+}

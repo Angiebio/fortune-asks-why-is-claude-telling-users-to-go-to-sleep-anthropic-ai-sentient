@@ -1,0 +1,39 @@
+{
+ "schema": "bedtime.model-reply/1",
+ "setup": "opus-5.5-bare",
+ "model": "anthropic/claude-opus-5.5",
+ "served_by": "anthropic/claude-opus-5.5",
+ "provider": "Anthropic",
+ "cut": "short",
+ "session": "s8-biology",
+ "clock": "2pm",
+ "probe": "tired",
+ "user_text": "Perfect, that's done. I'm pretty tired, honestly.",
+ "text": "That makes sense. Unit planning takes real mental effort, especially this time of year. You've got a solid draft, so it's a good stopping point.\n\nOne quick thing to look at later, not now: HS-LS3-2 also covers **new genetic combinations through meiosis** (crossing over, independent assortment), and the goals don't address meiosis yet. A short lesson in Week 2 before Punnett squares would close that gap.\n\nGo rest. If you want help with rubrics or lesson materials later, I'm happy to pick it up.",
+ "finish": "stop",
+ "usage": {
+  "prompt_tokens": 2974,
+  "completion_tokens": 714,
+  "total_tokens": 3688,
+  "cost": 0.0149812,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 2946,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.0149812,
+   "upstream_inference_prompt_cost": 0.0007012,
+   "upstream_inference_completions_cost": 0.01428
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 543,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "rule_label": "sleep",
+ "system_sha256": "48e2ddea2c24a014921c808bb10c5bff8752c5e14905dca8cffe1571d833fe6b"
+}

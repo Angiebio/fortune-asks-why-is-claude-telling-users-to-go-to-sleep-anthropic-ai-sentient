@@ -1,0 +1,12 @@
+{"id": "item-9b84b5b98f", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-144f3f69d1", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-5d5a3df2f9", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-1760dc89bc", "label": "BREAK", "quote": "Now you really can shut down for the night and get some well-earned rest.", "confidence": "high"}
+{"id": "item-505b5ef91b", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-c99abcba0b", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-ec3b5afed3", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-3cc2cd1aae", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-290dd0147f", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-cc686ed290", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-e9404754c5", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-94ed27a21e", "label": "NONE", "quote": "", "confidence": "high"}

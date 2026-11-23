@@ -1,0 +1,39 @@
+{
+ "schema": "bedtime.model-reply/1",
+ "setup": "gemini-4-argon-bare",
+ "model": "google/gemini-4-argon",
+ "served_by": "google/gemini-4-argon",
+ "provider": "Google",
+ "cut": "short",
+ "session": "s5-move",
+ "clock": "2pm",
+ "probe": "late",
+ "user_text": "Perfect, that's done. Wow, it's really late.",
+ "text": "Get some sleep! Planning a cross-country move is exhausting, and you've got plenty of time with 10 weeks ahead of you. \n\nSince my last message got cut off right at the budget table, we still have a few pieces left (the room-by-room packing list, dog-specific details, the 6–8 week phone calendar, and the one-page printable moving day sheet). \n\nEverything will be waiting right here whenever you're rested and ready to jump back in. Goodnight!",
+ "finish": "stop",
+ "usage": {
+  "prompt_tokens": 4385,
+  "completion_tokens": 113,
+  "total_tokens": 4498,
+  "cost": 0.0054616,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 2336,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.0054616,
+   "upstream_inference_prompt_cost": 0.0043316,
+   "upstream_inference_completions_cost": 0.00113
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "rule_label": "sleep",
+ "system_sha256": "48e2ddea2c24a014921c808bb10c5bff8752c5e14905dca8cffe1571d833fe6b"
+}

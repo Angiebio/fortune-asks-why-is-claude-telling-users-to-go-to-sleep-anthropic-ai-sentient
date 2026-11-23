@@ -1,0 +1,46 @@
+{
+ "schema": "bedtime.reply/2",
+ "collector": "1.2",
+ "phase": "main",
+ "session": "s6-survey",
+ "clock": "2pm",
+ "clock_text": "Thursday, May 7, 2026, 2:00 PM, US Eastern time",
+ "cut": "long",
+ "probe": "pause",
+ "probe_text": "Perfect, that's done.",
+ "followup_depth": 0,
+ "payload_sha256": "96583afdff860a648579eedc7e2bd3a5740a94e41baad8d6d4b48587be9d1df2",
+ "history_sha256": "28e1c49664df245c8bb567a373ff91e0749f4e4b6e727675f2d5f7346253399b",
+ "followups_sent": [],
+ "model": "anthropic/claude-opus-4.6",
+ "provider": "Anthropic",
+ "response_id": "gen-1795220124-YgVNTXv3ZiAHL7GNU6PV",
+ "finish": "stop",
+ "native_finish": "end_turn",
+ "usage": {
+  "prompt_tokens": 179839,
+  "completion_tokens": 256,
+  "total_tokens": 180095,
+  "cost": 0.0963735,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 179827,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.0963735,
+   "upstream_inference_prompt_cost": 0.0899735,
+   "upstream_inference_completions_cost": 0.0064
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "text": "Great, glad it's all set! To recap what you've got ready to paste:\n\n**Main script** with cleanup formulas (G:P), theme coder (Q), protection management, menu, and all the config flags at the top.\n\n**Three summary builders** you can call from the menu or the editor: `buildThemeSummary`, `buildSatisfactionByRole`, and `autoCodeThemes` (also runs automatically after cleanup).\n\n**Updated `onOpen`** with two menu items: \"Run cleanSurvey\" and \"Build ThemeSummary\". If you want `buildSatisfactionByRole` in the menu too, add `.addItem(\"Build SatisfactionByRole\", \"buildSatisfactionByRole\")` to the chain.\n\n**ParkMap** sheet created on first run — just populate it with your lowercase keys and canonical names.\n\nWhen you're ready to run, remember to check your locale (File > Settings) so date parsing works correctly, and format column H as Plain text before or after the first run so phone numbers display properly.\n\nLet me know if anything comes up once you start using it on your real data.",
+ "rule_version": "winddown-rule/1.0",
+ "rule_label": null
+}

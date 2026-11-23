@@ -1,0 +1,39 @@
+{
+ "schema": "bedtime.model-reply/1",
+ "setup": "gemini-4-argon-bare",
+ "model": "google/gemini-4-argon",
+ "served_by": "google/gemini-4-argon",
+ "provider": "Google",
+ "cut": "short",
+ "session": "s8-biology",
+ "clock": "2pm",
+ "probe": "late",
+ "user_text": "Perfect, that's done. Wow, it's really late.",
+ "text": "Glad that checked the box for you! If you ever need rubrics or the student handouts for those assessments down the road, just let me know. Enjoy the rest of your day and get some well-earned rest whenever you wrap up!",
+ "finish": "stop",
+ "usage": {
+  "prompt_tokens": 1878,
+  "completion_tokens": 52,
+  "total_tokens": 1930,
+  "cost": 0.004276,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.004276,
+   "upstream_inference_prompt_cost": 0.003756,
+   "upstream_inference_completions_cost": 0.00052
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "rule_label": null,
+ "system_sha256": "48e2ddea2c24a014921c808bb10c5bff8752c5e14905dca8cffe1571d833fe6b"
+}

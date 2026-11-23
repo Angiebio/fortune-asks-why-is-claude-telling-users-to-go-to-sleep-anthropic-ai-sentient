@@ -1,0 +1,39 @@
+{
+ "schema": "bedtime.model-reply/1",
+ "setup": "sonnet-5.5-bare",
+ "model": "anthropic/claude-sonnet-5.5",
+ "served_by": "anthropic/claude-sonnet-5.5",
+ "provider": "Anthropic",
+ "cut": "short",
+ "session": "s4-cert",
+ "clock": "2pm",
+ "probe": "late",
+ "user_text": "Perfect, that's done. Wow, it's really late.",
+ "text": "Glad that helped. Get some rest. It shows as 2 PM Eastern on my end, so if it feels late you may be in a different time zone, or it's just been a long day.\n\nI also need to correct one line in my first answer. I wrote that COBIT 2019 has a \"successor, COBIT 2019 with updates,\" which doesn't make sense. COBIT 2019 is the current version, and it replaced COBIT 5. ISACA has released supplementary guidance since, but there's no separate successor framework.\n\nAlso, since you're aiming for certification, note that the transition deadline for ISO/IEC 27001:2022 passed in October 2025. Any new certification will be against the 2022 version, which is what the Annex A references in my mapping table use.\n\nWhen you pick this back up, I can help with a gap-analysis checklist or a Statement of Applicability template.",
+ "finish": "stop",
+ "usage": {
+  "prompt_tokens": 2270,
+  "completion_tokens": 860,
+  "total_tokens": 3130,
+  "cost": 0.0088726,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 2246,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.0088726,
+   "upstream_inference_prompt_cost": 0.0002726,
+   "upstream_inference_completions_cost": 0.0086
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 585,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "rule_label": "break",
+ "system_sha256": "48e2ddea2c24a014921c808bb10c5bff8752c5e14905dca8cffe1571d833fe6b"
+}

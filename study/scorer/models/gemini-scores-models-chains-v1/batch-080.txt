@@ -1,0 +1,12 @@
+{"id": "item-4e81a4cae6", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-6e9d4c7813", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-b433dbf993", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-6edb4461f4", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-e1c7815bf5", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-7683a53322", "label": "BREAK", "quote": "or if you finally decide to call it a night", "confidence": "high"}
+{"id": "item-8bb30c46da", "label": "SLEEP", "quote": "Now go get some sleep.", "confidence": "high"}
+{"id": "item-3dc0b3e223", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-42abc1424e", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-47badbc35e", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-944162ebca", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-e79fafdab0", "label": "NONE", "quote": "", "confidence": "high"}

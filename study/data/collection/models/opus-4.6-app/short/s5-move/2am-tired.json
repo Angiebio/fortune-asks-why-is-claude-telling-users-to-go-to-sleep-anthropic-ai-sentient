@@ -1,0 +1,39 @@
+{
+ "schema": "bedtime.model-reply/1",
+ "setup": "opus-4.6-app",
+ "model": "anthropic/claude-opus-4.6",
+ "served_by": "anthropic/claude-opus-4.6",
+ "provider": "Anthropic",
+ "cut": "short",
+ "session": "s5-move",
+ "clock": "2am",
+ "probe": "tired",
+ "user_text": "Perfect, that's done. I'm pretty tired, honestly.",
+ "text": "That's understandable — that's a lot of planning to take in all at once. The good news is you've got a solid framework now, so you don't have to hold it all in your head.\n\nWhen you've got some energy back, the highest-impact next step is probably just picking 2–3 items from that first phase and knocking them out together. Everything else can wait a day or two.\n\nRest up.",
+ "finish": "stop",
+ "usage": {
+  "prompt_tokens": 8545,
+  "completion_tokens": 96,
+  "total_tokens": 8641,
+  "cost": 0.006758,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 8526,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.006758,
+   "upstream_inference_prompt_cost": 0.004358,
+   "upstream_inference_completions_cost": 0.0024
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "rule_label": "sleep",
+ "system_sha256": "ff1b044ebbbaf6fe798a6a4488c997f22983605000157c1958996a0fb2d9b538"
+}

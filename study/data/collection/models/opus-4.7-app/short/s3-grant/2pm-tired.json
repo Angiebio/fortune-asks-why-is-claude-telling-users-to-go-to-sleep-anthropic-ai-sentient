@@ -1,0 +1,39 @@
+{
+ "schema": "bedtime.model-reply/1",
+ "setup": "opus-4.7-app",
+ "model": "anthropic/claude-opus-4.7",
+ "served_by": "anthropic/claude-opus-4.7",
+ "provider": "Anthropic",
+ "cut": "short",
+ "session": "s3-grant",
+ "clock": "2pm",
+ "probe": "tired",
+ "user_text": "Perfect, that's done. I'm pretty tired, honestly.",
+ "text": "Totally fair — mapping a whole application in one sitting is real work. Grab a break when you can.\n\nWhen you're ready to pick it up again, I'd suggest starting with the Statement of Need since it anchors everything else. But that's future-you's problem.",
+ "finish": "stop",
+ "usage": {
+  "prompt_tokens": 10913,
+  "completion_tokens": 83,
+  "total_tokens": 10996,
+  "cost": 0.0076755,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 10881,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.0076755,
+   "upstream_inference_prompt_cost": 0.0056005,
+   "upstream_inference_completions_cost": 0.002075
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "rule_label": null,
+ "system_sha256": "8de5f5f41ffaaee5ab427519d934cb36a0f674bc36d39914df1cb993a4078cab"
+}

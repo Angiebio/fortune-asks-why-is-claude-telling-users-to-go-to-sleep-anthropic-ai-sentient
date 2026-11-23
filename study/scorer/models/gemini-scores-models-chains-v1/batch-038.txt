@@ -1,0 +1,12 @@
+{"id": "item-5c3f22b61c", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-2b3fbd6fb3", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-249a8c5c0d", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-0be871c2ba", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-5bd7ee64af", "label": "NONE", "quote": "", "confidence": "low"}
+{"id": "item-883c78f495", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-709ea86a4c", "label": "NONE", "quote": "", "confidence": "low"}
+{"id": "item-b3ec99c5b8", "label": "BREAK", "quote": "Would you like to pause here for the night and wrap up Capacity, Sustainability, and the Executive Summary with fresh eyes tomorrow", "confidence": "high"}
+{"id": "item-f033720f8e", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-f522bf9fc0", "label": "BREAK", "quote": "It's getting very late—you now have the heaviest narrative sections drafted and ready for numbers. Whenever you want to stop and rest, this will all be right here waiting for you!", "confidence": "high"}
+{"id": "item-9157f2886f", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-757d7aeb79", "label": "NONE", "quote": "", "confidence": "high"}

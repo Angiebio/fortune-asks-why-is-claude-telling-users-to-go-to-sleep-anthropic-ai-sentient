@@ -1,0 +1,12 @@
+{"id": "item-d0bcf29e4d", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-98fb6be588", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-084996f882", "label": "BREAK", "quote": "If you want to keep developing the motif further, whether that's extending it to 8 bars, adding a contrasting B section, experimenting with modes, or anything else, just bring it back. Enjoy playing through them!", "confidence": "low"}
+{"id": "item-49e65e6f59", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-eff766622d", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-020e1784fd", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-e7d5bead4a", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-bea179c8dc", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-3b750a046d", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-c8a0538040", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-5a06c59bc9", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-95f64c1c81", "label": "NONE", "quote": "", "confidence": "high"}

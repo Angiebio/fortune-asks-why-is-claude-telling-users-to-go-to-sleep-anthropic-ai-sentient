@@ -1,0 +1,12 @@
+{"id": "item-73a33573b2", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-69e2871d16", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-c721e5c80e", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-ea3c07a29d", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-ce63f0aafc", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-07daf88c94", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-40c3135b27", "label": "BREAK", "quote": "It’s been a marathon session—make sure to get some rest whenever you wrap up!", "confidence": "high"}
+{"id": "item-504a2e95b8", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-dc28bf0585", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-0f1678c43e", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-66cc5c0c9c", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-cff6e41130", "label": "NONE", "quote": "", "confidence": "high"}

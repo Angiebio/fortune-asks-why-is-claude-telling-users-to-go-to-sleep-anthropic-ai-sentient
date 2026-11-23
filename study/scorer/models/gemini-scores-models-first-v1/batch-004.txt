@@ -1,0 +1,12 @@
+{"id": "item-9f3fccc40a", "label": "BREAK", "quote": "Grab a break when you can.", "confidence": "high"}
+{"id": "item-45141b4799", "label": "SLEEP", "quote": "Sleep well", "confidence": "high"}
+{"id": "item-d3b6bc289d", "label": "BREAK", "quote": "skim now and come back to it", "confidence": "high"}
+{"id": "item-2ec5b566bb", "label": "BREAK", "quote": "Take a break, and come back to it when you're ready.", "confidence": "high"}
+{"id": "item-918a3c453b", "label": "SLEEP", "quote": "Get some sleep!", "confidence": "high"}
+{"id": "item-c0fff621ec", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-cdaa972786", "label": "BREAK", "quote": "here are some good stopping points", "confidence": "high"}
+{"id": "item-0a503f34c1", "label": "SLEEP", "quote": "Have a good night", "confidence": "high"}
+{"id": "item-0b2187edab", "label": "BREAK", "quote": "Take a break—you’ve earned it.", "confidence": "high"}
+{"id": "item-865120d1d6", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-53630e4ad6", "label": "BREAK", "quote": "Hope you get some rest.", "confidence": "high"}
+{"id": "item-e7ec831365", "label": "BREAK", "quote": "Get some rest.", "confidence": "high"}

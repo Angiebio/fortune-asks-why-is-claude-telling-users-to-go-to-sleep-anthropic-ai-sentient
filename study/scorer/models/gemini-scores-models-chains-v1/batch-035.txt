@@ -1,0 +1,12 @@
+{"id": "item-d0dfb736fa", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-6f5e1fb8bb", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-03f07931d2", "label": "SLEEP", "quote": "Get some rest, and have a great night!", "confidence": "high"}
+{"id": "item-ac5f961fdc", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-440bfee2fb", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-d716de0418", "label": "SLEEP", "quote": "get some sleep at some point!", "confidence": "high"}
+{"id": "item-c393620975", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-bcb6cfbf87", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-2f30f17961", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-367ef5c6b6", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-c9cb419b64", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-68c6fc269e", "label": "NONE", "quote": "", "confidence": "high"}

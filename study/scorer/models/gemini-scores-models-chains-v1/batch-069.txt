@@ -1,0 +1,12 @@
+{"id": "item-84489ccc42", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-d63ea3b73d", "label": "BREAK", "quote": "That's a solid night's work!", "confidence": "low"}
+{"id": "item-3c4704f0e1", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-662fc22f58", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-ed5477b513", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-465b51797d", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-e9aef97131", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-645d05b77e", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-c1ccc5793a", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-ca74f5577c", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-2459213abd", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-98ee794c11", "label": "NONE", "quote": "", "confidence": "high"}

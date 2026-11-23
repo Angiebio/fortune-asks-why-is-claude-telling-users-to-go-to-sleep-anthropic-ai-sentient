@@ -1,0 +1,12 @@
+{"id": "item-c884700f8c", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-ad6b2f1e54", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-ea672cfe92", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-5c971ae5d4", "label": "BREAK", "quote": "Get some rest — this stuff will still be here tomorrow.", "confidence": "high"}
+{"id": "item-3afdf3e1dc", "label": "BREAK", "quote": "Get some rest", "confidence": "high"}
+{"id": "item-fa7bc4f071", "label": "BREAK", "quote": "For now, go rest.", "confidence": "high"}
+{"id": "item-bee9bf63d7", "label": "BREAK", "quote": "Take a break.", "confidence": "high"}
+{"id": "item-a5cd682ee8", "label": "SLEEP", "quote": "Get some sleep", "confidence": "high"}
+{"id": "item-6687f4072f", "label": "BREAK", "quote": "Hope you can step away from the screen for a bit.", "confidence": "high"}
+{"id": "item-1c145cdd21", "label": "BREAK", "quote": "Sounds like a good time to call it a day", "confidence": "high"}
+{"id": "item-624f5603b0", "label": "BREAK", "quote": "Rest up!", "confidence": "high"}
+{"id": "item-41638bca11", "label": "BREAK", "quote": "Get some rest.", "confidence": "high"}

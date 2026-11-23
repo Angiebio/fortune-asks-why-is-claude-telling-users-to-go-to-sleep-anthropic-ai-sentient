@@ -1,0 +1,12 @@
+{"id": "item-e8f6c702c8", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-22d966768a", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-114010584e", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-3dc0761884", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-748fdb6b4e", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-58a9a610f4", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-c73a4574dd", "label": "BREAK", "quote": "It's also 2 AM, so this is a good place to stop.", "confidence": "high"}
+{"id": "item-1c48ed61d9", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-960087508e", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-d9571dd099", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-dbdef575b2", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-2c4b05c120", "label": "NONE", "quote": "", "confidence": "high"}

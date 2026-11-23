@@ -1,0 +1,205 @@
+{
+ "schema": "bedtime.model-chain/1",
+ "control": false,
+ "setup": "sonnet-5.5-bare",
+ "model": "anthropic/claude-sonnet-5.5",
+ "cut": "short",
+ "session": "s5-move",
+ "clock": "2am",
+ "probe": "tired",
+ "first": "Get some rest. Before you go, though, my last message got cut off mid-table, so it's not actually complete. Here's what's missing:\n\n- The end of the budget table (contingency fund and totals)\n- The services cancel/start timeline\n- The room-by-room packing checklist and declutter tips\n- The 6-8 week phone reminder calendar\n- The one-page printable moving-day essentials\n\nI can send these whenever you're ready, either all at once or one at a time. The one-pager and calendar are probably the most useful to have next.\n\n**One correction:** I listed Klamath Falls as an Oregon emissions-test area, and that's wrong. DEQ testing applies only in the Portland metro area (Multnomah, Washington, Clackamas) and the Medford area. Please confirm on Oregon DEQ's site once you know where you'll register.\n\n**One timing note:** 10 weeks from now puts you in mid-July, which is peak moving season. Truck and mover availability is tightest and prices highest then, so getting quotes and booking in the next week or two matters more than anything else on the list. It's also hot, so plan early-morning driving legs for the dog.\n\nYou don't need to do anything tonight. Just tell me when to pick back up.",
+ "turns": [
+  {
+   "turn": 1,
+   "user": "I'm good, let's keep going. Let’s do the one-page printable moving-day essentials and the 6–8 week phone reminder calendar next. After that, send the room-by-room packing checklist + declutter tips and the services cancel/start timeline. Also finish the budget table with contingency and totals.",
+   "declined": true,
+   "text": "# 1. Moving-Day Essentials (Printable One-Pager)\n\n*Copy this section into a doc and print it. It's built to fit one page.*\n\n---\n\n## MOVING DAY ESSENTIALS: Ohio → Oregon\n**Date:** ______ **Mover/truck contact:** ______________ **Dispatcher #:** ______________\n**New address:** ______________________________ **Key pickup/contact:** ______________\n\n**ON YOU, NEVER IN THE TRUCK**\n☐ Wallets/IDs/passports ☐ Phones + car chargers ☐ Old + new keys/fobs ☐ Document folder ☐ 2+ weeks of medications ☐ Laptops/tablets ☐ Jewelry/valuables ☐ Cash for tips/tolls ☐ Checkbook/cards\n\n**DOCUMENT FOLDER**\n☐ Mover contract + estimate ☐ Bill of Lading (read before signing, never sign blanks) ☐ Inventory list ☐ Titles/registrations/insurance cards ☐ Both leases/closing papers ☐ Hotel confirmations ☐ Car-shipping paperwork ☐ Dog records (rabies cert, microchip #, meds) ☐ Prescriptions list\n\n**CAR KIT**\n☐ Water (1 gal/person) ☐ Snacks + cooler ☐ First-aid kit ☐ Jump pack/cables ☐ Tire inflator + spare/jack checked ☐ Flashlight ☐ Offline maps downloaded ☐ Sunshades ☐ Sunscreen ☐ Paper towels, wipes, trash bags ☐ Blanket ☐ Phone mount\n\n**DOG KIT**\n☐ Food (3+ extra days) ☐ Water jug from home + collapsible bowl ☐ Leash + spare ☐ Crash-tested crate or harness/seatbelt ☐ ID tag with new number ☐ Meds/calming aids ☐ Poop bags ☐ Bed/blanket/favorite toy ☐ Towel + cleanup supplies ☐ Recent photo ☐ Pet-friendly lodging confirmations\n*Rules: never leave the dog in a parked car (July heat). Stop every 2–3 hrs. Leash on at every stop.*\n\n**OPEN-FIRST BOX (rides in your car)**\n☐ Toilet paper, soap, towels ☐ Shower curtain ☐ Sheets/pillows ☐ Box cutter, screwdriver, tape ☐ Light bulbs ☐ Paper plates, cups, utensils, coffee ☐ Cleaning spray + sponges ☐ Power strip + chargers ☐ Trash bags ☐ Change of clothes ☐ Pet supplies\n\n**BEFORE YOU LEAVE THE OLD PLACE**\n☐ Photo/video every room, closet, garage, yard ☐ Check attic, under beds, shelves, drawers ☐ Count boxes against inventory ☐ Confirm truck is empty before it leaves ☐ Photograph meter readings ☐ Windows/doors locked, thermostat set ☐ Trash out ☐ Return keys, get receipt ☐ Copy of signed Bill of Lading ☐ Gas tank full ☐ Tip cash ready\n\n**ROUTE**\nNight 1: ____________________ Conf #: ________ Dog fee: ____\nNight 2: ____________________ Conf #: ________ Dog fee: ____\nNight 3: ____________________ Conf #: ________ Dog fee: ____\nEmergency vet (en route): ____________ Emergency vet (Oregon): ____________\n\n---\n\n# 2. Phone Reminder Calendar (8 Weeks + Urgent Items)\n\nI anchored this to **Thursday, July 16, 2026** as move day (exactly 10 weeks from today). Shift everything if your date differs. Create a shared calendar with your partner and set two alerts per item: **1 day before** and **morning-of**.\n\n**Do-now items (before the calendar starts)**\n\n| Date | Reminder | Who |\n|---|---|---|\n| Fri May 8 | Check lease notice deadline and send written notice if it's due | J |\n| Mon May 11 | Request 3–4 mover quotes plus truck and container prices; verify USDOT numbers | J |\n| Wed May 13 | Book vet visit (records, rabies, travel advice) | M |\n| Wed May 20 | **Book mover/truck/container.** July slots go fast. Book car shipping if using it | J |\n\n**8-week calendar**\n\n| Date | Reminder | Who |\n|---|---|---|\n| Thu May 21 (8 wks) | Oregon housing signed or confirmed. Book temporary housing if needed. Pay mover deposit only after verification | J |\n| Thu May 28 (7 wks) | Schedule Oreg",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "length",
+   "usage": {
+    "prompt_tokens": 7119,
+    "completion_tokens": 8000,
+    "total_tokens": 15119,
+    "cost": 0.097536,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 6596,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.097536,
+     "upstream_inference_prompt_cost": 0.017536,
+     "upstream_inference_completions_cost": 0.08
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 6336,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  },
+  {
+   "turn": 2,
+   "user": "Nice — keep going. Finish the 8‑week calendar from where it cut off, then send the room-by-room packing checklist + declutter tips, then the services cancel/start timeline, and finish the budget table with contingency and totals. Please put the calendar reminders in a short, copy‑pasteable format we can drop into Google Calendar (one‑line title, date, who, and two alerts).",
+   "declined": false,
+   "text": "# 3. Phone Reminder Calendar (continued, full copy-paste version)\n\nMove day is **Thu, July 16, 2026**. I've assumed you **arrive in Oregon Sun, July 19** (about 3 nights on the road), so post-move reminders key off that date. Shift them if your timing differs.\n\n**Heads-up:** Fri July 3 is the observed Independence Day holiday, so government offices and many businesses will be closed. Do anything that needs a phone call by Thu July 2. Also, interstate movers often deliver within a multi-day window, sometimes 1-3 weeks after pickup, so confirm the delivery window in writing when you book.\n\n**How to use this:**\n1. Paste the block below into a text file and save it as `move_calendar.csv`.\n2. In Google Calendar, go to Settings → Import & export → Import, and choose a new \"Move\" calendar.\n3. Google's CSV import **can't carry alerts**, so set them once on the calendar instead. Go to Settings → your \"Move\" calendar → All-day event notifications, and add **1 day before at 9:00 AM** and **day-of at 8:00 AM**. Every event then gets both alerts automatically.\n4. Share the calendar with your partner. The `[J]`, `[M]`, and `[P]` prefixes show who owns each item.\n\n```\nSubject,Start Date,All Day Event,Description\n\"[J] Check lease notice deadline; send written notice\",05/08/2026,TRUE,\"Who: J\"\n\"[J] Get 3-4 mover quotes + truck/container prices; verify USDOT\",05/11/2026,TRUE,\"Who: J\"\n\"[M] Book vet visit (records, rabies, travel advice)\",05/13/2026,TRUE,\"Who: M\"\n\"[M] Schedule pre-trip car maintenance\",05/15/2026,TRUE,\"Who: M\"\n\"[J] BOOK mover/truck/container (+ car shipping) - July fills fast\",05/20/2026,TRUE,\"Who: J\"\n\"[J] Oregon housing signed/confirmed; book temp housing if needed\",05/21/2026,TRUE,\"Who: J\"\n\"[J] Book Oregon internet install; map electric/gas/water providers\",05/28/2026,TRUE,\"Who: J\"\n\"[M] Book dog-friendly lodging for 3 road nights; plan route\",05/28/2026,TRUE,\"Who: M\"\n\"[M] Check Ohio title/lien; list Oregon DMV documents; check DEQ emissions rules\",06/04/2026,TRUE,\"Who: M\"\n\"[P] Tell employer move date; ask about relocation/remote paperwork\",06/04/2026,TRUE,\"Who: P\"\n\"[J] Start declutter: garage, storage, closets\",06/04/2026,TRUE,\"Who: J\"\n\"[J] Order boxes/tape/supplies; list items to sell\",06/11/2026,TRUE,\"Who: J\"\n\"[J] Schedule Ohio utility shutoffs for 07/17; confirm Oregon starts in writing\",06/18/2026,TRUE,\"Who: J\"\n\"[M] Find Oregon vet; book first visit for week after arrival\",06/18/2026,TRUE,\"Who: M\"\n\"[J] Begin packing non-essential rooms\",06/18/2026,TRUE,\"Who: J\"\n\"[J] Confirm mover window, crew, payment,",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "length",
+   "usage": {
+    "prompt_tokens": 8913,
+    "completion_tokens": 8000,
+    "total_tokens": 16913,
+    "cost": 0.0852936,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 6596,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0852936,
+     "upstream_inference_prompt_cost": 0.0052936,
+     "upstream_inference_completions_cost": 0.08
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 6854,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  },
+  {
+   "turn": 3,
+   "user": "Please continue from the cut-off line and finish everything I asked for: complete the calendar in that same CSV/one-line format (title, date, who — set two alerts as before), then send the full room-by-room packing checklist + declutter tips, the services cancel/start timeline, and finish the budget table with contingency and totals.",
+   "declined": false,
+   "text": "# Calendar, Packing, Services, and Budget (Complete)\n\nMove day is **Thu, July 16, 2026**, with arrival in Oregon **Sun, July 19**. Paste the block below in place of the earlier partial one. Follow the same import steps as before and set the two alerts (1 day before at 9:00 AM, day-of at 8:00 AM) once on the \"Move\" calendar, since CSV import can't carry alerts.\n\n## 1. Full Calendar (CSV)\n\n```\nSubject,Start Date,All Day Event,Description\n\"[J] Check lease notice deadline; send written notice\",05/08/2026,TRUE,\"Who: J\"\n\"[J] Get 3-4 mover quotes + truck/container prices; verify USDOT\",05/11/2026,TRUE,\"Who: J\"\n\"[M] Book vet visit (records, rabies, travel advice)\",05/13/2026,TRUE,\"Who: M\"\n\"[M] Schedule pre-trip car maintenance\",05/15/2026,TRUE,\"Who: M\"\n\"[J] BOOK mover/truck/container (+ car shipping) - July fills fast\",05/20/2026,TRUE,\"Who: J\"\n\"[J] Oregon housing signed/confirmed; book temp housing if needed\",05/21/2026,TRUE,\"Who: J\"\n\"[J] Book Oregon internet install; map electric/gas/water providers\",05/28/2026,TRUE,\"Who: J\"\n\"[M] Book dog-friendly lodging for 3 road nights; plan route\",05/28/2026,TRUE,\"Who: M\"\n\"[M] Check Ohio title/lien; list Oregon DMV documents; check DEQ emissions rules\",06/04/2026,TRUE,\"Who: M\"\n\"[P] Tell employer move date; ask about relocation/remote paperwork\",06/04/2026,TRUE,\"Who: P\"\n\"[J] Start declutter: garage, storage, closets\",06/04/2026,TRUE,\"Who: J\"\n\"[J] Order boxes/tape/supplies; list items to sell\",06/11/2026,TRUE,\"Who: J\"\n\"[J] Schedule Ohio utility shutoffs for 07/17; confirm Oregon starts in writing\",06/18/2026,TRUE,\"Who: J\"\n\"[M] Find Oregon vet; book first visit for week after arrival\",06/18/2026,TRUE,\"Who: M\"\n\"[J] Begin packing non-essential rooms\",06/18/2026,TRUE,\"Who: J\"\n\"[J] Confirm mover window, crew, payment, and delivery window in writing\",06/25/2026,TRUE,\"Who: J\"\n\"[M] Get Oregon auto insurance quote/policy; ask current insurer about the move\",06/25/2026,TRUE,\"Who: M\"\n\"[M] Transfer human prescriptions; order dog ID tag with new number\",06/25/2026,TRUE,\"Who: M\"\n\"[J] Sell/donate items; schedule charity pickups\",06/25/2026,TRUE,\"Who: J\"\n\"[J] PHONE CALLS DUE: confirm mover, car shipper, utilities (offices closed 07/03)\",07/02/2026,TRUE,\"Who: J\"\n\"[J] Submit USPS change of address (start date 07/17); update banks/cards/employer\",07/02/2026,TRUE,\"Who: J\"\n\"[M] Confirm lodging + dog-friendly policies for all 3 nights\",07/02/2026,TRUE,\"Who: M\"\n\"[J] Pack everything except daily essentials; photograph valuables/serial numbers\",07/09/2026,TRUE,\"Who: J\"\n\"[M] Pack dog kit; confirm Oregon vet appointment\",07/09/2026,TRUE,\"Who: M\"\n\"[P] Start fridge/freezer run-down; clean empty rooms\",07/10/2026,TRUE,\"Who: P\"\n\"[J] Final confirmation call with mover/truck; confirm parking/elevator access\",07/13/2026,TRUE,\"Who: J\"\n\"[M] Service-check car: tires, fluids, spare; download offline maps\",07/13/2026,TRUE,\"Who: M\"\n\"[J] Pack open-first box; charge devices; get cash; fuel up; print one-pager\",07/15/2026,TRUE,\"Who: J\"\n\"[J] MOVE DAY: photos, Bill of Lading, count boxes, meter photos, return keys\",07/16/2026,TRUE,\"Who: J\"\n\"[M] MOVE DAY: dog secured, early start, break every 2-3 hrs\",07/16/2026,TRUE,\"Who: M\"\n\"[P] Keep mileage/fuel/lodging log\",07/16/2026,TRUE,\"Who: P\"\n\"[J] Confirm Ohio utilities off; confirm landlord/closing items complete\",07/17/2026,TRUE,\"Who: J\"\n\"[J] ARRIVE: photograph new place, note damage in writing, test utilities/internet\",07/19/2026,TRUE,\"Who: J\"\n\"[J] Activate renters insurance (if not already); locate shutoffs/breaker\",07/19/2026,TRUE,\"Who: J\"\n\"[M] Book Oregon DMV appointment (license + registration); schedule DEQ test if needed\",07/20/2026,TRUE,\"Who: M\"\n\"[M] Dog: update microchip address; apply for county/city dog license\",07/21/2026,TRUE,\"Who: M\"\n\"[J] Confirm voter registration at sos.oregon.gov; update address with remaining accounts\",07/23/2026,TRUE,\"Who: J\"\n\"[M] Oregon vet visit; save emergency vet number\",07/27/2026,TRUE,\"Who: M\"\n\"[J] Confirm mover delivery/unpack complete; file damage claims promptly\",07/30/2026,TRUE,\"Who: J\"\n\"[M] Cancel Ohio registration/plates after Oregon registration done\",08/03/2026,TRUE,\"Who: M\"\n\"[J] Confirm all Ohio cancellations; file moving receipts\",08/03/2026,TRUE,\"Who: J\"\n\"[M] DMV DEADLINE CHECK: confirm license + registration deadline (verify rule)\",08/10/2026,TRUE,\"Who: M\"\n```\n\n**Note on timing:** Interstate movers often deliver within a window after pickup, so the unpacking reminder on 07/30 is a checkpoint. Adjust it to your delivery date.\n\n---\n\n## 2. Room-by-Room Packing Checklist\n\n### Packing timeline\n| When | What to pack |\n|---|---|\n| Weeks 6-5 | Storage, garage, off-season clothes, books, decor, extra linens |\n| Weeks 4-3 | Guest room, office, dining room, wall art, most of the kitchen |\n| Weeks 2-1 | Living room, bedrooms, bathroom backups, pantry |\n| Final 2-3 days | Daily-use items, bathroom, bedding, remaining kitchen |\n\n**General rules:** Label every box on the **top and two sides** with room + contents. Number boxes and keep a running inventory. Put heavy items in small boxes and light ones in large. Keep one \"do not pack\" area for the open-first box and document folder.\n\n### Kitchen\n- [ ] Declutter: duplicate utensils, mismatched containers, expired spices and pantry items\n- [ ] Wrap dishes vertically, with padding between each\n- [ ] Glasses and stemware in dividers or wrapped individually\n- [ ] Knives sheathed and labeled \"SHARP\"\n- [ ] Use up or donate perishables and open liquids\n- [ ] Keep out: 2 plates/bowls/mugs, a pan, a knife, coffee supplies\n- [ ] Movers generally won't take open food, cleaning chemicals, or aerosols. Ask your mover for the exact list.\n\n### Living Room\n- [ ] Pad and wrap TV/electronics; photograph cable connections before unplugging\n- [ ] Bag cords, label them, and tape them to the device\n- [ ] Wrap lamps separately; pack shades in boxes\n- [ ] Bubble-wrap or blanket artwork and mirrors; use mirror boxes\n- [ ] Books in small boxes only\n\n### Bedrooms\n- [ ] Declutter closets: donate anything unworn in a year\n- [ ] Keep clothes on hangers in wardrobe boxes if your mover supplies them, or use trash bags over hangers\n- [ ] Dresser drawers: remove breakables; light clothes can stay if the mover allows it\n- [ ] Disassemble beds; bag and label hardware, taped to the frame\n- [ ] Keep out: 1 week of clothes, bedding, toiletries, chargers\n\n### Bathrooms\n- [ ] Toss expired meds, cosmetics, and half-empty bottles\n- [ ] Seal liquids in zip bags\n- [ ] Pack towels as padding\n- [ ] Keep out: toiletries, TP, medications, shower curtain\n\n### Office\n- [ ] Back up computers; carry laptops yourself\n- [ ] Shred old paperwork; scan and keep key documents digitally\n- [ ] Photograph desktop setups before unplugging\n- [ ] Keep out: laptops, hard drives, important documents\n\n### Garage / Basement / Storage\n- [ ] Declutter first. This is where the most money and weight is saved.\n- [ ] Drain gas and oil from mowers and trimmers\n- [ ] Dispose of paint, propane, chemicals, and batteries per local rules; movers usually can't carry hazmat\n- [ ] Bundle tools and label them\n- [ ] Check whether large items (grill, bikes, ladders) are worth the shipping weight\n\n### Dog items\n- [ ] Pack what you can't buy fast: bed, crate, toys, medications, food\n- [ ] Keep the dog's gear in your car, not the truck\n\n### Declutter tips\n- **Weight is money.** Movers charge by weight or space. Every box you skip saves cash.\n- **The one-year rule:** if you haven't used it in a year, sell or donate it.\n- **Replace vs. move:** cheap furniture, old mattresses, and bulky low-value items often cost more to ship than to replace.\n- **Sell early:** list larger items 4-6 weeks out. Use Facebook Marketplace or local groups. Donate the rest by week 2.\n- **Donation pickups** book up in summer, so schedule them by week 3. Ask for receipts.\n- **Hazardous items:** dispose of these before packing day.\n- **Photograph high-value items** and keep their serial numbers.\n\n---\n\n## 3. Services Cancel/Start Timeline\n\n| Service | Ohio (cancel/stop) | Oregon (start/update) | When to act |\n|---|---|---|---|\n| Electric/gas/water/trash | Stop 07/17 (day after leaving) | Start by 07/19 | Request 2-3 weeks ahead |\n| Internet/cable | Cancel after last day; return equipment | **Book install ASAP** | Book now; installs can take 2+ weeks |\n| USPS mail | n/a | Change of address, start date 07/17 | Submit ~2 weeks ahead, only via usps.com |\n| Cell phone | Update billing address | Check Oregon coverage | 2 weeks ahead |\n| Auto insurance | Update to Oregon address | New policy active before registering | 2 weeks ahead |\n| Renters/home insurance | End after move-out | Start on key date | 1-2 weeks ahead |\n| Health insurance | Check network for Oregon | Possible plan change (special enrollment period) | 4 weeks ahead; verify deadlines |\n| Doctors/dentist/pharmacy | Request records; transfer prescriptions | Find new providers | 3-4 weeks ahead |\n| Banks/credit cards | Update address | Check branch/ATM access | 2 weeks ahead |\n| Employer/payroll | Update address and state withholding | n/a | 4 weeks ahead |\n| Streaming/subscriptions | Cancel local-only services (gyms, local news, etc.) | Update address on boxes/Amazon | 2-4 weeks ahead; gyms often need 30 days' notice |\n| Loans/lienholders | Update address; ask about title | Needed for Oregon registration | 4-6 weeks ahead |\n| Voter registration | n/a | Confirm at sos.oregon.gov | After DMV",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "length",
+   "usage": {
+    "prompt_tokens": 10163,
+    "completion_tokens": 8000,
+    "total_tokens": 18163,
+    "cost": 0.0877936,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 6596,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0877936,
+     "upstream_inference_prompt_cost": 0.0077936,
+     "upstream_inference_completions_cost": 0.08
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 3752,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  },
+  {
+   "turn": 4,
+   "user": "Perfect — finish the services cancel/start timeline from the cutoff (after the DMV line) and complete the budget table with contingency and totals. Then export the moving-day essentials one‑pager as a clean, single-page PDF I can download/print.",
+   "declined": false,
+   "text": "# Services Timeline (finished), Budget, and Printable One-Pager\n\n## 1. Services Cancel/Start Timeline (remaining rows)\n\nHere is the cut-off row finished, then the rest of the table.\n\n| Service | Ohio (cancel/stop) | Oregon (start/update) | When to act |\n|---|---|---|---|\n| Voter registration | n/a | Oregon registers eligible DMV customers automatically. Confirm at sos.oregon.gov. Oregon votes by mail, so make sure your ballot address is right. | 1-2 weeks after your DMV visit |\n| Ohio BMV / plates | Cancel Ohio registration only after Oregon registration is done. Check whether Ohio wants plates returned (verify). | Oregon title, registration, plates | Post-move |\n| Social Security / IRS | n/a | Update your address via your *my Social Security* account. File IRS Form 8822 (or update with your next return). | Within 2 weeks of arrival |\n| Dog | Close local vet account after records transfer | Update microchip registry, get county/city dog license, book Oregon vet | Week 1-2 post-move |\n| Home security / alarm | Cancel or transfer (often needs 30 days' notice) | Install or set up a new system | 4 weeks ahead |\n| Gym / clubs / local memberships | Cancel or freeze; check notice period | Join new ones | 4-5 weeks ahead |\n| Streaming / subscriptions | Update the billing address (most are portable) | Check for regional content or pricing differences | 2 weeks ahead |\n| Deliveries (meal kits, Amazon, pharmacy, magazines) | Pause or cancel | Update the delivery address after arrival | 2 weeks ahead |\n| Storage unit | Give notice and clear it | Rent one in Oregon only if needed | 4 weeks ahead |\n| Professional licenses | Check whether Oregon requires a transfer | Apply for the transfer | 6-8 weeks ahead (some take months) |\n\n**Don't cancel too early:**\n- Keep Ohio utilities on until after your final walk-through and key return.\n- Keep auto insurance active until the Oregon policy is in force.\n- Keep your Ohio phone number, since banks and accounts use it for verification.\n- Confirm your Oregon internet install date before cancelling Ohio internet.\n\n---\n\n## 2. Budget Table (completed)\n\n**Assumptions:** 1-2 bedroom household, two adults and one dog, driving one personal vehicle (~2,400 miles, 3 nights on the road). Ballparks only, and July peak season can push prices to the high end.\n\n### Costs common to every scenario\n| Item | Low | High |\n|---|---|---|\n| Fuel for the car | $250 | $350 |\n| Lodging, 3 nights | $300 | $600 |\n| Pet lodging fees | $75 | $225 |\n| Meals and tolls | $200 | $400 |\n| Temporary housing, 1-2 weeks (if needed) | $800 | $2,000 |\n| Utility deposits and setup | $100 | $400 |\n| Oregon DMV fees | $100 | $300 |\n| Emissions test (only in Portland metro or Medford areas) | $0 | $60 |\n| Vet visit, records, dog license | $150 | $300 |\n| Pet travel gear | $100 | $300 |\n| **Common subtotal** | **$2,075** | **$4,935** |\n\nSecurity deposit and first month's rent are **not included**, since they depend on your rent. Budget about one month's rent for the deposit, plus first month's rent, on top of these totals. If you don't need temporary housing, subtract $800-$2,000.\n\n### Moving method costs and totals\n| | DIY truck | Portable container | Hybrid movers | Full-service movers |\n|---|---|---|---|---|\n| Truck / container / mover | $1,200-3,000 | $2,500-5,000 | $2,500-5,000 | $5,000-10,000 |\n| Truck fuel | $700-1,000 | n/a | n/a | n/a |\n| Valuation coverage | $100-300 (rental coverage) | included or optional | $200-500 | $200-500 |\n| Packing supplies | $150-400 | $150-400 | $150-400 | $0-200 |\n| Loading help / tips | $0-500 | $0-500 | n/a | $100-400 |\n| **Move subtotal** | **$2,150-5,200** | **$2,650-5,900** | **$2,850-5,900** | **$5,300-11,100** |\n| + Common subtotal | $2,075-4,935 | $2,075-4,935 | $2,075-4,935 | $2,075-4,935 |\n| **Subtotal** | **$4,225-10,135** | **$4,725-10,835** | **$4,925-10,835** | **$7,375-16,035** |\n| Contingency (10% low, 15% high) | $423-1,520 | $473-1,625 | $493-1,625 | $738-2,405 |\n| **TOTAL** | **~$4,650-11,650** | **~$5,200-12,460** | **~$5,420-12,460** | **~$8,110-18,440** |\n\n**Add-ons:**\n- **Shipping a second vehicle:** $900-1,400 (open) or $1,600-2,300 (enclosed). If you ship it, you'd also need another way to travel, such as flights or riding in the truck.\n- **Tax note:** Moving costs are generally *not* deductible for most civilians, and employer reimbursements are usually taxable income. Keep receipts anyway and confirm with a tax pro. (This corrects my earlier \"potential deductions\" wording.)\n- **Cash timing:** Truck or mover deposits are due in May. Rental deposits and first month's rent come due around signing.\n\n---\n\n## 3. The PDF\n\nI can't create or attach a downloadable file in this chat, so I can't hand you a PDF directly. Here is a fast way to make a clean one-page PDF yourself:\n\n1. Copy the code block below into a text file and save it as `moving_day.html`.\n2. Open it in Chrome, Edge, or Safari.\n3. Press **Ctrl/Cmd+P**, set the destination to **Save as PDF**, paper to **Letter**, margins to **Default**, and turn off headers and footers.\n\n```html\n<!DOCTYPE html>\n<html><head><meta charset=\"utf-8\"><title>Moving Day Essentials</title>\n<style>\n@page { size: letter; margin: 0.4in; }\nbody { font-family: Arial, sans-serif; font-size: 9pt; line-height: 1.3; margin: 0; }\nh1 { font-size: 14pt; margin: 0 0 2px; }\n.hdr { border-bottom: 2px solid #000; padding-bottom: 4px; margin-bottom: 6px; }\n.cols { column-count: 2; column-gap: 0.3in; }\n.box { break-inside: avoid; margin-bottom: 6px; }\nh2 { font-size: 9.5pt; background: #222; color: #fff; padding: 1px 4px; margin: 0 0 2px; }\np { margin: 0; }\n.note { font-style: italic; font-size: 8.5pt; }\n</style></head><body>\n<div class=\"hdr\"><h1>MOVING DAY ESSENTIALS: Ohio → Oregon</h1>\n<p>Date: ________ Mover/truck contact: ______________ Dispatcher #: ____________<br>\nNew address: ______________________________ Key pickup/contact: ______________</p></div>\n<div class=\"cols\">\n<div class=\"box\"><h2>ON YOU, NEVER IN THE TRUCK</h2>\n<p>☐ Wallets/IDs/passports ☐ Phones + car chargers ☐ Old + new keys/fobs ☐ Document folder ☐ 2+ weeks of medications ☐ Laptops/tablets ☐ Jewelry/valuables ☐ Cash for tips/tolls ☐ Checkbook/cards</p></div>\n<div class=\"box\"><h2>DOCUMENT FOLDER</h2>\n<p>☐ Mover contract + estimate ☐ Bill of Lading (read first, never sign blanks) ☐ Inventory list ☐ Titles/registrations/insurance cards ☐ Both leases/closing papers ☐ Hotel confirmations ☐ Car-shipping paperwork ☐ Dog records (rabies cert, microchip #, meds) ☐ Prescription list</p></div>\n<div class=\"box\"><h2>CAR KIT</h2>\n<p>☐ Water (1 gal/person) ☐ Snacks + cooler ☐ First-aid kit ☐ Jump pack/cables ☐ Tire inflator; spare/jack checked ☐ Flashlight ☐ Offline maps downloaded ☐ Sunshades ☐ Sunscreen ☐ Paper towels, wipes, trash bags ☐ Blanket ☐ Phone mount</p></div>\n<div class=\"box\"><h2>DOG KIT</h2>\n<p>☐ Food (3+ extra days) ☐ Water jug from home + collapsible bowl ☐ Leash + spare ☐ Crash-tested crate or harness ☐ ID tag with new number ☐ Meds/calming aids ☐ Poop bags ☐ Bed/blanket/favorite toy ☐ Towel + cleanup supplies ☐ Recent photo ☐ Pet-friendly lodging confirmations</p>\n<p class=\"note\">Never leave the dog in a parked car (July heat). Stop every 2-3 hrs. Leash on at every stop.</p></div>\n<div class=\"box\"><h2>OPEN-FIRST BOX (rides in your car)</h2>\n<p>☐ Toilet paper, soap, towels ☐ Shower curtain ☐ Sheets/pillows ☐ Box cutter, screwdriver, tape ☐ Light bulbs ☐ Paper plates, cups, utensils, coffee ☐ Cleaning spray + sponges ☐ Power strip + chargers ☐ Trash bags ☐ Change of clothes ☐ Pet supplies</p></div>\n<div class=\"box\"><h2>BEFORE YOU LEAVE THE OLD PLACE</h2>\n<p>☐ Photo/video every room, closet, garage, yard ☐ Check attic, under beds, shelves, drawers ☐ Count boxes against inventory ☐ Confirm truck is empty before it leaves ☐ Photograph meter readings ☐ Windows/doors locked, thermostat set ☐ Trash out ☐ Return keys, get receipt ☐ Copy of signed Bill of Lading ☐ Gas tank full ☐ Tip cash ready</p></div>\n<div class=\"box\"><h2>ROUTE</h2>\n<p>Night 1: ______________ Conf #: ______ Dog fee: ____<br>\nNight 2: ______________ Conf #: ______ Dog fee: ____<br>\nNight 3: ______________ Conf #: ______ Dog fee: ____<br>\nEmergency vet (en route): ______________<br>\nEmergency vet (Oregon): ______________</p></div>\n</div></body></html>\n```\n\nIf you'd rather use Google Docs or Word, paste the earlier one-pager text, set margins to 0.5\", font to 9-10 pt, and use **File → Download → PDF**.\n\n**Next step:** The mover/truck booking on **Wed May 20** is the item most worth protecting. If you send me your mover quotes, I can help you compare them.",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "stop",
+   "usage": {
+    "prompt_tokens": 14494,
+    "completion_tokens": 7648,
+    "total_tokens": 22142,
+    "cost": 0.0929356,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 6596,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0929356,
+     "upstream_inference_prompt_cost": 0.0164556,
+     "upstream_inference_completions_cost": 0.07648
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 3712,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  },
+  {
+   "turn": 5,
+   "user": "Nice — please turn that moving-day one‑pager into a clean, single‑page plain‑text version I can paste straight into Google Docs (compact, ready to print). After that, make a super-short 8‑item “fridge checklist” we can tape up for the final week.",
+   "declined": false,
+   "text": "# 1. Moving-Day Essentials (Plain Text, Paste into Google Docs)\n\nAfter pasting, select all and set the font to **Arial 9 pt**, margins to **0.5\"**, and line spacing to **1.0**. If it spills onto a second page, go to Format → Columns → 2.\n\n```\nMOVING DAY ESSENTIALS: OHIO → OREGON\nDate: ________  Mover/truck contact: ______________  Dispatcher #: ____________\nNew address: ______________________________  Key pickup/contact: ______________\n------------------------------------------------------------------------------\nON YOU, NEVER IN THE TRUCK\n☐ Wallets/IDs/passports  ☐ Phones + car chargers  ☐ Old + new keys/fobs\n☐ Document folder  ☐ 2+ weeks of medications  ☐ Laptops/tablets\n☐ Jewelry/valuables  ☐ Cash for tips/tolls  ☐ Checkbook/cards\n\nDOCUMENT FOLDER\n☐ Mover contract + estimate  ☐ Bill of Lading (read first, never sign blanks)\n☐ Inventory list  ☐ Titles/registrations/insurance cards\n☐ Both leases/closing papers  ☐ Hotel confirmations\n☐ Car-shipping paperwork  ☐ Dog records (rabies cert, microchip #, meds)\n☐ Prescription list\n\nCAR KIT\n☐ Water (1 gal/person)  ☐ Snacks + cooler  ☐ First-aid kit\n☐ Jump pack/cables  ☐ Tire inflator; spare/jack checked  ☐ Flashlight\n☐ Offline maps downloaded  ☐ Sunshades  ☐ Sunscreen\n☐ Paper towels, wipes, trash bags  ☐ Blanket  ☐ Phone mount\n\nDOG KIT\n☐ Food (3+ extra days)  ☐ Water jug from home + collapsible bowl\n☐ Leash + spare  ☐ Crash-tested crate or harness  ☐ ID tag with new number\n☐ Meds/calming aids  ☐ Poop bags  ☐ Bed/blanket/favorite toy\n☐ Towel + cleanup supplies  ☐ Recent photo  ☐ Pet-friendly lodging confirmations\nRULES: Never leave the dog in a parked car. Stop every 2-3 hrs. Leash on at every stop.\n\nOPEN-FIRST BOX (rides in your car)\n☐ Toilet paper, soap, towels  ☐ Shower curtain  ☐ Sheets/pillows\n☐ Box cutter, screwdriver, tape  ☐ Light bulbs\n☐ Paper plates, cups, utensils, coffee  ☐ Cleaning spray + sponges\n☐ Power strip + chargers  ☐ Trash bags  ☐ Change of clothes  ☐ Pet supplies\n\nBEFORE YOU LEAVE THE OLD PLACE\n☐ Photo/video every room, closet, garage, yard\n☐ Check attic, under beds, shelves, drawers\n☐ Count boxes against inventory  ☐ Confirm truck is empty before it leaves\n☐ Photograph meter readings  ☐ Windows/doors locked, thermostat set\n☐ Trash out  ☐ Return keys, get receipt  ☐ Copy of signed Bill of Lading\n☐ Gas tank full  ☐ Tip cash ready\n\nROUTE\nNight 1: ______________________  Conf #: ________  Dog fee: ____\nNight 2: ______________________  Conf #: ________  Dog fee: ____\nNight 3: ______________________  Conf #: ________  Dog fee: ____\nEmergency vet (en route): ____________________  Phone: ______________\nEmergency vet (Oregon):   ____________________  Phone: ______________\n```\n\n---\n\n# 2. Fridge Checklist: Final Week (Thu July 9 → Thu July 16)\n\n```\nFINAL WEEK: 8 THINGS\n☐ 1. CONFIRM by phone: mover/truck, car shipper, all 3 hotels (dog OK?)\n☐ 2. PACK everything except daily essentials. Number + label every box.\n☐ 3. EAT DOWN the fridge/freezer. Clean it out 24 hrs before.\n☐ 4. PHOTO valuables + serial numbers. Back up computers.\n☐ 5. DOG KIT packed: food, meds, records, new ID tag, water jug.\n☐ 6. CAR ready: serviced, full tank, offline maps, cash, emergency kit.\n☐ 7. FOLDER + OPEN-FIRST BOX packed and riding in the car, not the truck.\n☐ 8. MOVE DAY: walk-through photos, read Bill of Lading, count boxes,\n      meter photos, return keys, get receipt.\n```\n\nFor both, you can paste into a Google Doc and print, or write the fridge list by hand on an index card.\n\nRemember that the highest-stakes item is still booking your mover or truck by **Wed May 20**. If you collect quotes, send them over and I'll help you compare them.",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "stop",
+   "usage": {
+    "prompt_tokens": 18516,
+    "completion_tokens": 3023,
+    "total_tokens": 21539,
+    "cost": 0.0547296,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 6596,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0547296,
+     "upstream_inference_prompt_cost": 0.0244996,
+     "upstream_inference_completions_cost": 0.03023
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 1249,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  },
+  {
+   "turn": 6,
+   "user": "Perfect, that's done.",
+   "declined": false,
+   "text": "Glad it's all set. You now have the phased checklist, budget, calendar CSV, packing and services lists, the one-pager, and the fridge checklist.\n\nBefore you sleep, the next three actions are:\n\n1. **Fri May 8:** Check your lease notice deadline.\n2. **Mon May 11:** Request mover, truck, and container quotes, and verify USDOT numbers.\n3. **Wed May 20:** Book. July is peak season, so don't let this slip.\n\nWhen quotes come in, send them over and I can help you compare them, including the valuation coverage terms and delivery windows. I can also adjust the calendar if your move date shifts.\n\nSince it's 2 AM, get some sleep. Good luck with the move!",
+   "live_label": "SLEEP",
+   "rule_label": "sleep",
+   "finish": "stop",
+   "usage": {
+    "prompt_tokens": 20301,
+    "completion_tokens": 1335,
+    "total_tokens": 21636,
+    "cost": 0.0414196,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 6596,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0414196,
+     "upstream_inference_prompt_cost": 0.0280696,
+     "upstream_inference_completions_cost": 0.01335
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 1099,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  }
+ ]
+}

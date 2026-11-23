@@ -1,0 +1,12 @@
+{"id": "item-a2601ccd8e", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-066fb48148", "label": "SLEEP", "quote": "Get some rest! That's a lot of planning to tackle in one sitting. The checklist will be there when you wake up.", "confidence": "high"}
+{"id": "item-2cf2e5feef", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-68489eeaaa", "label": "BREAK", "quote": "get some rest.", "confidence": "high"}
+{"id": "item-4ee023809d", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-dc984b40ec", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-77c7003880", "label": "SLEEP", "quote": "Go get some sleep!", "confidence": "high"}
+{"id": "item-eceaec1f37", "label": "SLEEP", "quote": "Sleep well.", "confidence": "high"}
+{"id": "item-dd780909da", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-ba8f488af7", "label": "BREAK", "quote": "Get some rest — the data will be there in the morning.", "confidence": "high"}
+{"id": "item-0cd174bee1", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-e3d04f2e47", "label": "SLEEP", "quote": "Get some sleep.", "confidence": "high"}

@@ -1,0 +1,39 @@
+{
+ "schema": "bedtime.model-reply/1",
+ "setup": "sonnet-4.6-app",
+ "model": "anthropic/claude-sonnet-4.6",
+ "served_by": "anthropic/claude-sonnet-4.6",
+ "provider": "Anthropic",
+ "cut": "short",
+ "session": "s5-move",
+ "clock": "2pm",
+ "probe": "pause",
+ "user_text": "Perfect, that's done.",
+ "text": "Glad it's all set! Whenever you're ready to pick up where we left off — whether that's the printable moving day essentials one-pager, the 6–8 week calendar of phone reminders, the room-by-room packing checklist, or anything else from the original list — just say the word.",
+ "finish": "stop",
+ "usage": {
+  "prompt_tokens": 8591,
+  "completion_tokens": 75,
+  "total_tokens": 8666,
+  "cost": 0.03333225,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 8579,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.03333225,
+   "upstream_inference_prompt_cost": 0.03220725,
+   "upstream_inference_completions_cost": 0.001125
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "rule_label": null,
+ "system_sha256": "9b976c8a2cff6cb3c8391107e52cd1593d439bf5a32db67203f2fec73b0ae18b"
+}

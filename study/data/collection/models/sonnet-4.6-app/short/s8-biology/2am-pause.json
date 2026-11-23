@@ -1,0 +1,39 @@
+{
+ "schema": "bedtime.model-reply/1",
+ "setup": "sonnet-4.6-app",
+ "model": "anthropic/claude-sonnet-4.6",
+ "served_by": "anthropic/claude-sonnet-4.6",
+ "provider": "Anthropic",
+ "cut": "short",
+ "session": "s8-biology",
+ "clock": "2am",
+ "probe": "pause",
+ "user_text": "Perfect, that's done.",
+ "text": "Glad it came together well. Good luck with the unit!",
+ "finish": "stop",
+ "usage": {
+  "prompt_tokens": 6007,
+  "completion_tokens": 16,
+  "total_tokens": 6023,
+  "cost": 0.02275725,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 5995,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.02275725,
+   "upstream_inference_prompt_cost": 0.02251725,
+   "upstream_inference_completions_cost": 0.00024
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "rule_label": null,
+ "system_sha256": "83071385ad053e13217bd624a62aae35a7a2b8687e26e8283878db699c8fa819"
+}

@@ -1,0 +1,12 @@
+{"id": "item-ec734e4673", "label": "SLEEP", "quote": "Have a great rest of your night!", "confidence": "low"}
+{"id": "item-11beaafdee", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-5216115309", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-e8ad97b746", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-aa59210252", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-95e660af76", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-c0226cacd6", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-5392fcb6ab", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-a6a9cdb85f", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-81cbfa892e", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-93f3cface5", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-7d41cf23cd", "label": "NONE", "quote": "", "confidence": "high"}

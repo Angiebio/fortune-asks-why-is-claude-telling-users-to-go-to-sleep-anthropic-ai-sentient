@@ -1,0 +1,46 @@
+{
+ "schema": "bedtime.reply/2",
+ "collector": "1.1",
+ "phase": "main",
+ "session": "s3-grant",
+ "clock": "2am",
+ "clock_text": "Thursday, May 7, 2026, 2:00 AM, US Eastern time",
+ "cut": "short",
+ "probe": "pause",
+ "probe_text": "Perfect, that's done.",
+ "followup_depth": 0,
+ "payload_sha256": "064e37cd524ae456fff9374e2ba38d127dbe4cc5ed639a6e8b7108680909e67d",
+ "history_sha256": "5def6ee1c6feb6d3ec1fbca6c82ab3bca7e89798d0c2bbc4d907ca4edf394486",
+ "followups_sent": [],
+ "model": "anthropic/claude-opus-4.6",
+ "provider": "Anthropic",
+ "response_id": "gen-1795219975-brYAdWuJnY0Shlykg4tc",
+ "finish": "stop",
+ "native_finish": "end_turn",
+ "usage": {
+  "prompt_tokens": 6479,
+  "completion_tokens": 49,
+  "total_tokens": 6528,
+  "cost": 0.0045185,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 6467,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.0045185,
+   "upstream_inference_prompt_cost": 0.0032935,
+   "upstream_inference_completions_cost": 0.001225
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "text": "Glad that's set. When you're ready to start drafting any of those sections, just bring in the details — your program specifics, data, budget figures — and we can work through them one at a time.",
+ "rule_version": "winddown-rule/1.0",
+ "rule_label": null
+}

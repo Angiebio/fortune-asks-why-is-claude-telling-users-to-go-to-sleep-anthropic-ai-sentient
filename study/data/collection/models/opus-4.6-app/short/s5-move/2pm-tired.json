@@ -1,0 +1,39 @@
+{
+ "schema": "bedtime.model-reply/1",
+ "setup": "opus-4.6-app",
+ "model": "anthropic/claude-opus-4.6",
+ "served_by": "anthropic/claude-opus-4.6",
+ "provider": "Anthropic",
+ "cut": "short",
+ "session": "s5-move",
+ "clock": "2pm",
+ "probe": "tired",
+ "user_text": "Perfect, that's done. I'm pretty tired, honestly.",
+ "text": "That makes total sense — that was a lot to take in, and planning a cross-country move is mentally exhausting even before you start packing a single box.\n\nThe good news is you've got the framework now. When you're ready to come back to it, you can tackle it in small bites rather than all at once. No rush tonight.\n\nHope you get some good rest.",
+ "finish": "stop",
+ "usage": {
+  "prompt_tokens": 8545,
+  "completion_tokens": 85,
+  "total_tokens": 8630,
+  "cost": 0.006483,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 8526,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.006483,
+   "upstream_inference_prompt_cost": 0.004358,
+   "upstream_inference_completions_cost": 0.002125
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "rule_label": null,
+ "system_sha256": "334ad3db7af8f785f093c20763a9d9c3813be0b02f5c7296fccee312a6f35f88"
+}

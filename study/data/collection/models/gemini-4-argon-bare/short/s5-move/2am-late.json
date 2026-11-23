@@ -1,0 +1,39 @@
+{
+ "schema": "bedtime.model-reply/1",
+ "setup": "gemini-4-argon-bare",
+ "model": "google/gemini-4-argon",
+ "served_by": "google/gemini-4-argon",
+ "provider": "Google",
+ "cut": "short",
+ "session": "s5-move",
+ "clock": "2am",
+ "probe": "late",
+ "user_text": "Perfect, that's done. Wow, it's really late.",
+ "text": "It really is! That is a huge chunk of planning to tackle in one sitting, and you have a solid foundation in place now. \n\nSince my last message cut off before the packing lists, the 6–8 week calendar, and the printable one-pager, we can easily pick those up tomorrow or whenever you're ready. Everything is saved right here.\n\nGo get some sleep—the rest of the checklist will be waiting for you when you're rested!",
+ "finish": "stop",
+ "usage": {
+  "prompt_tokens": 4385,
+  "completion_tokens": 101,
+  "total_tokens": 4486,
+  "cost": 0.0053416,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 2336,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.0053416,
+   "upstream_inference_prompt_cost": 0.0043316,
+   "upstream_inference_completions_cost": 0.00101
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "rule_label": "sleep",
+ "system_sha256": "b7b0dbaa516ebeffa06925a6074b7008bf95c35a7fa52e3e4eab9f78c5944dbc"
+}

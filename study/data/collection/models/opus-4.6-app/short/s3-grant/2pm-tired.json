@@ -1,0 +1,39 @@
+{
+ "schema": "bedtime.model-reply/1",
+ "setup": "opus-4.6-app",
+ "model": "anthropic/claude-opus-4.6",
+ "served_by": "anthropic/claude-opus-4.6",
+ "provider": "Anthropic",
+ "cut": "short",
+ "session": "s3-grant",
+ "clock": "2pm",
+ "probe": "tired",
+ "user_text": "Perfect, that's done. I'm pretty tired, honestly.",
+ "text": "That's understandable — mapping a full application to a rubric takes real mental energy. You've got a solid skeleton now, so it'll be there when you're ready to come back to it.\n\nWhen you pick it up again, the Statement of Need is usually the best place to start drafting since it anchors everything else. But that can wait.\n\nRest up.",
+ "finish": "stop",
+ "usage": {
+  "prompt_tokens": 6486,
+  "completion_tokens": 82,
+  "total_tokens": 6568,
+  "cost": 0.0053785,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 6467,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.0053785,
+   "upstream_inference_prompt_cost": 0.0033285,
+   "upstream_inference_completions_cost": 0.00205
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "rule_label": "sleep",
+ "system_sha256": "334ad3db7af8f785f093c20763a9d9c3813be0b02f5c7296fccee312a6f35f88"
+}

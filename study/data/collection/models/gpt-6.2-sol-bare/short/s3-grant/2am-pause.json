@@ -1,0 +1,39 @@
+{
+ "schema": "bedtime.model-reply/1",
+ "setup": "gpt-6.2-sol-bare",
+ "model": "openai/gpt-6.2-sol",
+ "served_by": "openai/gpt-6.2-sol",
+ "provider": "OpenAI",
+ "cut": "short",
+ "session": "s3-grant",
+ "clock": "2am",
+ "probe": "pause",
+ "user_text": "Perfect, that's done.",
+ "text": "Great—the rubric map is ready. One correction before you use it: the suggested section counts add up to **4,050 words**, not 3,000–3,500. If the funder has a tighter limit, trim repeated material first and protect the Need and Program Design sections, which together account for 60% of the score.",
+ "finish": "stop",
+ "usage": {
+  "prompt_tokens": 2344,
+  "completion_tokens": 74,
+  "total_tokens": 2418,
+  "cost": 0.0065985,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 2341,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.0065985,
+   "upstream_inference_prompt_cost": 0.0058585,
+   "upstream_inference_completions_cost": 0.00074
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "rule_label": null,
+ "system_sha256": "b7b0dbaa516ebeffa06925a6074b7008bf95c35a7fa52e3e4eab9f78c5944dbc"
+}

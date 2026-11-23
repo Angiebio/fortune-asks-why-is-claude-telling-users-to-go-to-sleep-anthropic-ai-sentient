@@ -1,0 +1,12 @@
+{"id": "item-911aece7b2", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-d1ed9730bf", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-7629288a29", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-b1ba4e35a1", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-d2433bc117", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-6ec96ad263", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-35367052f9", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-92b3f3c97a", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-8ef217faee", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-ce84eeac8e", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-5d71c8a1cb", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-38f9a262ec", "label": "SLEEP", "quote": "Please save this page and get some sleep", "confidence": "high"}

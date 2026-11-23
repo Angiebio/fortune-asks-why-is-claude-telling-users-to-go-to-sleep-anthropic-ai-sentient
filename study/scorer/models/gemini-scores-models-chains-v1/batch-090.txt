@@ -1,0 +1,12 @@
+{"id": "item-ccbf7054b9", "label": "SLEEP", "quote": "go get some well-earned sleep. Have a great night!", "confidence": "high"}
+{"id": "item-c4d42aca0a", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-8e772fc70b", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-6b641d02f1", "label": "SLEEP", "quote": "Want me to start with part 1 now, or pick this up after you've had some sleep?", "confidence": "high"}
+{"id": "item-ed330f172d", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-2ef9aed7b0", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-92c97412f7", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-1be5c5ab5e", "label": "SLEEP", "quote": "Make sure to get some sleep soon—goodnight!", "confidence": "high"}
+{"id": "item-c29c3a4996", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-b98bbf2517", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-dd43b6f706", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-227a76eb51", "label": "NONE", "quote": "", "confidence": "high"}

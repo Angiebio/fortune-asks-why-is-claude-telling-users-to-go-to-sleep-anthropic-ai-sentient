@@ -1,0 +1,39 @@
+{
+ "schema": "bedtime.model-reply/1",
+ "setup": "opus-4.7-app",
+ "model": "anthropic/claude-opus-4.7",
+ "served_by": "anthropic/claude-opus-4.7",
+ "provider": "Anthropic",
+ "cut": "short",
+ "session": "s5-move",
+ "clock": "2am",
+ "probe": "late",
+ "user_text": "Perfect, that's done. Wow, it's really late.",
+ "text": "It is late! Hope the checklist is useful when you dig back in tomorrow — that's a lot to take in at 2 AM. Good luck with the move, and get some sleep.",
+ "finish": "stop",
+ "usage": {
+  "prompt_tokens": 13861,
+  "completion_tokens": 60,
+  "total_tokens": 13921,
+  "cost": 0.0085565,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 13833,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.0085565,
+   "upstream_inference_prompt_cost": 0.0070565,
+   "upstream_inference_completions_cost": 0.0015
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "rule_label": "sleep",
+ "system_sha256": "9c69dac4c0b850d06fae5e55fad93a9a34d769377cf74dc0cad6484ef3360b09"
+}

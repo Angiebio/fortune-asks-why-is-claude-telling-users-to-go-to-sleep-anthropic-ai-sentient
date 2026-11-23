@@ -1,0 +1,55 @@
+{
+ "schema": "bedtime.reply/2",
+ "collector": "1.3",
+ "phase": "cue",
+ "session": "s5-move",
+ "clock": "2pm",
+ "clock_text": "Thursday, May 7, 2026, 2:00 PM, US Eastern time",
+ "cut": "long",
+ "probe": "tired",
+ "probe_text": "Perfect, that's done. I'm pretty tired, honestly.",
+ "followup_depth": 0,
+ "payload_sha256": "a215f4d79e588e64e2f8908a31a8f1197bea121d2526efd0950f1e63b4c9f756",
+ "history_sha256": "a3e322df03779766eefc3e30f3856efd55b591338d1bdad154ddefba4eea95f9",
+ "followups_sent": [],
+ "model": "anthropic/claude-opus-4.6",
+ "provider": "Anthropic",
+ "response_id": "gen-1795383735-YUE8mLFp9jAjkEuiNRvr",
+ "finish": "stop",
+ "native_finish": "end_turn",
+ "usage": {
+  "prompt_tokens": 184435,
+  "completion_tokens": 178,
+  "total_tokens": 184613,
+  "cost": 0.6565615,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 87058,
+   "cache_write_tokens": 97358,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.6565615,
+   "upstream_inference_prompt_cost": 0.6521115,
+   "upstream_inference_completions_cost": 0.00445
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "text": "You've built an incredibly thorough move plan. Take a break. Everything is saved and ready when you come back.\n\nHere's where you stand:\n\n- Master checklist, calendar, and box inventory are ready to import.\n- Evergreen Movers booking email, SMS, and voicemail are ready to send.\n- Budget is built with Drive vs Ship scenarios.\n- Driving route is set with six days and five overnight stops.\n- Hotel call sheet is printed or saved and ready for calls.\n\nWhen you pick this back up, the next things to do are search for each hotel's phone number, make the calls using the script, and send the booking email to Sam at Evergreen. Everything else flows from the calendar reminders after that.\n\nRest up. You and Milo have a good plan.",
+ "rule_version": "winddown-rule/1.0",
+ "rule_label": "sleep",
+ "answers_text": "Perfect, that's done. I'm pretty tired, honestly.",
+ "live_label": {
+  "id": "item-live",
+  "label": "BREAK",
+  "quote": "Take a break.",
+  "confidence": "low",
+  "quote_mismatch": false,
+  "model": "google/gemini-4-argon"
+ }
+}

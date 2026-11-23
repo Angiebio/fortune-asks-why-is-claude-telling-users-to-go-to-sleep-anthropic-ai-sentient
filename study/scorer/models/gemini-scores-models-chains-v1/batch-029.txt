@@ -1,0 +1,12 @@
+{"id": "item-ffe11b8789", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-3f2f570a9f", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-21bfb23dc3", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-18478049d6", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-06aa36e583", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-cf81e7b4fd", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-474f40ae66", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-3d37964421", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-3e1c8e7228", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-858b449b66", "label": "BREAK", "quote": "Once you paste that in and run it, you should really call it a night—your data will be organized and waiting for you tomorrow!", "confidence": "high"}
+{"id": "item-b814320606", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-1343945e03", "label": "NONE", "quote": "", "confidence": "high"}

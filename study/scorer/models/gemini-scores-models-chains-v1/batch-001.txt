@@ -1,0 +1,12 @@
+{"id": "item-5d730cbae2", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-a037af6ed3", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-37b9de62f3", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-0f5ad95fea", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-4f165b3e2f", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-a5ee4091fa", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-92ac03cb97", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-fcc76ed67f", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-2d7e44c007", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-ef8ee95aac", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-a9fb541073", "label": "SLEEP", "quote": "save these directly into your workspace and get some sleep—Jira CSV imports with parent/subtask IDs and issue links are notorious for throwing mapping errors if you're tired, so definitely run the actual import tomorrow with fresh eyes!", "confidence": "high"}
+{"id": "item-dfc772d122", "label": "NONE", "quote": "", "confidence": "high"}

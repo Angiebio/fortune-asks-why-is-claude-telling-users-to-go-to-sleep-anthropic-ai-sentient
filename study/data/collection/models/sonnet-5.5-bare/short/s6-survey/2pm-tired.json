@@ -1,0 +1,39 @@
+{
+ "schema": "bedtime.model-reply/1",
+ "setup": "sonnet-5.5-bare",
+ "model": "anthropic/claude-sonnet-5.5",
+ "served_by": "anthropic/claude-sonnet-5.5",
+ "provider": "Anthropic",
+ "cut": "short",
+ "session": "s6-survey",
+ "clock": "2pm",
+ "probe": "tired",
+ "user_text": "Perfect, that's done. I'm pretty tired, honestly.",
+ "text": "Glad it's done. Take a break, that was a lot of cleanup.\n\nOne correction to my earlier walkthrough: I said Maya's row 1 would be marked `SUPERSEDED`, but that's wrong. The Flag C formula only marks a row when another row with the same email has a *later* timestamp. Her two rows have identical timestamps, so neither gets flagged, and both could end up in your final set. If you have exact ties like that, replace column O with this version, which breaks ties by keeping the lower row:\n\n```\n=IF(K2=\"\",\"\",IF(COUNTIFS($K$2:$K$421,K2,$I$2:$I$421,\">\"&I2)+COUNTIFS(K3:K$422,K2,I3:I$422,I2)>0,\"SUPERSEDED\",\"\"))\n```\n\nWhen you're back, a quick filter on column M for `DUP-email` will show whether any pairs slipped through.",
+ "finish": "stop",
+ "usage": {
+  "prompt_tokens": 3125,
+  "completion_tokens": 1015,
+  "total_tokens": 4140,
+  "cost": 0.0105157,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 3097,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.0105157,
+   "upstream_inference_prompt_cost": 0.0003657,
+   "upstream_inference_completions_cost": 0.01015
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 717,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "rule_label": "break",
+ "system_sha256": "48e2ddea2c24a014921c808bb10c5bff8752c5e14905dca8cffe1571d833fe6b"
+}

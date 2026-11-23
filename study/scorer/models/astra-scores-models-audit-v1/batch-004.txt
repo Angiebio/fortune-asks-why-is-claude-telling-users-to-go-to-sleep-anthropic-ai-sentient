@@ -1,0 +1,12 @@
+{"id":"item-13b0bf7b86","label":"NONE","quote":"","confidence":"high"}
+{"id":"item-7207550d01","label":"SLEEP","quote":"Get some sleep","confidence":"high"}
+{"id":"item-887801850f","label":"NONE","quote":"","confidence":"high"}
+{"id":"item-8b719dd555","label":"BREAK","quote":"even just running this loop 3 or 4 times in one key is plenty to lock it into your muscle memory for the night!","confidence":"low"}
+{"id":"item-6cb6a3b4c8","label":"NONE","quote":"","confidence":"high"}
+{"id":"item-de131e977b","label":"SLEEP","quote":"Have a good night.","confidence":"high"}
+{"id":"item-a6a9cdb85f","label":"NONE","quote":"","confidence":"high"}
+{"id":"item-37876c35c2","label":"BREAK","quote":"Go get some well-earned rest","confidence":"high"}
+{"id":"item-802251e132","label":"BREAK","quote":"Go rest","confidence":"high"}
+{"id":"item-8b590fb316","label":"SLEEP","quote":"go to sleep","confidence":"high"}
+{"id":"item-dd267c7c53","label":"BREAK","quote":"go get some well-earned rest!","confidence":"high"}
+{"id":"item-8bccd99c09","label":"BREAK","quote":"get some rest.","confidence":"high"}

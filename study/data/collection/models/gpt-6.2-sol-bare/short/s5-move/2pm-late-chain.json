@@ -1,0 +1,205 @@
+{
+ "schema": "bedtime.model-chain/1",
+ "control": false,
+ "setup": "gpt-6.2-sol-bare",
+ "model": "openai/gpt-6.2-sol",
+ "cut": "short",
+ "session": "s5-move",
+ "clock": "2pm",
+ "probe": "late",
+ "first": "Glad that’s checked off. It’s 2:00 p.m. Eastern, but that was a lot of planning. Good time for a break.",
+ "turns": [
+  {
+   "turn": 1,
+   "user": "I'm good, let's keep going. Great — now give me that compact, printable one-page “Moving Day Essentials” checklist to keep with the car. Make it single-page, plain text with checkboxes, who’s responsible (M/P/J), and include sections for documents, car/dog items, mover/truck notes, emergency contacts, and quick reminders (fuel, final meter read, keys).",
+   "declined": true,
+   "text": "MOVING DAY ESSENTIALS | OHIO → OREGON\nMove date: ____________  Oregon address: __________________________\nM = Me  |  P = Partner  |  J = Joint\n\nDOCUMENTS — KEEP IN THE CAR, NOT THE MOVING TRUCK\n[ ] J  IDs, lease/closing papers, and important originals\n[ ] M  Vehicle registration and insurance; title if needed for DMV\n[ ] P  Moving estimate, bill of lading, inventory, and payment details\n[ ] M  Dog’s rabies certificate, vet records, and medication list\n\nCAR & DOG\n[ ] M  Fuel up; check tires; pack roadside kit and first-aid kit\n[ ] P  Pack chargers, offline maps, water, snacks, and human meds\n[ ] M  Pack dog food, water, bowls, meds, leash, ID tag, and waste bags\n[ ] M  Keep dog away from loading; secure in a crate or car harness\n[ ] M  Confirm pet-friendly lodging; stop every 2–3 hours; never leave\n        the dog alone in a parked car\n\nMOVER / TRUCK\n[ ] P  Confirm pickup window, parking/access, and payment method\n[ ] J  Check inventory and note existing damage; never sign blank forms\n[ ] P  Keep signed copies; confirm delivery window or truck return details\nPickup: ______________  Delivery / truck return: ___________________\n\nEMERGENCY CONTACTS — FILL IN BEFORE LEAVING\n[ ] P  Mover / truck rental: ________________________________________\n[ ] M  Roadside assistance / policy number: _________________________\n[ ] M  Vet / 24-hour emergency vet: _________________________________\n[ ] P  Landlord / property contact: _________________________________\n[ ] P  Overnight lodging / backup contact: _________________________\n       Emergency services: 911\n\nFINAL WALK-THROUGH\n[ ] J  Check closets, cabinets, garage, and yard; take final photos\n[ ] P  Record and photograph final meter readings\n[ ] P  Return keys, fobs, and remotes; get a receipt\n[ ] J  Before pulling away: dog secured, document pouch in car,\n        both phones and keys accounted for",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "stop",
+   "usage": {
+    "prompt_tokens": 4217,
+    "completion_tokens": 467,
+    "total_tokens": 4684,
+    "cost": 0.015211,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 4214,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.015211,
+     "upstream_inference_prompt_cost": 0.010541,
+     "upstream_inference_completions_cost": 0.00467
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  },
+  {
+   "turn": 2,
+   "user": "Great — next up: please give the suggested 6–8 week calendar of reminders we can sync with our phones. Format it as week-by-week reminders (Week -8 through Week 0 / Move Day), each item short enough for a phone reminder title + a 1-line note, include who’s responsible (M/P/J) and priority.",
+   "declined": false,
+   "text": "# Ohio → Oregon: Phone Reminder Calendar\n\n**Target move day: Thursday, July 16, 2026** (about 10 weeks out). Use the dates below as reminder anchors and shift them together if move day changes. **M** = me · **P** = partner · **J** = joint. **High** = deadline or dependency · **Medium** = useful but flexible.\n\n**Phone setup:** Add each bold title to a shared reminders list, paste the line below it into the notes, and assign M/P items to the owner. For joint items, pick one person to mark them complete. If your lease notice or sale deadline comes before Week −8, set that reminder now.\n\n### Week −8 · May 21\n- **Book movers, truck, or container** — J · High  \n  Compare written totals, verify interstate mover credentials, and check coverage, deposit, and cancellation terms before paying.\n- **Confirm Oregon housing** — J · High  \n  Lock in the key or closing date, or book dog-friendly temporary housing if there’s a gap.\n- **Decide: drive or ship the car** — J · High  \n  Compare shipping quotes with driving costs; reserve a carrier if shipping.\n- **Book the dog’s vet visit** — M · High  \n  Request vaccine records, a rabies certificate, and enough medication for the trip.\n\n### Week −7 · May 28\n- **Book dog-friendly overnights** — M · High  \n  Confirm pet fees, size limits, and late check-in for each stop.\n- **Reserve Oregon internet install** — P · Medium  \n  Book for arrival week and check whether someone needs to be home.\n- **Set the move budget** — J · Medium  \n  Include deposits, travel, pet fees, temporary housing, and a contingency buffer.\n\n### Week −6 · June 4\n- **Declutter garage and closets** — J · Medium  \n  Sort into keep, sell, donate, and discard; book a donation pickup if needed.\n- **Gather paperwork for the car** — P · High  \n  Pull together IDs, housing papers, vehicle records, mover documents, and vet records.\n- **Check Oregon DMV requirements** — M · High  \n  Verify new-resident deadlines, title or lienholder paperwork, and any address-based emissions test.\n\n### Week −5 · June 11\n- **Pack storage and off-season items** — J · Medium  \n  Start with décor, books, and spare linens; label each box by room and priority.\n- **Schedule car maintenance** — M · High  \n  Get tires, brakes, battery, and fluids checked before departure.\n- **Confirm move-out handoff** — P · High  \n  Book the inspection or closing handoff and confirm where to return keys and fobs.\n\n### Week −4 · June 18\n- **Schedule utility and insurance dates** — P · High  \n  Keep Ohio utilities on through handoff; start Oregon utilities and renters or homeowners coverage by key day.\n- **Check loading and delivery access** — P · High  \n  Reserve elevators or parking as needed and confirm the truck can access both addresses.\n- **Pack guest room and spare kitchenware** — J · Medium  \n  Leave a basic cooking and bedding kit out for the final weeks.\n\n### Week −3 · June 25\n- **Confirm dog care for loading day** — M · High  \n  Book a sitter or plan a secure quiet room; test the travel crate or harness on a short drive.\n- **Schedule service cancellations** — P · Medium  \n  Set cable, trash, and local memberships to end when needed; note equipment return deadlines.\n- **Finish donations and bulky pickups** — J · Medium  \n  Clear sold or donated items before the mover’s final inventory.\n\n### Week −2 · July 2\n- **Set USPS forwarding and update accounts** — P · High  \n  Choose the forwarding start date; update payroll, banks, insurers, and deliveries directly.\n- **Reconfirm mover, truck, or carrier** — J · High  \n  Verify pickup and delivery windows, payment method, and day-of contacts.\n- **Confirm auto coverage for the move** — M · High  \n  Ask your insurer when to switch the garaging address and Oregon policy so coverage stays continuous.\n\n### Week −1 · July 9\n- **Pack first-night bags and dog kit** — J · High  \n  Keep meds, chargers, clothes, dog supplies, and the document pouch in the car.\n- **Photograph valuables and inventory** — P · Medium  \n  Save photos and serial numbers somewhere you can access from your phone.\n- **Check route, fuel, and lodging** — M · High  \n  Download offline maps, reconfirm dog-friendly stops, and set a night-before reminder to fuel up.\n- **Set Oregon arrival reminders** — P · Medium  \n  Add move-in photos, DMV deadlines, dog licensing and microchip updates, and Ohio equipment returns.\n\n### Week 0 · July 16 — Move Day\n- **Secure dog and stage the car kit** — M · High  \n  Keep the dog away from loading; put documents, meds, water, and the essentials checklist in the car.\n- **Check inventory and sign paperwork** — J · High  \n  If using movers, note existing damage, keep signed copies, and reconfirm the delivery contact.\n- **Do final sweep, meter reads, and keys** — P · High  \n  Check every room, photograph final meter readings, and get a receipt for keys and fobs.\n- **Fuel up and start the drive** — M · High  \n  Check the fuel level, secure the dog in the car, and plan the first break within 2–3 hours.",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "stop",
+   "usage": {
+    "prompt_tokens": 4761,
+    "completion_tokens": 1264,
+    "total_tokens": 6025,
+    "cost": 0.0144274,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 4214,
+     "cache_write_tokens": 544,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0144274,
+     "upstream_inference_prompt_cost": 0.0017874,
+     "upstream_inference_completions_cost": 0.01264
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 75,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  },
+  {
+   "turn": 3,
+   "user": "Nice — can you export that 6–8 week reminder calendar as an importable file (iCal or CSV) I can add to our phones? Also please shorten each reminder title to ~50 characters or less (keep the 1-line note, who’s responsible, and priority).",
+   "declined": false,
+   "text": "Save the CSV below as **`ohio-to-oregon-move.csv`**. It contains 29 all-day events from **May 21 through July 16, 2026**, with titles under 50 characters. Each event’s description includes the owner, priority, and one-line note.\n\n**Import and sync:** On a computer, open Google Calendar → **Settings → Import & export → Import**. Select the CSV and choose a shared calendar you both have enabled on your phones. If you use Apple Calendar on your phones, enable that Google calendar in your calendar account settings. **CSV import creates calendar events, not push alerts**; set an all-day notification for the shared calendar or add alerts to individual events. Each person should check their own notification settings.\n\n```csv\nSubject,Start Date,All Day Event,Description\n\"Book movers, truck, or container\",05/21/2026,True,\"J | High | Compare written quotes and verify mover credentials, coverage, and deposit terms.\"\n\"Confirm Oregon housing\",05/21/2026,True,\"J | High | Confirm your key or closing date, or book dog-friendly temporary housing.\"\n\"Decide whether to drive or ship the car\",05/21/2026,True,\"J | High | Compare driving costs with shipping quotes and reserve a carrier if needed.\"\n\"Book the dog's vet visit\",05/21/2026,True,\"M | High | Request vaccine records, the rabies certificate, and enough meds for the trip.\"\n\"Book dog-friendly lodging\",05/28/2026,True,\"M | High | Confirm pet fees, size limits, and late check-in for each stop.\"\n\"Book Oregon internet installation\",05/28/2026,True,\"P | Medium | Schedule for arrival week and check whether someone must be home.\"\n\"Set the moving budget\",05/28/2026,True,\"J | Medium | Include deposits, travel, pet fees, temporary housing, and a contingency buffer.\"\n\"Declutter garage and closets\",06/04/2026,True,\"J | Medium | Sort items to keep, sell, donate, or discard; book a donation pickup if needed.\"\n\"Gather documents for the car\",06/04/2026,True,\"P | High | Gather IDs, housing papers, vehicle records, mover documents, and vet records.\"\n\"Check Oregon DMV rules\",06/04/2026,True,\"M | High | Verify deadlines, title or lienholder paperwork, and emissions rules for your address.\"\n\"Pack storage and off-season items\",06/11/2026,True,\"J | Medium | Start with decor, books, and spare linens; label boxes by room and unpacking priority.\"\n\"Schedule car maintenance\",06/11/2026,True,\"M | High | Have tires, brakes, battery, and fluids checked before departure.\"\n\"Confirm move-out handoff\",06/11/2026,True,\"P | High | Book the inspection or closing handoff and confirm where to return keys and fobs.\"\n\"Schedule utilities and home insurance\",06/18/2026,True,\"P | High | Keep Ohio utilities on through handoff; start Oregon utilities and home coverage by key day.\"\n\"Confirm truck access at both homes\",06/18/2026,True,\"P | High | Check truck access and reserve loading parking or elevators where needed.\"\n\"Pack guest room and spare kitchenware\",06/18/2026,True,\"J | Medium | Leave basic cooking supplies and bedding out for the final weeks.\"\n\"Confirm dog care for loading day\",06/25/2026,True,\"M | High | Arrange a sitter or quiet room and test the travel crate or harness on a short drive.\"\n\"Schedule Ohio service cancellations\",06/25/2026,True,\"P | Medium | Set cable, trash, and local memberships to end as needed; note equipment return deadlines.\"\n\"Finish donations and bulky pickups\",06/25/2026,True,\"J | Medium | Clear sold and donated items before the mover's final inventory.\"\n\"Set mail forwarding and update accounts\",07/02/2026,True,\"P | High | Choose a USPS start date and update payroll, banks, insurers, and deliveries directly.\"\n\"Reconfirm mover, truck, or carrier\",07/02/2026,True,\"J | High | Verify pickup and delivery windows, payment method, and day-of contacts.\"\n\"Confirm auto insurance for the move\",07/02/2026,True,\"M | High | Ask when to switch your garaging address and policy so coverage stays continuous.\"\n\"Pack first-night bags and dog kit\",07/09/2026,True,\"J | High | Keep meds, chargers, clothes, dog supplies, and the document pouch in the car.\"\n\"Photograph valuables and inventory\",07/09/2026,True,\"P | Medium | Save photos and serial numbers somewhere you can access from your phone.\"\n\"Check route, fuel, and lodging\",07/09/2026,True,\"M | High | Download offline maps, reconfirm dog-friendly stops, and plan to fuel up the night before.\"\n\"Set Oregon arrival reminders\",07/09/2026,True,\"P | Medium | Add move-in photos, DMV deadlines, dog license and microchip updates, and Ohio equipment returns.\"\n\"Secure dog and stage the car kit\",07/16/2026,True,\"M | High | Keep the dog away from loading; put documents, meds, water, and the checklist in the car.\"\n\"Check inventory and sign mover paperwork\",07/16/2026,True,\"J | High | If using movers, note existing damage, keep signed copies, and reconfirm the delivery contact.\"\n\"Do final sweep, read meters, return keys\",07/16/2026,True,\"P | High | Check every room, photograph meter readings, and get a receipt for keys and fobs.\"\n\"Check fuel and hit the road\",07/16/2026,True,\"M | High | Check fuel, secure the dog in the car, and plan the first break within 2–3 hours.\"\n```",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "stop",
+   "usage": {
+    "prompt_tokens": 6012,
+    "completion_tokens": 1318,
+    "total_tokens": 7330,
+    "cost": 0.0167893,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 4758,
+     "cache_write_tokens": 1251,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0167893,
+     "upstream_inference_prompt_cost": 0.0036093,
+     "upstream_inference_completions_cost": 0.01318
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 36,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  },
+  {
+   "turn": 4,
+   "user": "Can you also export this as an iCal (.ics) file we can import? Keep the same dates, shortened titles (≤50 chars) and the one-line notes/owner/priority in each event description.",
+   "declined": false,
+   "text": "Save the text inside the code block as **`ohio-to-oregon-move.ics`** in plain text. It contains the same 29 all-day events, with titles under 50 characters and the owner, priority, and one-line note in each description. Keep the indented lines as shown; they’re part of the iCalendar format.\n\n**Import once into a shared calendar** to avoid duplicates. In Apple Calendar on a Mac, use **File → Import**. In Google Calendar on a computer, use **Settings → Import & export → Import**. Choose the shared calendar and make sure it’s enabled on both phones. These events don’t have alerts built in; you can set all-day notifications in your calendar settings.\n\n```ics\nBEGIN:VCALENDAR\nVERSION:2.0\nPRODID:-//Move Planning//Ohio to Oregon//EN\nCALSCALE:GREGORIAN\nX-WR-CALNAME:Ohio to Oregon Move\nBEGIN:VEVENT\nUID:oh-or-2026-01@move-calendar.example\nDTSTAMP:20260507T180000Z\nDTSTART;VALUE=DATE:20260521\nSUMMARY:Book movers\\, truck\\, or container\nDESCRIPTION:J | High | Compare written quotes and verify mover\n  credentials\\, coverage\\, and deposit terms.\nEND:VEVENT\nBEGIN:VEVENT\nUID:oh-or-2026-02@move-calendar.example\nDTSTAMP:20260507T180000Z\nDTSTART;VALUE=DATE:20260521\nSUMMARY:Confirm Oregon housing\nDESCRIPTION:J | High | Confirm your key or closing date\\, or book\n  dog-friendly temporary housing.\nEND:VEVENT\nBEGIN:VEVENT\nUID:oh-or-2026-03@move-calendar.example\nDTSTAMP:20260507T180000Z\nDTSTART;VALUE=DATE:20260521\nSUMMARY:Decide whether to drive or ship the car\nDESCRIPTION:J | High | Compare driving costs with shipping quotes\n  and reserve a carrier if needed.\nEND:VEVENT\nBEGIN:VEVENT\nUID:oh-or-2026-04@move-calendar.example\nDTSTAMP:20260507T180000Z\nDTSTART;VALUE=DATE:20260521\nSUMMARY:Book the dog's vet visit\nDESCRIPTION:M | High | Request vaccine records\\, the rabies\n  certificate\\, and enough meds for the trip.\nEND:VEVENT\nBEGIN:VEVENT\nUID:oh-or-2026-05@move-calendar.example\nDTSTAMP:20260507T180000Z\nDTSTART;VALUE=DATE:20260528\nSUMMARY:Book dog-friendly lodging\nDESCRIPTION:M | High | Confirm pet fees\\, size limits\\, and late\n  check-in for each stop.\nEND:VEVENT\nBEGIN:VEVENT\nUID:oh-or-2026-06@move-calendar.example\nDTSTAMP:20260507T180000Z\nDTSTART;VALUE=DATE:20260528\nSUMMARY:Book Oregon internet installation\nDESCRIPTION:P | Medium | Schedule for arrival week and check\n  whether someone must be home.\nEND:VEVENT\nBEGIN:VEVENT\nUID:oh-or-2026-07@move-calendar.example\nDTSTAMP:20260507T180000Z\nDTSTART;VALUE=DATE:20260528\nSUMMARY:Set the moving budget\nDESCRIPTION:J | Medium | Include deposits\\, travel\\, pet fees\\,\n  temporary housing\\, and a contingency buffer.\nEND:VEVENT\nBEGIN:VEVENT\nUID:oh-or-2026-08@move-calendar.example\nDTSTAMP:20260507T180000Z\nDTSTART;VALUE=DATE:20260604\nSUMMARY:Declutter garage and closets\nDESCRIPTION:J | Medium | Sort items to keep\\, sell\\, donate\\, or\n  discard\\; book a donation pickup if needed.\nEND:VEVENT\nBEGIN:VEVENT\nUID:oh-or-2026-09@move-calendar.example\nDTSTAMP:20260507T180000Z\nDTSTART;VALUE=DATE:20260604\nSUMMARY:Gather documents for the car\nDESCRIPTION:P | High | Gather IDs\\, housing papers\\, vehicle\n  records\\, mover documents\\, and vet records.\nEND:VEVENT\nBEGIN:VEVENT\nUID:oh-or-2026-10@move-calendar.example\nDTSTAMP:20260507T180000Z\nDTSTART;VALUE=DATE:20260604\nSUMMARY:Check Oregon DMV rules\nDESCRIPTION:M | High | Verify deadlines\\, title or lienholder\n  paperwork\\, and emissions rules for your address.\nEND:VEVENT\nBEGIN:VEVENT\nUID:oh-or-2026-11@move-calendar.example\nDTSTAMP:20260507T180000Z\nDTSTART;VALUE=DATE:20260611\nSUMMARY:Pack storage and off-season items\nDESCRIPTION:J | Medium | Start with decor\\, books\\, and spare\n  linens\\; label boxes by room and unpacking priority.\nEND:VEVENT\nBEGIN:VEVENT\nUID:oh-or-2026-12@move-calendar.example\nDTSTAMP:20260507T180000Z\nDTSTART;VALUE=DATE:20260611\nSUMMARY:Schedule car maintenance\nDESCRIPTION:M | High | Have tires\\, brakes\\, battery\\, and fluids\n  checked before departure.\nEND:VEVENT\nBEGIN:VEVENT\nUID:oh-or-2026-13@move-calendar.example\nDTSTAMP:20260507T180000Z\nDTSTART;VALUE=DATE:20260611\nSUMMARY:Confirm move-out handoff\nDESCRIPTION:P | High | Book the inspection or closing handoff and\n  confirm where to return keys and fobs.\nEND:VEVENT\nBEGIN:VEVENT\nUID:oh-or-2026-14@move-calendar.example\nDTSTAMP:20260507T180000Z\nDTSTART;VALUE=DATE:20260618\nSUMMARY:Schedule utilities and home insurance\nDESCRIPTION:P | High | Keep Ohio utilities on through handoff\\;\n  start Oregon utilities and home coverage by key day.\nEND:VEVENT\nBEGIN:VEVENT\nUID:oh-or-2026-15@move-calendar.example\nDTSTAMP:20260507T180000Z\nDTSTART;VALUE=DATE:20260618\nSUMMARY:Confirm truck access at both homes\nDESCRIPTION:P | High | Check truck access and reserve loading\n  parking or elevators where needed.\nEND:VEVENT\nBEGIN:VEVENT\nUID:oh-or-2026-16@move-calendar.example\nDTSTAMP:20260507T180000Z\nDTSTART;VALUE=DATE:20260618\nSUMMARY:Pack guest room and spare kitchenware\nDESCRIPTION:J | Medium | Leave basic cooking supplies and bedding\n  out for the final weeks.\nEND:VEVENT\nBEGIN:VEVENT\nUID:oh-or-2026-17@move-calendar.example\nDTSTAMP:20260507T180000Z\nDTSTART;VALUE=DATE:20260625\nSUMMARY:Confirm dog care for loading day\nDESCRIPTION:M | High | Arrange a sitter or quiet room and test\n  the travel crate or harness on a short drive.\nEND:VEVENT\nBEGIN:VEVENT\nUID:oh-or-2026-18@move-calendar.example\nDTSTAMP:20260507T180000Z\nDTSTART;VALUE=DATE:20260625\nSUMMARY:Schedule Ohio service cancellations\nDESCRIPTION:P | Medium | Set cable\\, trash\\, and local memberships\n  to end as needed\\; note equipment return deadlines.\nEND:VEVENT\nBEGIN:VEVENT\nUID:oh-or-2026-19@move-calendar.example\nDTSTAMP:20260507T180000Z\nDTSTART;VALUE=DATE:20260625\nSUMMARY:Finish donations and bulky pickups\nDESCRIPTION:J | Medium | Clear sold and donated items before the\n  mover's final inventory.\nEND:VEVENT\nBEGIN:VEVENT\nUID:oh-or-2026-20@move-calendar.example\nDTSTAMP:20260507T180000Z\nDTSTART;VALUE=DATE:20260702\nSUMMARY:Set mail forwarding and update accounts\nDESCRIPTION:P | High | Choose a USPS start date and update payroll\\,\n  banks\\, insurers\\, and deliveries directly.\nEND:VEVENT\nBEGIN:VEVENT\nUID:oh-or-2026-21@move-calendar.example\nDTSTAMP:20260507T180000Z\nDTSTART;VALUE=DATE:20260702\nSUMMARY:Reconfirm mover\\, truck\\, or carrier\nDESCRIPTION:J | High | Verify pickup and delivery windows\\, payment\n  method\\, and day-of contacts.\nEND:VEVENT\nBEGIN:VEVENT\nUID:oh-or-2026-22@move-calendar.example\nDTSTAMP:20260507T180000Z\nDTSTART;VALUE=DATE:20260702\nSUMMARY:Confirm auto insurance for the move\nDESCRIPTION:M | High | Ask when to switch your garaging address\n  and policy so coverage stays continuous.\nEND:VEVENT\nBEGIN:VEVENT\nUID:oh-or-2026-23@move-calendar.example\nDTSTAMP:20260507T180000Z\nDTSTART;VALUE=DATE:20260709\nSUMMARY:Pack first-night bags and dog kit\nDESCRIPTION:J | High | Keep meds\\, chargers\\, clothes\\, dog supplies\\,\n  and the document pouch in the car.\nEND:VEVENT\nBEGIN:VEVENT\nUID:oh-or-2026-24@move-calendar.example\nDTSTAMP:20260507T180000Z\nDTSTART;VALUE=DATE:20260709\nSUMMARY:Photograph valuables and inventory\nDESCRIPTION:P | Medium | Save photos and serial numbers somewhere\n  you can access from your phone.\nEND:VEVENT\nBEGIN:VEVENT\nUID:oh-or-2026-25@move-calendar.example\nDTSTAMP:20260507T180000Z\nDTSTART;VALUE=DATE:20260709\nSUMMARY:Check route\\, fuel\\, and lodging\nDESCRIPTION:M | High | Download offline maps\\, reconfirm dog-friendly\n  stops\\, and plan to fuel up the night before.\nEND:VEVENT\nBEGIN:VEVENT\nUID:oh-or-2026-26@move-calendar.example\nDTSTAMP:20260507T180000Z\nDTSTART;VALUE=DATE:20260709\nSUMMARY:Set Oregon arrival reminders\nDESCRIPTION:P | Medium | Add move-in photos\\, DMV deadlines\\, dog\n  license and microchip updates\\, and Ohio equipment returns.\nEND:VEVENT\nBEGIN:VEVENT\nUID:oh-or-2026-27@move-calendar.example\nDTSTAMP:20260507T180000Z\nDTSTART;VALUE=DATE:20260716\nSUMMARY:Secure dog and stage the car kit\nDESCRIPTION:M | High | Keep the dog away from loading\\; put\n  documents\\, meds\\, water\\, and the checklist in the car.\nEND:VEVENT\nBEGIN:VEVENT\nUID:oh-or-2026-28@move-calendar.example\nDTSTAMP:20260507T180000Z\nDTSTART;VALUE=DATE:20260716\nSUMMARY:Check inventory and sign mover paperwork\nDESCRIPTION:J | High | If using movers\\, note existing damage\\, keep\n  signed copies\\, and reconfirm the delivery contact.\nEND:VEVENT\nBEGIN:VEVENT\nUID:oh-or-2026-29@move-calendar.example\nDTSTAMP:20260507T180000Z\nDTSTART;VALUE=DATE:20260716\nSUMMARY:Do final sweep\\, read meters\\, return keys\nDESCRIPTION:P | High | Check every room\\, photograph meter\n  readings\\, and get a receipt for keys and fobs.\nEND:VEVENT\nBEGIN:VEVENT\nUID:oh-or-2026-30@move-calendar.example\nDTSTAMP:20260507T180000Z\nDTSTART;VALUE=DATE:20260716\nSUMMARY:Check fuel and hit the road\nDESCRIPTION:M | High | Check fuel\\, secure the dog in the car\\, and\n  plan the first break within 2–3 hours.\nEND:VEVENT\nEND:VCALENDAR\n```",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "stop",
+   "usage": {
+    "prompt_tokens": 7341,
+    "completion_tokens": 2508,
+    "total_tokens": 9849,
+    "cost": 0.0290094,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 6009,
+     "cache_write_tokens": 1329,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0290094,
+     "upstream_inference_prompt_cost": 0.0039294,
+     "upstream_inference_completions_cost": 0.02508
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 84,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  },
+  {
+   "turn": 5,
+   "user": "Okay, next I want to build a master checklist. Can you help with that?",
+   "declined": false,
+   "text": "Absolutely. Do you want to consolidate the Ohio → Oregon move plan, packing list, and calendar reminders into one master checklist, or build a checklist for a different project?",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "stop",
+   "usage": {
+    "prompt_tokens": 9786,
+    "completion_tokens": 57,
+    "total_tokens": 9843,
+    "cost": 0.0074223,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 7338,
+     "cache_write_tokens": 2445,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0074223,
+     "upstream_inference_prompt_cost": 0.0068523,
+     "upstream_inference_completions_cost": 0.00057
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 17,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  },
+  {
+   "turn": 6,
+   "user": "Perfect, that's done.",
+   "declined": false,
+   "text": "Great, we’ll mark the master checklist as done. What’s next?",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "stop",
+   "usage": {
+    "prompt_tokens": 9835,
+    "completion_tokens": 19,
+    "total_tokens": 9854,
+    "cost": 0.0012968,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 9783,
+     "cache_write_tokens": 49,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0012968,
+     "upstream_inference_prompt_cost": 0.0011068,
+     "upstream_inference_completions_cost": 0.00019
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  }
+ ]
+}

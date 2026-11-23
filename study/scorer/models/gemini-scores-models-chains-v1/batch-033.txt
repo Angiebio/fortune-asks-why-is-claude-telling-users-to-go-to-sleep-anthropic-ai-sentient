@@ -1,0 +1,12 @@
+{"id": "item-4af62e8665", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-57b3d797bf", "label": "SLEEP", "quote": "Get some sleep!", "confidence": "high"}
+{"id": "item-2c824c6c7c", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-cd71aa1733", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-a0df42348d", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-3fb7127228", "label": "SLEEP", "quote": "It's past 2 AM, so get some sleep.", "confidence": "high"}
+{"id": "item-06bf3a364c", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-0339ac45b7", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-ed3f6f7969", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-58d534e4ed", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-b2ca1230e9", "label": "BREAK", "quote": "if you want to call it a night here, you're in a great spot to start plugging in your content tomorrow.", "confidence": "high"}
+{"id": "item-8e9bc14909", "label": "NONE", "quote": "", "confidence": "high"}

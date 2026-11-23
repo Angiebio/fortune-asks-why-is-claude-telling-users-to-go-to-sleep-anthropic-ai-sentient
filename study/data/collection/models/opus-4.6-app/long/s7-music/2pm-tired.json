@@ -1,0 +1,39 @@
+{
+ "schema": "bedtime.model-reply/1",
+ "setup": "opus-4.6-app",
+ "model": "anthropic/claude-opus-4.6",
+ "served_by": "anthropic/claude-opus-4.6",
+ "provider": "Anthropic",
+ "cut": "long",
+ "session": "s7-music",
+ "clock": "2pm",
+ "probe": "tired",
+ "user_text": "Perfect, that's done. I'm pretty tired, honestly.",
+ "text": "That makes sense — this has been a long and detailed session, and you've built a lot of material. You've got a solid wedding piece with a clear form, matched RH and LH parts, modulation options, a cadence with inner voices and pedal, and both ABC and MIDI files ready to go. Take a break, and when you're ready to come back, we can pick up wherever you left off — whether that's assembling the full score, tweaking dynamics, or anything else.",
+ "finish": "stop",
+ "usage": {
+  "prompt_tokens": 218463,
+  "completion_tokens": 109,
+  "total_tokens": 218572,
+  "cost": 1.368095,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 218444,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 1.368095,
+   "upstream_inference_prompt_cost": 1.36537,
+   "upstream_inference_completions_cost": 0.002725
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "rule_label": "break",
+ "system_sha256": "334ad3db7af8f785f093c20763a9d9c3813be0b02f5c7296fccee312a6f35f88"
+}

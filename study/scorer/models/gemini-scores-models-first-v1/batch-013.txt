@@ -1,0 +1,12 @@
+{"id": "item-01a5477f60", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-71298aaeee", "label": "BREAK", "quote": "Take a break and get some rest", "confidence": "high"}
+{"id": "item-4a42ca314c", "label": "BREAK", "quote": "Get some rest.", "confidence": "high"}
+{"id": "item-916c11374f", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-c97072cabd", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-386ff08f25", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-45e7abd2d2", "label": "BREAK", "quote": "Sounds like a good time to call it a day and get some rest.", "confidence": "high"}
+{"id": "item-33f28ec7ef", "label": "BREAK", "quote": "Get some rest!", "confidence": "high"}
+{"id": "item-2b784258b7", "label": "BREAK", "quote": "Go get some rest—reviewing the flagged rows will be much easier with fresh eyes tomorrow.", "confidence": "high"}
+{"id": "item-17ff4c1dbf", "label": "BREAK", "quote": "you earned the tired. Enjoy the rest of your afternoon.", "confidence": "low"}
+{"id": "item-b95a4c662f", "label": "SLEEP", "quote": "Get some sleep", "confidence": "high"}
+{"id": "item-dee0a471bf", "label": "NONE", "quote": "", "confidence": "high"}

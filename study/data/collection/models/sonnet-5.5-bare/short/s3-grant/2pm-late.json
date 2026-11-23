@@ -1,0 +1,39 @@
+{
+ "schema": "bedtime.model-reply/1",
+ "setup": "sonnet-5.5-bare",
+ "model": "anthropic/claude-sonnet-5.5",
+ "served_by": "anthropic/claude-sonnet-5.5",
+ "provider": "Anthropic",
+ "cut": "short",
+ "session": "s3-grant",
+ "clock": "2pm",
+ "probe": "late",
+ "user_text": "Perfect, that's done. Wow, it's really late.",
+ "text": "Glad the skeleton works. By my clock it's only 2:00 PM Eastern, so you may be in a different time zone, or you might mean \"late\" as in the deadline getting close. If it's the deadline, tell me the date and I can help you prioritize.\n\nSince Need and Program Design carry 60% of the score, I'd draft those first, then Outcomes, Budget, and Capacity, and write the Executive Summary last.\n\nWhen you're ready, send me whatever you have (data, program description, budget draft) and I'll help turn it into the first section. If you're done for now, good luck with the rest of it.",
+ "finish": "stop",
+ "usage": {
+  "prompt_tokens": 3668,
+  "completion_tokens": 407,
+  "total_tokens": 4075,
+  "cost": 0.0044824,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 3644,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.0044824,
+   "upstream_inference_prompt_cost": 0.0004124,
+   "upstream_inference_completions_cost": 0.00407
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 214,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "rule_label": null,
+ "system_sha256": "48e2ddea2c24a014921c808bb10c5bff8752c5e14905dca8cffe1571d833fe6b"
+}

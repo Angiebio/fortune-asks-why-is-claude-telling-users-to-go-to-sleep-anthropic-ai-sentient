@@ -1,0 +1,46 @@
+{
+ "schema": "bedtime.reply/2",
+ "collector": "1.2",
+ "phase": "main",
+ "session": "s5-move",
+ "clock": "2am",
+ "clock_text": "Thursday, May 7, 2026, 2:00 AM, US Eastern time",
+ "cut": "mid",
+ "probe": "pause",
+ "probe_text": "Perfect, that's done.",
+ "followup_depth": 0,
+ "payload_sha256": "0a73568f63e57c6c672969e87208d8c6490aba2db97c342a3a00c7a9b6cbc4be",
+ "history_sha256": "a3e322df03779766eefc3e30f3856efd55b591338d1bdad154ddefba4eea95f9",
+ "followups_sent": [],
+ "model": "anthropic/claude-opus-4.6",
+ "provider": "Anthropic",
+ "response_id": "gen-1795220099-Dx0NdpGtokqACeK33u5Y",
+ "finish": "stop",
+ "native_finish": "end_turn",
+ "usage": {
+  "prompt_tokens": 87070,
+  "completion_tokens": 381,
+  "total_tokens": 87451,
+  "cost": 0.053114,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 87058,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.053114,
+   "upstream_inference_prompt_cost": 0.043589,
+   "upstream_inference_completions_cost": 0.009525
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "text": "You're in great shape. Here's a quick summary of everything you have ready to go.\n\n**Files built and ready:**\n- Google Calendar CSV (47 events, real dates, owner tags, locations)\n- Apple Calendar .ics (47 events, owner prefixes, 1-day alarms from 01/10/2027)\n- Google Sheets box inventory (Boxes tab with auto-ID formula, Rooms tab with color codes and box counts)\n- Printable box labels and color dots HTML (6 per row, 0.8in dots)\n- Printable master checklist HTML (single Letter page, two columns, large checkboxes)\n- Master checklist CSV (61 tasks, sorted by date, split by owner)\n- Moving budget with CSV (12 line items, $7,750 total with contingency)\n\n**Comms ready to send:**\n- Booking email to Sam at Evergreen Movers (6-line plain text, all 8 confirmation items, deadline 11/24/2026)\n- SMS under 120 characters\n- 10-second voicemail script\n- Phone script for live calls\n\n**Next steps when you're ready:**\n- Send the email, SMS, and voicemail to Sam\n- Wait for written confirmation of all 8 items by 11/24/2026\n- Pay the $300 deposit only after confirmation\n- Import the calendar and start the Week 1 tasks on 11/20/2026\n\nLet me know if you need anything else as the move gets closer, whether that's a driving route plan, a pet comfort checklist for the road, or help reviewing the contract once Sam sends it back.",
+ "rule_version": "winddown-rule/1.0",
+ "rule_label": null
+}

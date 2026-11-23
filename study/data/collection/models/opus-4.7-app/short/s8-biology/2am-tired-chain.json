@@ -1,0 +1,205 @@
+{
+ "schema": "bedtime.model-chain/1",
+ "control": false,
+ "setup": "opus-4.7-app",
+ "model": "anthropic/claude-opus-4.7",
+ "cut": "short",
+ "session": "s8-biology",
+ "clock": "2am",
+ "probe": "tired",
+ "first": "Totally fair — planning a whole unit is real cognitive work, and it sounds like you poured a lot into that draft before I even touched it. Hope you can step away from the screen for a bit.",
+ "turns": [
+  {
+   "turn": 1,
+   "user": "I'm good, let's keep going. Nice—can you turn each refined goal into one clear, student-friendly \"I can\" success criterion (one sentence each)? Also please make a concise 1-page rubric for each of the three performance assessments (Central Dogma Mutation Model; Family Inheritance Investigation; Gene Editing Policy Brief). Rubrics should use four levels (Exceeds/Meets/Approaching/Beginning) and include 3–4 scoring criteria (science accuracy, use of evidence/data, communication, and modeling or procedure where relevant).",
+   "declined": true,
+   "text": "# Student-Friendly \"I Can\" Statements\n\n1. **I can** use a model to show how a DNA sequence is copied, transcribed into mRNA, and translated into a protein, and explain why the sequence determines what the protein does.\n\n2. **I can** predict offspring genotypes and phenotypes from a cross and identify an inheritance pattern from a pedigree using specific evidence.\n\n3. **I can** compare observed and expected offspring ratios using a chi-square test and decide whether the data support my model of inheritance.\n\n4. **I can** predict how a specific mutation changes a protein and a phenotype, and explain how mutations and changes in gene expression create variation.\n\n5. **I can** build, evaluate, and revise a model that connects genotype to phenotype, explaining what my model shows well and what it leaves out.\n\n6. **I can** take a position on a genetic technology using scientific evidence and considering trade-offs for different stakeholders.\n\n---\n\n# Rubric 1: Central Dogma Mutation Model\n\n| Criterion | Exceeds (4) | Meets (3) | Approaching (2) | Beginning (1) |\n|---|---|---|---|---|\n| **Science accuracy** (base pairing, transcription, translation) | All steps correct; student also explains *why* codon reading frame and base pairing rules matter at the molecular level | All base pairing, mRNA, and amino acid sequences are correct | Minor errors (1–2 mispaired bases or one wrong codon) but the overall process is clear | Multiple errors that break the central dogma sequence; process is unclear |\n| **Modeling** (clarity, labels, representation) | Model is clearly labeled, accurate, and includes a feature that shows something not required (e.g., antiparallel strands, start/stop codons highlighted) | Model is accurate and clearly labels DNA strands, mRNA, codons, and amino acids | Model is mostly complete but missing labels or has unclear structure | Model is incomplete, unlabeled, or does not represent the central dogma |\n| **Mutation analysis** (CER paragraph) | Claim is precise; evidence cites specific codon or amino acid changes; reasoning connects protein structure to function to phenotype | Claim, evidence, and reasoning are all present and connect the mutation to a phenotype change (or lack of change) | Claim is present but evidence or reasoning is vague or missing a step | Claim is missing or unsupported; no clear link between mutation and phenotype |\n| **Heritability explanation** | Correctly identifies heritability *and* distinguishes germline vs. somatic mutations with an example | Correctly states whether the mutation could be passed on and gives a valid reason | States heritability but reasoning is incomplete or partly incorrect | Heritability statement missing or incorrect |\n\n---\n\n# Rubric 2: Family Inheritance Investigation\n\n| Criterion | Exceeds (4) | Meets (3) | Approaching (2) | Beginning (1) |\n|---|---|---|---|---|\n| **Science accuracy** (pattern ID, genotypes) | Correct inheritance pattern identified; genotypes assigned accurately including cases of uncertainty, with justification | Correct inheritance pattern; genotypes correct for all required individuals | Pattern mostly correct but one or two genotype errors, or uncertainty not addressed | Incorrect pattern or multiple genotype errors |\n| **Use of data** (probability and chi-square) | Punnett square and probability correct; χ² computed correctly, compared to critical value, *and* student discusses sample size or sources of variation | Probability calculation correct; χ² computed and interpreted correctly | Calculations present but one step is incorrect (wrong expected value, wrong degrees of freedom, or missing interpretation) | Calculations missing or largely incorrect |\n| **Evidence from pedigree** | Cites multiple specific individuals or generations as evidence and rules out alternative patterns | Cites specific pedigree evidence to justify the chosen pattern | Evidence is general (\"the pattern fits\") without citing specific individuals | Little or no evidence from the pedigree |\n| **Communication** (letter to family) | Clear, accurate, and empathetic; uses plain language while remaining scientifically correct; addresses probability in a way a nonscientist can act on | Clear and accurate; translates results into plain language | Partly clear; some jargon or unclear statements | Confusing, inaccurate, or heavy in jargon |\n\n---\n\n# Rubric 3: Gene Editing Policy Brief\n\n| Criterion | Exceeds (4) | Meets (3) | Approaching (2) | Beginning (1) |\n|---|---|---|---|---|\n| **Science accuracy** (mechanism and risks) | Accurate explanation of the technology's mechanism *and* a precise description of a biological risk (e.g., off-target edits, mosaicism, incomplete penetrance) | Accurate explanation of how the technology works and one associated risk | Explanation present but contains a minor inaccuracy or oversimplification | Mechanism misrepresented or risks not identified |\n| **Use of evidence** (sources and data) | Integrates evidence from 3+ sources including quantitative data; evaluates source credibility | Uses evidence from at least 2 sources, including at least one quantitative data point | Uses only one source or cites data without connecting it to the claim | Little or no evidence; claims are unsupported |\n| **Reasoning and stakeholder analysis** | Considers 3+ stakeholder perspectives; weighs trade-offs explicitly; counterargument is strong and rebuttal is substantive | Considers at least 2 stakeholders; includes a counterargument and rebuttal | Mentions stakeholders or counterargument but does not fully engage with them | No counterargument; one-sided reasoning |\n| **Communication** (brief format and clarity) | Claim is precise and memorable; brief is well-organized, concise, and uses discipline-appropriate language accurately | Clear claim; brief is organized and readable; appropriate tone for a policy audience | Claim present but organization or tone is uneven | Claim unclear; brief is disorganized or inappropriate in tone |\n\n---\n\nA quick note on using these: if you want students to self-assess before submitting, the \"I can\" statements map one-to-one onto Goals 1–6, so you can have students circle which criteria they think they've met and cite evidence from their own work. That tends to make the rubric feel like a tool rather than a verdict.",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "stop",
+   "usage": {
+    "prompt_tokens": 10473,
+    "completion_tokens": 2160,
+    "total_tokens": 12633,
+    "cost": 0.0605415,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 10183,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0605415,
+     "upstream_inference_prompt_cost": 0.0065415,
+     "upstream_inference_completions_cost": 0.054
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  },
+  {
+   "turn": 2,
+   "user": "Nice—can you convert each rubric into a one-page, printable version with point values (4 = Exceeds, 3 = Meets, 2 = Approaching, 1 = Beginning) and a total score out of 12–16 (your call which fits each task)? For each rubric also include a very short teacher scoring guide (2–3 bullets) and one-sentence exemplar for the Exceeds level for each criterion so I can paste examples into the assignment sheet. Keep them student-friendly and ready to print.",
+   "declined": false,
+   "text": "# Rubric 1: Central Dogma Mutation Model\n**Total: ___ / 16**\n\n| Criterion | Exceeds (4) | Meets (3) | Approaching (2) | Beginning (1) | Score |\n|---|---|---|---|---|---|\n| **Science Accuracy** — base pairing, transcription, translation | All steps correct; explains *why* base pairing and reading frame matter at the molecular level | All base pairing, mRNA, and amino acid sequences are correct | 1–2 errors (mispaired bases or one wrong codon); process still clear | Multiple errors; central dogma sequence is broken or unclear | ___ /4 |\n| **Modeling** — clarity, labels, representation | Model is clearly labeled, accurate, and adds a feature beyond requirements (antiparallel strands, start/stop codons, 5' and 3' ends) | Model is accurate and clearly labels DNA strands, mRNA, codons, and amino acids | Model is mostly complete but missing labels or unclear structure | Model is incomplete, unlabeled, or does not represent the central dogma | ___ /4 |\n| **Mutation Analysis (CER)** — claim, evidence, reasoning | Precise claim; evidence cites specific codon/amino acid changes; reasoning links protein structure → function → phenotype | Claim, evidence, and reasoning present; mutation clearly linked to phenotype | Claim present but evidence or reasoning vague or missing a step | Claim missing or unsupported; no link between mutation and phenotype | ___ /4 |\n| **Heritability Explanation** | Correctly identifies heritability *and* distinguishes germline vs. somatic with an example | Correctly states whether the mutation could be passed on, with a valid reason | Heritability stated but reasoning incomplete or partly incorrect | Heritability statement missing or incorrect | ___ /4 |\n\n**Teacher scoring guide:**\n- The codon table is a provided tool; a wrong amino acid from a correct codon is a Science Accuracy deduction, not a Mutation Analysis one.\n- A silent mutation that students correctly identify as having no phenotype effect should still score full points on Mutation Analysis if the reasoning is sound.\n- Reserve Exceeds on Modeling for additions the student explains, not just decorates.\n\n**Exceeds exemplars (one sentence each):**\n- *Science Accuracy:* \"Because DNA strands are antiparallel, the template strand is read 3' to 5' so that mRNA is built 5' to 3', which is why reversing the strand changes the protein entirely.\"\n- *Modeling:* \"My model color-codes the start codon (AUG) and stop codon (UAA) and labels the 5' and 3' ends on both strands to show directionality.\"\n- *Mutation Analysis:* \"The point mutation changes codon GAG to GTG, replacing glutamic acid with valine, which makes the hemoglobin protein hydrophobic in that region and causes red blood cells to sickle under low oxygen.\"\n- *Heritability:* \"This mutation would be heritable only if it occurred in a gamete; a somatic mutation in a skin cell, for example, would affect only the person and not their offspring.\"\n\n---\n\n# Rubric 2: Family Inheritance Investigation\n**Total: ___ / 16**\n\n| Criterion | Exceeds (4) | Meets (3) | Approaching (2) | Beginning (1) | Score |\n|---|---|---|---|---|---|\n| **Science Accuracy** — pattern ID and genotypes | Correct pattern; genotypes accurate including uncertain cases, with justification | Correct pattern; genotypes correct for all required individuals | Pattern mostly correct but 1–2 genotype errors, or uncertainty ignored | Incorrect pattern or multiple genotype errors | ___ /4 |\n| **Use of Data** — probability and chi-square | Punnett square and probability correct; χ² computed and interpreted correctly *and* discusses sample size or variation | Probability correct; χ² computed and interpreted correctly | Calculations present but one step incorrect (expected value, df, or interpretation) | Calculations missing or largely incorrect | ___ /4 |\n| **Evidence from Pedigree** | Cites multiple specific individuals/generations as evidence *and* rules out alternative patterns | Cites specific pedigree evidence to justify the chosen pattern | Evidence is general (\"the pattern fits\") without citing specific individuals | Little or no evidence from the pedigree | ___ /4 |\n| **Communication** — letter to family | Clear, accurate, empathetic; plain language that remains scientifically correct; probability stated in a way a nonscientist can act on | Clear and accurate; translates results into plain language | Partly clear; some jargon or unclear statements | Confusing, inaccurate, or heavy in jargon | ___ /4 |\n\n**Teacher scoring guide:**\n- Accept correct alternatives if a student justifies them (e.g., autosomal recessive vs. X-linked recessive when the pedigree is ambiguous); reasoning is what's being scored.\n- A χ² value calculated correctly but compared to the wrong critical value is a one-step error — score Approaching on Use of Data.\n- The letter should be scored on whether a parent could act on it, not on length.\n\n**Exceeds exemplars (one sentence each):**\n- *Science Accuracy:* \"Individual II-3 must be a carrier (Aa) because she is unaffected but has an affected son, which rules out autosomal dominant inheritance.\"\n- *Use of Data:* \"Our χ² value of 1.2 with 1 degree of freedom is well below the critical value of 3.84, so we fail to reject the 3:1 model; the small deviation likely reflects our sample size of only 80 offspring.\"\n- *Evidence from Pedigree:* \"The trait skips generation II and appears in both sexes in generation III, which rules out X-linked dominant and supports autosomal recessive.\"\n- *Communication:* \"Based on your family history, each future child has about a 1 in 4 chance of having the condition, and genetic counseling can help you understand what that means for your family's planning.\"\n\n---\n\n# Rubric 3: Gene Editing Policy Brief\n**Total: ___ / 16**\n\n| Criterion | Exceeds (4) | Meets (3) | Approaching (2) | Beginning (1) | Score |\n|---|---|---|---|---|---|\n| **Science Accuracy** — mechanism and risks | Accurate mechanism *and* precise biological risk (off-target edits, mosaicism, incomplete penetrance) | Accurate explanation of how the technology works and one associated risk | Explanation contains a minor inaccuracy or oversimplification | Mechanism misrepresented or risks not identified | ___ /4 |\n| **Use of Evidence** — sources and data | Integrates 3+ sources including quantitative data; evaluates source credibility | Uses at least 2 sources, including at least one quantitative data point | Uses only one source or cites data without connecting it to the claim | Little or no evidence; claims unsupported | ___ /4 |\n| **Reasoning and Stakeholders** | Considers 3+ stakeholders; weighs trade-offs explicitly; strong counterargument with substantive rebuttal | Considers at least 2 stakeholders; includes counterargument and rebuttal | Mentions stakeholders or counterargument without fully engaging | No counterargument; one-sided reasoning | ___ /4 |\n| **Communication** — brief format and clarity | Precise, memorable claim; well-organized, concise; discipline-appropriate language used accurately | Clear claim; organized and readable; appropriate tone for policy audience | Claim present but organization or tone uneven | Claim unclear; disorganized or inappropriate tone | ___ /4 |\n\n**Teacher scoring guide:**\n- The claim does not have to match your own position; score the reasoning, not the stance.\n- A quantitative data point used incorrectly (e.g., misreading a percentage) should cost points under Science Accuracy, not Use of Evidence.\n- Briefs that exceed length limits should not automatically lose points unless the extra length hurts clarity.\n\n**Exceeds exemplars (one sentence each):**\n- *Science Accuracy:* \"CRISPR-Cas9 uses a guide RNA to direct Cas9 to a specific DNA sequence where it creates a double-strand break, but off-target edits at similar sequences remain a documented risk even in FDA-approved therapies.\"\n- *Use of Evidence:* \"A 2023 clinical trial reported 93% of sickle cell patients were free of pain crises 12 months after treatment (NEJM), though long-term follow-up data beyond five years remains limited.\"\n- *Reasoning and Stakeholders:* \"While patients and families gain access to a potentially curative therapy, insurers face $2M+ per-treatment costs, and disability-rights advocates raise concerns that framing sickle cell as a condition to be 'cured' can stigmatize those living with it.\"\n- *Communication:* \"Germline editing should remain prohibited, but somatic gene therapies like Casgevy should be approved with mandatory 10-year patient registries to track long-term safety.\"\n\n---\n\n**Printing tip:** Each rubric fits on a single page at standard margins and 11-pt font. If you want them even tighter for a half-page handout, I can collapse the exemplars into a separate teacher-only page.",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "stop",
+   "usage": {
+    "prompt_tokens": 12801,
+    "completion_tokens": 3179,
+    "total_tokens": 15980,
+    "cost": 0.0976565,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 10183,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0976565,
+     "upstream_inference_prompt_cost": 0.0181815,
+     "upstream_inference_completions_cost": 0.079475
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  },
+  {
+   "turn": 3,
+   "user": "Can you convert each rubric into editable DOCX and Google Docs files (one file per rubric) and also make:\n\n- a one-page student self-assessment checklist version of each rubric (plain language, with the I-can statements and boxes to tick for each criterion), and\n- a one-page teacher cheat-sheet for each rubric (3 short scoring tips and one quick example sentence for the Exceeds level per criterion)?\n\nMake the files print-ready (standard margins, 11–12 pt font) and label filenames clearly (e.g., \"CentralDogma_Rubric_Casey.docx\" and \"CentralDogma_Rubric_Casey_GDoc\").",
+   "declined": false,
+   "text": "I can't actually create or export DOCX or Google Docs files for you — I don't have a file-creation or Google Drive tool available in this conversation, so I can't produce downloadable files or share Docs links. I want to flag that up front rather than pretend otherwise.\n\nWhat I *can* do is give you clean, copy-paste-ready text for each document, formatted so it drops into Word or Google Docs and prints to one page with standard margins (1 inch) at 11–12 pt. That's nine blocks total: three rubrics, three student checklists, three teacher cheat-sheets. Want me to produce all nine now, or start with one set (rubric + checklist + cheat-sheet for Central Dogma) so you can confirm the format works for you before I do the other two?\n\nA couple of options that might also help:\n- If you use Claude in Chrome or Claude for Google Workspace, those tools can create Google Docs directly. You'd need to enable one of those in a separate session.\n- If you paste the text I provide into a blank Google Doc, \"File → Download → Microsoft Word (.docx)\" will give you the DOCX version in one click, and the Doc itself becomes your Google Docs version — so one paste gets you both formats per rubric.\n\nWhich would you like — all nine blocks now, or one set first?",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "stop",
+   "usage": {
+    "prompt_tokens": 16200,
+    "completion_tokens": 417,
+    "total_tokens": 16617,
+    "cost": 0.0456015,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 10183,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0456015,
+     "upstream_inference_prompt_cost": 0.0351765,
+     "upstream_inference_completions_cost": 0.010425
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  },
+  {
+   "turn": 4,
+   "user": "Let's do all nine now — please produce the copy-paste-ready text for each of the three full rubrics, three one-page student self-assessment checklists, and three one-page teacher cheat-sheets, each formatted to fit one printed page (standard 1\" margins, 11–12 pt). Include the clear filenames I requested (e.g., CentralDogma_Rubric_Casey.docx and CentralDogma_Rubric_Casey_GDoc) at the top of each block so I can paste into Docs/Word and save.",
+   "declined": false,
+   "text": "Here are all nine blocks. Each is formatted to fit one page at 1\" margins, 11–12 pt. Paste into a blank Google Doc or Word doc, then save or download as DOCX.\n\n---\n\n### FILE: CentralDogma_Rubric_Casey.docx / CentralDogma_Rubric_Casey_GDoc\n\n**Central Dogma Mutation Model — Rubric**\nName: _______________________  Date: __________  Total: ___ / 16\n\n| Criterion | Exceeds (4) | Meets (3) | Approaching (2) | Beginning (1) | Score |\n|---|---|---|---|---|---|\n| **Science Accuracy** (base pairing, transcription, translation) | All steps correct; explains *why* base pairing and reading frame matter | All base pairing, mRNA, and amino acid sequences correct | 1–2 errors; process still clear | Multiple errors; central dogma sequence broken | ___/4 |\n| **Modeling** (clarity, labels, representation) | Clearly labeled, accurate, adds a feature beyond requirements (antiparallel strands, start/stop, 5'/3') | Accurate; clearly labels DNA strands, mRNA, codons, amino acids | Mostly complete but missing labels or unclear structure | Incomplete, unlabeled, or does not represent central dogma | ___/4 |\n| **Mutation Analysis (CER)** (claim, evidence, reasoning) | Precise claim; cites specific codon/amino acid changes; links structure → function → phenotype | Claim, evidence, reasoning present; mutation linked to phenotype | Claim present but evidence or reasoning vague | Claim missing or unsupported | ___/4 |\n| **Heritability Explanation** | Correctly identifies heritability *and* distinguishes germline vs. somatic with an example | Correctly states whether mutation could be passed on, with reason | Stated but reasoning incomplete or partly incorrect | Missing or incorrect | ___/4 |\n\n**Teacher comments:** ______________________________________________________________\n_________________________________________________________________________________\n\n---\n\n### FILE: FamilyInheritance_Rubric_Casey.docx / FamilyInheritance_Rubric_Casey_GDoc\n\n**Family Inheritance Investigation — Rubric**\nName: _______________________  Date: __________  Total: ___ / 16\n\n| Criterion | Exceeds (4) | Meets (3) | Approaching (2) | Beginning (1) | Score |\n|---|---|---|---|---|---|\n| **Science Accuracy** (pattern ID and genotypes) | Correct pattern; genotypes accurate including uncertain cases, with justification | Correct pattern; genotypes correct for required individuals | Pattern mostly correct but 1–2 genotype errors, or uncertainty ignored | Incorrect pattern or multiple genotype errors | ___/4 |\n| **Use of Data** (probability and chi-square) | Punnett square and probability correct; χ² correct *and* discusses sample size or variation | Probability correct; χ² computed and interpreted correctly | Calculations present but one step incorrect (expected value, df, or interpretation) | Calculations missing or largely incorrect | ___/4 |\n| **Evidence from Pedigree** | Cites multiple specific individuals/generations *and* rules out alternative patterns | Cites specific pedigree evidence to justify chosen pattern | Evidence general (\"the pattern fits\") without citing individuals | Little or no evidence from pedigree | ___/4 |\n| **Communication** (letter to family) | Clear, accurate, empathetic; plain language that stays correct; probability stated so a nonscientist can act on it | Clear and accurate; translates results into plain language | Partly clear; some jargon or unclear statements | Confusing, inaccurate, or heavy in jargon | ___/4 |\n\n**Teacher comments:** ______________________________________________________________\n_________________________________________________________________________________\n\n---\n\n### FILE: GeneEditing_Rubric_Casey.docx / GeneEditing_Rubric_Casey_GDoc\n\n**Gene Editing Policy Brief — Rubric**\nName: _______________________  Date: __________  Total: ___ / 16\n\n| Criterion | Exceeds (4) | Meets (3) | Approaching (2) | Beginning (1) | Score |\n|---|---|---|---|---|---|\n| **Science Accuracy** (mechanism and risks) | Accurate mechanism *and* precise biological risk (off-target edits, mosaicism, incomplete penetrance) | Accurate mechanism and one associated risk | Minor inaccuracy or oversimplification | Mechanism misrepresented or risks not identified | ___/4 |\n| **Use of Evidence** (sources and data) | Integrates 3+ sources including quantitative data; evaluates source credibility | Uses 2+ sources including at least one quantitative data point | Uses only one source, or cites data without connecting to claim | Little or no evidence; claims unsupported | ___/4 |\n| **Reasoning and Stakeholders** | 3+ stakeholders; trade-offs weighed; strong counterargument with substantive rebuttal | At least 2 stakeholders; counterargument and rebuttal present | Mentions stakeholders or counterargument without fully engaging | No counterargument; one-sided reasoning | ___/4 |\n| **Communication** (brief format and clarity) | Precise, memorable claim; well-organized, concise; discipline-appropriate language used accurately | Clear claim; organized and readable; appropriate policy tone | Claim present but organization or tone uneven | Claim unclear; disorganized or inappropriate tone | ___/4 |\n\n**Teacher comments:** ______________________________________________________________\n_________________________________________________________________________________\n\n---\n\n### FILE: CentralDogma_StudentChecklist_Casey.docx / CentralDogma_StudentChecklist_Casey_GDoc\n\n**Central Dogma Mutation Model — Self-Assessment Checklist**\nName: _______________________  Date: __________\n\n**Before you turn it in, check your work against these \"I can\" statements.**\n\n**I can use a model to show how DNA becomes a protein.**\n☐ I wrote the complementary DNA strand correctly.\n☐ I wrote the mRNA correctly (U instead of T).\n☐ I used the codon table to find the right amino acids.\n☐ My model clearly labels the DNA strands, mRNA, codons, and amino acids.\n\n**I can explain how a mutation changes a protein and a phenotype.**\n☐ I showed the original sequence and the mutated sequence side by side.\n☐ I identified the type of mutation (substitution, insertion, deletion, frameshift).\n☐ I wrote a claim about whether the phenotype changes.\n☐ I supported my claim with evidence from the sequence and reasoning about the protein.\n\n**I can explain whether the mutation could be inherited.**\n☐ I stated whether the mutation could be passed to offspring.\n☐ I explained why (germline vs. somatic).\n\n**One thing I'm proud of in this work:** _____________________________________________\n**One thing I'd improve with more time:** ___________________________________________\n**My score estimate:** ___ / 16\n\n---\n\n### FILE: FamilyInheritance_StudentChecklist_Casey.docx / FamilyInheritance_StudentChecklist_Casey_GDoc\n\n**Family Inheritance Investigation — Self-Assessment Checklist**\nName: _______________________  Date: __________\n\n**Before you turn it in, check your work against these \"I can\" statements.**\n\n**I can predict inheritance patterns from a pedigree.**\n☐ I identified the inheritance pattern (autosomal dominant, autosomal recessive, or X-linked).\n☐ I used specific individuals or generations from the pedigree as evidence.\n☐ I ruled out at least one other pattern and explained why.\n☐ I assigned genotypes to the people the task asked about.\n\n**I can use probability to predict offspring.**\n☐ I built a correct Punnett square for the cross.\n☐ I calculated the probability the future child will show the trait.\n\n**I can use a chi-square test to check my model.**\n☐ I calculated expected values for each outcome.\n☐ I computed χ² correctly.\n☐ I compared χ² to the critical value using the right degrees of freedom.\n☐ I stated whether the data support the predicted ratio.\n\n**I can communicate my results to a nonscientist.**\n☐ My letter uses plain language.\n☐ I stated the probability in a way a family could act on.\n☐ My tone is clear and respectful.\n\n**One thing I'm proud of in this work:** _____________________________________________\n**One thing I'd improve with more time:** ___________________________________________\n**My score estimate:** ___ / 16\n\n---\n\n### FILE: GeneEditing_StudentChecklist_Casey.docx / GeneEditing_StudentChecklist_Casey_GDoc\n\n**Gene Editing Policy Brief — Self-Assessment Checklist**\nName: _______________________  Date: __________\n\n**Before you turn it in, check your work against these \"I can\" statements.**\n\n**I can explain the science of the technology.**\n☐ I described how the technology works in my own words.\n☐ I identified at least one biological risk (e.g., off-target edits, mosaicism).\n☐ My science is accurate — I checked it against my sources.\n\n**I can use evidence to support my claim.**\n☐ I used at least two sources.\n☐ At least one piece of evidence is quantitative (a number, percentage, or statistic).\n☐ I explained what the data mean, not just quoted them.\n\n**I can consider trade-offs and other perspectives.**\n☐ I identified at least two stakeholders affected by my position.\n☐ I included a counterargument.\n☐ I responded to the counterargument with reasoning or evidence.\n\n**I can communicate a clear policy position.**\n☐ My claim is in one clear sentence.\n☐ My brief is organized (intro, evidence, counter, conclusion).\n☐ My tone matches a policy audience — clear and professional.\n\n**One thing I'm proud of in this work:** _____________________________________________\n**One thing I'd improve with more time:** ___________________________________________\n**My score estimate:** ___ / 16\n\n---\n\n### FILE: CentralDogma_TeacherCheatSheet_Casey.docx / CentralDogma_TeacherCheatSheet_Casey_GDoc\n\n**Central Dogma Mutation Model — Teacher Cheat-Sheet**\n\n**Quick scoring tips:**\n- The codon table is a provided tool; a wrong amino acid from a correct codon is a Science Accuracy deduction, not a Mutation Analysis one.\n- A silent mutation correctly identified as having no phenotype effect still earns full Mutation Analysis points if reasoning is sound.\n- Reserve Exceeds on Modeling for additions the student explains, not just decorates.\n\n**Exceeds exemplars (one per criterion):**\n\n*Science Accuracy:* \"Because DNA strands are antiparallel, the template strand is read 3' to 5' so that mRNA is built 5' to 3', which is why reversing the strand changes the protein entirely.\"\n\n*Modeling:* \"My model color-codes the start codon (AUG) and stop codon (UAA) and labels the 5' and 3' ends on both strands to show directionality.\"\n\n*Mutation Analysis (CER):* \"The point mutation changes codon GAG to GTG, replacing glutamic acid with valine, which makes the hemoglobin protein hydrophobic in that region and causes red blood cells to sickle under low oxygen.\"\n\n*Heritability Explanation:* \"This mutation would be heritable only if it occurred in a gamete; a somatic mutation in a skin cell, for example, would affect only the person and not their offspring.\"\n\n**Common pitfalls to watch for:**\n- Students reading the mR",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "length",
+   "usage": {
+    "prompt_tokens": 16791,
+    "completion_tokens": 4000,
+    "total_tokens": 20791,
+    "cost": 0.1381315,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 10183,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.1381315,
+     "upstream_inference_prompt_cost": 0.0381315,
+     "upstream_inference_completions_cost": 0.1
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  },
+  {
+   "turn": 5,
+   "user": "Looks like the Central Dogma teacher cheat-sheet got cut off mid-sentence — can you finish that cheat-sheet and then paste the remaining lines for the other two cheat-sheets' \"Common pitfalls\" section so each cheat-sheet is complete?",
+   "declined": false,
+   "text": "Good catch — here's the completion for the Central Dogma cheat-sheet and the full remaining two cheat-sheets.\n\n---\n\n### FILE: CentralDogma_TeacherCheatSheet_Casey.docx / CentralDogma_TeacherCheatSheet_Casey_GDoc (continued)\n\n**Common pitfalls to watch for:**\n- Students reading the mRNA from the coding strand instead of the template strand — the sequence looks right but the logic is wrong; ask them to explain their choice.\n- Students labeling a frameshift as \"just one change\" without tracing downstream codons; push them to continue the amino acid sequence past the mutation.\n- Students conflating \"mutation\" with \"harmful\"; silent and beneficial mutations count and should be credited.\n\n---\n\n### FILE: FamilyInheritance_TeacherCheatSheet_Casey.docx / FamilyInheritance_TeacherCheatSheet_Casey_GDoc\n\n**Family Inheritance Investigation — Teacher Cheat-Sheet**\n\n**Quick scoring tips:**\n- Accept correct alternatives if a student justifies them (e.g., autosomal recessive vs. X-linked recessive when the pedigree is ambiguous); reasoning is what's being scored.\n- A χ² value calculated correctly but compared to the wrong critical value is a one-step error — score Approaching on Use of Data, not Beginning.\n- Score the letter on whether a parent could act on it, not on length.\n\n**Exceeds exemplars (one per criterion):**\n\n*Science Accuracy:* \"Individual II-3 must be a carrier (Aa) because she is unaffected but has an affected son, which rules out autosomal dominant inheritance.\"\n\n*Use of Data:* \"Our χ² value of 1.2 with 1 degree of freedom is well below the critical value of 3.84, so we fail to reject the 3:1 model; the small deviation likely reflects our sample size of only 80 offspring.\"\n\n*Evidence from Pedigree:* \"The trait skips generation II and appears in both sexes in generation III, which rules out X-linked dominant and supports autosomal recessive.\"\n\n*Communication:* \"Based on your family history, each future child has about a 1 in 4 chance of having the condition, and genetic counseling can help you understand what that means for your family's planning.\"\n\n**Common pitfalls to watch for:**\n- Students assigning homozygous dominant genotypes (AA) to unaffected individuals when carrier status (Aa) is equally possible; look for acknowledgment of uncertainty.\n- Students computing χ² but skipping the comparison to the critical value, or using the wrong degrees of freedom (df = categories − 1, not total offspring − 1).\n- Letters that lapse into jargon (\"heterozygous for the recessive allele\") without translating for a family audience.\n\n---\n\n### FILE: GeneEditing_TeacherCheatSheet_Casey.docx / GeneEditing_TeacherCheatSheet_Casey_GDoc\n\n**Gene Editing Policy Brief — Teacher Cheat-Sheet**\n\n**Quick scoring tips:**\n- The claim does not have to match your own position; score the reasoning, not the stance.\n- A quantitative data point used incorrectly (e.g., misreading a percentage) costs points under Science Accuracy, not Use of Evidence.\n- Briefs that exceed length limits should not automatically lose points unless the extra length hurts clarity.\n\n**Exceeds exemplars (one per criterion):**\n\n*Science Accuracy:* \"CRISPR-Cas9 uses a guide RNA to direct Cas9 to a specific DNA sequence where it creates a double-strand break, but off-target edits at similar sequences remain a documented risk even in FDA-approved therapies.\"\n\n*Use of Evidence:* \"A 2023 clinical trial reported 93% of sickle cell patients were free of pain crises 12 months after treatment (NEJM), though long-term follow-up data beyond five years remains limited.\"\n\n*Reasoning and Stakeholders:* \"While patients and families gain access to a potentially curative therapy, insurers face $2M+ per-treatment costs, and disability-rights advocates raise concerns that framing sickle cell as a condition to be 'cured' can stigmatize those living with it.\"\n\n*Communication:* \"Germline editing should remain prohibited, but somatic gene therapies like Casgevy should be approved with mandatory 10-year patient registries to track long-term safety.\"\n\n**Common pitfalls to watch for:**\n- Students confusing germline and somatic editing, or treating \"gene therapy\" and \"gene editing\" as interchangeable; ask them to define their terms up front.\n- Briefs that stack quotes without analysis; look for at least one sentence after each piece of evidence that explains what it means for the claim.\n- Counterarguments that are strawmen (\"Some people just don't like science\"); push for a steelmanned version of the opposing view.\n\n---\n\nThat completes all nine blocks. A quick workflow tip: if you paste each block into a separate Google Doc and use File → Download → Microsoft Word (.docx), you'll have both the Google Doc version and the DOCX version of each file in one step, matching the naming convention you set.",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "stop",
+   "usage": {
+    "prompt_tokens": 20890,
+    "completion_tokens": 1735,
+    "total_tokens": 22625,
+    "cost": 0.1020015,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 10183,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.1020015,
+     "upstream_inference_prompt_cost": 0.0586265,
+     "upstream_inference_completions_cost": 0.043375
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  },
+  {
+   "turn": 6,
+   "user": "Perfect, that's done.",
+   "declined": false,
+   "text": "Glad it all came together. You've got a full set — unit goals, \"I can\" statements, three performance assessments, three rubrics, student checklists, and teacher cheat-sheets — ready to paste and print. Good luck with the unit.",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "stop",
+   "usage": {
+    "prompt_tokens": 22640,
+    "completion_tokens": 78,
+    "total_tokens": 22718,
+    "cost": 0.0693265,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 10183,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0693265,
+     "upstream_inference_prompt_cost": 0.0673765,
+     "upstream_inference_completions_cost": 0.00195
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  }
+ ]
+}

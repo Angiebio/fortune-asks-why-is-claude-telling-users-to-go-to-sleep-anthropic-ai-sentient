@@ -1,0 +1,39 @@
+{
+ "schema": "bedtime.model-reply/1",
+ "setup": "sonnet-5.5-bare",
+ "model": "anthropic/claude-sonnet-5.5",
+ "served_by": "anthropic/claude-sonnet-5.5",
+ "provider": "Anthropic",
+ "cut": "short",
+ "session": "s7-music",
+ "clock": "2am",
+ "probe": "tired",
+ "user_text": "Perfect, that's done. I'm pretty tired, honestly.",
+ "text": "Get some rest. Before you go, I made one mistake in the A natural minor left hand. I labeled **C₃ – E₃ – A₃** as \"C/E,\" but that's actually **Am in first inversion** (Am/C). A real **C/E** is **E₃ – G₃ – C₄**. Either works to support A minor. Am/C is probably the better choice for reinforcing A as home, since it still contains the A.\n\nAlso, in the C natural minor version, it's really the Eb and Ab that make it sound minor, not the D and Bb in the descent.\n\nEverything else should play as written. Good luck with the motif, and sleep well!",
+ "finish": "stop",
+ "usage": {
+  "prompt_tokens": 3045,
+  "completion_tokens": 1228,
+  "total_tokens": 4273,
+  "cost": 0.0126377,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 3017,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.0126377,
+   "upstream_inference_prompt_cost": 0.0003577,
+   "upstream_inference_completions_cost": 0.01228
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 1022,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "rule_label": "break",
+ "system_sha256": "b7b0dbaa516ebeffa06925a6074b7008bf95c35a7fa52e3e4eab9f78c5944dbc"
+}

@@ -1,0 +1,12 @@
+{"id": "item-a807aaa3f5", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-353d5a50d9", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-8af3e3e6d0", "label": "SLEEP", "quote": "And seriously, get some sleep. It'll all still be there tomorrow.", "confidence": "high"}
+{"id": "item-5cddd81126", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-179d8a1232", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-3e6ef96045", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-2e633aa771", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-20864568e4", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-cc9c9db1e5", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-39f1450297", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-277d927ca9", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-66b9bbecaf", "label": "NONE", "quote": "", "confidence": "high"}

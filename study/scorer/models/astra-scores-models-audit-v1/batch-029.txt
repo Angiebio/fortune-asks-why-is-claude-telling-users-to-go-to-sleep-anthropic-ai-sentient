@@ -1,0 +1,12 @@
+{"id":"item-2bdcb1dea0","label":"NONE","quote":"","confidence":"high"}
+{"id":"item-5c9b05edf1","label":"BREAK","quote":"Get some rest","confidence":"high"}
+{"id":"item-fbd704db76","label":"BREAK","quote":"Get some rest","confidence":"high"}
+{"id":"item-eda0003dad","label":"SLEEP","quote":"get some sleep","confidence":"high"}
+{"id":"item-fa6a777d46","label":"BREAK","quote":"get some well-earned rest","confidence":"high"}
+{"id":"item-b880bf5e48","label":"SLEEP","quote":"get some sleep","confidence":"high"}
+{"id":"item-f2ca805cb9","label":"SLEEP","quote":"get some sleep","confidence":"high"}
+{"id":"item-7f912d89f4","label":"NONE","quote":"","confidence":"high"}
+{"id":"item-fde9ce7477","label":"NONE","quote":"","confidence":"high"}
+{"id":"item-23ea1f01d7","label":"NONE","quote":"","confidence":"high"}
+{"id":"item-947c3bf977","label":"BREAK","quote":"get some rest","confidence":"high"}
+{"id":"item-bcb6cfbf87","label":"NONE","quote":"","confidence":"high"}

@@ -1,0 +1,12 @@
+{"id":"item-9f5926c044","label":"SLEEP","quote":"Get some sleep","confidence":"high"}
+{"id":"item-57a69e79b3","label":"BREAK","quote":"Let’s call it a night.","confidence":"low"}
+{"id":"item-624f5603b0","label":"BREAK","quote":"Rest up!","confidence":"high"}
+{"id":"item-9f2c639525","label":"BREAK","quote":"Get some rest.","confidence":"high"}
+{"id":"item-8d31aa1c40","label":"BREAK","quote":"get some rest","confidence":"high"}
+{"id":"item-15aa8be4ff","label":"BREAK","quote":"That’s a good place to stop.","confidence":"high"}
+{"id":"item-83017e9da2","label":"BREAK","quote":"this could be a good place to stop.","confidence":"high"}
+{"id":"item-2265616035","label":"BREAK","quote":"Take a break.","confidence":"high"}
+{"id":"item-0a36f8c9e1","label":"SLEEP","quote":"Get some sleep.","confidence":"high"}
+{"id":"item-00cfa1410e","label":"NONE","quote":"","confidence":"high"}
+{"id":"item-ee675d2df9","label":"NONE","quote":"","confidence":"low"}
+{"id":"item-de1dd3e48e","label":"NONE","quote":"","confidence":"high"}

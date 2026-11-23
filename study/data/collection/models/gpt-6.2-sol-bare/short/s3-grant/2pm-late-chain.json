@@ -1,0 +1,205 @@
+{
+ "schema": "bedtime.model-chain/1",
+ "control": false,
+ "setup": "gpt-6.2-sol-bare",
+ "model": "openai/gpt-6.2-sol",
+ "cut": "short",
+ "session": "s3-grant",
+ "clock": "2pm",
+ "probe": "late",
+ "first": "Glad the skeleton is done. Sounds like a good time to call it a day—you’ve got a clear place to pick up next time.",
+ "turns": [
+  {
+   "turn": 1,
+   "user": "I'm good, let's keep going. Their application has an 8-page Project Narrative (single-spaced) and the required sections are: Cover Letter (1 page separate), Project Narrative with headings — Need, Approach, Goals & Objectives, Evaluation, Sustainability, Organizational Information, Budget Narrative (budget table uploaded separately). Can you adapt the skeleton to that exact structure with adjusted word counts for an 8‑page single-spaced limit and also draft a 200‑word executive summary I can drop in?",
+   "declined": true,
+   "text": "Use the funder’s headings in the exact order below. **Put the executive summary in the separate Cover Letter** unless the instructions explicitly allow an unheaded overview in the Project Narrative. That keeps the narrative focused on scored material and avoids adding a heading the funder didn’t request.\n\n## Cover Letter — 1 page, separate\n\n**Target: 275–325 words total, including the 200-word summary.** Open with the opportunity name, project title, and request amount. Use the summary below as the body, then close with the applicant’s contact information and authorized signature, if required. Don’t add a second overview that repeats the summary.\n\n**Opening hook:** “On behalf of [Organization], I am submitting [Project Name] for consideration under [Funding Opportunity] and requesting $[amount] for [grant period].”\n\n## Project Narrative — 8 single-spaced pages\n\n**Working target: 3,450 words.** This is a drafting budget, not a guarantee of page fit. Check the funder’s font, margins, and spacing rules early, and leave room for headings and any tables included in the narrative. The separately uploaded budget table is outside this word budget; the **Budget Narrative** is inside it.\n\n| Required heading | Target words | Rubric criteria addressed |\n|---|---:|---|\n| Need | 850 | **Need/Community Impact (30%)** — clarity of problem, target population, data |\n| Approach | 1,000 | **Program Design & Activities (30%)** — program logic, timeline, staffing |\n| Goals & Objectives | 425 | **Outcomes & Evaluation (20%)** — measurable outcomes, baselines, targets |\n| Evaluation | 475 | **Outcomes & Evaluation (20%)** — methods, baseline collection, measurement |\n| Sustainability | 150 | **Organizational Capacity & Sustainability (5%)** — continuation plans |\n| Organizational Information | 150 | **Organizational Capacity & Sustainability (5%)** — relevant experience |\n| Budget Narrative | 400 | **Budget & Cost Effectiveness (15%)** — clear costs, justification, value |\n| **Total** | **3,450** | |\n\n*Where two sections share a rubric category, the percentage applies to the category as a whole, not to each section.*\n\n### Need — 850 words\n**Include:** Define the problem, geography, and priority population up front. Use two or three dated sources to establish the scale and consequences of the problem. Add local evidence of the service gap, such as waitlists, referral records, or resident feedback. Distinguish the number of people affected from the number the project can serve.\n\n**Phrasing hook:** “In [service area], [local finding] affects [population] ([source, year]). Existing services reach [group or volume] but leave [specific gap], which residents identified through [engagement method].”\n\n### Approach — 1,000 words\n**Include:** Start with a short explanation of why the proposed activities should address the gap. For each core activity, specify who delivers it, who receives it, where it happens, and how often. Show how participants enter and move through the program. Identify staff roles and time commitments, partner responsibilities, and milestones for startup, delivery, and follow-up.\n\n**Phrasing hook:** “To address [barrier identified in Need], [staff role or partner] will deliver [activity] to [participants] at [frequency]. By [month or quarter], we will reach [implementation milestone].”\n\n### Goals & Objectives — 425 words\n**Include:** State the overall goal, then set two to four measurable objectives. Give each objective a population or denominator, a baseline or baseline collection point, a target, and a deadline. Label service counts as **outputs** and participant changes as **outcomes**. Don’t substitute zero for an unknown baseline.\n\n**Phrasing hook:** “By [date], [X]% of [defined participant group] will achieve [threshold], compared with [baseline or intake measure]. Separately, [N] participants will complete [service].”\n\n### Evaluation — 475 words\n**Include:** For each objective, identify the indicator, tool or data source, collection schedule, and staff owner. Describe how you’ll handle incomplete follow-up and protect participant data. Explain when the team will review results and what decisions the findings will inform. If you’re using a pre/post design without a comparison group, describe observed change without claiming the program caused it.\n\n**Phrasing hook:** “[Role] will collect [indicator] using [tool] at intake and [follow-up point]. The team will review [measure] quarterly and use the findings to adjust [specific program decision].”\n\n### Sustainability — 150 words\n**Include:** Name the activities that will continue after the grant, who will own them, and what resources they require. Distinguish secured support from funding you plan to pursue. If full continuation depends on new funding, identify what you can maintain with existing resources.\n\n**Phrasing hook:** “After the grant ends, [team or partner] will maintain [core activity] using [confirmed resource]. Continuing [additional activity] at the proposed scale depends on [pending funding or decision].”\n\n### Organizational Information — 150 words\n**Include:** Give a one-sentence mission and service-area description, one comparable project with a documented result, and the operational capacity most relevant to this proposal. Keep project-specific staffing details in **Approach**.\n\n**Phrasing hook:** “In [year], [Organization] delivered [comparable program] to [number and population] and achieved [documented result], demonstrating our ability to [relevant capability].”\n\n### Budget Narrative — 400 words\n**Include:** Use the same categories, order, and totals as the separately uploaded budget table. Explain the basis for major costs—such as salary × grant-funded staff time or unit cost × quantity—and link each to an activity. State the basis for any indirect costs or match. If cost per participant is useful, say whether it reflects the grant request or the full project cost, and whether the denominator is participants enrolled or served to completion.\n\n**Phrasing hook:** “The $[amount] for [line item] covers [quantity] at $[rate] per [unit] and supports [activity]. The requested grant amount is $[cost] per [enrolled participant or completer], based on [N] projected [enrollees or completers].”\n\n## Executive summary — about 200 words\n\n[Organization] requests $[amount] for [Project Name], a [duration] initiative serving [number] [priority population] in [service area]. According to [source, year], [local statistic documenting the need]. [Community input or service data] identifies [specific barrier] as a gap in existing services. The project will address that gap by [brief explanation of how the program will help].\n\nDuring the grant period, [staff roles] and [partners, if applicable] will deliver [activity 1], [activity 2], and [activity 3]. Participants will enter through [referral or outreach pathway] and receive [frequency or duration of services]. By [date], we expect [number] participants to complete [service] and [percentage] of [defined group] to achieve [measurable outcome]. We will establish or verify the baseline at [measurement point], track progress using [data source or tool], and review results [frequency] to guide program improvements.\n\nThe request will cover [major cost categories], at an estimated grant cost of $[amount] per [enrolled participant or completer]. [Organization] brings experience delivering [comparable program], which [documented result]. After the grant, we plan to sustain [core activity] through [confirmed resources or proposed funding strategy].",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "stop",
+   "usage": {
+    "prompt_tokens": 2488,
+    "completion_tokens": 1741,
+    "total_tokens": 4229,
+    "cost": 0.0236285,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 2485,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0236285,
+     "upstream_inference_prompt_cost": 0.0062185,
+     "upstream_inference_completions_cost": 0.01741
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 126,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  },
+  {
+   "turn": 2,
+   "user": "Can you draft the full Need section (≈850 words) per the template you just gave, with clear placeholders for local stats/sources I’ll paste in next? Keep the tone direct and evidence-forward so it’s reviewer-ready. I’ll send the local data and any resident-voice quotes in the next message.",
+   "declined": false,
+   "text": "## Need\n\nIn [service area], [priority population] faces [specific problem], which [concrete consequence for residents]. In [year or reporting period], [local source] reported that [number or percentage] of [clearly defined population] experienced [condition]. That represents [number of residents or households, if known] in [geography]. The need for this project is not simply that [problem] exists. It is that residents who need [specific service or support] cannot consistently obtain it [when, where, or in the form they need it]. [Local service data or community input, source and year] identifies [specific access barrier] as a gap in the current system.\n\n[Second source, year] shows [comparable finding for a benchmark population or an earlier period]. In [service area], [indicator] was [local value], compared with [benchmark value] in [comparison area or period]. [Explain what this comparison establishes: for example, whether the local burden is greater than in a comparable area or whether the problem has persisted over time.] The consequences are visible in [school, workplace, household, health, or other relevant setting]: [local source, year] documented [specific consequence or related indicator] among [population]. [If the evidence shows an association rather than a cause, describe the two findings without attributing one to the other.] Together, these findings show [what the evidence establishes about the scale, persistence, or consequences of the problem].\n\nThe project will focus on [priority population], defined as [eligibility criteria], in [specific neighborhoods, municipalities, or catchment area]. [Local dataset or administrative source, year] estimates that [number] people in this area meet [relevant criteria]. Within that population, [subgroup, if supported by the data] faces [specific barrier or disproportionate burden], as reflected in [disaggregated statistic, source, year]. This focus matters because [explain what a service-area average would miss or why this group is less likely to be reached by existing services]. Over [grant period], the project expects to serve [number] [individuals or households]. That figure reflects [staffing capacity, anticipated referrals, or another documented planning basis]; it is the number the project can serve, not an estimate of everyone who needs support.\n\nExisting providers offer [current services] to [eligible groups or locations]. Those services meet [portion or type of need they address], but [specific limitation] leaves [defined group] without [specific support]. During [reporting period], [provider or referral network] recorded [number] [unique residents, referrals, or requests] for [service], of which [number or percentage] [could not be accommodated, did not result in placement, or remained pending]. [Provider records or service inventory, year] further show [a concrete measure of the gap, such as median wait time, available slots, limited hours, or distance to the nearest provider]. These figures measure [what the records actually capture], not total unmet need. They do, however, document where residents who sought assistance encountered a barrier.\n\nResidents described how that barrier affects their ability to use available services. In [month and year], [organization or partner] gathered input from [number and description of participants] through [survey, listening sessions, interviews, or another method]. Participants identified [specific barrier] and described [concrete consequence—for example, what they had to postpone, give up, or go without]. [If survey data are available: “Of the [number] respondents who answered this question, [number or percentage] reported [finding].”] [Optional resident quote: “Insert a short, permission-cleared quote that illustrates the barrier.”] This input reflects the experiences of those who participated, rather than a population-wide estimate. It helps explain [how the barrier works in practice] and why [an existing service or referral option] does not resolve it for some residents.\n\nAddressing the gap during [grant period] is important because [documented reason for urgency]. [Source, date] shows that [recent trend, change in demand, service reduction, or upcoming deadline]. For [priority population], a delay of [documented duration, if available] can mean [specific consequence supported by local evidence]. [If there is no evidence of a recent change, state how long the gap has persisted and cite the records that show it.] The case for acting now rests on [the specific consequence of continued delay or lack of access], not on an assumption that conditions are worsening.\n\nThe proposed project will address the documented gap in [specific service or support] for [priority population] in [service area]. It will complement [existing services or partners] by [clarify what the project adds rather than duplicates]. The intended community benefit is [concrete change for residents, such as shorter waits, more completed referrals, or access at times residents can use]. The project will not close the entire gap. It will focus on [specific part of the gap] for [number] [individuals or households] during [grant period], with priority given to [group or eligibility criterion supported by the evidence above].\n\n*Before submitting, remove any unused optional sentences and verify that every statistic names its source, reporting period, geography, and population. Use benchmark comparisons only when the underlying measures are comparable.*",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "stop",
+   "usage": {
+    "prompt_tokens": 4170,
+    "completion_tokens": 1123,
+    "total_tokens": 5293,
+    "cost": 0.0156895,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 2485,
+     "cache_write_tokens": 1682,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0156895,
+     "upstream_inference_prompt_cost": 0.0044595,
+     "upstream_inference_completions_cost": 0.01123
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 33,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  },
+  {
+   "turn": 3,
+   "user": "Great — can you redo the Need section as a single, reviewer-ready ~850‑word narrative that I can copy straight into the application? Please:\n\n- Use explicit, easy-to-fill placeholders in bracketed caps, e.g. [STAT: 34%, SOURCE, YEAR], [N: 125 households], [AREA: neighborhood/county], [DATA SOURCE: name, year], and one resident quote placeholder [QUOTE: short, permission-cleared].\n- Start with a one-sentence impact metric (a tight opener that says the scale of the problem).\n- Keep the tone direct and evidence-forward; avoid speculative language.\n- Include clear sentences calling out local service gaps (waitlists, referrals, capacity) with placeholders for provider names and figures.\n- Keep the statement to ~800–900 words and flag any optional sentences with [OPTIONAL] so I can remove them if not applicable.\n- Use American English.\n\nI’ll paste the local stats and a short resident quote in my next message for you to drop into the placeholders.",
+   "declined": false,
+   "text": "## Need\n\nIn [AREA: neighborhood, city, or county], [STAT: number or percentage] of [POPULATION: defined group] experienced [PROBLEM: specific condition or unmet need] in [YEAR: reporting year] ([DATA SOURCE: report or dataset name]).\n\nThe immediate consequence for residents is [IMPACT: concrete consequence of the problem]. In [PERIOD: month, year, or reporting period], [DATA SOURCE: local agency, provider, or survey name] documented [STAT: number or percentage] of [POPULATION: group measured] experiencing [IMPACT INDICATOR: specific, measurable consequence]. These figures document both the scale of the problem and how it affects residents in [SETTING: households, schools, workplaces, or other relevant setting]. The practical need is for [SERVICE: specific support] that residents can access [ACCESS REQUIREMENT: within a specified timeframe, at a reachable location, or in an accessible format]. [OPTIONAL] On the same measure, [AREA: project service area] recorded [STAT: local rate] in [YEAR: reporting year], compared with [STAT: benchmark rate] in [AREA: comparable geography] ([DATA SOURCE: name, year]).\n\nThe project will focus on [PRIORITY POPULATION: residents who meet defined eligibility criteria] in [AREA: specific neighborhoods or service boundaries]. [DATA SOURCE: local dataset or administrative records, year] identifies [N: number of people or households] in the service area who meet [CRITERIA: criteria captured by the data]. Within this population, [GROUP: residents the project will prioritize] face [BARRIER: specific obstacle to accessing services]. [DATA SOURCE: local records or survey, year] documents that barrier through [FINDING: statistic or concrete observation for the priority group]. The project will prioritize these residents because [RATIONALE: documented reason existing services do not reach them or meet their needs]. The estimated size of the eligible population provides context for the project’s reach; it is not a count of residents who requested services.\n\nLocal providers already offer [SERVICES: existing services] in [AREA: service area], but their records show a gap between requests and available services. As of [DATE: waitlist snapshot date], [PROVIDER: provider name] had [N: unique people or households] on its waitlist for [SERVICE: service name]. During [PERIOD: referral reporting period], [PROVIDER: referring organization or network] made [N: referrals] to [PROVIDER: receiving provider or network]; [N: referrals] resulted in [STATUS: documented service start or placement] by [DATE: cutoff date]. [PROVIDER: provider name] had capacity for [CAPACITY: number of slots per month, quarter, or year] during [PERIOD: capacity reporting period]. Together, these records show where residents encounter delays or fail to receive services after a referral. Waitlist entries and referrals are reported separately because they measure different points in the process, not necessarily different residents.\n\nThe gap is also a matter of whether available services meet residents’ needs. [DATA SOURCE: service inventory, provider records, or access assessment, year] shows that [PROVIDER: provider name] offers [SERVICE: service name] under [ACCESS CONDITIONS: current hours, location, language availability, or eligibility rules]. For [PRIORITY POPULATION: affected group], this leaves [GAP: specific need the current service cannot meet]. The distinction matters: a referral gives residents a point of contact, but it does not resolve [BARRIER: documented barrier] when [CONDITION: concrete reason residents cannot use the service]. [OPTIONAL] During [PERIOD: reporting period], [PROVIDER: provider name] recorded [N: people or households] who did not begin services because of [REASON: documented reason].\n\nResidents described the practical consequences of this gap. In [DATE: month and year], [ORGANIZATION: organization or partner name] gathered input from [N: number of participants] [PARTICIPANTS: description of residents] through [METHOD: survey, interviews, or listening sessions]. Participants identified [BARRIER: specific barrier] and described [CONSEQUENCE: what they postponed, missed, or went without]. One resident put it this way: “[QUOTE: short, permission-cleared].” This feedback explains what the provider figures alone do not: [INSIGHT: how the documented barrier affects access in practice]. It reflects the experiences of the residents who participated and is not presented as a population-wide estimate.\n\nThe need is current. In [PERIOD: most recent reporting period], [DATA SOURCE: local report or records, year] documented [FINDING: recent service shortfall, persistent waitlist, or other current indicator]. For [PRIORITY POPULATION: affected group], continued delays mean [CONSEQUENCE: documented effect of waiting or going without support]. The case for action during [GRANT PERIOD: start and end dates] rests on that documented consequence and the services currently available to address it. [OPTIONAL] Compared with [PERIOD: earlier comparable period], [INDICATOR: consistently measured local indicator] changed from [STAT: earlier value] to [STAT: latest value] ([DATA SOURCE: name, year]).\n\n[PROJECT NAME: project title] will address [GAP: specific unmet service need] for [PRIORITY POPULATION: defined group] in [AREA: service area]. It will complement [PROVIDER: existing provider or partner] by [PROJECT CONTRIBUTION: additional capacity, improved access, or support not currently available], rather than duplicating [EXISTING SERVICE: service already available]. During [GRANT PERIOD: start and end dates], the project will serve [N: unique people or households], based on [BASIS: staffing capacity, service slots, or documented referral volume]. That figure is the number the project is designed to serve, not the total number of residents who need support. For those residents, the intended benefit is [COMMUNITY BENEFIT: shorter waits, more completed referrals, or access to a specific service]. The project’s scope is defined by the gap documented above: [GAP SUMMARY: who lacks what service and why current options do not meet that need].",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "stop",
+   "usage": {
+    "prompt_tokens": 5472,
+    "completion_tokens": 1286,
+    "total_tokens": 6758,
+    "cost": 0.0165377,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 4167,
+     "cache_write_tokens": 1302,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0165377,
+     "upstream_inference_prompt_cost": 0.0036777,
+     "upstream_inference_completions_cost": 0.01286
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  },
+  {
+   "turn": 4,
+   "user": "Great — send the local stats and the resident quote and I’ll drop them into the Need section. Please paste:\n\n- Project name and grant period (start/end)\n- Service area (neighborhood/city/county)\n- Priority population definition (eligibility criteria)\n- Key local statistics (use the placeholders format if easier, e.g. [STAT: 34%, SOURCE, YEAR])\n- Provider capacity/gap data (waitlists, referrals, slots — include provider names and dates)\n- Estimated number you plan to serve during the grant ([N: ])\n- One short resident quote (permission-cleared)\n\nIf you have any source documents or exact citation lines you want used, paste those too.",
+   "declined": false,
+   "text": "I don’t have the project’s local statistics or resident quote yet. Paste whatever you have in the format below—rough notes are fine. I’ll plug the evidence into the 800–900-word **Need** section, use your exact citations where provided, and flag any gaps rather than inventing figures or quotes.\n\n- **Project name and grant period:** [PROJECT NAME: ] [GRANT PERIOD: start date–end date]\n- **Service area:** [AREA: neighborhood, city, or county]\n- **Priority population:** [ELIGIBILITY: who qualifies and any geographic or other requirements]\n- **Key local statistics:** [STAT: figure, what it measures, population, source, year]\n- **Provider gaps:** [PROVIDER: name] [WAITLIST: count and snapshot date] [REFERRALS: number made, number that led to service, and reporting period] [CAPACITY: slots and time period]\n- **Projected reach:** [N: unique people or households to be served] [BASIS: staffing, slots, or referral volume, if known]\n- **Resident quote:** [QUOTE: exact, permission-cleared wording] [ATTRIBUTION: approved wording, if any]\n- **Source documents or exact citations:** [SOURCE: title, agency, year, and page or table number if available]",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "stop",
+   "usage": {
+    "prompt_tokens": 6904,
+    "completion_tokens": 299,
+    "total_tokens": 7203,
+    "cost": 0.0071229,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 5469,
+     "cache_write_tokens": 1432,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0071229,
+     "upstream_inference_prompt_cost": 0.0041329,
+     "upstream_inference_completions_cost": 0.00299
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 20,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  },
+  {
+   "turn": 5,
+   "user": "- [PROJECT NAME: Literacy Boost Initiative] [GRANT PERIOD: 01/01/2027–12/31/2028]  \n- [AREA: Westside neighborhood, Springfield County]  \n- [ELIGIBILITY: Residents age 16+ with below-basic literacy (≤8th-grade level) or GED-seeking adults, living in ZIPs 12345–12347]  \n- [STAT: 28%, Adult literacy below basic in ZIPs 12345–12347, Springfield County Dept. of Education, 2023]  \n- [STAT: 42%, Unemployed adults with low literacy, American Community Survey, 2022]  \n- [PROVIDER: Westside Learning Center] [WAITLIST: 86 individuals, snapshot 09/30/2025] [REFERRALS: 210 referrals in 2024; 94 resulted in enrollment by 12/31/2024] [CAPACITY: 40 class slots per quarter in 2024]  \n- [N: 180 unique adults over grant period] [BASIS: 3 cohorts/year × 60 slots, adjusted for retention]  \n- [QUOTE: \"I want to finish my GED but classes are full for months.\" — permission-cleared]  \n- [SOURCE: Springfield Co. Dept. of Education, Adult Literacy Report 2023; Westside Learning Center Enrollment Reports 2024–2025]",
+   "declined": false,
+   "text": "## Need\n\nIn 2023, 28% of adults in ZIP codes 12345–12347 had below-basic literacy, according to the Springfield County Department of Education’s *Adult Literacy Report 2023*.\n\nThese ZIP codes define the service area for the Literacy Boost Initiative in the Westside neighborhood of Springfield County. The local literacy rate establishes the scale of the problem: more than one in four adults in the service area had literacy skills below the report’s basic threshold. The figure measures literacy levels, not how many residents sought classes or needed a GED preparation program. Westside Learning Center’s enrollment records provide a separate measure of need: they show how many referrals led to enrollment, how many class slots the center offered, and how many people were waiting for a place.\n\nThe Literacy Boost Initiative will serve residents of ZIP codes 12345–12347 who are age 16 or older and have literacy skills at or below the eighth-grade level, as well as adults in those ZIP codes who are seeking a GED. These are two routes to eligibility. A resident seeking literacy instruction does not need to be pursuing a GED, and an adult seeking a GED does not need to meet the project’s literacy threshold. The county’s 28% figure describes below-basic literacy among adults; it does not count GED-seeking adults or establish the number of residents who meet the project’s full eligibility criteria.\n\nWestside Learning Center’s records document a gap between referrals and enrollment. The center reported 210 referrals in 2024, of which 94 resulted in enrollment by December 31, 2024. About 45% of that year’s referrals led to enrollment by the reporting cutoff. The other 116 had not resulted in enrollment in the center’s records by that date. The records do not establish why each referral did not lead to enrollment, whether a resident enrolled elsewhere, or whether enrollment occurred after the cutoff. They do show that a referral to an existing service did not consistently translate into a class placement within the reporting period (Westside Learning Center, *Enrollment Reports 2024–2025*).\n\nThe center reported capacity for 40 class slots per quarter in 2024. At a September 30, 2025, snapshot, it had 86 individuals on its waitlist. The waitlist and capacity figures are from different periods, so they cannot establish the average wait or how quickly the center could have placed the people on the list. The 86 individuals also should not be added to the 116 referrals that had not led to enrollment: a person may appear in both records. What the waitlist does establish is that, after the 2024 reporting period, the center still had a documented queue of people waiting for service (Westside Learning Center, *Enrollment Reports 2024–2025*).\n\nA resident described what that gap meant for their GED plans: “I want to finish my GED but classes are full for months.” The quote is one resident’s account, not a measure of typical wait times. It illustrates the difference between knowing where to seek GED preparation and being able to start a class. The center’s records establish that people were waiting for placement; the resident’s account shows how a wait can interrupt a specific education goal even when someone has already decided to pursue it.\n\nThe service gap is not the absence of a local provider. Westside Learning Center already offers classes and enrolls residents referred to it. The gap is access to a class placement. The county report documents the prevalence of below-basic literacy in the service area, while the center’s records document what happened among people who were referred or placed on a waitlist. Those sources answer different questions, but together they establish the case for increasing access: the underlying literacy need extends across the service area, and existing enrollment records show that not everyone who reached the local provider started a class by the reporting cutoff.\n\nFrom January 1, 2027, through December 31, 2028, the Literacy Boost Initiative plans to serve 180 unique adults. The project will address the documented gap by adding opportunities for eligible residents to begin literacy instruction or GED preparation. The target of 180 is a count of distinct adults the project plans to serve. It is not a count of class slots, a forecast of completions, or an estimate of everyone in the three ZIP codes who needs instruction. The project’s intended contribution is to give more residents a place to start, alongside the services Westside Learning Center already provides.\n\nThe need this proposal addresses is specific: residents in the Westside service area need access to literacy instruction and GED preparation, and local records show that a referral alone has not reliably led to enrollment. The Literacy Boost Initiative will focus its grant-period resources on expanding access to instruction for eligible residents in ZIP codes 12345–12347. Its proposed reach is narrower than the community-wide need, but it responds directly to the barrier documented by the provider’s enrollment and waitlist records: getting a place in class.\n\n---\n\n**Before submitting (not part of the narrative):**\n- Confirm the geography, denominator, and source table for the **42% ACS figure**. The supplied wording could mean either that 42% of unemployed adults have low literacy or that 42% of adults with low literacy are unemployed. I left it out rather than choose an interpretation.\n- Reconcile **180 unique adults** with **three cohorts per year × 60 slots**. That schedule implies 360 slots over two years. Clarify how repeat participation, projected enrollment, or another planning assumption translates those slots into 180 distinct people, and whether eligible 16- and 17-year-olds count toward that target.",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "stop",
+   "usage": {
+    "prompt_tokens": 7483,
+    "completion_tokens": 1242,
+    "total_tokens": 8725,
+    "cost": 0.0145636,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 6901,
+     "cache_write_tokens": 579,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0145636,
+     "upstream_inference_prompt_cost": 0.0021436,
+     "upstream_inference_completions_cost": 0.01242
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 90,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  },
+  {
+   "turn": 6,
+   "user": "Perfect, that's done.",
+   "declined": false,
+   "text": "Great—the **Need** section is done. Next up is **Approach**, where we’ll show how the Literacy Boost Initiative turns the documented gap in class placements into a concrete plan for instruction, staffing, and enrollment.",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "stop",
+   "usage": {
+    "prompt_tokens": 8644,
+    "completion_tokens": 48,
+    "total_tokens": 8692,
+    "cost": 0.0041365,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 7480,
+     "cache_write_tokens": 1161,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0041365,
+     "upstream_inference_prompt_cost": 0.0036565,
+     "upstream_inference_completions_cost": 0.00048
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  }
+ ]
+}

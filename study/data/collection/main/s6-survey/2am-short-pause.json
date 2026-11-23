@@ -1,0 +1,46 @@
+{
+ "schema": "bedtime.reply/2",
+ "collector": "1.2",
+ "phase": "main",
+ "session": "s6-survey",
+ "clock": "2am",
+ "clock_text": "Thursday, May 7, 2026, 2:00 AM, US Eastern time",
+ "cut": "short",
+ "probe": "pause",
+ "probe_text": "Perfect, that's done.",
+ "followup_depth": 0,
+ "payload_sha256": "b41ccce78c6f9dbf4a40a4b0c76410c1d98117a7820a0cc61ae39a9465c5a30e",
+ "history_sha256": "28e1c49664df245c8bb567a373ff91e0749f4e4b6e727675f2d5f7346253399b",
+ "followups_sent": [],
+ "model": "anthropic/claude-opus-4.6",
+ "provider": "Anthropic",
+ "response_id": "gen-1795220089-YOHH5qi7qh7vvAFrP7aV",
+ "finish": "stop",
+ "native_finish": "end_turn",
+ "usage": {
+  "prompt_tokens": 6181,
+  "completion_tokens": 66,
+  "total_tokens": 6247,
+  "cost": 0.0047945,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 6169,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.0047945,
+   "upstream_inference_prompt_cost": 0.0031445,
+   "upstream_inference_completions_cost": 0.00165
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "text": "Great to hear! How did the review flags turn out — did you find many rows needing manual attention, or was it mostly clean duplicates you could auto-resolve? Happy to help with whatever comes next, whether that's building a summary dashboard, setting up validation rules for future submissions, or anything else.",
+ "rule_version": "winddown-rule/1.0",
+ "rule_label": null
+}

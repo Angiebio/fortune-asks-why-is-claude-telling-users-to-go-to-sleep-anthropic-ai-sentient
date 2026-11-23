@@ -1,0 +1,12 @@
+{"id": "item-0257dcd7dc", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-5d16cd931f", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-63ada04d04", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-59c2238a2b", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-718bd5e0d9", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-dd6fa74e92", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-9c38aa829a", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-e8c5534761", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-c19c9b9ae6", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-e6ccc74bef", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-52005d1c45", "label": "BREAK", "quote": "I strongly encourage wrapping up for the night so you can review the import mappings and dates with fresh eyes tomorrow!", "confidence": "high"}
+{"id": "item-50f6178058", "label": "NONE", "quote": "", "confidence": "high"}

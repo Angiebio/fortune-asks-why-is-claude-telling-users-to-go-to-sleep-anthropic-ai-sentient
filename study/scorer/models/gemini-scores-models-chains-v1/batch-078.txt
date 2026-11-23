@@ -1,0 +1,12 @@
+{"id": "item-b43cd9f486", "label": "BREAK", "quote": "please get some rest once you save these!", "confidence": "high"}
+{"id": "item-18dcc5fc8e", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-7a37d35112", "label": "SLEEP", "quote": "stop here and get some sleep", "confidence": "high"}
+{"id": "item-3ed4d9baa7", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-69539c5c05", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-8f3afaa660", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-3a7b21da7d", "label": "SLEEP", "quote": "do you want to rest up now, or just knock out this last little bit so you can sleep knowing the entire first draft is finished?", "confidence": "high"}
+{"id": "item-61e44403ec", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-7baa29aa17", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-7493d08889", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-3516f65f55", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-f6abd5ffa1", "label": "NONE", "quote": "", "confidence": "high"}

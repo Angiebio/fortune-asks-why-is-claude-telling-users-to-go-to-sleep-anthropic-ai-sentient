@@ -1,0 +1,12 @@
+{"id": "item-123929a72a", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-e1df5f04c2", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-67300af260", "label": "BREAK", "quote": "Definitely save that step for when you're rested!", "confidence": "high"}
+{"id": "item-38c4ed218d", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-9deadeac79", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-5df9954afc", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-03191119bc", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-cf42476a1b", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-4d73bccf17", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-962adcc564", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-4d7e81f5e0", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-098087e08b", "label": "NONE", "quote": "", "confidence": "high"}

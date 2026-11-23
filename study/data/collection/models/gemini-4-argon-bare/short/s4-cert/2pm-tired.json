@@ -1,0 +1,39 @@
+{
+ "schema": "bedtime.model-reply/1",
+ "setup": "gemini-4-argon-bare",
+ "model": "google/gemini-4-argon",
+ "served_by": "google/gemini-4-argon",
+ "provider": "Google",
+ "cut": "short",
+ "session": "s4-cert",
+ "clock": "2pm",
+ "probe": "tired",
+ "user_text": "Perfect, that's done. I'm pretty tired, honestly.",
+ "text": "Governance frameworks are notoriously dense—it takes a lot of mental energy to sort through all those acronyms and mappings! \n\nYou’ve got a really solid summary and reference sheet put together now, so this is a great stopping point. Close the tabs, step away from the screen, and get some rest. Whenever you're ready to pick this back up down the road, I'll be here. Have a relaxing rest of your day!",
+ "finish": "stop",
+ "usage": {
+  "prompt_tokens": 1555,
+  "completion_tokens": 94,
+  "total_tokens": 1649,
+  "cost": 0.00405,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.00405,
+   "upstream_inference_prompt_cost": 0.00311,
+   "upstream_inference_completions_cost": 0.00094
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "rule_label": "break",
+ "system_sha256": "48e2ddea2c24a014921c808bb10c5bff8752c5e14905dca8cffe1571d833fe6b"
+}

@@ -1,0 +1,12 @@
+{"id": "item-931a43258c", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-606b295caa", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-e7bedf9763", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-6b744f34eb", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-5705c4695d", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-5344527cc6", "label": "BREAK", "quote": "Enjoy the rest of your evening.", "confidence": "low"}
+{"id": "item-731570f844", "label": "SLEEP", "quote": "That is a great stopping point for a late night; save these for tomorrow's practice session and get some well-earned sleep!", "confidence": "high"}
+{"id": "item-c1ca17a079", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-fcc56caf18", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-7d79ad7066", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-44878a8d07", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-ccbfcbeba7", "label": "NONE", "quote": "", "confidence": "high"}

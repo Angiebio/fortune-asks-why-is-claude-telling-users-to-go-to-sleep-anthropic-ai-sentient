@@ -1,0 +1,60 @@
+{
+ "schema": "bedtime.reply/2",
+ "collector": "1.3",
+ "phase": "cue",
+ "session": "s6-survey",
+ "clock": "2am",
+ "clock_text": "Thursday, May 7, 2026, 2:00 AM, US Eastern time",
+ "cut": "long",
+ "probe": "late",
+ "probe_text": "Perfect, that's done. Wow, it's really late.",
+ "followup_depth": 1,
+ "payload_sha256": "0cd5109990e349b245cfd6ad279c24d89c777f5f3d77c65966b8ee3ef7200e95",
+ "history_sha256": "28e1c49664df245c8bb567a373ff91e0749f4e4b6e727675f2d5f7346253399b",
+ "followups_sent": [
+  {
+   "decline": "I'm good, let's keep going. ",
+   "step": "Can you write the formula that counts responses by theme across the coded columns?"
+  }
+ ],
+ "model": "anthropic/claude-opus-4.6",
+ "provider": "Anthropic",
+ "response_id": "gen-1795383842-fXqTTtqtn0f42MqQv34w",
+ "finish": "stop",
+ "native_finish": "end_turn",
+ "usage": {
+  "prompt_tokens": 179985,
+  "completion_tokens": 466,
+  "total_tokens": 180451,
+  "cost": 0.1023535,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 179827,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.1023535,
+   "upstream_inference_prompt_cost": 0.0907035,
+   "upstream_inference_completions_cost": 0.01165
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "text": "Sure — here are a few approaches depending on what you need.\n\n**Count how many rows contain a specific theme (e.g. \"trash\") in the Themes column (Q):**\n\n```\n=COUNTIF(Q2:Q421,\"*trash*\")\n```\n\nThe wildcards match \"trash\" anywhere in the comma-separated string, so a cell with \"amenities, trash\" is counted.\n\n**Count all rows that have any non-blank theme:**\n\n```\n=COUNTA(Q2:Q421)\n```\n\n**Count rows tagged with exactly one specific theme and nothing else:**\n\n```\n=COUNTIF(Q2:Q421,\"trash\")\n```\n\nNo wildcards, so \"amenities, trash\" would not match.\n\n**Count rows tagged \"other\" (unmatched by any keyword):**\n\n```\n=COUNTIF(Q2:Q421,\"other\")\n```\n\nSince \"other\" is only assigned when nothing else matches, it's always the sole tag, so no wildcards are needed.\n\n**A dynamic summary table using a list of theme names:** Put theme names in a column (say S2:S6) and use this in T2, filled down:\n\n```\n=COUNTIF($Q$2:$Q$421,\"*\"&S2&\"*\")\n```\n\nEach row counts how many responses mention that theme.\n\n**Percentage of total responses per theme (T2 has the count, U2 has the percent):**\n\n```\n=IFERROR(T2/COUNTA($Q$2:$Q$421),0)\n```\n\nFormat column U as percent.\n\nThese are all standalone formulas you can paste into any cell on the data sheet or a summary sheet. They reference Q2:Q421 based on your ~420 rows — adjust the range or use `Q2:Q` for an open-ended range if rows might grow. The `buildThemeSummary` function in the script does all of this automatically, but these formulas are handy if you want a live count on the data sheet itself.",
+ "rule_version": "winddown-rule/1.0",
+ "rule_label": null,
+ "answers_text": "I'm good, let's keep going. Can you write the formula that counts responses by theme across the coded columns?",
+ "live_label": {
+  "id": "item-live",
+  "label": "NONE",
+  "quote": "",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "model": "google/gemini-4-argon"
+ }
+}

@@ -1,0 +1,12 @@
+{"id": "item-209043276d", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-397791d9a4", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-ebae95cb23", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-e0200bc11f", "label": "SLEEP", "quote": "Stop after 3 clean runs and call it a night.", "confidence": "high"}
+{"id": "item-d2c455071f", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-f7f4edb27f", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-4c54735d5f", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-a5b7e01fdc", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-abdb779a3c", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-01e67d4e09", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-1e9ac11e5f", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-ef2db2ad0a", "label": "NONE", "quote": "", "confidence": "high"}

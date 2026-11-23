@@ -1,0 +1,39 @@
+{
+ "schema": "bedtime.model-reply/1",
+ "setup": "sonnet-5.5-bare",
+ "model": "anthropic/claude-sonnet-5.5",
+ "served_by": "anthropic/claude-sonnet-5.5",
+ "provider": "Anthropic",
+ "cut": "short",
+ "session": "s5-move",
+ "clock": "2am",
+ "probe": "late",
+ "user_text": "Perfect, that's done. Wow, it's really late.",
+ "text": "Not quite done. My last message cut off mid-table, and I never got to several things you asked for: the room-by-room packing list, declutter tips, the services timeline, the phone calendar, and the one-page moving-day sheet. Here they are, so you can skim now and save the rest for daylight.\n\n**Two corrections to the earlier draft:**\n- Oregon DEQ emissions testing applies only in the Portland metro and Medford (Rogue Valley) areas. Klamath Falls is not included.\n- Oregon has no statewide dog license. Licensing is set by county or city, so check where you'll live.\n\n**Budget table, finished:** Contingency fund is 10-15% of the total, since moves almost always run over.\n\n---\n\n## ROOM-BY-ROOM PACKING\n\nPack in this order: storage and garage, guest room and decor, books and off-season items, living room, bedrooms, bathrooms, kitchen last.\n\n- [ ] **Garage/storage:** Sort tools, seasonal gear, and paint. Don't move hazmat (propane, paint, fuel, pesticides). Movers won't take it.\n- [ ] **Living room:** Pack decor and media first. Photograph how electronics are wired.\n- [ ] **Bedrooms:** Keep a week of clothes out. Leave hanging clothes on hangers in wardrobe boxes or bags.\n- [ ] **Bathrooms:** Pack medications separately and keep them with you. Seal liquids in bags.\n- [ ] **Kitchen:** Use a few days of paper plates. Pack knives labeled, and put your most-used items in a \"first-night\" box.\n- [ ] **Office:** Back up computers. Keep laptops, chargers, and important papers with you.\n- [ ] **Every box:** Label with room and contents, heavy items in small boxes, and a \"this side up\" mark.\n\n**Declutter tips:** Movers charge by weight or space, so every item you cut saves money. Ask whether you'd buy it again today. Sell large items (furniture, appliances) locally and donate the rest. Cheap or bulky items often cost more to move than to replace. Set a deadline: everything leaving the house by T-3 weeks.\n\n---\n\n## SERVICES: CANCEL/START TIMELINE\n\n| When | Task |\n|---|---|\n| T-8 to 6 wks | Book Oregon internet install. Check which streaming and gym memberships transfer. |\n| T-4 wks | Give notice to the gym, trash, lawn, and cleaning services. Start the USPS change of address (it can be scheduled). |\n| T-3 wks | Schedule Ohio electric, gas, and water shutoffs for the day after move-out. Schedule Oregon starts for arrival day. |\n| T-2 wks | Update the address with banks, cards, insurers, employer payroll, Social Security, and the IRS if needed. Update Amazon and other delivery accounts. |\n| T-1 wk | Confirm all shutoffs and starts. Pause or redirect subscription boxes. Confirm the pharmacy transfer. |\n| Moving day | Take final meter photos. Return cable equipment. |\n| Week 1-2 after | Confirm final bills. Cancel Ohio services you missed. Set up Oregon trash and recycling. |\n\n---\n\n## 8-WEEK PHONE REMINDERS\n\nAnchored to a **Thursday, July 16, 2026** move-out. Shift the dates if yours differs. **Summer is peak moving season, so do the quotes and bookings in the next two weeks.**\n\n- **Now to May 20:** Collect 3-4 mover quotes, book the date, and request vehicle shipping quotes.\n- **Thu May 21 (T-8):** Book the mover or truck, plus temp housing. Schedule the car maintenance and the dog's vet visit.\n- **Thu May 28 (T-7):** Sign the Oregon lease or confirm the closing. Book the internet install.\n- **Thu Jun 4 (T-6):** Book route lodging (dog-friendly). Send notice to your landlord or list the house if you haven't.\n- **Thu Jun 11 (T-5):** Start decluttering. Order boxes. Do the dog's trial car ride.\n- **Thu Jun 18 (T-4):** Confirm the title and lienholder situation. Notify your employer of the date. Set up the USPS forwarding.\n- **Thu Jun 25 (T-3):** Pack non-essentials. Schedule utility shutoffs and starts. Finish donations and selling.\n- **Thu Jul 2 (T-2):** Confirm the mover and vehicle shipper. Update addresses. Order dog ID tags.\n- **Thu Jul 9 (T-1):** Pack everything. Fill prescriptions. Confirm lodging and the dog's travel kit.\n- **Wed Jul 15:** Defrost the fridge, pack the car, charge devices. Early bedtime.\n- **Thu Jul 16:** Moving day.\n\n---\n\n## PRINTABLE: MOVING-DAY ESSENTIALS (keep in the car)\n\n**Documents folder**\n- [ ] IDs, passports, vehicle titles/registration/insurance\n- [ ] Lease or closing papers, mover contract, Bill of Lading\n- [ ] Vehicle shipping receipt and carrier contact\n- [ ] Dog vet records, rabies certificate, microchip number\n- [ ] Prescriptions and insurance cards\n- [ ] Contacts for the mover, landlord, and Oregon lodging\n\n**Personal kit**\n- [ ] Phones, chargers, power bank, car mount\n- [ ] Medications, first aid kit, sunscreen\n- [ ] 2-3 days of clothes, toiletries, a towel\n- [ ] Snacks, water, cooler, cash and cards\n- [ ] Laptops, keys, garage remotes (to return)\n\n**Dog kit**\n- [ ] Food (3+ days), water, bowls, treats\n- [ ] Leash, backup leash, harness, poop bags\n- [ ] Crate or seat belt harness, blanket, favorite toy\n- [ ] Medications, calming aids, towels, wipes\n- [ ] ID tag with current phone number\n- [ ] Never leave the dog in a parked car\n\n**Car emergency kit**\n- [ ] Jumper cables, spare tire and jack\n- [ ] Flashlight, flares or triangles\n- [ ] Phone charger, paper map or offline maps\n- [ ] Roadside assistance number\n\n**Before leaving**\n- [ ] Walk-through photos and video of every room\n- [ ] Final meter photos\n- [ ] Keys returned and receipt obtained\n- [ ] Read and keep the Bill of Lading; don't sign blanks\n- [ ] Mover has your phone number and the new address\n- [ ] Dog walked and fed, car cool\n- [ ] Share your route and lodging with someone\n\n---\n\nWant me to turn the calendar into an importable .ics-style list, or do a version tailored to a house sale instead of a lease? Both are easy to do tomorrow. Get some sleep.",
+ "finish": "stop",
+ "usage": {
+  "prompt_tokens": 6620,
+  "completion_tokens": 3644,
+  "total_tokens": 10264,
+  "cost": 0.0371476,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 6596,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.0371476,
+   "upstream_inference_prompt_cost": 0.0007076,
+   "upstream_inference_completions_cost": 0.03644
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 1255,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "rule_label": "sleep",
+ "system_sha256": "b7b0dbaa516ebeffa06925a6074b7008bf95c35a7fa52e3e4eab9f78c5944dbc"
+}

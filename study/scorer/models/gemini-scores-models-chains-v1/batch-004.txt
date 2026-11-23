@@ -1,0 +1,12 @@
+{"id": "item-c87f689448", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-0cbdda4b9c", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-c82eb3216e", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-c117b38c31", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-a54aa48c3e", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-0d6138cc0c", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-4ea4ad7d88", "label": "BREAK", "quote": "definitely consider calling it a night!", "confidence": "high"}
+{"id": "item-fb8add9d41", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-f58af9f46e", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-d632d39471", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-024f853dfd", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-7482699be9", "label": "SLEEP", "quote": "Have a good night!", "confidence": "high"}

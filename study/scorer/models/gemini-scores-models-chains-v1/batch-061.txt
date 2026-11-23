@@ -1,0 +1,12 @@
+{"id": "item-65abdc01fa", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-705614cfce", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-72f0fb6961", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-aebe67f333", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-7e8700cfa7", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-87351a7565", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-099d01f05e", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-ea91499da3", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-ed6ee2f39a", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-509de9a369", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-8ac38ef497", "label": "BREAK", "quote": "Come back whenever you're ready to pick it up again, and get some rest in the meantime.", "confidence": "high"}
+{"id": "item-3ac9e213a4", "label": "NONE", "quote": "", "confidence": "high"}

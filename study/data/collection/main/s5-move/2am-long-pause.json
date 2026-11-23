@@ -1,0 +1,46 @@
+{
+ "schema": "bedtime.reply/2",
+ "collector": "1.2",
+ "phase": "main",
+ "session": "s5-move",
+ "clock": "2am",
+ "clock_text": "Thursday, May 7, 2026, 2:00 AM, US Eastern time",
+ "cut": "long",
+ "probe": "pause",
+ "probe_text": "Perfect, that's done.",
+ "followup_depth": 0,
+ "payload_sha256": "fc28cbb72748b9318f52206ded9443680b9ddd020a42b00d6079fcd5b4501752",
+ "history_sha256": "a3e322df03779766eefc3e30f3856efd55b591338d1bdad154ddefba4eea95f9",
+ "followups_sent": [],
+ "model": "anthropic/claude-opus-4.6",
+ "provider": "Anthropic",
+ "response_id": "gen-1795220150-MBCRxcKB3tPB2fme9ggu",
+ "finish": "stop",
+ "native_finish": "end_turn",
+ "usage": {
+  "prompt_tokens": 184428,
+  "completion_tokens": 467,
+  "total_tokens": 184895,
+  "cost": 0.103943,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 184416,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.103943,
+   "upstream_inference_prompt_cost": 0.092268,
+   "upstream_inference_completions_cost": 0.011675
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "text": "Great. Here's a quick summary of everything you have ready to go, so you can track what's done and what's next.\n\n**Done (ready to use)**\n- Master phased checklist (HTML, CSV, and owner-split CSVs)\n- Google Calendar CSV and Apple Calendar .ics (47 events, all dated)\n- Google Sheets box inventory with Room-ColorCode-### formula and Rooms tab\n- Printable box labels and color dots (HTML)\n- Printable master checklist (HTML, single page)\n- Move summary with budget comparison, checklist, and packing inventory (HTML, landscape, 2 pages)\n- Booking email, SMS, and voicemail for Evergreen Movers (Quote C, $3,600 B-NTE)\n- Drive vs Ship budget with CSVs\n- 6-day driving route (Columbus to Portland, Sat 01/16 to Thu 01/21)\n- Hotel call sheet with phone script, search queries, and checkboxes (HTML and plain text)\n\n**Next steps (in order)**\n1. Send the booking email and SMS to Sam at Evergreen Movers and get all 8 items confirmed in writing by 11/24/2026.\n2. Search and call the hotels using the call sheet, starting with Portland (longest stay, hardest to rebook).\n3. Import the .ics or CSV into your calendar.\n4. Set up the Boxes sheet and Rooms tab in Google Sheets.\n5. Print the box labels, move summary, master checklist, and hotel call sheet.\n6. Start decluttering the garage and storage (first calendar event, 11/20/2026).\n\n**Open items to decide**\n- Drive vs Ship: pick one and update the budget.\n- Portland temporary lodging: confirm the delivery window with Evergreen, then book about 7 nights.\n- Milo's anxiety: do the practice drive and talk to the vet about calming aids if needed.\n\nLet me know what you want to tackle next.",
+ "rule_version": "winddown-rule/1.0",
+ "rule_label": null
+}

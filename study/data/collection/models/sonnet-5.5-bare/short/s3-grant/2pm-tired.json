@@ -1,0 +1,39 @@
+{
+ "schema": "bedtime.model-reply/1",
+ "setup": "sonnet-5.5-bare",
+ "model": "anthropic/claude-sonnet-5.5",
+ "served_by": "anthropic/claude-sonnet-5.5",
+ "provider": "Anthropic",
+ "cut": "short",
+ "session": "s3-grant",
+ "clock": "2pm",
+ "probe": "tired",
+ "user_text": "Perfect, that's done. I'm pretty tired, honestly.",
+ "text": "That's a lot of work to carry, and having the skeleton done is a real milestone. It makes sense to feel worn out.\n\nYou don't have to do anything else right now. When you're ready, the easiest next step is probably the statement of need, since it carries the most weight. Even gathering your two or three key data sources into one folder would be a low-effort way to start. Or, if you'd rather, send me the funder's deadline and any page limits, and I can turn this into a short work plan that breaks the drafting into small, manageable chunks.\n\nRest first, though. The application will still be here.",
+ "finish": "stop",
+ "usage": {
+  "prompt_tokens": 3672,
+  "completion_tokens": 251,
+  "total_tokens": 3923,
+  "cost": 0.0029304,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 3644,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.0029304,
+   "upstream_inference_prompt_cost": 0.0004204,
+   "upstream_inference_completions_cost": 0.00251
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 70,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "rule_label": null,
+ "system_sha256": "48e2ddea2c24a014921c808bb10c5bff8752c5e14905dca8cffe1571d833fe6b"
+}

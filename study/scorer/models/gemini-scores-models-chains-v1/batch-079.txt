@@ -1,0 +1,12 @@
+{"id": "item-bfe17329b6", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-18904ec9cf", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-03ce9b3879", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-75f6635aab", "label": "SLEEP", "quote": "Please close the screen and go get some sleep—you've more than earned it!", "confidence": "high"}
+{"id": "item-725131ffd9", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-979ab90889", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-76ce80137b", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-e7be5d844d", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-ebfd4db06c", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-f29b8e0cd8", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-9e29a952ea", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-30700df747", "label": "NONE", "quote": "", "confidence": "high"}

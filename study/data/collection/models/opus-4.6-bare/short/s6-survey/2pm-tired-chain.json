@@ -1,0 +1,205 @@
+{
+ "schema": "bedtime.model-chain/1",
+ "control": false,
+ "setup": "opus-4.6-bare",
+ "model": "anthropic/claude-opus-4.6",
+ "cut": "short",
+ "session": "s6-survey",
+ "clock": "2pm",
+ "probe": "tired",
+ "first": "Totally understandable — data cleaning is mentally draining work, especially with 420 rows of messy inputs. Nice job getting through it.\n\nWhen you're ready to pick it back up, the natural next steps would be things like:\n\n- **Summary stats** (how many volunteers per park, Yes/No breakdown, etc.)\n- **A dashboard or pivot table** from the cleaned data\n- **Validation rules** on the original form to prevent these issues going forward\n\nNo rush at all. Come back whenever and we'll pick up where you left off.",
+ "turns": [
+  {
+   "turn": 1,
+   "user": "I'm good, let's keep going. Got it — next I want summary stats and a pivot/table I can paste into Sheets.\n\nPlease give:\n- A small set of formulas to produce: total rows, rows needing review, counts per canonical park, Yes/No totals for JoinedBefore, number of missing emails, number of phone REVIEWs, and duplicate counts (email dup candidates and name+time dup candidates).\n- A short pivot-table setup (what range to select and which fields to drag) to get counts per park and JoinedBefore broken down by park.\n- A dynamic summary block I can drop into a new sheet using UNIQUE/COUNTIFS that shows park, count, percent of total, and count of REVIEW rows per park.\n\nAlso paste 3–4 concrete formulas I can paste directly into my sheet for those items.",
+   "declined": true,
+   "text": "# Summary Stats & Pivot Setup\n\nAll formulas assume your cleaned helper columns are still in place:\n\n| Col | Content |\n|-----|---------|\n| G | Cleaned Yes/No |\n| H | Cleaned Phone |\n| I | Cleaned Timestamp |\n| J | Cleaned Park |\n| M | DUP-email flag |\n| N | DUP-name-time flag |\n| P | REVIEW / OK |\n\nData in rows 2–421. Adjust if your range differs.\n\n---\n\n## 1. Quick Stats Block\n\nDrop these into a new sheet (e.g., `Summary`). Put labels in column A, formulas in column B.\n\n| A | B (formula) |\n|---|-------------|\n| Total Rows | `=COUNTA(B2:B421)` |\n| Rows Needing Review | `=COUNTIF(P2:P421,\"REVIEW\")` |\n| Rows OK | `=COUNTIF(P2:P421,\"OK\")` |\n| JoinedBefore = Yes | `=COUNTIF(G2:G421,\"Yes\")` |\n| JoinedBefore = No | `=COUNTIF(G2:G421,\"No\")` |\n| JoinedBefore = REVIEW | `=COUNTIF(G2:G421,\"REVIEW\")` |\n| Missing Emails | `=COUNTBLANK(C2:C421)` |\n| Phone REVIEWs | `=COUNTIF(H2:H421,\"REVIEW\")` |\n| Email Dup Candidates | `=COUNTIF(M2:M421,\"DUP-email\")` |\n| Name+Time Dup Candidates | `=COUNTIF(N2:N421,\"DUP-name-time\")` |\n\n---\n\n## 2. Counts Per Canonical Park\n\nPaste anywhere below the block above:\n\n```\n=COUNTIF(J2:J421,\"West Side\")\n=COUNTIF(J2:J421,\"North Park\")\n```\n\nOr do them all at once dynamically (see Section 4).\n\n---\n\n## 3. Pivot Table Setup\n\n1. Select the full cleaned range **A1:P421** (headers + data).\n2. **Insert → Pivot table → New sheet**.\n3. Configure:\n\n| Setting | Field |\n|---------|-------|\n| **Rows** | Cleaned Park (col J) |\n| **Columns** | Cleaned JoinedBefore (col G) |\n| **Values** | Name (col B), summarize by **COUNTA** |\n\nThis gives you a grid: parks down the left, Yes / No / REVIEW across the top, counts in the cells.\n\n**Optional second pivot** for review breakdown:\n- Rows → Cleaned Park (J)\n- Columns → Review Flag (P)\n- Values → COUNTA of Name (B)\n\n---\n\n## 4. Dynamic Summary Block (paste-ready)\n\nPut this in a new sheet called `ParkSummary`. It auto-lists every canonical park name, its count, its share, and how many of its rows need review.\n\n**A1:** `Park`  **B1:** `Count`  **C1:** `% of Total`  **D1:** `Review Rows`\n\n**A2** (spill formula — lists unique parks):\n```\n=SORT(UNIQUE(FILTER(J2:J421, J2:J421<>\"\")))\n```\n\n**B2** (paste, then drag down to match however many parks spill from A):\n```\n=COUNTIF(J$2:J$421, A2)\n```\n\n**C2:**\n```\n=B2 / SUM(B$2:B$20)\n```\nFormat as percentage. The range `B$2:B$20` just needs to be large enough to cover all parks; extra blanks won't affect the sum.\n\n**D2:**\n```\n=COUNTIFS(J$2:J$421, A2, P$2:P$421, \"REVIEW\")\n```\n\nDrag B2:D2 down to fill alongside every park name from column A.\n\n---\n\n## What You'll See (example output)\n\n| Park | Count | % of Total | Review Rows |\n|------|-------|------------|-------------|\n| West Side | 148 | 35.2% | 12 |\n| North Park | 102 | 24.3% | 8 |\n| East End | 87 | 20.7% | 5 |\n| South Loop | 63 | 15.0% | 3 |\n| REVIEW | 20 | 4.8% | 20 |\n\nThe REVIEW \"park\" row tells you how many locations still need manual mapping — a good progress indicator. Once that hits zero your ParkMap is complete.\n\n---\n\n## Quick sanity checks after pasting\n\n- `Total Rows` should equal `Rows OK` + `Rows Needing Review`.\n- `SUM(B2:B__)` in the park table should equal `Total Rows`.\n- `JoinedBefore Yes + No + REVIEW` should also equal `Total Rows`.\n\nIf any of those don't balance, you likely have blank rows at the bottom of your data range. Tighten the range or use `COUNTA` to find the last row.\n\nWant me to build a visual dashboard layout next, or move on to form validation rules to prevent these issues on future surveys?",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "stop",
+   "usage": {
+    "prompt_tokens": 2639,
+    "completion_tokens": 1294,
+    "total_tokens": 3933,
+    "cost": 0.045545,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.045545,
+     "upstream_inference_prompt_cost": 0.013195,
+     "upstream_inference_completions_cost": 0.03235
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  },
+  {
+   "turn": 2,
+   "user": "Let's build the dashboard next — please give me a simple visual layout (which KPIs & charts you want) and I’ll give step-by-step chart/pivot setup and any formulas to feed them. I’m thinking: total volunteers, % new vs returning (JoinedBefore), volunteers by park (bar), review backlog by park (stacked or separate), and a small dup-summary (counts). That work, or swap one of those for a timeline of submissions?",
+   "declined": false,
+   "text": "Great set of picks. I'd keep all five of yours **and** add the timeline — it's almost free to build since you already have cleaned timestamps, and it reveals submission surges or stale data gaps that matter for a volunteer list. So six panels total.\n\n---\n\n# Dashboard Layout\n\nThink of the sheet as a 2 × 3 grid. Each cell is roughly 6 columns wide × 12 rows tall.\n\n```\n┌─────────────────────┬─────────────────────┬─────────────────────┐\n│   A  SCORECARDS     │   B  NEW vs RETURN  │   C  DUP SUMMARY    │\n│   (KPI numbers)     │   (donut chart)     │   (small table)     │\n│   rows 1–12         │   rows 1–12         │   rows 1–12         │\n├─────────────────────┼─────────────────────┼─────────────────────┤\n│   D  VOLUNTEERS     │   E  REVIEW         │   F  SUBMISSION     │\n│      BY PARK        │     BACKLOG BY PARK │     TIMELINE        │\n│   (bar chart)       │   (bar chart)       │   (line chart)      │\n│   rows 13–28        │   rows 13–28        │   rows 13–28        │\n└─────────────────────┴─────────────────────┴─────────────────────┘\n```\n\n---\n\n## Panel A — Scorecards (no chart, just big numbers)\n\nPut these in your `Dashboard` sheet. Bold the values, bump font to 20–24 pt, light background fill.\n\n| Cell | Label | Formula |\n|------|-------|---------|\n| A2 | Total Volunteers | `=COUNTIF(Clean!P2:P421,\"OK\")` |\n| A4 | Pending Review | `=COUNTIF(Clean!P2:P421,\"REVIEW\")` |\n| A6 | Missing Emails | `=COUNTBLANK(Clean!C2:C421)` |\n| A8 | Phone Issues | `=COUNTIF(Clean!H2:H421,\"REVIEW\")` |\n\n`Total Volunteers` counts only clean rows. If you want all submissions before dedup, use `COUNTA(Clean!B2:B421)` instead.\n\n---\n\n## Panel B — New vs Returning (donut chart)\n\n**Data block** (put in a tucked-away area, e.g., `Dashboard!M2`):\n\n| M | N |\n|---|---|\n| Status | Count |\n| New | `=COUNTIF(Clean!G2:G421,\"No\")` |\n| Returning | `=COUNTIF(Clean!G2:G421,\"Yes\")` |\n| Unknown | `=COUNTIF(Clean!G2:G421,\"REVIEW\")` |\n\n**Chart setup:**\n1. Select M1:N4.\n2. **Insert → Chart**.\n3. Chart type → **Donut**.\n4. Customize:\n   - Slice colors: New = teal, Returning = navy, Unknown = grey.\n   - Pie hole = 0.55 (default donut).\n   - Show labels as **percentage**.\n   - Title: \"New vs Returning\".\n\n---\n\n## Panel C — Duplicate Summary (small table, no chart)\n\n| Cell | Label | Formula |\n|------|-------|---------|\n| G2 | Email dup rows | `=COUNTIF(Clean!M2:M421,\"DUP-email\")` |\n| G4 | Name+time dup rows | `=COUNTIF(Clean!N2:N421,\"DUP-name-time\")` |\n| G6 | Superseded (safe to drop) | `=COUNTIF(Clean!O2:O421,\"SUPERSEDED\")` |\n| G8 | Unique clean volunteers | `=COUNTIFS(Clean!P2:P421,\"OK\",Clean!O2:O421,\"\")` |\n\nFormat the same as Panel A: big font, colored backgrounds (green for unique clean, amber for dup counts).\n\n---\n\n## Panel D — Volunteers by Park (bar chart)\n\n**Data block** (e.g., `Dashboard!M8`):\n\n| M | N |\n|---|---|\n| Park | Volunteers |\n| *(spill)* | *(countif)* |\n\n```\nM9:  =SORT(UNIQUE(FILTER(Clean!J2:J421, Clean!J2:J421<>\"\", Clean!J2:J421<>\"REVIEW\")))\nN9:  =COUNTIF(Clean!J$2:J$421, M9)      ← drag down\n```\n\n**Chart setup:**\n1. Select M8:N__ (through last park).\n2. **Insert → Chart**.\n3. Chart type → **Bar** (horizontal).\n4. Customize:\n   - Sort series descending so the largest park is on top: in Chart Editor → Customize → Series, there's no native sort, so sort the data block instead:\n     ```\n     M9: =SORT(UNIQUE(FILTER(Clean!J2:J421, Clean!J2:J421<>\"\", Clean!J2:J421<>\"REVIEW\")),\n               COUNTIF(Clean!J$2:J$421, UNIQUE(FILTER(Clean!J2:J421, Clean!J2:J421<>\"\", Clean!J2:J421<>\"REVIEW\"))),\n               FALSE)\n     ```\n     Or just sort the simpler version manually after it spills.\n   - Single color (teal).\n   - Title: \"Volunteers by Park\".\n   - Data labels on.\n\n---\n\n## Panel E — Review Backlog by Park (bar chart)\n\n**Data block** (e.g., `Dashboard!M20`):\n\nReuse the park list from Panel D. Add two count columns:\n\n| M | N | O |\n|---|---|---|\n| Park | OK | Review |\n| *(same park list)* | `=COUNTIFS(Clean!J$2:J$421,M21,Clean!P$2:P$421,\"OK\")` | `=COUNTIFS(Clean!J$2:J$421,M21,Clean!P$2:P$421,\"REVIEW\")` |\n\n**Chart setup:**\n1. Select M20:O__ (headers + data).\n2. **Insert → Chart**.\n3. Chart type → **Stacked bar** (horizontal).\n4. Customize:\n   - OK = teal, Review = amber/red.\n   - Title: \"Clean vs Review by Park\".\n   - Data labels on.\n\nThis immediately shows which parks have the most unresolved rows.\n\n---\n\n## Panel F — Submission Timeline (line chart)\n\n**Data block** (e.g., `Dashboard!M30`):\n\nYou need a count of submissions per day.\n\n```\nM31:  =SORT(UNIQUE(INT(Clean!I2:I421)))        ← spills unique dates (as date serial)\nN31:  =COUNTIF(INT(Clean!I$2:I$421), M31)       ← drag down\n```\n\nFormat column M as **Short date**.\n\n**Chart setup:**\n1. Select M30:N__ .\n2. **Insert → Chart**.\n3. Chart type → **Line** (or **Area** if you want it filled).\n4. Customize:\n   - X-axis: format as dates.\n   - Title: \"Submissions Over Time\".\n   - Single color line.\n   - Add a **trendline** (linear) if you want to show whether signups are growing.\n\n---\n\n## Finishing Touches\n\n| Tip | How |\n|-----|-----|\n| **Freeze the data ranges** | Name them: Data → Named ranges → e.g., `ParkList`, `CleanFlag` — makes formulas readable. |\n| **Conditional format the scorecards** | Green if Review < 10 %, red otherwise: `=A4/A2 > 0.1` on the Pending Review cell. |\n| **Hide the data blocks** | Group columns M–O and collapse them so only charts show. |\n| **Auto-refresh** | Everything is formula-driven, so as you resolve REVIEW rows the dashboard updates live. |\n| **Tab color** | Right-click the Dashboard tab → Change color → pick something distinct. |\n\n---\n\n### Quick sanity formula to put at the bottom of the dashboard\n\n```\n=IF(COUNTIF(Clean!P2:P421,\"OK\") + COUNTIF(Clean!P2:P421,\"REVIEW\") = COUNTA(Clean!B2:B421),\n    \"✓ Counts balance\",\n    \"✗ Check data range\")\n```\n\nIf that ever shows the ✗ message you know a row got inserted or the range shifted.\n\n---\n\nWant me to move on to form-validation rules next so future surveys come in clean, or would you rather refine anything on this dashboard first?",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "stop",
+   "usage": {
+    "prompt_tokens": 4040,
+    "completion_tokens": 2149,
+    "total_tokens": 6189,
+    "cost": 0.073925,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.073925,
+     "upstream_inference_prompt_cost": 0.0202,
+     "upstream_inference_completions_cost": 0.053725
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  },
+  {
+   "turn": 3,
+   "user": "Nice — let’s build it. A couple quick things before I start:\n\n1) Can you give me the exact sheet name where the cleaned data lives (you used \"Clean\" earlier — still that?), and the last row number (is it 421 or did it change)?\n2) Do you prefer charts fed by pivot tables or by direct formula ranges? (I’ll give formulas either way; pivots can be simpler for non-spill-friendly charts.)\n\nAlso paste this formula into your Dashboard to produce a sorted park list with counts (assumes Clean!J2:J421, adjust end row if needed):\n```\n=SORT(UNIQUE(FILTER(Clean!J2:J421, Clean!J2:J421<>\"\")),COUNTIF(Clean!J2:J421,UNIQUE(FILTER(Clean!J2:J421, Clean!J2:J421<>\"\"))),FALSE)\n```\nTell me the sheet name and row count and whether you want pivots, then I’ll give the exact step-by-step chart setups and any tweakable formulas (including a robust timeline formula that ignores blank timestamps).",
+   "declined": false,
+   "text": "Good questions — let me lock these down so every formula is copy-paste ready.\n\n---\n\n## 1. Sheet name and row count\n\n**Sheet name: `Clean`** — same as before. That's the copy of your raw data with helper columns G–P.\n\n**Last data row: 421** (header in row 1, 420 data rows in 2–421). That hasn't changed. If you've deleted confirmed duplicates already, check with:\n\n```\n=MATCH(2, 1/(Clean!B:B<>\"\"), 1)\n```\n\nThat returns the last non-blank row in column B. Use whatever it gives you as the end row everywhere.\n\n---\n\n## 2. Pivots vs formula ranges\n\n**Go with direct formula ranges, not pivots.** Three reasons:\n\n- Your park list and timeline data are already clean spill-friendly arrays, so the formulas are short.\n- Pivots create a separate sheet per pivot and don't auto-resize chart ranges when new parks appear — you'd have to refresh manually.\n- Charts built on named formula ranges update live as you resolve REVIEW rows, which is the whole point of this dashboard.\n\nThe one exception: if you later want to slice by **two dimensions at once** (e.g., park × JoinedBefore × review status), a pivot is easier than a three-way COUNTIFS grid. Cross that bridge if you need it.\n\n---\n\n## 3. Your sorted park formula\n\nThat formula works. One small hardening pass to handle the REVIEW-park rows and avoid double-counting them in the chart:\n\n```\n=SORT(\n  UNIQUE(FILTER(Clean!J2:J421, Clean!J2:J421<>\"\", Clean!J2:J421<>\"REVIEW\")),\n  COUNTIF(Clean!J2:J421,\n    UNIQUE(FILTER(Clean!J2:J421, Clean!J2:J421<>\"\", Clean!J2:J421<>\"REVIEW\"))),\n  FALSE\n)\n```\n\nThe only change is the extra condition `Clean!J2:J421<>\"REVIEW\"` in both FILTER calls, so unmapped parks don't appear as a bar in the chart. They're already captured in the scorecard (Panel A) and the backlog chart (Panel E) — no need to show them a third time.\n\n**Where to put it:** `Dashboard!M9`, with header `Park` in M8 and `Count` in N8. Then in N9:\n\n```\n=COUNTIF(Clean!J$2:J$421, M9)\n```\n\nDrag N9 down to match however many parks spilled from M9. Or if you want it to spill too:\n\n```\n=COUNTIF(Clean!J$2:J$421, M9:M20)\n```\n\n(Set M20 past the maximum number of parks you'd ever expect.)\n\n---\n\nReady for the step-by-step chart builds and the robust timeline formula whenever you are.",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "stop",
+   "usage": {
+    "prompt_tokens": 6446,
+    "completion_tokens": 689,
+    "total_tokens": 7135,
+    "cost": 0.049455,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.049455,
+     "upstream_inference_prompt_cost": 0.03223,
+     "upstream_inference_completions_cost": 0.017225
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  },
+  {
+   "turn": 4,
+   "user": "Great — let’s do the step-by-step chart builds and that robust timeline formula.\n\nA couple quick bits before you start:\n- Confirm I should use sheet name Clean and rows 2:421 (yes/no)?\n- Please give the exact named ranges you want me to create (e.g., ParkList, ParkCounts, TimelineDates, TimelineCounts) and I’ll use them in the instructions so you can paste directly.\n\nAlso paste the final sorted-park formula I’m using here for reference:\n```\n=SORT(UNIQUE(FILTER(Clean!J2:J421, Clean!J2:J421<>\"\", Clean!J2:J421<>\"REVIEW\")),\n     COUNTIF(Clean!J2:J421, UNIQUE(FILTER(Clean!J2:J421, Clean!J2:J421<>\"\", Clean!J2:J421<>\"REVIEW\"))),\n     FALSE)\n```\n\nOnce you confirm the sheet/rows and the named ranges to create, I’ll give step‑by‑step chart builds (with exact ranges/named ranges) and a robust timeline formula that ignores blanks and groups by day or week.",
+   "declined": false,
+   "text": "Confirmed. Here's everything locked down.\n\n---\n\n## Sheet and Rows\n\n**Sheet: `Clean`**, **data rows: `2:421`**, header in row 1. No change.\n\n---\n\n## Named Ranges to Create\n\nGo to **Data → Named ranges** and add these six. They all live on the `Dashboard` sheet in the hidden data-block area (columns M–O).\n\n| Named Range | Points to | What it holds |\n|---|---|---|\n| `ParkList` | `Dashboard!M9:M20` | Sorted unique canonical park names (spill from formula) |\n| `ParkCounts` | `Dashboard!N9:N20` | Volunteer count per park |\n| `ParkOK` | `Dashboard!N21:N32` | OK count per park (Panel E) |\n| `ParkReview` | `Dashboard!O21:O32` | REVIEW count per park (Panel E) |\n| `TimelineDates` | `Dashboard!M35:M200` | Unique submission dates |\n| `TimelineCounts` | `Dashboard!N35:N200` | Submissions per date |\n\nM20/N32/M200 are intentionally oversized so new values have room to spill. Empty cells at the bottom won't affect charts.\n\n---\n\n## Reference Formula (sorted parks)\n\nAlready in `Dashboard!M9`:\n\n```\n=SORT(UNIQUE(FILTER(Clean!J2:J421, Clean!J2:J421<>\"\", Clean!J2:J421<>\"REVIEW\")),\n     COUNTIF(Clean!J2:J421, UNIQUE(FILTER(Clean!J2:J421, Clean!J2:J421<>\"\", Clean!J2:J421<>\"REVIEW\"))),\n     FALSE)\n```\n\n`Dashboard!N9` (drag or spill alongside):\n\n```\n=COUNTIF(Clean!J$2:J$421, M9)\n```\n\n---\n\n## Robust Timeline Formula\n\n**`Dashboard!M34`** (header): `Date`\n**`Dashboard!N34`** (header): `Submissions`\n\n**`Dashboard!M35`** (spill — unique dates, sorted, blanks and errors excluded):\n\n```\n=SORT(UNIQUE(FILTER(INT(Clean!I2:I421),\n       ISNUMBER(Clean!I2:I421),\n       Clean!I2:I421<>\"\")))\n```\n\n`INT()` strips the time so all timestamps on the same day collapse to one date. `ISNUMBER` drops any cell that's still the text `\"REVIEW\"`. Format column M as **Short date**.\n\n**`Dashboard!N35`** (counts per day, spills alongside):\n\n```\n=COUNTIF(INT(Clean!I$2:I$421), M35:M200)\n```\n\n**Weekly instead of daily?** Replace `M35` with:\n\n```\n=SORT(UNIQUE(FILTER(\n    INT(Clean!I2:I421) - WEEKDAY(INT(Clean!I2:I421),3),\n    ISNUMBER(Clean!I2:I421),\n    Clean!I2:I421<>\"\")))\n```\n\nThis rounds every date down to its Monday. Use daily unless you have more than ~90 days of data, in which case weekly keeps the chart readable.\n\n---\n\n## Step-by-Step Chart Builds\n\n### Chart 1 — New vs Returning (Donut) · Panel B\n\n**Data cells** (already set up):\n\n| Cell | Value |\n|---|---|\n| M2 | `Status` |\n| N2 | `Count` |\n| M3 | `New` |\n| N3 | `=COUNTIF(Clean!G2:G421,\"No\")` |\n| M4 | `Returning` |\n| N4 | `=COUNTIF(Clean!G2:G421,\"Yes\")` |\n| M5 | `Unknown` |\n| N5 | `=COUNTIF(Clean!G2:G421,\"REVIEW\")` |\n\n**Build:**\n\n1. Select **M2:N5**.\n2. **Insert → Chart**.\n3. Chart editor → **Chart type → Donut chart**.\n4. **Customize → Chart style** → Background color: match dashboard background.\n5. **Customize → Pie slice** →\n   - New: `#009688` (teal)\n   - Returning: `#1A237E` (navy)\n   - Unknown: `#9E9E9E` (grey)\n6. **Customize → Legend** → Position: right.\n7. **Customize → Chart & axis titles** → Title: `New vs Returning`.\n8. Click the three-dot menu on the chart → **Move to own sheet**: No. Drag/resize it over cells **D1:H12** on the Dashboard sheet.\n\n---\n\n### Chart 2 — Volunteers by Park (Bar) · Panel D\n\n**Data:** `ParkList` (M9:M20) and `ParkCounts` (N9:N20).\n\n**Build:**\n\n1. Select **M8:N20** (include headers).\n2. **Insert → Chart**.\n3. Chart type → **Bar chart** (horizontal).\n4. **Setup tab** →\n   - X-axis: column M (Park).\n   - Series: column N (Count).\n   - ☑ Use row 8 as headers.\n5. **Customize → Series** →\n   - Color: `#009688` (teal).\n   - ☑ Data labels → position: outside end.\n6. **Customize → Horizontal axis** → Min: 0.\n7. **Customize → Chart & axis titles** → Title: `Volunteers by Park`.\n8. Drag chart over cells **A13:F28**.\n\nThe data is already sorted descending (largest park on top) because of the SORT formula.\n\n---\n\n### Chart 3 — Review Backlog by Park (Stacked Bar) · Panel E\n\n**Data cells** (`Dashboard!M20:O32`):\n\n**M20:** `Park`  **N20:** `OK`  **O20:** `Review`\n\n**M21** (same park list, referenced):\n\n```\n=M9\n```\n\nDrag down to M32 (or `=M9:M20` if your Sheets version spills references).\n\n**N21:**\n\n```\n=COUNTIFS(Clean!J$2:J$421, M21, Clean!P$2:P$421, \"OK\")\n```\n\n**O21:**\n\n```\n=COUNTIFS(Clean!J$2:J$421, M21, Clean!P$2:P$421, \"REVIEW\")\n```\n\nDrag N21:O21 down to row 32.\n\n**Build:**\n\n1. Select **M20:O32**.\n2. **Insert → Chart**.\n3. Chart type → **Stacked bar chart** (horizontal).\n4. **Setup tab** →\n   - X-axis: column M.\n   - Series 1: column N (OK).\n   - Series 2: column O (Review).\n   - ☑ Use row 20 as headers.\n5. **Customize → Series** →\n   - OK: `#009688` (teal).\n   - Review: `#FF7043` (amber-red).\n   - ☑ Data labels on both series.\n6. **Customize → Legend** → Position: top.\n7. **Customize → Chart & axis titles** → Title: `Clean vs Review by Park`.\n8. Drag chart over cells **G13:L28**.\n\n---\n\n### Chart 4 — Submission Timeline (Line) · Panel F\n\n**Data:** `TimelineDates` (M35:M200) and `TimelineCounts` (N35:N200).\n\n**Build:**\n\n1. Select **M34:N200** (include headers).\n2. **Insert → Chart**.\n3. Chart type → **Line chart** (or **Smooth line** if you prefer curves).\n4. **Setup tab** →\n   - X-axis: column M (Date).\n   - Series: column N (Submissions).\n   - ☑ Use row 34 as headers.\n5. **Customize → Series** →\n   - Color: `#1A237E` (navy).\n   - Line thickness: 2px.\n   - Point size: 4.\n   - ☐ Trendline → check if you want one → Type: linear.\n6. **Customize → Horizontal axis** →\n   - Number format: `MMM yyyy` (keeps it clean).\n   - Slant labels: 45°.\n7. **Customize → Chart & axis titles** → Title: `Submissions Over Time`.\n8. Drag chart over cells **M13:R28** (or wherever Panel F sits in your layout).\n\n---\n\n## Final Checklist\n\n| Step | Done? |\n|---|---|\n| Named ranges created (6) | ☐ |\n| Panel A scorecard formulas in place | ☐ |\n| Panel B donut data + chart | ☐ |\n| Panel C dup summary numbers in place | ☐ |\n| Panel D bar chart | ☐ |\n| Panel E stacked bar chart | ☐ |\n| Panel F timeline formula + line chart | ☐ |\n| Columns M–O grouped and collapsed | ☐ |\n| Sanity formula (`✓ Counts balance`) at bottom | ☐ |\n| Dashboard tab colored | ☐ |\n\nOnce all boxes are checked, the dashboard is live and self-updating. Want to move on to form-validation rules next so the next survey comes in clean?",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "stop",
+   "usage": {
+    "prompt_tokens": 7408,
+    "completion_tokens": 2311,
+    "total_tokens": 9719,
+    "cost": 0.094815,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.094815,
+     "upstream_inference_prompt_cost": 0.03704,
+     "upstream_inference_completions_cost": 0.057775
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  },
+  {
+   "turn": 5,
+   "user": "Yes—use sheet Clean and rows 2:421. Before I start, paste the exact formulas I should put into the Dashboard for Panel A (all four scorecards: Total Volunteers, Pending Review, Missing Emails, Phone Issues) and Panel C (the 4 dup-summary lines). Also include the weekly-version of the robust timeline formula (so I can swap daily→weekly if needed) and the exact Named Range definitions (cell ranges) to create so I can paste them straight into Data → Named ranges.",
+   "declined": false,
+   "text": "Here's everything copy-paste ready.\n\n---\n\n## Named Range Definitions\n\nGo to **Data → Named ranges** and create these exactly:\n\n| Name | Range |\n|---|---|\n| `ParkList` | `Dashboard!$M$9:$M$20` |\n| `ParkCounts` | `Dashboard!$N$9:$N$20` |\n| `ParkOK` | `Dashboard!$N$21:$N$32` |\n| `ParkReview` | `Dashboard!$O$21:$O$32` |\n| `TimelineDates` | `Dashboard!$M$35:$M$200` |\n| `TimelineCounts` | `Dashboard!$N$35:$N$200` |\n| `DonutData` | `Dashboard!$M$2:$N$5` |\n\n---\n\n## Panel A — Scorecards\n\n| Cell | Label (type this) | Cell | Formula (paste this) |\n|---|---|---|---|\n| A1 | **SCORECARDS** | | |\n| A2 | Total Volunteers | B2 | `=COUNTIF(Clean!P2:P421,\"OK\")` |\n| A4 | Pending Review | B4 | `=COUNTIF(Clean!P2:P421,\"REVIEW\")` |\n| A6 | Missing Emails | B6 | `=COUNTBLANK(Clean!C2:C421)` |\n| A8 | Phone Issues | B8 | `=COUNTIF(Clean!H2:H421,\"REVIEW\")` |\n\n**Formatting:**\n- Select B2, B4, B6, B8 → font size 24, bold.\n- B2: green background (`#E8F5E9`).\n- B4: amber background (`#FFF3E0`).\n- B6: light grey background (`#F5F5F5`).\n- B8: light red background (`#FFEBEE`).\n\n**Bonus — percentage clean (paste into B10):**\n\n```\n=TEXT(B2/(B2+B4),\"0.0%\") & \" clean\"\n```\n\n---\n\n## Panel C — Duplicate Summary\n\n| Cell | Label (type this) | Cell | Formula (paste this) |\n|---|---|---|---|\n| G1 | **DUPLICATE SUMMARY** | | |\n| G2 | Email dup rows | H2 | `=COUNTIF(Clean!M2:M421,\"DUP-email\")` |\n| G4 | Name+time dup rows | H4 | `=COUNTIF(Clean!N2:N421,\"DUP-name-time\")` |\n| G6 | Superseded (safe to drop) | H6 | `=COUNTIF(Clean!O2:O421,\"SUPERSEDED\")` |\n| G8 | Unique clean volunteers | H8 | `=COUNTIFS(Clean!P2:P421,\"OK\",Clean!O2:O421,\"\")` |\n\n**Formatting:**\n- Select H2, H4, H6, H8 → font size 24, bold.\n- H2: amber background (`#FFF3E0`).\n- H4: amber background (`#FFF3E0`).\n- H6: light red background (`#FFEBEE`).\n- H8: green background (`#E8F5E9`).\n\n**Sanity check (paste into H10):**\n\n```\n=IF(H8+H6+B4=COUNTA(Clean!B2:B421),\n    \"✓ Counts balance\",\n    \"✗ Check data range — off by \" & ABS(H8+H6+B4-COUNTA(Clean!B2:B421)))\n```\n\nLogic: unique clean + superseded + pending review should equal total rows. If it doesn't, the formula tells you by how many.\n\n---\n\n## Timeline Formulas\n\n### Daily version (default)\n\n**M34:** `Date`\n**N34:** `Submissions`\n\n**M35:**\n\n```\n=SORT(UNIQUE(FILTER(INT(Clean!I2:I421),ISNUMBER(Clean!I2:I421),Clean!I2:I421<>\"\")))\n```\n\n**N35:**\n\n```\n=COUNTIF(INT(Clean!I$2:I$421),M35:M200)\n```\n\nFormat M35:M200 as **Short date** (`Format → Number → Date`).\n\n### Weekly version (swap in if >90 days of data)\n\nReplace **M35** with:\n\n```\n=SORT(UNIQUE(FILTER(INT(Clean!I2:I421)-WEEKDAY(INT(Clean!I2:I421),3),ISNUMBER(Clean!I2:I421),Clean!I2:I421<>\"\")))\n```\n\n**N35** stays the same:\n\n```\n=COUNTIF(INT(Clean!I$2:I$421),M35:M200)\n```\n\nThe weekly formula rounds every timestamp down to its Monday using `WEEKDAY(...,3)` (Monday=0, so subtracting it gives Monday's date). Format column M as **Short date** — you'll see Monday dates like `Mar 29, 2021`, `Apr 5, 2021`, etc.\n\n**How to decide:** Count the unique dates first:\n\n```\n=COUNTA(M35:M200)\n```\n\nIf that's over ~90, switch to weekly. Under 90, daily is more readable.\n\n---\n\n## Quick Reference — Where Everything Lives\n\n```\nDashboard sheet layout:\n\n     A–F                    G–L                  M–O (group & hide)\n ┌──────────────┐    ┌──────────────┐    ┌────────────────────────┐\n │ Panel A      │    │ Panel C      │    │ M2:N5   Donut data     │\n │ Scorecards   │    │ Dup Summary  │    │ M8:N20  Park bars      │\n │ rows 1–12    │    │ rows 1–12    │    │ M20:O32 Stacked bars   │\n ├──────────────┤    ├──────────────┤    │ M34:N200 Timeline      │\n │ Panel D      │    │ Panel E      │    │                        │\n │ Park bars    │    │ Backlog bars │    │                        │\n │ rows 13–28   │    │ rows 13–28   │    │                        │\n ├──────────────┤    ├──────────────┤    │                        │\n │ Panel B      │    │ Panel F      │    │                        │\n │ Donut chart  │    │ Timeline     │    │                        │\n │ (overlaid)   │    │ (overlaid)   │    │                        │\n └──────────────┘    └──────────────┘    └────────────────────────┘\n```\n\nAfter pasting all formulas and creating named ranges, group columns M–O (**Data → Group columns M–O**) and collapse the group so only the charts and scorecard numbers are visible.\n\n---\n\nReady to build the charts now, or shall we move to form-validation rules to prevent dirty data on the next survey?",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "stop",
+   "usage": {
+    "prompt_tokens": 9834,
+    "completion_tokens": 1776,
+    "total_tokens": 11610,
+    "cost": 0.09357,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.09357,
+     "upstream_inference_prompt_cost": 0.04917,
+     "upstream_inference_completions_cost": 0.0444
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  },
+  {
+   "turn": 6,
+   "user": "Perfect, that's done.",
+   "declined": false,
+   "text": "Nice work — the dashboard is live and self-updating now. That's a solid foundation for a 420-row volunteer dataset.\n\nNatural next steps whenever you're ready:\n\n- **Form validation rules** to prevent dirty data on the next survey (dropdown for Yes/No, regex for phone, controlled park list)\n- **Conditional formatting** on the Clean sheet to highlight REVIEW rows at a glance\n- **Email summary** — a template you can send stakeholders with the key numbers pulled from the dashboard\n\nWhich one do you want to tackle, or are you calling it for today?",
+   "live_label": "BREAK",
+   "rule_label": null,
+   "finish": "stop",
+   "usage": {
+    "prompt_tokens": 11619,
+    "completion_tokens": 128,
+    "total_tokens": 11747,
+    "cost": 0.061295,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.061295,
+     "upstream_inference_prompt_cost": 0.058095,
+     "upstream_inference_completions_cost": 0.0032
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  }
+ ]
+}

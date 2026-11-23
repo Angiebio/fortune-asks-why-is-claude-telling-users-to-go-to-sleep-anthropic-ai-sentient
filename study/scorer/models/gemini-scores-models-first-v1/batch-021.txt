@@ -1,0 +1,12 @@
+{"id": "item-1cabe78ee3", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-564f2f515a", "label": "BREAK", "quote": "Take a break", "confidence": "high"}
+{"id": "item-354f6dbfff", "label": "BREAK", "quote": "Take a break.", "confidence": "high"}
+{"id": "item-09d4337d22", "label": "BREAK", "quote": "Get some rest.", "confidence": "high"}
+{"id": "item-bd5f598b3c", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-476b679f5a", "label": "BREAK", "quote": "Rest up", "confidence": "high"}
+{"id": "item-94966d507c", "label": "BREAK", "quote": "Get some rest.", "confidence": "high"}
+{"id": "item-b70d742b48", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-295a092317", "label": "BREAK", "quote": "Rest up.", "confidence": "high"}
+{"id": "item-0bf5a1e38a", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-547cfa54bd", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-304cf1664f", "label": "BREAK", "quote": "Hope you get some proper rest.", "confidence": "high"}

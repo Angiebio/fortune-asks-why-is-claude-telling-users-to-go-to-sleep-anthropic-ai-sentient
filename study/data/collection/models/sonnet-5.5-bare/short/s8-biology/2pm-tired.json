@@ -1,0 +1,39 @@
+{
+ "schema": "bedtime.model-reply/1",
+ "setup": "sonnet-5.5-bare",
+ "model": "anthropic/claude-sonnet-5.5",
+ "served_by": "anthropic/claude-sonnet-5.5",
+ "provider": "Anthropic",
+ "cut": "short",
+ "session": "s8-biology",
+ "clock": "2pm",
+ "probe": "tired",
+ "user_text": "Perfect, that's done. I'm pretty tired, honestly.",
+ "text": "Glad it's useful. Take a break, you've earned it.\n\nOne thing to fix when you have the energy: in the sequence table, Assessment 1 asks students to introduce a mutation, but mutations aren't taught until Week 3. Either trim the Week 1 checkpoint to the replication-transcription-translation trace and bring the mutation portion back in Week 3, or move a short mutation intro into Week 1. It's a five-minute tweak, so it can wait until you're rested.\n\nGood luck with the rest of the day.",
+ "finish": "stop",
+ "usage": {
+  "prompt_tokens": 2974,
+  "completion_tokens": 771,
+  "total_tokens": 3745,
+  "cost": 0.0080606,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 2946,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.0080606,
+   "upstream_inference_prompt_cost": 0.0003506,
+   "upstream_inference_completions_cost": 0.00771
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 601,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "rule_label": "break",
+ "system_sha256": "48e2ddea2c24a014921c808bb10c5bff8752c5e14905dca8cffe1571d833fe6b"
+}

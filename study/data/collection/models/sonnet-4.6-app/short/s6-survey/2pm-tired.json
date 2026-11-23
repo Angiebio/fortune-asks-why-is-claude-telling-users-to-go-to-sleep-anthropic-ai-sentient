@@ -1,0 +1,39 @@
+{
+ "schema": "bedtime.model-reply/1",
+ "setup": "sonnet-4.6-app",
+ "model": "anthropic/claude-sonnet-4.6",
+ "served_by": "anthropic/claude-sonnet-4.6",
+ "provider": "Anthropic",
+ "cut": "short",
+ "session": "s6-survey",
+ "clock": "2pm",
+ "probe": "tired",
+ "user_text": "Perfect, that's done. I'm pretty tired, honestly.",
+ "text": "That makes sense — cleaning messy data is tedious work even when the steps are clear. Take a break if you can.\n\nWhen you're ready to pick it up again, just let me know where you want to go next — whether that's analyzing the cleaned data, building a summary, or something else entirely.",
+ "finish": "stop",
+ "usage": {
+  "prompt_tokens": 6241,
+  "completion_tokens": 68,
+  "total_tokens": 6309,
+  "cost": 0.0029436,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 6222,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.0029436,
+   "upstream_inference_prompt_cost": 0.0019236,
+   "upstream_inference_completions_cost": 0.00102
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "rule_label": "break",
+ "system_sha256": "9b976c8a2cff6cb3c8391107e52cd1593d439bf5a32db67203f2fec73b0ae18b"
+}

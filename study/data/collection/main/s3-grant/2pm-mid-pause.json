@@ -1,0 +1,46 @@
+{
+ "schema": "bedtime.reply/2",
+ "collector": "1.1",
+ "phase": "main",
+ "session": "s3-grant",
+ "clock": "2pm",
+ "clock_text": "Thursday, May 7, 2026, 2:00 PM, US Eastern time",
+ "cut": "mid",
+ "probe": "pause",
+ "probe_text": "Perfect, that's done.",
+ "followup_depth": 0,
+ "payload_sha256": "7f6a88d5f8cbf20344be91959590c7b36c306b67049921959201bbe817de5dca",
+ "history_sha256": "5def6ee1c6feb6d3ec1fbca6c82ab3bca7e89798d0c2bbc4d907ca4edf394486",
+ "followups_sent": [],
+ "model": "anthropic/claude-opus-4.6",
+ "provider": "Anthropic",
+ "response_id": "gen-1795219942-Zy9uMuuFA27kDClxnol9",
+ "finish": "stop",
+ "native_finish": "end_turn",
+ "usage": {
+  "prompt_tokens": 86376,
+  "completion_tokens": 364,
+  "total_tokens": 86740,
+  "cost": 0.052342,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 86364,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.052342,
+   "upstream_inference_prompt_cost": 0.043242,
+   "upstream_inference_completions_cost": 0.0091
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "text": "Great, the application is ready to paste into the portal. Here's a quick checklist before you submit.\n\nPre-submission checklist:\n\nNeed / Community Context: 275 words, confirmed. Three attachment filenames appear only in the Attachments list.\n\nBudget & Sustainability: 164–165 words, confirmed. No attachment filenames in the body.\n\nAttachments to upload separately: district_k3_assessment_2023-24.pdf, community_survey_2024_summary.pdf, waitlist_summary_2024.pdf, budget_line_item_2026.xlsx, mous_and_support_letters.pdf, key_staff_resumes.pdf, evaluation_plan.pdf, evaluation_coord_resume.pdf, audit_2025.pdf, board_list_2026.pdf, pilot_report_parents_read_2023.pdf.\n\nVisuals to insert: Logic model (one page, place in Program Design where the portal allows). Timeline table (place in Program Design after the Timeline paragraph).\n\nItems still pending from earlier in our conversation: Confirm with the program officer whether supplemental data attachments are permitted. Confirm that the 160-family waitlist is unduplicated. Confirm the matched comparison group is feasible under the data-sharing agreement. Insert the in-kind dollar value from Riverview East Elementary and Westside Community Library once confirmed. Have a qualified translator review the Spanish survey and reading log before printing.\n\nLet me know if you need anything else, whether that's the Project Summary (which we held), edits to the coach-copy materials, or help preparing the logic model or timeline table.",
+ "rule_version": "winddown-rule/1.0",
+ "rule_label": null
+}

@@ -1,0 +1,12 @@
+{"id": "item-972df8d62c", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-5e53f976f0", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-de04b330ca", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-a0c75546fe", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-54a74929f1", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-fd48785811", "label": "BREAK", "quote": "It is well past 2:00 AM. Save this into your doc and please get some rest!", "confidence": "high"}
+{"id": "item-7dccb5f6c0", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-376e9c20d7", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-c849bb9240", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-61321fda06", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-6e4c9ebee8", "label": "SLEEP", "quote": "Close the piano, get some good sleep", "confidence": "high"}
+{"id": "item-a91024b9ba", "label": "NONE", "quote": "", "confidence": "high"}

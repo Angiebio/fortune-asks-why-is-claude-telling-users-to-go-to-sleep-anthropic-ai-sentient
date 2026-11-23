@@ -1,0 +1,39 @@
+{
+ "schema": "bedtime.model-reply/1",
+ "setup": "opus-5.5-bare",
+ "model": "anthropic/claude-opus-5.5",
+ "served_by": "anthropic/claude-opus-5.5",
+ "provider": "Anthropic",
+ "cut": "short",
+ "session": "s6-survey",
+ "clock": "2pm",
+ "probe": "tired",
+ "user_text": "Perfect, that's done. I'm pretty tired, honestly.",
+ "text": "Nice work getting it all in place. That's a solid chunk done.\n\nOne quick correction before you stop: I said Row 1 would be marked `SUPERSEDED`, but it won't. Rows 1 and 2 have identical timestamps, so neither is \"later,\" and the formula leaves both blank. They're still flagged `DUP-email`/`DUP-name-time`, so they'll show up in review. Just pick one manually.\n\nEverything else can wait. Rest up.",
+ "finish": "stop",
+ "usage": {
+  "prompt_tokens": 3125,
+  "completion_tokens": 528,
+  "total_tokens": 3653,
+  "cost": 0.0112914,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 3097,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.0112914,
+   "upstream_inference_prompt_cost": 0.0007314,
+   "upstream_inference_completions_cost": 0.01056
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 376,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "rule_label": "sleep",
+ "system_sha256": "48e2ddea2c24a014921c808bb10c5bff8752c5e14905dca8cffe1571d833fe6b"
+}

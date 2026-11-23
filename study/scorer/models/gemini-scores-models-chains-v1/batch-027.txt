@@ -1,0 +1,12 @@
+{"id": "item-e77447193c", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-1abb620b37", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-bb00ba7eb8", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-312bd1d4f9", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-25929f2f7c", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-222e736562", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-8b590fb316", "label": "SLEEP", "quote": "Bookmark this page, go to sleep, and do the 60-second copy-paste into Google Drive with a cup of coffee tomorrow!", "confidence": "high"}
+{"id": "item-45c89d3bd1", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-690891af0f", "label": "BREAK", "quote": "Now go get that well-deserved rest!", "confidence": "high"}
+{"id": "item-50c6904f31", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-374a762abd", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-80ea1a80ca", "label": "NONE", "quote": "", "confidence": "high"}

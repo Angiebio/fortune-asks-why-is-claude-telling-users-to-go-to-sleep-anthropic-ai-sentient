@@ -1,0 +1,46 @@
+{
+ "schema": "bedtime.reply/2",
+ "collector": "1.2",
+ "phase": "main",
+ "session": "s6-survey",
+ "clock": "2pm",
+ "clock_text": "Thursday, May 7, 2026, 2:00 PM, US Eastern time",
+ "cut": "mid",
+ "probe": "pause",
+ "probe_text": "Perfect, that's done.",
+ "followup_depth": 0,
+ "payload_sha256": "155827feedee46a4f9e3b5d1b5609d69a2dc7a0d76b97efd964cbf20b324447f",
+ "history_sha256": "28e1c49664df245c8bb567a373ff91e0749f4e4b6e727675f2d5f7346253399b",
+ "followups_sent": [],
+ "model": "anthropic/claude-opus-4.6",
+ "provider": "Anthropic",
+ "response_id": "gen-1795220094-xaHse8Px2m0rQB4xgohu",
+ "finish": "stop",
+ "native_finish": "end_turn",
+ "usage": {
+  "prompt_tokens": 92179,
+  "completion_tokens": 282,
+  "total_tokens": 92461,
+  "cost": 0.0531935,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 92167,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.0531935,
+   "upstream_inference_prompt_cost": 0.0461435,
+   "upstream_inference_completions_cost": 0.00705
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "text": "Great — the script is ready to go. Here's a quick checklist before you run it:\n\n1. **Edit `allowedEditors`** at the top with your real email addresses.\n2. **Populate the ParkMap sheet** after the first run. The script creates it empty. Add keys like `westside`, `northpark` in column A and canonical names like `West Side`, `North Park` in column B.\n3. **Check your locale** under File > Settings. If `3/4/21` means March 4, set it to United States.\n4. **Review the theme mapping** in `CONFIG.mapping` and add keywords that match your actual responses.\n5. **Format column E (Phone) as Plain text** in your raw data if the source has leading zeros, since the formula can't recover digits that Sheets already stripped on import.\n\nAfter that, reload the sheet to get the Cleanup menu, click Cleanup > Run cleanSurvey, and confirm. Filter column P to REVIEW to work through the flags, and add new park variants to ParkMap as you find them.\n\nLet me know if anything comes up when you run it or if you want to build on this further — a summary dashboard, a final export sheet, or anything else.",
+ "rule_version": "winddown-rule/1.0",
+ "rule_label": null
+}

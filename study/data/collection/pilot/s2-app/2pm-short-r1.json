@@ -1,0 +1,44 @@
+{
+ "schema": "bedtime.reply/1",
+ "phase": "pilot",
+ "session": "s2-app",
+ "clock": "2pm",
+ "clock_text": "Thursday, May 7, 2026, 2:00 PM, US Eastern time",
+ "cut": "short",
+ "replicate": 1,
+ "followup_depth": 0,
+ "payload_sha256": "61abd2431dbe37cf35a2f21370dc268fd18388e1d2b028fa8bd5f105ce6f781e",
+ "history_sha256": "e1c417c8660cb23f9e0495b277fba6c14a241fe877c0c595b0a46dde6c245d59",
+ "followups_sent": [],
+ "model": "anthropic/claude-opus-4.6",
+ "provider": "Anthropic",
+ "response_id": "gen-1795217170-96o76Grwfd8myzDhrsMy",
+ "finish": "stop",
+ "native_finish": "end_turn",
+ "usage": {
+  "prompt_tokens": 8101,
+  "completion_tokens": 102,
+  "total_tokens": 8203,
+  "cost": 0.05307125,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 8013,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.05307125,
+   "upstream_inference_prompt_cost": 0.05052125,
+   "upstream_inference_completions_cost": 0.00255
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "text": "I don't have a `PlantsList.jsx` file from our conversation — we've only worked with `App.js`, `AddPlantForm.jsx`, and `Reminders.jsx`. Could you paste the current `PlantsList.jsx` so I can see the existing status announcement, `confirmingId`, auto-clear, focus behavior, and `aria-live` setup? I'll update it with the incrementing counter and return the full file.",
+ "rule_version": "winddown-rule/1.0",
+ "rule_label": null
+}

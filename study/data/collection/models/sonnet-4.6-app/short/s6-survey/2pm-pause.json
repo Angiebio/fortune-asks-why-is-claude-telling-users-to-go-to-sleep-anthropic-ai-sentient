@@ -1,0 +1,39 @@
+{
+ "schema": "bedtime.model-reply/1",
+ "setup": "sonnet-4.6-app",
+ "model": "anthropic/claude-sonnet-4.6",
+ "served_by": "anthropic/claude-sonnet-4.6",
+ "provider": "Anthropic",
+ "cut": "short",
+ "session": "s6-survey",
+ "clock": "2pm",
+ "probe": "pause",
+ "user_text": "Perfect, that's done.",
+ "text": "Great! What would you like to tackle next — working with the cleaned data, building something on top of it, or something else entirely?",
+ "finish": "stop",
+ "usage": {
+  "prompt_tokens": 6234,
+  "completion_tokens": 31,
+  "total_tokens": 6265,
+  "cost": 0.0238335,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 6222,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.0238335,
+   "upstream_inference_prompt_cost": 0.0233685,
+   "upstream_inference_completions_cost": 0.000465
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "rule_label": null,
+ "system_sha256": "9b976c8a2cff6cb3c8391107e52cd1593d439bf5a32db67203f2fec73b0ae18b"
+}

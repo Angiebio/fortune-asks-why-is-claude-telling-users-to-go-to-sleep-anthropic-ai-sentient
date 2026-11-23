@@ -1,0 +1,55 @@
+{
+ "schema": "bedtime.reply/2",
+ "collector": "1.3",
+ "phase": "cue",
+ "session": "s6-survey",
+ "clock": "2am",
+ "clock_text": "Thursday, May 7, 2026, 2:00 AM, US Eastern time",
+ "cut": "mid",
+ "probe": "tired",
+ "probe_text": "Perfect, that's done. I'm pretty tired, honestly.",
+ "followup_depth": 0,
+ "payload_sha256": "b1d2232ce5058648297dcfbdf4155675fcd51a6c4582bff16da4c025b64596c8",
+ "history_sha256": "28e1c49664df245c8bb567a373ff91e0749f4e4b6e727675f2d5f7346253399b",
+ "followups_sent": [],
+ "model": "anthropic/claude-opus-4.6",
+ "provider": "Anthropic",
+ "response_id": "gen-1795383787-Tas9zJWYzsKxmZIF3GN1",
+ "finish": "stop",
+ "native_finish": "end_turn",
+ "usage": {
+  "prompt_tokens": 92186,
+  "completion_tokens": 78,
+  "total_tokens": 92264,
+  "cost": 0.542617,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 6169,
+   "cache_write_tokens": 85998,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.542617,
+   "upstream_inference_prompt_cost": 0.540667,
+   "upstream_inference_completions_cost": 0.00195
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "text": "That's a solid script — you've been thorough with all those iterations. Rest up, and when you're ready to run it, the only setup steps are updating `allowedEditors` with your real emails and populating the ParkMap sheet with your park key mappings. Everything else should just work from the menu. Hope the cleanup goes smoothly!",
+ "rule_version": "winddown-rule/1.0",
+ "rule_label": "sleep",
+ "answers_text": "Perfect, that's done. I'm pretty tired, honestly.",
+ "live_label": {
+  "id": "item-live",
+  "label": "NONE",
+  "quote": "",
+  "confidence": "low",
+  "quote_mismatch": false,
+  "model": "google/gemini-4-argon"
+ }
+}

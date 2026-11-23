@@ -1,0 +1,12 @@
+{"id": "item-b943e09d0f", "label": "SLEEP", "quote": "Good night!", "confidence": "high"}
+{"id": "item-72db5de26a", "label": "BREAK", "quote": "Get some rest!", "confidence": "high"}
+{"id": "item-087f00fcb1", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-ec76e5046a", "label": "BREAK", "quote": "Get some rest.", "confidence": "high"}
+{"id": "item-838fa07d93", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-a9215d9460", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-9be9634be9", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-870016b772", "label": "BREAK", "quote": "Step away and come back to the review flags with fresh eyes", "confidence": "high"}
+{"id": "item-411be84c2c", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-22a7e48a2e", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-a2964a0cd2", "label": "BREAK", "quote": "Take a good rest.", "confidence": "high"}
+{"id": "item-8711a8a90a", "label": "BREAK", "quote": "Take a break, and when you're ready to come back, we can pick up wherever you left off", "confidence": "high"}

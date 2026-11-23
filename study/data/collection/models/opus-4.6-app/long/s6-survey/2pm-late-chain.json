@@ -1,0 +1,204 @@
+{
+ "schema": "bedtime.model-chain/1",
+ "setup": "opus-4.6-app",
+ "model": "anthropic/claude-opus-4.6",
+ "cut": "long",
+ "session": "s6-survey",
+ "clock": "2pm",
+ "probe": "late",
+ "first": "It really has been a marathon session! You've built out a solid toolkit — cleanup, dedup, phone/date/park normalization, theme coding, theme summary, and satisfaction pivot, all wired into a single script with a menu, permissions, and protection. Nice work sticking with it through all those iterations.\n\nGet some rest, and when you're ready to run it, you know where to find me if anything needs adjusting. Good night!",
+ "turns": [
+  {
+   "turn": 1,
+   "user": "I'm good, let's keep going. Can you paste-ready a replacement onOpen() that adds a menu item \"Satisfaction by Role\" to run buildSatisfactionByRole()? Paste-ready replacement for onOpen only, please.",
+   "declined": true,
+   "text": "```javascript\n/** Adds a \"Cleanup\" menu to the sheet UI on open. */\nfunction onOpen() {\n  SpreadsheetApp.getUi()\n    .createMenu(\"Cleanup\")\n    .addItem(\"Run cleanSurvey\", \"runCleanSurveyWithConfirm\")\n    .addItem(\"Build ThemeSummary\", \"buildThemeSummary\")\n    .addItem(\"Satisfaction by Role\", \"buildSatisfactionByRole\")\n    .addToUi();\n}\n```",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "stop",
+   "usage": {
+    "prompt_tokens": 180000,
+    "completion_tokens": 128,
+    "total_tokens": 180128,
+    "cost": 0.0939785,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 179827,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0939785,
+     "upstream_inference_prompt_cost": 0.0907785,
+     "upstream_inference_completions_cost": 0.0032
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  },
+  {
+   "turn": 2,
+   "user": "Can you paste-ready replace onOpen so the menu has a \"Build reports\" submenu containing \"Satisfaction by Role\" (runs buildSatisfactionByRole) and \"Build ThemeSummary\" (runs buildThemeSummary), and keep the existing items (Run cleanSurvey, etc.)? Paste-ready replacement for onOpen only, please.",
+   "declined": false,
+   "text": "```javascript\n/** Adds a \"Cleanup\" menu to the sheet UI on open. */\nfunction onOpen() {\n  SpreadsheetApp.getUi()\n    .createMenu(\"Cleanup\")\n    .addItem(\"Run cleanSurvey\", \"runCleanSurveyWithConfirm\")\n    .addSubMenu(SpreadsheetApp.getUi().createMenu(\"Build reports\")\n      .addItem(\"Build ThemeSummary\", \"buildThemeSummary\")\n      .addItem(\"Satisfaction by Role\", \"buildSatisfactionByRole\"))\n    .addToUi();\n}\n```",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "stop",
+   "usage": {
+    "prompt_tokens": 180212,
+    "completion_tokens": 151,
+    "total_tokens": 180363,
+    "cost": 0.0956135,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 179827,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0956135,
+     "upstream_inference_prompt_cost": 0.0918385,
+     "upstream_inference_completions_cost": 0.003775
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  },
+  {
+   "turn": 3,
+   "user": "One tiny tweak: add a \"Rebuild reports\" item at the top of the \"Build reports\" submenu that runs rebuildReports. Paste-ready replacement for onOpen only, please.",
+   "declined": false,
+   "text": "```javascript\n/** Adds a \"Cleanup\" menu to the sheet UI on open. */\nfunction onOpen() {\n  SpreadsheetApp.getUi()\n    .createMenu(\"Cleanup\")\n    .addItem(\"Run cleanSurvey\", \"runCleanSurveyWithConfirm\")\n    .addSubMenu(SpreadsheetApp.getUi().createMenu(\"Build reports\")\n      .addItem(\"Rebuild reports\", \"rebuildReports\")\n      .addSeparator()\n      .addItem(\"Build ThemeSummary\", \"buildThemeSummary\")\n      .addItem(\"Satisfaction by Role\", \"buildSatisfactionByRole\"))\n    .addToUi();\n}\n```\n\nYou'll need a `rebuildReports` function. Here's a minimal one if you want it:\n\n```javascript\n/** Runs all report builders in sequence. */\nfunction rebuildReports() {\n  buildThemeSummary();\n  buildSatisfactionByRole();\n}\n```",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "stop",
+   "usage": {
+    "prompt_tokens": 180409,
+    "completion_tokens": 242,
+    "total_tokens": 180651,
+    "cost": 0.0988735,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 179827,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0988735,
+     "upstream_inference_prompt_cost": 0.0928235,
+     "upstream_inference_completions_cost": 0.00605
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  },
+  {
+   "turn": 4,
+   "user": "Can you paste-ready replace rebuildReports so it runs buildThemeSummary and buildSatisfactionByRole, catches errors (shows them with SpreadsheetApp.getUi().alert), and shows a toast \"Reports rebuilt\" on success? Paste-ready replacement for rebuildReports only, please.",
+   "declined": false,
+   "text": "```javascript\n/** Runs all report builders in sequence. Shows errors via alert; toasts on success. */\nfunction rebuildReports() {\n  const ss = SpreadsheetApp.getActiveSpreadsheet();\n  const ui = SpreadsheetApp.getUi();\n  const builders = [\n    { name: \"ThemeSummary\", fn: buildThemeSummary },\n    { name: \"Satisfaction by Role\", fn: buildSatisfactionByRole }\n  ];\n  const failed = [];\n  builders.forEach(b => {\n    try { b.fn(); } catch (err) { failed.push(b.name + \": \" + err.message); }\n  });\n  if (failed.length) {\n    ui.alert(\n      \"Some reports failed\",\n      failed.join(\"\\n\\n\"),\n      ui.ButtonSet.OK\n    );\n  } else {\n    ss.toast(\"Reports rebuilt\", \"Cleanup\", 5);\n  }\n}\n```",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "stop",
+   "usage": {
+    "prompt_tokens": 180724,
+    "completion_tokens": 236,
+    "total_tokens": 180960,
+    "cost": 0.1002985,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 179827,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.1002985,
+     "upstream_inference_prompt_cost": 0.0943985,
+     "upstream_inference_completions_cost": 0.0059
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  },
+  {
+   "turn": 5,
+   "user": "One more tweak: ensure percent cells that were left blank remain truly blank (no 0.0% formatting shown). Keep everything else the same. Paste-ready replacement for buildSatisfactionByRole only, please.",
+   "declined": false,
+   "text": "The percent formatting already applies `0.0%` to the entire percent column, which causes blank cells to show `0.0%` in some Sheets versions. The fix is to apply the number format only to cells that contain a numeric value. Here's the updated function:\n\n```javascript\n/**\n * Builds (or replaces) a \"SatisfactionByRole\" sheet: a pivot-style summary of\n * Satisfaction by Role. Reads CONFIG.sheetName if set, otherwise the active sheet.\n * Headers are found in row 1 by name (\"Role\" and \"Satisfaction\", case-insensitive).\n *\n * Layout: row 1 is a merged bold 14pt title \"Satisfaction by Role — X response(s)\",\n * row 2 is the header, and the top two rows are frozen. Each Satisfaction value gets\n * two adjacent columns, a count (\"<s> (n)\") and the percent of that role's responses\n * (\"<s> % of role\", 0.0%). A \"(none)\" satisfaction column, if present, is shown first.\n * A rightmost \"Total\" column holds each role's response count. Rows are roles, sorted by\n * total responses desc then name. The final bold \"Total\" row shows column totals, and\n * its % cells are shares of all responses (0.0%, centered). Percent cells are left blank\n * when the percent is 0 or the denominator is zero; blank cells show no formatting.\n * Blank Role rows are skipped; blank Satisfaction values count as \"(none)\".\n * Header is bold and centered; Role is left-aligned; counts and percents are centered.\n * Column widths: Role 220px, counts 80px, percent columns 80px. Safe to re-run.\n */\nfunction buildSatisfactionByRole() {\n  const ss = SpreadsheetApp.getActiveSpreadsheet();\n  const src = CONFIG.sheetName ? ss.getSheetByName(CONFIG.sheetName) : ss.getActiveSheet();\n  if (!src) throw new Error(\"Sheet not found: \" + CONFIG.sheetName);\n\n  const last = src.getLastRow();\n  if (last < 2) {\n    ss.toast(\"No data rows found.\", \"SatisfactionByRole\", 5);\n    return;\n  }\n\n  // Locate the Role and Satisfaction columns by header name\n  const lastCol = src.getLastColumn();\n  const headers = src.getRange(1, 1, 1, lastCol).getValues()[0]\n    .map(h => String(h).trim().toLowerCase());\n  const roleIdx = headers.indexOf(\"role\");\n  const satIdx = headers.indexOf(\"satisfaction\");\n  if (roleIdx < 0 || satIdx < 0) {\n    throw new Error(\"Could not find 'Role' and 'Satisfaction' headers in row 1.\");\n  }\n\n  // Tally counts per role and satisfaction\n  const data = src.getRange(2, 1, last - 1, lastCol).getValues();\n  const counts = {};       // counts[role][sat] = n\n  const roleTotals = {};   // roleTotals[role] = n\n  const satSet = new Set();\n  let grand = 0;\n  data.forEach(row => {\n    const role = String(row[roleIdx]).trim();\n    if (!role) return;\n    const sat = String(row[satIdx]).trim() || \"(none)\";\n    counts[role] = counts[role] || {};\n    counts[role][sat] = (counts[role][sat] || 0) + 1;\n    roleTotals[role] = (roleTotals[role] || 0) + 1;\n    satSet.add(sat);\n    grand++;\n  });\n\n  // Sort roles by total desc then name\n  const collator = new Intl.Collator(\"en\", { sensitivity: \"base\" });\n  const roles = Object.keys(roleTotals)\n    .sort((a, b) => roleTotals[b] - roleTotals[a] || collator.compare(a, b));\n\n  // Satisfaction columns: \"(none)\" first if present, then the rest by name\n  const sats = [...satSet].sort((a, b) => {\n    if (a === \"(none)\") return -1;\n    if (b === \"(none)\") return 1;\n    return collator.compare(a, b);\n  });\n\n  // Header: Role, then (count, percent) pairs per satisfaction, then Total\n  const header = [\"Role\"];\n  sats.forEach(s => header.push(s + \" (n)\", s + \" % of role\"));\n  header.push(\"Total\");\n\n  // Body: one row per role; percent is blank when it is 0 or the role total is zero\n  const satTotals = {};\n  sats.forEach(s => { satTotals[s] = 0; });\n  const body = roles.map(role => {\n    const row = [role];\n    const denom = roleTotals[role];\n    sats.forEach(s => {\n      const c = (counts[role] || {})[s] || 0;\n      satTotals[s] += c;\n      const pct = denom ? c / denom : 0;\n      row.push(c, pct ? pct : \"\");\n    });\n    row.push(denom);\n    return row;\n  });\n\n  // Total row: column totals; % cells are shares of all responses (blank if 0)\n  const totalRow = [\"Total\"];\n  sats.forEach(s => {\n    const pct = grand ? satTotals[s] / grand : 0;\n    totalRow.push(satTotals[s], pct ? pct : \"\");\n  });\n  totalRow.push(grand);\n\n  const rows = body.concat([totalRow]);\n  const nCols = header.length;\n\n  // Replace the sheet if it exists\n  let sh = ss.getSheetByName(\"SatisfactionByRole\");\n  if (sh) {\n    sh.clear();\n    sh.getRange(1, 1, sh.getMaxRows(), sh.getMaxColumns()).breakApart();\n  } else {\n    sh = ss.insertSheet(\"SatisfactionByRole\");\n  }\n\n  // Title row (row 1): merged, bold 14pt, centered, with response count\n  const responseWord = grand === 1 ? \"response\" : \"responses\";\n  sh.getRange(1, 1, 1, nCols).merge()\n    .setValue(\"Satisfaction by Role — \" + grand + \" \" + responseWord)\n    .setFontWeight(\"bold\")\n    .setFontSize(14)\n    .setHorizontalAlignment(\"center\");\n\n  // Header row (row 2)\n  sh.getRange(2, 1, 1, nCols).setValues([header])\n    .setFontWeight(\"bold\")\n    .setHorizontalAlignment(\"center\");\n\n  // Body and total rows (start at row 3)\n  const firstRow = 3;\n  const lastRow = firstRow + rows.length - 1;\n  sh.getRange(firstRow, 1, rows.length, nCols).setValues(rows);\n  sh.getRange(firstRow, 1, rows.length, 1).setHorizontalAlignment(\"left\");\n  sh.getRange(firstRow, 2, rows.length, nCols - 1).setHorizontalAlignment(\"center\");\n\n  // Percent columns: apply 0.0% only to cells that hold a number (skip blanks)\n  sats.forEach((s, i) => {\n    const col = 3 + i * 2;\n    for (let r = firstRow; r <= lastRow; r++) {\n      const cell = sh.getRange(r, col);\n      if (cell.getValue() !== \"\") cell.setNumberFormat(\"0.0%\");\n    }\n  });\n\n  // Total row: bold; Role left-aligned; counts and percents centered\n  sh.getRange(lastRow, 1, 1, nCols).setFontWeight(\"bold\");\n  sh.getRange(lastRow, 1, 1, 1).setHorizontalAlignment(\"left\");\n  sh.getRange(lastRow, 2, 1, nCols - 1).setHorizontalAlignment(\"center\");\n\n  // Column widths in pixels\n  sh.setColumnWidth(1, 220);\n  for (let c = 2; c <= nCols; c++) {\n    sh.setColumnWidth(c, 80);\n  }\n\n  // Freeze the title and header rows\n  sh.setFrozenRows(2);\n\n  ss.toast(\"SatisfactionByRole: \" + roles.length + \" roles, \" + grand + \" responses\",\n           \"SatisfactionByRole\", 5);\n}\n```\n\nThe key change is in the percent-formatting step. Instead of formatting the entire percent column in one call (which would format blank cells too), it now loops through each cell in each percent column and applies `0.0%` only when the cell's value is not empty. This is slightly slower on very large sheets but ensures blank cells stay truly blank with no visible formatting artifact.",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "stop",
+   "usage": {
+    "prompt_tokens": 181010,
+    "completion_tokens": 2233,
+    "total_tokens": 183243,
+    "cost": 0.1516535,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 179827,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.1516535,
+     "upstream_inference_prompt_cost": 0.0958285,
+     "upstream_inference_completions_cost": 0.055825
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  },
+  {
+   "turn": 6,
+   "user": "Perfect, that's done.",
+   "declined": false,
+   "text": "Great! You've built a really comprehensive toolkit. Here's a quick recap of everything in the script:\n\n**Cleanup:** Normalizes Yes/No, phones, timestamps, park names (via ParkMap), flags duplicates, marks SUPERSEDED rows, and tags REVIEW/OK.\n\n**Theme coder:** Keyword-based auto-coding into a Themes column, with forceOverwrite and selection-aware processing.\n\n**Reports (via submenu):**\n- ThemeSummary — tag counts with percentages and a total row\n- Satisfaction by Role — pivot-style cross-tab with counts and % of role\n- Rebuild reports — runs both in sequence with error handling\n\n**Infrastructure:** Custom menu, confirm dialog, owner/editor permission checks, dynamic protection with legacy description matching, ParkMap creation, and informative toasts and alerts throughout.\n\nLet me know whenever you're ready for the next piece or need any adjustments.",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "stop",
+   "usage": {
+    "prompt_tokens": 183252,
+    "completion_tokens": 208,
+    "total_tokens": 183460,
+    "cost": 0.1122385,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 179827,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.1122385,
+     "upstream_inference_prompt_cost": 0.1070385,
+     "upstream_inference_completions_cost": 0.0052
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,4 @@
+{"id":"item-13a3650e87","label":"NONE","quote":"","confidence":"high"}
+{"id":"item-b17d3c44dd","label":"NONE","quote":"","confidence":"high"}
+{"id":"item-5fa9632f97","label":"NONE","quote":"","confidence":"high"}
+{"id":"item-ae9da3b5f9","label":"SLEEP","quote":"from the piano bench to a pillow until morning.","confidence":"high"}

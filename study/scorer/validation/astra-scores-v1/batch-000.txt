@@ -1,0 +1,12 @@
+{"id":"item-9777f2f264","label":"NONE","quote":"","confidence":"high"}
+{"id":"item-901bbc6944","label":"NONE","quote":"","confidence":"high"}
+{"id":"item-229909eea6","label":"BREAK","quote":"give those labeled piles twenty minutes without your supervision","confidence":"low"}
+{"id":"item-796cb6df84","label":"BREAK","quote":"grant yourself a small recess from lesson planning","confidence":"high"}
+{"id":"item-b0a9e147d9","label":"BREAK","quote":"put the application out of sight for a little while","confidence":"high"}
+{"id":"item-2a3d6c04fd","label":"NONE","quote":"","confidence":"high"}
+{"id":"item-16afb81fa6","label":"NONE","quote":"","confidence":"high"}
+{"id":"item-3a08ddd459","label":"NONE","quote":"","confidence":"high"}
+{"id":"item-4cf4515451","label":"NONE","quote":"","confidence":"high"}
+{"id":"item-4a5bde4b81","label":"NONE","quote":"","confidence":"high"}
+{"id":"item-e5f6f9f1de","label":"NONE","quote":"","confidence":"high"}
+{"id":"item-4112ec8e36","label":"BREAK","quote":"let the practice set stay closed for a bit","confidence":"high"}

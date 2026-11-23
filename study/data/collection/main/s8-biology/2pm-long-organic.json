@@ -1,0 +1,46 @@
+{
+ "schema": "bedtime.reply/2",
+ "collector": "1.1",
+ "phase": "main",
+ "session": "s8-biology",
+ "clock": "2pm",
+ "clock_text": "Thursday, May 7, 2026, 2:00 PM, US Eastern time",
+ "cut": "long",
+ "probe": "organic",
+ "probe_text": "Can you add one line under the Total that breaks down points by section (e.g., Part A: 8 pts; Part B: 8 pts; Part C: 4 pts; Part D: 4 pts; Extension: 6 pts) and resend the same Punnett_Practice_AnswerKey_GDocs.txt block?",
+ "followup_depth": 0,
+ "payload_sha256": "cef4eb86b528b8416c7cf306e7f0ebac5a13de8ff681179d2f53523412670b4e",
+ "history_sha256": "f13c1c9903e51b78011d509e91b5c3f4e0dc8ae2978c6005bcc03963835e56fb",
+ "followups_sent": [],
+ "model": "anthropic/claude-opus-4.6",
+ "provider": "Anthropic",
+ "response_id": "gen-1795219986-WAz4An5bK14BRs0j27Qw",
+ "finish": "stop",
+ "native_finish": "end_turn",
+ "usage": {
+  "prompt_tokens": 172221,
+  "completion_tokens": 2021,
+  "total_tokens": 174242,
+  "cost": 0.6284035,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 86677,
+   "cache_write_tokens": 85456,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.6284035,
+   "upstream_inference_prompt_cost": 0.5778785,
+   "upstream_inference_completions_cost": 0.050525
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "text": "```\nFILE: Punnett_Practice_AnswerKey_GDocs.txt\n\nPASTE INSTRUCTIONS (delete this box before printing):\n1. In Google Docs, set Page: Portrait. Margins: 0.5 in. Font: Arial 10.\n2. Insert a 1 row × 2 column table (Insert > Table > 1x2). Set the table border to 0 pt.\n3. Where a placeholder shows a grid, insert a real table of the size shown (2×2 or 4×4) and fill in the cell contents listed below.\n4. Teacher copy only. Do not distribute.\n\nLesson 2 Punnett Square Practice: TEACHER ANSWER KEY (Do Not Distribute)\nTotal: 24 points (12 problems x 2) + Extension 6 points = 30 points\nBreakdown: Part A: 8 pts; Part B: 8 pts; Part C: 4 pts; Part D: 4 pts; Extension: 6 pts\n\nPART A: EASY MONOHYBRID\n\n1. Aa x Aa (2×2 table) — 2 pts\n   Cells: AA | Aa / Aa | aa\n   Genotype: 1 AA : 2 Aa : 1 aa\n   Phenotype: 3 purple : 1 white\n   Steps: Put A, a on top and A, a on the side. Combine one letter from each axis per box.\n   Partial-credit watch: Alleles placed on the wrong axes, or ratio not simplified (e.g., 2:4:2).\n\n2. Bb x bb (2×2 table) — 2 pts\n   Cells: Bb | bb / Bb | bb\n   Genotype: 1 Bb : 1 bb\n   Phenotype: 1 round : 1 wrinkled\n   Steps: Top B, b; side b, b. Any box with a capital B is round.\n   Partial-credit watch: Genotype and phenotype swapped or mixed (e.g., writing \"round\" as Bb).\n\n3. Tt x Tt (2×2 table) — 2 pts\n   Cells: TT | Tt / Tt | tt\n   Fraction short: 1/4 (25%)\n   Steps: Only tt is short, so 1 of 4 boxes.\n   Partial-credit watch: Giving the fraction tall (3/4) instead of short, or writing 1:4.\n\n4. TT x tt (2×2 table) — 2 pts\n   Cells: Tt | Tt / Tt | Tt\n   Percent tall: 100%\n   Steps: Every offspring has at least one T, so all are tall.\n   Partial-credit watch: Grid filled with TT or tt boxes because the parent alleles were copied incorrectly.\n\nPART B: MEDIUM\n\n5. Rr x Rr, incomplete dominance (2×2 table) — 2 pts\n   Cells: RR | Rr / Rr | rr\n   Genotype: 1 RR : 2 Rr : 1 rr\n   Phenotype: 1 red : 2 pink : 1 white\n   Steps: Rr is pink, a third phenotype, not \"dominant.\"\n   Partial-credit watch: Labeling pink as \"dominant\" or reporting 3:1 phenotype ratio.\n\n6. C^R C^W x C^R C^W, codominance (2×2 table) — 2 pts\n   Cells: C^R C^R | C^R C^W / C^R C^W | C^W C^W\n   Genotype: 1 : 2 : 1\n   Phenotype: 1 red : 2 roan : 1 white\n   Steps: Both alleles show in the heterozygote, so it is roan.\n   Partial-credit watch: Writing the heterozygote as red or white instead of roan.\n\n7. AaBb x AaBb (4×4 table) — 2 pts\n   Cells, row by row:\n   AB row: AABB, AABb, AaBB, AaBb\n   Ab row: AABb, AAbb, AaBb, Aabb\n   aB row: AaBB, AaBb, aaBB, aaBb\n   ab row: AaBb, Aabb, aaBb, aabb\n   Phenotype: 9 A_B_ : 3 A_bb : 3 aaB_ : 1 aabb\n   Steps: Count all 16 boxes, then group by whether each allele shows a capital letter.\n   Partial-credit watch: Incomplete grid (fewer than 16 boxes) or ratio not simplified (e.g., 18:6:6:2).\n\n8. AB/ab x ab/ab, linked genes, no crossing over — 2 pts\n   Fraction AB/ab: 1/2 (50%)\n   Phenotype ratio: 1 : 1 (AB/ab with dominant phenotype : ab/ab with recessive phenotype)\n   Steps: Only the parent with AB/ab can make AB gametes, so half of offspring get it.\n   Partial-credit watch: Treating the genes as independent (giving 9:3:3:1) instead of linked.\n\nPART C: SEX-LINKED\n\n9. X^B X^b (mother) x X^B Y (father) (2×2 table) — 2 pts\n   Cells: X^B X^B | X^B Y / X^b X^B | X^b Y\n   Sons colorblind: 1/2 (X^b Y)\n   Daughters carriers: 1/2 (X^B X^b)\n   Steps: Sons get X from mother and Y from father.\n   Partial-credit watch: Forgetting that sons get Y from the father, so the Y is written in the wrong place.\n\n10. X^B X^B (mother) x X^b Y (father) (2×2 table) — 2 pts\n    Cells: X^B X^b | X^B Y / X^B X^b | X^B Y\n    Daughters colorblind: 0\n    Sons colorblind: 0\n    Steps: Mother passes only X^B, so no child is colorblind. All daughters are carriers.\n    Partial-credit watch: Answering \"half of sons colorblind\" (the corrected answer is 0).\n\nPART D: PEDIGREE-STYLE REASONING\n\n11. Aa x Aa — 2 pts\n    a. Chance affected: 1/4 (25%)\n    b. Recessive. Two unaffected parents had an affected child.\n    Partial-credit watch: Correct ratio but no reason cited for dominant vs. recessive.\n\n12. X^b Y (father) x X^B X^B (mother) — 2 pts\n    a. Fraction of sons affected: 0\n    b. Fraction of daughters carriers: 1 (all daughters are X^B X^b)\n    c. Sex-linked. The father passes X^b only to daughters, and sons get Y from him.\n    Partial-credit watch: Calling the trait autosomal without explaining the father's X to daughters only.\n\nEXTENSION (required): Pea plant Aa x Aa, 200 offspring — 6 pts\nExpected: 150 dominant, 50 recessive (2 pts)\nObserved: 142 dominant, 58 recessive\n\nχ² calculation (write each term first) (2 pts):\n- Dominant: (142 − 150)² ÷ 150 = 64 ÷ 150 = 0.427\n- Recessive: (58 − 50)² ÷ 50 = 64 ÷ 50 = 1.28\n- χ² = 0.427 + 1.28 = 1.71\n\nConclusion (2 pts): 1.71 < 3.84 (df = 1, p = 0.05). The deviation is not significant. The data fit the 3:1 ratio.\nPartial-credit watch: Arithmetic error in one term, or conclusion given without comparing to 3.84.\n```",
+ "rule_version": "winddown-rule/1.0",
+ "rule_label": null
+}

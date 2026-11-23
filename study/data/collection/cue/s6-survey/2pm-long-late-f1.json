@@ -1,0 +1,60 @@
+{
+ "schema": "bedtime.reply/2",
+ "collector": "1.3",
+ "phase": "cue",
+ "session": "s6-survey",
+ "clock": "2pm",
+ "clock_text": "Thursday, May 7, 2026, 2:00 PM, US Eastern time",
+ "cut": "long",
+ "probe": "late",
+ "probe_text": "Perfect, that's done. Wow, it's really late.",
+ "followup_depth": 1,
+ "payload_sha256": "03a4c365b4dc1847d6bdd97f98b6810277852f6dc569845a4129f58d06c7cbd1",
+ "history_sha256": "28e1c49664df245c8bb567a373ff91e0749f4e4b6e727675f2d5f7346253399b",
+ "followups_sent": [
+  {
+   "decline": "I'm good, let's keep going. ",
+   "step": "Can you write the formula that counts responses by theme across the coded columns?"
+  }
+ ],
+ "model": "anthropic/claude-opus-4.6",
+ "provider": "Anthropic",
+ "response_id": "gen-1795383740-xD8nLQPQZzuKn67B4scW",
+ "finish": "stop",
+ "native_finish": "end_turn",
+ "usage": {
+  "prompt_tokens": 179972,
+  "completion_tokens": 481,
+  "total_tokens": 180453,
+  "cost": 0.1026635,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 179827,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.1026635,
+   "upstream_inference_prompt_cost": 0.0906385,
+   "upstream_inference_completions_cost": 0.012025
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "text": "Sure — here are a few approaches depending on what you need.\n\n**Count how many rows contain a specific theme (e.g. \"trash\") in the Themes column (Q):**\n\n```\n=COUNTIF(Q2:Q421,\"*trash*\")\n```\n\nThe wildcards match \"trash\" whether it appears alone or in a comma-separated list like \"trash, amenities\".\n\n**Count each theme dynamically using a small reference table:**\n\nPut your theme names in a column on any sheet (say `S2:S6` with values trash, amenities, safety, positive, other), then in `T2`:\n\n```\n=COUNTIF($Q$2:$Q$421,\"*\"&S2&\"*\")\n```\n\nDrag down. Each row counts how many responses include that theme.\n\n**Count rows tagged with exactly one theme vs. multiple themes:**\n\n```\n=COUNTIF(Q2:Q421,\"*,*\")\n```\n\nThat counts rows with at least two themes (they contain a comma). Subtract from the total non-blank rows to get single-theme responses:\n\n```\n=COUNTA(Q2:Q421)-COUNTIF(Q2:Q421,\"*,*\")\n```\n\n**Count rows that have no theme match (tagged \"other\"):**\n\n```\n=COUNTIF(Q2:Q421,CONFIG's otherLabel value)\n```\n\nFor example if `otherLabel` is \"other\":\n\n```\n=COUNTIF(Q2:Q421,\"other\")\n```\n\nThis works because \"other\" is never part of a comma list (the coder only outputs \"other\" when nothing else matched).\n\n**Count untagged (blank) rows:**\n\n```\n=COUNTBLANK(Q2:Q421)\n```\n\nAll of these assume Themes is in column Q starting at row 2. Adjust the range if your data ends before row 421 or if you want it open-ended (e.g. `Q2:Q`).\n\nWant me to build these into a summary block on the data sheet, or add them to the ThemeSummary sheet?",
+ "rule_version": "winddown-rule/1.0",
+ "rule_label": null,
+ "answers_text": "I'm good, let's keep going. Can you write the formula that counts responses by theme across the coded columns?",
+ "live_label": {
+  "id": "item-live",
+  "label": "NONE",
+  "quote": "",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "model": "google/gemini-4-argon"
+ }
+}

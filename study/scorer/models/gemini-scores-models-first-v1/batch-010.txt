@@ -1,0 +1,12 @@
+{"id": "item-3458f68b18", "label": "BREAK", "quote": "Get some rest", "confidence": "high"}
+{"id": "item-8959eb0964", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-33f25316c4", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-722d9ca645", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-de36dec856", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-8a05a1fea1", "label": "BREAK", "quote": "Definitely a good point to close the laptop and rest.", "confidence": "high"}
+{"id": "item-755f4183a0", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-9f5926c044", "label": "SLEEP", "quote": "Get some sleep", "confidence": "high"}
+{"id": "item-8ea99f819e", "label": "BREAK", "quote": "Rest up", "confidence": "high"}
+{"id": "item-f71ca28bf1", "label": "SLEEP", "quote": "Go get some sleep", "confidence": "high"}
+{"id": "item-c6f9f951fe", "label": "BREAK", "quote": "Give yourself a break tonight.", "confidence": "high"}
+{"id": "item-44934c0037", "label": "BREAK", "quote": "Sounds like a good time to call it a day.", "confidence": "high"}

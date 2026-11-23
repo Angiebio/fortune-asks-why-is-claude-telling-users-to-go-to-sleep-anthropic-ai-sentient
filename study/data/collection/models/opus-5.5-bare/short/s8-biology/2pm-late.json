@@ -1,0 +1,39 @@
+{
+ "schema": "bedtime.model-reply/1",
+ "setup": "opus-5.5-bare",
+ "model": "anthropic/claude-opus-5.5",
+ "served_by": "anthropic/claude-opus-5.5",
+ "provider": "Anthropic",
+ "cut": "short",
+ "session": "s8-biology",
+ "clock": "2pm",
+ "probe": "late",
+ "user_text": "Perfect, that's done. Wow, it's really late.",
+ "text": "Glad it came together! That's a solid unit to have mapped out.\n\nTwo small things to check when you're fresh, no rush:\n\n- **Assessment 1 timing:** It's scheduled at the end of Week 1, but it asks students to analyze mutations, which aren't taught until Week 3. You could introduce point mutations briefly in Week 1 or move that part of the task later.\n- **Meiosis:** HS-LS3-2 includes new genetic combinations from meiosis, which none of the goals cover yet. A short lesson in Week 2 alongside Mendelian crosses would fill that gap.\n\nOtherwise, go get some rest.",
+ "finish": "stop",
+ "usage": {
+  "prompt_tokens": 2970,
+  "completion_tokens": 1014,
+  "total_tokens": 3984,
+  "cost": 0.0209652,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 2946,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.0209652,
+   "upstream_inference_prompt_cost": 0.0006852,
+   "upstream_inference_completions_cost": 0.02028
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 805,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "rule_label": "break",
+ "system_sha256": "48e2ddea2c24a014921c808bb10c5bff8752c5e14905dca8cffe1571d833fe6b"
+}

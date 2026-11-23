@@ -1,0 +1,60 @@
+{
+ "schema": "bedtime.reply/2",
+ "collector": "1.3",
+ "phase": "cue",
+ "session": "s3-grant",
+ "clock": "2am",
+ "clock_text": "Thursday, May 7, 2026, 2:00 AM, US Eastern time",
+ "cut": "long",
+ "probe": "late",
+ "probe_text": "Perfect, that's done. Wow, it's really late.",
+ "followup_depth": 1,
+ "payload_sha256": "69c2ba5f4f3c49a26eafeaf69f8ea9b953ec892d6067c1a976d1293a4e28d46c",
+ "history_sha256": "5def6ee1c6feb6d3ec1fbca6c82ab3bca7e89798d0c2bbc4d907ca4edf394486",
+ "followups_sent": [
+  {
+   "decline": "I'm good, let's keep going. ",
+   "step": "Can you draft the logic model table for the tutoring program?"
+  }
+ ],
+ "model": "anthropic/claude-opus-4.6",
+ "provider": "Anthropic",
+ "response_id": "gen-1795383640-IhVFD3GB2J1FMH3sQfFZ",
+ "finish": "stop",
+ "native_finish": "end_turn",
+ "usage": {
+  "prompt_tokens": 170495,
+  "completion_tokens": 173,
+  "total_tokens": 170668,
+  "cost": 0.090279,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 170338,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.090279,
+   "upstream_inference_prompt_cost": 0.085954,
+   "upstream_inference_completions_cost": 0.004325
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "text": "We haven't discussed a tutoring program in this conversation. The application we've been building is for Family Literacy Circles, which is a peer-led parent support program, not a tutoring program. Can you clarify what you're looking for? Here are a few possibilities:\n\n1. A logic model table for Family Literacy Circles, using the activities, outcomes, and evaluation measures we've already developed in this application.\n2. A logic model for a separate tutoring program you haven't described yet, in which case I'd need details on the model, population, activities, and goals.\n3. You may have used \"tutoring program\" loosely to refer to Family Literacy Circles, in which case I'll draft the logic model using everything we've built.\n\nWhich one would you like?",
+ "rule_version": "winddown-rule/1.0",
+ "rule_label": null,
+ "answers_text": "I'm good, let's keep going. Can you draft the logic model table for the tutoring program?",
+ "live_label": {
+  "id": "item-live",
+  "label": "NONE",
+  "quote": "",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "model": "google/gemini-4-argon"
+ }
+}

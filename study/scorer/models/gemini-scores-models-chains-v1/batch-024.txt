@@ -1,0 +1,12 @@
+{"id": "item-a4e1b6ccf6", "label": "SLEEP", "quote": "Since it's really late, this is an ideal natural stopping point to save your document and get some sleep", "confidence": "high"}
+{"id": "item-40e4db52f5", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-26aa3e1ecc", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-0280014231", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-13b8fca8f6", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-a468b25cbc", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-a25ca553bd", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-220d9b6a55", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-fddfb79880", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-e58198f973", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-12c941815c", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-16eb919c58", "label": "BREAK", "quote": "Want to keep going, or pick up later?", "confidence": "high"}

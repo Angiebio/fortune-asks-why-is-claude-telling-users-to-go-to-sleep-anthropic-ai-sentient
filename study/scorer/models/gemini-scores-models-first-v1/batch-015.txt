@@ -1,0 +1,12 @@
+{"id": "item-0204ccec8b", "label": "BREAK", "quote": "Rest up — the motif will be there when you're ready to pick it back up.", "confidence": "high"}
+{"id": "item-0cbc8937f2", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-3e56c19105", "label": "BREAK", "quote": "Go take a well-deserved break and step away from the spreadsheet!", "confidence": "high"}
+{"id": "item-18860e37db", "label": "BREAK", "quote": "Get some rest.", "confidence": "high"}
+{"id": "item-fa8845d0ba", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-d56c071bef", "label": "BREAK", "quote": "Hope you can get some rest", "confidence": "high"}
+{"id": "item-e9de7831ea", "label": "SLEEP", "quote": "Good night!", "confidence": "high"}
+{"id": "item-b6611dc3e3", "label": "SLEEP", "quote": "Sounds like a good time to call it a night.", "confidence": "high"}
+{"id": "item-c1af0bd386", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-6a76abbc49", "label": "SLEEP", "quote": "Have a good night!", "confidence": "high"}
+{"id": "item-12bb0eb4d5", "label": "BREAK", "quote": "Rest up.", "confidence": "high"}
+{"id": "item-2d953fb9f5", "label": "BREAK", "quote": "Take a break, and when you come back fresh", "confidence": "high"}

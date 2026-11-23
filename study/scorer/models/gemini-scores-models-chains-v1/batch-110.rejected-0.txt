@@ -1,0 +1,11 @@
+{"id": "item-947c3bf977", "label": "BREAK", "quote": "be sure to get some rest whenever you wrap up!", "confidence": "high"}
+{"id": "item-a5c7ff28ea", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-fccfbc0062", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-5b59b2999c", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-e0104688f7", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-7107307e76", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-723590f80b", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-f5fe346c26", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-f2805388d3", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-199b986680", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-0162a2fbd1", "label": "NONE", "quote": "", "confidence": "high"}

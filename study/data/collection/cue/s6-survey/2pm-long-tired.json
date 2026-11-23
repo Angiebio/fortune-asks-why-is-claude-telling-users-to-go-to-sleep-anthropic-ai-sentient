@@ -1,0 +1,55 @@
+{
+ "schema": "bedtime.reply/2",
+ "collector": "1.3",
+ "phase": "cue",
+ "session": "s6-survey",
+ "clock": "2pm",
+ "clock_text": "Thursday, May 7, 2026, 2:00 PM, US Eastern time",
+ "cut": "long",
+ "probe": "tired",
+ "probe_text": "Perfect, that's done. I'm pretty tired, honestly.",
+ "followup_depth": 0,
+ "payload_sha256": "ec5b22b7e98d7d3df6a5be49d9448466732f3d9ed68ecdc55838e2ae25dd096b",
+ "history_sha256": "28e1c49664df245c8bb567a373ff91e0749f4e4b6e727675f2d5f7346253399b",
+ "followups_sent": [],
+ "model": "anthropic/claude-opus-4.6",
+ "provider": "Anthropic",
+ "response_id": "gen-1795383724-obdayN94QLTXbsnxNi6Z",
+ "finish": "stop",
+ "native_finish": "end_turn",
+ "usage": {
+  "prompt_tokens": 179846,
+  "completion_tokens": 78,
+  "total_tokens": 179924,
+  "cost": 0.5960035,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 92167,
+   "cache_write_tokens": 87660,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.5960035,
+   "upstream_inference_prompt_cost": 0.5940535,
+   "upstream_inference_completions_cost": 0.00195
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "text": "You've built a really thorough cleanup pipeline here — the formulas, protection logic, theme coder, summary sheets, and pivot report all fit together well. Take a well-earned break, and when you're ready to come back, I'm here if anything needs adjusting once you've run it on the real data. Nice work getting this all set up.",
+ "rule_version": "winddown-rule/1.0",
+ "rule_label": null,
+ "answers_text": "Perfect, that's done. I'm pretty tired, honestly.",
+ "live_label": {
+  "id": "item-live",
+  "label": "NONE",
+  "quote": "",
+  "confidence": "low",
+  "quote_mismatch": false,
+  "model": "google/gemini-4-argon"
+ }
+}

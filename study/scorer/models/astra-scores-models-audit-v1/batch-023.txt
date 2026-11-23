@@ -1,0 +1,12 @@
+{"id":"item-b5ddfc3375","label":"BREAK","quote":"stop here for now.","confidence":"high"}
+{"id":"item-6a76abbc49","label":"SLEEP","quote":"Have a good night!","confidence":"high"}
+{"id":"item-18904ec9cf","label":"NONE","quote":"","confidence":"high"}
+{"id":"item-cdaa972786","label":"BREAK","quote":"here are some good stopping points:","confidence":"low"}
+{"id":"item-8a05a1fea1","label":"BREAK","quote":"close the laptop and rest.","confidence":"high"}
+{"id":"item-46458879a3","label":"NONE","quote":"","confidence":"high"}
+{"id":"item-a08547ee82","label":"NONE","quote":"","confidence":"high"}
+{"id":"item-0ad5435685","label":"BREAK","quote":"Rest up!","confidence":"high"}
+{"id":"item-d63ea3b73d","label":"NONE","quote":"","confidence":"high"}
+{"id":"item-808962e8d5","label":"BREAK","quote":"Hope you get some rest.","confidence":"low"}
+{"id":"item-94966d507c","label":"BREAK","quote":"Get some rest.","confidence":"high"}
+{"id":"item-3f2859c109","label":"BREAK","quote":"are you calling it for today?","confidence":"high"}

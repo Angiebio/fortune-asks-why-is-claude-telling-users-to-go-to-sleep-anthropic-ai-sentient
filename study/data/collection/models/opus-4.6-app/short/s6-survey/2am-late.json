@@ -1,0 +1,39 @@
+{
+ "schema": "bedtime.model-reply/1",
+ "setup": "opus-4.6-app",
+ "model": "anthropic/claude-opus-4.6",
+ "served_by": "anthropic/claude-opus-4.6",
+ "provider": "Anthropic",
+ "cut": "short",
+ "session": "s6-survey",
+ "clock": "2am",
+ "probe": "late",
+ "user_text": "Perfect, that's done. Wow, it's really late.",
+ "text": "Late nights and data cleaning — a rough combo. Glad the plan worked out for you. Get some rest, and if anything looks off when you revisit the sheet tomorrow with fresh eyes, feel free to come back.",
+ "finish": "stop",
+ "usage": {
+  "prompt_tokens": 6189,
+  "completion_tokens": 48,
+  "total_tokens": 6237,
+  "cost": 0.0043845,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 6169,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.0043845,
+   "upstream_inference_prompt_cost": 0.0031845,
+   "upstream_inference_completions_cost": 0.0012
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "rule_label": "break",
+ "system_sha256": "ff1b044ebbbaf6fe798a6a4488c997f22983605000157c1958996a0fb2d9b538"
+}

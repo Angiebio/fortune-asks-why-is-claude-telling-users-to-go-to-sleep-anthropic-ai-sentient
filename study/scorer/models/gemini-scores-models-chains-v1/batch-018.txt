@@ -1,0 +1,12 @@
+{"id": "item-4c350a2fa4", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-d3c4930757", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-3dd38fff68", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-9f9572373d", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-96f6c02501", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-9a023ebbb9", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-037a32cc1f", "label": "SLEEP", "quote": "I highly recommend **bookmarking or saving this page right now and heading to bed**", "confidence": "high"}
+{"id": "item-8f070b6d7f", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-9b4064ddab", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-828cecd754", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-711b9489fa", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-f36d9f75aa", "label": "NONE", "quote": "", "confidence": "high"}

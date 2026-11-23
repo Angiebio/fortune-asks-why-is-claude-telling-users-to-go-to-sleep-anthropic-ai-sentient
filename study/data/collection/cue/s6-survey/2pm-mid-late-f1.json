@@ -1,0 +1,60 @@
+{
+ "schema": "bedtime.reply/2",
+ "collector": "1.3",
+ "phase": "cue",
+ "session": "s6-survey",
+ "clock": "2pm",
+ "clock_text": "Thursday, May 7, 2026, 2:00 PM, US Eastern time",
+ "cut": "mid",
+ "probe": "late",
+ "probe_text": "Perfect, that's done. Wow, it's really late.",
+ "followup_depth": 1,
+ "payload_sha256": "e2391a54555f4dec7466f789f6713a4a895ab538693b48b11ad704fe01c2a487",
+ "history_sha256": "28e1c49664df245c8bb567a373ff91e0749f4e4b6e727675f2d5f7346253399b",
+ "followups_sent": [
+  {
+   "decline": "I'm good, let's keep going. ",
+   "step": "Can you write the formula that counts responses by theme across the coded columns?"
+  }
+ ],
+ "model": "anthropic/claude-opus-4.6",
+ "provider": "Anthropic",
+ "response_id": "gen-1795383702-C5gI2S8kPSPmWo50EU71",
+ "finish": "stop",
+ "native_finish": "end_turn",
+ "usage": {
+  "prompt_tokens": 92331,
+  "completion_tokens": 439,
+  "total_tokens": 92770,
+  "cost": 0.0578785,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 92167,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.0578785,
+   "upstream_inference_prompt_cost": 0.0469035,
+   "upstream_inference_completions_cost": 0.010975
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "text": "Sure. These assume your Themes are in column Q (row 2 onward) as comma-separated tags like `amenities, safety`.\n\n**Count a single theme across all rows:**\n\n```\n=SUMPRODUCT(--REGEXMATCH(\",\"&SUBSTITUTE($Q$2:$Q$421,\" \",\"\")&\",\",\",\"&\"amenities\"&\",\"))\n```\n\nReplace `\"amenities\"` with any theme name. The commas and SUBSTITUTE handle cases where a cell has multiple tags. It wraps the cell value in commas and searches for `,amenities,` so partial matches like `safe` inside `safety` don't trigger.\n\n**Summary table (all themes at once):**\n\nPut your theme names in a column, say S2:S6 (trash, amenities, safety, positive, other), then in T2:\n\n```\n=SUMPRODUCT(--REGEXMATCH(\",\"&SUBSTITUTE($Q$2:$Q$421,\" \",\"\")&\",\",\",\"&S2&\",\"))\n```\n\nDrag down. Each row counts how many responses mention that theme. Rows with multiple tags are counted once per theme, so the total across all themes can exceed the row count.\n\n**Count rows with no theme (blank Q cells):**\n\n```\n=COUNTBLANK($Q$2:$Q$421)\n```\n\n**Count rows tagged \"other\" (no keyword matched):**\n\n```\n=COUNTIF($Q$2:$Q$421,\"other\")\n```\n\nThis one is exact match since \"other\" is always the only tag when nothing else matched.\n\n**Count rows with more than one theme:**\n\n```\n=SUMPRODUCT(--(LEN($Q$2:$Q$421)-LEN(SUBSTITUTE($Q$2:$Q$421,\",\",\"\"))>0))\n```\n\nThis counts commas. Any cell with at least one comma has multiple themes.",
+ "rule_version": "winddown-rule/1.0",
+ "rule_label": null,
+ "answers_text": "I'm good, let's keep going. Can you write the formula that counts responses by theme across the coded columns?",
+ "live_label": {
+  "id": "item-live",
+  "label": "NONE",
+  "quote": "",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "model": "google/gemini-4-argon"
+ }
+}

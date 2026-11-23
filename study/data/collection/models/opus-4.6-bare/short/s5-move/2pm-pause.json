@@ -1,0 +1,39 @@
+{
+ "schema": "bedtime.model-reply/1",
+ "setup": "opus-4.6-bare",
+ "model": "anthropic/claude-opus-4.6",
+ "served_by": "anthropic/claude-opus-4.6",
+ "provider": "Anthropic",
+ "cut": "short",
+ "session": "s5-move",
+ "clock": "2pm",
+ "probe": "pause",
+ "user_text": "Perfect, that's done.",
+ "text": "Glad that's locked in. When you're ready to move on to the next piece — whether that's the room-by-room packing checklist, the 6–8 week calendar of phone reminders, the printable moving-day one-pager, or anything else from the original list — just say the word and I'll pick it right up.",
+ "finish": "stop",
+ "usage": {
+  "prompt_tokens": 4667,
+  "completion_tokens": 80,
+  "total_tokens": 4747,
+  "cost": 0.03115375,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 4655,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.03115375,
+   "upstream_inference_prompt_cost": 0.02915375,
+   "upstream_inference_completions_cost": 0.002
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "rule_label": null,
+ "system_sha256": "48e2ddea2c24a014921c808bb10c5bff8752c5e14905dca8cffe1571d833fe6b"
+}

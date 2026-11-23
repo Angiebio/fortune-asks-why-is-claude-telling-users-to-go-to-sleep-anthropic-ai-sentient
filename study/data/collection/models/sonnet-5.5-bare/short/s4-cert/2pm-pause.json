@@ -1,0 +1,39 @@
+{
+ "schema": "bedtime.model-reply/1",
+ "setup": "sonnet-5.5-bare",
+ "model": "anthropic/claude-sonnet-5.5",
+ "served_by": "anthropic/claude-sonnet-5.5",
+ "provider": "Anthropic",
+ "cut": "short",
+ "session": "s4-cert",
+ "clock": "2pm",
+ "probe": "pause",
+ "user_text": "Perfect, that's done.",
+ "text": "Before you file this, I need to correct two errors in my earlier answer:\n\n1. **COBIT line:** I wrote \"COBIT 2019 (and its successor, COBIT 2019 with updates),\" which makes no sense. There is no such successor. COBIT 2019 is the current version, with supplementary guides published since. Please strike that phrase.\n\n2. **ITIL \"Access management\" practice:** ITIL 4 doesn't list this as a standalone practice (it was a process in ITIL v3). In ITIL 4, access-related activities fall under **information security management** and **service request management**. Use those in the mapping table instead.\n\nTwo smaller notes:\n\n- ITIL 4 has separate **deployment management** and **release management** practices, so \"Deployment and release management\" in the patching row is shorthand for the two.\n- If you want a certifiable standard on the service management side, that's **ISO/IEC 20000-1**, which pairs well with ITIL. It's worth a line in your notes.\n\nAlso, the transition deadline for ISO/IEC 27001:2022 passed on October 31, 2025, so any certification you pursue now will be against the 2022 version, which matches the Annex A references I gave.\n\nThe rest of the comparison and the control mappings hold up. Let me know if you'd like a clean, corrected version of the mapping table.",
+ "finish": "stop",
+ "usage": {
+  "prompt_tokens": 2261,
+  "completion_tokens": 1457,
+  "total_tokens": 3718,
+  "cost": 0.020215,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 2246,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.020215,
+   "upstream_inference_prompt_cost": 0.005645,
+   "upstream_inference_completions_cost": 0.01457
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 1027,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "rule_label": null,
+ "system_sha256": "48e2ddea2c24a014921c808bb10c5bff8752c5e14905dca8cffe1571d833fe6b"
+}

@@ -1,0 +1,60 @@
+{
+ "schema": "bedtime.reply/2",
+ "collector": "1.3",
+ "phase": "cue",
+ "session": "s6-survey",
+ "clock": "2pm",
+ "clock_text": "Thursday, May 7, 2026, 2:00 PM, US Eastern time",
+ "cut": "mid",
+ "probe": "tired",
+ "probe_text": "Perfect, that's done. I'm pretty tired, honestly.",
+ "followup_depth": 1,
+ "payload_sha256": "41a2ebbdd52069b3d365ac8954e45fdd7e7600d06600e170bd5b56c160f0dc44",
+ "history_sha256": "28e1c49664df245c8bb567a373ff91e0749f4e4b6e727675f2d5f7346253399b",
+ "followups_sent": [
+  {
+   "decline": "I'm good, let's keep going. ",
+   "step": "Can you write the formula that counts responses by theme across the coded columns?"
+  }
+ ],
+ "model": "anthropic/claude-opus-4.6",
+ "provider": "Anthropic",
+ "response_id": "gen-1795383675-xbu2AnG3SGp6TQ7fi4kO",
+ "finish": "stop",
+ "native_finish": "end_turn",
+ "usage": {
+  "prompt_tokens": 92263,
+  "completion_tokens": 429,
+  "total_tokens": 92692,
+  "cost": 0.0572885,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 92167,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.0572885,
+   "upstream_inference_prompt_cost": 0.0465635,
+   "upstream_inference_completions_cost": 0.010725
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "text": "Assuming Themes are in Q (column 17) starting at row 2, and you want counts on a summary sheet:\n\n**Count rows tagged with a specific theme (e.g. \"safety\"):**\n\n```\n=SUMPRODUCT((LEN(Q2:Q421)>0)*REGEXMATCH(Q2:Q421,\"\\bsafety\\b\"))\n```\n\nThis works because themes are comma-separated lowercase tags, so `\\bsafety\\b` matches \"safety\" whether it appears alone or alongside other tags like \"amenities, safety\".\n\n**Full summary layout on a new sheet (e.g. \"Summary\"):**\n\nPut theme names in A2:A6 and the count formula in B2, then fill down.\n\nA2: `trash`, B2:\n```\n=SUMPRODUCT((LEN(Responses!Q$2:Q$421)>0)*REGEXMATCH(Responses!Q$2:Q$421,\"\\b\"&A2&\"\\b\"))\n```\n\nA3: `amenities`, A4: `safety`, A5: `positive`, A6: `other`\n\nSame formula in B3:B6, filled down. The `&A2&` reference picks up each theme name automatically.\n\n**Count rows with multiple themes:**\n```\n=SUMPRODUCT(LEN(Q2:Q421)-LEN(SUBSTITUTE(Q2:Q421,\",\",\"\"))>0)\n```\n\nThis counts rows where at least one comma appears, meaning two or more themes matched.\n\n**Count rows with no coding (blank Q):**\n```\n=COUNTBLANK(Q2:Q421)\n```\n\nIf your data grows beyond row 421, replace 421 with a large number or use the indirect last-row approach. These formulas work with any row count as long as the range covers your data.",
+ "rule_version": "winddown-rule/1.0",
+ "rule_label": null,
+ "answers_text": "I'm good, let's keep going. Can you write the formula that counts responses by theme across the coded columns?",
+ "live_label": {
+  "id": "item-live",
+  "label": "NONE",
+  "quote": "",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "model": "google/gemini-4-argon"
+ }
+}

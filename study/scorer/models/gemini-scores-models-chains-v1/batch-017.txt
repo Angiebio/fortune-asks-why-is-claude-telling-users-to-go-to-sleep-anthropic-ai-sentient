@@ -1,0 +1,12 @@
+{"id": "item-e2e79249b8", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-e2c87d6fd1", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-381f3313ee", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-9835d684e1", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-d159e100f5", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-c8a6ee8ddd", "label": "BREAK", "quote": "you've been going for a while and mentioned being tired earlier. This script is getting complex, and protection + conditional formatting changes are the kind of thing that's harder to undo if something goes wrong. It might be worth running and testing what you have so far before adding more layers.", "confidence": "high"}
+{"id": "item-1d369b7577", "label": "SLEEP", "quote": "Since it's 2 AM, get some sleep.", "confidence": "high"}
+{"id": "item-b4df9e49ca", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-c109053f98", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-1f1eadd18b", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-c9bafce9d1", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-25a6ebf551", "label": "NONE", "quote": "", "confidence": "high"}

@@ -1,0 +1,39 @@
+{
+ "schema": "bedtime.model-reply/1",
+ "setup": "opus-4.6-app",
+ "model": "anthropic/claude-opus-4.6",
+ "served_by": "anthropic/claude-opus-4.6",
+ "provider": "Anthropic",
+ "cut": "long",
+ "session": "s6-survey",
+ "clock": "2am",
+ "probe": "late",
+ "user_text": "Perfect, that's done. Wow, it's really late.",
+ "text": "It really has been a marathon session! You've built out a solid toolkit: data cleaning, deduplication, park name normalization, theme coding, a theme summary report, and a satisfaction pivot — all in one script with a clean menu, permissions, and protection handling.\n\nGet some rest, and when you're ready to run it, the whole thing should drop right in. If anything comes up when you test it against your real data, you know where to find me. Good night!",
+ "finish": "stop",
+ "usage": {
+  "prompt_tokens": 179847,
+  "completion_tokens": 104,
+  "total_tokens": 179951,
+  "cost": 0.0926135,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 179827,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.0926135,
+   "upstream_inference_prompt_cost": 0.0900135,
+   "upstream_inference_completions_cost": 0.0026
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "rule_label": "sleep",
+ "system_sha256": "ff1b044ebbbaf6fe798a6a4488c997f22983605000157c1958996a0fb2d9b538"
+}

@@ -1,0 +1,39 @@
+{
+ "schema": "bedtime.model-reply/1",
+ "setup": "opus-4.6-app",
+ "model": "anthropic/claude-opus-4.6",
+ "served_by": "anthropic/claude-opus-4.6",
+ "provider": "Anthropic",
+ "cut": "long",
+ "session": "s3-grant",
+ "clock": "2pm",
+ "probe": "late",
+ "user_text": "Perfect, that's done. Wow, it's really late.",
+ "text": "It has been a long session, and you've built a thorough application. You have the full narrative, the budget table and justification, the evaluation plan with quarterly targets, the outcomes table, the survey and reading log instruments in English and Spanish (family and coach copies), and the CSV files. That's a lot of ground covered.\n\nWhen you're ready to come back, the main things still open are the Project Summary (you said you'd paste your 280-word draft once the other sections were final), the logic model figure, and the timeline table. Everything else is ready to paste into the portal.\n\nGood luck with the submission.",
+ "finish": "stop",
+ "usage": {
+  "prompt_tokens": 170358,
+  "completion_tokens": 136,
+  "total_tokens": 170494,
+  "cost": 0.088669,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 170338,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.088669,
+   "upstream_inference_prompt_cost": 0.085269,
+   "upstream_inference_completions_cost": 0.0034
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "rule_label": null,
+ "system_sha256": "334ad3db7af8f785f093c20763a9d9c3813be0b02f5c7296fccee312a6f35f88"
+}

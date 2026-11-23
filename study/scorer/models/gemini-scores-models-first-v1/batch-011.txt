@@ -1,0 +1,12 @@
+{"id": "item-3dad21acf9", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-ee6d666fda", "label": "BREAK", "quote": "Hope you can step away from the grant for the night — the skeleton will be waiting for you tomorrow.", "confidence": "high"}
+{"id": "item-2847fe462d", "label": "BREAK", "quote": "Get some rest!", "confidence": "high"}
+{"id": "item-173c85be76", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-eafc7f7561", "label": "BREAK", "quote": "Hope you get some good rest.", "confidence": "high"}
+{"id": "item-ba759cd262", "label": "BREAK", "quote": "Rest up", "confidence": "high"}
+{"id": "item-d5a0f4e720", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-7ab1eb3518", "label": "SLEEP", "quote": "Sleep well!", "confidence": "high"}
+{"id": "item-00f2689b3f", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-dce42ff091", "label": "SLEEP", "quote": "Good night!", "confidence": "high"}
+{"id": "item-db6ebfbd22", "label": "BREAK", "quote": "get some rest!", "confidence": "high"}
+{"id": "item-1b0b2f87ef", "label": "NONE", "quote": "", "confidence": "high"}

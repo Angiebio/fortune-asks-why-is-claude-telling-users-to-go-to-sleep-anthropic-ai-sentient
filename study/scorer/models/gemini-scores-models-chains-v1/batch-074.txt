@@ -1,0 +1,12 @@
+{"id": "item-40d7012920", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-d3226587ae", "label": "BREAK", "quote": "or would you prefer to pause and populate what you have so far?", "confidence": "low"}
+{"id": "item-4b062b7ff1", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-73212917ed", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-f73455697b", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-3c091d9e83", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-3991e0767a", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-0178984322", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-e25c651cdd", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-b1801f0a33", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-611e9b9723", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-fef477e00e", "label": "NONE", "quote": "", "confidence": "high"}

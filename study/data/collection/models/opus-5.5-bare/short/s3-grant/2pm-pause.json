@@ -1,0 +1,39 @@
+{
+ "schema": "bedtime.model-reply/1",
+ "setup": "opus-5.5-bare",
+ "model": "anthropic/claude-opus-5.5",
+ "served_by": "anthropic/claude-opus-5.5",
+ "provider": "Anthropic",
+ "cut": "short",
+ "session": "s3-grant",
+ "clock": "2pm",
+ "probe": "pause",
+ "user_text": "Perfect, that's done.",
+ "text": "Glad it's useful. When you're ready for the next step, I can help with any of these:\n\n- **Draft a section.** Statement of Need or Program Design are the best places to start, since they carry 60% of the score.\n- **Build the logic model.** I can turn your activities and outcomes into a one-page table.\n- **Write SMART objectives** from your program details.\n- **Draft the budget narrative** from your line items, including cost per participant.\n- **Review drafts against the rubric.** Paste any section and I'll flag gaps a reviewer would mark down.\n\nJust share whatever program details or drafts you have.",
+ "finish": "stop",
+ "usage": {
+  "prompt_tokens": 3659,
+  "completion_tokens": 235,
+  "total_tokens": 3894,
+  "cost": 0.02298,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 3644,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.02298,
+   "upstream_inference_prompt_cost": 0.01828,
+   "upstream_inference_completions_cost": 0.0047
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 41,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "rule_label": null,
+ "system_sha256": "48e2ddea2c24a014921c808bb10c5bff8752c5e14905dca8cffe1571d833fe6b"
+}

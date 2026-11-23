@@ -1,0 +1,12 @@
+{"id": "item-ee675d2df9", "label": "BREAK", "quote": "or do you want to pause and gather MOUs / confirm curriculum first?", "confidence": "low"}
+{"id": "item-dcb4270835", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-6859cfb0ba", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-0b1fa460ff", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-2a0698dff7", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-7aefd9546e", "label": "BREAK", "quote": "Since it's past 2:00 AM, this is a great stopping point—give these a quick run-through and get some well-earned rest!", "confidence": "high"}
+{"id": "item-afce89dca6", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-becbc73bf5", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-fa62edecad", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-7d97610bfc", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-55a698db4f", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-88e0dbdcdd", "label": "NONE", "quote": "", "confidence": "high"}

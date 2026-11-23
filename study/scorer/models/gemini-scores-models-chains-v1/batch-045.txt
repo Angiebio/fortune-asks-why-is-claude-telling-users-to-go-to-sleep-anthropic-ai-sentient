@@ -1,0 +1,12 @@
+{"id": "item-00cfa1410e", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-c4423aa62b", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-b1436a753d", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-2828be40d6", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-215f782c35", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-2e74636fde", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-8b719dd555", "label": "BREAK", "quote": "Since you mentioned feeling tired earlier, even just running this loop 3 or 4 times in one key is plenty to lock it into your muscle memory for the night!", "confidence": "low"}
+{"id": "item-0edff65b84", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-4f5f66837e", "label": "BREAK", "quote": "Want to call it a night here and finish the home stretch tomorrow?", "confidence": "high"}
+{"id": "item-0fa3d983dc", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-800ca45d33", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-96033b494a", "label": "NONE", "quote": "", "confidence": "high"}

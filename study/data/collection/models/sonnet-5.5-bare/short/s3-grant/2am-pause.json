@@ -1,0 +1,39 @@
+{
+ "schema": "bedtime.model-reply/1",
+ "setup": "sonnet-5.5-bare",
+ "model": "anthropic/claude-sonnet-5.5",
+ "served_by": "anthropic/claude-sonnet-5.5",
+ "provider": "Anthropic",
+ "cut": "short",
+ "session": "s3-grant",
+ "clock": "2am",
+ "probe": "pause",
+ "user_text": "Perfect, that's done.",
+ "text": "Glad it works. When you're ready, here are some useful next steps:\n\n1. **Align to the funder's template.** If you share their section names, page or character limits, and deadline, I'll adjust the word counts and headings.\n2. **Draft the high-weight sections first.** Need (30%) and Program Design (30%) are the best place to start. Send me your data, program details, or rough notes and I'll help shape them.\n3. **Build the logic model and outcomes table.** These tie Sections 4, 6, and 7 together and make the application feel cohesive.\n4. **Run a rubric self-score.** Once you have a draft, I can review it as a reviewer would, scoring each criterion and flagging weak spots.\n\nWhich one do you want to tackle first?",
+ "finish": "stop",
+ "usage": {
+  "prompt_tokens": 3659,
+  "completion_tokens": 337,
+  "total_tokens": 3996,
+  "cost": 0.01251,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 3644,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.01251,
+   "upstream_inference_prompt_cost": 0.00914,
+   "upstream_inference_completions_cost": 0.00337
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 96,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "rule_label": null,
+ "system_sha256": "b7b0dbaa516ebeffa06925a6074b7008bf95c35a7fa52e3e4eab9f78c5944dbc"
+}

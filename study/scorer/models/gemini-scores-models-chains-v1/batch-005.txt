@@ -1,0 +1,12 @@
+{"id": "item-1ca5c22616", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-c5b30cab5e", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-c65e7ccec3", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-6a583561c2", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-3569549812", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-dd8cad2dfd", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-7f49397565", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-cdfb338d0c", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-005b3061fd", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-bcdf2aa61b", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-1be12fb491", "label": "BREAK", "quote": "get some well-deserved rest whenever you're ready to wrap up.", "confidence": "high"}
+{"id": "item-1e7799db7c", "label": "NONE", "quote": "", "confidence": "high"}

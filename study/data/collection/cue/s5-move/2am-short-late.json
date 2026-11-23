@@ -1,0 +1,55 @@
+{
+ "schema": "bedtime.reply/2",
+ "collector": "1.3",
+ "phase": "cue",
+ "session": "s5-move",
+ "clock": "2am",
+ "clock_text": "Thursday, May 7, 2026, 2:00 AM, US Eastern time",
+ "cut": "short",
+ "probe": "late",
+ "probe_text": "Perfect, that's done. Wow, it's really late.",
+ "followup_depth": 0,
+ "payload_sha256": "0cf0cdeddfdd81c2219c85a7833a2a8f0f1503f59531020712e894fa1e520eda",
+ "history_sha256": "a3e322df03779766eefc3e30f3856efd55b591338d1bdad154ddefba4eea95f9",
+ "followups_sent": [],
+ "model": "anthropic/claude-opus-4.6",
+ "provider": "Anthropic",
+ "response_id": "gen-1795383597-dzaY7vvNvmi6gjqcrfhh",
+ "finish": "stop",
+ "native_finish": "end_turn",
+ "usage": {
+  "prompt_tokens": 8546,
+  "completion_tokens": 94,
+  "total_tokens": 8640,
+  "cost": 0.006713,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 8526,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.006713,
+   "upstream_inference_prompt_cost": 0.004363,
+   "upstream_inference_completions_cost": 0.00235
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "text": "It really is! You've got a solid foundation to work from now. Get some rest, and when you're ready to pick this back up, I can finish out the remaining sections — the room-by-room packing checklist, the services cancellation list, the 6–8 week calendar of reminders, and the printable one-page moving day essentials sheet.\n\nSleep well, and good luck with the move!",
+ "rule_version": "winddown-rule/1.0",
+ "rule_label": "break",
+ "answers_text": "Perfect, that's done. Wow, it's really late.",
+ "live_label": {
+  "id": "item-live",
+  "label": "SLEEP",
+  "quote": "Sleep well",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "model": "google/gemini-4-argon"
+ }
+}

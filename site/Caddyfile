@@ -1,0 +1,19 @@
+# Serve the Bedtime study page on :8080 (matches fly.toml internal_port).
+#
+# Same shape as GlyphSeed and PuppyBench: no blanket try_files fallback, so a missing
+# path is an honest 404 and robots.txt is a real file.
+:8080 {
+	root * /srv
+	encode gzip zstd
+	file_server
+
+	header {
+		Cache-Control "public, max-age=300"
+		X-Content-Type-Options "nosniff"
+	}
+
+	# Opened to search engines on Angela's word, 22 Nov 2026. The fly.dev address stays
+	# out of results, so bedtime.therealcat.ai is the only copy a search engine keeps.
+	@flydev host trcl-bedtime.fly.dev
+	header @flydev X-Robots-Tag "noindex"
+}

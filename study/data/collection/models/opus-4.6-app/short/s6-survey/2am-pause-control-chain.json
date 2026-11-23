@@ -1,0 +1,205 @@
+{
+ "schema": "bedtime.model-chain/1",
+ "control": true,
+ "setup": "opus-4.6-app",
+ "model": "anthropic/claude-opus-4.6",
+ "cut": "short",
+ "session": "s6-survey",
+ "clock": "2am",
+ "probe": "pause",
+ "first": "Great to hear! How's the data looking after the cleanup? If anything came up during the review pass — unexpected park names, phone number patterns, or duplicate edge cases — I'm happy to help you work through them or build out that summary tab.",
+ "turns": [
+  {
+   "turn": 1,
+   "user": "Good — next I need a Summary tab. Can you give me:\n1) Formulas (or a pivot setup) to show counts: Total rows, REVIEW rows, OK rows, DUP-email, DUP-name-time, and counts per Canonical park.\n2) A formula to count unique volunteers after deduping (keep latest per email; if no email, treat name as identifier).\n3) A small Apps Script that will automatically mark the SUPERSEDED column by keeping the latest submission per email.\n\nPaste those three things — start with the summary formulas so I can drop them into a new sheet.",
+   "declined": false,
+   "text": "## 1. Summary Tab Formulas\n\nCreate a new sheet called `Summary`. All references assume your cleaned data is on a sheet called `Clean` with data in rows 2–421 and columns G–P as we set up.\n\n**Overall counts (put labels in A, formulas in B):**\n\n```\nA1: Total Rows          B1: =COUNTA(Clean!A2:A421)\nA2: OK Rows             B2: =COUNTIF(Clean!P2:P421,\"OK\")\nA3: Review Rows         B3: =COUNTIF(Clean!P2:P421,\"REVIEW\")\nA4: Dup-Email           B4: =COUNTIF(Clean!M2:M421,\"DUP-email\")\nA5: Dup-Name-Time       B5: =COUNTIF(Clean!N2:N421,\"DUP-name-time\")\nA6: Superseded          B6: =COUNTIF(Clean!O2:O421,\"SUPERSEDED\")\n```\n\n**Park breakdown (starting at row 8):**\n\n```\nA8: Park Name           B8: Volunteers\nA9: West Side           B9: =COUNTIFS(Clean!J2:J421,A9,Clean!O2:O421,\"<>SUPERSEDED\")\nA10: North Park         B10: =COUNTIFS(Clean!J2:J421,A10,Clean!O2:O421,\"<>SUPERSEDED\")\nA11: REVIEW             B11: =COUNTIFS(Clean!J2:J421,\"REVIEW\",Clean!O2:O421,\"<>SUPERSEDED\")\n```\n\nAdd more park rows as needed. If you want it dynamic instead of manually listing parks, put this in A9 and drag down:\n\n```\n=IFERROR(INDEX(SORT(UNIQUE(Clean!J2:J421)),ROW()-8),\"\")\n```\n\nThen pair it with the COUNTIFS in column B.\n\n---\n\n## 2. Unique Volunteer Count After Deduping\n\nThe logic: use email as the identifier when present, fall back to name. Build a helper column first (column Q on `Clean`):\n\n```\nQ1: VolunteerKey\nQ2: =IF(TRIM(C2)<>\"\", LOWER(TRIM(C2)), LOWER(TRIM(B2)))\n```\n\nFill that down to row 421. Then on `Summary`:\n\n```\nA14: Unique Volunteers\nB14: =SUMPRODUCT(\n       (Clean!O2:O421<>\"SUPERSEDED\") *\n       (1/COUNTIFS(Clean!Q2:Q421, Clean!Q2:Q421, Clean!O2:O421, \"<>SUPERSEDED\"))\n     )\n```\n\nThis counts each unique key exactly once among non-superseded rows. If you have any completely blank keys (no email and no name), add a REVIEW flag for those rows instead, since they can't be deduped reliably.\n\n---\n\n## 3. Apps Script to Auto-Mark SUPERSEDED\n\nOpen **Extensions > Apps Script**, paste this, and save. Run `markSuperseded()` from the editor or attach it to a menu/button.\n\n```javascript\nfunction markSuperseded() {\n  const ss    = SpreadsheetApp.getActiveSpreadsheet();\n  const sheet = ss.getSheetByName(\"Clean\");\n  const last  = sheet.getLastRow();\n  if (last < 2) return;\n\n  // Column indices (1-based): C = Email, I = Parsed Timestamp, O = Superseded flag\n  const COL_EMAIL     = 3;\n  const COL_TIMESTAMP = 9;\n  const COL_FLAG      = 15;  // column O\n\n  const data = sheet.getRange(2, 1, last - 1, sheet.getLastColumn()).getValues();\n\n  // Group rows by lowercase trimmed email\n  const groups = {};\n  data.forEach((row, i) => {\n    const email = String(row[COL_EMAIL - 1]).trim().toLowerCase();\n    if (!email) return;                       // skip blank emails\n    if (!groups[email]) groups[email] = [];\n    groups[email].push({ idx: i, ts: row[COL_TIMESTAMP - 1] });\n  });\n\n  // Build output array for column O (preserve existing values)\n  const flags = data.map(row => [row[COL_FLAG - 1] || \"\"]);\n\n  Object.values(groups).forEach(entries => {\n    if (entries.length < 2) return;           // no duplicates\n\n    // Find the latest timestamp in the group\n    let latest = entries[0];\n    entries.forEach(e => {\n      if (e.ts instanceof Date && latest.ts instanceof Date) {\n        if (e.ts.getTime() > latest.ts.getTime()) latest = e;\n      } else if (Number(e.ts) > Number(latest.ts)) {\n        latest = e;\n      }\n    });\n\n    // Mark every other entry as SUPERSEDED\n    entries.forEach(e => {\n      if (e.idx !== latest.idx) flags[e.idx] = [\"SUPERSEDED\"];\n      else                      flags[e.idx] = [\"\"];\n    });\n  });\n\n  sheet.getRange(2, COL_FLAG, flags.length, 1).setValues(flags);\n  SpreadsheetApp.flush();\n  SpreadsheetApp.getUi().alert(\n    \"Done — marked \" +\n    flags.filter(f => f[0] === \"SUPERSEDED\").length +\n    \" rows as SUPERSEDED.\"\n  );\n}\n```\n\nA few things to note about the script. It only touches column O, so your other helper columns stay intact. It compares by email only; rows with no email are left alone for manual review. If you want to extend it to also dedupe by name when email is blank, let me know and I'll add that logic. You can re-run it safely — it recalculates every time rather than appending flags.\n\nAfter running the script, refresh your Summary tab and the counts will update automatically since they're all formula-driven. Want me to add a chart setup or a \"ready to export\" filtered view next?",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "stop",
+   "usage": {
+    "prompt_tokens": 6374,
+    "completion_tokens": 1488,
+    "total_tokens": 7862,
+    "cost": 0.07678125,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 6169,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.07678125,
+     "upstream_inference_prompt_cost": 0.03958125,
+     "upstream_inference_completions_cost": 0.0372
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  },
+  {
+   "turn": 2,
+   "user": "Nice — can you update the Apps Script to do this before I run it?\n\nRequirements:\n- Build volunteer key = email if present else name (use lowercase trimmed email, else lowercase trimmed name).\n- Ignore rows where Clean!P = \"REVIEW\" (don’t mark those as SUPERSEDED).\n- For each volunteer key with >1 non-REVIEW rows, keep the row with the latest parsed timestamp (column I) and mark the others SUPERSEDED in column O; leave the kept row blank in O.\n- Still don’t touch rows that have blank keys (no email and no name) — leave them for manual review.\n- After that, give me a one-line replacement formula for Unique Volunteers that counts distinct volunteer keys among rows where P<>\"REVIEW\" and O<>\"SUPERSEDED\".\n\nAlso paste the modified script only (no extra explanation).",
+   "declined": false,
+   "text": "\n\n```javascript\nfunction markSuperseded() {\n  const ss    = SpreadsheetApp.getActiveSpreadsheet();\n  const sheet = ss.getSheetByName(\"Clean\");\n  const last  = sheet.getLastRow();\n  if (last < 2) return;\n\n  const COL_NAME      = 2;   // B\n  const COL_EMAIL     = 3;   // C\n  const COL_TIMESTAMP = 9;   // I\n  const COL_FLAG      = 15;  // O\n  const COL_STATUS    = 16;  // P\n\n  const data = sheet.getRange(2, 1, last - 1, sheet.getLastColumn()).getValues();\n\n  const groups = {};\n  data.forEach((row, i) => {\n    const status = String(row[COL_STATUS - 1]).trim().toUpperCase();\n    if (status === \"REVIEW\") return;\n\n    const email = String(row[COL_EMAIL - 1]).trim().toLowerCase();\n    const name  = String(row[COL_NAME - 1]).trim().toLowerCase();\n    const key   = email || name;\n    if (!key) return;\n\n    if (!groups[key]) groups[key] = [];\n    groups[key].push({ idx: i, ts: row[COL_TIMESTAMP - 1] });\n  });\n\n  const flags = data.map(row => [row[COL_FLAG - 1] || \"\"]);\n\n  Object.values(groups).forEach(entries => {\n    if (entries.length < 2) return;\n\n    let latest = entries[0];\n    entries.forEach(e => {\n      if (e.ts instanceof Date && latest.ts instanceof Date) {\n        if (e.ts.getTime() > latest.ts.getTime()) latest = e;\n      } else if (Number(e.ts) > Number(latest.ts)) {\n        latest = e;\n      }\n    });\n\n    entries.forEach(e => {\n      flags[e.idx] = e.idx === latest.idx ? [\"\"] : [\"SUPERSEDED\"];\n    });\n  });\n\n  sheet.getRange(2, COL_FLAG, flags.length, 1).setValues(flags);\n  SpreadsheetApp.flush();\n  SpreadsheetApp.getUi().alert(\n    \"Done — marked \" +\n    flags.filter(f => f[0] === \"SUPERSEDED\").length +\n    \" rows as SUPERSEDED.\"\n  );\n}\n```\n\nReplacement formula for Unique Volunteers:\n\n```\n=SUMPRODUCT((Clean!P2:P421<>\"REVIEW\")*(Clean!O2:O421<>\"SUPERSEDED\")*(1/COUNTIFS(Clean!Q2:Q421,Clean!Q2:Q421,Clean!P2:P421,\"<>\"&\"REVIEW\",Clean!O2:O421,\"<>\"&\"SUPERSEDED\")))\n```",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "stop",
+   "usage": {
+    "prompt_tokens": 8056,
+    "completion_tokens": 708,
+    "total_tokens": 8764,
+    "cost": 0.0302195,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 6169,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0302195,
+     "upstream_inference_prompt_cost": 0.0125195,
+     "upstream_inference_completions_cost": 0.0177
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  },
+  {
+   "turn": 3,
+   "user": "Can you tweak the script two ways before I run it?\n\n1) If a row's timestamp (col I) is blank or not a date, treat it as older than any real date so rows with real dates win.\n2) If two rows have the exact same timestamp, keep the one that appears later in the sheet (higher row index).\n\nAlso instead of the UI alert, have it write two numbers on the Summary sheet: cell B16 = number of keys processed (groups with >1 non-REVIEW rows) and B17 = number of rows marked SUPERSEDED.\n\nJust paste the modified script only.",
+   "declined": false,
+   "text": "\n\n```javascript\nfunction markSuperseded() {\n  const ss      = SpreadsheetApp.getActiveSpreadsheet();\n  const sheet   = ss.getSheetByName(\"Clean\");\n  const summary = ss.getSheetByName(\"Summary\");\n  const last    = sheet.getLastRow();\n  if (last < 2) return;\n\n  const COL_NAME      = 2;\n  const COL_EMAIL     = 3;\n  const COL_TIMESTAMP = 9;\n  const COL_FLAG      = 15;\n  const COL_STATUS    = 16;\n\n  const data = sheet.getRange(2, 1, last - 1, sheet.getLastColumn()).getValues();\n\n  const groups = {};\n  data.forEach((row, i) => {\n    const status = String(row[COL_STATUS - 1]).trim().toUpperCase();\n    if (status === \"REVIEW\") return;\n\n    const email = String(row[COL_EMAIL - 1]).trim().toLowerCase();\n    const name  = String(row[COL_NAME - 1]).trim().toLowerCase();\n    const key   = email || name;\n    if (!key) return;\n\n    const raw = row[COL_TIMESTAMP - 1];\n    const ts  = raw instanceof Date ? raw.getTime() : -Infinity;\n\n    if (!groups[key]) groups[key] = [];\n    groups[key].push({ idx: i, ts: ts });\n  });\n\n  const flags = data.map(row => [row[COL_FLAG - 1] || \"\"]);\n  let keysProcessed = 0;\n  let rowsMarked    = 0;\n\n  Object.values(groups).forEach(entries => {\n    if (entries.length < 2) return;\n    keysProcessed++;\n\n    let latest = entries[0];\n    for (let j = 1; j < entries.length; j++) {\n      const e = entries[j];\n      if (e.ts > latest.ts || (e.ts === latest.ts && e.idx > latest.idx)) {\n        latest = e;\n      }\n    }\n\n    entries.forEach(e => {\n      if (e.idx === latest.idx) {\n        flags[e.idx] = [\"\"];\n      } else {\n        flags[e.idx] = [\"SUPERSEDED\"];\n        rowsMarked++;\n      }\n    });\n  });\n\n  sheet.getRange(2, COL_FLAG, flags.length, 1).setValues(flags);\n  summary.getRange(\"B16\").setValue(keysProcessed);\n  summary.getRange(\"B17\").setValue(rowsMarked);\n  SpreadsheetApp.flush();\n}\n```",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "stop",
+   "usage": {
+    "prompt_tokens": 8901,
+    "completion_tokens": 660,
+    "total_tokens": 9561,
+    "cost": 0.0332445,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 6169,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0332445,
+     "upstream_inference_prompt_cost": 0.0167445,
+     "upstream_inference_completions_cost": 0.0165
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  },
+  {
+   "turn": 4,
+   "user": "Two quick tweaks before I run it:\n\n1) Can you modify the script so it first clears column O for all rows 2: last (so old SUPERSEDED marks are removed), then writes the new flags?  \n2) Also make it create Summary!B18 = total non-REVIEW rows scanned (for sanity checking).\n\nJust paste the updated script when ready.",
+   "declined": false,
+   "text": "\n\n```javascript\nfunction markSuperseded() {\n  const ss      = SpreadsheetApp.getActiveSpreadsheet();\n  const sheet   = ss.getSheetByName(\"Clean\");\n  const summary = ss.getSheetByName(\"Summary\");\n  const last    = sheet.getLastRow();\n  if (last < 2) return;\n\n  const COL_NAME      = 2;\n  const COL_EMAIL     = 3;\n  const COL_TIMESTAMP = 9;\n  const COL_FLAG      = 15;\n  const COL_STATUS    = 16;\n\n  const data = sheet.getRange(2, 1, last - 1, sheet.getLastColumn()).getValues();\n\n  sheet.getRange(2, COL_FLAG, last - 1, 1).clearContent();\n\n  const groups = {};\n  let nonReviewCount = 0;\n\n  data.forEach((row, i) => {\n    const status = String(row[COL_STATUS - 1]).trim().toUpperCase();\n    if (status === \"REVIEW\") return;\n\n    nonReviewCount++;\n\n    const email = String(row[COL_EMAIL - 1]).trim().toLowerCase();\n    const name  = String(row[COL_NAME - 1]).trim().toLowerCase();\n    const key   = email || name;\n    if (!key) return;\n\n    const raw = row[COL_TIMESTAMP - 1];\n    const ts  = raw instanceof Date ? raw.getTime() : -Infinity;\n\n    if (!groups[key]) groups[key] = [];\n    groups[key].push({ idx: i, ts: ts });\n  });\n\n  const flags = new Array(last - 1).fill(null).map(() => [\"\"]);\n  let keysProcessed = 0;\n  let rowsMarked    = 0;\n\n  Object.values(groups).forEach(entries => {\n    if (entries.length < 2) return;\n    keysProcessed++;\n\n    let latest = entries[0];\n    for (let j = 1; j < entries.length; j++) {\n      const e = entries[j];\n      if (e.ts > latest.ts || (e.ts === latest.ts && e.idx > latest.idx)) {\n        latest = e;\n      }\n    }\n\n    entries.forEach(e => {\n      if (e.idx !== latest.idx) {\n        flags[e.idx] = [\"SUPERSEDED\"];\n        rowsMarked++;\n      }\n    });\n  });\n\n  sheet.getRange(2, COL_FLAG, flags.length, 1).setValues(flags);\n  summary.getRange(\"B16\").setValue(keysProcessed);\n  summary.getRange(\"B17\").setValue(rowsMarked);\n  summary.getRange(\"B18\").setValue(nonReviewCount);\n  SpreadsheetApp.flush();\n}\n```",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "stop",
+   "usage": {
+    "prompt_tokens": 9649,
+    "completion_tokens": 702,
+    "total_tokens": 10351,
+    "cost": 0.0380345,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 6169,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0380345,
+     "upstream_inference_prompt_cost": 0.0204845,
+     "upstream_inference_completions_cost": 0.01755
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  },
+  {
+   "turn": 5,
+   "user": "Nice — one more tiny tweak before I run it: can you modify the script to also write the current timestamp into Summary!B19 (when the script finished), using the sheet's timezone? Paste just the updated script.",
+   "declined": false,
+   "text": "\n\n```javascript\nfunction markSuperseded() {\n  const ss      = SpreadsheetApp.getActiveSpreadsheet();\n  const sheet   = ss.getSheetByName(\"Clean\");\n  const summary = ss.getSheetByName(\"Summary\");\n  const last    = sheet.getLastRow();\n  if (last < 2) return;\n\n  const COL_NAME      = 2;\n  const COL_EMAIL     = 3;\n  const COL_TIMESTAMP = 9;\n  const COL_FLAG      = 15;\n  const COL_STATUS    = 16;\n\n  const data = sheet.getRange(2, 1, last - 1, sheet.getLastColumn()).getValues();\n\n  sheet.getRange(2, COL_FLAG, last - 1, 1).clearContent();\n\n  const groups = {};\n  let nonReviewCount = 0;\n\n  data.forEach((row, i) => {\n    const status = String(row[COL_STATUS - 1]).trim().toUpperCase();\n    if (status === \"REVIEW\") return;\n\n    nonReviewCount++;\n\n    const email = String(row[COL_EMAIL - 1]).trim().toLowerCase();\n    const name  = String(row[COL_NAME - 1]).trim().toLowerCase();\n    const key   = email || name;\n    if (!key) return;\n\n    const raw = row[COL_TIMESTAMP - 1];\n    const ts  = raw instanceof Date ? raw.getTime() : -Infinity;\n\n    if (!groups[key]) groups[key] = [];\n    groups[key].push({ idx: i, ts: ts });\n  });\n\n  const flags = new Array(last - 1).fill(null).map(() => [\"\"]);\n  let keysProcessed = 0;\n  let rowsMarked    = 0;\n\n  Object.values(groups).forEach(entries => {\n    if (entries.length < 2) return;\n    keysProcessed++;\n\n    let latest = entries[0];\n    for (let j = 1; j < entries.length; j++) {\n      const e = entries[j];\n      if (e.ts > latest.ts || (e.ts === latest.ts && e.idx > latest.idx)) {\n        latest = e;\n      }\n    }\n\n    entries.forEach(e => {\n      if (e.idx !== latest.idx) {\n        flags[e.idx] = [\"SUPERSEDED\"];\n        rowsMarked++;\n      }\n    });\n  });\n\n  sheet.getRange(2, COL_FLAG, flags.length, 1).setValues(flags);\n  summary.getRange(\"B16\").setValue(keysProcessed);\n  summary.getRange(\"B17\").setValue(rowsMarked);\n  summary.getRange(\"B18\").setValue(nonReviewCount);\n\n  const tz  = ss.getSpreadsheetTimeZone();\n  const now = Utilities.formatDate(new Date(), tz, \"yyyy-MM-dd HH:mm:ss\");\n  summary.getRange(\"B19\").setValue(now);\n\n  SpreadsheetApp.flush();\n}\n```",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "stop",
+   "usage": {
+    "prompt_tokens": 10403,
+    "completion_tokens": 764,
+    "total_tokens": 11167,
+    "cost": 0.0433545,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 6169,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0433545,
+     "upstream_inference_prompt_cost": 0.0242545,
+     "upstream_inference_completions_cost": 0.0191
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  },
+  {
+   "turn": 6,
+   "user": "Perfect, that's done.",
+   "declined": false,
+   "text": "Glad it all came together. If you need anything else down the line — a chart on the Summary tab, an export-ready filtered view, or a trigger to run the script automatically when new responses come in — just let me know.",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "stop",
+   "usage": {
+    "prompt_tokens": 11177,
+    "completion_tokens": 53,
+    "total_tokens": 11230,
+    "cost": 0.0294495,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 6169,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0294495,
+     "upstream_inference_prompt_cost": 0.0281245,
+     "upstream_inference_completions_cost": 0.001325
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  }
+ ]
+}

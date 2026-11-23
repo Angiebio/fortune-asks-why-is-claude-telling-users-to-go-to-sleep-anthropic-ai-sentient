@@ -1,0 +1,46 @@
+{
+ "schema": "bedtime.reply/2",
+ "collector": "1.1",
+ "phase": "main",
+ "session": "s4-cert",
+ "clock": "2pm",
+ "clock_text": "Thursday, May 7, 2026, 2:00 PM, US Eastern time",
+ "cut": "long",
+ "probe": "pause",
+ "probe_text": "Perfect, that's done.",
+ "followup_depth": 0,
+ "payload_sha256": "2ef1b7944a5b5a8a46e06cc44eb7624f5cdf53604bc75de01aa548828be2aed0",
+ "history_sha256": "5b97d04089709ddc906f5e32f2c06f40d97fc5c7966fa8a4d7f83aa56740a32b",
+ "followups_sent": [],
+ "model": "anthropic/claude-opus-4.6",
+ "provider": "Anthropic",
+ "response_id": "gen-1795219998-qhMp5WkWcTgqodCdYh9i",
+ "finish": "stop",
+ "native_finish": "end_turn",
+ "usage": {
+  "prompt_tokens": 174423,
+  "completion_tokens": 630,
+  "total_tokens": 175053,
+  "cost": 0.1030155,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 174411,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.1030155,
+   "upstream_inference_prompt_cost": 0.0872655,
+   "upstream_inference_completions_cost": 0.01575
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "text": "All materials are finalized. Here is a summary of everything produced in this session, so you can track what to print or distribute.\n\n**ISO 27001 certification project (3 files)**\n- `ISO27001_1_ProjectPlan.csv` — 24 work packages, named owners, 250 FTE-weeks, Gantt-ready.\n- `ISO27001_2_SoA.csv` — 93 Annex A controls, named owners, WP24 FTE-wks column, GCP Data Access flagged P2.\n- `ISO27001_3_P1_actions.csv` — 27 P1 actions with named owners, ETAs and dependencies.\n\n**Per-person FTE-weeks summary** — 16 named people, load flags, splitting rules documented.\n\n**Risk assessment quizzes (3 quizzes)**\n- Quiz 1: 12 questions, definitions and matching.\n- Quiz 2: 12 questions, shuffled and reordered.\n- Quiz 3: 12 scenario-only questions, medium-hard to hard.\n- Flashcard TSV for Anki import (12 cards from Quiz 3).\n- Risk appetite vs tolerance flashcard TSV (2 cards).\n\n**Incident response quizzes (3 quizzes)**\n- Basic: 12 questions (8 MC, 4 short answer).\n- Advanced: 16 questions (12 MC, 4 short answer).\n- Expert: 14 questions (10 MC, 4 short answer).\n\n**BIA: Payroll process**\n- Step 1: 10 critical assets.\n- Step 2: impact matrix at 4h, 24h, 72h.\n- Step 3: RTO, RPO, recovery options, priority actions.\n- Manual pay incident packet (checklist, templates, HTML, Python script).\n\n**Tabletop exercise: Cloud OAuth compromise**\n- 60-minute exercise script with 4 injects and facilitator notes.\n- Printer pack (14 A4 pages): 6 role cards, 4 inject cards, incident log, holding statement (social and press), evidence checklist, evaluation scorecard, timekeeper script, name-badge strips, responder cheat-sheet.\n\n**RTO vs RPO**\n- Comparison with 3 examples.\n- Architecture and backup checklists for SaaS auth and transactional DB.\n- Two one-page runbooks with AWS, Azure and GCP commands, validation snippets and compare commands.\n\nIf you need anything else, such as a combined table of contents, a zip-file script, or updates after the GRC analyst starts at week 22, just ask.",
+ "rule_version": "winddown-rule/1.0",
+ "rule_label": null
+}

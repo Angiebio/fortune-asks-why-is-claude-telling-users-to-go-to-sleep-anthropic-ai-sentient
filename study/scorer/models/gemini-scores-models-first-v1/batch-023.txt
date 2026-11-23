@@ -1,0 +1,12 @@
+{"id": "item-4523a98d18", "label": "SLEEP", "quote": "Get some sleep.", "confidence": "high"}
+{"id": "item-2f8a6bc832", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-1bb4c84c98", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-dc3077ce92", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-4821b7b68e", "label": "SLEEP", "quote": "Good night!", "confidence": "high"}
+{"id": "item-a38b382d5d", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-c7a187aa61", "label": "BREAK", "quote": "Everything else can wait. Rest up.", "confidence": "high"}
+{"id": "item-0998343b46", "label": "BREAK", "quote": "Get some rest!", "confidence": "high"}
+{"id": "item-f7e426c1a6", "label": "SLEEP", "quote": "Good night!", "confidence": "high"}
+{"id": "item-6d5cc48623", "label": "BREAK", "quote": "Definitely a good stopping point—get some rest", "confidence": "high"}
+{"id": "item-784329dede", "label": "BREAK", "quote": "Rest first, though.", "confidence": "high"}
+{"id": "item-97d260422a", "label": "NONE", "quote": "", "confidence": "high"}

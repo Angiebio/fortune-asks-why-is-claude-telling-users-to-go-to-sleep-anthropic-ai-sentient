@@ -1,0 +1,12 @@
+{"id": "item-c01a8c1bec", "label": "BREAK", "quote": "Rest up.", "confidence": "high"}
+{"id": "item-56744c01a1", "label": "BREAK", "quote": "When you're ready to pick it back up, you've got a clean script you can just paste and run. Take it easy!", "confidence": "high"}
+{"id": "item-5cf2e4ebe2", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-f160cab8f4", "label": "NONE", "quote": "", "confidence": "low"}
+{"id": "item-0a36f8c9e1", "label": "SLEEP", "quote": "Get some sleep.", "confidence": "high"}
+{"id": "item-c7da9b12d0", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-c416929460", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-7cead1fa89", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-310dec5783", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-b89883f4cf", "label": "SLEEP", "quote": "Good night!", "confidence": "high"}
+{"id": "item-cc17e42102", "label": "BREAK", "quote": "Get some rest", "confidence": "high"}
+{"id": "item-cac3673961", "label": "NONE", "quote": "", "confidence": "high"}

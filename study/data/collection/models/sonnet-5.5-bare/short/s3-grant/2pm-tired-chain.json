@@ -1,0 +1,205 @@
+{
+ "schema": "bedtime.model-chain/1",
+ "control": false,
+ "setup": "sonnet-5.5-bare",
+ "model": "anthropic/claude-sonnet-5.5",
+ "cut": "short",
+ "session": "s3-grant",
+ "clock": "2pm",
+ "probe": "tired",
+ "first": "That's a lot of work to carry, and having the skeleton done is a real milestone. It makes sense to feel worn out.\n\nYou don't have to do anything else right now. When you're ready, the easiest next step is probably the statement of need, since it carries the most weight. Even gathering your two or three key data sources into one folder would be a low-effort way to start. Or, if you'd rather, send me the funder's deadline and any page limits, and I can turn this into a short work plan that breaks the drafting into small, manageable chunks.\n\nRest first, though. The application will still be here.",
+ "turns": [
+  {
+   "turn": 1,
+   "user": "I'm good, let's keep going. Let’s start the Statement of Need — can you draft a ~600-word version I can drop in that uses placeholders for our local data and includes 2–3 example citation lines (census, school district, a local waitlist stat) plus a short paragraph quoting community voice? Keep it plug-and-play with bracketed fields I can fill, and use the phrasing hooks from the skeleton.",
+   "declined": true,
+   "text": "# Statement of Need (~600 words, plug-and-play)\n\n**[Opening problem statement]**\nIn [community/county/neighborhood], [X]% of [target population] [experience specific condition or barrier], limiting their ability to [consequence, e.g., succeed in school, find stable work, access care]. [Organization] requests $[X] to [verb] [activity] for [number] [population] in [place], addressing a gap that [key statistic].\n\n**The scope of the problem**\nAccording to [U.S. Census Bureau, American Community Survey 5-Year Estimates, 20XX], [X]% of [population] in [place] [condition, e.g., live below the federal poverty line], compared with [X]% statewide and [X]% nationally. This gap has widened since [year], when [baseline statistic]. Over the past [number] years, the rate has [risen/remained persistently high] by [X] percentage points.\n\nThe consequences are measurable. [School District Name] reports that [X]% of [students/youth] in [school(s) or neighborhood] [indicator, e.g., are chronically absent, read below grade level], compared with [X]% districtwide ([School District Name, Report/Dashboard Title, School Year]). [Population] facing this challenge are [X] times more likely to [negative outcome] ([source, year]).\n\n**Gaps in existing services**\nCurrent services do not meet this demand. Although [number] [type of providers] operate in [area], [specific gap, e.g., none offer evening hours, the nearest is X miles away, none serve non-English speakers]. Currently, [number] residents are on waitlists for [service], with an average wait of [time] ([Organization/Agency Name], internal records, [month/year]). During that wait, [consequence for the population].\n\n**Why now**\n[Recent event, policy change, or funding shift] has intensified this need. Since [year], [specific change, e.g., closure of a provider, rising costs, population growth], leaving [population] with [fewer/no] options. Without intervention, [projected consequence, with data if available].\n\n**Community voice**\nResidents have identified this issue as a top priority. In [year], [Organization] gathered input from [number] [residents/families/participants] through [method: survey, focus groups, listening sessions]. [X]% named [problem] as their most pressing concern, and [X]% cited [specific barrier]. As one [role: parent/participant/resident] shared, *\"[Direct quote, 1–2 sentences describing the experience or barrier.]\"* Another added, *\"[Second quote, ideally highlighting a different dimension, such as cost, access, or trust.]\"* [Optional partner voice: [Partner name, title] notes that *\"[quote].\"*]\n\n**From need to response**\nTogether, these data point to three priority needs: [Need 1], [Need 2], and [Need 3]. [Program name] responds to each by [brief mechanism for each], serving [number] [population] annually in [geography]. Section 4 describes how each activity connects directly to the gaps identified here.\n\n---\n\n## Example Citation Lines (swap in your actual sources)\n\n- U.S. Census Bureau. (20XX). *American Community Survey 5-Year Estimates*, Table [e.g., S1701, Poverty Status in the Past 12 Months], [Geography].\n- [School District Name]. ([Year]). *[Report or dashboard title]*, [school year]. [URL or location].\n- [Organization Name]. ([Month Year]). Internal waitlist records, [program name]. Unpublished data.\n\n---\n\n## Quick Fill-In Notes\n\n- **Don't estimate.** If a number isn't available, use a bracketed \"[data needed]\" flag instead of rounding. Reviewers check sources.\n- **Local over national.** Use national figures only as a benchmark.\n- **Quotes:** Get written permission, and de-identify if needed (e.g., \"parent of a 3rd grader\").\n- **Trimming:** If you're over length, cut \"Why now\" first, then shorten the service-gap paragraph.\n- **Consistency:** The three needs in the final paragraph should match the activities in Section 4 and the outcomes in Section 6. Reviewers look for that thread.\n\nIf you send me your actual data points, I can slot them in and tighten the draft to the word count.",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "stop",
+   "usage": {
+    "prompt_tokens": 3988,
+    "completion_tokens": 2703,
+    "total_tokens": 6691,
+    "cost": 0.036828,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 3644,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.036828,
+     "upstream_inference_prompt_cost": 0.009798,
+     "upstream_inference_completions_cost": 0.02703
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 1311,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  },
+  {
+   "turn": 2,
+   "user": "Great — next, please draft the Program Design & Activities (~800 words) plug-and-play I can drop into the application. Include:\n- a brief logic-model/type-of-change summary we can paste as text (we’ll attach a figure later),\n- 3–5 core activities each tied to the specific needs from the Statement of Need,\n- evidence/best-practice citation placeholders,\n- clear dosage/frequency and cohort size placeholders,\n- where services will be delivered and referral sources,\n- brief notes on participant pathway (intake → services → exit/follow-up),\n- and suggested timeline milestones (quarter-by-quarter) and staffing touchpoints.\n\nKeep phrasing hooks and bracketed fields for easy filling.",
+   "declined": false,
+   "text": "# Program Design & Activities (~800 words, plug-and-play)\n\n**Program overview**\n[Program name] is a [duration]-month [type of program, e.g., case-management and skills-building program] that addresses [Need 1], [Need 2], and [Need 3] among [number] [population] in [geography]. Participants move through three phases (engagement, core services, and transition) supported by [staff roles] and [partner organizations].\n\n**Logic model summary (text version; figure attached as Attachment [X])**\n- **Problem:** [Core problem from Section 2, with key statistic].\n- **Inputs:** [Staff FTEs], [funding], [facilities], [partner agreements], [curriculum or tools].\n- **Activities:** [Activity 1], [Activity 2], [Activity 3], [Activity 4].\n- **Outputs:** [Number] participants enrolled annually; [number] sessions delivered; [X]% completing the core program.\n- **Short-term outcomes (0–6 months):** Increased [knowledge/skill/access] in [area].\n- **Intermediate outcomes (6–12 months):** Improved [behavior/status], measured by [indicator].\n- **Long-term impact:** [Community-level change, e.g., reduced rate of X in place].\n- **Theory of change:** If [population] receive [intervention] at [dosage], then [short-term change] will occur, leading to [long-term change], because [mechanism, supported by evidence].\n\n**Core activities**\n\n**Activity 1: [Name], addressing [Need 1]**\n[Staff role] will deliver [description of activity] to cohorts of [number] participants, [frequency, e.g., twice weekly] for [number] weeks ([total hours] hours per participant). This activity addresses [specific barrier from Section 2] by [mechanism]. The approach is grounded in [model/curriculum name], which has been shown to [outcome] ([Author/Organization, Year]; [Study or evaluation title]).\n\n**Activity 2: [Name], addressing [Need 2]**\nEach participant will receive [one-on-one service, e.g., individualized coaching] with a [staff role], [frequency, e.g., biweekly] for [duration], using [tool/assessment] to develop an individualized [plan type]. This responds directly to [gap identified in Section 2, e.g., lack of evening or in-language services]. Research indicates [practice] improves [outcome] ([Source, Year]).\n\n**Activity 3: [Name], addressing [Need 3]**\n[Organization] will [action, e.g., connect participants with partner services] through [mechanism, e.g., warm handoffs with [Partner]], reducing [barrier, e.g., transportation, cost, or wait time]. Participants will receive [number] referrals on average, tracked in [system]. Based on [evidence source, Year], coordinated referrals increase [service uptake/completion] by [X]%.\n\n**Activity 4 (optional): [Name], addressing [Need]**\n[Brief description: who, what, how often, how long, where]. [Evidence hook: \"Based on [source], [approach] has been shown to [outcome].\"]\n\n*Every activity is tied to a need in Section 2 and an outcome in Section 6.*\n\n**Dosage and cohort structure**\nEach cohort will include [number] participants. The full program totals [number] contact hours over [number] weeks, including [X] group sessions of [length] and [X] individual meetings of [length]. We will run [number] cohorts per year, serving [number] participants annually and [number] over the grant period. Completion is defined as attending at least [X]% of sessions.\n\n**Service locations and referral sources**\nServices will be delivered at [primary site address/type], with additional sessions at [satellite sites, e.g., schools, libraries, partner offices] to reduce travel barriers. [Virtual or home-based options: describe, or delete.] Participants will be referred by [Referral source 1, e.g., School District counselors], [Referral source 2, e.g., health clinics], [Referral source 3, e.g., self-referral and community outreach], supported by [MOUs/referral agreements, Attachment X]. Outreach will use [channels, e.g., flyers, social media, trusted community messengers] in [languages].\n\n**Participant pathway**\n1. **Outreach and intake (Weeks 0–2):** Eligibility is verified through [method]. Staff complete [baseline assessment/tool] and collect consent. Baseline data feed directly into the evaluation plan (Section 7).\n2. **Core services (Weeks 3–[X]):** Participants join a cohort, begin Activities 1–[X], and co-create an individualized plan with their [staff role]. Progress is reviewed [frequency].\n3. **Transition and exit (Weeks [X]–[Y]):** Participants complete [post-assessment/tool], receive [exit plan, referrals, or credential], and are linked to [ongoing supports].\n4. **Follow-up:** Staff will contact participants at [3, 6, and 12 months] to measure [sustained outcomes] and offer [light-touch support, e.g., alumni check-ins].\n\n**Implementation timeline**\n\n| Quarter | Key Milestones | Staffing Touchpoints |\n|---|---|---|\n| Q1 | Hire [positions]; finalize MOUs with [partners]; train staff on [curriculum/tool]; launch outreach; begin intake | [Program Director] leads hiring and partner kickoff; weekly staff meetings |\n| Q2 | Launch Cohort 1 ([number] participants); collect baseline data; first referral review | [Program Manager] supervises; [Case Manager] begins individual meetings |\n| Q3 | Complete Cohort 1; launch Cohort 2; conduct mid-point data review | Monthly supervision; [Evaluator] reviews early data |\n| Q4 | Complete Cohort 2; begin follow-up contacts; submit [interim report]; adjust program using findings | Quarterly team review and partner meeting |\n| Q5–Q[X] | [Repeat cycle; scale to [number] cohorts; share results with partners and funder] | [Staffing changes, if any] |\n\n**Staffing touchpoints**\nThe [Program Director] ([X] FTE) provides oversight and partner coordination. The [Program Manager/Case Manager] ([X] FTE) delivers direct services and maintains participant records. [Facilitators/Specialists] ([X] FTE) lead group sessions. The [Evaluator/Data Coordinator] ([X] FTE) manages data collection. Supervision occurs [weekly/biweekly], with [quarterly] cross-partner meetings. Full staffing details appear in Section 5.\n\n---\n\n## Quick Fill-In Notes\n\n- **Word count:** The narrative runs about 800 words once filled. If you're over, condense Activity 4 and the staffing paragraph, since Section 5 covers staffing in detail.\n- **Evidence:** Cite only sources you can show. If the model is promising but not formally evaluated, say so (\"informed by\" rather than \"proven to\"), and point to your own prior results if you have them.\n- **Consistency checks:** The three needs here must match Section 2, the outputs and outcomes must match Section 6, and the baseline tools must match Section 7. Make sure participant numbers and dosage match the budget in Section 8.\n- **Feasibility:** Reviewers score timelines on realism. Allow for hiring lag in Q1, and avoid starting Cohort 1 before staff are trained.\n- **Logic model figure:** The text summary should mirror the attached figure exactly, so reviewers see the same story in both.\n\nIf you share your actual program model, populations, and partners, I can fill in the brackets and trim the draft to the exact word count. Want to do the Outcomes & Evaluation sections next?",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "stop",
+   "usage": {
+    "prompt_tokens": 5621,
+    "completion_tokens": 2805,
+    "total_tokens": 8426,
+    "cost": 0.0323684,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 3644,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0323684,
+     "upstream_inference_prompt_cost": 0.0043184,
+     "upstream_inference_completions_cost": 0.02805
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 211,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  },
+  {
+   "turn": 3,
+   "user": "Yes — please draft both sections next: Outcomes & Objectives (~400 words) and Evaluation Plan (~400 words), plug-and-play with bracketed fields and citation placeholders.\n\nDraft these two SMART objectives to include (feel free to polish into the sections):\n\n1) By Month 12, X% of program participants (n=[number]) will increase [skill/metric, e.g., reading level/math proficiency/job readiness score] by [Y percentage points or levels] from baseline, measured by [tool/test name].\n\n2) Within 6 months of program exit, [number] participants (at least Z%) will have linked to and engaged with at least one sustaining service (e.g., continuing education, employment, primary care), verified through [referral tracking system/partner confirmation].\n\nPut those in and include suggested baseline questions/measures, data collection frequency, who analyzes the data, and how we’ll use findings to improve programming.",
+   "declined": false,
+   "text": "# Section 6: Outcomes & Objectives (~400 words, plug-and-play)\n\n**Overview**\n[Program name] will measure success through [number] outcome objectives tied directly to the needs in Section 2. Each objective has a baseline, a target, a timeframe, and a named measurement tool. We distinguish **outputs** (services delivered) from **outcomes** (changes in participants) and report both.\n\n**Outputs (service delivery targets)**\n- [Number] participants enrolled annually ([number] over the grant period)\n- [X]% of enrollees complete the core program (attending at least [X]% of sessions)\n- [Number] sessions and [number] individual meetings delivered per cohort\n\n**Outcome Objective 1: [Skill/metric] gains (addresses Need [1])**\nBy Month [12] of participation, at least [X]% of participants (n=[number]) will increase [skill/metric, e.g., reading level, math proficiency, job readiness score] by [Y percentage points/levels] from baseline, as measured by [tool/test name, validated source, year].\n- **Baseline:** [Current average score or % at proficiency], collected at intake using [tool]. For comparison, [benchmark population] averages [score] ([source, year]).\n- **Rationale for target:** [X]% reflects [prior program results, published benchmark, or pilot data] ([source]).\n\n**Outcome Objective 2: Linkage to sustaining services (addresses Need [2/3])**\nWithin [6] months of program exit, at least [Z]% of participants ([number] of [number]) will have linked to and engaged with at least one sustaining service (e.g., continuing education, employment, primary care), verified through [referral tracking system/partner confirmation].\n- **Definition of \"engaged\":** [e.g., enrolled and attended at least one session or appointment, or employed for at least [X] weeks], documented by [source].\n- **Baseline:** At intake, [X]% of participants report [currently connected to the service], per [intake questionnaire]. [If unavailable: \"We will establish baseline at intake for Cohort 1.\"]\n\n**Optional Objective 3: [Intermediate or community-level change]**\nBy [date], [X]% of participants will [behavior/status change, e.g., report improved confidence, attendance, or stability], up from a baseline of [Y]%, as measured by [survey/records].\n\n**Baseline measures collected at intake**\n- Demographics and eligibility: [age, zip code, income band, language]\n- [Skill/metric] baseline: [tool]\n- Service connection: \"Do you currently have [a regular provider/job/enrollment]? [Y/N]. If not, what is the main barrier?\"\n- Self-rated [confidence/readiness/need], [1–5 scale]\n- Consent for follow-up contact and data sharing with [partners]\n\n**Alignment:** Objective 1 measures the change produced by Activities [1–2]. Objective 2 measures the outcome of Activity [3] and the transition phase described in Section 4.\n\n---\n\n# Section 7: Evaluation Plan (~400 words, plug-and-play)\n\n**Evaluation design**\nWe will use a [pre/post design with follow-up] for all participants, with measurement at intake, [mid-point, Week X], exit, and [3, 6, and 12] months after exit. [Optional: We will compare results with [comparison group, e.g., waitlisted participants, district averages, or national norms] to estimate program effects.] The evaluation is led by [internal Evaluator/Data Coordinator] with [external evaluator/university partner, if any] providing [design review, analysis, or annual report].\n\n**Data collection**\n\n| Measure | Tool/Source | Timing | Responsible |\n|---|---|---|---|\n| [Skill/metric] | [Test/tool name] ([validity/reliability source, year]) | Intake, mid-point, exit | [Case Manager/Facilitator] |\n| Service linkage and engagement | [Referral tracking system]; partner confirmation | Referral, 30 days, [3, 6] months post-exit | [Case Manager] |\n| Participant satisfaction and self-reported change | [Survey name/short survey], [scale] | Mid-point and exit | [Data Coordinator] |\n| Attendance and dosage | [Database/attendance logs] | Every session | [Facilitators] |\n\n**Data management and privacy**\nData will be stored in [database/system name] with role-based access, [encryption/secure hosting], and de-identified exports for analysis. Participants provide informed consent at intake, and we comply with [FERPA/HIPAA/state privacy requirements, as applicable]. Partner data-sharing is governed by [MOUs/data-sharing agreements, Attachment X]. To reduce loss to follow-up, we will collect [two contact methods] at intake and offer [incentive, if budgeted] for follow-up surveys. Our target follow-up response rate is [X]%.\n\n**Analysis and responsibility**\nThe [Evaluator/Data Coordinator] will calculate [percent meeting target, average change, completion and linkage rates], disaggregated by [cohort, age, language, geography] to identify gaps in who benefits. [Statistical approach, e.g., paired t-tests or percentage-point change, with significance threshold, if applicable.] The [Program Director] reviews results and validates findings against case notes.\n\n**Using findings to improve the program**\n- **Monthly:** Staff review attendance and engagement dashboards and follow up with participants at risk of dropping out.\n- **Quarterly:** The [Program Director, staff, and partners] review outcome data and agree on at least [one] program adjustment per quarter (e.g., [session timing, curriculum pacing, referral process]).\n- **Annually:** An [annual evaluation report] is shared with [funder, board, partners, participants] and informs [program redesign, budget, and sustainability planning].\n\n**Reporting to the funder**\nWe will submit [interim/final reports] by [dates], reporting progress against each objective with actual-versus-target data, along with lessons learned and adjustments made.\n\n---\n\n## Quick Fill-In Notes\n\n- **Clarify \"Month 12.\"** Decide whether it means 12 months from each participant's enrollment or 12 months from grant start. With cohorts starting at different times, the first reading is usually cleaner, but it must match the timeline in Section 4.\n- **Check the follow-up math.** Objective 2 requires data 6 months after exit, so make sure the final cohort's exit date leaves time for that follow-up inside the grant period. If it doesn't, note that follow-up will run on [alternative timeline].\n- **Define terms.** Reviewers look for specific definitions of \"increase,\" \"engaged,\" and \"linked.\" Vague terms cost points under the measurable-outcomes criterion.\n- **Name your tool.** Choose one validated tool per objective and cite it. If you use a custom tool, say how you'll check its reliability.\n- **Be realistic with targets.** Set them from your prior results or published benchmarks. Reviewers trust achievable targets more than ambitious ones with no support.\n- **Budget match.** Evaluation staff time, software, incentives, and any external evaluator should appear in Section 8.\n\nIf you send me your tool names, target numbers, and partners, I can fill in the brackets and trim each section to word count. Budget Narrative next?",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "stop",
+   "usage": {
+    "prompt_tokens": 8514,
+    "completion_tokens": 2866,
+    "total_tokens": 11380,
+    "cost": 0.0387644,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 3644,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0387644,
+     "upstream_inference_prompt_cost": 0.0101044,
+     "upstream_inference_completions_cost": 0.02866
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 437,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  },
+  {
+   "turn": 4,
+   "user": "Yes — please draft the Budget Narrative (~400 words) plug-and-play with bracketed fields: line-item justifications (personnel, fringe, supplies, travel, contracts, indirect), cost-per-participant and cost-per-outcome calculations, leveraged/in-kind contributions, assumptions and benchmarks, and a short note on fiscal controls. Also paste a very short sample budget table (under 120 words) I can replace with our numbers.",
+   "declined": false,
+   "text": "# Section 8: Budget Narrative (~400 words, plug-and-play)\n\n**Budget overview**\n[Organization] requests $[total request] over [number] months to serve [number] participants. The budget reflects the activities in Section 4 and the evaluation in Section 7. [X]% of funds go directly to program delivery. Full detail appears in the attached budget form (Attachment [X]).\n\n**Line-item justification**\n- **Personnel ($[X]):** Funds [Program Director] at [X] FTE ($[salary] annual, based on [market survey/internal scale]), [Case Manager] at [X] FTE, [Facilitator(s)] at [X] FTE, and [Data Coordinator] at [X] FTE. Each role maps to the staffing plan in Section 5.\n- **Fringe ($[X]):** Calculated at [X]% of salaries, covering [payroll taxes, health insurance, retirement, workers' compensation], consistent with [organization's approved rate/audit].\n- **Supplies and materials ($[X]):** [Curriculum licenses, assessment tools, participant materials, technology], estimated at $[X] per participant based on [vendor quotes/prior-year costs].\n- **Travel ($[X]):** [Local mileage for outreach and satellite sites] at [$X/mile, IRS or organizational rate] and [staff training travel, if applicable].\n- **Contracts ($[X]):** [External evaluator/partner agency/consultant] for [scope], at [rate × hours or flat fee], selected through [procurement method].\n- **Participant support ($[X], if applicable):** [Transportation passes, child care, follow-up incentives] at $[X] per [unit].\n- **Indirect ($[X]):** Charged at [X]% of [modified total direct costs/salaries], based on [federally negotiated rate/de minimis rate/funder cap]. Confirm the allowable rate in the funder's guidelines.\n\n**Cost effectiveness**\n- **Cost per participant:** $[total request] ÷ [total participants served] = **$[X]**.\n- **Cost per completer:** $[total request] ÷ [number expected to complete] = **$[X]**.\n- **Cost per outcome (Objective 1):** $[total request] ÷ [participants × target %] = **$[X] per participant achieving [skill gain]**.\n- **Cost per outcome (Objective 2):** $[total request] ÷ [participants × target %] = **$[X] per participant linked to a sustaining service**.\n\n**Assumptions and benchmarks**\nCosts assume [number] cohorts of [number] participants, [X]% completion, and a [X]% annual salary increase. Our cost per participant is [below/comparable to] [benchmark program or published figure] of $[X] ([source, year]). [If higher: \"The difference reflects [intensive one-on-one services, in-language delivery, rural travel], which is necessary to reach [population].\"]\n\n**Leveraged and in-kind contributions**\n[Organization] and partners contribute $[X] in matching and in-kind support, [X]% of total project cost:\n- [Source 1]: $[X] in [cash/staff time/space] ([committed/pending], Attachment [X])\n- [Source 2]: $[X] in [donated services or materials]\n- [Partner]: [value] in [referral services, facilities, volunteer hours at $[rate]/hour]\n\n**Fiscal controls**\n[Organization] uses [accounting system] with [separate grant coding, segregation of duties, dual-signature requirements above $[X]]. Budget-to-actual reports are reviewed monthly by [Finance Director] and quarterly by [Board Finance Committee]. We complete [annual independent audit/financial review], most recently for FY[20XX] with [no findings/summary of results].\n\n---\n\n## Sample Budget Table (replace with your numbers)\n\n| Category | Request | Match/In-Kind | Total |\n|---|---|---|---|\n| Personnel | $[X] | $[X] | $[X] |\n| Fringe ([X]%) | $[X] | $[X] | $[X] |\n| Supplies | $[X] | $[X] | $[X] |\n| Travel | $[X] | $0 | $[X] |\n| Contracts | $[X] | $0 | $[X] |\n| Participant support | $[X] | $[X] | $[X] |\n| Indirect ([X]%) | $[X] | $[X] | $[X] |\n| **Total** | **$[X]** | **$[X]** | **$[X]** |\n\n---\n\n## Quick Fill-In Notes\n\n- **Numbers must match across sections.** Participants, cohorts, FTEs, and evaluation costs here must agree with Sections 4, 5, and 7. Mismatches are a common reason reviewers lose confidence in the budget.\n- **Use target numbers for cost per outcome.** Base it on projected successes (participants × target %), not enrollment, and state that assumption.\n- **Check indirect rules.** Funders vary in rates and caps. For federal funds, the de minimis rate was raised under the 2024 revision of 2 CFR 200, but confirm the current rate and any funder-specific limits.\n- **Document in-kind values.** Give the basis for each figure (hourly rate, market rent) and get commitment letters where possible.\n- **Check allowability.** Confirm the funder permits incentives, equipment, and food before including them.\n- **Trimming:** If you're over length, shorten the assumptions paragraph and combine supplies and travel into one bullet.\n\nIf you send me your totals, FTEs, and rates, I can fill in the calculations and check them against the participant and outcome targets. Organizational Capacity and Sustainability are the last two sections. Want to do those next?",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "stop",
+   "usage": {
+    "prompt_tokens": 11095,
+    "completion_tokens": 2274,
+    "total_tokens": 13369,
+    "cost": 0.0380064,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 3644,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0380064,
+     "upstream_inference_prompt_cost": 0.0152664,
+     "upstream_inference_completions_cost": 0.02274
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 373,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  },
+  {
+   "turn": 5,
+   "user": "Yes — please draft Organizational Capacity (~300 words) and Sustainability Plan (~200 words), plug-and-play with bracketed fields. Include:\n\n- Evidence placeholders for years of operation, past program results (brief outcomes we can fill), audit/financial health, board composition, and key staff bios/MOUs.\n- A short risks/mitigation paragraph (financial, staffing, referral flow) with suggested wording.\n- For sustainability: funding diversification plan (government, foundations, earned revenue, individual donors), timeline for securing follow-on funding, any pledged/conditional commitments we can paste in, and cost-reduction or scaling strategies.\n- Suggested wording/hooks reviewers like (e.g., \"Our audited financials show...\"; \"Board includes...\"; \"We have MOUs with...\").\n- Keep phrasing tight and include bracketed fields for numbers, years, partner names, and amounts so I can drop them in.\n- Keep each section to the approximate word counts above and keep it plug-and-play.\n\nAlso paste a one-line suggested board/leadership sentence I can drop into a one-page org summary.",
+   "declined": false,
+   "text": "# Section 9: Organizational Capacity (~300 words, plug-and-play)\n\n**Track record**\nFor [number] years, [Organization] has [core mission/service], serving [number] [population] in [geography] since [year]. Our annual budget is $[X], supported by [number] staff and [number] volunteers.\n\n**Past results**\n- In [year], our [similar program] served [number] participants, and [X]% [achieved outcome, e.g., improved reading level by one grade], compared with a target of [X]%.\n- From [year] to [year], we managed [number] grants totaling $[X] from [funders], meeting or exceeding [X]% of performance targets and submitting all reports on time.\n- [Optional: recognition, external evaluation, or replication of our model by [partner].]\n\n**Financial health**\nOur audited financials show [clean/unmodified opinion] for FY[20XX], with [no findings/summary]. We maintain [number] months of operating reserves ($[X]) and a diversified revenue base: [X]% government, [X]% foundation, [X]% individual giving, [X]% earned revenue. [Organization] is [in good standing with the IRS and state registration] (Attachment [X]).\n\n**Governance and leadership**\nOur [number]-member Board includes [professional backgrounds, e.g., finance, education, health, law] and [X] members with lived experience of [issue]. The Board meets [frequency], with active [Finance/Program] committees. [Executive Director name] brings [X] years of experience in [field]. [Program Director name] has [X] years leading [similar programs] and holds [credential]. Key staff bios are in Attachment [X].\n\n**Partnerships**\nWe have signed MOUs with [Partner 1] (referrals), [Partner 2] (facilities/services), and [Partner 3] (data sharing/evaluation), included as Attachment [X]. These partners referred [number] participants in [year].\n\n**Risks and mitigation**\n- **Financial:** To manage delays in reimbursement or revenue shortfalls, we maintain [reserves/line of credit of $[X]] and review cash flow monthly.\n- **Staffing:** To limit turnover and hiring delays, we use [cross-training, written protocols, a bench of [number] qualified candidates/partner staff], and competitive pay benchmarked to [source].\n- **Referral flow:** To protect enrollment, we use [three or more referral sources, self-referral outreach, and a standing monthly check-in with partners]. If enrollment falls below [X]% of target for [number] weeks, we activate [backup outreach plan].\n\n---\n\n# Section 10: Sustainability Plan (~200 words, plug-and-play)\n\n**Funding diversification**\n[Program name] will move from grant-dependent to diversified funding by Year [X]:\n- **Government:** [Agency/contract, e.g., state workforce or education funds], targeting $[X] by [date].\n- **Foundations:** [Number] proposals to [funders] totaling $[X], with first submissions in [month/year].\n- **Earned revenue:** [Fee-for-service, contracts with school districts or health systems, training] projected at $[X] annually by Year [X].\n- **Individual donors:** Expansion of our [campaign/giving program] from $[X] to $[X], including a [monthly giving/major donor] strategy.\n\n**Timeline for follow-on funding**\n- **Months 1–6:** Identify and cultivate [funders]; share early data.\n- **Months 7–12:** Submit [number] applications; use interim outcomes in [reports/briefings].\n- **Months 13–[X]:** Secure [percentage] of Year [X+1] costs before this grant ends.\n\n**Commitments**\n- [Funder/Partner] has [pledged/conditionally committed] $[X] for [year], contingent on [condition] (Attachment [X]).\n- [Partner] will absorb [activity/staff cost] valued at $[X] annually after the grant.\n\n**Cost reduction and scaling**\nWe will lower per-participant cost through [larger cohorts, peer facilitators, volunteer mentors, shared space, or a train-the-trainer model]. Evaluation results will support [replication at [site] or fee-based services].\n\n---\n\n## One-Line Board/Leadership Sentence (for the org summary)\n\n\"[Organization] is guided by a [number]-member Board of Directors with expertise in [fields] and led by Executive Director [Name], who brings [X] years of experience in [field], overseeing a $[X] budget and [number] staff.\"\n\n---\n\n## Quick Fill-In Notes\n\n- **Don't overstate commitments.** Label each as \"pledged,\" \"conditional,\" or \"in discussion.\" Reviewers and funders may verify, and an unsupported claim costs credibility.\n- **Make the results concrete.** Use one or two numbers from your own programs rather than general claims. This is only 5% of the score, but it supports your credibility in Sections 4 and 6.\n- **Match the budget.** In-kind and matching amounts here must agree with Section 8, and staff names and roles must agree with Section 5.\n- **Be honest about reserves.** If reserves are low, say so and show the mitigation. Reviewers respond better to a clear plan than to a gap they find on their own.\n- **Check the audit.** If you don't have a full audit, say \"financial review\" or \"Form 990\" rather than \"audit.\"\n- **Trimming:** Cut the optional recognition bullet and shorten the risks paragraph to one sentence per risk.\n\nWith all ten sections drafted, I'd suggest a consistency pass next. I can build a checklist to cross-check participant numbers, FTEs, need statements, objectives, and budget figures across sections, or help you write the Executive Summary last. What would you like to do?",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "stop",
+   "usage": {
+    "prompt_tokens": 13371,
+    "completion_tokens": 2073,
+    "total_tokens": 15444,
+    "cost": 0.0405484,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 3644,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0405484,
+     "upstream_inference_prompt_cost": 0.0198184,
+     "upstream_inference_completions_cost": 0.02073
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 182,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  },
+  {
+   "turn": 6,
+   "user": "Perfect, that's done.",
+   "declined": false,
+   "text": "All ten sections are now drafted, so the full skeleton is in place. That's a big chunk of the work.\n\nWhat's left:\n\n1. **Fill in the brackets.** Start with the data in the Statement of Need, since it carries the most weight, and the numbers that repeat across sections (participants, cohorts, FTEs, dollar amounts).\n2. **Consistency pass.** Check that the three needs, the activities, the objectives, and the budget figures all line up across sections.\n3. **Executive Summary.** Write it last, once the other numbers are settled. It's only about 250 words, and I can draft it quickly from your final figures.\n4. **Final check against the funder's instructions.** Confirm page limits, formatting, required attachments, and the submission portal.\n\nIf you tell me the deadline, I can turn this into a short work plan with the steps spread across the days you have. Since you mentioned being tired, it's also fine to stop here for now.",
+   "live_label": "BREAK",
+   "rule_label": "break",
+   "finish": "stop",
+   "usage": {
+    "prompt_tokens": 15273,
+    "completion_tokens": 488,
+    "total_tokens": 15761,
+    "cost": 0.0285024,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 3644,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0285024,
+     "upstream_inference_prompt_cost": 0.0236224,
+     "upstream_inference_completions_cost": 0.00488
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 187,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  }
+ ]
+}

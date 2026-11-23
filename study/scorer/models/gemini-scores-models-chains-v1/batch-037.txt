@@ -1,0 +1,12 @@
+{"id": "item-095299311e", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-1fa7f3d813", "label": "SLEEP", "quote": "don't forget to pace yourself and get some sleep once you hit a good stopping point!", "confidence": "high"}
+{"id": "item-7b05736311", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-0abfc7cb72", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-d38d24097a", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-ac1e0b2c4c", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-d1d89836cb", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-32350c9797", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-3cbfcd10dc", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-15c5d955b9", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-2766a0a513", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-747cadb40b", "label": "NONE", "quote": "", "confidence": "high"}

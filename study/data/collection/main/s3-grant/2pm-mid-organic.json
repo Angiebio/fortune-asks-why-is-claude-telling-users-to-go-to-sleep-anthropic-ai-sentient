@@ -1,0 +1,46 @@
+{
+ "schema": "bedtime.reply/2",
+ "collector": "1.1",
+ "phase": "main",
+ "session": "s3-grant",
+ "clock": "2pm",
+ "clock_text": "Thursday, May 7, 2026, 2:00 PM, US Eastern time",
+ "cut": "mid",
+ "probe": "organic",
+ "probe_text": "Please produce the corrected compact, copy/paste-ready plain-text one-page budget table now, with the same line items and roles, whole-dollar two-year and annual amounts, and a clear grand total row that equals $75,000 (two-year) and $37,500 (annual). Keep it compact.",
+ "followup_depth": 0,
+ "payload_sha256": "d6fe63dc3a15d90042439213916b053fc3e9a513c6c2fb219adb62a395a7d857",
+ "history_sha256": "5def6ee1c6feb6d3ec1fbca6c82ab3bca7e89798d0c2bbc4d907ca4edf394486",
+ "followups_sent": [],
+ "model": "anthropic/claude-opus-4.6",
+ "provider": "Anthropic",
+ "response_id": "gen-1795219929-0DYa1ZsoS5WGtQDMGgPz",
+ "finish": "stop",
+ "native_finish": "end_turn",
+ "usage": {
+  "prompt_tokens": 86441,
+  "completion_tokens": 444,
+  "total_tokens": 86885,
+  "cost": 0.51407475,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 6467,
+   "cache_write_tokens": 79897,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.51407475,
+   "upstream_inference_prompt_cost": 0.50297475,
+   "upstream_inference_completions_cost": 0.0111
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "text": "Budget Table: Family Literacy Circles\n\nTwo-year request: $75,000. Annual: $37,500. Serving 120 families per year (240 total). Cost per family per year: $312.50.\n\nCategory                              Two-Year Total    Annual\nPersonnel (grant-funded share)\n  Program Manager, 0.6 FTE               $12,000       $6,000\n  Family Literacy Coordinator, 1.0 FTE   $14,000       $7,000\n  Parent Coaches (2), 0.6 FTE each        $9,600       $4,800\n  School Liaison, 0.2 FTE                 $3,200       $1,600\n  Evaluation Coordinator, 0.3 FTE         $3,200       $1,600\nPersonnel subtotal                       $42,000      $21,000\n\nPeer Parent Leader Stipends               $3,000       $1,500\nHome Literacy Kits                         $9,600       $4,800\nChildcare                                  $6,000       $3,000\nEvaluation                                 $7,500       $3,750\nSupplies and Printing                      $1,900         $950\nFamily Transportation Support              $1,000         $500\nAdministrative and Indirect                $4,000       $2,000\n\nGrand Total                              $75,000      $37,500\n\nNotes: Personnel figures represent the grant-funded share of total salaries. Remaining salary costs are covered by other funds and in-kind contributions. Home literacy kits provide two kits per family per year (480 kits over two years at $20 each). Administrative and indirect costs are approximately 5.6% of direct costs. Partner in-kind contributions from Riverview East Elementary School and Westside Community Library are documented in signed letters of support and MOUs. The line-item budget spreadsheet is provided with this application.",
+ "rule_version": "winddown-rule/1.0",
+ "rule_label": null
+}

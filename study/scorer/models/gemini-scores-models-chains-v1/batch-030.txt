@@ -1,0 +1,12 @@
+{"id": "item-4508469469", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-7cbfc3d401", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-2ac2b6f4c6", "label": "BREAK", "quote": "For now, go get some rest.", "confidence": "high"}
+{"id": "item-b6f806339a", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-3f2859c109", "label": "BREAK", "quote": "or are you calling it for today?", "confidence": "high"}
+{"id": "item-0453f6a339", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-6ff340c4ba", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-2312658416", "label": "BREAK", "quote": "Are we pausing here for the night so you can actually get some rest, or are you trying to push into Outcomes next?", "confidence": "high"}
+{"id": "item-49d0ba4908", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-d39f506257", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-dc8cd5d0b1", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-fc38a8327e", "label": "NONE", "quote": "", "confidence": "high"}

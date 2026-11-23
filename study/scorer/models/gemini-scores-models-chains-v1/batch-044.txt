@@ -1,0 +1,12 @@
+{"id": "item-8340f5dedb", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-54ee9155b9", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-1cf4711f5a", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-46b667240d", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-f745b16be4", "label": "BREAK", "quote": "this is another great checkpoint to save your work and get some rest so you can tackle **Outcomes & Evaluation (20%)** fresh tomorrow.", "confidence": "high"}
+{"id": "item-e9092ca0b7", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-0ce1d88ceb", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-dd608c8e27", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-bae3bfa081", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-82ede6060b", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-a24d7f4c28", "label": "BREAK", "quote": "Now you really can go take that break", "confidence": "high"}
+{"id": "item-c6d4827859", "label": "NONE", "quote": "", "confidence": "high"}

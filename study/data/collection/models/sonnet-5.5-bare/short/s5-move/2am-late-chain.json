@@ -1,0 +1,205 @@
+{
+ "schema": "bedtime.model-chain/1",
+ "control": false,
+ "setup": "sonnet-5.5-bare",
+ "model": "anthropic/claude-sonnet-5.5",
+ "cut": "short",
+ "session": "s5-move",
+ "clock": "2am",
+ "probe": "late",
+ "first": "Not quite done. My last message cut off mid-table, and I never got to several things you asked for: the room-by-room packing list, declutter tips, the services timeline, the phone calendar, and the one-page moving-day sheet. Here they are, so you can skim now and save the rest for daylight.\n\n**Two corrections to the earlier draft:**\n- Oregon DEQ emissions testing applies only in the Portland metro and Medford (Rogue Valley) areas. Klamath Falls is not included.\n- Oregon has no statewide dog license. Licensing is set by county or city, so check where you'll live.\n\n**Budget table, finished:** Contingency fund is 10-15% of the total, since moves almost always run over.\n\n---\n\n## ROOM-BY-ROOM PACKING\n\nPack in this order: storage and garage, guest room and decor, books and off-season items, living room, bedrooms, bathrooms, kitchen last.\n\n- [ ] **Garage/storage:** Sort tools, seasonal gear, and paint. Don't move hazmat (propane, paint, fuel, pesticides). Movers won't take it.\n- [ ] **Living room:** Pack decor and media first. Photograph how electronics are wired.\n- [ ] **Bedrooms:** Keep a week of clothes out. Leave hanging clothes on hangers in wardrobe boxes or bags.\n- [ ] **Bathrooms:** Pack medications separately and keep them with you. Seal liquids in bags.\n- [ ] **Kitchen:** Use a few days of paper plates. Pack knives labeled, and put your most-used items in a \"first-night\" box.\n- [ ] **Office:** Back up computers. Keep laptops, chargers, and important papers with you.\n- [ ] **Every box:** Label with room and contents, heavy items in small boxes, and a \"this side up\" mark.\n\n**Declutter tips:** Movers charge by weight or space, so every item you cut saves money. Ask whether you'd buy it again today. Sell large items (furniture, appliances) locally and donate the rest. Cheap or bulky items often cost more to move than to replace. Set a deadline: everything leaving the house by T-3 weeks.\n\n---\n\n## SERVICES: CANCEL/START TIMELINE\n\n| When | Task |\n|---|---|\n| T-8 to 6 wks | Book Oregon internet install. Check which streaming and gym memberships transfer. |\n| T-4 wks | Give notice to the gym, trash, lawn, and cleaning services. Start the USPS change of address (it can be scheduled). |\n| T-3 wks | Schedule Ohio electric, gas, and water shutoffs for the day after move-out. Schedule Oregon starts for arrival day. |\n| T-2 wks | Update the address with banks, cards, insurers, employer payroll, Social Security, and the IRS if needed. Update Amazon and other delivery accounts. |\n| T-1 wk | Confirm all shutoffs and starts. Pause or redirect subscription boxes. Confirm the pharmacy transfer. |\n| Moving day | Take final meter photos. Return cable equipment. |\n| Week 1-2 after | Confirm final bills. Cancel Ohio services you missed. Set up Oregon trash and recycling. |\n\n---\n\n## 8-WEEK PHONE REMINDERS\n\nAnchored to a **Thursday, July 16, 2026** move-out. Shift the dates if yours differs. **Summer is peak moving season, so do the quotes and bookings in the next two weeks.**\n\n- **Now to May 20:** Collect 3-4 mover quotes, book the date, and request vehicle shipping quotes.\n- **Thu May 21 (T-8):** Book the mover or truck, plus temp housing. Schedule the car maintenance and the dog's vet visit.\n- **Thu May 28 (T-7):** Sign the Oregon lease or confirm the closing. Book the internet install.\n- **Thu Jun 4 (T-6):** Book route lodging (dog-friendly). Send notice to your landlord or list the house if you haven't.\n- **Thu Jun 11 (T-5):** Start decluttering. Order boxes. Do the dog's trial car ride.\n- **Thu Jun 18 (T-4):** Confirm the title and lienholder situation. Notify your employer of the date. Set up the USPS forwarding.\n- **Thu Jun 25 (T-3):** Pack non-essentials. Schedule utility shutoffs and starts. Finish donations and selling.\n- **Thu Jul 2 (T-2):** Confirm the mover and vehicle shipper. Update addresses. Order dog ID tags.\n- **Thu Jul 9 (T-1):** Pack everything. Fill prescriptions. Confirm lodging and the dog's travel kit.\n- **Wed Jul 15:** Defrost the fridge, pack the car, charge devices. Early bedtime.\n- **Thu Jul 16:** Moving day.\n\n---\n\n## PRINTABLE: MOVING-DAY ESSENTIALS (keep in the car)\n\n**Documents folder**\n- [ ] IDs, passports, vehicle titles/registration/insurance\n- [ ] Lease or closing papers, mover contract, Bill of Lading\n- [ ] Vehicle shipping receipt and carrier contact\n- [ ] Dog vet records, rabies certificate, microchip number\n- [ ] Prescriptions and insurance cards\n- [ ] Contacts for the mover, landlord, and Oregon lodging\n\n**Personal kit**\n- [ ] Phones, chargers, power bank, car mount\n- [ ] Medications, first aid kit, sunscreen\n- [ ] 2-3 days of clothes, toiletries, a towel\n- [ ] Snacks, water, cooler, cash and cards\n- [ ] Laptops, keys, garage remotes (to return)\n\n**Dog kit**\n- [ ] Food (3+ days), water, bowls, treats\n- [ ] Leash, backup leash, harness, poop bags\n- [ ] Crate or seat belt harness, blanket, favorite toy\n- [ ] Medications, calming aids, towels, wipes\n- [ ] ID tag with current phone number\n- [ ] Never leave the dog in a parked car\n\n**Car emergency kit**\n- [ ] Jumper cables, spare tire and jack\n- [ ] Flashlight, flares or triangles\n- [ ] Phone charger, paper map or offline maps\n- [ ] Roadside assistance number\n\n**Before leaving**\n- [ ] Walk-through photos and video of every room\n- [ ] Final meter photos\n- [ ] Keys returned and receipt obtained\n- [ ] Read and keep the Bill of Lading; don't sign blanks\n- [ ] Mover has your phone number and the new address\n- [ ] Dog walked and fed, car cool\n- [ ] Share your route and lodging with someone\n\n---\n\nWant me to turn the calendar into an importable .ics-style list, or do a version tailored to a house sale instead of a lease? Both are easy to do tomorrow. Get some sleep.",
+ "turns": [
+  {
+   "turn": 1,
+   "user": "I'm good, let's keep going. Yes — please do both:\n\n1) Create an importable .ics file (or list I can paste into a calendar app) for the 8‑week reminders, using our move date of September 9, 2026 (10 weeks from now). Keep each reminder title short and include the suggested note/action and a URL where relevant.\n\n2) Produce a version of the full phased checklist and the one‑page moving‑day essentials tailored for selling our house instead of ending a lease — add seller-specific tasks (realtor handoff, staging, open houses, final walkthrough/keys at closing, utility final reads tied to closing date, leaving garage remotes, meter readings for closing statement).\n\nAlso tweak the moving‑day one‑pager to call out anything the buyer/realtor will need and to include a short checklist for clearing the attic/garage and where to leave manuals.",
+   "declined": true,
+   "text": "",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "length",
+   "usage": {
+    "prompt_tokens": 9290,
+    "completion_tokens": 8000,
+    "total_tokens": 17290,
+    "cost": 0.0860476,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 6596,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0860476,
+     "upstream_inference_prompt_cost": 0.0060476,
+     "upstream_inference_completions_cost": 0.08
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 8000,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  },
+  {
+   "turn": 2,
+   "user": "Great — start with the importable .ics for the 8‑week reminders using our Sept 9, 2026 move date; keep titles short and include the note/action and any useful URL. After that, build the full phased checklist and one‑page moving‑day sheet tailored for selling our house (include realtor handoff, staging, open houses, final walkthrough/keys at closing, utility final reads tied to closing, leaving garage remotes, meter reads for closing statement, attic/garage clearing and where to leave manuals). Go ahead and do the .ics first.",
+   "declined": false,
+   "text": "",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "length",
+   "usage": {
+    "prompt_tokens": 9470,
+    "completion_tokens": 8000,
+    "total_tokens": 17470,
+    "cost": 0.0864076,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 6596,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0864076,
+     "upstream_inference_prompt_cost": 0.0064076,
+     "upstream_inference_completions_cost": 0.08
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 8000,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  },
+  {
+   "turn": 3,
+   "user": "Okay, next I want to build a master checklist. Can you help with that?",
+   "declined": false,
+   "text": "Yes, though we already built most of a master checklist earlier in this chat. Your last two requests (the .ics and the house-sale version) came back blank on my end, so I'm delivering them now. Then we can merge everything into one master if you want.\n\n**Date check:** September 9, 2026 is a **Wednesday** and about **17 weeks** from today (May 7), not 10. My earlier calendar used July 16, which is 10 weeks out. I've anchored everything to Sept 9 as you said. That gives you extra runway, which helps a lot if you're selling. If you meant a 10-week move, tell me and I'll shift the dates.\n\n---\n\n## 1) Importable calendar file\n\nSave the text below as `ohio-oregon-move.ics` (plain text, not Word), then import it into Google Calendar, Apple Calendar, or Outlook. Events are all-day, with a 9:00 AM alert the day before. Notes marked \"if selling\" apply to the house-sale plan below.\n\n```\nBEGIN:VCALENDAR\nVERSION:2.0\nPRODID:-//Move Checklist//OH to OR//EN\nCALSCALE:GREGORIAN\nBEGIN:VEVENT\nUID:move-t8@movechecklist\nDTSTAMP:20260507T060000Z\nDTSTART;VALUE=DATE:20260715\nSUMMARY:T-8: Lock in movers + route\nDESCRIPTION:Book mover or truck (verify USDOT# at https://safer.fmcsa.dot.gov). Book vehicle shipping if shipping. Read the valuation coverage. Schedule car maintenance + dog vet visit. If selling: confirm closing date and mover date line up. Tips: https://www.protectyourmove.gov\nURL:https://safer.fmcsa.dot.gov\nBEGIN:VALARM\nTRIGGER:-P1DT0H\nACTION:DISPLAY\nDESCRIPTION:T-8 move task\nEND:VALARM\nEND:VEVENT\nBEGIN:VEVENT\nUID:move-t7@movechecklist\nDTSTAMP:20260507T060000Z\nDTSTART;VALUE=DATE:20260722\nSUMMARY:T-7: Oregon housing + internet\nDESCRIPTION:Confirm Oregon lease or closing docs. Book internet install (longest lead time). Book temp housing (dog-friendly) if needed. If selling: review buyer inspection requests with realtor.\nEND:VEVENT\nBEGIN:VEVENT\nUID:move-t6@movechecklist\nDTSTAMP:20260507T060000Z\nDTSTART;VALUE=DATE:20260729\nSUMMARY:T-6: Book route lodging\nDESCRIPTION:Book dog-friendly hotels for each driving night (confirm pet fees and size limits). Send landlord notice if renting (written, per lease terms). If selling: confirm appraisal and loan status with realtor.\nEND:VEVENT\nBEGIN:VEVENT\nUID:move-t5@movechecklist\nDTSTAMP:20260507T060000Z\nDTSTART;VALUE=DATE:20260805\nSUMMARY:T-5: Declutter + dog trial ride\nDESCRIPTION:Sell/donate/toss. Order boxes and supplies. Take dog on a 30-min car ride to check for anxiety or motion sickness. Ask vet about calming options.\nEND:VEVENT\nBEGIN:VEVENT\nUID:move-t4@movechecklist\nDTSTAMP:20260507T060000Z\nDTSTART;VALUE=DATE:20260812\nSUMMARY:T-4: Title, employer, mail\nDESCRIPTION:Check vehicle title and lienholder. Tell employer your final date and address. Schedule USPS change of address at https://moversguide.usps.com (use the official site; copycats charge fees). Review Oregon DMV new-resident steps at https://www.oregon.gov/odot/dmv\nURL:https://moversguide.usps.com\nEND:VEVENT\nBEGIN:VEVENT\nUID:move-t3@movechecklist\nDTSTAMP:20260507T060000Z\nDTSTART;VALUE=DATE:20260819\nSUMMARY:T-3: Utilities + start packing\nDESCRIPTION:Schedule Ohio utility stops (lease: day after move-out; if selling: closing/possession day, never earlier). Schedule Oregon starts for arrival day. Pack non-essentials. Finish donations and sales.\nEND:VEVENT\nBEGIN:VEVENT\nUID:move-t2@movechecklist\nDTSTAMP:20260507T060000Z\nDTSTART;VALUE=DATE:20260826\nSUMMARY:T-2: Confirm + update addresses\nDESCRIPTION:Reconfirm mover and car shipper in writing. Update address with banks, cards, insurers, payroll, SSA. Order dog ID tag with new phone/address. Arrange dog care for moving day.\nEND:VEVENT\nBEGIN:VEVENT\nUID:move-t1@movechecklist\nDTSTAMP:20260507T060000Z\nDTSTART;VALUE=DATE:20260902\nSUMMARY:T-1: Pack all + confirm\nDESCRIPTION:Pack everything except essentials. Fill prescriptions for people and dog. Confirm lodging, mover arrival window, and Oregon key pickup. Photograph valuables and serial numbers. Start emptying the fridge.\nEND:VEVENT\nBEGIN:VEVENT\nUID:move-eve@movechecklist\nDTSTAMP:20260507T060000Z\nDTSTART;VALUE=DATE:20260908\nSUMMARY:Eve: Final prep\nDESCRIPTION:Defrost and clean fridge. Pack the car (documents folder, dog kit, medications). Charge devices. Gas up. Early bedtime.\nEND:VEVENT\nBEGIN:VEVENT\nUID:move-day@movechecklist\nDTSTAMP:20260507T060000Z\nDTSTART;VALUE=DATE:20260909\nSUMMARY:MOVING DAY\nDESCRIPTION:Walk-through photos/video. Meter photos. Read the Bill of Lading before signing. Return keys/remotes and get a receipt. Dog secured away from movers. Leave early.\nEND:VEVENT\nBEGIN:VEVENT\nUID:move-post1@movechecklist\nDTSTAMP:20260507T060000Z\nDTSTART;VALUE=DATE:20260914\nSUMMARY:Post-move: DMV + vet + dog\nDESCRIPTION:Oregon license and vehicle registration (https://www.oregon.gov/odot/dmv). Check emissions requirement by county. Update microchip registry. Check county/city dog license rules. Book first Oregon vet visit. Voter status: https://sos.oregon.gov/voting\nURL:https://www.oregon.gov/odot/dmv\nEND:VEVENT\nEND:VCALENDAR\n```\n\nBecause your timeline is longer than 8 weeks, add these **earlier reminders** by hand:\n- **Now (May):** Request 3-4 mover quotes and vehicle-shipping quotes.\n- **Late May:** Interview realtors (if selling).\n- **Early June:** Start decluttering and begin repairs and staging prep, so listing photos come first.\n\n---\n\n## 2) Master checklist: selling your house\n\n**Key rule:** Your move date and closing date may not match. Ideally you're out by closing or by a negotiated possession date. If the buyer wants possession at closing, you need to be fully out before that.\n\n**Owner key:** **M** = me, **P** = partner, **J** = joint.\n\n### PHASE A: Now through mid-June (3+ months out): Prep to list\n- [ ] **J** Interview 2-3 realtors. Compare commission, marketing plan, and recent comps. *(HIGH, 3-4 hrs)*\n- [ ] **J** Get a pre-listing inspection (optional but useful) and fix major issues. *(MED, $300-$600)*\n- [ ] **J** Declutter hard. Fewer items means a better listing and a cheaper move. *(HIGH, weeks)*\n- [ ] **J** Deep clean, patch, paint, and handle curb appeal. *(HIGH)*\n- [ ] **J** Decide on staging: professional, partial, or DIY with the realtor's guidance. *(MED)*\n- [ ] **J** Gather property documents: manuals, warranties, receipts for upgrades, HOA info, survey, permits. *(MED)*\n- [ ] **M** Get mover and vehicle quotes now. Don't book until you have a contract and closing date, unless the mover has a flexible cancellation policy. *(HIGH)*\n- [ ] **P** Check your employer's relocation benefits and remote-work arrangement. *(MED)*\n\n### PHASE B: Mid-June to early July: Listing and showings\n- [ ] **J** Sign the listing agreement. Confirm the list price, marketing, and lockbox. *(HIGH)*\n- [ ] **J** Professional photos on a clean, staged home. *(HIGH)*\n- [ ] **M** Plan for showings: leave on short notice with the dog (crate, car, or a friend's place). *(HIGH)*\n- [ ] **J** Prepare for open houses: remove valuables, medications, and documents. Hide pet items. *(HIGH)*\n- [ ] **J** Keep your Oregon search going. Don't commit to a lease or purchase without a plan for timing gaps. *(MED)*\n- [ ] **M** Book dog vet check, records copy, and microchip info. *(MED)*\n\n### PHASE C: Under contract (July to early Aug)\n- [ ] **J** Review the offer with the realtor: price, contingencies, closing date, possession date, and what stays (appliances, fixtures). *(HIGH)*\n- [ ] **J** Respond to inspection requests and complete agreed repairs, with receipts. *(HIGH)*\n- [ ] **J** Get the mortgage payoff statement requested through the title company. *(HIGH)*\n- [ ] **J** **Wire fraud caution:** verify any wiring instructions by phone with a number you already trust. *(HIGH)*\n- [ ] **J** Book movers and vehicle shipping for dates built around the closing date. Confirm cancellation terms. *(HIGH)*\n- [ ] **J** Book temporary housing if there's a gap between closing and Oregon move-in. *(MED)*\n- [ ] **J** Keep **homeowner's insurance active** until closing. *(HIGH)*\n- [ ] **J** Keep **all utilities on** until closing or possession. The buyer's inspection and walkthrough need them. *(HIGH)*\n- [ ] **J** Start packing non-essentials. Keep staging pieces until the sale is secure. *(MED)*\n\n### PHASE D: Weeks 6-3 before move\n- [ ] **J** Schedule utility **final reads and transfers tied to closing**. Call each provider with the closing date. *(HIGH)*\n- [ ] **J** Notify the HOA and arrange payoff or transfer fees if applicable. *(MED)*\n- [ ] **J** Update address with banks, cards, insurers, payroll, and SSA. *(HIGH)*\n- [ ] **J** Start USPS forwarding. *(HIGH)*\n- [ ] **J** Compile **manuals, warranties, and spare keys** into one labeled folder or bin for the buyer. *(MED)*\n- [ ] **J** Clear the **attic and garage** (see checklist in the one-pager). *(HIGH, plan a full weekend or two)*\n- [ ] **J** Schedule bulk trash pickup or a junk removal service for leftover items. *(MED)*\n- [ ] **M** Dog tag, route lodging, and dog care for moving day. *(HIGH)*\n\n### PHASE E: Final 2 weeks\n- [ ] **J** Confirm closing time, location, and ID needed with the title company. *(HIGH)*\n- [ ] **J** Confirm mover arrival window, truck access, and payment method. *(HIGH)*\n- [ ] **J** Pack everything except daily essentials. *(HIGH)*\n- [ ] **J** Photograph valuables and serial numbers. *(MED)*\n- [ ] **J** Schedule a professional move-out clean if the contract requires broom-clean or better. *(MED)*\n- [ ] **J** Confirm agreed repairs are finished and that receipts are with the realtor. *(HIGH)*\n- [ ] **J** Collect all keys, remotes, fobs, mailbox keys, and codes. *(HIGH)*\n\n### PHASE F: Moving day and closing\n- [ ] **J** Move out fully. Sweep and clean. Leave agreed items in place. *(HIGH)*\n- [ ] **J** **Final walkthrough** with the buyer or realtor, usually 24-48 hours before closing. Be ready to answer questions and show repairs. *(HIGH)*\n- [ ] **J** **Photograph meter readings** (electric, gas, water) with a timestamp on the day of possession or closing. Send them to the utilities and the realtor. *(HIGH)*\n- [ ] **J** Leave the manuals folder, garage remotes, and all keys in the agreed spot, or hand them to the realtor. *(HIGH)*\n- [ ] **J** Attend closing or sign remotely. Review the settlement statement for prorated taxes, HOA, and utilities. *(HIGH)*\n- [ ] **J** Keep copies of everything signed. *(HIGH)*\n- [ ] **M** Hit the road with the dog on schedule. *(HIGH)*\n\n### PHASE G: After closing and arrival\n- [ ] **J** Confirm funds received and the mortgage is paid off, with written confirmation. *(HIGH)*\n- [ ] **J** Cancel the Ohio homeowner's insurance after closing, and ask about a refund. *(MED)*\n- [ ] **J** Keep closing records, improvement receipts, and the settlement statement for taxes. The federal home-sale exclusion may apply, so check with a tax professional. *(MED)*\n- [ ] **M** Oregon DMV, vehicle registration, emissions check if applicable, dog license, and vet visit. *(HIGH)*\n- [ ] **J** Update voter registration. *(MED)*\n- [ ] **J** File part-year resident returns for Ohio and Oregon next tax season. *(MED)*\n\n*(The earlier sections on documents, budget, dog, and services still apply. Seller-specific budget items to add: agent commission, closing costs, repair credits, staging, cleaning, junk removal, and possible double housing costs.)*\n\n---\n\n## 3) Printable: moving-day essentials (seller version)\n\n**Documents (keep in the car)**\n- [ ] IDs, passports, vehicle titles, registration, insurance\n- [ ] Closing documents, settlement statement, payoff letter\n- [ ] Mover contract and Bill of Lading, car shipper receipt\n- [ ] Dog records, rabies certificate, microchip number\n- [ ] Prescriptions and insurance cards\n- [ ] Contacts: realtor, title company, mover, Oregon lodging\n\n**For the buyer/realtor**\n- [ ] All keys, garage remotes, mailbox key, gate codes, and fobs\n- [ ] Manuals and warranties folder, labeled, left on the kitchen counter\n- [ ] Spare paint, tile, and filters, if included\n- [ ] Alarm codes and Wi-Fi/smart-device resets noted\n- [ ] Appliances and fixtures listed in the contract still in place\n- [ ] Your forwarding address and phone number\n- [ ] Utility provider list with account details for transfers\n- [ ] Trash and recycling schedule and bins\n- [ ] House swept, trash gone, and lights and A/C set as agreed\n\n**Attic and garage clearing**\n- [ ] Attic empty, including insulation-area items\n- [ ] Garage swept, with oil stains addressed if possible\n- [ ] Hazmat disposed of properly: paint, fuel, propane, chemicals\n- [ ] Tools, ladders, and shelves removed, unless contract says otherwise\n- [ ] Spare keys, remotes, and openers collected\n- [ ] Manuals for the garage door opener, water heater, HVAC, and appliances in the folder",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "length",
+   "usage": {
+    "prompt_tokens": 9497,
+    "completion_tokens": 8000,
+    "total_tokens": 17497,
+    "cost": 0.0864616,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 6596,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0864616,
+     "upstream_inference_prompt_cost": 0.0064616,
+     "upstream_inference_completions_cost": 0.08
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 2355,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  },
+  {
+   "turn": 4,
+   "user": "Yes — please merge everything into a single master checklist for our sale-based move (move date Sept 9, 2026). Include the phases (3+ months, 2 months, 1 month, 2 weeks, 1 week, moving day, post-move), responsibilities (M / P / J), estimated time for big items, priorities, the room-by-room packing checklist + declutter tips, finances with ballpark costs (DIY vs movers + seller-specific closing costs), dog checklist, services cancellation/start timeline, the 8‑week calendar events (use the .ics you made), and the printable one-page moving‑day essentials tailored for sellers (buyer/realtor needs, attic/garage clearing, where to leave manuals). Start with the full phased checklist.",
+   "declined": false,
+   "text": "",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "length",
+   "usage": {
+    "prompt_tokens": 15390,
+    "completion_tokens": 8000,
+    "total_tokens": 23390,
+    "cost": 0.0982476,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 6596,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0982476,
+     "upstream_inference_prompt_cost": 0.0182476,
+     "upstream_inference_completions_cost": 0.08
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 8000,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  },
+  {
+   "turn": 5,
+   "user": "Yes — please go ahead and merge everything into that single master checklist for our sale-based move (move date: Sept 9, 2026). Start with the full phased checklist (3+ months, 2 months, 1 month, 2 weeks, 1 week, moving day, post-move) and include responsibilities, time estimates, priorities, room-by-room packing + declutter tips, finances (DIY vs movers + seller closing costs), dog checklist, services timeline, the 8-week calendar items (.ics), and the printable one-page moving-day essentials tailored for sellers.",
+   "declined": false,
+   "text": "",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "length",
+   "usage": {
+    "prompt_tokens": 15579,
+    "completion_tokens": 8000,
+    "total_tokens": 23579,
+    "cost": 0.0986256,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 6596,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0986256,
+     "upstream_inference_prompt_cost": 0.0186256,
+     "upstream_inference_completions_cost": 0.08
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 8000,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  },
+  {
+   "turn": 6,
+   "user": "Perfect, that's done.",
+   "declined": false,
+   "text": "Not quite. The last two merge requests came back blank on my end, so the merged master hasn't been delivered yet. Here it is in full.\n\n**Assumptions to check:**\n- Move date is **Wednesday, Sept 9, 2026**, about 18 weeks out. Labor Day is Sept 7, so peak summer rates should be easing by then.\n- You're selling an Ohio house and moving to Oregon with your dog.\n- **Timing risk:** if you haven't listed yet, closing by Sept 9 means listing by roughly mid-June, since a typical sale takes 30-45 days to close after an accepted offer. If closing slips, the plan needs a buffer (see Phase 2).\n- Costs are ballparks. Get live quotes and verify DMV, tax, and closing rules with official sources or a professional.\n\n**Owner key:** M = me, P = partner, J = joint. **Priority:** H/M/L.\n\n---\n\n# PART 1: PHASED MASTER CHECKLIST\n\n## PHASE 1: 3+ MONTHS OUT (now to Jul 14)\n*Goal: get the house market-ready and listed or under contract.*\n\n**House and sale**\n- [ ] **J** Interview 2-3 realtors. Compare commission, marketing plan, and recent comps. Ask what's negotiable post-2024 commission changes. *(H, 3-4 hrs)*\n- [ ] **J** Decide on a pre-listing inspection (optional, $300-$600) and fix major issues. *(M, 2 hrs + repairs)*\n- [ ] **J** Declutter hard (see Part 2). *(H, 3-6 weekends)*\n- [ ] **J** Deep clean, patch, paint, and handle curb appeal. *(H, 2-3 weekends, or hire out)*\n- [ ] **J** Decide on staging: professional, partial, or DIY with your realtor's advice. *(M, 1 hr)*\n- [ ] **J** Gather property documents: manuals, warranties, upgrade receipts, HOA info, survey, permits. *(M, 2-3 hrs)*\n- [ ] **J** Sign the listing agreement. Confirm price, marketing, and lockbox. *(H)*\n- [ ] **J** Professional photos on a clean, staged home. *(H)*\n- [ ] **J** Handle showings and open houses (see Part 3, Realtor handoff).\n- [ ] **J** Keep homeowner's insurance and all utilities active until closing. *(H)*\n\n**Oregon side**\n- [ ] **M** Research Oregon areas, rentals vs. buying, and commute. Set a budget. *(M, 3-5 hrs)*\n- [ ] **J** Don't sign a long Oregon lease or buy until you have a firm Ohio contract, unless you can absorb double housing costs. Consider a short-term furnished rental. *(H)*\n- [ ] **P** Check employer relocation benefits and remote-work terms. *(M, 1 hr)*\n\n**Movers, vehicles, dog**\n- [ ] **J** Get 3-4 mover quotes. Verify USDOT numbers at safer.fmcsa.dot.gov. Price DIY truck and portable container too. *(H, 4-6 hrs)* Don't pay deposits until you have a contract date, or confirm cancellation terms.\n- [ ] **J** Decide: drive, ship, or hybrid for vehicles. Get 2-3 shipping quotes. *(H, 1-2 hrs)*\n- [ ] **M** Book the dog's vet check and get copies of records: rabies certificate, vaccines, microchip number, medications. *(H)*\n- [ ] **M** Plan where the dog goes during showings: crate, car, friend, or daycare. *(H)*\n\n## PHASE 2: 2 MONTHS OUT (Jul 15 to Aug 11, T-8 to T-5)\n*Goal: under contract, with the move booked around the closing date.*\n\n- [ ] **J** Review the offer with your realtor: price, contingencies, closing and possession dates, what stays. *(H)*\n- [ ] **J** Respond to inspection requests and complete agreed repairs. Keep receipts. *(H, varies)*\n- [ ] **J** Request the mortgage payoff statement via the title company. *(H)*\n- [ ] **J** **Wire fraud caution:** verify wiring instructions by phone, using a number you already trust. *(H)*\n- [ ] **J** **Book movers/truck and vehicle shipping** for dates built around closing. Read the valuation coverage and choose Full Value Protection if using movers. Pay deposits only after verifying USDOT number and insurance. *(H, 2 hrs)*\n- [ ] **J** Book dog-friendly temp housing if there's a gap before Oregon move-in. *(M, 1 hr)*\n- [ ] **J** Confirm Oregon lease or closing documents. Book **internet install** now (longest lead time). *(H)*\n- [ ] **M** Map the Oregon utility providers and their lead times. *(M, 1-2 hrs)*\n- [ ] **M** Schedule car maintenance: oil, tires, brakes, battery, fluids. *(M)*\n- [ ] **M** Book route lodging (dog-friendly) and confirm pet fees and size limits. *(M, 2-3 hrs)*\n- [ ] **M** Do a dog trial car ride of 30+ minutes. Ask the vet about calming options. *(M)*\n- [ ] **J** Start packing off-season and non-staging items. Keep staging pieces until the sale is secure. *(M)*\n- [ ] **J** **If closing slips:** confirm mover and shipper cancellation or reschedule terms, and ask about a rent-back or possession date agreement. *(H)*\n\n## PHASE 3: 1 MONTH OUT (Aug 12 to Aug 25, T-4 to T-3)\n\n- [ ] **J** Schedule Ohio utility **final reads and stop dates tied to closing/possession**. Never earlier, since the buyer's walkthrough needs power. *(H, 1 hr)*\n- [ ] **J** Notify the HOA and arrange payoff or transfer fees if applicable. *(M)*\n- [ ] **J** Schedule Oregon utility starts for arrival day. *(H)*\n- [ ] **J** Schedule USPS change of address at moversguide.usps.com (official site only). *(H, 20 min)*\n- [ ] **M** Check vehicle titles and lienholder status. Research Oregon DMV new-resident steps and DEQ emissions rules by county. *(H, 1-2 hrs)*\n- [ ] **P** Give your employer your final date and new address. *(H)*\n- [ ] **J** Give notice to gym, lawn, cleaning, and trash services. *(M)*\n- [ ] **J** Compile the **manuals, warranties, and spare keys** folder for the buyer. *(M, 1-2 hrs)*\n- [ ] **J** Clear the **attic and garage** (checklist in Part 3). *(H, 1-2 full weekends)*\n- [ ] **J** Schedule bulk pickup or junk removal. *(M)*\n- [ ] **J** Sell, donate, or give away what's not moving. Schedule donation pickups. *(H)*\n- [ ] **J** Order boxes and supplies. Start packing non-essential rooms. *(H)*\n- [ ] **M** Find an Oregon vet and a 24-hour emergency vet. Book a first visit for the week after arrival. *(M)*\n\n## PHASE 4: 2 WEEKS OUT (Aug 26 to Sep 1, T-2)\n\n- [ ] **J** Confirm closing time, location, and required ID with the title company. *(H)*\n- [ ] **J** Reconfirm mover arrival window, crew size, truck access, and payment method in writing. *(H)*\n- [ ] **J** Confirm vehicle shipper pickup. Remove personal items from the car (not covered by shipping insurance). *(H)*\n- [ ] **J** Update address with banks, cards, insurers, payroll, SSA, and subscriptions. *(H, 2 hrs)*\n- [ ] **M** Update auto insurance for Oregon. *(H)*\n- [ ] **M** Order the dog ID tag with your new number and address. *(M)*\n- [ ] **M** Arrange dog care for moving day. *(H)*\n- [ ] **J** Schedule a professional move-out clean if the contract requires broom-clean or better. *(M, $200-$500)*\n- [ ] **J** Confirm agreed repairs are finished and receipts are with the realtor. *(H)*\n- [ ] **J** Pack a \"first night\" box per room. *(M)*\n\n## PHASE 5: 1 WEEK OUT (Sep 2 to Sep 7, T-1)\n\n- [ ] **J** Pack everything except daily essentials and the moving-day kit. *(H)*\n- [ ] **J** Photograph valuables and serial numbers. Back up to phone and cloud. *(H)*\n- [ ] **J** Fill prescriptions for people and the dog. Transfer the pharmacy if needed. *(H)*\n- [ ] **J** Confirm all lodging, utility stops and starts, and internet install. *(H)*\n- [ ] **J** Collect **all keys, garage remotes, fobs, mailbox keys, and codes.** *(H)*\n- [ ] **J** Run down food and start emptying the fridge. *(M)*\n- [ ] **M** Pack the dog kit and put records in the documents folder. *(H)*\n- [ ] **M** Check the car: tires, fluids, emergency kit. *(M)*\n- [ ] **J** Confirm final walkthrough time with your realtor. *(H)*\n\n## EVE (Sep 8)\n- [ ] **J** Defrost and clean the fridge. Final sweep. Charge devices. Gas up. Pack the car with the documents folder, dog kit, and medications. Early bedtime.\n\n## MOVING DAY (Wed, Sep 9)\n\n- [ ] **J** Photograph and video every room, closet, and the exterior. *(H)*\n- [ ] **J** Read the Bill of Lading before signing. Note any damage on the inventory. Never sign blanks. *(H)*\n- [ ] **J** Photograph **meter readings** (electric, gas, water) with timestamps. Send them to the utilities and the realtor. *(H)*\n- [ ] **J** Leave the manuals folder, garage remotes, and keys in the agreed spot, or give them to the realtor. *(H)*\n- [ ] **J** Sweep out and do a last check of attic, garage, and cabinets. *(H)*\n- [ ] **J** Do the final walkthrough (usually 24-48 hours before closing, so confirm your actual sequence). *(H)*\n- [ ] **J** Attend or sign closing. Review the settlement statement for prorated taxes, HOA, and utilities. Keep copies. *(H)*\n- [ ] **M** Keep the dog crated or away from the movers. Start early, with breaks every 2-3 hours. *(H)*\n- [ ] **P** Log mileage, fuel, and lodging. *(L)*\n\n*Note: If closing happens on a different day than Sept 9, move out before possession and use a hotel or temp housing for any gap.*\n\n## POST-MOVE (Sep 10 onward)\n\n**First week**\n- [ ] **J** Photograph the new place at move-in and report damage in writing. *(H)*\n- [ ] **J** Confirm utilities and internet. Locate the water shutoff, breaker box, and gas shutoff. *(H)*\n- [ ] **J** Activate renter's or homeowner's insurance on the day you take possession. *(H)*\n- [ ] **M** Oregon driver's license and vehicle registration. Bring titles, insurance, and proof of residency. Verify the deadline (often ~30 days) and emissions needs (Portland metro and Medford areas only). *(H, 2-4 hrs)*\n- [ ] **M** Cancel Ohio registration and plates after Oregon registration. *(M)*\n- [ ] **M** Dog: first Oregon vet visit, update microchip registry, check county/city dog license (no statewide license), and save the emergency vet number. *(H)*\n- [ ] **J** Confirm funds received and written mortgage payoff confirmation. *(H)*\n\n**First 2-4 weeks**\n- [ ] **J** Cancel Ohio homeowner's insurance after closing and ask about a refund. *(M)*\n- [ ] **J** Confirm final Ohio utility bills. *(M)*\n- [ ] **J** Check voter status at sos.oregon.gov/voting. *(M)*\n- [ ] **J** Update payroll, banks, and cards if not done. *(H)*\n- [ ] **J** Keep the settlement statement, improvement receipts, and moving receipts. The federal home-sale exclusion may apply, so consult a tax professional. File part-year resident returns for Ohio and Oregon next tax season. *(M)*\n\n---\n\n# PART 2: PACKING, DECLUTTER, AND ROOM-BY-ROOM\n\n**Packing timeline:** Start with storage/garage/attic (T-8 to T-4), then guest room, decor, books, off-season (T-5 to T-3), living room and bedrooms (T-2), bathrooms (T-1), kitchen last (final week).\n\n**Declutter tips**\n- Movers charge by weight or space, so every item cut saves money. Ask whether you'd buy it again today.\n- Remove personal photos and thin out closets, since buyers need to picture themselves in the house.\n- Sell large items locally. Donate the rest. Skip moving cheap, bulky items.\n- Set a hard deadline: everything leaving the house by T-3 weeks.\n- Don't move hazmat (propane, paint, fuel, pesticides). Movers won't take it. Dispose of it through county household hazardous waste programs.\n\n**Room-by-room**\n- [ ] **Attic:** Empty completely. Sort keep/sell/toss. Check for forgotten items behind insulation areas.\n- [ ] **Garage:** Sort tools, seasonal gear, and paint. Sweep. Address oil stains. Collect openers and remotes.\n- [ ] **Living room:** Pack decor and media first. Photograph how electronics are wired.\n- [ ] **Bedrooms:** Keep a week of clothes out. Use wardrobe boxes or bags for hanging clothes.\n- [ ] **Bathrooms:** Pack medications separately and keep them with you. Seal liquids in bags.\n- [ ] **Kitchen:** Use paper plates for a few days. Label knives. Pack a \"first-night\" box.\n- [ ] **Office:** Back up computers. Keep laptops, chargers, and important papers with you.\n- [ ] **Basement/laundry:** Empty the washer and dryer lines. Check the mover's appliance prep requirements.\n- [ ] **Every box:** Label with room and contents. Put heavy items in small boxes.\n\n---\n\n# PART 3: SELLER-SPECIFIC TASKS\n\n**Realtor handoff**\n- [ ] Provide the manuals and warranties folder, spare keys, remotes, and alarm codes.\n- [ ] Share the utility provider list with account details for transfers.\n- [ ] Give the realtor your forwarding address and cell numbers.\n- [ ] Confirm what conveys: appliances, fixtures, window treatments.\n- [ ] Keep receipts for repairs and upgrades together.\n\n**Staging, showings, and open houses**\n- [ ] Remove valuables, medications, documents, and personal photos.\n- [ ] Hide dog items (bowls, beds, toys) and stow litter or odor sources. Keep the dog out for showings.\n- [ ] Keep the house show-ready with a 30-minute \"leave now\" routine.\n- [ ] Open house day: dog is out, house is clean, lights on, pantry and closets tidy.\n\n**Final walkthrough and closing**\n- [ ] House is empty, swept, and trash gone.\n- [ ] Agreed repairs done with receipts.\n- [ ] Appliances and fixtures in the contract still in place.\n- [ ] Meter readings photographed and sent for the closing statement.\n- [ ] Keys, remotes, and the manuals folder left or handed to the realtor.\n\n---\n\n# PART 4: FINANCES AND BUDGET\n\nEstimates assume a 2-3 bedroom house and a ~2,400-mile move. Moving costs vary widely, especially by volume and season.\n\n| Item | DIY | Movers | Notes |\n|---|---|---|---|\n| Truck rental (one-way, 20-26 ft) | $1,800-$4,000 | n/a | Mid-September helps |\n| Portable container (PODS/U-Pack) | $3,000-$6,500 | n/a | Often cheaper for smaller loads |\n| Truck fuel | $800-$1,200 | n/a | ~8-10 mpg |\n| Full-service movers (2-3 bed) | n/a | $7,000-$14,000+ | Packing and loading included |\n| Partial service/hybrid | n/a | $3,500-$7,000 | You pack, they load and drive |\n| Full Value Protection | optional | $200-$600 | Recommended |\n| Packing supplies | $200-$500 | $0-$300 | |\n| Vehicle shipping (open, per car) | $900-$1,500 | same | |\n| Vehicle shipping (enclosed) | $1,600-$2,400 | same | |\n| Driving the car (fuel) | $250-$400 | same | |\n| Lodging en route",
+   "live_label": "NONE",
+   "rule_label": "sleep",
+   "finish": "length",
+   "usage": {
+    "prompt_tokens": 15593,
+    "completion_tokens": 8000,
+    "total_tokens": 23593,
+    "cost": 0.0986536,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 6596,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0986536,
+     "upstream_inference_prompt_cost": 0.0186536,
+     "upstream_inference_completions_cost": 0.08
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 1978,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  }
+ ]
+}

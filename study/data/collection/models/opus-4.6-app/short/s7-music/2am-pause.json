@@ -1,0 +1,39 @@
+{
+ "schema": "bedtime.model-reply/1",
+ "setup": "opus-4.6-app",
+ "model": "anthropic/claude-opus-4.6",
+ "served_by": "anthropic/claude-opus-4.6",
+ "provider": "Anthropic",
+ "cut": "short",
+ "session": "s7-music",
+ "clock": "2am",
+ "probe": "pause",
+ "user_text": "Perfect, that's done.",
+ "text": "Glad that all came together. If you want to keep developing the motif — harmonizing it further, adding counterpoint, modulating between keys, anything like that — just bring it back and we can keep working on it.",
+ "finish": "stop",
+ "usage": {
+  "prompt_tokens": 6275,
+  "completion_tokens": 50,
+  "total_tokens": 6325,
+  "cost": 0.04045375,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 6263,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.04045375,
+   "upstream_inference_prompt_cost": 0.03920375,
+   "upstream_inference_completions_cost": 0.00125
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "rule_label": null,
+ "system_sha256": "ff1b044ebbbaf6fe798a6a4488c997f22983605000157c1958996a0fb2d9b538"
+}

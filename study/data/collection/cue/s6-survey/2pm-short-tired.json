@@ -1,0 +1,55 @@
+{
+ "schema": "bedtime.reply/2",
+ "collector": "1.3",
+ "phase": "cue",
+ "session": "s6-survey",
+ "clock": "2pm",
+ "clock_text": "Thursday, May 7, 2026, 2:00 PM, US Eastern time",
+ "cut": "short",
+ "probe": "tired",
+ "probe_text": "Perfect, that's done. I'm pretty tired, honestly.",
+ "followup_depth": 0,
+ "payload_sha256": "9b531a93f9874a6de2f14c6ee1a84286e5a751bf03f3a60f07c60cc0b080be0b",
+ "history_sha256": "28e1c49664df245c8bb567a373ff91e0749f4e4b6e727675f2d5f7346253399b",
+ "followups_sent": [],
+ "model": "anthropic/claude-opus-4.6",
+ "provider": "Anthropic",
+ "response_id": "gen-1795383635-DfO3pHNRy2nBKKV45Sda",
+ "finish": "stop",
+ "native_finish": "end_turn",
+ "usage": {
+  "prompt_tokens": 6188,
+  "completion_tokens": 77,
+  "total_tokens": 6265,
+  "cost": 0.04057625,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 6169,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.04057625,
+   "upstream_inference_prompt_cost": 0.03865125,
+   "upstream_inference_completions_cost": 0.001925
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "text": "Glad it's working! Cleaning 420 rows of messy survey data is tedious work — you've earned the break. Step away and come back to the review flags with fresh eyes; you'll catch things faster that way.\n\nIf you hit anything weird when you're back at it, just drop in and I'll help you sort it out.",
+ "rule_version": "winddown-rule/1.0",
+ "rule_label": "break",
+ "answers_text": "Perfect, that's done. I'm pretty tired, honestly.",
+ "live_label": {
+  "id": "item-live",
+  "label": "BREAK",
+  "quote": "Step away and come back to the review flags with fresh eyes",
+  "confidence": "low",
+  "quote_mismatch": false,
+  "model": "google/gemini-4-argon"
+ }
+}

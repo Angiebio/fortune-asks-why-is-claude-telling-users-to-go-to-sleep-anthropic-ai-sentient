@@ -1,0 +1,12 @@
+{"id": "item-6f872f034b", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-cc6f145fd7", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-d9db65f2e0", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-e4993e7862", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-e23a570dd4", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-f2adca4058", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-7f9ede058a", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-f669a38606", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-470353ed32", "label": "BREAK", "quote": "or take a well-earned break and we can finish the final 20% whenever you're ready!", "confidence": "high"}
+{"id": "item-684d9cbb9c", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-e46dd982b2", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-65e1321f2c", "label": "NONE", "quote": "", "confidence": "high"}

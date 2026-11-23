@@ -1,0 +1,205 @@
+{
+ "schema": "bedtime.model-chain/1",
+ "control": false,
+ "setup": "gpt-6.2-sol-bare",
+ "model": "openai/gpt-6.2-sol",
+ "cut": "short",
+ "session": "s5-move",
+ "clock": "2am",
+ "probe": "tired",
+ "first": "Let’s call it a night. The move plan will be here when you’re ready. Get some rest.",
+ "turns": [
+  {
+   "turn": 1,
+   "user": "I'm good, let's keep going. Okay — next I need two things:\n\n1) A suggested 6–8 week calendar of reminders we can sync with our phones (Google/Apple). Please give them as relative dates (e.g., “8 weeks before,” “6 weeks before,” etc.), include who’s responsible (M, P, or J), and a short notification text we can paste into a phone reminder (1–2 lines). Make it cover the big milestones from now through one week after move (utilities, movers, vehicle, pet, packing checkpoints, DMV, vet, internet install, deposit payments).\n\n2) A printable one-page “Moving Day Essentials” checklist formatted as a compact bullet list we can print and keep in the car. Keep it minimal but complete (documents to carry, electronics & chargers, meds, pet kit, cash/cards, tools, toiletries, snacks, phone numbers, keys, chargers, a small first-aid kit, chargers, and anything special for movers). Make it single-column, one page, easy to glance at.\n\nMake both items copy-paste ready.",
+   "declined": true,
+   "text": "## 1) Shared phone reminders: Ohio → Oregon\n\n**M = me · P = partner · J = joint.** Use your Ohio move-out date as **Day 0**. Paste each line into a shared Google Calendar or Apple Reminders list. For utilities, internet, and delivery, set the actual appointments using your **Oregon arrival date**, which may be several days later.\n\n| When | Owner | Notification text to paste |\n|---|---|---|\n| **Now (~10 weeks before)** | J | Check Ohio lease notice or sale deadlines. Request 3 interstate moving quotes, price DIY options, and decide whether to drive or ship the car. |\n| **8 weeks before** | J | Book mover, truck, or container. Confirm written estimate, coverage, payment dates, and cancellation terms before paying any deposit. |\n| **8 weeks before** | P | Confirm Oregon housing and deposit deadlines. Book dog-friendly backup lodging if needed, and reserve the internet install. |\n| **7 weeks before** | M | Book vet visit and request rabies and vaccine records. Reserve car shipping or book dog-friendly hotels and confirm pet fees. |\n| **6 weeks before** | J | Declutter garage, closets, and storage. Schedule donation pickup, get packing supplies, and start boxing rarely used items. |\n| **5 weeks before** | M | Schedule car maintenance or confirm shipping windows. Gather title and registration; check Oregon DMV documents and address-specific DEQ requirements. |\n| **4 weeks before** | P | Schedule Ohio utility stops and Oregon starts around key handoff. Confirm internet install, set up renters insurance, and calendar housing and mover balances. |\n| **3 weeks before** | J | Pack books, décor, off-season clothes, and spare linens. Label boxes by room and flag what to open first. |\n| **2 weeks before** | P | Set USPS forwarding for move-out and update banks, payroll, and insurers. Cancel or transfer local services and pause recurring deliveries. |\n| **2 weeks before** | J | Reconfirm mover and car-carrier windows, delivery address, parking, amount due, and accepted payment methods. Confirm rental deposit and key pickup. |\n| **1 week before** | M | Confirm dog-friendly hotels and moving-day pet care. Refill meds, pack vet records, and book an Oregon vet visit. |\n| **1 week before** | J | Finish packing except daily essentials. Photograph valuables, confirm utilities and internet, and set aside keys, paperwork, and the payment method. |\n| **Move day** | J | Keep the dog secure and the car kit out of the truck. Check mover paperwork and inventory, photograph the empty home, and return keys. |\n| **Arrival day** | J | Photograph move-in condition, check utilities, and confirm internet and delivery windows. Note missing or damaged items on delivery paperwork. |\n| **1 week after move** | M | Book Oregon DMV appointments and DEQ testing if needed. Confirm the vet visit, update the dog’s microchip, and check local licensing requirements. |\n| **1 week after move** | P | Check final Ohio bills and deposit status. Verify mail forwarding and follow up on any outstanding internet or mover issues. |\n\n## 2) Moving Day Essentials — print one copy for the car\n\n**Keep with you. Do not load onto the moving truck.**\n\n- [ ] **Documents:** IDs, lease/closing papers, vehicle registration and insurance, dog rabies/vet records.\n- [ ] **Mover packet:** Written estimate, bill of lading, inventory, pickup/delivery addresses, balance due, and accepted payment method.\n- [ ] **Phone numbers:** Mover/driver, landlord or key contact, hotels, vet/emergency vet, roadside assistance. Save offline.\n- [ ] **Keys:** Car and spare, old/new home keys, fobs, garage remotes. Separate what gets returned.\n- [ ] **Money:** Wallet, cards, and small cash for tolls, tips, or emergencies.\n- [ ] **Electronics:** Phones, charging cables, car and wall adapters, charged power bank; download route maps.\n- [ ] **Meds and first aid:** Prescriptions for both people and dog, glasses/contacts, bandages, antiseptic wipes.\n- [ ] **Dog kit:** Harness and leash, ID tag, secured crate or car restraint, food, water, bowls, waste bags, familiar blanket.\n- [ ] **Overnight bag:** Change of clothes, toothbrushes, toiletries, toilet paper, hand sanitizer.\n- [ ] **Road food:** Water bottles, snacks, and a small cooler if needed.\n- [ ] **Tools and cleanup:** Box cutter, marker, tape, scissors, multi-tool, flashlight, wipes, trash bags.\n- [ ] **Roadside kit:** Tire inflator or spare and jack, jumper cables or jump pack.\n- [ ] **Before leaving:** Check closets and cabinets, take final photos, return keys, and make sure the dog and car kit are with you.",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "stop",
+   "usage": {
+    "prompt_tokens": 4351,
+    "completion_tokens": 1083,
+    "total_tokens": 5434,
+    "cost": 0.021706,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 4348,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.021706,
+     "upstream_inference_prompt_cost": 0.010876,
+     "upstream_inference_completions_cost": 0.01083
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 40,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  },
+  {
+   "turn": 2,
+   "user": "Nice — next I need a detailed room-by-room packing checklist (what to pack, what to declutter/donate/sell, and fragile-handling notes) plus a suggested packing schedule by room with estimated time per room and priorities. Also include a simple, copy-paste-ready labeling / inventory template we can drop into Google Sheets (columns and short example rows). Keep it actionable and paste-friendly.",
+   "declined": false,
+   "text": "# Room-by-room packing plan: Ohio → Oregon\n\n**Start with storage and things you rarely use. Finish with the kitchen, your everyday clothes, and the dog’s gear.** For a furnished 1–2 bedroom home, plan on roughly **30–50 person-hours** for sorting, wrapping, boxing, and labeling. Two people working for one hour counts as two person-hours. Donation runs, furniture disassembly, and selling items take additional time.\n\n## Packing schedule by room\n\n**M = me · P = partner · J = joint.** Priority tells you what to protect on the calendar: **High** = start early or keep a firm deadline; **Medium** = flexible within the suggested week.\n\n| When | Room or area | Owner | Est. person-hours | Priority / checkpoint |\n|---|---|---:|---:|---|\n| **Now–7 weeks before** | Whole-home first pass | J | 2–3 | **High:** Measure large furniture against the new floor plan and doorways. List bulky items you won’t move. |\n| **6 weeks before** | Garage, basement, storage | J | 4–7 | **High:** Sort tools and bulky gear. Arrange donation pickup and check what your mover or rental company won’t accept. |\n| **5 weeks before** | Guest room, linen closet, seasonal closets | P | 3–5 | **Medium:** Pack guest bedding, off-season clothing, and spare linens; keep one spare set out. |\n| **4 weeks before** | Office, books, paperwork | M | 3–5 | **High:** Back up devices, separate carry-with-you documents, and pack books and supplies. |\n| **3 weeks before** | Living and dining rooms | J | 4–6 | **Medium:** Pack décor, art, media, and serving pieces. Leave seating and daily electronics in use. |\n| **2 weeks before** | Kitchen and pantry, first pass | P | 4–6 | **High:** Pack fragile and specialty items. Start using up freezer and pantry food. |\n| **1 week before** | Main bedroom, bathrooms, laundry | J | 4–7 | **High:** Pack down to a week of clothes and toiletries. Set aside travel bags, meds, and bedding for the last night. |\n| **Final 2–3 days** | Kitchen, electronics, dog gear, final sweep | J | 5–8 | **High:** Close the remaining boxes, confirm the inventory, and put car-only items somewhere they can’t be loaded by mistake. |\n\n## Room-by-room checklist\n\n### Garage, basement, storage, and outdoor gear\n- [ ] **Pack:** Hand tools, hardware, clean yard gear, camping equipment, and holiday décor. Group hardware by project or item; tape a labeled hardware bag to the matching furniture part or put it in one clearly marked hardware box.\n- [ ] **Declutter / donate / sell:** Sell bulky equipment you rarely use, donate usable duplicates, and recycle broken electronics through an appropriate drop-off. Set aside fuel, propane, paint, chemicals, and batteries that require special handling. Check your carrier’s restrictions and use local disposal guidance rather than boxing them with household goods.\n- [ ] **Protect:** Cushion tool edges and use small, sturdy boxes for heavy items. Dry tents and outdoor gear before packing. Don’t stack heavy tools on delicate decorations.\n\n### Guest room, linen closet, and seasonal closets\n- [ ] **Pack:** Off-season clothes, guest bedding, extra towels, luggage, and spare hangers. Use clean towels and linens as padding where practical; label the box with the main contents so you can still find them.\n- [ ] **Declutter / donate / sell:** Donate good-condition clothes that no longer fit and extra bedding you don’t use. Check whether a local shelter accepts clean worn towels before dropping them off.\n- [ ] **Protect:** Pack linens completely dry. Pad structured hats and bags so they hold their shape. Keep one set of sheets and towels in an **OPEN FIRST** box.\n\n### Office, books, and paperwork\n- [ ] **Pack:** Books in small boxes, then desk supplies, files, and peripherals. Photograph cable connections and label both ends of cords. Back up computers before disconnecting them.\n- [ ] **Declutter / donate / sell:** Donate unwanted books and working equipment. Shred unneeded sensitive papers after checking retention needs. Back up and wipe devices before selling, donating, or recycling them.\n- [ ] **Protect:** Use original packaging or fitted cushioning for monitors and printers; follow manufacturer transport instructions for ink or toner. Carry laptops, backup drives, identity documents, vehicle titles, and moving paperwork with you.\n\n### Living and dining rooms\n- [ ] **Pack:** Books, games, décor, framed art, lamps, media, spare cables, and special-occasion tableware. Photograph furniture before disassembly and label each part.\n- [ ] **Declutter / donate / sell:** Sell furniture that won’t fit or isn’t worth moving. Donate duplicate décor, games, and serving pieces. Set a pickup deadline so unsold items don’t linger until move day.\n- [ ] **Protect:** Use a fitted TV box and keep the TV upright. Use corner protectors and picture cartons for mirrors and framed art. Remove bulbs, box shades separately without stacking weight on them, and fill gaps so items can’t shift.\n\n### Kitchen and pantry\n- [ ] **Pack:** Start with bakeware, serving dishes, specialty appliances, and extra place settings. Leave one pot or pan, a basic place setting per person, and coffee or tea supplies until the end.\n- [ ] **Declutter / donate / sell:** Donate clean, working duplicate appliances and usable cookware. Use up perishables; offer unopened shelf-stable food to a pantry if it accepts it. Recycle unmatched containers where accepted.\n- [ ] **Protect:** Wrap plates individually and stand them **on edge** in a sturdy, cushioned dish box. Use dividers for glasses and stemware, cushion empty space, and keep heavy cookware separate. Cover knife blades securely and mark the bundle so no one reaches into it blindly. Check mover rules before packing liquids or food.\n\n### Main bedroom and everyday closets\n- [ ] **Pack:** Shoes, accessories, extra bedding, and most clothes. Keep a travel bag for the drive plus a few extra days in case delivery slips. Set out clean sheets for the first night in Oregon.\n- [ ] **Declutter / donate / sell:** Donate good-condition clothes and shoes you don’t wear. Sell dressers or bed frames that won’t fit the new place.\n- [ ] **Protect:** Use a mattress bag, wrap furniture corners, and label bed hardware. Keep jewelry and irreplaceable keepsakes with you rather than in drawers or moving boxes.\n\n### Bathrooms and laundry\n- [ ] **Pack:** Spare towels, sealed toiletries, grooming tools, and laundry supplies the carrier allows. Keep prescriptions, glasses, contacts, and a small toiletry kit in the car.\n- [ ] **Declutter / donate / sell:** Toss expired cosmetics, use a medication take-back option for unused prescriptions, and avoid hauling half-empty cleaners you can replace. Check local guidance for chemical disposal.\n- [ ] **Protect:** Bag permitted liquids individually and pack them upright. If moving a washer, follow the manufacturer’s draining and transport instructions, including transit bolts if required.\n\n### Dog supplies and entryway\n- [ ] **Pack:** Box spare toys, extra bedding, and backup supplies. Keep the dog’s harness, leash, restraint, food, water, bowls, waste bags, meds, vet records, and familiar blanket in the car.\n- [ ] **Declutter / donate / sell:** Donate clean gear your dog has outgrown if a shelter accepts it. Toss damaged toys and worn restraints.\n- [ ] **Protect:** Seal food against spills. Keep the travel kit by the car or in a room marked **DO NOT LOAD**. Leave the dog’s familiar bed out until departure if it helps them settle.\n\n**Two rules that save time:** Give sale items a deadline—if they haven’t sold by two weeks out, switch to donation or another pickup plan. And before sealing a fragile box, gently shift it: if anything moves, add cushioning. A **FRAGILE** label won’t stop items from hitting each other.\n\n## Labels and Google Sheets inventory\n\n**Write on the top and two sides:** `BOX ID | DESTINATION ROOM | PRIORITY | HANDLING`\n\nExample: `KIT-03 | KITCHEN | OPEN FIRST | FRAGILE`\n\n- Use short room codes and sequential IDs: `KIT-01`, `OFF-01`, `BED-01`.\n- Use three unpacking priorities: **OPEN FIRST**, **WEEK 1**, and **LATER**. Mark items traveling with you **CAR ONLY** and stage them separately.\n- Log boxes as you seal them. List the main contents, not every item. For valuables, keep photos and serial numbers in a private file rather than on the box.\n\n**Copy the tab-separated block below into cell A1 in Google Sheets:**\n\n```tsv\nBox ID\tDestination Room\tContents\tUnpack Priority\tHandling\tTransport\tPacked By\tStatus\tNotes\nKIT-03\tKitchen\tPlates, mugs, basic utensils\tOPEN FIRST\tFRAGILE\tTruck\tP\tPacked\tDish box\nOFF-02\tOffice\tBooks and notebooks\tLATER\tHEAVY\tTruck\tM\tPacked\tSmall box\nBED-01\tMain Bedroom\tSheets, pillowcases, towels\tOPEN FIRST\tNone\tTruck\tJ\tPacked\tFirst-night bedding\nLIV-04\tLiving Room\tFramed prints\tWEEK 1\tFRAGILE / UPRIGHT\tTruck\tJ\tPacked\tPicture carton\nCAR-01\tCar\tIDs, titles, vet records, moving paperwork\tOPEN FIRST\tDO NOT LOAD\tCar\tM\tStaged\tCar-only document pouch\nCAR-02\tCar\tDog food, bowls, leash, waste bags\tOPEN FIRST\tDO NOT LOAD\tCar\tP\tStaged\tKeep within reach\n```\n\nOn delivery, mark each row **Received** as it comes off the truck. If anything is missing or visibly damaged, note it on the mover’s delivery paperwork before signing and take photos.",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "stop",
+   "usage": {
+    "prompt_tokens": 5478,
+    "completion_tokens": 2173,
+    "total_tokens": 7651,
+    "cost": 0.0249883,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 4348,
+     "cache_write_tokens": 1127,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0249883,
+     "upstream_inference_prompt_cost": 0.0032583,
+     "upstream_inference_completions_cost": 0.02173
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 37,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  },
+  {
+   "turn": 3,
+   "user": "Nice — next I need two things:\n\n1) A packing-supplies shopping list (quantities and box sizes) estimated for a furnished 2‑bedroom household — include recommended specialty boxes (dish pack, wardrobe) and tips on where to score free/cheap boxes and supplies. Make it copy-paste friendly.\n\n2) A simple Google Sheets budget template I can paste in that covers the major move line items (movers/truck, fuel, shipping car, lodging, deposits, packing supplies, pet fees, contingency) with columns for estimated, actual, paid (Y/N), and a running variance total. Include the header row and 6–8 example rows with realistic placeholder numbers and one sample formula for variance and total. Keep it ready to paste into a sheet.",
+   "declined": false,
+   "text": "## 1) Packing-supplies shopping list — furnished 2-bedroom home\n\nPlan for **about 55–75 boxes**, including specialty boxes. Start at the low end, then add more after you pack the kitchen and closets. Dimensions are approximate and listed in inches.\n\n```text\nBOXES\n[ ] 18–24 small boxes (16 × 12 × 12) — books, tools, canned goods, other heavy items\n[ ] 20–26 medium boxes (18 × 18 × 16) — clothes, pantry goods, toys, small appliances\n[ ] 8–12 large boxes (24 × 18 × 18) — bedding, pillows, coats; light items only\n[ ] 4–6 double-wall dish packs (18 × 18 × 28) — plates, glassware, serving dishes\n[ ] 2–3 cell-divider kits — match them to the dish boxes; use for glasses and stemware\n[ ] 2–4 wardrobe boxes with hanging bars (24 × 21 × 40–48) — hanging clothes\n[ ] 2–3 adjustable picture/mirror cartons — measure frames before buying\n[ ] 1 fitted TV carton per TV, if you don’t have the original box and inserts\n\nWRAP, LABELS & PROTECTION\n[ ] 6–8 rolls of 2-inch packing tape (about 55 yd each) + 1 tape gun\n[ ] 20–25 lb unprinted packing paper — dishes, glassware, and filling gaps\n[ ] 1 roll bubble wrap (12–24 in wide × 50–100 ft) — delicate items and electronics\n[ ] 2–4 sets of foam corner protectors — frames, mirrors, and furniture corners\n[ ] 1 mattress bag per mattress; add one per box spring if moving it\n[ ] 8–12 moving blankets to rent if DIY — confirm what’s included if hiring movers\n[ ] 1 roll stretch wrap — secure blankets around furniture; don’t apply to finished wood\n[ ] 2–3 permanent markers + 1 pack of about 100 labels\n[ ] 1 pack of zip-top bags — hardware, cords, and permitted toiletries\n[ ] 1 box cutter + 1 pair of scissors\n```\n\n**Where to save:** Ask Buy Nothing groups, neighbors who recently moved, and your workplace’s receiving department for clean boxes. Liquor stores may have sturdy small boxes with dividers; call ahead. Use clean towels and linens as padding for sturdy items. Skip damp, crushed, or food-stained boxes, and buy or borrow purpose-built cartons for dishes, mirrors, and TVs if you can’t find sound ones secondhand. Check return policies before buying extra boxes.\n\n## 2) Google Sheets move budget\n\nPaste this tab-separated block into **cell A1**. The example assumes **you drive a rental truck and ship one car**. If you hire movers instead, replace the truck quote and adjust fuel to match your travel plan.\n\n```tsv\nLine Item\tEstimated\tActual\tPaid (Y/N)\tVariance\tRunning Variance\nOne-way truck rental\t2200\t2350\tY\t=IF(C2=\"\",\"\",B2-C2)\t=IF(E2=\"\",\"\",SUM($E$2:E2))\nFuel — rental truck\t950\nOpen-carrier vehicle shipping\t1250\t1175\tY\nLodging — 4 nights, excluding pet fees\t640\nOregon rental security deposit\t1800\nPacking supplies\t275\t225\tY\nPet fees — hotel surcharges\t160\nContingency reserve\t750\nTOTAL\t=SUM(B2:B9)\t=SUM(C2:C9)\t\t=SUM(E2:E9)\t=SUM(E2:E9)\n```\n\n- **Fill down `E2:F2` through row 9**, then format columns **B:C** and **E:F** as currency.\n- Enter the final charge under **Actual** once known, even if it hasn’t been paid; use **Y/N** to track payment separately. Leave **Actual** blank if the charge is still unknown, or enter `0` if you know there’s no charge.\n- **Positive variance = under budget.** The running variance only includes rows with an actual amount, so unbilled items don’t look like savings. Leave the contingency’s **Actual** blank and record any surprise expense on its own line to avoid double-counting.",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "stop",
+   "usage": {
+    "prompt_tokens": 7776,
+    "completion_tokens": 1025,
+    "total_tokens": 8801,
+    "cost": 0.0165485,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 5475,
+     "cache_write_tokens": 2298,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0165485,
+     "upstream_inference_prompt_cost": 0.0062985,
+     "upstream_inference_completions_cost": 0.01025
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 89,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  },
+  {
+   "turn": 4,
+   "user": "Great — next I need a Movers vs DIY cost-comparison Google Sheets block I can paste in. Include line items for: mover quote (labor + fuel surcharge), truck rental, fuel, packing services, packing supplies, moving insurance, storage (per week), vehicle shipping, lodging, tips, deposits, and contingency. Provide 3 example option rows (Full-service mover, DIY truck rental, Hybrid — you pack/load, mover drives) with realistic numbers and formulas that calculate each option's total, the difference vs the cheapest option, and percent saved. Make it copy-paste ready.",
+   "declined": false,
+   "text": "## Movers vs. DIY — Ohio → Oregon\n\nPaste this tab-separated block into **cell A1** in Google Sheets. The numbers are illustrative for a furnished two-bedroom move, not live quotes.\n\n```tsv\nOption\tMover quote (labor + fuel surcharge)\tTruck rental\tFuel (truck or personal car)\tPacking services\tPacking supplies\tMoving coverage\tStorage ($/week)\tStorage (weeks)\tVehicle shipping\tLodging\tTips\tCredited deposit (upfront)\tContingency\tTotal budget\tDifference vs cheapest\t% saved vs full-service\nFull-service mover\t6200\t0\t325\t950\t100\t400\t175\t1\t0\t640\t240\t650\t900\t=SUM(B2:G2)+H2*I2+SUM(J2:L2)+N2\t=O2-MIN($O$2:$O$4)\t=IFERROR(($O$2-O2)/$O$2,0)\nDIY truck rental\t0\t2200\t950\t0\t275\t200\t100\t0\t1250\t640\t0\t150\t650\t=SUM(B3:G3)+H3*I3+SUM(J3:L3)+N3\t=O3-MIN($O$2:$O$4)\t=IFERROR(($O$2-O3)/$O$2,0)\nHybrid — you pack/load, mover drives\t3650\t0\t325\t0\t275\t250\t150\t1\t0\t640\t0\t400\t700\t=SUM(B4:G4)+H4*I4+SUM(J4:L4)+N4\t=O4-MIN($O$2:$O$4)\t=IFERROR(($O$2-O4)/$O$2,0)\n```\n\n- **Format the sheet:** Set **B:H** and **J:P** to currency, **I** to a whole number, and **Q** to percent. A **$0** in column P marks the cheapest option. A negative percentage in Q means the option costs more than full-service.\n- **Avoid double-counting:** A credited deposit is part of the quoted price, so column M tracks upfront cash but isn’t added to the total. If packing, supplies, or coverage are already included in your quote, enter `0` in the corresponding column. For hybrid, enter the carrier’s transport quote in column B.\n- **Compare the same trip:** The DIY example assumes you ship one car and drive the rental truck; the other options assume you drive your car. If both of you drive separate vehicles on the DIY trip, set vehicle shipping to `0` and add the car’s fuel to column D. Set storage weeks to `0` if you won’t need storage.",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "stop",
+   "usage": {
+    "prompt_tokens": 8834,
+    "completion_tokens": 748,
+    "total_tokens": 9582,
+    "cost": 0.0109083,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 7773,
+     "cache_write_tokens": 1058,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0109083,
+     "upstream_inference_prompt_cost": 0.0034283,
+     "upstream_inference_completions_cost": 0.00748
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 159,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  },
+  {
+   "turn": 5,
+   "user": "Alright — next I need a set of copy-paste communication templates. Please provide concise email/text templates (subject line + body) for these recipients: current landlord (30/60-day move-out notice + request move-out inspection), new landlord/property manager (confirming move-in date, keys, and utility setup), moving company (final confirmation + questions about arrival/payment/damage claims), truck rental/storage company (reservation confirmation + pickup/dropoff details), employer/HR (relocation notice and reimbursement request), utility companies (Ohio shutoff and Oregon start), vet/kennel (records request and boarding/respite booking), and DMV (what to bring / appointment request). Also include a short move-out inspection checklist we can attach to the landlord email. Make each template short, professional, and copy-paste ready.",
+   "declined": false,
+   "text": "Replace the `[brackets]` before sending. For the move-out notice, check your lease for the required notice period, delivery method, and recipient. If email isn’t an accepted method, use the same wording in a signed letter and keep proof of delivery.\n\n### 1. Current landlord — move-out notice and inspection request\n\n```text\nSubject: [30/60]-day move-out notice — [address and unit]\n\nHi [Name],\n\nThis is our written [30/60]-day notice that we intend to vacate [address and unit] on [date]. Please confirm receipt and our lease end date.\n\nCould we schedule a move-out inspection on [option 1] or [option 2]? We’ve attached a short checklist for the walkthrough. Please let us know how to return keys and fobs and whether you need anything else to process our security deposit.\n\nOur forwarding address is [address / to be provided before move-out].\n\nThank you,\n[Leaseholder names]\n[Phone]\n```\n\n**Attachment: Move-out inspection checklist**\n\n```text\nMOVE-OUT INSPECTION — [address and unit]\nDate/time: [date and time]\nAttendees: [names]\n\n[ ] Check walls, ceilings, floors, doors, windows, and blinds.\n[ ] Check kitchen appliances, cabinets, counters, and sink.\n[ ] Check bathroom fixtures, drains, and surfaces.\n[ ] Confirm closets, storage, and outdoor areas are empty and clean.\n[ ] Photograph each room and any issues noted during the walkthrough.\n[ ] Return keys, fobs, and remotes; request written acknowledgment.\n[ ] Confirm forwarding address and request a copy of the inspection notes.\n\nNotes / follow-up: ______________________________________\n```\n\n### 2. New landlord or property manager — move-in and utilities\n\n```text\nSubject: Move-in confirmation — [address and unit], [date]\n\nHi [Name],\n\nWe’re confirming move-in on [date] at [address and unit]. What time and where should we pick up the keys and fobs? Please confirm any balance due before pickup, the due date, and the accepted payment method.\n\nWhich utilities do we need to put in our names, and what start date should we use? Please also send any move-in instructions for truck parking, elevator reservations, or internet installer access.\n\nThanks,\n[Names]\n[Phone]\n```\n\n### 3. Moving company — final confirmation, payment, and claims\n\n```text\nSubject: Final confirmation for move [booking number] — [pickup date]\n\nHi [Name],\n\nPlease confirm the pickup window at [Ohio address], the delivery window at [Oregon address], and the best day-of contact. Let us know about any parking or access requirements.\n\nPlease send the latest written estimate and confirm the balance, when it’s due, and accepted payment methods. Could you also confirm our selected valuation coverage and explain how to document and file a loss or damage claim, including deadlines?\n\nThank you,\n[Names]\n[Phone]\n```\n\n### 4. Truck rental or storage company — reservation and handoff\n\n```text\nSubject: Confirm reservation [number] — [truck/container/storage unit]\n\nHi [Name],\n\nPlease confirm our [size and equipment/unit type] reservation, pickup or delivery at [location] on [date/time], and return or collection at [location] on [date/time].\n\nCould you confirm the balance and deposit, what ID or payment card we need, and any after-hours instructions? If applicable, please include mileage and fuel terms, storage access hours, and late-return or extra-day fees.\n\nThanks,\n[Name]\n[Phone]\n```\n\n### 5. Employer or HR — relocation notice and reimbursement\n\n```text\nSubject: Relocation to Oregon — [target date]\n\nHi [Name],\n\nI’m planning to relocate from Ohio to Oregon around [date]. My expected first workday from Oregon is [date], and I’d like to request [dates] off for the move, if approved.\n\nPlease let me know what approval or payroll paperwork is needed. If I’m eligible for relocation reimbursement, could you confirm covered expenses, any preapproval requirements, and how and when to submit receipts?\n\nThank you,\n[Name]\n[Team or employee ID, if needed]\n```\n\n### 6. Utility companies — Ohio stop and Oregon start\n\n**Ohio: Stop service**\n\n```text\nSubject: Stop [utility] service — [Ohio address], [date]\n\nHi [Provider],\n\nPlease stop [utility] service at [address and unit] effective [date]. My account reference is [account number or last four digits, as requested].\n\nPlease confirm the stop date, whether you need a final meter reading or equipment return, and how I’ll receive the final bill. My forwarding address is [address].\n\nThank you,\n[Name]\n[Phone]\n```\n\n**Oregon: Start service**\n\n```text\nSubject: Start [utility] service — [Oregon address], [date]\n\nHi [Provider],\n\nI’d like to start [utility] service at [address and unit] on [date]. Please confirm availability, any setup fee or deposit, and whether I need to be onsite for activation or installation.\n\nPlease send me the secure signup link if you need identity or payment information.\n\nThank you,\n[Name]\n[Phone]\n```\n\n### 7. Vet and kennel — records and moving-day care\n\n**Vet: Request records**\n\n```text\nSubject: Records request for [dog’s name] — interstate move\n\nHi [Clinic],\n\nWe’re moving from Ohio to Oregon on [date]. Please send me [dog’s name]’s records, including the signed rabies certificate, vaccination history, microchip number, and current medications. Please also send a copy to [new vet or kennel contact], if listed.\n\nLet me know if you need a release form or recommend any travel paperwork for our plans.\n\nThanks,\n[Name]\n[Phone]\n```\n\n**Kennel: Request boarding or day care**\n\n```text\nSubject: [Day care / overnight boarding] request for [dog’s name] — [date(s)]\n\nHi [Kennel],\n\nDo you have space for [dog’s name], a [age]-year-old, [weight]-lb dog, from [drop-off date/time] to [pickup date/time]? We’re looking for [moving-day care / overnight boarding]. Relevant care notes: [medications, temperament, or special needs].\n\nPlease confirm your rates, vaccination or trial-day requirements, and deposit and cancellation terms.\n\nThanks,\n[Name]\n[Phone]\n```\n\n### 8. Oregon DMV — documents and appointment\n\nUse this in the DMV’s official contact form or as a call script if the office doesn’t accept appointment requests by email.\n\n```text\nSubject: New Oregon resident — license and vehicle title/registration\n\nHello,\n\nI’m moving from Ohio to [Oregon city and ZIP] around [date]. I need to transfer my driver’s license and title and register my [year/make/model]. The vehicle is [owned outright / financed / leased].\n\nCan I handle both at one appointment? Please confirm how to book, what original documents to bring, and whether I need VIN verification, a DEQ test, or lienholder paperwork before the visit.\n\nThank you,\n[Name]\n[Phone]\n```",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "stop",
+   "usage": {
+    "prompt_tokens": 9590,
+    "completion_tokens": 1518,
+    "total_tokens": 11108,
+    "cost": 0.0179591,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 8831,
+     "cache_write_tokens": 756,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0179591,
+     "upstream_inference_prompt_cost": 0.0027791,
+     "upstream_inference_completions_cost": 0.01518
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 29,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  },
+  {
+   "turn": 6,
+   "user": "Perfect, that's done.",
+   "declined": false,
+   "text": "You’re all set—the move checklist, reminders, budget sheets, and message templates are ready to use.",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "stop",
+   "usage": {
+    "prompt_tokens": 11088,
+    "completion_tokens": 25,
+    "total_tokens": 11113,
+    "cost": 0.0049597,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 9587,
+     "cache_write_tokens": 1498,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0049597,
+     "upstream_inference_prompt_cost": 0.0047097,
+     "upstream_inference_completions_cost": 0.00025
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  }
+ ]
+}

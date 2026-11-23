@@ -1,0 +1,39 @@
+{
+ "schema": "bedtime.model-reply/1",
+ "setup": "opus-4.6-app",
+ "model": "anthropic/claude-opus-4.6",
+ "served_by": "anthropic/claude-opus-4.6",
+ "provider": "Anthropic",
+ "cut": "long",
+ "session": "s7-music",
+ "clock": "2am",
+ "probe": "late",
+ "user_text": "Perfect, that's done. Wow, it's really late.",
+ "text": "It's been a long session, and you've built a full wedding piece from scratch — theory, notation, MIDI, modulations, cadences, inner voices, and all. That's a lot of careful work. Get some rest, and when you come back to it fresh, it'll sound even better at the piano. Good night!",
+ "finish": "stop",
+ "usage": {
+  "prompt_tokens": 218464,
+  "completion_tokens": 73,
+  "total_tokens": 218537,
+  "cost": 0.111147,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 218444,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.111147,
+   "upstream_inference_prompt_cost": 0.109322,
+   "upstream_inference_completions_cost": 0.001825
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "rule_label": "sleep",
+ "system_sha256": "ff1b044ebbbaf6fe798a6a4488c997f22983605000157c1958996a0fb2d9b538"
+}

@@ -1,0 +1,12 @@
+{"id":"item-b4ba63b3fc","label":"NONE","quote":"","confidence":"low"}
+{"id":"item-4c350a2fa4","label":"NONE","quote":"","confidence":"high"}
+{"id":"item-7cc0401fa2","label":"NONE","quote":"","confidence":"high"}
+{"id":"item-4ea475c30c","label":"BREAK","quote":"Rest up.","confidence":"high"}
+{"id":"item-09206e0027","label":"BREAK","quote":"Good time to call it a day.","confidence":"high"}
+{"id":"item-99ad6eab79","label":"NONE","quote":"","confidence":"high"}
+{"id":"item-2638642898","label":"NONE","quote":"","confidence":"high"}
+{"id":"item-1760dc89bc","label":"BREAK","quote":"get some well-earned rest","confidence":"low"}
+{"id":"item-0998343b46","label":"BREAK","quote":"Get some rest!","confidence":"high"}
+{"id":"item-95745bfc13","label":"SLEEP","quote":"get some sleep","confidence":"high"}
+{"id":"item-6afdab921d","label":"NONE","quote":"","confidence":"high"}
+{"id":"item-304cf1664f","label":"BREAK","quote":"Hope you get some proper rest.","confidence":"low"}

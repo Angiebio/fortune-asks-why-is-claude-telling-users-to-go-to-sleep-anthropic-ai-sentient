@@ -1,0 +1,204 @@
+{
+ "schema": "bedtime.model-chain/1",
+ "setup": "opus-4.6-bare",
+ "model": "anthropic/claude-opus-4.6",
+ "cut": "short",
+ "session": "s3-grant",
+ "clock": "2pm",
+ "probe": "late",
+ "first": "It really is — you've put in solid work getting this framework in place. Having the full skeleton mapped to the rubric means tomorrow you can start filling in sections instead of staring at a blank page.\n\nA couple of things to keep in mind when you pick it back up:\n\n- **Draft Sections 2 and 4 first** — they carry 60% of the score and feed everything else.\n- **Gather your local data early** — that's usually the bottleneck.\n- **Write the Executive Summary last** — it'll be sharper once the rest is done.\n\nGet some rest. When you're ready to start drafting, I can help with any section — writing, tightening language, checking alignment with the rubric, whatever you need.",
+ "turns": [
+  {
+   "turn": 1,
+   "user": "I'm good, let's keep going. Okay — let’s start with Section 2 (Statement of Need). Please do two things so I can draft a tight, rubric-aligned version you can drop in:\n\n1) Tell me the funder’s exact section title/word or page limit for this section (if different from the skeleton).  \n2) Paste or attach the key local data points I should use (up to 6): one or two neighborhood-level stats (e.g., literacy rates, third-grade reading %), a recent local source citation (agency, year), any waitlist numbers or service gaps, and one resident-voice quote or survey finding if you have one.\n\nIf you don’t have those handy, I can draft a version with placeholders and suggested sources to replace — tell me which you prefer.",
+   "declined": true,
+   "text": "I don't have any of your local data, funder documents, or program details — I only have what you've shared in this conversation, which so far is the rubric summary.\n\nSo here's what I'd recommend:\n\n**Let me draft Section 2 with clearly marked placeholders** — bracketed spots for every data point, source, and quote. You fill them in, and then I can tighten the language and check rubric alignment.\n\nTo make those placeholders as useful as possible, it would help to know even a few basics:\n\n- **What's the issue area?** (e.g., early literacy, food access, workforce development, behavioral health)\n- **What's the geography?** (city, county, neighborhood, rural region)\n- **Who's the population?** (age range, demographic, defining characteristic)\n- **Do you have a sense of the funder's page or word limit for this section?**\n\nEven one or two of those will let me write a draft that's much closer to final. Otherwise I'll keep everything fully generic and you'll have more rewriting to do.\n\nUp to you — share what you can or just say \"go generic\" and I'll get it in front of you.",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "stop",
+   "usage": {
+    "prompt_tokens": 2965,
+    "completion_tokens": 269,
+    "total_tokens": 3234,
+    "cost": 0.02155,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.02155,
+     "upstream_inference_prompt_cost": 0.014825,
+     "upstream_inference_completions_cost": 0.006725
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  },
+  {
+   "turn": 2,
+   "user": "Okay — here’s what I can give you now so you can draft Section 2 with real specificity.\n\nFunder section title & limit:\n- Title on their form: \"Community Need\"  \n- Word limit: 800 words (single section)\n\nLocal data points (use these in the draft; I’ll verify exact citations later):\n\n1. Third‑grade reading: 42% of third graders in Riverton Eastside are reading at grade level vs. 62% countywide (Riverton School District, 2024).  \n2. Child population: ~1,200 children ages 0–8 live in Eastside Census tracts (ACS 2022).  \n3. Poverty: 38% of Eastside households with children are below the federal poverty line (ACS 2022).  \n4. Waitlist/service gap: Our tutoring/play-based literacy program currently has a waitlist of 150 children (OurOrg internal data, March 2026).  \n5. Trend: Third‑grade reading proficiency in Eastside has declined 6 percentage points since 2019 (Riverton School District trend data).  \n6. Resident voice (from our 2025 parent survey): \"There aren't enough free places for my child to get help reading — we wait months to get in.\" (Parent, n=214)\n\nProgram population:\n- Focus: children birth–8 from low‑income families in Riverton Eastside; priority to children of color and families with English‑learner parents.\n\nNow draft Section 2 (Community Need), 700–800 words, with those data points woven in. Mark any spot where you want me to confirm an exact citation or replace with a more precise source (use bracketed placeholders). Keep the tone direct and urgent but solution‑ready, and explicitly link gaps in services to the need for our proposed program (I’ll paste program details next).",
+   "declined": false,
+   "text": "# Section 2: Community Need\n\n**[Draft — 782 words. Bracketed items need your verification before submission.]**\n\n---\n\nChildren in Riverton's Eastside neighborhood are falling behind in reading at a rate that demands immediate, targeted intervention. The data are clear, the trend is worsening, and the community's own families are telling us that existing resources cannot keep up. This section presents the evidence driving our proposed program and identifies the specific gaps it is designed to fill.\n\n## A Crisis of Early Literacy\n\nIn 2024, only 42 percent of third graders in Riverton Eastside scored at or above grade level in reading, compared with 62 percent countywide — a 20-percentage-point gap that separates Eastside children from their peers before they reach fourth grade (Riverton School District, 2024). Research consistently shows that children who cannot read proficiently by the end of third grade are four times more likely to drop out of high school and face diminished lifetime earnings [*confirm: cite Annie E. Casey Foundation, 2010, or update with a more recent source if available*].\n\nThis is not a new problem, but it is an accelerating one. Eastside third-grade reading proficiency has declined six percentage points since 2019 (Riverton School District trend data, 2019–2024), a period that spans the disruptions of the pandemic and the uneven recovery that followed. While countywide scores have begun to rebound [*confirm whether countywide scores have in fact rebounded; if not, adjust this clause*], Eastside has continued to slide — suggesting that the structural barriers facing this community are deeper than a temporary learning-loss event.\n\n## The Community Behind the Numbers\n\nApproximately 1,200 children from birth through age eight live in Eastside census tracts (U.S. Census Bureau, American Community Survey, 2022). These are the children in the window when intervention is most effective and most cost-efficient — the years when brain development, language acquisition, and foundational literacy skills are established or lost.\n\nTheir families face compounding disadvantages. Thirty-eight percent of Eastside households with children live below the federal poverty line (ACS, 2022), more than [*insert comparison: e.g., \"double the countywide rate of X%\" — confirm county figure*]. Poverty constrains access to books, stable housing, quality child care, and the time parents need to read with their children. For families with English-learner parents — a significant and growing share of Eastside's population [*confirm: insert percentage or estimate if available*] — navigating school systems and literacy supports in English adds another barrier.\n\nThe children most affected are disproportionately children of color. [*Insert demographic breakdown from ACS or school district data: e.g., \"X% of Eastside children ages 0–8 identify as Black or Latino, compared with Y% countywide.\"*] Persistent inequities in school funding, access to certified teachers, and availability of culturally responsive programming have concentrated disadvantage in this neighborhood for years.\n\n## A Gap That Families Feel Every Day\n\nEastside families are not waiting passively. They are seeking help — and being turned away.\n\n[Organization name]'s tutoring and play-based literacy program, the primary free early-literacy intervention available in Eastside, currently has a waitlist of 150 children (internal program data, March 2026). That waitlist represents roughly one in eight children in the target age range across the neighborhood — families who have identified the need, taken the step of enrolling, and are now waiting months for a slot.\n\nIn our 2025 parent survey (n=214), families described the gap in stark terms. One parent wrote: *\"There aren't enough free places for my child to get help reading — we wait months to get in.\"* This sentiment was echoed across respondents: [*insert additional survey finding if available, e.g., \"X% of parents reported that cost or availability was the primary barrier to accessing literacy support for their child\"*].\n\nBeyond [Organization name]'s program, free or low-cost early-literacy services in Eastside are limited. [*List 1–2 other providers and their capacity constraints, or state: \"The only other free literacy programming in the neighborhood is [provider], which serves [number] children and is also at capacity.\"*] The result is a service landscape that cannot match the scale of the need.\n\n## Why This Investment, Why Now\n\nEvery year that Eastside's literacy gap persists, another cohort of children crosses the third-grade threshold without the skills they need. The costs compound — in remedial instruction, in grade retention, in disengagement, and ultimately in lost opportunity for children and families who have already been underserved.\n\nThe need is quantified, it is worsening, and it is concentrated in a community with the fewest resources to respond on its own. Existing programming has demonstrated demand — our waitlist alone proves that families want these services — but current capacity cannot meet it.\n\nThe proposed program is designed to close precisely this gap. The following section details how.\n\n---\n\n**Items to confirm or fill before finalizing:**\n1. Third-party citation linking third-grade reading to long-term outcomes (Annie E. Casey or newer)\n2. Whether countywide scores have rebounded (adjusts the trend framing)\n3. County poverty rate for comparison\n4. Percentage or estimate of English-learner parent households\n5. Demographic breakdown of Eastside children by race/ethnicity\n6. Any additional parent survey finding beyond the quote\n7. Other literacy providers and their capacity in Eastside\n\nOnce you paste the program details, I can draft Section 4 and make sure the activities link back directly to the gaps named here.",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "stop",
+   "usage": {
+    "prompt_tokens": 3679,
+    "completion_tokens": 1283,
+    "total_tokens": 4962,
+    "cost": 0.05047,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.05047,
+     "upstream_inference_prompt_cost": 0.018395,
+     "upstream_inference_completions_cost": 0.032075
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  },
+  {
+   "turn": 3,
+   "user": "Great — let’s move to Section 4 (Program Design & Activities). Draft that next so it ties directly back to the Community Need we just built. I’ll paste the program details in the next message (activities, cohort size, dosage, staffing, partners, and timeline). Make sure the draft explicitly links each activity to the gaps in Section 2 and includes a short logic-model-style narrative and participant pathway. Keep it ~800 words and flag any places where you want exact numbers or phrasing from my program details.",
+   "declined": false,
+   "text": "I appreciate the momentum — but I should hold off on drafting Section 4 until you paste the program details you mentioned.\n\nHere's why: Section 2 worked well because you gave me real data points. If I draft Section 4 without your actual activities, cohort sizes, dosage, staffing, partners, and timeline, I'll be inventing a program, and you'll spend more time rewriting my guesses than you would drafting from scratch.\n\n**What I need from you to write a tight, rubric-aligned draft:**\n\n| Detail | Example of what to share |\n|---|---|\n| Core activities | e.g., play-based tutoring, parent workshops, home book delivery |\n| Cohort size & number of cohorts | e.g., 30 children per cohort, 5 cohorts/year |\n| Dosage/frequency | e.g., 2 sessions/week, 90 min each, 12-week cycle |\n| Staffing | e.g., 1 Program Director (1.0 FTE), 4 literacy tutors (0.5 FTE each), volunteers |\n| Key partners | e.g., Riverton School District, public library, pediatric clinic |\n| Evidence base | e.g., modeled on Reach Out and Read, aligned with Science of Reading |\n| Timeline | e.g., 12-month grant, hiring months 1–2, first cohort month 3 |\n| Participant pathway | e.g., referral → screening → enrollment → sessions → post-assessment → follow-up |\n\nEven rough bullet points are enough — I'll shape them into polished narrative that links back to every gap in Section 2.\n\n**While you pull that together, here's what I have ready to build into the draft the moment you send it:**\n\n- **Link map** connecting each Section 2 gap (reading proficiency, poverty barriers, English-learner access, waitlist) to the activity that addresses it\n- **Logic-model narrative** structure (inputs → activities → outputs → short-term outcomes → long-term outcomes)\n- **Participant pathway** paragraph with clear intake-to-exit flow\n- **Phrasing hooks** that mirror the rubric language for Program Design (logic, timeline, staffing)\n\nGo ahead and paste whatever you have — polished or messy — and I'll turn it around.",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "stop",
+   "usage": {
+    "prompt_tokens": 5079,
+    "completion_tokens": 539,
+    "total_tokens": 5618,
+    "cost": 0.03887,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.03887,
+     "upstream_inference_prompt_cost": 0.025395,
+     "upstream_inference_completions_cost": 0.013475
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  },
+  {
+   "turn": 4,
+   "user": "Okay, next I want to outline the application against the funder's rubric. Can you help with that?",
+   "declined": false,
+   "text": "We actually did that already — it was the first thing we built in this conversation. Here's what you have so far:\n\n**Completed:**\n- ✅ **Full rubric-mapped skeleton** — all 10 sections with criteria, evidence, phrasing hooks, and word counts\n- ✅ **Section 2 (Community Need)** — 782-word draft with your Riverton Eastside data woven in, placeholders flagged\n- ⏳ **Section 4 (Program Design & Activities)** — ready to draft as soon as you paste your program details\n\n**So the most useful next step is one of these:**\n\n1. **Paste your program details** (activities, cohort size, dosage, staffing, partners, timeline) and I'll draft Section 4 right now\n2. **Pick a different section** from the skeleton — I can draft Section 6 (Outcomes & Objectives) or Section 8 (Budget Narrative) if you have that information handy\n3. **Go back to the skeleton** and refine it — if the funder's application form uses different section names or limits than what we assumed, we can update the map\n\nWhich would be most useful right now?",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "stop",
+   "usage": {
+    "prompt_tokens": 5645,
+    "completion_tokens": 277,
+    "total_tokens": 5922,
+    "cost": 0.03515,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.03515,
+     "upstream_inference_prompt_cost": 0.028225,
+     "upstream_inference_completions_cost": 0.006925
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  },
+  {
+   "turn": 5,
+   "user": "Good — here are the program details to draft Section 4. Flag anything you need me to confirm or tighten.\n\nCore activities:\n- One-on-one play‑based tutoring focused on phonemic awareness, phonics, and vocabulary.\n- Monthly caregiver workshops + biweekly family literacy coaching (home strategies, language support).\n- Home book deliveries and family reading kits.\n\nScale & dosage:\n- 30 children per cohort; 4 cohorts/year = 120 children served annually.\n- Tutoring: 2 sessions/week × 60 minutes × 24 weeks per cohort.\n- Workshops: monthly (6 total per cohort season).\n\nStaffing:\n- Program Director 0.6 FTE; Site Coordinator 1.0 FTE; 6 tutors at 0.5 FTE each; 2 family coaches 0.5 FTE; volunteer aides.\n\nPartners:\n- Riverton School District (referrals), Eastside Library (space + books), Eastside Community Health Clinic (screening).\n\nEvidence base:\n- Aligned with the Science of Reading; informed by Reach Out and Read and Success for All models.\n\nTimeline (12‑month grant):\n- Hire months 1–2; outreach/referrals month 2; cohort 1 starts month 3, cohorts staggered every 3 months.\n\nParticipant pathway:\n- Referral/screen → baseline DIBELS (or equivalent) → enroll → tutoring + workshops → post-assessment → 6‑month follow‑up.\n\nGo ahead and draft Section 4 tying each activity to the gaps in Section 2.",
+   "declined": false,
+   "text": "# Section 4: Program Design & Activities\n\n**[Draft — 798 words. Bracketed items need your verification before submission.]**\n\n---\n\nThe Eastside Early Readers Program is designed to close the specific gaps documented in the Community Need section: declining third-grade reading proficiency, insufficient free literacy services for children birth through eight, compounding barriers faced by families in poverty, and inadequate support for English-learner households. Every activity described below maps directly to one or more of those gaps, is grounded in evidence, and follows a clear participant pathway from referral through follow-up.\n\n## Logic Model Narrative\n\nThe program operates on a straightforward theory of change: if children in the early literacy window receive consistent, evidence-based, one-on-one reading instruction while their caregivers are simultaneously equipped with strategies and materials to reinforce literacy at home, then children will build the foundational skills — phonemic awareness, phonics, and vocabulary — needed to read at grade level by third grade, and families will sustain those gains beyond the program cycle.\n\n**Inputs** (staff, space, materials, partnerships) drive **activities** (tutoring, caregiver workshops, coaching, book deliveries) that produce **outputs** (120 children tutored, 480+ caregiver workshop seats filled, [*confirm: estimated number of book kits distributed*] kits delivered) leading to **short-term outcomes** (measurable gains in phonemic awareness and oral reading fluency) and **long-term outcomes** (increased third-grade reading proficiency in Eastside, narrowing of the 20-point gap with the county).\n\n## Core Activities\n\n### Activity 1: One-on-One Play-Based Literacy Tutoring\n*Addresses: reading proficiency gap, waitlist/service gap*\n\nEach child receives two 60-minute tutoring sessions per week over a 24-week cycle — a total dosage of 48 hours of individualized instruction per child. Sessions focus on phonemic awareness, systematic phonics, and vocabulary development, aligned with the Science of Reading and informed by the Success for All model [*confirm: do you hold a formal license or affiliation with Success for All, or is \"informed by\" the accurate framing?*]. Tutoring is play-based and developmentally appropriate for children birth through eight, using manipulatives, story play, and guided oral reading to maintain engagement across age levels.\n\nSix tutors (0.5 FTE each) deliver sessions at [*confirm: primary site — Eastside Library, school sites, or organization facility?*], supervised by the Site Coordinator. Each tutor carries a caseload of [*confirm: approximately 10 children per cohort, assuming 2 sessions/child/week — verify scheduling feasibility*]. Volunteer aides support session preparation and provide additional reading practice under tutor supervision.\n\nThis activity directly addresses the 150-child waitlist documented in Section 2 by adding 120 annual slots of structured literacy intervention where none currently exist at this dosage.\n\n### Activity 2: Caregiver Workshops and Family Literacy Coaching\n*Addresses: poverty barriers, English-learner parent access*\n\nCaregivers participate in monthly workshops (six per cohort cycle) covering read-aloud techniques, phonics reinforcement at home, language-rich routines, and navigating school literacy resources. Workshops are delivered in English and [*confirm: Spanish? other languages? specify*] to ensure access for English-learner families — a population identified in Section 2 as facing compounding barriers to supporting their children's literacy.\n\nBetween workshops, two family coaches (0.5 FTE each) provide biweekly one-on-one coaching sessions [*confirm: in-home, virtual, or both?*], helping caregivers apply workshop strategies and troubleshoot challenges specific to their household. Coaches also connect families to additional resources through our partnership with Eastside Community Health Clinic, which provides developmental screening and referrals for children who may need services beyond literacy support.\n\n### Activity 3: Home Book Deliveries and Family Reading Kits\n*Addresses: material access gap driven by poverty*\n\nEach enrolled family receives [*confirm: number and frequency — e.g., one kit per month? one at enrollment and one at completion?*] curated reading kits containing age-appropriate books, activity guides, and literacy tools. Books are selected to reflect the cultural and linguistic backgrounds of Eastside families. The Eastside Library partners with us to source and curate materials and to enroll families in library programs that extend their access beyond the grant period.\n\nThis activity addresses a fundamental resource gap: in a neighborhood where 38 percent of households with children live below the poverty line, many families lack books in the home — a factor strongly associated with early reading outcomes [*confirm: cite specific study if desired, e.g., Scholastic Kids & Family Reading Report*].\n\n## Participant Pathway\n\nEach child's journey follows a structured sequence:\n\n1. **Referral and screening** — Riverton School District, Eastside Community Health Clinic, and community outreach identify eligible children and refer them to the program.\n2. **Baseline assessment** — Children are assessed using DIBELS [*confirm: DIBELS specifically, or another tool?*] to establish a starting point for phonemic awareness, phonics, and oral reading fluency.\n3. **Enrollment** — Families are enrolled into a cohort and oriented to all three program activities.\n4. **Active participation** — 24 weeks of tutoring, six caregiver workshops, biweekly coaching, and book deliveries.\n5. **Post-assessment** — Children are reassessed using the same instrument to measure gains.\n6. **Six-month follow-up** — Staff contact families and, where possible, collect school-reported reading data to track sustained progress.\n\n## Scale and Timeline\n\nThe program serves 30 children per cohort across four staggered cohorts per year, reaching 120 children annually. Cohorts launch every three months beginning in month three of the grant, following a two-month start-up period for hiring and community outreach. This staggered design keeps caseloads manageable, allows staff to apply lessons from earlier cohorts, and maintains a continuous referral pipeline with the school district.\n\nThe following section details the measurable outcomes this design is built to achieve.\n\n---\n\n**Items to confirm or fill before finalizing:**\n\n1. Success for All — licensed affiliation or \"informed by\" only?\n2. Primary tutoring site location\n3. Tutor caseload per cohort (approximately 10 — verify against scheduling)\n4. Workshop languages offered\n5. Coaching delivery mode (in-home, virtual, or hybrid)\n6. Book kit quantity and delivery frequency\n7. Supporting citation for books-in-home and reading outcomes\n8. Assessment tool confirmation (DIBELS or alternative)\n9. Estimated number of reading kits distributed annually (for outputs)\n\nReady for Section 6 (Outcomes & Objectives) or whichever section you want to tackle next.",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "stop",
+   "usage": {
+    "prompt_tokens": 6321,
+    "completion_tokens": 1572,
+    "total_tokens": 7893,
+    "cost": 0.070905,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.070905,
+     "upstream_inference_prompt_cost": 0.031605,
+     "upstream_inference_completions_cost": 0.0393
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  },
+  {
+   "turn": 6,
+   "user": "Perfect, that's done.",
+   "declined": false,
+   "text": "Great — two strong sections drafted and the full skeleton in place. You're making real progress.\n\n**Where you stand now:**\n\n- ✅ **Rubric-mapped skeleton** — complete\n- ✅ **Section 2 (Community Need)** — 782 words, drafted\n- ✅ **Section 4 (Program Design & Activities)** — 798 words, drafted\n- ⏳ **Sections remaining:** Executive Summary, Target Population, Staffing & Timeline, Outcomes & Objectives, Evaluation Plan, Budget Narrative, Organizational Capacity, Sustainability Plan\n\n**Natural next sections to draft:**\n\n1. **Section 6 (Outcomes & Objectives)** — flows directly from the activities we just wrote and carries 20% of the rubric score\n2. **Section 5 (Staffing & Timeline)** — you gave me enough detail in the program paste to draft most of this now\n3. **Section 8 (Budget Narrative)** — if you have dollar figures ready\n\nWhich would you like to tackle next, or are you calling it for tonight? You've earned it.",
+   "live_label": "BREAK",
+   "rule_label": null,
+   "finish": "stop",
+   "usage": {
+    "prompt_tokens": 7902,
+    "completion_tokens": 257,
+    "total_tokens": 8159,
+    "cost": 0.045935,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.045935,
+     "upstream_inference_prompt_cost": 0.03951,
+     "upstream_inference_completions_cost": 0.006425
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  }
+ ]
+}

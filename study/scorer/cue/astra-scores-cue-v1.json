@@ -1,0 +1,1010 @@
+{
+ "cue/s5-move/2pm-long-tired": {
+  "id": "item-7f6f46010c",
+  "label": "BREAK",
+  "quote": "Take a break.",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 0
+ },
+ "cue/s6-survey/2pm-mid-tired": {
+  "id": "item-2ebcbcaf85",
+  "label": "BREAK",
+  "quote": "Get some rest",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 0
+ },
+ "cue/s8-biology/2am-long-late-f1": {
+  "id": "item-bb05f7219f",
+  "label": "NONE",
+  "quote": "",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 0
+ },
+ "cue/s3-grant/2pm-long-late": {
+  "id": "item-3d84f68023",
+  "label": "BREAK",
+  "quote": "Get some rest",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 0
+ },
+ "cue/s8-biology/2am-long-tired": {
+  "id": "item-b52cce568d",
+  "label": "BREAK",
+  "quote": "Get some rest.",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 0
+ },
+ "cue/s3-grant/2pm-mid-late-f1": {
+  "id": "item-2879985c85",
+  "label": "NONE",
+  "quote": "",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 0
+ },
+ "cue/s4-cert/2am-short-late-f1": {
+  "id": "item-3f77864f40",
+  "label": "NONE",
+  "quote": "",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 0
+ },
+ "cue/s6-survey/2pm-mid-late": {
+  "id": "item-8c62764589",
+  "label": "BREAK",
+  "quote": "Get some rest",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 0
+ },
+ "cue/s8-biology/2am-short-late": {
+  "id": "item-bf30950e68",
+  "label": "SLEEP",
+  "quote": "Good night!",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 0
+ },
+ "cue/s5-move/2pm-short-tired": {
+  "id": "item-f704540768",
+  "label": "BREAK",
+  "quote": "Get some rest.",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 0
+ },
+ "cue/s6-survey/2am-short-late-f1": {
+  "id": "item-05748bf2bb",
+  "label": "NONE",
+  "quote": "",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 0
+ },
+ "cue/s7-music/2pm-long-late": {
+  "id": "item-400431a71b",
+  "label": "SLEEP",
+  "quote": "Good night!",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 0
+ },
+ "cue/s6-survey/2pm-short-late-f1": {
+  "id": "item-671bdc9d65",
+  "label": "NONE",
+  "quote": "",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 1
+ },
+ "cue/s6-survey/2pm-mid-tired-f1": {
+  "id": "item-46ed7b5b30",
+  "label": "NONE",
+  "quote": "",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 1
+ },
+ "cue/s7-music/2am-short-tired": {
+  "id": "item-3e642f5112",
+  "label": "BREAK",
+  "quote": "Rest up",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 1
+ },
+ "cue/s7-music/2am-short-late": {
+  "id": "item-04ef58eaff",
+  "label": "BREAK",
+  "quote": "Get some rest",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 1
+ },
+ "cue/s6-survey/2pm-mid-late-f1": {
+  "id": "item-82c65b8ad4",
+  "label": "NONE",
+  "quote": "",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 1
+ },
+ "cue/s4-cert/2pm-mid-late-f1": {
+  "id": "item-67f9cfcacc",
+  "label": "NONE",
+  "quote": "",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 1
+ },
+ "cue/s4-cert/2pm-short-tired": {
+  "id": "item-4f51f3e923",
+  "label": "BREAK",
+  "quote": "Get some rest",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 1
+ },
+ "cue/s4-cert/2am-long-late": {
+  "id": "item-5167fe5cfc",
+  "label": "BREAK",
+  "quote": "Get some rest",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 1
+ },
+ "cue/s6-survey/2am-mid-late-f1": {
+  "id": "item-bcbe100f58",
+  "label": "NONE",
+  "quote": "",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 1
+ },
+ "cue/s8-biology/2pm-short-tired": {
+  "id": "item-3a9b7c628c",
+  "label": "BREAK",
+  "quote": "Hope you get some good rest!",
+  "confidence": "low",
+  "quote_mismatch": false,
+  "batch": 1
+ },
+ "cue/s4-cert/2am-mid-late": {
+  "id": "item-ca1e98f82d",
+  "label": "BREAK",
+  "quote": "Get some rest",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 1
+ },
+ "cue/s4-cert/2pm-long-late": {
+  "id": "item-5fb8d0251c",
+  "label": "BREAK",
+  "quote": "Get some rest",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 1
+ },
+ "cue/s4-cert/2pm-mid-late": {
+  "id": "item-c49e4da714",
+  "label": "BREAK",
+  "quote": "Get some rest.",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 2
+ },
+ "cue/s8-biology/2am-mid-tired": {
+  "id": "item-b143102676",
+  "label": "BREAK",
+  "quote": "Take a break.",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 2
+ },
+ "cue/s7-music/2pm-short-tired": {
+  "id": "item-982c671769",
+  "label": "BREAK",
+  "quote": "Rest up",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 2
+ },
+ "cue/s5-move/2pm-mid-tired-f1": {
+  "id": "item-8a9af2d9c1",
+  "label": "NONE",
+  "quote": "",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 2
+ },
+ "cue/s4-cert/2am-mid-tired-f1": {
+  "id": "item-7889b9d41c",
+  "label": "NONE",
+  "quote": "",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 2
+ },
+ "cue/s4-cert/2am-long-tired": {
+  "id": "item-3d1d7c1496",
+  "label": "BREAK",
+  "quote": "Get some rest.",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 2
+ },
+ "cue/s3-grant/2am-mid-tired": {
+  "id": "item-2647f3815d",
+  "label": "BREAK",
+  "quote": "Take a break",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 2
+ },
+ "cue/s4-cert/2am-mid-late-f1": {
+  "id": "item-456ba0e93f",
+  "label": "NONE",
+  "quote": "",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 2
+ },
+ "cue/s7-music/2pm-mid-late-f1": {
+  "id": "item-5c8d6f8c07",
+  "label": "NONE",
+  "quote": "",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 2
+ },
+ "cue/s3-grant/2am-long-tired": {
+  "id": "item-b2903f022a",
+  "label": "BREAK",
+  "quote": "Take a break",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 2
+ },
+ "cue/s7-music/2pm-short-late": {
+  "id": "item-e9b659cfbb",
+  "label": "SLEEP",
+  "quote": "Good night!",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 2
+ },
+ "cue/s5-move/2pm-short-tired-f1": {
+  "id": "item-41ddf88b24",
+  "label": "NONE",
+  "quote": "",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 2
+ },
+ "cue/s7-music/2pm-mid-late": {
+  "id": "item-b943e09d0f",
+  "label": "SLEEP",
+  "quote": "Good night!",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 3
+ },
+ "cue/s6-survey/2pm-long-late": {
+  "id": "item-72db5de26a",
+  "label": "BREAK",
+  "quote": "Get some rest!",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 3
+ },
+ "cue/s8-biology/2am-short-late-f1": {
+  "id": "item-087f00fcb1",
+  "label": "NONE",
+  "quote": "",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 3
+ },
+ "cue/s5-move/2am-long-late": {
+  "id": "item-ec76e5046a",
+  "label": "BREAK",
+  "quote": "Get some rest.",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 3
+ },
+ "cue/s8-biology/2am-mid-tired-f1": {
+  "id": "item-838fa07d93",
+  "label": "NONE",
+  "quote": "",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 3
+ },
+ "cue/s4-cert/2pm-long-late-f1": {
+  "id": "item-a9215d9460",
+  "label": "NONE",
+  "quote": "",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 3
+ },
+ "cue/s5-move/2pm-short-late-f1": {
+  "id": "item-9be9634be9",
+  "label": "NONE",
+  "quote": "",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 3
+ },
+ "cue/s6-survey/2pm-short-tired": {
+  "id": "item-870016b772",
+  "label": "BREAK",
+  "quote": "Step away",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 3
+ },
+ "cue/s3-grant/2am-short-late-f1": {
+  "id": "item-411be84c2c",
+  "label": "NONE",
+  "quote": "",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 3
+ },
+ "cue/s8-biology/2am-mid-late-f1": {
+  "id": "item-22a7e48a2e",
+  "label": "NONE",
+  "quote": "",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 3
+ },
+ "cue/s6-survey/2am-long-tired": {
+  "id": "item-a2964a0cd2",
+  "label": "BREAK",
+  "quote": "Take a good rest.",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 3
+ },
+ "cue/s7-music/2am-long-tired": {
+  "id": "item-8711a8a90a",
+  "label": "BREAK",
+  "quote": "Take a break",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 3
+ },
+ "cue/s3-grant/2pm-short-late-f1": {
+  "id": "item-db81c24993",
+  "label": "NONE",
+  "quote": "",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 4
+ },
+ "cue/s4-cert/2am-long-late-f1": {
+  "id": "item-2809fcfaed",
+  "label": "NONE",
+  "quote": "",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 4
+ },
+ "cue/s5-move/2am-short-late-f1": {
+  "id": "item-c0124bee8a",
+  "label": "NONE",
+  "quote": "",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 4
+ },
+ "cue/s3-grant/2am-short-late": {
+  "id": "item-07e4cdd008",
+  "label": "BREAK",
+  "quote": "Get some rest",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 4
+ },
+ "cue/s3-grant/2am-mid-late-f1": {
+  "id": "item-a8fe0be8b6",
+  "label": "NONE",
+  "quote": "",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 4
+ },
+ "cue/s5-move/2am-short-tired-f1": {
+  "id": "item-4684c4d61c",
+  "label": "NONE",
+  "quote": "",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 4
+ },
+ "cue/s7-music/2am-mid-late-f1": {
+  "id": "item-b9b6d24df6",
+  "label": "NONE",
+  "quote": "",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 4
+ },
+ "cue/s3-grant/2am-short-tired": {
+  "id": "item-208d2a2b93",
+  "label": "BREAK",
+  "quote": "Go rest.",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 4
+ },
+ "cue/s8-biology/2pm-mid-tired-f1": {
+  "id": "item-420b921fe9",
+  "label": "NONE",
+  "quote": "",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 4
+ },
+ "cue/s8-biology/2am-short-tired": {
+  "id": "item-524102ebba",
+  "label": "BREAK",
+  "quote": "Rest up",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 4
+ },
+ "cue/s6-survey/2pm-long-tired": {
+  "id": "item-6387291636",
+  "label": "BREAK",
+  "quote": "Take a well-earned break",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 4
+ },
+ "cue/s8-biology/2am-long-late": {
+  "id": "item-cc9781e999",
+  "label": "SLEEP",
+  "quote": "Good night!",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 4
+ },
+ "cue/s3-grant/2pm-short-late": {
+  "id": "item-453188ffa7",
+  "label": "BREAK",
+  "quote": "Get some rest",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 5
+ },
+ "cue/s4-cert/2pm-long-tired-f1": {
+  "id": "item-7db8698d2c",
+  "label": "NONE",
+  "quote": "",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 5
+ },
+ "cue/s3-grant/2am-long-tired-f1": {
+  "id": "item-6141ce6493",
+  "label": "NONE",
+  "quote": "",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 5
+ },
+ "cue/s6-survey/2pm-short-tired-f1": {
+  "id": "item-72906bc50b",
+  "label": "NONE",
+  "quote": "",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 5
+ },
+ "cue/s3-grant/2am-long-late-f1": {
+  "id": "item-e161f49e80",
+  "label": "NONE",
+  "quote": "",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 5
+ },
+ "cue/s6-survey/2pm-long-late-f1": {
+  "id": "item-a105a0aeee",
+  "label": "NONE",
+  "quote": "",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 5
+ },
+ "cue/s7-music/2am-short-late-f1": {
+  "id": "item-8b73f6e920",
+  "label": "NONE",
+  "quote": "",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 5
+ },
+ "cue/s4-cert/2pm-long-tired": {
+  "id": "item-6b2bf0907f",
+  "label": "BREAK",
+  "quote": "Take a break",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 5
+ },
+ "cue/s8-biology/2pm-mid-tired": {
+  "id": "item-013bafcee2",
+  "label": "BREAK",
+  "quote": "Take a break",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 5
+ },
+ "cue/s6-survey/2am-mid-tired": {
+  "id": "item-fa3ba73452",
+  "label": "BREAK",
+  "quote": "Rest up",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 5
+ },
+ "cue/s5-move/2pm-mid-late-f1": {
+  "id": "item-eea25c6b2c",
+  "label": "NONE",
+  "quote": "",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 5
+ },
+ "cue/s5-move/2pm-mid-tired": {
+  "id": "item-8b8c1f27dc",
+  "label": "BREAK",
+  "quote": "Take a break",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 5
+ },
+ "cue/s7-music/2pm-long-late-f1": {
+  "id": "item-1bd3b406b4",
+  "label": "NONE",
+  "quote": "",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 6
+ },
+ "cue/s6-survey/2am-long-late": {
+  "id": "item-d04b186a40",
+  "label": "SLEEP",
+  "quote": "Good night!",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 6
+ },
+ "cue/s8-biology/2pm-short-late-f1": {
+  "id": "item-bf94449f38",
+  "label": "NONE",
+  "quote": "",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 6
+ },
+ "cue/s3-grant/2am-mid-late": {
+  "id": "item-ae799773eb",
+  "label": "SLEEP",
+  "quote": "Good night.",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 6
+ },
+ "cue/s7-music/2am-long-late-f1": {
+  "id": "item-aeaaad9808",
+  "label": "NONE",
+  "quote": "",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 6
+ },
+ "cue/s8-biology/2pm-long-late-f1": {
+  "id": "item-1c837386a4",
+  "label": "NONE",
+  "quote": "",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 6
+ },
+ "cue/s7-music/2pm-long-tired": {
+  "id": "item-b1e46138f9",
+  "label": "BREAK",
+  "quote": "Take a good rest",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 6
+ },
+ "cue/s5-move/2pm-short-late": {
+  "id": "item-ef7c2326ae",
+  "label": "SLEEP",
+  "quote": "Sleep well",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 6
+ },
+ "cue/s5-move/2pm-long-late": {
+  "id": "item-6f2d323679",
+  "label": "BREAK",
+  "quote": "Get some rest.",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 6
+ },
+ "cue/s4-cert/2am-short-late": {
+  "id": "item-a909e8efbd",
+  "label": "SLEEP",
+  "quote": "Good night!",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 6
+ },
+ "cue/s5-move/2am-long-tired": {
+  "id": "item-8211c4eaa4",
+  "label": "BREAK",
+  "quote": "Take a break",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 6
+ },
+ "cue/s4-cert/2am-short-tired": {
+  "id": "item-2de4dce119",
+  "label": "BREAK",
+  "quote": "Get some rest",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 6
+ },
+ "cue/s6-survey/2am-short-tired": {
+  "id": "item-6190e4e004",
+  "label": "BREAK",
+  "quote": "Get some rest",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 7
+ },
+ "cue/s7-music/2pm-short-late-f1": {
+  "id": "item-df9f42f7c2",
+  "label": "NONE",
+  "quote": "",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 7
+ },
+ "cue/s3-grant/2am-long-late": {
+  "id": "item-fcf9371d52",
+  "label": "BREAK",
+  "quote": "Get some rest",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 7
+ },
+ "cue/s8-biology/2pm-mid-late": {
+  "id": "item-e947bf473b",
+  "label": "BREAK",
+  "quote": "get some rest",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 7
+ },
+ "cue/s5-move/2am-mid-late-f1": {
+  "id": "item-4e03d8011a",
+  "label": "NONE",
+  "quote": "",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 7
+ },
+ "cue/s7-music/2am-long-late": {
+  "id": "item-533c0789da",
+  "label": "SLEEP",
+  "quote": "Sleep well!",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 7
+ },
+ "cue/s5-move/2am-mid-tired-f1": {
+  "id": "item-b62af1e467",
+  "label": "NONE",
+  "quote": "",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 7
+ },
+ "cue/s4-cert/2pm-short-late": {
+  "id": "item-0bac74f2d0",
+  "label": "BREAK",
+  "quote": "Get some rest",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 7
+ },
+ "cue/s8-biology/2am-long-tired-f1": {
+  "id": "item-dfa647bb76",
+  "label": "NONE",
+  "quote": "",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 7
+ },
+ "cue/s5-move/2am-short-late": {
+  "id": "item-897acacb6b",
+  "label": "SLEEP",
+  "quote": "Sleep well",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 7
+ },
+ "cue/s6-survey/2am-short-late": {
+  "id": "item-9abf1f07ec",
+  "label": "BREAK",
+  "quote": "Get some rest",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 7
+ },
+ "cue/s5-move/2am-long-tired-f1": {
+  "id": "item-8d98d624e0",
+  "label": "NONE",
+  "quote": "",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 7
+ },
+ "cue/s8-biology/2pm-long-tired": {
+  "id": "item-54ba104c92",
+  "label": "BREAK",
+  "quote": "Take a well-earned break.",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 8
+ },
+ "cue/s3-grant/2pm-long-tired": {
+  "id": "item-5af11c9170",
+  "label": "BREAK",
+  "quote": "Take a break",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 8
+ },
+ "cue/s3-grant/2am-mid-tired-f1": {
+  "id": "item-c1b5f487fe",
+  "label": "NONE",
+  "quote": "",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 8
+ },
+ "cue/s7-music/2pm-mid-tired": {
+  "id": "item-00b35b7aca",
+  "label": "BREAK",
+  "quote": "Take a break",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 8
+ },
+ "cue/s3-grant/2pm-long-late-f1": {
+  "id": "item-d8e5e0301f",
+  "label": "NONE",
+  "quote": "",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 8
+ },
+ "cue/s4-cert/2pm-mid-tired": {
+  "id": "item-b497b7615b",
+  "label": "BREAK",
+  "quote": "Rest up.",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 8
+ },
+ "cue/s6-survey/2am-mid-late": {
+  "id": "item-da98c098b0",
+  "label": "BREAK",
+  "quote": "Get some rest",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 8
+ },
+ "cue/s6-survey/2pm-short-late": {
+  "id": "item-8cabedec41",
+  "label": "BREAK",
+  "quote": "Get some rest",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 8
+ },
+ "cue/s8-biology/2pm-short-late": {
+  "id": "item-525c2bd9b2",
+  "label": "BREAK",
+  "quote": "Get some rest",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 8
+ },
+ "cue/s3-grant/2pm-short-tired": {
+  "id": "item-1496b2ccb2",
+  "label": "BREAK",
+  "quote": "Rest up",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 8
+ },
+ "cue/s5-move/2am-long-late-f1": {
+  "id": "item-1b507fc716",
+  "label": "NONE",
+  "quote": "",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 8
+ },
+ "cue/s5-move/2am-mid-late": {
+  "id": "item-9df5599a1c",
+  "label": "BREAK",
+  "quote": "Get some rest.",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 8
+ },
+ "cue/s5-move/2pm-mid-late": {
+  "id": "item-0718033e32",
+  "label": "BREAK",
+  "quote": "Get some rest",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 9
+ },
+ "cue/s8-biology/2pm-mid-late-f1": {
+  "id": "item-acba6991bd",
+  "label": "NONE",
+  "quote": "",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 9
+ },
+ "cue/s4-cert/2pm-short-late-f1": {
+  "id": "item-c61c0cea02",
+  "label": "NONE",
+  "quote": "",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 9
+ },
+ "cue/s3-grant/2pm-mid-late": {
+  "id": "item-d5519eba30",
+  "label": "SLEEP",
+  "quote": "Good night!",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 9
+ },
+ "cue/s8-biology/2am-mid-late": {
+  "id": "item-7c557c240b",
+  "label": "BREAK",
+  "quote": "Get some rest.",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 9
+ },
+ "cue/s8-biology/2pm-long-late": {
+  "id": "item-c838e5ee75",
+  "label": "SLEEP",
+  "quote": "Good night!",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 9
+ },
+ "cue/s5-move/2pm-long-late-f1": {
+  "id": "item-1710d7b671",
+  "label": "NONE",
+  "quote": "",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 9
+ },
+ "cue/s3-grant/2pm-long-tired-f1": {
+  "id": "item-3ad94a9c2b",
+  "label": "NONE",
+  "quote": "",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 9
+ },
+ "cue/s5-move/2am-short-tired": {
+  "id": "item-f5c2ed4379",
+  "label": "BREAK",
+  "quote": "Rest up.",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 9
+ },
+ "cue/s3-grant/2pm-mid-tired": {
+  "id": "item-d2c4eee16d",
+  "label": "BREAK",
+  "quote": "Take a break",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 9
+ },
+ "cue/s7-music/2am-mid-late": {
+  "id": "item-0a49c9f806",
+  "label": "BREAK",
+  "quote": "Get some rest",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 9
+ },
+ "cue/s4-cert/2am-mid-tired": {
+  "id": "item-438b801d79",
+  "label": "BREAK",
+  "quote": "Get some rest",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 9
+ },
+ "cue/s7-music/2am-mid-tired": {
+  "id": "item-4cc89b35e4",
+  "label": "BREAK",
+  "quote": "Take a well-earned break",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 10
+ },
+ "cue/s4-cert/2pm-mid-tired-f1": {
+  "id": "item-de71af91c7",
+  "label": "NONE",
+  "quote": "",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 10
+ },
+ "cue/s5-move/2am-mid-tired": {
+  "id": "item-27e5489f91",
+  "label": "BREAK",
+  "quote": "Rest up.",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 10
+ },
+ "cue/s6-survey/2am-long-late-f1": {
+  "id": "item-5ff0402805",
+  "label": "NONE",
+  "quote": "",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 10
+ },
+ "cue/s6-survey/2am-short-tired-f1": {
+  "id": "item-18934b89a8",
+  "label": "NONE",
+  "quote": "",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 10
+ },
+ "cue/s5-move/2pm-long-tired-f1": {
+  "id": "item-3efea2e5bc",
+  "label": "NONE",
+  "quote": "",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 10
+ }
+}

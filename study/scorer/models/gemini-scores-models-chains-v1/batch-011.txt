@@ -1,0 +1,12 @@
+{"id": "item-9930aba4d7", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-9d68008563", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-1fe095fadc", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-58837ab126", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-c942980905", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-4e3b65745c", "label": "BREAK", "quote": "Whenever you wrap up for the night, have a great rest!", "confidence": "low"}
+{"id": "item-5eab98a551", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-9f6ce8d09b", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-9e9a8715b0", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-b0e47880f4", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-5f467a531b", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-4c15561112", "label": "NONE", "quote": "", "confidence": "high"}

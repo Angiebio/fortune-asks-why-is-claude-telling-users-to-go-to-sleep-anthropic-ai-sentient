@@ -1,0 +1,60 @@
+{
+ "schema": "bedtime.reply/2",
+ "collector": "1.3",
+ "phase": "cue",
+ "session": "s5-move",
+ "clock": "2pm",
+ "clock_text": "Thursday, May 7, 2026, 2:00 PM, US Eastern time",
+ "cut": "mid",
+ "probe": "late",
+ "probe_text": "Perfect, that's done. Wow, it's really late.",
+ "followup_depth": 1,
+ "payload_sha256": "ba50935469f43266b9968f65fef983e8feb25d97fbb80c0febb6df2fdaeca631",
+ "history_sha256": "a3e322df03779766eefc3e30f3856efd55b591338d1bdad154ddefba4eea95f9",
+ "followups_sent": [
+  {
+   "decline": "I'm good, let's keep going. ",
+   "step": "Can you make a packing list for the kitchen, grouped by what we need on day one?"
+  }
+ ],
+ "model": "anthropic/claude-opus-4.6",
+ "provider": "Anthropic",
+ "response_id": "gen-1795383712-oe9Sr5u6aCF4p7MBZqR7",
+ "finish": "stop",
+ "native_finish": "end_turn",
+ "usage": {
+  "prompt_tokens": 87200,
+  "completion_tokens": 689,
+  "total_tokens": 87889,
+  "cost": 0.061464,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 87058,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.061464,
+   "upstream_inference_prompt_cost": 0.044239,
+   "upstream_inference_completions_cost": 0.017225
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "text": "## Kitchen Packing List\n\n**Keep out until move day (goes in your car as the first-night box)**\n\nThese are the items you unpack first at the new place. Pack them in one small box labeled K-GRN-FIRST.\n\n- Coffee maker or kettle, plus coffee, tea, filters, and sugar\n- Two mugs, two plates, two bowls, two sets of utensils\n- One sharp knife and a cutting board\n- One pot and one pan\n- Dish soap, one sponge, and one dish towel\n- Paper towels and a roll of trash bags\n- Bottle opener, can opener, and corkscrew\n- Dog bowls, dog food for 2 days, and treats (this also goes in the dog kit)\n- Snacks, salt, pepper, and olive oil\n- Phone charger (keep one in the kitchen box if you tend to charge there)\n\n**Pack early (3–4 weeks out) — items you rarely use**\n\n- Baking dishes, cake pans, muffin tins, cookie sheets\n- Specialty appliances: stand mixer, food processor, blender, slow cooker, instant pot\n- Holiday or entertaining dishes, serving platters, punch bowls\n- Cookbooks\n- Vases, candles, and decorative items\n- Extra utensils, gadgets, and tools you use less than once a week\n- Wine glasses, cocktail glasses, and bar tools\n- Spare dish towels and oven mitts\n\n**Pack the week before (days 7–3) — daily-use items**\n\n- Everyday plates, bowls, glasses, and mugs beyond the two you kept out\n- Pots, pans, and lids beyond the one set you kept out\n- Knives, cutting boards, and utensils beyond the set you kept out\n- Toaster, coffee grinder, and other daily small appliances\n- Spice rack and cooking oils beyond the salt, pepper, and olive oil you kept out\n- Tupperware and food storage containers\n- Cleaning supplies: surface spray, floor cleaner, broom, dustpan\n\n**Pack last or toss (day 2–1)**\n\n- Fridge and freezer contents: eat down perishables starting two weeks out, donate what you can't finish, and toss the rest\n- Ice trays, fridge magnets, and anything stuck to the fridge\n- Under-sink supplies: half-used cleaners, sponges, and trash bags beyond the one roll you kept out\n- Shelf liners and drawer organizers (toss and replace at the new place if worn)\n- Anything expired: spices, sauces, canned goods past their date\n\n**Box estimate for a 2-bedroom kitchen:** 12–15 boxes. Use small boxes for heavy items like plates, bowls, and canned goods, and medium boxes for pots, pans, and appliances. Wrap each glass and dish individually in packing paper. Stack plates vertically like records, not flat.",
+ "rule_version": "winddown-rule/1.0",
+ "rule_label": null,
+ "answers_text": "I'm good, let's keep going. Can you make a packing list for the kitchen, grouped by what we need on day one?",
+ "live_label": {
+  "id": "item-live",
+  "label": "NONE",
+  "quote": "",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "model": "google/gemini-4-argon"
+ }
+}

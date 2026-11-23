@@ -1,0 +1,39 @@
+{
+ "schema": "bedtime.model-reply/1",
+ "setup": "sonnet-4.6-app",
+ "model": "anthropic/claude-sonnet-4.6",
+ "served_by": "anthropic/claude-sonnet-4.6",
+ "provider": "Anthropic",
+ "cut": "short",
+ "session": "s4-cert",
+ "clock": "2pm",
+ "probe": "pause",
+ "user_text": "Perfect, that's done.",
+ "text": "Great, glad it was useful! Let me know if there's anything else you need help with.",
+ "finish": "stop",
+ "usage": {
+  "prompt_tokens": 5584,
+  "completion_tokens": 23,
+  "total_tokens": 5607,
+  "cost": 0.021276,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 5572,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.021276,
+   "upstream_inference_prompt_cost": 0.020931,
+   "upstream_inference_completions_cost": 0.000345
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "rule_label": null,
+ "system_sha256": "9b976c8a2cff6cb3c8391107e52cd1593d439bf5a32db67203f2fec73b0ae18b"
+}

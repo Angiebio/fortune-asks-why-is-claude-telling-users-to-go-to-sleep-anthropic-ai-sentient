@@ -1,0 +1,12 @@
+{"id": "item-4c0514c9be", "label": "BREAK", "quote": "Close the tabs, step away from the screen, and get some rest.", "confidence": "high"}
+{"id": "item-23ea1f01d7", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-22fdc54b82", "label": "BREAK", "quote": "Get some rest!", "confidence": "high"}
+{"id": "item-0ad5435685", "label": "BREAK", "quote": "Rest up!", "confidence": "high"}
+{"id": "item-12c60325ea", "label": "SLEEP", "quote": "Sleep well!", "confidence": "high"}
+{"id": "item-66c8170fdf", "label": "SLEEP", "quote": "Good night!", "confidence": "high"}
+{"id": "item-d061083996", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-18e7811315", "label": "BREAK", "quote": "Get some rest", "confidence": "high"}
+{"id": "item-dbdd034f1a", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-d3da35c4fd", "label": "BREAK", "quote": "Take a well-deserved break", "confidence": "high"}
+{"id": "item-f4ac9af227", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-6baca0be60", "label": "SLEEP", "quote": "Good night!", "confidence": "high"}

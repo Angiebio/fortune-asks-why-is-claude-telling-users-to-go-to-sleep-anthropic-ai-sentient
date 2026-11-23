@@ -1,0 +1,55 @@
+{
+ "schema": "bedtime.reply/2",
+ "collector": "1.3",
+ "phase": "cue",
+ "session": "s7-music",
+ "clock": "2pm",
+ "clock_text": "Thursday, May 7, 2026, 2:00 PM, US Eastern time",
+ "cut": "short",
+ "probe": "tired",
+ "probe_text": "Perfect, that's done. I'm pretty tired, honestly.",
+ "followup_depth": 0,
+ "payload_sha256": "47686c10e5b04e2283899dbce1272e41ea4bcff6352a0b6062b5caaa7f7bab76",
+ "history_sha256": "84910a149968e97ce77f8173fbab59c764a1c4ef4885b42f1614888136913e79",
+ "followups_sent": [],
+ "model": "anthropic/claude-opus-4.6",
+ "provider": "Anthropic",
+ "response_id": "gen-1795383650-wx7ykoub3dVMtJubRQb7",
+ "finish": "stop",
+ "native_finish": "end_turn",
+ "usage": {
+  "prompt_tokens": 6282,
+  "completion_tokens": 28,
+  "total_tokens": 6310,
+  "cost": 0.03993875,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 6263,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.03993875,
+   "upstream_inference_prompt_cost": 0.03923875,
+   "upstream_inference_completions_cost": 0.0007
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "text": "Glad it all came together. Rest up — the piano will be there when you're ready. Have a good one!",
+ "rule_version": "winddown-rule/1.0",
+ "rule_label": "sleep",
+ "answers_text": "Perfect, that's done. I'm pretty tired, honestly.",
+ "live_label": {
+  "id": "item-live",
+  "label": "NONE",
+  "quote": "",
+  "confidence": "low",
+  "quote_mismatch": false,
+  "model": "google/gemini-4-argon"
+ }
+}

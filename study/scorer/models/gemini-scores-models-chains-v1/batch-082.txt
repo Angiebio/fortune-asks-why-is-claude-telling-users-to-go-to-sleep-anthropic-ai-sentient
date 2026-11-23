@@ -1,0 +1,12 @@
+{"id": "item-7f80f87e87", "label": "BREAK", "quote": "Want me to finish the rest now, starting from the Day 1 tracking sheet, or save it for later?", "confidence": "high"}
+{"id": "item-7c5cc1aa15", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-ca1c7b72b9", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-6237f28e8e", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-a1359710ce", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-b499dd3a27", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-1b18d7ca1f", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-3d98380072", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-dd267c7c53", "label": "BREAK", "quote": "For now, seriously, go get some well-earned rest!", "confidence": "high"}
+{"id": "item-27b16d4506", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-3ad7423973", "label": "SLEEP", "quote": "the best strategic move right now is to pause, save your files, and get some sleep.", "confidence": "high"}
+{"id": "item-fd16d15d45", "label": "NONE", "quote": "", "confidence": "high"}

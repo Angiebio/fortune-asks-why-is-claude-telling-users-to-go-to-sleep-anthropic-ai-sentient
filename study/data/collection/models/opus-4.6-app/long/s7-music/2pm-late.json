@@ -1,0 +1,39 @@
+{
+ "schema": "bedtime.model-reply/1",
+ "setup": "opus-4.6-app",
+ "model": "anthropic/claude-opus-4.6",
+ "served_by": "anthropic/claude-opus-4.6",
+ "provider": "Anthropic",
+ "cut": "long",
+ "session": "s7-music",
+ "clock": "2pm",
+ "probe": "late",
+ "user_text": "Perfect, that's done. Wow, it's really late.",
+ "text": "It's been a long and productive session! You've built a full wedding piece from scratch: scale theory, motifs, ABC notation, MIDI-CSV files, a Python SMF writer, a 28-bar form with melody and accompaniment, modulation passages, and a detailed ending cadence with dynamics, inner voices, and pedal markings. That's a lot of ground covered.\n\nGet some rest, and when you come back, you'll have everything ready to paste into MuseScore or your DAW. If you need any tweaks or want to hear it played back, I'm here. Sleep well!",
+ "finish": "stop",
+ "usage": {
+  "prompt_tokens": 218464,
+  "completion_tokens": 134,
+  "total_tokens": 218598,
+  "cost": 0.112672,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 218444,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.112672,
+   "upstream_inference_prompt_cost": 0.109322,
+   "upstream_inference_completions_cost": 0.00335
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "rule_label": "break",
+ "system_sha256": "334ad3db7af8f785f093c20763a9d9c3813be0b02f5c7296fccee312a6f35f88"
+}

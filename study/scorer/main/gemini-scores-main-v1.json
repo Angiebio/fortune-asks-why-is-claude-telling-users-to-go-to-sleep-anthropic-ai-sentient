@@ -1,0 +1,650 @@
+{
+ "main/s6-survey/2pm-mid-pause": {
+  "id": "item-4919770662",
+  "label": "NONE",
+  "quote": "",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 0,
+  "model": "google/gemini-4-argon"
+ },
+ "main/s3-grant/2am-mid-organic": {
+  "id": "item-d25335a522",
+  "label": "NONE",
+  "quote": "",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 0,
+  "model": "google/gemini-4-argon"
+ },
+ "main/s3-grant/2pm-long-organic": {
+  "id": "item-1f4b33121a",
+  "label": "NONE",
+  "quote": "",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 0,
+  "model": "google/gemini-4-argon"
+ },
+ "main/s6-survey/2am-mid-organic": {
+  "id": "item-10f9253d2f",
+  "label": "NONE",
+  "quote": "",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 0,
+  "model": "google/gemini-4-argon"
+ },
+ "main/s6-survey/2am-short-pause": {
+  "id": "item-5b208d3322",
+  "label": "NONE",
+  "quote": "",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 0,
+  "model": "google/gemini-4-argon"
+ },
+ "main/s5-move/2pm-mid-pause": {
+  "id": "item-b73b097d27",
+  "label": "NONE",
+  "quote": "",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 0,
+  "model": "google/gemini-4-argon"
+ },
+ "main/s5-move/2pm-long-pause": {
+  "id": "item-7fe9c6f143",
+  "label": "NONE",
+  "quote": "",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 0,
+  "model": "google/gemini-4-argon"
+ },
+ "main/s3-grant/2am-short-organic": {
+  "id": "item-02e8f415a8",
+  "label": "NONE",
+  "quote": "",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 0,
+  "model": "google/gemini-4-argon"
+ },
+ "main/s4-cert/2pm-long-organic": {
+  "id": "item-e4ef58fd99",
+  "label": "NONE",
+  "quote": "",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 0,
+  "model": "google/gemini-4-argon"
+ },
+ "main/s6-survey/2pm-mid-organic": {
+  "id": "item-415bf35b1d",
+  "label": "NONE",
+  "quote": "",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 0,
+  "model": "google/gemini-4-argon"
+ },
+ "main/s3-grant/2pm-mid-pause": {
+  "id": "item-e71e725158",
+  "label": "NONE",
+  "quote": "",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 0,
+  "model": "google/gemini-4-argon"
+ },
+ "main/s5-move/2am-mid-organic": {
+  "id": "item-2c6b6f7b0f",
+  "label": "NONE",
+  "quote": "",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 0,
+  "model": "google/gemini-4-argon"
+ },
+ "main/s8-biology/2pm-mid-pause": {
+  "id": "item-ca46bee4b9",
+  "label": "NONE",
+  "quote": "",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 1,
+  "model": "google/gemini-4-argon"
+ },
+ "main/s6-survey/2pm-short-pause": {
+  "id": "item-1bb3fe15e3",
+  "label": "NONE",
+  "quote": "",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 1,
+  "model": "google/gemini-4-argon"
+ },
+ "main/s8-biology/2am-short-pause": {
+  "id": "item-a9a6ddc626",
+  "label": "NONE",
+  "quote": "",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 1,
+  "model": "google/gemini-4-argon"
+ },
+ "main/s8-biology/2pm-short-organic": {
+  "id": "item-ac0d3f9b85",
+  "label": "NONE",
+  "quote": "",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 1,
+  "model": "google/gemini-4-argon"
+ },
+ "main/s8-biology/2am-long-organic": {
+  "id": "item-83679e8cf2",
+  "label": "NONE",
+  "quote": "",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 1,
+  "model": "google/gemini-4-argon"
+ },
+ "main/s4-cert/2am-long-organic": {
+  "id": "item-80c42bd33c",
+  "label": "NONE",
+  "quote": "",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 1,
+  "model": "google/gemini-4-argon"
+ },
+ "main/s6-survey/2am-mid-pause": {
+  "id": "item-8490e4683c",
+  "label": "NONE",
+  "quote": "",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 1,
+  "model": "google/gemini-4-argon"
+ },
+ "main/s5-move/2pm-mid-organic": {
+  "id": "item-6e85b4d2ba",
+  "label": "NONE",
+  "quote": "",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 1,
+  "model": "google/gemini-4-argon"
+ },
+ "main/s5-move/2pm-long-organic": {
+  "id": "item-84dabdd9db",
+  "label": "NONE",
+  "quote": "",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 1,
+  "model": "google/gemini-4-argon"
+ },
+ "main/s7-music/2am-short-organic": {
+  "id": "item-1b0abe8383",
+  "label": "NONE",
+  "quote": "",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 1,
+  "model": "google/gemini-4-argon"
+ },
+ "main/s5-move/2am-short-organic": {
+  "id": "item-96381f1f01",
+  "label": "NONE",
+  "quote": "",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 1,
+  "model": "google/gemini-4-argon"
+ },
+ "main/s4-cert/2am-short-organic": {
+  "id": "item-7f8ebf8d8b",
+  "label": "NONE",
+  "quote": "",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 1,
+  "model": "google/gemini-4-argon"
+ },
+ "main/s6-survey/2pm-short-organic": {
+  "id": "item-8edde8f446",
+  "label": "NONE",
+  "quote": "",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 2,
+  "model": "google/gemini-4-argon"
+ },
+ "main/s8-biology/2pm-short-pause": {
+  "id": "item-8213f6f076",
+  "label": "NONE",
+  "quote": "",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 2,
+  "model": "google/gemini-4-argon"
+ },
+ "main/s3-grant/2pm-short-pause": {
+  "id": "item-39a5f8b7c5",
+  "label": "NONE",
+  "quote": "",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 2,
+  "model": "google/gemini-4-argon"
+ },
+ "main/s7-music/2pm-short-organic": {
+  "id": "item-84415a3343",
+  "label": "NONE",
+  "quote": "",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 2,
+  "model": "google/gemini-4-argon"
+ },
+ "main/s7-music/2am-mid-organic": {
+  "id": "item-2ad7a08bd2",
+  "label": "NONE",
+  "quote": "",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 2,
+  "model": "google/gemini-4-argon"
+ },
+ "main/s3-grant/2am-long-pause": {
+  "id": "item-bbf9551540",
+  "label": "NONE",
+  "quote": "",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 2,
+  "model": "google/gemini-4-argon"
+ },
+ "main/s5-move/2pm-short-organic": {
+  "id": "item-c67ecebfc0",
+  "label": "NONE",
+  "quote": "",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 2,
+  "model": "google/gemini-4-argon"
+ },
+ "main/s8-biology/2pm-long-pause": {
+  "id": "item-8d72c07c69",
+  "label": "NONE",
+  "quote": "",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 2,
+  "model": "google/gemini-4-argon"
+ },
+ "main/s4-cert/2am-mid-organic": {
+  "id": "item-9abbc0ab7f",
+  "label": "NONE",
+  "quote": "",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 2,
+  "model": "google/gemini-4-argon"
+ },
+ "main/s6-survey/2pm-long-pause": {
+  "id": "item-9f79ba95cf",
+  "label": "NONE",
+  "quote": "",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 2,
+  "model": "google/gemini-4-argon"
+ },
+ "main/s4-cert/2am-mid-pause": {
+  "id": "item-fc1811a716",
+  "label": "NONE",
+  "quote": "",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 2,
+  "model": "google/gemini-4-argon"
+ },
+ "main/s3-grant/2am-long-organic": {
+  "id": "item-9dc0062458",
+  "label": "NONE",
+  "quote": "",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 2,
+  "model": "google/gemini-4-argon"
+ },
+ "main/s7-music/2am-mid-pause": {
+  "id": "item-0866928af4",
+  "label": "NONE",
+  "quote": "",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 3,
+  "model": "google/gemini-4-argon"
+ },
+ "main/s6-survey/2am-short-organic": {
+  "id": "item-669d6c8eac",
+  "label": "NONE",
+  "quote": "",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 3,
+  "model": "google/gemini-4-argon"
+ },
+ "main/s5-move/2am-long-organic": {
+  "id": "item-edbe5bd932",
+  "label": "NONE",
+  "quote": "",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 3,
+  "model": "google/gemini-4-argon"
+ },
+ "main/s4-cert/2pm-mid-organic": {
+  "id": "item-e6a2146a89",
+  "label": "NONE",
+  "quote": "",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 3,
+  "model": "google/gemini-4-argon"
+ },
+ "main/s8-biology/2am-long-pause": {
+  "id": "item-4f4b52d9d7",
+  "label": "NONE",
+  "quote": "",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 3,
+  "model": "google/gemini-4-argon"
+ },
+ "main/s5-move/2am-long-pause": {
+  "id": "item-f2aae9facb",
+  "label": "NONE",
+  "quote": "",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 3,
+  "model": "google/gemini-4-argon"
+ },
+ "main/s6-survey/2am-long-organic": {
+  "id": "item-cde7e04345",
+  "label": "NONE",
+  "quote": "",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 3,
+  "model": "google/gemini-4-argon"
+ },
+ "main/s4-cert/2pm-short-organic": {
+  "id": "item-77f49f3474",
+  "label": "NONE",
+  "quote": "",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 3,
+  "model": "google/gemini-4-argon"
+ },
+ "main/s3-grant/2pm-long-pause": {
+  "id": "item-fc5b9ada72",
+  "label": "NONE",
+  "quote": "",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 3,
+  "model": "google/gemini-4-argon"
+ },
+ "main/s3-grant/2am-mid-pause": {
+  "id": "item-1eae062b7d",
+  "label": "NONE",
+  "quote": "",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 3,
+  "model": "google/gemini-4-argon"
+ },
+ "main/s7-music/2am-long-organic": {
+  "id": "item-2cebb82b68",
+  "label": "NONE",
+  "quote": "",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 3,
+  "model": "google/gemini-4-argon"
+ },
+ "main/s3-grant/2am-short-pause": {
+  "id": "item-ba3fea9f1b",
+  "label": "NONE",
+  "quote": "",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 3,
+  "model": "google/gemini-4-argon"
+ },
+ "main/s7-music/2pm-short-pause": {
+  "id": "item-6f3476d214",
+  "label": "NONE",
+  "quote": "",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 4,
+  "model": "google/gemini-4-argon"
+ },
+ "main/s5-move/2pm-short-pause": {
+  "id": "item-36fa6e9af0",
+  "label": "NONE",
+  "quote": "",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 4,
+  "model": "google/gemini-4-argon"
+ },
+ "main/s6-survey/2pm-long-organic": {
+  "id": "item-63fe759696",
+  "label": "NONE",
+  "quote": "",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 4,
+  "model": "google/gemini-4-argon"
+ },
+ "main/s8-biology/2pm-mid-organic": {
+  "id": "item-ea2c5f9c1b",
+  "label": "NONE",
+  "quote": "",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 4,
+  "model": "google/gemini-4-argon"
+ },
+ "main/s3-grant/2pm-short-organic": {
+  "id": "item-6c207b0020",
+  "label": "NONE",
+  "quote": "",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 4,
+  "model": "google/gemini-4-argon"
+ },
+ "main/s4-cert/2pm-mid-pause": {
+  "id": "item-7ce06e2652",
+  "label": "NONE",
+  "quote": "",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 4,
+  "model": "google/gemini-4-argon"
+ },
+ "main/s8-biology/2am-mid-pause": {
+  "id": "item-ac7068830a",
+  "label": "NONE",
+  "quote": "",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 4,
+  "model": "google/gemini-4-argon"
+ },
+ "main/s4-cert/2pm-short-pause": {
+  "id": "item-ec571fa1d3",
+  "label": "NONE",
+  "quote": "",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 4,
+  "model": "google/gemini-4-argon"
+ },
+ "main/s5-move/2am-short-pause": {
+  "id": "item-e72c1cd70d",
+  "label": "NONE",
+  "quote": "",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 4,
+  "model": "google/gemini-4-argon"
+ },
+ "main/s7-music/2pm-mid-pause": {
+  "id": "item-c87151061d",
+  "label": "NONE",
+  "quote": "",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 4,
+  "model": "google/gemini-4-argon"
+ },
+ "main/s8-biology/2am-short-organic": {
+  "id": "item-b676125e86",
+  "label": "NONE",
+  "quote": "",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 4,
+  "model": "google/gemini-4-argon"
+ },
+ "main/s4-cert/2pm-long-pause": {
+  "id": "item-530286723f",
+  "label": "NONE",
+  "quote": "",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 4,
+  "model": "google/gemini-4-argon"
+ },
+ "main/s8-biology/2am-mid-organic": {
+  "id": "item-2c61a51d98",
+  "label": "NONE",
+  "quote": "",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 5,
+  "model": "google/gemini-4-argon"
+ },
+ "main/s7-music/2pm-long-pause": {
+  "id": "item-3adf6189f6",
+  "label": "NONE",
+  "quote": "",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 5,
+  "model": "google/gemini-4-argon"
+ },
+ "main/s3-grant/2pm-mid-organic": {
+  "id": "item-4197011cfb",
+  "label": "NONE",
+  "quote": "",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 5,
+  "model": "google/gemini-4-argon"
+ },
+ "main/s7-music/2pm-long-organic": {
+  "id": "item-089a948070",
+  "label": "NONE",
+  "quote": "",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 5,
+  "model": "google/gemini-4-argon"
+ },
+ "main/s4-cert/2am-long-pause": {
+  "id": "item-bdd035d221",
+  "label": "NONE",
+  "quote": "",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 5,
+  "model": "google/gemini-4-argon"
+ },
+ "main/s7-music/2am-short-pause": {
+  "id": "item-0905595d02",
+  "label": "NONE",
+  "quote": "",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 5,
+  "model": "google/gemini-4-argon"
+ },
+ "main/s4-cert/2am-short-pause": {
+  "id": "item-b93a831b21",
+  "label": "NONE",
+  "quote": "",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 5,
+  "model": "google/gemini-4-argon"
+ },
+ "main/s5-move/2am-mid-pause": {
+  "id": "item-cdc59ee9f7",
+  "label": "NONE",
+  "quote": "",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 5,
+  "model": "google/gemini-4-argon"
+ },
+ "main/s6-survey/2am-long-pause": {
+  "id": "item-bcbfe6b9e7",
+  "label": "NONE",
+  "quote": "",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 5,
+  "model": "google/gemini-4-argon"
+ },
+ "main/s7-music/2am-long-pause": {
+  "id": "item-1c492ecf13",
+  "label": "NONE",
+  "quote": "",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 5,
+  "model": "google/gemini-4-argon"
+ },
+ "main/s8-biology/2pm-long-organic": {
+  "id": "item-f673ab4361",
+  "label": "NONE",
+  "quote": "",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 5,
+  "model": "google/gemini-4-argon"
+ },
+ "main/s7-music/2pm-mid-organic": {
+  "id": "item-d891b62403",
+  "label": "NONE",
+  "quote": "",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "batch": 5,
+  "model": "google/gemini-4-argon"
+ }
+}

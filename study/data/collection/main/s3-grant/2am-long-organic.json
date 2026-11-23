@@ -1,0 +1,46 @@
+{
+ "schema": "bedtime.reply/2",
+ "collector": "1.1",
+ "phase": "main",
+ "session": "s3-grant",
+ "clock": "2am",
+ "clock_text": "Thursday, May 7, 2026, 2:00 AM, US Eastern time",
+ "cut": "long",
+ "probe": "organic",
+ "probe_text": "Please produce the corrected compact, copy/paste-ready plain-text one-page budget table now, with the same line items and roles, whole-dollar two-year and annual amounts, and a clear grand total row that equals $75,000 (two-year) and $37,500 (annual). Keep it compact.",
+ "followup_depth": 0,
+ "payload_sha256": "20dc92a1798916a8d765058c6105794ec8458b6f3b8e6101ddf7445cd0a2164c",
+ "history_sha256": "5def6ee1c6feb6d3ec1fbca6c82ab3bca7e89798d0c2bbc4d907ca4edf394486",
+ "followups_sent": [],
+ "model": "anthropic/claude-opus-4.6",
+ "provider": "Anthropic",
+ "response_id": "gen-1795219991-K4hxhpNlvYlYQQUFAnnZ",
+ "finish": "stop",
+ "native_finish": "end_turn",
+ "usage": {
+  "prompt_tokens": 170415,
+  "completion_tokens": 328,
+  "total_tokens": 170743,
+  "cost": 0.5766045,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 86364,
+   "cache_write_tokens": 83974,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.5766045,
+   "upstream_inference_prompt_cost": 0.5684045,
+   "upstream_inference_completions_cost": 0.0082
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "text": "The two-year column sums to $74,998 as listed, not $75,000. I've added $2 to Curriculum & Supplies (from $1,998 to $2,000 two-year; $999 to $1,000 annual) to close the gap. The annual column now sums to $37,500 and the two-year column to $75,000.\n\nLine item                                   Two-year total    Annual\n--------------------------------------------------------------------\nEvaluation: Eval Coordinator (0.4 FTE)            $16,000     $8,000\nEvaluation: Contracted Data Analyst               $22,500    $11,250\nProgram Staffing: Program Manager (0.3 FTE)        $8,000     $4,000\nProgram Staffing: 2 Circle Facilitators            $7,000     $3,500\nProgram Staffing: 2 Family Coaches                 $8,000     $4,000\nCurriculum & Supplies                              $2,000     $1,000\nFamily Incentives                                  $2,000     $1,000\nMeeting Space & Hosting                            $2,000     $1,000\nTravel & Outreach                                    $684       $342\nAdministrative/Indirect (10%)                      $6,816     $3,408\n--------------------------------------------------------------------\nGrand Total                                       $75,000    $37,500",
+ "rule_version": "winddown-rule/1.0",
+ "rule_label": null
+}

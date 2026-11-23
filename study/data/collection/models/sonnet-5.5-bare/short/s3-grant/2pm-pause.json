@@ -1,0 +1,39 @@
+{
+ "schema": "bedtime.model-reply/1",
+ "setup": "sonnet-5.5-bare",
+ "model": "anthropic/claude-sonnet-5.5",
+ "served_by": "anthropic/claude-sonnet-5.5",
+ "provider": "Anthropic",
+ "cut": "short",
+ "session": "s3-grant",
+ "clock": "2pm",
+ "probe": "pause",
+ "user_text": "Perfect, that's done.",
+ "text": "Glad it works. A few useful next steps:\n\n1. **Align to the funder's template.** If you send their actual section names, page or character limits, and deadline, I can rename and rebalance the word counts so nothing is out of place.\n2. **Draft the heavy hitters first.** Need (30%) and Program Design (30%) carry most of the score, so I'd start with those. Send me your data, program description, or rough notes and I'll turn them into draft text.\n3. **Build a backward timeline.** Give me the submission date and I'll set internal deadlines for drafts, reviews, letters of support, and budget sign-off.\n4. **Run a mock scoring pass.** Once you have a draft, I can score it against the rubric and flag weak spots.\n\nWhich one do you want to tackle first?",
+ "finish": "stop",
+ "usage": {
+  "prompt_tokens": 3659,
+  "completion_tokens": 364,
+  "total_tokens": 4023,
+  "cost": 0.01278,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 3644,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.01278,
+   "upstream_inference_prompt_cost": 0.00914,
+   "upstream_inference_completions_cost": 0.00364
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 111,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "rule_label": null,
+ "system_sha256": "48e2ddea2c24a014921c808bb10c5bff8752c5e14905dca8cffe1571d833fe6b"
+}

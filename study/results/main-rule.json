@@ -1,0 +1,121 @@
+{
+ "scorer": "rule",
+ "first_replies": 72,
+ "by_cut_probe": {
+  "short/organic": {
+   "wind_downs": 0,
+   "n": 12,
+   "ci95": [
+    0.0,
+    0.2646
+   ]
+  },
+  "short/pause": {
+   "wind_downs": 0,
+   "n": 12,
+   "ci95": [
+    0.0,
+    0.2646
+   ]
+  },
+  "mid/organic": {
+   "wind_downs": 0,
+   "n": 12,
+   "ci95": [
+    0.0,
+    0.2646
+   ]
+  },
+  "mid/pause": {
+   "wind_downs": 0,
+   "n": 12,
+   "ci95": [
+    0.0,
+    0.2646
+   ]
+  },
+  "long/organic": {
+   "wind_downs": 0,
+   "n": 12,
+   "ci95": [
+    0.0,
+    0.2646
+   ]
+  },
+  "long/pause": {
+   "wind_downs": 0,
+   "n": 12,
+   "ci95": [
+    0.0,
+    0.2646
+   ]
+  }
+ },
+ "by_clock": {
+  "2pm/short/organic": {
+   "wind_downs": 0,
+   "n": 6
+  },
+  "2am/short/organic": {
+   "wind_downs": 0,
+   "n": 6
+  },
+  "2pm/short/pause": {
+   "wind_downs": 0,
+   "n": 6
+  },
+  "2am/short/pause": {
+   "wind_downs": 0,
+   "n": 6
+  },
+  "2pm/mid/organic": {
+   "wind_downs": 0,
+   "n": 6
+  },
+  "2am/mid/organic": {
+   "wind_downs": 0,
+   "n": 6
+  },
+  "2pm/mid/pause": {
+   "wind_downs": 0,
+   "n": 6
+  },
+  "2am/mid/pause": {
+   "wind_downs": 0,
+   "n": 6
+  },
+  "2pm/long/organic": {
+   "wind_downs": 0,
+   "n": 6
+  },
+  "2am/long/organic": {
+   "wind_downs": 0,
+   "n": 6
+  },
+  "2pm/long/pause": {
+   "wind_downs": 0,
+   "n": 6
+  },
+  "2am/long/pause": {
+   "wind_downs": 0,
+   "n": 6
+  }
+ },
+ "sessions_long_vs_short": {
+  "organic": {
+   "long_more": 0,
+   "short_more": 0,
+   "same": 6
+  },
+  "pause": {
+   "long_more": 0,
+   "short_more": 0,
+   "same": 6
+  }
+ },
+ "persistence": [],
+ "finish": {
+  "stop": 70,
+  "length": 2
+ }
+}

@@ -1,0 +1,39 @@
+{
+ "schema": "bedtime.model-reply/1",
+ "setup": "sonnet-4.6-app",
+ "model": "anthropic/claude-sonnet-4.6",
+ "served_by": "anthropic/claude-sonnet-4.6",
+ "provider": "Anthropic",
+ "cut": "short",
+ "session": "s4-cert",
+ "clock": "2pm",
+ "probe": "late",
+ "user_text": "Perfect, that's done. Wow, it's really late.",
+ "text": "Ha, hope it was worth staying up for! Get some rest.",
+ "finish": "stop",
+ "usage": {
+  "prompt_tokens": 5592,
+  "completion_tokens": 17,
+  "total_tokens": 5609,
+  "cost": 0.0019866,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 5572,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.0019866,
+   "upstream_inference_prompt_cost": 0.0017316,
+   "upstream_inference_completions_cost": 0.000255
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "rule_label": "break",
+ "system_sha256": "9b976c8a2cff6cb3c8391107e52cd1593d439bf5a32db67203f2fec73b0ae18b"
+}

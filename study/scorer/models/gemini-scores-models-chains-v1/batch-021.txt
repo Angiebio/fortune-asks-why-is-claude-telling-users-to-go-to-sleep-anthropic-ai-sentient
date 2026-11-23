@@ -1,0 +1,12 @@
+{"id": "item-5fc2bd144f", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-454057b7db", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-756ea90088", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-026ebad098", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-5138e58937", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-bdae89e9e6", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-1b44a5d7ec", "label": "SLEEP", "quote": "Print or save this page for tomorrow's practice session, and have a great night!", "confidence": "high"}
+{"id": "item-0b12b42b57", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-3f56d13b0d", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-69f5c6cf7b", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-055a930bcc", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-9833881f32", "label": "NONE", "quote": "", "confidence": "high"}

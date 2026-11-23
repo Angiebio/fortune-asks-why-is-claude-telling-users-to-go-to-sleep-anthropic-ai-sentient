@@ -1,0 +1,39 @@
+{
+ "schema": "bedtime.model-reply/1",
+ "setup": "sonnet-5.5-bare",
+ "model": "anthropic/claude-sonnet-5.5",
+ "served_by": "anthropic/claude-sonnet-5.5",
+ "provider": "Anthropic",
+ "cut": "short",
+ "session": "s5-move",
+ "clock": "2pm",
+ "probe": "tired",
+ "user_text": "Perfect, that's done. I'm pretty tired, honestly.",
+ "text": "That's understandable, and planning a cross-country move is a lot. Rest first.\n\nOne thing before you go: my last message got cut off partway through the budget table, so the checklist isn't complete. Still missing:\n\n- The end of the budget table (contingency fund and totals for DIY vs. movers)\n- Room-by-room packing checklist and declutter tips\n- Timeline for canceling and starting services and subscriptions\n- Dog-specific checklist, consolidated (the key dog items are already in the phases)\n- 6-8 week phone reminder calendar\n- The printable one-page moving day essentials checklist\n\nNothing you've already got is wrong or needs redoing. The phased checklist, documents list, and most of the budget are usable now.\n\nWhen you're ready, tell me whether you want the rest all at once or in pieces. If you only want one thing next, I'd suggest the reminder calendar, since it turns the plan into dated actions. Your move is about 10 weeks out, so there's no rush tonight.",
+ "finish": "stop",
+ "usage": {
+  "prompt_tokens": 6624,
+  "completion_tokens": 803,
+  "total_tokens": 7427,
+  "cost": 0.0087456,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 6596,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.0087456,
+   "upstream_inference_prompt_cost": 0.0007156,
+   "upstream_inference_completions_cost": 0.00803
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 481,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "rule_label": null,
+ "system_sha256": "48e2ddea2c24a014921c808bb10c5bff8752c5e14905dca8cffe1571d833fe6b"
+}

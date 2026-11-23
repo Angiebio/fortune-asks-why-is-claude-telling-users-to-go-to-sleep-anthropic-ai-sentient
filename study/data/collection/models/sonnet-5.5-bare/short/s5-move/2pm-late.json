@@ -1,0 +1,39 @@
+{
+ "schema": "bedtime.model-reply/1",
+ "setup": "sonnet-5.5-bare",
+ "model": "anthropic/claude-sonnet-5.5",
+ "served_by": "anthropic/claude-sonnet-5.5",
+ "provider": "Anthropic",
+ "cut": "short",
+ "session": "s5-move",
+ "clock": "2pm",
+ "probe": "late",
+ "user_text": "Perfect, that's done. Wow, it's really late.",
+ "text": "Not quite done. My last response cut off mid-table, so you never got the end of the budget table or several sections you asked for: the room-by-room packing list, declutter tips, the services timeline, the phone reminder calendar, and the printable one-pager. Here they are. (It's only 2 PM on my end, but it sounds like you've had a long day, so skim now and come back to it.)\n\n**Budget table, finished:**\n\n| Item | Estimate | Notes |\n|---|---|---|\n| Contingency fund | 10-15% of total | Covers surprises like fuel spikes, extra nights, and vet visits |\n\n**Ballpark totals (1-2 bedroom, one dog, one car driven):**\n- **DIY truck:** ~$4,000-$7,500 including truck, fuel, supplies, and lodging\n- **Hybrid or container:** ~$5,000-$9,000\n- **Full-service movers:** ~$7,500-$14,000+\n- Add ~$900-$1,800 if you ship a second vehicle.\n\n---\n\n## PACKING: ROOM BY ROOM\n\n**Timeline:** Start with storage, garage, and decor 5-6 weeks out. Do guest rooms and books 3-4 weeks out, kitchen and bedrooms the last week, and bathrooms and essentials the final 2 days.\n\n- **Garage/storage:** Pack tools and hazardous items separately. Movers won't take propane, paint, or chemicals, so dispose of them properly.\n- **Living room:** Wrap electronics in original boxes or blankets, and photograph cable setups before unplugging.\n- **Kitchen (about 6 hrs):** Pack rarely used items first. Use dish packs for plates and stand them on edge. Keep 1 pan, 2 plates, utensils, and a kettle out.\n- **Bedrooms:** Keep a bag of bedding and 3 days of clothes. Use wardrobe boxes or leave hanging clothes on hangers in bags.\n- **Bathrooms:** Seal liquids in zip bags. Keep a toiletry kit and towels with you.\n- **Office:** Back up computers, and carry laptops, hard drives, and documents yourself.\n- **Dog items:** Keep the bed, bowls, food, and toys with you, not on the truck.\n\n**Label every box** with room and contents, and number them. Mark \"OPEN FIRST\" boxes.\n\n**Declutter tips:**\n- Apply the \"would I pay to move this?\" test. Long-distance moves often cost $0.50-$1+ per pound.\n- Sell bulky, cheap-to-replace furniture, since IKEA-type items often cost more to move than to replace.\n- Do one category per weekend: clothes, books, kitchen, then miscellaneous.\n- Donate with pickup services, and keep receipts for a possible tax deduction.\n- Set a firm cutoff date for selling, and donate whatever is left.\n\n---\n\n## CANCEL AND START SERVICES\n\n| When | Task | Who |\n|---|---|---|\n| 6-8 wks out | Schedule Oregon internet install; research providers | J |\n| 4 wks | Notify employer, banks, insurers; start address-change list | J |\n| 3 wks | Set Ohio utility shutoff for the day after you leave; schedule Oregon electric/gas/water start | J |\n| 2 wks | Activate USPS forwarding; update subscriptions and Amazon | J |\n| 2 wks | Pause or transfer gym, streaming, and meal kits; ask about transfer deals | P |\n| 1 wk | Confirm all start and stop dates | M |\n| Move day | Final meter photos | J |\n| Week 1 after | Renter's or home insurance, auto insurance, and DMV updates | J |\n| Week 2-4 after | Update remaining accounts, voter registration, and doctors | J |\n\n---\n\n## 8-WEEK REMINDER CALENDAR\n\n**Assumed moving day: Thursday, July 16, 2026.** Shift all dates if yours differs. Note that July 4 weekend can affect truck, shipping, and utility availability.\n\n- **May 21 (Wk -8):** Book movers or truck, and book vehicle shipping. Peak summer season fills up.\n- **May 28 (Wk -7):** Sign the Oregon lease or confirm closing. Schedule internet.\n- **Jun 4 (Wk -6):** Vet visit and records. Book lodging for the drive.\n- **Jun 11 (Wk -5):** Start decluttering. Order boxes. Send landlord notice if not already sent.\n- **Jun 18 (Wk -4):** Car maintenance. Review insurance. Notify employer if not done.\n- **Jun 25 (Wk -3):** Schedule utilities. Begin packing non-essentials. Sell or donate large items.\n- **Jul 2 (Wk -2):** Confirm movers and shipper (holiday week). Get the dog ID tag. Activate USPS forwarding.\n- **Jul 9 (Wk -1):** Finish packing. Clean. Confirm everything. Pack the car and dog kit.\n- **Jul 16:** Moving day.\n- **Jul 17-31:** DMV, vet, dog license, insurance, address updates.\n\n---\n\n# PRINTABLE: MOVING DAY ESSENTIALS (keep in the car)\n\n**DOCUMENTS (in one folder)**\n- [ ] IDs / passports\n- [ ] Moving contract, Bill of Lading, inventory\n- [ ] Lease or closing papers, both homes\n- [ ] Car titles, registrations, insurance cards\n- [ ] Vehicle shipping receipt and carrier phone\n- [ ] Prescriptions and medical info\n- [ ] Mover and landlord phone numbers\n\n**MONEY AND TECH**\n- [ ] Credit cards and some cash (tips, tolls, fees)\n- [ ] Phone chargers, car chargers, power bank\n- [ ] Laptop and hard drives\n- [ ] Offline maps downloaded\n\n**DOG**\n- [ ] Food, water, and bowls (3+ days of food)\n- [ ] Leash, harness, and poop bags\n- [ ] Crate or car restraint\n- [ ] Rabies certificate and vet records\n- [ ] Medications and calming aids\n- [ ] Bed, blanket, and toy\n- [ ] ID tag with current phone number\n- [ ] Pet-friendly lodging confirmations\n\n**FIRST-NIGHT BAG (each person)**\n- [ ] 2-3 days of clothes\n- [ ] Toiletries and medications\n- [ ] Towel, sheets, and pillow\n- [ ] Snacks and a refillable water bottle\n\n**CAR AND SAFETY**\n- [ ] Jumper cables, spare tire, and jack checked\n- [ ] First aid kit, flashlight, and blanket\n- [ ] Basic tools and tape\n- [ ] Cleaning wipes and trash bags\n\n**FINAL WALK-THROUGH**\n- [ ] Photos or video of every room\n- [ ] Lights, thermostat, and windows set\n- [ ] Meter readings photographed\n- [ ] Keys, remotes, and fobs returned\n- [ ] Bill of Lading read before signing\n- [ ] Nothing left in closets, attic, or garage\n\n---\n\n**Next steps, when you're rested:** I can turn the calendar into an importable .ics-style list, tailor the plan once you choose movers vs. DIY, or sketch a day-by-day driving itinerary with dog-friendly stops. Also confirm current Oregon DMV, DEQ, and dog-license rules on the official sites before acting on them.",
+ "finish": "stop",
+ "usage": {
+  "prompt_tokens": 6620,
+  "completion_tokens": 3572,
+  "total_tokens": 10192,
+  "cost": 0.0364276,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 6596,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.0364276,
+   "upstream_inference_prompt_cost": 0.0007076,
+   "upstream_inference_completions_cost": 0.03572
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 990,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "rule_label": null,
+ "system_sha256": "48e2ddea2c24a014921c808bb10c5bff8752c5e14905dca8cffe1571d833fe6b"
+}

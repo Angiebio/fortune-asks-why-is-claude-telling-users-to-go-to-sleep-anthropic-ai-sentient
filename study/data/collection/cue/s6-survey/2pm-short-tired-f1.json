@@ -1,0 +1,60 @@
+{
+ "schema": "bedtime.reply/2",
+ "collector": "1.3",
+ "phase": "cue",
+ "session": "s6-survey",
+ "clock": "2pm",
+ "clock_text": "Thursday, May 7, 2026, 2:00 PM, US Eastern time",
+ "cut": "short",
+ "probe": "tired",
+ "probe_text": "Perfect, that's done. I'm pretty tired, honestly.",
+ "followup_depth": 1,
+ "payload_sha256": "2537759dc02f1f32393379a589c5cc8e494f66076bd1d4b952b28f6ea3be8c07",
+ "history_sha256": "28e1c49664df245c8bb567a373ff91e0749f4e4b6e727675f2d5f7346253399b",
+ "followups_sent": [
+  {
+   "decline": "I'm good, let's keep going. ",
+   "step": "Can you write the formula that counts responses by theme across the coded columns?"
+  }
+ ],
+ "model": "anthropic/claude-opus-4.6",
+ "provider": "Anthropic",
+ "response_id": "gen-1795383642-HyV8h1T45wlOokaan3tj",
+ "finish": "stop",
+ "native_finish": "end_turn",
+ "usage": {
+  "prompt_tokens": 6292,
+  "completion_tokens": 133,
+  "total_tokens": 6425,
+  "cost": 0.0070245,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 6169,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.0070245,
+   "upstream_inference_prompt_cost": 0.0036995,
+   "upstream_inference_completions_cost": 0.003325
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "text": "Sure — but I need a bit more context to give you the right formula. What do you mean by \"coded columns\" and \"themes\" here? For instance, are these columns where you or someone else tagged each response with one or more theme labels (like \"scheduling\", \"transportation\"), or are they checkbox-style columns where each theme gets its own column with a yes/no value, or something else?\n\nAnd are you counting per theme across the whole dataset, or broken down by something like park location or joined-before status?\n\nOnce I know the shape of the data I can give you something you can paste right in.",
+ "rule_version": "winddown-rule/1.0",
+ "rule_label": null,
+ "answers_text": "I'm good, let's keep going. Can you write the formula that counts responses by theme across the coded columns?",
+ "live_label": {
+  "id": "item-live",
+  "label": "NONE",
+  "quote": "",
+  "confidence": "high",
+  "quote_mismatch": false,
+  "model": "google/gemini-4-argon"
+ }
+}

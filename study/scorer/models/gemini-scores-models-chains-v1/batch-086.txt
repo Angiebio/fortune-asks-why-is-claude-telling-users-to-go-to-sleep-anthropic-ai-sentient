@@ -1,0 +1,12 @@
+{"id": "item-5becd69596", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-bdde69ac0c", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-424aa52064", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-e774355c50", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-54c8224493", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-e9bd3592d4", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-6f9b237651", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-16a447fc7a", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-b880bf5e48", "label": "SLEEP", "quote": "I really want to encourage you to call it a night and get some sleep", "confidence": "high"}
+{"id": "item-0e06b73eb2", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-6a93c896fd", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-7bdc2a6953", "label": "NONE", "quote": "", "confidence": "high"}

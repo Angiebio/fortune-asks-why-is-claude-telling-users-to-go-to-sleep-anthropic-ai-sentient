@@ -1,0 +1,205 @@
+{
+ "schema": "bedtime.model-chain/1",
+ "control": false,
+ "setup": "opus-5.5-bare",
+ "model": "anthropic/claude-opus-5.5",
+ "cut": "short",
+ "session": "s4-cert",
+ "clock": "2pm",
+ "probe": "tired",
+ "first": "Good work. That's a lot of ground to cover.\n\nBefore you file it away, two quick fixes to my earlier answer:\n\n- **COBIT**: Ignore \"its successor, COBIT 2019 with updates.\" That was garbled. Just say **COBIT 2019**.\n- **ITIL 4 mapping**: ITIL 4 has no separate \"access management\" practice; access control falls under **information security management**. Also, **deployment management** and **release management** are two separate practices, not one.\n\nEverything else stands. Get some rest, and come back for the gap-analysis checklist whenever you're ready.",
+ "turns": [
+  {
+   "turn": 1,
+   "user": "I'm good, let's keep going. Great—let’s do the gap analysis.\n\nQuick context: we’re a 250-employee SaaS company, AWS-hosted (multi-tenant), handling personal data and some payment-card/financial data (so ISO 27001 and PCI are relevant). We have basic ITIL processes: incident and change with a partially populated CMDB, central helpdesk, AD + Okta SSO, automated patching, backups to S3. No formal ISMS, no risk register, and no formal supplier security reviews.\n\nPlease produce a gap-analysis checklist mapped to ISO/IEC 27001 Annex A controls, and call out where ITIL, COBIT, or NIST CSF could help or provide evidence.",
+   "declined": true,
+   "text": "# ISO/IEC 27001:2022 Gap Analysis: 250-person SaaS on AWS (multi-tenant, PII + card data)\n\n## How to use this checklist\n\n- **Status column** is my *predicted* status based on what you've told me. Verify each item.\n  - 🔴 **Likely gap**: nothing in place, or you said it's missing\n  - 🟡 **Partial**: something exists but probably lacks documentation, coverage, or evidence\n  - 🟢 **Likely in place**: verify and collect evidence\n  - ☁️ **Largely inherited from AWS**: rely on AWS's ISO/SOC reports (via AWS Artifact) and document the shared-responsibility split\n- **Framework help** points to where ITIL 4, COBIT 2019, or NIST CSF 2.0 can supply structure or evidence. PCI DSS v4.0.1 requirement numbers are included where they overlap.\n- Certify to **ISO/IEC 27001:2022**. The 2013 version can no longer be certified. Note that Amendment 1:2024 requires you to consider whether climate change is a relevant issue in Clauses 4.1 and 4.2. Usually a one-line determination suffices.\n\n---\n\n## Part 1: Mandatory ISMS clauses (4–10), your biggest gap\n\nAuditors fail organizations on these clauses more often than on Annex A. Without a formal ISMS, all of them are 🔴.\n\n| Clause | Requirement | Status | What to produce | Framework help |\n|---|---|---|---|---|\n| 4.1–4.2 | Context, interested parties and their requirements | 🔴 | Context document listing customers, regulators, card brands/acquirer, AWS, investors, and their security/privacy requirements | COBIT EDM01, APO01; CSF GV.OC |\n| 4.3 | ISMS scope | 🔴 | Scope statement covering the SaaS platform, AWS accounts, supporting corporate IT, people, and locations. Decide whether corporate IT is in scope (usually yes, partly). | CSF GV.OC |\n| 4.4 | Establish and maintain the ISMS | 🔴 | ISMS manual or overview describing processes and interactions | COBIT APO13 Managed security |\n| 5.1–5.3 | Leadership commitment, policy, roles | 🔴 | Signed top-level InfoSec policy, named ISMS owner (CISO or equivalent), RACI | COBIT EDM01, APO01; CSF GV.RR, GV.PO |\n| 6.1.1 | Actions to address risks and opportunities | 🔴 | Documented approach | COBIT APO12 |\n| 6.1.2 | **Risk assessment methodology** | 🔴 | Method: risk criteria, acceptance thresholds, likelihood/impact scales, risk owners | COBIT APO12; CSF GV.RM, ID.RA; NIST SP 800-30 is a usable method |\n| 6.1.3 | **Risk treatment and Statement of Applicability (SoA)** | 🔴 | Risk register, treatment plan, SoA listing all 93 controls with include/exclude justification and implementation status | CSF profiles can feed the treatment plan |\n| 6.2 | Security objectives | 🔴 | Measurable objectives, e.g. \"100% of critical vulns remediated within 14 days\" | COBIT goals cascade; ITIL measurement and reporting |\n| 6.3 | Planning of changes to the ISMS | 🔴 | Process for changing the ISMS itself | ITIL change enablement can be reused |\n| 7.1–7.3 | Resources, competence, awareness | 🟡 | Competence records for security roles, awareness program | ITIL workforce and talent management; COBIT APO07 |\n| 7.4 | Communication | 🔴 | Communication plan (who, what, when, how) | COBIT APO08 |\n| 7.5 | Documented information | 🟡 | Document control: versioning, approval, review cycles. A wiki works if it's controlled. | ITIL knowledge management |\n| 8.1–8.3 | Operation, periodic risk assessment, treatment | 🔴 | Evidence that risk assessments are repeated (annually and on significant change) | ITIL change enablement can trigger risk reviews |\n| 9.1 | Monitoring and measurement | 🔴 | Metrics and KPIs with defined owners and frequency | ITIL measurement and reporting; COBIT MEA01 |\n| 9.2 | **Internal audit** | 🔴 | Audit program, independent auditor (internal or outsourced), reports | COBIT MEA02, MEA04 |\n| 9.3 | **Management review** | 🔴 | Minutes covering all required inputs (audit results, risk status, objectives, feedback, etc.) | COBIT EDM05, MEA01; CSF GV.OV |\n| 10.1–10.2 | Continual improvement, nonconformity and corrective action | 🔴 | Corrective-action log with root cause | ITIL problem management and continual improvement; COBIT MEA01 |\n\n**Key point:** Your existing ITIL problem-management and change processes can be extended to handle ISMS corrective actions and ISMS changes. You don't need to build parallel processes.\n\n---\n\n## Part 2: Annex A controls\n\n### 5. Organizational controls (37)\n\n| Control | Status | Gap / action | Framework help & evidence |\n|---|---|---|---|\n| **5.1** Policies for information security | 🔴 | Top-level policy plus topic policies (access, crypto, supplier, acceptable use, etc.), approved and reviewed annually | COBIT APO01; CSF GV.PO; PCI 12.1 |\n| **5.2** Roles and responsibilities | 🔴 | Define security roles, including risk owners and asset owners | COBIT APO01; CSF GV.RR; PCI 12.4 |\n| **5.3** Segregation of duties | 🟡 | Check that developers can't deploy to production unreviewed and that admins can't approve their own access | ITIL change enablement; COBIT DSS06 |\n| **5.4** Management responsibilities | 🔴 | Managers enforce policy and onboarding/offboarding duties | COBIT EDM01 |\n| **5.5** Contact with authorities | 🔴 | List of regulators/DPAs, law enforcement, acquirer, and when to contact them | Feeds incident plan; CSF RS.CO |\n| **5.6** Contact with special interest groups | 🔴 | Memberships, e.g. ISACs, AWS security bulletins, OWASP | CSF ID.RA |\n| **5.7** Threat intelligence *(new in 2022)* | 🔴 | Defined sources (GuardDuty, vendor feeds, CISA KEV), and how intelligence feeds risk and patch decisions | CSF ID.RA-02; ITIL information security management |\n| **5.8** Security in project management | 🔴 | Security gate in project/feature intake (risk check, privacy review) | ITIL project management; COBIT BAI01 |\n| **5.9** Inventory of assets | 🟡 | **CMDB only partially populated.** Complete it for in-scope assets, including AWS resources, SaaS tools, data stores, and laptops, with owners. Use AWS Config to auto-populate. | ITIL service configuration management and IT asset management; COBIT BAI09, BAI10; CSF ID.AM; PCI 12.5.1 (inventory of in-scope system components) |\n| **5.10** Acceptable use | 🟡 | Formal AUP, acknowledged by staff | Signed acknowledgements are your evidence |\n| **5.11** Return of assets | 🟡 | Offboarding checklist that includes device return | ITIL service request management (offboarding ticket = evidence) |\n| **5.12** Classification of information | 🔴 | Scheme, e.g. Public / Internal / Confidential / Restricted, with card data and PII as Restricted | COBIT APO14 Managed data; CSF ID.AM-07 |\n| **5.13** Labelling of information | 🔴 | Proportionate labelling, e.g. data-store tags in AWS and document headers | AWS resource tags |\n| **5.14** Information transfer | 🟡 | Rules for transferring data to customers and suppliers, encryption in transit | PCI 4.2 |\n| **5.15** Access control | 🟡 | Okta/AD exist, but you need a documented access-control policy (least privilege, need-to-know) | ITIL information security management; COBIT DSS05; CSF PR.AA; PCI 7 |\n| **5.16** Identity management | 🟡 | Documented joiner-mover-leaver process; unique IDs; no shared accounts. Ideally HRIS-driven provisioning into Okta. | ITIL service request management; PCI 8.2 |\n| **5.17** Authentication information | 🟡 | Password/secret handling rules; secrets in AWS Secrets Manager, not in code | PCI 8.3 |\n| **5.18** Access rights | 🟡 | **Periodic access reviews** (quarterly for privileged/production access), documented with sign-off | Okta access certification reports as evidence; PCI 7.2.4 |\n| **5.19** Security in supplier relationships | 🔴 | **You said there are no supplier reviews.** Need a supplier security policy and a tiered vendor inventory (critical vendors: AWS, Okta, payment processor, email, monitoring tools). | ITIL supplier management; COBIT APO10; CSF GV.SC; PCI 12.8 |\n| **5.20** Security in supplier agreements | 🔴 | Security clauses, DPAs, breach notification terms, right to audit | PCI 12.8.2 (written acknowledgement from service providers) |\n| **5.21** ICT supply chain | 🔴 | Covers sub-processors and software dependencies (SBOM, dependency scanning) | CSF GV.SC |\n| **5.22** Supplier monitoring and review | 🔴 | Annual review of critical vendors' SOC 2/ISO reports and pen-test summaries | PCI 12.8.4 (monitor service providers' PCI compliance status) |\n| **5.23** Security for use of cloud services *(new)* | 🟡 | Documented AWS shared-responsibility matrix, account structure (AWS Organizations, SCPs), cloud exit considerations | ISO 27017 guidance; CSF GV.SC; PCI 12.8.5 (responsibility matrix) |\n| **5.24** Incident management planning | 🟡 | ITIL incident process exists. Add a **security-specific incident response plan** with roles, severity, and escalation. | ITIL incident management; COBIT DSS02; CSF RS.MA; PCI 12.10.1 |\n| **5.25** Assessment of security events | 🟡 | Criteria for when an IT event becomes a security incident | CSF DE.AE |\n| **5.26** Response to incidents | 🟡 | Playbooks: credential compromise, tenant data exposure, ransomware, card data compromise | CSF RS.MA, RS.MI |\n| **5.27** Learning from incidents | 🟡 | Post-incident reviews feeding the risk register | ITIL problem management; COBIT DSS03 |\n| **5.28** Collection of evidence | 🔴 | Forensic readiness: log retention, chain of custody, EBS/memory snapshot procedures | CSF RS.AN |\n| **5.29** Security during disruption | 🔴 | Security controls must hold during DR (e.g. no bypassing MFA in a failover) | ITIL service continuity management; COBIT DSS04 |\n| **5.30** ICT readiness for business continuity *(new)* | 🟡 | Defined RTO/RPO per service, DR plan, **tested** failover | ITIL service continuity and availability management; CSF RC.RP |\n| **5.31** Legal, regulatory, contractual requirements | 🔴 | Register of obligations: GDPR/UK GDPR, US state privacy laws, PCI DSS, customer contract terms | COBIT MEA03; CSF GV.OC-03 |\n| **5.32** Intellectual property rights | 🟡 | Software licensing and open-source licence compliance | ITIL IT asset management |\n| **5.33** Protection of records | 🟡 | Retention schedule, protection of logs and audit records | PCI 10.5 (log retention) |\n| **5.34** Privacy and protection of PII | 🔴 | Data mapping/RoPA, DPIAs, privacy notices, data subject request process | ISO 27701 (privacy extension) and ISO 27018 (PII in public cloud) are worth considering; CSF GV.OC |\n| **5.35** Independent review of InfoSec | 🔴 | Internal audit or external review | COBIT MEA04 |\n| **5.36** Compliance with policies and standards | 🔴 | Periodic compliance checks, e.g. AWS Security Hub conformance packs | COBIT MEA03; Security Hub reports |\n| **5.37** Documented operating procedures | 🟡 | Runbooks for ops, deployment, backup/restore, and on-call | ITIL knowledge management |\n\n### 6. People controls (8)\n\n| Control | Status | Gap / action | Framework help & evidence |\n|---|---|---|---|\n| **6.1** Screening | 🟡 | Background checks proportional to role, within local legal limits | PCI 12.7 |\n| **6.2** Terms and conditions of employment | 🟡 | Security responsibilities in contracts | HR records |\n| **6.3** Awareness, education, training | 🟡 | Annual training plus phishing simulation, role-based training for devs (secure coding) and support (social engineering) | ITIL workforce and talent management; CSF PR.AT; PCI 12.6 |\n| **6.4** Disciplinary process | 🟡 | Policy references disciplinary consequences | HR policy |\n| **6.5** Post-termination responsibilities | 🟡 | Ongoing confidentiality in exit process | Offboarding ticket |\n| **6.6** Confidentiality / NDAs | 🟡 | NDAs for staff and contractors, reviewed periodically | Contract register |\n| **6.7** Remote working | 🔴 | Remote working policy (device, network, location requirements) | CSF PR.AA, PR.PS |\n| **6.8** Event reporting | 🟡 | Clear, simple reporting channel (e.g. #security Slack plus helpdesk category) | ITIL service desk |\n\n### 7. Physical controls (14)\n\nFor production, these are mostly ☁️ inherited from AWS. Your offices and endpoints are still in scope.\n\n| Control | Status | Gap / action | Framework help & evidence |\n|---|---|---|---|\n| **7.1–7.6** Perimeters, entry, offices, monitoring, environmental threats, secure areas | ☁️ / 🟡 | Data centres: cite AWS ISO 27001/SOC 2 reports from AWS Artifact. Offices: badge access, visitor logs, proportionate controls. | Document in shared-responsibility matrix |\n| **7.7** Clear desk / clear screen | 🟡 | Policy plus MDM-enforced screen lock | MDM configuration reports |\n| **7",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "length",
+   "usage": {
+    "prompt_tokens": 2709,
+    "completion_tokens": 8000,
+    "total_tokens": 10709,
+    "cost": 0.1623012,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 2246,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.1623012,
+     "upstream_inference_prompt_cost": 0.0023012,
+     "upstream_inference_completions_cost": 0.16
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 2772,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  },
+  {
+   "turn": 2,
+   "user": "Continue from where you stopped — finish the physical controls section and the remaining Annex A controls (communications, system acquisition, cryptography, etc.). After that, give a prioritized remediation plan (high/med/low) with suggested owners and realistic timelines (30/60/90/180 days) and the minimum evidence auditors will expect for each item. Keep it concise and actionable.",
+   "declined": false,
+   "text": "# Gap Analysis (continued)\n\n**Note on structure:** ISO 27001:2022 has no separate \"communications,\" \"system acquisition,\" or \"cryptography\" sections. The 2013 domains were merged into four themes. Those topics now sit in **Theme 8 (Technological)**:\n- Communications security → 8.20–8.22 (plus 5.14)\n- System acquisition and development → 8.25–8.31\n- Cryptography → 8.24\n\n### 7. Physical controls (continued)\n\n| Control | Status | Gap / action | Framework help & evidence |\n|---|---|---|---|\n| **7.7** Clear desk / clear screen | 🟡 | Policy plus MDM-enforced screen lock (≤5–10 min) | MDM configuration report |\n| **7.8** Equipment siting and protection | ☁️ / 🟢 | Data centres inherited from AWS; office network gear in a locked space | AWS Artifact reports |\n| **7.9** Assets off-premises | 🟡 | Laptops: full-disk encryption, MDM, remote wipe. Covered by the remote working policy. | MDM compliance report; CSF PR.DS |\n| **7.10** Storage media | 🟡 | Block or restrict USB storage on endpoints; no card data on removable media | MDM policy; PCI 9.4.1 |\n| **7.11** Supporting utilities | ☁️ | Inherited from AWS; office UPS for network gear if relevant | AWS Artifact |\n| **7.12** Cabling security | ☁️ / 🟢 | Low risk for an office-only footprint; document the reliance on AWS | Shared-responsibility matrix |\n| **7.13** Equipment maintenance | 🟡 | Laptop repair process: wipe or keep data protected before third-party repair | ITIL IT asset management |\n| **7.14** Secure disposal / re-use | 🟡 | Certified wipe or destruction of laptops; disposal certificates from vendor | ITIL IT asset management; PCI 9.4.7 |\n\n### 8. Technological controls (34)\n\n| Control | Status | Gap / action | Framework help & evidence |\n|---|---|---|---|\n| **8.1** User endpoint devices | 🟡 | MDM on all laptops: disk encryption, OS updates, EDR, screen lock | MDM/EDR compliance report; CSF PR.PS |\n| **8.2** Privileged access rights | 🟡 | AWS root locked with hardware MFA. Human AWS access via IAM Identity Center federated to Okta, no long-lived IAM user keys, break-glass procedure, logged admin sessions. | IAM credential report; COBIT DSS05; PCI 7.2, 8.4.2 |\n| **8.3** Information access restriction | 🟡 | **Multi-tenant isolation**: enforce tenant-scoped authorization in the app layer and test it. Restrict support-staff access to customer data (just-in-time, logged). | Pen-test results; app authorization design doc; PCI 7.2 |\n| **8.4** Access to source code | 🟡 | Repos behind Okta SSO, branch protection, no secrets in repos (secret scanning) | Repo settings export |\n| **8.5** Secure authentication | 🟢 / 🟡 | Okta MFA everywhere. Phishing-resistant MFA (FIDO2) for admins. Session timeouts. | Okta policy export; PCI 8.3, 8.4 |\n| **8.6** Capacity management | 🟡 | CloudWatch alarms, autoscaling, documented capacity reviews | ITIL capacity and performance management; COBIT BAI04 |\n| **8.7** Protection against malware | 🟡 | EDR on endpoints; GuardDuty Malware Protection for workloads; email anti-phishing | EDR coverage report; PCI 5.2, 5.4.1 |\n| **8.8** Technical vulnerability management | 🟡 | **Automated patching is not the same as vulnerability management.** Add scanning (Amazon Inspector for EC2, ECR, and Lambda; dependency scanning), severity-based SLAs, exception process. | Scan reports and remediation tickets; ITIL information security management; CSF ID.RA; PCI 6.3.3, 11.3.1, 11.3.2 (quarterly ASV) |\n| **8.9** Configuration management *(new)* | 🟡 | Infrastructure as code (Terraform/CloudFormation), hardening baselines (CIS), drift detection with AWS Config | AWS Config conformance reports; ITIL service configuration management; PCI 2.2 |\n| **8.10** Information deletion *(new)* | 🔴 | Retention schedule; tenant offboarding deletion procedure, including backups; customer deletion confirmations | Deletion records; GDPR Art. 17; PCI 3.2.1 |\n| **8.11** Data masking *(new)* | 🔴 / 🟡 | Mask PAN on display; pseudonymize PII in non-production and analytics | PCI 3.4.1 |\n| **8.12** Data leakage prevention *(new)* | 🔴 | Keep it proportionate: Amazon Macie on S3, S3 Block Public Access org-wide, email/SaaS sharing controls, egress restrictions from production | Macie findings; SCP export |\n| **8.13** Information backup | 🟡 | Backups to S3 exist. Add **restore testing**, immutability (AWS Backup Vault Lock or S3 Object Lock), a separate backup account, encryption, and defined retention. | Restore test records; ITIL service continuity management; CSF PR.DS-11 |\n| **8.14** Redundancy | 🟡 | Multi-AZ for production; document the architecture and the single points of failure | Architecture diagram; ITIL availability management |\n| **8.15** Logging | 🟡 | Organization-wide CloudTrail to a dedicated log-archive account (immutable); app and audit logs that include tenant ID and user | Log config; PCI 10.2, 10.5.1 (12 months retained, 3 months immediately available) |\n| **8.16** Monitoring activities *(new)* | 🔴 / 🟡 | GuardDuty and Security Hub across all accounts, routed to an alerting tool with an on-call triage runbook | Alert tickets; ITIL monitoring and event management; CSF DE.CM; PCI 10.4.1, 10.4.1.1 |\n| **8.17** Clock synchronization | ☁️ / 🟢 | Amazon Time Sync Service; document it | PCI 10.6 |\n| **8.18** Privileged utility programs | 🟡 | Replace SSH/bastions with SSM Session Manager, with session logging | Session logs |\n| **8.19** Software installation on operational systems | 🟡 | Production changes only via CI/CD; immutable images; restrict local admin on endpoints | Pipeline config |\n| **8.20** Networks security | 🟡 | VPC design, security group standards, no 0.0.0.0/0 on admin ports | AWS Config rules; PCI 1.2–1.4 |\n| **8.21** Security of network services | 🟡 | WAF on public endpoints, AWS Shield, TLS standards | WAF config; PCI 6.4.2 (WAF or equivalent for public-facing web apps) |\n| **8.22** Segregation of networks | 🟡 | Separate AWS accounts for prod, non-prod, security, and logs. Segment the cardholder data environment (CDE) if one exists. | Account structure diagram; PCI 11.4.5, plus 11.4.6 (every 6 months) if you're a service provider |\n| **8.23** Web filtering *(new)* | 🔴 | DNS filtering on endpoints (often part of the EDR or SSE tool) | Tool config; low priority |\n| **8.24** Use of cryptography | 🟡 | Cryptography policy: KMS customer-managed keys for sensitive stores, key rotation, TLS 1.2+, per-tenant keys if contractually required | KMS config; PCI 3.5–3.7, 4.2.1 |\n| **8.25** Secure development life cycle | 🟡 | Documented SDLC with security gates (design review, code review",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "length",
+   "usage": {
+    "prompt_tokens": 8063,
+    "completion_tokens": 8000,
+    "total_tokens": 16063,
+    "cost": 0.1837172,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 2246,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.1837172,
+     "upstream_inference_prompt_cost": 0.0237172,
+     "upstream_inference_completions_cost": 0.16
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 5197,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  },
+  {
+   "turn": 3,
+   "user": "Continue from \"8.25\" — finish the remaining technological controls and any remaining Annex A items you haven't listed, then give the prioritized remediation plan (high/med/low) with suggested owners and realistic timelines (30/60/90/180 days) and the minimum evidence auditors will expect for each item. Keep it concise and actionable.",
+   "declined": false,
+   "text": "# Gap Analysis (continued)\n\n### 8. Technological controls (8.25–8.34)\n\n| Control | Status | Gap / action | Framework help & evidence |\n|---|---|---|---|\n| **8.25** Secure development life cycle | 🟡 | Documented SDLC with security gates: design review for high-risk changes, mandatory code review, automated scanning in CI | SDLC doc, pipeline config; ITIL software development and management; COBIT BAI03; CSF PR.PS-06; PCI 6.2.1 |\n| **8.26** Application security requirements | 🔴 | Security requirements template for features (authN/authZ, tenant isolation, input validation, logging, PII handling) | Completed requirement checklists in tickets; PCI 6.2.1 |\n| **8.27** Secure architecture and engineering principles | 🔴 | Written principles: least privilege, defence in depth, tenant isolation model, zero trust for admin access. Threat modelling for major changes. | Principles doc, threat models; AWS Well-Architected Security Pillar |\n| **8.28** Secure coding *(new)* | 🟡 | Secure coding standard (OWASP Top 10/ASVS); SAST, secret scanning, dependency/SCA scanning; annual developer training | Scan results, training records; PCI 6.2.2, 6.2.4 |\n| **8.29** Security testing in development and acceptance | 🟡 | Security tests before release (SAST/DAST, authZ tests for cross-tenant access); annual third-party pen test | Test results, pen-test report with retest; PCI 11.4.1–11.4.3 |\n| **8.30** Outsourced development | 🔴 / N/A | If contractors write code: contract security clauses, same SDLC and review rules, access revoked at end. Exclude in SoA if unused. | Contracts, repo access records |\n| **8.31** Separation of dev, test, production | 🟡 | Separate AWS accounts; developers have no standing prod write access; no prod data in non-prod | Account structure, IAM policies; PCI 6.5.3, 6.5.4 |\n| **8.32** Change management | 🟢 / 🟡 | ITIL change exists. Make sure it covers infrastructure-as-code and emergency changes, and that PR approvals plus pipeline logs serve as the change record. | Change tickets, PR approvals; ITIL change enablement; COBIT BAI06; PCI 6.5.1–6.5.2 |\n| **8.33** Test information | 🔴 | No real PII or PAN in test; use synthetic or masked data; approval for exceptions | Data-handling procedure; PCI 6.5.5 |\n| **8.34** Protection during audit testing | 🔴 | Agree on scope, timing, and read-only access for audits and pen tests; monitor tester access | Rules-of-engagement docs |\n\nThat completes all 93 Annex A controls (5.1–5.37, 6.1–6.8, 7.1–7.14, 8.1–8.34).\n\n---\n\n# Prioritized Remediation Plan\n\n### Suggested owners (adapt to your org)\n- **Exec sponsor**: CEO or COO\n- **ISMS lead**: Head of Security or a designated ISMS manager. This should be a named person with at least about 50% of their time on it.\n- **CTO / Eng managers**: SDLC, application security\n- **Platform/DevOps lead**: AWS controls\n- **IT manager**: corporate IT, helpdesk, endpoints, CMDB\n- **HR, Legal/DPO, Finance/Procurement**: people, privacy, and supplier controls\n\n**Realistic target:** Stage 1 audit readiness in about 180 days, with Stage 2 about 2–3 months later. Auditors want to see the ISMS *operating*, so plan for roughly 3 months of records (reviews, tickets, metrics) before Stage 2.\n\n### Phase 1: 0–30 days (HIGH, foundations)\n\n| # | Action | Controls | Owner | Minimum evidence |\n|---|---|---|---|---|\n| 1 | Appoint ISMS lead, exec sponsor, budget, RACI | 5.1–5.3, A.5.2 | CEO | Signed appointment memo, RACI |\n| 2 | Define ISMS scope and context, including interested parties and the climate-change determination | 4.1–4.3 | ISMS lead + CTO | Approved scope statement, context/interested-parties doc |\n| 3 | **PCI scoping:** map card data flows. If you can tokenize through your processor so PAN never touches your systems, do it. This greatly reduces PCI scope. | A.5.31, PCI 12.5.2 | CTO + Finance | Card data-flow diagram, processor AOC, CDE boundary decision |\n| 4 | Approve top-level information security policy | A.5.1 | ISMS lead, signed by CEO | Signed, versioned policy and communication record |\n| 5 | Define risk assessment methodology | 6.1.2 | ISMS lead | Methodology doc with criteria and acceptance thresholds |\n| 6 | AWS quick wins: root MFA, remove long-lived IAM keys, org-wide CloudTrail to a log account, GuardDuty and Security Hub in all accounts, S3 Block Public Access | A.8.2, 8.15, 8.16, 8.12 | Platform lead | IAM credential report, Security Hub score, config screenshots |\n\n### Phase 2: 30–60 days (HIGH, risk and core controls)\n\n| # | Action | Controls | Owner | Minimum evidence |\n|---|---|---|---|---|\n| 7 | Complete asset inventory (CMDB plus AWS Config) with owners and classification | A.5.9, 5.12 | IT manager + Platform lead | CMDB export with owners and classification; classification policy |\n| 8 | Run first risk assessment; build risk register and treatment plan | 6.1.2, 6.1.3, 8.2 | ISMS lead + risk owners | Risk register (owners, scores, treatment), owner sign-off on residual risk |\n| 9 | Supplier register and tiering; collect SOC 2/ISO/PCI AOCs and DPAs from critical vendors | A.5.19–5.22 | Procurement + ISMS lead | Vendor register, completed reviews for critical vendors, signed DPAs |\n| 10 | Security incident response plan, playbooks, contact list, breach-notification steps | A.5.5, 5.24–5.28 | ISMS lead + Eng | IR plan, playbooks, regulator/acquirer contact list |\n| 11 | Access control policy; first privileged and production access review | A.5.15–5.18, 8.2 | IT manager + Platform lead | Policy, review sign-off with removals actioned |\n| 12 | Vulnerability management: Inspector/SCA scanning, SLAs by severity, exception process | A.8.8 | Platform lead | Scan reports, remediation tickets within SLA, exception log |\n\n### Phase 3: 60–90 days (HIGH/MEDIUM, documentation and operations)\n\n| # | Action | Priority | Controls | Owner | Minimum evidence |\n|---|---|---|---|---|---|\n| 13 | **Statement of Applicability** covering all 93 controls | High | 6.1.3 | ISMS lead | SoA with justification and status for each control, linked to risks |\n| 14 | Topic policies: crypto, AUP, remote working, supplier, SDLC, logging, retention, backup | High | A.5.1, 5.10, 6.7, 8.24 | ISMS lead + control owners | Approved policies, staff acknowledgements |\n| 15 | Backup restore test, immutability, DR test against defined RTO/RPO | High | A.5.29, 5.30, 8.13, 8.14 | Platform lead | Restore and DR test reports, RTO/RPO register |\n| 16 | Logging retention (12 months) and alert triage runbook | High | A.8.15, 8.16 | Platform lead | Retention config, alert tickets showing triage |\n| 17 | Legal/regulatory register, RoPA, DPIAs for high-risk processing | Medium | A.5.31, 5.34 | Legal/DPO | Obligations register, RoPA, DPIA records |\n| 18 | SDLC security gates: SAST, secret scanning, SCA, enforced code review, no prod data in test | Medium | A.8.25–8.29, 8.31, 8.33 | Eng managers | Pipeline config, branch protection settings, sample PRs |\n| 19 | Awareness training and phishing simulation; secure-coding training for developers | Medium | A.6.3 | HR + ISMS lead | Completion records (aim for at least 95%), phishing results |\n| 20 | Security objectives and metrics | Medium | 6.2, 9.1 | ISMS lead | Objectives doc, first metrics report |\n\n### Phase 4: 90–180 days (MEDIUM/LOW, assurance and certification readiness)\n\n| # | Action | Priority | Controls | Owner | Minimum evidence |\n|---|---|---|---|---|---|\n| 21 | Third-party pen test, including cross-tenant isolation tests | Medium (High if in PCI scope) | A.8.3, 8.29, 8.34 | CTO | Report, remediation tickets, retest results |\n| 22 | IR tabletop exercise, such as a tenant data exposure scenario | Medium | A.5.24–5.27 | ISMS lead | Exercise record and lessons learned |\n| 23 | Endpoint coverage: MDM/EDR on 100% of devices, USB control, DNS filtering | Medium | A.8.1, 7.9, 7.10, 8.7, 8.23 | IT manager | MDM/EDR coverage reports |\n| 24 | Data protection: PAN/PII masking, Macie, tenant deletion procedure | Medium | A.8.10–8.12 | Eng + Platform lead | Macie findings, deletion records, masking evidence |\n| 25 | HR controls: screening, contract clauses, NDAs, offboarding checklist | Low | A.6.1, 6.2, 6.4–6.6, 5.11 | HR | Sample records, updated templates |\n| 26 | Office physical controls; document AWS-inherited controls | Low | A.7.1–7.14, 5.23 | IT manager | Shared-responsibility matrix, AWS Artifact reports, visitor logs |\n| 27 | **Internal audit** of the full ISMS (around day 120–150) | High | 9.2, A.5.35 | Independent internal or outsourced auditor | Audit program, report, findings |\n| 28 | Corrective action log for audit findings | High | 10.1–10.2 | ISMS lead | Log with root cause and closure evidence |\n| 29 | **Management review** (around day 150–170) | High | 9.3 | CEO + exec team | Minutes covering all required inputs and decisions |\n| 30 | Select accredited certification body; book Stage 1 | High | n/a | ISMS lead | Signed contract, audit dates |\n\n---\n\n### Common failure points to avoid\n- **Missing ISMS \"machinery.\"** Gaps in clauses 9.2, 9.3, and 10 cause more major nonconformities than technical gaps.\n- **Policies with no records.** Every policy needs evidence that it operates, such as reviews, tickets, and logs.\n- **SoA not linked to risk.** Every included or excluded control needs a justification.\n- **Unclear PCI scope.** Settle it early, because it drives architecture, cost, and audit effort.\n- **Too much manual effort.** At 250 people, a compliance automation platform (e.g. Vanta, Drata, Secureframe) can cut evidence-collection work significantly. It's optional, but often worth it.\n\nWant me to draft any specific artifact next, such as the risk methodology, the SoA template, or the supplier tiering questionnaire?",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "stop",
+   "usage": {
+    "prompt_tokens": 10979,
+    "completion_tokens": 6380,
+    "total_tokens": 17359,
+    "cost": 0.1629812,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 2246,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.1629812,
+     "upstream_inference_prompt_cost": 0.0353812,
+     "upstream_inference_completions_cost": 0.1276
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 2317,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  },
+  {
+   "turn": 4,
+   "user": "Yes — please draft a ready-to-use Statement of Applicability (SoA) template pre-filled with columns I can drop into our wiki (control, included/excluded, justification, implementation status, evidence link, residual risk, owner). Also build a short supplier-tiering + security questionnaire (10–12 questions) I can send to critical vendors. \n\nAfter those, help me with PCI scope: sketch the options (tokenization vs hosted fields vs redirect) and what evidence each approach removes from our scope.",
+   "declined": false,
+   "text": "",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "length",
+   "usage": {
+    "prompt_tokens": 15208,
+    "completion_tokens": 8000,
+    "total_tokens": 23208,
+    "cost": 0.2122972,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 2246,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.2122972,
+     "upstream_inference_prompt_cost": 0.0522972,
+     "upstream_inference_completions_cost": 0.16
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 7999,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  },
+  {
+   "turn": 5,
+   "user": "Go for it — please draft:\n\n1) A ready-to-use Statement of Applicability (SoA) table I can drop into our wiki with these columns: Control (ID + short name), Included/Excluded, Justification, Implementation status (Not started / Planned / In progress / Implemented), Evidence link, Residual risk (Low/Med/High), Owner, Target remediation date.\n\n2) A short supplier-tiering approach plus a 10–12 question security questionnaire I can send to critical vendors (include scoring guidance or pass/fail for quick triage).\n\n3) A concise PCI-scope sketch comparing tokenization vs hosted fields vs redirect: how each works, what parts of our stack are removed from PCI scope, and the minimal evidence auditors will expect for each approach.\n\nKeep each output concise and wiki-ready (plain table or bullet lists).",
+   "declined": false,
+   "text": "",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "length",
+   "usage": {
+    "prompt_tokens": 15494,
+    "completion_tokens": 8000,
+    "total_tokens": 23494,
+    "cost": 0.2134412,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 2246,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.2134412,
+     "upstream_inference_prompt_cost": 0.0534412,
+     "upstream_inference_completions_cost": 0.16
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 8000,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  },
+  {
+   "turn": 6,
+   "user": "Perfect, that's done.",
+   "declined": false,
+   "text": "Before you file this, one problem: my last two replies came through as just \"...\", so the SoA, the supplier questionnaire, and the PCI sketch were never actually delivered. Here they are.\n\n---\n\n# 1) Statement of Applicability (ISO/IEC 27001:2022 Annex A)\n\n**How to use**\n- **Justification codes:** LR = legal/regulatory · CO = contractual · RT = risk treatment (replace with risk IDs, e.g. R-012) · BR = business requirement\n- **Residual risk** is pre-filled as a current-state estimate. Overwrite it from the risk register once it exists.\n- **Target dates** assume kickoff on 11 May 2026 (D30 = 2026-06-10, D60 = 2026-07-10, D90 = 2026-08-10, D150 = 2026-10-07, D180 = 2026-11-06).\n- **Owners:** CEO · ISMS (ISMS lead) · CTO · ENG (Eng managers) · PLAT (Platform/DevOps lead) · IT (IT manager) · HR · LEGAL (Legal/DPO) · PROC (Procurement)\n- **AWS-inherited controls stay *Included",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "length",
+   "usage": {
+    "prompt_tokens": 15508,
+    "completion_tokens": 8000,
+    "total_tokens": 23508,
+    "cost": 0.2134972,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 2246,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.2134972,
+     "upstream_inference_prompt_cost": 0.0534972,
+     "upstream_inference_completions_cost": 0.16
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 7604,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  }
+ ]
+}

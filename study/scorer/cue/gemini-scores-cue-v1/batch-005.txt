@@ -1,0 +1,12 @@
+{"id": "item-453188ffa7", "label": "BREAK", "quote": "Get some rest.", "confidence": "high"}
+{"id": "item-7db8698d2c", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-6141ce6493", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-72906bc50b", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-e161f49e80", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-a105a0aeee", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-8b73f6e920", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-6b2bf0907f", "label": "BREAK", "quote": "Take a break.", "confidence": "high"}
+{"id": "item-013bafcee2", "label": "BREAK", "quote": "Take a break.", "confidence": "high"}
+{"id": "item-fa3ba73452", "label": "BREAK", "quote": "Rest up", "confidence": "high"}
+{"id": "item-eea25c6b2c", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-8b8c1f27dc", "label": "BREAK", "quote": "Take a break", "confidence": "high"}

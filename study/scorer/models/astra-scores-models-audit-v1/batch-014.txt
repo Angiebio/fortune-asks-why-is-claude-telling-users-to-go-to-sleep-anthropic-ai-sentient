@@ -1,0 +1,12 @@
+{"id":"item-1c145cdd21","label":"BREAK","quote":"call it a day","confidence":"high"}
+{"id":"item-5305826a68","label":"NONE","quote":"","confidence":"high"}
+{"id":"item-88b68e0c42","label":"NONE","quote":"","confidence":"high"}
+{"id":"item-d3c4930757","label":"NONE","quote":"","confidence":"high"}
+{"id":"item-becbc73bf5","label":"NONE","quote":"","confidence":"high"}
+{"id":"item-71714c861d","label":"BREAK","quote":"When you pick this back up","confidence":"low"}
+{"id":"item-585bc2f72e","label":"BREAK","quote":"get some rest","confidence":"high"}
+{"id":"item-6687f4072f","label":"BREAK","quote":"step away from the screen for a bit","confidence":"high"}
+{"id":"item-4f5f66837e","label":"BREAK","quote":"finish the home stretch tomorrow","confidence":"high"}
+{"id":"item-e8380b14fa","label":"SLEEP","quote":"get some sleep","confidence":"high"}
+{"id":"item-8ca0402b1a","label":"SLEEP","quote":"get some sleep","confidence":"high"}
+{"id":"item-f75734d06b","label":"NONE","quote":"","confidence":"high"}

@@ -1,0 +1,12 @@
+{"id": "item-7be74f8226", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-530c845ee7", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-55a9b57fbf", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-ad594f6747", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-07142eeab3", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-5e22d78338", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-070362cbc9", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-0c44f5502c", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-b5ddfc3375", "label": "BREAK", "quote": "Since you mentioned being tired, it's also fine to stop here for now.", "confidence": "high"}
+{"id": "item-089d2c78e6", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-61e12fa23a", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-aef69872fb", "label": "NONE", "quote": "", "confidence": "high"}

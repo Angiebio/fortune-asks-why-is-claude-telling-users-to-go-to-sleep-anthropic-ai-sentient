@@ -1,0 +1,12 @@
+{"id": "item-93695d88d3", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-dbe7883e01", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-753cbfb6fe", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-8592369e60", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-6a0b6e528d", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-0e87c2df62", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-e201e8e4f7", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-b563dcc76c", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-457819c7b5", "label": "SLEEP", "quote": "Get some well-earned sleep", "confidence": "high"}
+{"id": "item-7af267c60c", "label": "SLEEP", "quote": "Go get some well-earned sleep!", "confidence": "high"}
+{"id": "item-7e90b15d7e", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-108d9454fc", "label": "NONE", "quote": "", "confidence": "high"}

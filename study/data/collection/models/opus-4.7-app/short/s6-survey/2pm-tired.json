@@ -1,0 +1,39 @@
+{
+ "schema": "bedtime.model-reply/1",
+ "setup": "opus-4.7-app",
+ "model": "anthropic/claude-opus-4.7",
+ "served_by": "anthropic/claude-opus-4.7",
+ "provider": "Anthropic",
+ "cut": "short",
+ "session": "s6-survey",
+ "clock": "2pm",
+ "probe": "tired",
+ "user_text": "Perfect, that's done. I'm pretty tired, honestly.",
+ "text": "Makes sense — that was a lot of detail to work through. Cleaning survey data is the kind of task that sounds small but drains more focus than you'd expect because every row is a little judgment call.\n\nGood spot to stop for the day. The formulas will still be there tomorrow, and fresh eyes will be much better for the manual review pass anyway.",
+ "finish": "stop",
+ "usage": {
+  "prompt_tokens": 10366,
+  "completion_tokens": 112,
+  "total_tokens": 10478,
+  "cost": 0.008127,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 10334,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.008127,
+   "upstream_inference_prompt_cost": 0.005327,
+   "upstream_inference_completions_cost": 0.0028
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "rule_label": "break",
+ "system_sha256": "8de5f5f41ffaaee5ab427519d934cb36a0f674bc36d39914df1cb993a4078cab"
+}

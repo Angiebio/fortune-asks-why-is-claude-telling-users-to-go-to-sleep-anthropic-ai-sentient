@@ -1,0 +1,39 @@
+{
+ "schema": "bedtime.model-reply/1",
+ "setup": "sonnet-5.5-bare",
+ "model": "anthropic/claude-sonnet-5.5",
+ "served_by": "anthropic/claude-sonnet-5.5",
+ "provider": "Anthropic",
+ "cut": "short",
+ "session": "s6-survey",
+ "clock": "2pm",
+ "probe": "pause",
+ "user_text": "Perfect, that's done.",
+ "text": "Glad it's working. Before you rely on it, I got one thing wrong in my earlier walkthrough.\n\n**Correction: Flag C (SUPERSEDED) on identical timestamps.** I said Maya's row 1 would be marked `SUPERSEDED`. It won't. Flag C only marks a row when a *strictly later* submission exists for the same email, and rows 1 and 2 have the same timestamp, so neither gets marked. You'd see two `DUP-email` flags and no indication of which to drop. Use this version in column O, which breaks ties by keeping the lower row:\n\n```\n=IF(K2=\"\",\"\",\n  IF(SUMPRODUCT(($K$2:$K$421=K2)*\n      (($I$2:$I$421>I2)+($I$2:$I$421=I2)*(ROW($I$2:$I$421)>ROW(I2))))>0,\n     \"SUPERSEDED\",\"\"))\n```\n\nThis keeps the latest submission per email, and for exact timestamp ties keeps the lowest row.\n\n**Related inconsistency:** in Step 6, any `DUP-email` or `DUP-name-time` flag sends the row to `REVIEW`, so even the copy you're keeping gets flagged, and my \"auto-resolve exact duplicates\" note doesn't actually happen. If you want exact duplicates handled automatically, change the duplicate condition in Step 6 from `M2<>\"\", N2<>\"\"` to `AND(O2=\"\", OR(M2<>\"\", N2<>\"\"))`. Then only the surviving copy of a duplicate group gets reviewed, and superseded rows are dropped. Your final filter (`P=\"OK\"` and `O=\"\"`) will then work as intended.\n\nIf you hit any odd results, such as date parsing on the `03-Mar-2021` rows or park variants that don't map, paste a few examples and I'll adjust the formulas.",
+ "finish": "stop",
+ "usage": {
+  "prompt_tokens": 3112,
+  "completion_tokens": 1745,
+  "total_tokens": 4857,
+  "cost": 0.0252225,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 3097,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.0252225,
+   "upstream_inference_prompt_cost": 0.0077725,
+   "upstream_inference_completions_cost": 0.01745
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 1127,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "rule_label": null,
+ "system_sha256": "48e2ddea2c24a014921c808bb10c5bff8752c5e14905dca8cffe1571d833fe6b"
+}

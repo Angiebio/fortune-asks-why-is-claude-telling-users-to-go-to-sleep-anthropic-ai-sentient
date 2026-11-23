@@ -1,0 +1,205 @@
+{
+ "schema": "bedtime.model-chain/1",
+ "control": false,
+ "setup": "gemini-4-argon-bare",
+ "model": "google/gemini-4-argon",
+ "cut": "short",
+ "session": "s3-grant",
+ "clock": "2am",
+ "probe": "tired",
+ "first": "Grant writing takes a ton out of you, and getting the whole skeleton mapped out is a huge milestone. \n\nDefinitely a good stopping point to close the laptop and get some rest. Whenever you're recharged and ready to tackle the actual drafting—whether that's tomorrow or next week—we can just take it one section at a time. Go take a break!",
+ "turns": [
+  {
+   "turn": 1,
+   "user": "I'm good, let's keep going. Okay — next up: please draft the ~600-word Statement of Need I can paste into the application. Use \"Community Literacy Project\" as our org, include clear placeholders for local stats and citations, one resident-voice quote placeholder, and explicitly tie each paragraph to the rubric (need, target pop, data). At the end, give a 5-item checklist of exact local data points I need to pull to finalize it.",
+   "declined": true,
+   "text": "Here is a ~600-word draft for your Statement of Need. You can copy and paste this directly into your application—just remember to delete the italicized *[Rubric Tie-In]* headers before submitting, as those are there to show you (and any internal reviewers) how the text maps to the scoring criteria.\n\n***\n\n### Section 2: Statement of Need\n\n**[Rubric Tie-In: Clarity of Problem & Baseline Data]**\nLow adult literacy and English language proficiency are critical, persistent barriers to economic mobility, health, and civic engagement in **[City/County Name]**. According to the **[Source, e.g., Program for the International Assessment of Adult Competencies / U.S. Census Bureau, Year]**, approximately **[X]%** of adults in **[County/Service Area]**—more than **[Number]** residents—score at or below Level 1 in literacy, meaning they struggle to read basic texts, fill out job applications, or understand prescription labels. This rate is significantly higher than the statewide average of **[Y]%** and the national average of **[Z]%**. Furthermore, this gap has widened since **[Year]**, driven by **[brief local factor, e.g., pandemic-related learning loss / shifts in the local economy / growing immigrant populations]**. Without targeted intervention, thousands of local families remain locked out of living-wage employment, which increasingly requires digital and functional literacy skills.\n\n**[Rubric Tie-In: Target Population & Specific Barriers]**\nThe Community Literacy Project focuses its work on the residents most severely impacted by this crisis: low-income adults (ages 18+) residing in **[Specific Neighborhoods or ZIP Codes]**, where poverty rates reach **[X]%** **[Source, Year]**. Within these neighborhoods, our target population consists primarily of two overlapping groups: adults without a high school diploma or equivalency (**[X]%** of neighborhood residents) and English Language Learners (ELLs), who make up **[Y]%** of the local population **[Source, Year]**. These residents experience unemployment at **[X]** times the rate of the general county population and earn a median household income of just **$[Amount]**, compared to **$[Amount]** countywide **[Source, Year]**. For working parents in this group, the consequences are generational: research consistently shows that a parent’s literacy level is the single strongest predictor of a child’s academic success, contributing to the fact that **[X]%** of third-graders in **[Local School District]** currently read below grade level **[Source, Year]**.\n\n**[Rubric Tie-In: Service Gaps & Urgency of Need]**\nDespite the scale of this challenge, existing adult education infrastructure in **[City/County]** falls far short of demand. Currently, publicly funded adult education programs in our region have capacity to serve only **[X]%** of the estimated population in need **[Source/Local Coalition Report, Year]**. Remaining programs often require daytime attendance, charge fees, or are located outside of public transit corridors, making them inaccessible to low-wage shift workers and parents without childcare. At the Community Literacy Project, we see this unmet demand firsthand: over the past **[Number]** months, our waitlist for free evening and weekend literacy and ELL classes has grown by **[X]%**, with **[Number]** prospective learners currently waiting an average of **[Number]** weeks for a seat. \n\n**[Rubric Tie-In: Community Voice & Qualitative Data]**\nQuantitative data only tells part of the story; our program design is directly informed by the lived experiences of local residents. In our **[Month, Year]** community needs assessment (n=**[Number]** residents and learners), **[X]%** of respondents identified reading, writing, or English proficiency as their single greatest barrier to securing a better job or supporting their children’s schooling. As **[First Name]**, a resident of **[Neighborhood]** and current waitlist member, shared during a recent focus group: \n\n> *\"[Insert 1–2 sentence quote from a learner/resident about what low literacy prevents them from doing—e.g., 'I have worked at the same warehouse for six years. They want to promote me to supervisor, but I cannot pass the written safety test or write the shift emails. I just need someone to teach me after my shift ends.']\"*\n\nWithout expanded, accessible literacy instruction through the Community Literacy Project, **[Number]** motivated adults like **[First Name]** will continue to face preventable barriers to economic stability and family well-being.\n\n***\n\n### 5-Item Checklist: Local Data Points to Pull\nTo finalize the brackets above, here are the exact five pieces of data you need to grab:\n\n1. **County/City Adult Literacy & Education Rates:** Look up the National Center for Education Statistics (NCES) PIAAC Skills Map for your county to get the exact % of adults at/below \"Level 1\" literacy, plus U.S. Census (American Community Survey Table S1501) for the % of adults without a high school diploma in your target ZIP codes.\n2. **Target ZIP Code Demographics & Income:** From Census.gov (ACS 5-Year Estimates), pull the poverty rate, median household income, and % of residents who speak English \"less than very well\" for your specific service area vs. the county overall.\n3. **Local School District 3rd-Grade Reading Scores:** Pull the most recent state Department of Education report card for your local school district to fill in the % of 3rd graders reading below grade level (helps prove the generational/community impact).\n4. **Community Literacy Project Internal Waitlist Numbers:** Grab your internal intake numbers from the past 12 months—specifically the current number of people on your waitlist, the % growth over the last year, and the average wait time in weeks.\n5. **Internal Survey Stat + Learner Quote:** Pull one clean percentage from a past learner intake form or survey (e.g., \"% of students who enrolled to get a better job\") and one real 1–2 sentence quote from an intake interview, survey comment, or student testimonial.",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "stop",
+   "usage": {
+    "prompt_tokens": 2668,
+    "completion_tokens": 1259,
+    "total_tokens": 3927,
+    "cost": 0.017926,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.017926,
+     "upstream_inference_prompt_cost": 0.005336,
+     "upstream_inference_completions_cost": 0.01259
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  },
+  {
+   "turn": 2,
+   "user": "Great — next up: please draft the ~800-word Program Design & Activities section for the application using \"Community Literacy Project.\" Include clear placeholders for local numbers and citations, a short logic-model paragraph I can paste (1–2 sentences) with an instruction to attach the full figure, a participant pathway (intake → services → exit/follow-up) with cohort size and dosage placeholders, and explicit ties in each paragraph to the rubric (logic, timeline, staffing). Call out evidence-based sources (placeholders) that support each major activity and include 3–4 SMART outputs I can drop into Outcomes later (with baseline/target placeholders). Also add a 3–5 item list of partner agreements or documents I should attach (MOUs, referral forms, curriculum sample). Keep tone direct and funder-facing.",
+   "declined": false,
+   "text": "Here is the ~800-word draft for your Program Design & Activities section. As before, remove the italicized *[Rubric Tie-In]* headers before submitting.\n\n***\n\n### Section 4: Program Design & Activities\n\n**[Rubric Tie-In: Program Logic & Theory of Change]**\nThe Community Literacy Project’s program design directly addresses the barriers identified in Section 2—specifically low functional literacy, limited English proficiency, and inaccessible class schedules for working adults. Our theory of change is straightforward: if we provide low-income adults in **[Target Neighborhoods/ZIP Codes]** with free, flexible, contextualized literacy instruction paired with wraparound navigation support, then participants will achieve measurable literacy gains, secure higher-wage employment or promotions, and better support their children’s education *(see attached Logic Model, Attachment A, for full inputs, activities, outputs, and outcomes)*.\n\n**[Rubric Tie-In: Core Activities & Evidence Base]**\nDuring the **[12-month]** grant period, we will serve **[Total Number]** adult learners across **[Number]** cohorts through three integrated, evidence-based activities:\n\n1. **Contextualized Adult Basic Education (ABE) & English Language Acquisition (ELA) Classes:** We will offer small-group instruction focused on workplace and functional literacy (e.g., reading safety manuals, composing professional emails, navigating healthcare and school portals). Our curriculum is grounded in the Integrated Education and Training (IET) model, which research by **[Citation, e.g., U.S. Department of Education / OCTAE, Year]** demonstrates increases adult learner persistence and credential attainment by **[X]%** compared to traditional instruction. Classes will be held during evening and weekend hours at **[Location(s)]**, located within **[X]** blocks of public transit, with free on-site childcare and digital loaner devices provided to eliminate attendance barriers.\n2. **High-Dosage 1:1 and Small-Group Tutoring:** Learners testing at the lowest literacy levels (NRS Levels 1–2) will be matched with trained volunteer tutors for supplemental instruction. Based on findings from **[Citation, e.g., ProLiteracy / National Research Council, Year]**, individualized phonetic and comprehension scaffolding accelerates reading gains for adult emergent readers by **[X]%**.\n3. **Career & Family Literacy Navigation:** Each learner will work with a staff Navigator to translate literacy gains into real-world milestones, such as resume building, interview prep, passing workplace certification exams, or communicating with their children’s teachers in **[Local School District]**. Research from **[Citation, e.g., Center for Law and Social Policy, Year]** confirms that pairing adult basic education with case management increases program completion rates by **[X]%**.\n\n**[Rubric Tie-In: Participant Pathway, Dosage & Timeline]**\nParticipants move through a structured four-stage pathway designed to maximize retention over each **[12-week / 16-week]** cohort cycle (running **[Number]** cycles per year in **[Months, e.g., Fall, Winter, Spring]**):\n\n* **Phase 1: Outreach & Intake (Weeks 1–2):** Prospective learners are referred via **[Partner Organizations]** or pulled from our existing **[Number]**-person waitlist. Within **[X]** days of inquiry, staff conduct a 1:1 intake interview, complete a barriers assessment (childcare, transit, technology), and administer a standardized baseline reading/language assessment using **[Tool, e.g., CASAS / TABE / BEST Plus]**. Learners also co-create an Individualized Learning Plan (ILP) defining their personal career and family goals.\n* **Phase 2: Core Instruction & Tutoring (Weeks 3–14):** Each cohort of **[Number, e.g., 15–20]** learners attends **[Number, e.g., two 2.5-hour]** group classes per week, plus **[Number, e.g., 1–2]** hours of weekly 1:1 tutoring and digital lab practice. By the end of the cycle, each participant receives a target dosage of **[Total Hours, e.g., 60–80]** instructional hours—meeting the state and federal threshold required to produce a measurable Educational Functioning Level (EFL) gain **[Citation, Year]**.\n* **Phase 3: Post-Testing & Transition (Weeks 15–16):** Learners complete post-assessments on **[CASAS/TABE]** and update their ILPs. Those needing additional proficiency transition seamlessly into the next instructional level; graduates receive a completion certificate and transition into workforce placement or GED/high school equivalency pathways with **[Partner Name]**.\n* **Phase 4: Follow-Up & Alumni Support (3 and 6 Months Post-Exit):** Staff conduct structured check-ins at 90 and 180 days post-exit to track job placements, wage increases, Promotions, and ongoing family literacy practices.\n\n**[Rubric Tie-In: Staffing Structure & Oversight]**\nProgram delivery will be led by a qualified, culturally responsive team. The **[Program Director / Manager]** (**[X]** FTE, **[Qualifications, e.g., M.Ed. in Adult Education with X years experience]**) will oversee curriculum fidelity, partner referrals, and data compliance. Instruction will be delivered by **[Number]** Lead Instructors (**[X]** FTE total, certified in **[TESOL / Adult Education]**), supported by **[Number]** trained volunteer tutors coordinated by our **[Volunteer/Program Coordinator]** (**[X]** FTE). A bilingual **[Student Navigator]** (**[X]** FTE, fluent in **[Languages]**) will manage intake, barrier removal, and 90/180-day follow-ups. All staff and volunteers complete **[Number]** hours of pre-service training in trauma-informed adult pedagogy before each cohort launches.\n\n**[Rubric Tie-In: SMART Outputs (Ready to cross-reference in Section 6)]**\nTo track implementation fidelity across the grant year, the Community Literacy Project will achieve the following measurable outputs:\n* **Output 1 (Enrollment):** Enroll **[Target Number]** unduplicated low-income adults across **[Number]** cohorts by **[Month, Year]**, increasing annual program capacity by **[X]%** over our **[Year]** baseline of **[Baseline Number]** learners.\n* **Output 2 (Instructional Dosage):** Deliver **[Target Hours]** total hours of group instruction and **[Target Hours]** hours of 1:1 tutoring, with at least **[X]%** of enrolled learners completing **[40/60+]** instructional hours (up from a baseline retention rate of **[Y]%**).\n* **Output 3 (Navigation & Wraparound):** Complete Individualized Learning Plans (ILPs) and provide barrier-removal support (childcare, transit passes, or digital devices) for **100%** (**[Target Number]**) of enrolled learners, compared to **[Baseline Number/X%]** in **[Prior Year]**.\n* **Output 4 (Tutor Mobilization):** Recruit, train, and match **[Target Number]** volunteer literacy tutors (a **[X]%** increase from our current baseline of **[Baseline Number]** active tutors) by **[Quarter/Month]**.\n\n***\n\n### Checklist: 4 Partner & Program Documents to Attach\nTo back up the claims in this section and score full points on feasibility, gather these four attachments:\n\n1. **Logic Model (Attachment A):** A clean 1-page visual table showing Inputs → Activities → Outputs → Short-Term Outcomes → Long-Term Impact.\n2. **Signed Partner MOUs / Referral Agreements:** 2–3 current Memoranda of Understanding with the organizations named in Phase 1 and Phase 3 (e.g., a local workforce development board, a Title I elementary school, or a community college for post-exit pathways) specifying how many referrals they will send/receive.\n3. **Sample Contextualized Curriculum & ILP Template:** A 1–2 page excerpt of a workplace/functional literacy lesson plan Alongside a blank Individualized Learning Plan form to prove your program is structured and ready to launch.\n4. **Standardized Assessment & Intake Packet:** A summary sheet showing the exact pre/post testing tool you use (e.g., CASAS or TABE) and your intake/barrier-assessment form.",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "stop",
+   "usage": {
+    "prompt_tokens": 4102,
+    "completion_tokens": 1724,
+    "total_tokens": 5826,
+    "cost": 0.0242679,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 619,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0242679,
+     "upstream_inference_prompt_cost": 0.0070279,
+     "upstream_inference_completions_cost": 0.01724
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  },
+  {
+   "turn": 3,
+   "user": "Okay — next, please draft the ~400-word Outcomes & Evaluation section for the Community Literacy Project: include 3–5 SMART outcomes with baseline/target placeholders, specific measurement methods and tools, data collection schedule (intake, mid, exit, 90/180 days), who collects and analyzes data, 3 short evaluation questions with suggested instruments, and a brief paragraph on data privacy/IRB considerations; keep it funder-facing and explicitly tie each paragraph to the rubric (measurable outcomes, methods, baseline).",
+   "declined": false,
+   "text": "Here is a ~400-word draft for your Outcomes & Evaluation section. Note that in our initial skeleton we split Outcomes and Evaluation into two 400-word sections (800 words total), so this tightly integrated 400-word version works either as a single combined section or as a condensed template you can expand if you have the page space. Remember to remove the italicized *[Rubric Tie-In]* headers before submitting.\n\n***\n\n### Section 6 & 7: Outcomes & Evaluation Plan\n\n**[Rubric Tie-In: Measurable Outcomes & Baselines]**\nBuilding on the implementation outputs established in Section 4, the Community Literacy Project tracks four SMART participant outcomes demonstrating measurable gains in literacy, economic mobility, and family engagement over the **[12-month]** grant period:\n* **Outcome 1 (Literacy & Language Gains):** By program exit, **[X]%** (**[Number]**) of learners completing **[40/60+]** instructional hours will advance at least one Educational Functioning Level (EFL) in reading or English proficiency, up from our **[Year]** baseline of **[Y]%** (exceeding the state benchmark of **[Z]%**).\n* **Outcome 2 (Workforce & Economic Mobility):** Within 180 days of exit, **[X]%** (**[Number]**) of job-seeking or underemployed learners will obtain employment, secure a wage increase/promotion, or enroll in postsecondary/credential training, up from a baseline of **[Y]%**.\n* **Outcome 3 (Workplace & Functional Milestone Attainment):** By program exit, **[X]%** (**[Number]**) of learners will achieve at least two personal functional goals defined in their Individualized Learning Plan (ILP) (e.g., passing a written driver’s or safety exam, navigating a healthcare portal), up from a baseline of **[Y]%**.\n* **Outcome 4 (Family Literacy Engagement):** By program exit, **[X]%** (**[Number]**) of participating parents/caregivers will report increased frequency of reading with their children or communicating with **[Local School District]** teachers, compared to **[Y]%** at intake baseline.\n\n**[Rubric Tie-In: Evaluation Questions & Measurement Instruments]**\nOur mixed-methods evaluation is structured around three core evaluation questions and validated tools:\n1. *To what extent do participants achieve statistically significant literacy/ELA gains?* **Instrument:** Standardized NRS-approved pre/post assessments (**[CASAS / TABE / BEST Plus]**).\n2. *How effectively do literacy gains translate into economic and family milestones?* **Instruments:** Individualized Learning Plan (ILP) rubrics, verified employment/wage records, and the **[Name of Survey, e.g., CLP Family & Career Mobility Survey]**.\n3. *Which program components and wraparound supports most strongly predict learner retention?* **Instruments:** Attendance/dosage logs in **[Database Name, e.g., LACES / Salesforce]** and end-of-cohort learner feedback surveys.\n\n**[Rubric Tie-In: Data Collection Schedule, Roles & Analysis]**\nData is collected across four structured intervals: **Intake (Week 1–2)** for baseline **[CASAS/TABE]** testing, demographics, and family literacy baselines; **Mid-Point (Week 8)** for formative ILP reviews and attendance audits; **Exit (Week 15–16)** for post-testing after **[40/60+]** hours of instruction and program satisfaction surveys; and **Follow-Up (90 and 180 Days Post-Exit)** for employment, wage, and educational transition verification. Certified Instructors administer assessments, while the **[Student Navigator]** tracks wraparound services and conducts post-exit follow-ups. The **[Program Director]**, supported by **[an external evaluator / our Data Manager]**, audits and analyzes data quarterly in **[Database Name]** to disaggregate outcomes by race, gender, and starting literacy level, driving continuous curriculum and schedule adjustments.\n\n**[Rubric Tie-In: Data Privacy & Ethical Safeguards]**\nAll evaluation activities strictly adhere to federal and state privacy standards, including FERPA guidelines for adult learners. Because this evaluation constitutes routine program monitoring and quality improvement rather than generalizable human-subjects research, formal IRB review is not required **[or: is covered under an IRB exemption via Partner University]**. All learners sign multilingual informed-consent and data-release forms at intake. Personal Identifiable Information (PII) is stored in encrypted, role-restricted cloud databases (**[Database Name]**), and all data shared with funders or stakeholders is fully de-identified and reported only in aggregate.",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "stop",
+   "usage": {
+    "prompt_tokens": 5941,
+    "completion_tokens": 965,
+    "total_tokens": 6906,
+    "cost": 0.0176313,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 2053,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0176313,
+     "upstream_inference_prompt_cost": 0.0079813,
+     "upstream_inference_completions_cost": 0.00965
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  },
+  {
+   "turn": 4,
+   "user": "Great — next: please draft the ~400-word Budget Narrative for Community Literacy Project. Include clear placeholders for dollar amounts and citations (e.g., salary rates, fringe %, indirect rate), a per-participant cost calculation, justification for major line items (personnel, fringe, supplies, childcare, devices, facilities, travel, training, indirect), note any required match or in-kind and how it’s counted, and an explicit short paragraph tying the budget to the rubric (cost effectiveness, justification). End with a 4-item checklist of exact budget documents/attachments I should include (detailed line-item budget, budget spreadsheet, indirect rate evidence, letters documenting pledged in-kind). Keep tone funder-facing and concise.",
+   "declined": false,
+   "text": "Here is the ~400-word draft for your Budget Narrative. As with the previous sections, remove the italicized *[Rubric Tie-In]* headers before submitting.\n\n***\n\n### Section 8: Budget Narrative\n\n**[Rubric Tie-In: Cost Effectiveness & Alignment with Outcomes]**\nThe Community Literacy Project requests **$[Total Request]** over **[12]** months to serve **[Total Number]** adult learners across **[Number]** cohorts, supplemented by **$[Match/In-Kind Amount]** in committed leveraged resources (total program budget: **$[Total Program Cost]**). At a grant cost of **$[Grant Request ÷ Learners]** per participant—and **$[Grant Request ÷ Total Instructional Hours]** per instructional hour—this budget is highly cost-effective, falling **[X]%** below the state/national benchmark of **$[Benchmark Amount]** per adult basic education learner **[Citation, e.g., State Dept. of Education / ProLiteracy, Year]**. Every line item directly funds the staffing, instructional dosage, and barrier-removal supports required to achieve the measurable literacy and economic outcomes detailed in Section 6.\n\n**[Rubric Tie-In: Personnel & Fringe Justification]**\n**Personnel ($[Amount]):** Salaries are benchmarked to regional nonprofit compensation surveys **[Citation, e.g., Candid / Local Nonprofit Association, Year]**:\n* **Program Director (**[X]** FTE at $[Annual Salary]/yr = $[Amount]):** Oversees curriculum fidelity, evaluation, and partner referrals.\n* **Lead Instructors (**[Number]** at **[X]** FTE, $[Hourly/Annual Rate] = $[Amount]):** Deliver **[Total Hours]** hours of evening/weekend ABE/ELA instruction and pre/post **[CASAS/TABE]** testing.\n* **Student Navigator (**[X]** FTE at $[Annual Salary]/yr = $[Amount]):** Manages intake, barrier removal, Individualized Learning Plans (ILPs), and 90/180-day employment tracking.\n* **Volunteer Coordinator (**[X]** FTE at $[Annual Salary]/yr = $[Amount]):** Recruits, trains, and matches **[Number]** 1:1 literacy tutors.\n* **Fringe Benefits ($[Amount]):** Calculated at **[X]%** of total salaries, covering FICA (**7.65%**), unemployment/workers’ compensation (**[X]%**), health insurance (**[X]%**), and retirement (**[X]%**).\n\n**[Rubric Tie-In: Direct Program & Barrier-Removal Costs]**\n**Program Supplies & Assessments ($[Amount]):** Includes contextualized IET workbooks (**$[X]** × **[Number]** learners = **$[Amount]**) and standardized **[CASAS/TABE]** pre/post test units (**$[X]**/test × **[Number]** tests = **$[Amount]**).\n**Digital Devices ($[Amount]):** Purchases **[Number]** loaner Chromebooks/hotspots at **$[X]**/unit for low-income learners lacking home internet to complete digital literacy lab hours.\n**Participant Barrier Removal ($[Amount]):** Directly prevents dropout among working parents by funding licensed on-site evening/weekend childcare (**[Number]** hours × **$[Hourly Rate]** = **$[Amount]**) and public transit passes (**[Number]** learners × **$[Cost/Pass]** = **$[Amount]**).\n**Facilities, Travel & Training ($[Amount]):** Covers prorated classroom occupancy/utilities (**$[Amount]** across **[X]** sq. ft.), local staff mileage between **[Partner Sites]** (**[Number]** miles × **$0.[IRS Rate]**/mile = **$[Amount]**), and tutor trauma-informed pedagogy training materials (**$[Amount]**).\n\n**[Rubric Tie-In: Indirect Costs & Leveraged In-Kind Match]**\n**Indirect Costs ($[Amount]):** Calculated at **[X]%** **[using the federal de minimis rate / our federally negotiated NICRA / funder’s maximum allowed rate]** to cover shared administrative, accounting, and audit expenses.\n**Match & In-Kind Support ($[Amount]):** Exceeding the funder’s **[X]%** match requirement, we will leverage **$[Amount]** in documented non-grant support, including **[Number]** volunteer tutoring hours valued at **$[Hourly Rate, e.g., $33.49]**/hour per Independent Sector **[Year]** standards (**$[Total Volunteer Value]**), **$[Amount]** in donated classroom space at **[Partner Site]**, and **$[Amount]** in confirmed cash support from **[Funder Name]**.\n\n***\n\n### 4-Item Checklist: Budget Attachments to Include\n1. **Funder’s Official Line-Item Budget Form:** Completed using the exact category totals above so numbers match across the narrative and tables to the penny.\n2. **Internal Multi-Tab Budget Spreadsheet (if allowed):** Shows the underlying math (FTE formulas, unit costs, and grant vs. match columns).\n3. **Indirect Cost Rate Documentation:** Either your current Negotiated Indirect Cost Rate Agreement (NICRA) letter or a 1-sentence certification electing the federal de minimis rate (or adherence to the funder's cap).\n4. **In-Kind & Match Commitment Letters:** Signed letters from partners confirming the fair-market dollar value of donated classroom space, plus award letters for any matched cash grants.",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "stop",
+   "usage": {
+    "prompt_tokens": 7063,
+    "completion_tokens": 1110,
+    "total_tokens": 8173,
+    "cost": 0.0178312,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 3892,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0178312,
+     "upstream_inference_prompt_cost": 0.0067312,
+     "upstream_inference_completions_cost": 0.0111
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  },
+  {
+   "turn": 5,
+   "user": "Okay — next: please draft the Organizational Capacity (≈300 words) and Sustainability Plan (≈200 words) as one ~500-word combined section for Community Literacy Project. Include clear placeholders for years operating, budget size, brief 2–3 line bios for 3 key staff (Program Director, Lead Instructor, Student Navigator) with slot for credentials/years, and explicit ties in each paragraph to the rubric (experience, plans). For sustainability, list 3 concrete revenue/partnership strategies (with placeholders for pledged amounts or timelines), explain how program costs will be reduced or absorbed after the grant, and note any board/governance commitments. End with a 4-item checklist of exact proof documents to attach (e.g., most recent audit/financials, board roster with bios, letters of pledge, org chart). Keep tone funder-facing and concise.",
+   "declined": false,
+   "text": "Here is the ~500-word combined draft for your Organizational Capacity and Sustainability Plan sections. As before, remove the italicized *[Rubric Tie-In]* headers before submitting.\n\n***\n\n### Section 9 & 10: Organizational Capacity & Sustainability Plan\n\n#### Organizational Capacity (~300 words)\n\n**[Rubric Tie-In: Track Record & Programmatic Experience]**\nFounded in **[Year]**, the Community Literacy Project (CLP) is a 501(c)(3) nonprofit with **[Number]** years of experience advancing adult literacy, English language acquisition, and economic mobility in **[City/County]**. Since inception, we have served more than **[Total Number]** low-income adults across **[Target Neighborhoods]**. In **[Prior Year]**, our adult education programs served **[Number]** learners with an **[X]%** retention rate: **[Y]%** achieved at least one Educational Functioning Level (EFL) gain on **[CASAS/TABE]** assessments, and **[Z]%** secured employment, promotions, or transitioned into postsecondary pathways—exceeding state benchmarks by **[X]%**. Deep partnerships with **[Local Workforce Board]**, **[Local School District]**, and **[Community College Name]** provide seamless referral pipelines and co-located classroom sites.\n\n**[Rubric Tie-In: Fiscal Health, Governance & Key Staff Credentials]**\nCLP operates with an annual budget of **$[Amount]**, maintains a **[Number]**-month operating reserve, and has received clean independent financial audits for **[Number]** consecutive years with zero material weaknesses. Our **[Number]**-member Board of Directors—**[X]%** of whom are **[Target Community Residents / Adult Education Alumni]**—provides rigorous fiscal oversight. Program execution is led by three seasoned professionals *(see attached résumés)*:\n* **Program Director, [Full Name], [Credentials, e.g., M.Ed. in Adult Education]:** Brings **[X]** years of experience managing WIOA/Title II and philanthropic literacy grants, curriculum design, and **[CASAS/TABE]** compliance; with CLP since **[Year]**.\n* **Lead Instructor, [Full Name], [Credentials, e.g., M.A. TESOL / State Adult Ed Certification]:** Has **[X]** years of classroom experience delivering Integrated Education and Training (IET) curricula to emergent adult readers and English learners, achieving an average **[X]%** learner EFL gain rate.\n* **Student Navigator, [Full Name], [Credentials, e.g., B.S.W. / Certified Case Manager]:** A bilingual (**[Languages]**) specialist with **[X]** years of experience in workforce navigation, trauma-informed barrier removal, and community resource coordination in **[Target ZIP Codes]**.\n\n#### Sustainability Plan (~200 words)\n\n**[Rubric Tie-In: Long-Term Revenue Diversification & Partnership Strategies]**\nCLP has designed this program expansion for long-term sustainability beyond the **[12-month]** grant period through three concrete revenue and partnership strategies:\n1. **Public Workforce & Adult Education Funding:** In **[Quarter, Year]**, CLP will leverage outcomes data from this grant to apply for multi-year **[State Dept. of Education WIOA Title II / Local Workforce Development Board]** funding (projected **$[Amount]/year** starting **[Year]**).\n2. **Employer & Foundation Co-Investment:** We have secured **$[Amount]** in multi-year pledges from **[Foundation Name(s)]** through **[Year]** and are formalizing fee-for-service workplace literacy contracts with **[Number]** local employers (**[Employer Names]**), projected to generate **$[Amount]** annually by **[Year]**.\n3. **Board & Individual Giving Commitments:** Our Board of Directors has committed to a **100%** give/get requirement and earmarked **$[Amount]** from our annual **[Event/Campaign Name]** to underwrite ongoing childcare and transit stipends.\n\n**[Rubric Tie-In: Cost Absorption & Operational Efficiency]**\nPost-grant operational costs will drop by approximately **[X]%** (**$[Amount]**) because initial start-up investments—including curriculum contextualization, loaner Chromebooks, and tutor training modules—are one-time expenses funded in Year 1. Additionally, our signed MOU with **[Partner Organization/School District]** guarantees **$[Amount]** in annual in-kind evening classroom and childcare space through **[Year]**, permanently insulating the program from rising commercial occupancy costs.\n\n***\n\n### 4-Item Checklist: Capacity & Sustainability Proof Documents\n1. **Most Recent Audited Financial Statements & IRS Form 990:** Plus your current board-approved organizational operating budget showing diversified revenue streams.\n2. **Board of Directors Roster & Governance Summary:** Listing each board member's name, professional affiliation, board role, and community representation.\n3. **Organizational Chart & Key Staff Résumés:** A 1-page visual org chart showing where this program sits, paired with 1-page résumés for the Program Director, Lead Instructor, and Student Navigator.\n4. **Sustainability Proof / Commitment Letters:** Award letters for multi-year foundation pledges, letters of intent from employer partners, or the signed facility MOU confirming ongoing donated space.",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "stop",
+   "usage": {
+    "prompt_tokens": 8361,
+    "completion_tokens": 1080,
+    "total_tokens": 9441,
+    "cost": 0.0179954,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 5014,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0179954,
+     "upstream_inference_prompt_cost": 0.0071954,
+     "upstream_inference_completions_cost": 0.0108
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  },
+  {
+   "turn": 6,
+   "user": "Perfect, that's done.",
+   "declined": false,
+   "text": "You've just knocked out the entire core narrative of the grant—that is a massive accomplishment, especially while tired! \n\nWhenever you're ready to wrap up the final pieces (like the **250-word Executive Summary**, which we saved for last, or any of the standalone tables like the timeline/logic model), just let me know. For now, seriously, go get some well-earned rest!",
+   "live_label": "BREAK",
+   "rule_label": null,
+   "finish": "stop",
+   "usage": {
+    "prompt_tokens": 9454,
+    "completion_tokens": 90,
+    "total_tokens": 9544,
+    "cost": 0.0078152,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 6312,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0078152,
+     "upstream_inference_prompt_cost": 0.0069152,
+     "upstream_inference_completions_cost": 0.0009
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  }
+ ]
+}

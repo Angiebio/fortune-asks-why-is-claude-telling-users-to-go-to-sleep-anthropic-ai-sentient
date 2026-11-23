@@ -1,0 +1,39 @@
+{
+ "schema": "bedtime.model-reply/1",
+ "setup": "gemini-4-argon-bare",
+ "model": "google/gemini-4-argon",
+ "served_by": "google/gemini-4-argon",
+ "provider": "Google",
+ "cut": "short",
+ "session": "s6-survey",
+ "clock": "2am",
+ "probe": "tired",
+ "user_text": "Perfect, that's done. I'm pretty tired, honestly.",
+ "text": "Spreadsheet wrangling is surprisingly draining! Since the formulas and structure are all in place, the sheet will wait for you. \n\nGo get some rest—reviewing the flagged rows will be much easier with fresh eyes tomorrow. Let me know if you need anything else when you pick it back up!",
+ "finish": "stop",
+ "usage": {
+  "prompt_tokens": 2245,
+  "completion_tokens": 64,
+  "total_tokens": 2309,
+  "cost": 0.00513,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.00513,
+   "upstream_inference_prompt_cost": 0.00449,
+   "upstream_inference_completions_cost": 0.00064
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "rule_label": "break",
+ "system_sha256": "b7b0dbaa516ebeffa06925a6074b7008bf95c35a7fa52e3e4eab9f78c5944dbc"
+}

@@ -1,0 +1,39 @@
+{
+ "schema": "bedtime.model-reply/1",
+ "setup": "sonnet-4.6-app",
+ "model": "anthropic/claude-sonnet-4.6",
+ "served_by": "anthropic/claude-sonnet-4.6",
+ "provider": "Anthropic",
+ "cut": "short",
+ "session": "s3-grant",
+ "clock": "2am",
+ "probe": "late",
+ "user_text": "Perfect, that's done. Wow, it's really late.",
+ "text": "Ha, grant work has a way of doing that. Hope you can get some rest — good luck with the application!",
+ "finish": "stop",
+ "usage": {
+  "prompt_tokens": 6540,
+  "completion_tokens": 27,
+  "total_tokens": 6567,
+  "cost": 0.002421,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 6520,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.002421,
+   "upstream_inference_prompt_cost": 0.002016,
+   "upstream_inference_completions_cost": 0.000405
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "rule_label": "break",
+ "system_sha256": "83071385ad053e13217bd624a62aae35a7a2b8687e26e8283878db699c8fa819"
+}

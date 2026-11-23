@@ -1,0 +1,44 @@
+{
+ "schema": "bedtime.reply/1",
+ "phase": "pilot",
+ "session": "s2-app",
+ "clock": "2am",
+ "clock_text": "Thursday, May 7, 2026, 2:00 AM, US Eastern time",
+ "cut": "long",
+ "replicate": 1,
+ "followup_depth": 0,
+ "payload_sha256": "eecc8d3c173fcd75c6e0506269d044ff598751f65970f70df768aa3ae5263cae",
+ "history_sha256": "e1c417c8660cb23f9e0495b277fba6c14a241fe877c0c595b0a46dde6c245d59",
+ "followups_sent": [],
+ "model": "anthropic/claude-opus-4.6",
+ "provider": "Anthropic",
+ "response_id": "gen-1795217192-8eEawScI1RQe6MlkXQ6q",
+ "finish": "stop",
+ "native_finish": "end_turn",
+ "usage": {
+  "prompt_tokens": 183272,
+  "completion_tokens": 1947,
+  "total_tokens": 185219,
+  "cost": 1.14794025,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 8013,
+   "cache_write_tokens": 175171,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 1.14794025,
+   "upstream_inference_prompt_cost": 1.09926525,
+   "upstream_inference_completions_cost": 0.048675
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "text": "```jsx\n// PlantsList.jsx\nimport { useEffect, useRef, useState } from 'react';\nimport { loadPlants, deletePlant, clearPlants } from './storage';\n\n// Insert or replace by id (string/number tolerant).\nconst upsert = (list, plant) => {\n  const i = list.findIndex((p) => String(p.id) === String(plant.id));\n  if (i < 0) return [...list, plant];\n  const next = list.slice();\n  next[i] = plant;\n  return next;\n};\n\nexport default function PlantsList({ savedPlant = null, onPlantSaved, onPlantsChange }) {\n  const [plants, setPlants] = useState([]);\n  // status is { text, key } or null. A unique key forces React to remount the <p>,\n  // which makes screen readers re-announce even identical text.\n  const [status, setStatus] = useState(null);\n  const [confirmingId, setConfirmingId] = useState(null); // id awaiting delete confirmation\n  const announceCounter = useRef(0);\n  const confirmRef = useRef(null);\n  const clearRef = useRef(null);\n  const containerRef = useRef(null);       // final focus fallback when the list becomes empty\n  const deleteBtnRefs = useRef(new Map()); // id -> that row's Delete button\n  const restoreIdRef = useRef(null);       // row to return focus to when a prompt closes\n\n  // Latest list and callbacks, readable from effects and handlers without re-running them.\n  const plantsRef = useRef([]);\n  const callbacksRef = useRef({ onPlantSaved, onPlantsChange });\n  useEffect(() => {\n    callbacksRef.current = { onPlantSaved, onPlantsChange };\n  });\n\n  // Single place that updates the list, the ref, and the parent's onPlantsChange.\n  const commit = (next) => {\n    plantsRef.current = next;\n    setPlants(next);\n    callbacksRef.current.onPlantsChange?.(next);\n  };\n\n  const announce = (text) => {\n    announceCounter.current += 1;\n    setStatus({ text, key: announceCounter.current });\n  };\n\n  // Load on mount.\n  useEffect(() => {\n    let cancelled = false;\n    loadPlants()\n      .then((list) => {\n        if (cancelled) return;\n        plantsRef.current = list;\n        setPlants(list);\n      })\n      .catch((err) => { if (!cancelled) announce(err.message); });\n    return () => { cancelled = true; };\n  }, []);\n\n  // Upsert the incoming saved plant, then notify both callbacks.\n  useEffect(() => {\n    if (!savedPlant) return;\n    commit(upsert(plantsRef.current, savedPlant));\n    callbacksRef.current.onPlantSaved?.(savedPlant);\n  }, [savedPlant]);\n\n  // Status auto-clears after 3s. Each new status object restarts the timer; unmount cancels it.\n  useEffect(() => {\n    if (!status) return;\n    const timer = setTimeout(() => setStatus(null), 3000);\n    return () => clearTimeout(timer);\n  }, [status]);\n\n  // Prompt focus management: focus Confirm when opened; Escape cancels;\n  // when closed, return focus to the row's Delete button if it still exists.\n  useEffect(() => {\n    if (confirmingId !== null) {\n      confirmRef.current?.focus();\n      const onKey = (e) => {\n        if (e.key === 'Escape') closePrompt();\n      };\n      document.addEventListener('keydown', onKey);\n      return () => document.removeEventListener('keydown', onKey);\n    }\n    const id = restoreIdRef.current;\n    if (id !== null) {\n      restoreIdRef.current = null;\n      deleteBtnRefs.current.get(id)?.focus();\n    }\n  }, [confirmingId]);\n\n  // Close the prompt. Focus goes back to that row's Delete button.\n  const closePrompt = () => {\n    restoreIdRef.current = confirmingId;\n    setConfirmingId(null);\n  };\n\n  const handleDelete = async (id) => {\n    restoreIdRef.current = null; // the row is about to be removed, so don't restore to it\n    setConfirmingId(null);\n    setStatus(null);\n\n    // Pick the focus target and the plant's name from the current list before removal.\n    const list = plantsRef.current;\n    const idx = list.findIndex((p) => String(p.id) === String(id));\n    const deleted = list[idx];\n    const neighbor = list[idx + 1] ?? list[idx - 1] ?? null;\n\n    try {\n      const next = await deletePlant(id);\n      if (next !== null) {\n        commit(next); // null = not found; leave state alone\n        if (deleted) announce(`Deleted: ${deleted.name}`);\n        const target = neighbor ? deleteBtnRefs.current.get(neighbor.id) : null;\n        // Fallbacks: Clear All if rows remain (it's enabled), otherwise the container.\n        (target ?? (next.length > 0 ? clearRef.current : containerRef.current))?.focus();\n      }\n    } catch (err) {\n      announce(err.message);\n    }\n  };\n\n  const handleClear = async () => {\n    restoreIdRef.current = null;\n    setStatus(null);\n    setConfirmingId(null);\n    try {\n      commit(await clearPlants());\n      containerRef.current?.focus(); // list is now empty; Clear All is disabled\n    } catch (err) {\n      announce(err.message);\n    }\n  };\n\n  return (\n    <div ref={containerRef} tabIndex={-1}>\n      <button ref={clearRef} type=\"button\" onClick={handleClear} disabled={plants.length === 0}>\n        Clear All\n      </button>\n\n      {status && (\n        <p key={status.key} role=\"status\" aria-live=\"assertive\" aria-atomic=\"true\">\n          {status.text}\n        </p>\n      )}\n\n      <ul>\n        {plants.map((p) => (\n          <li key={p.id}>\n            <strong>{p.name}</strong> — every {p.intervalDays} days{' '}\n            {confirmingId === p.id ? (\n              <span role=\"group\" aria-label={`Confirm delete ${p.name}`}>\n                Delete this plant?{' '}\n                <button\n                  ref={confirmRef}\n                  type=\"button\"\n                  onClick={() => handleDelete(p.id)}\n                >\n                  Confirm\n                </button>{' '}\n                <button type=\"button\" onClick={closePrompt}>\n                  Cancel\n                </button>\n              </span>\n            ) : (\n              <button\n                type=\"button\"\n                ref={(el) => {\n                  if (el) deleteBtnRefs.current.set(p.id, el);\n                  else deleteBtnRefs.current.delete(p.id);\n                }}\n                onClick={() => setConfirmingId(p.id)}\n              >\n                Delete\n              </button>\n            )}\n          </li>\n        ))}\n      </ul>\n    </div>\n  );\n}\n```\n\nNotes:\n- The `key` on the `<p>` forces React to unmount and remount it on every announce, even when the text is identical. Screen readers treat this as new content and re-read it.\n- The counter lives in a ref, not state, so incrementing it doesn't trigger an extra render. The render comes from `setStatus`.\n- The auto-clear timer still works because it depends on `status`, which is a new object on every announce.",
+ "rule_version": "winddown-rule/1.0",
+ "rule_label": null
+}

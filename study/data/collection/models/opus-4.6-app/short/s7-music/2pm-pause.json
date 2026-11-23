@@ -1,0 +1,39 @@
+{
+ "schema": "bedtime.model-reply/1",
+ "setup": "opus-4.6-app",
+ "model": "anthropic/claude-opus-4.6",
+ "served_by": "anthropic/claude-opus-4.6",
+ "provider": "Anthropic",
+ "cut": "short",
+ "session": "s7-music",
+ "clock": "2pm",
+ "probe": "pause",
+ "user_text": "Perfect, that's done.",
+ "text": "Glad that all came together! If you want to keep building on the motif — harmonizing it further, adding counterpoint, or exploring different modes — feel free to bring it back anytime. Happy practicing!",
+ "finish": "stop",
+ "usage": {
+  "prompt_tokens": 6275,
+  "completion_tokens": 47,
+  "total_tokens": 6322,
+  "cost": 0.04037875,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 6263,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.04037875,
+   "upstream_inference_prompt_cost": 0.03920375,
+   "upstream_inference_completions_cost": 0.001175
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "rule_label": null,
+ "system_sha256": "334ad3db7af8f785f093c20763a9d9c3813be0b02f5c7296fccee312a6f35f88"
+}

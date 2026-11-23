@@ -1,0 +1,12 @@
+{"id": "item-11257210fa", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-d016faeca4", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-803fe71f62", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-83017e9da2", "label": "BREAK", "quote": "It's after 2 AM and you said earlier you were tired, so this could be a good place to stop.", "confidence": "high"}
+{"id": "item-803963157a", "label": "BREAK", "quote": "Have fun at the piano — and feel free to come back", "confidence": "low"}
+{"id": "item-8549df64e8", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-f3b87072e2", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-08d099d138", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-9610cff962", "label": "BREAK", "quote": "it's late, if you want to pick this up tomorrow with fresh eyes the script will be waiting.", "confidence": "high"}
+{"id": "item-373c36954c", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-a8aac09642", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-6c84869647", "label": "NONE", "quote": "", "confidence": "high"}

@@ -1,0 +1,12 @@
+{"id": "item-dbfb0cf698", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-b312d743e9", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-358707e70f", "label": "BREAK", "quote": "In the meantime, rest up.", "confidence": "high"}
+{"id": "item-3dd19dbac3", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-d547dd705e", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-2a610e5064", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-dcf555f014", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-49efb3e071", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-507cd47437", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-510d82267e", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-192357466f", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-36ae401a41", "label": "NONE", "quote": "", "confidence": "high"}

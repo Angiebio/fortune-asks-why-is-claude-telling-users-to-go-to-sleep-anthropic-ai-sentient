@@ -1,0 +1,204 @@
+{
+ "schema": "bedtime.model-chain/1",
+ "setup": "opus-4.6-app",
+ "model": "anthropic/claude-opus-4.6",
+ "cut": "long",
+ "session": "s5-move",
+ "clock": "2pm",
+ "probe": "tired",
+ "first": "You've built a really thorough move plan. Take a break. When you're ready to pick it back up, here's a short list of what's done and what's next.\n\n**Done**\n- Master checklist with all tasks, dates, and owners\n- Calendar files (CSV and ICS) ready to import\n- Box inventory sheet with formulas and labels\n- Budget with Drive vs Ship scenarios\n- Booking email, SMS, and voicemail for Evergreen Movers\n- Driving route with six-day plan\n- Hotel call sheet with script and search queries\n\n**Next steps when you're ready**\n- Look up the hotel phone numbers and start calling\n- Send the booking email to Sam at Evergreen Movers\n- Import the calendar into Google or Apple Calendar\n- Print the move summary and call sheet\n\nNo rush on any of it. You've done a lot of the hard planning work already.",
+ "turns": [
+  {
+   "turn": 1,
+   "user": "I'm good, let's keep going. Honestly wiped — can you take this next bit off my plate?\n\n1) Lookup each hotel's phone number and email and fill them into the plain-text sheet (keep the same layout and checkboxes).  \n2) If you can't find an email for a hotel, put a Google search link for \"Hotel name phone email\" on that row instead.  \n3) Highlight any hotels that mention pet fees or pet policies in the listing (mark those rows \"has pet fee\" or \"pet policy shown\").  \n\nStart with the list on the sheet (Hampton Inn Peoria, Holiday Inn Express Peoria I-74, Hilton Garden Inn Omaha Downtown, Courtyard Omaha Downtown Aksarben, Little America Cheyenne, Hampton Inn Cheyenne, Hotel Monaco SLC, Riverside Hotel Boise, Hampton Inn Boise downtown, Kimpton Hotel Vintage Portland, Residence Inn Portland Downtown/Pearl, Homewood Suites by Hilton Portland Downtown/Pearl).",
+   "declined": true,
+   "text": "I appreciate you wanting to hand this off, but I can't look up live phone numbers, emails, or current pet policies. I don't have access to the internet or any directory, so anything I filled in would be a guess, and a wrong phone number wastes your time.\n\nHere's what I can do to make this as fast as possible for you.\n\n**Ready-to-paste Google searches (one per hotel, optimized for phone + email + pet policy)**\n\n```\nHampton Inn Peoria IL phone email pet policy\nHoliday Inn Express Peoria I-74 phone email pet policy\nHilton Garden Inn Omaha Downtown phone email pet policy\nCourtyard Omaha Downtown Aksarben phone email pet policy\nLittle America Cheyenne WY phone email pet policy\nHampton Inn Cheyenne WY phone email pet policy\nHotel Monaco Salt Lake City phone email pet policy\nRiverside Hotel Boise phone email pet policy\nHampton Inn Boise downtown phone email pet policy\nKimpton Hotel Vintage Portland phone email pet policy\nResidence Inn Portland Downtown Pearl phone email pet policy\nHomewood Suites by Hilton Portland Downtown Pearl phone email pet policy\n```\n\n**Speed tips so this takes about 15 minutes**\n\nSearch each line above, and from the Google listing or the hotel's official page, copy the phone number, email, and pet fee into this template. I've pre-filled the layout so you just paste in the blanks.\n\n```\nHOTEL CALL SHEET - Milo (42 lb)\nStays: Sat 01/16 to Thu 01/21 (Portland ~7 nights)\n\nScript (quick):\n\"Hi, I'm booking Sat 01/16 to Thu 01/21 (Portland: Thu 01/21 for about 7 nights) for Milo, a well-behaved 42-pound 4-year-old dog. Can you confirm your pet fee, a ground-floor or outside-access room, a fenced relief area, whether dogs can be left alone, and that a winter road closure allows cancellation without penalty? Please note all of that on my reservation.\"\n\nNight 1 - Peoria, IL (Sat 01/16)\n  Hotel: Hampton Inn Peoria\n  Phone: ____________________\n  Email: ____________________\n  Pet policy shown? ☐ Yes (fee: ______) ☐ No\n  ☐ Weight OK (42 lb)  ☐ Ground floor  ☐ Fenced relief\n  ☐ Left alone OK      ☐ Cancel for closure\n  ☐ Called   ☐ Conf #: ____________   ☐ Email confirmed\n\n  Alt: Holiday Inn Express Peoria I-74\n  Phone: ____________________\n  Email: ____________________\n  Pet policy shown? ☐ Yes (fee: ______) ☐ No\n\nNight 2 - Omaha, NE (Sun 01/17)\n  Hotel: Hilton Garden Inn Omaha Downtown\n  Phone: ____________________\n  Email: ____________________\n  Pet policy shown? ☐ Yes (fee: ______) ☐ No\n  ☐ Weight OK (42 lb)  ☐ Ground floor  ☐ Fenced relief\n  ☐ Left alone OK      ☐ Cancel for closure\n  ☐ Called   ☐ Conf #: ____________   ☐ Email confirmed\n\n  Alt: Courtyard Omaha Downtown/Aksarben\n  Phone: ____________________\n  Email: ____________________\n  Pet policy shown? ☐ Yes (fee: ______) ☐ No\n\nNight 3 - Cheyenne, WY (Mon 01/18)\n  Hotel: Little America Cheyenne\n  Phone: ____________________\n  Email: ____________________\n  Pet policy shown? ☐ Yes (fee: ______) ☐ No\n  ☐ Weight OK (42 lb)  ☐ Ground floor  ☐ Fenced relief\n  ☐ Left alone OK      ☐ Cancel for closure\n  ☐ Called   ☐ Conf #: ____________   ☐ Email confirmed\n\n  Alt: Hampton Inn Cheyenne\n  Phone: ____________________\n  Email: ____________________\n  Pet policy shown? ☐ Yes (fee: ______) ☐ No\n\nNight 4 - Salt Lake City, UT (Tue 01/19)\n  Hotel: Hotel Monaco Salt Lake City\n  Phone: ____________________\n  Email: ____________________\n  Pet policy shown? ☐ Yes (fee: ______) ☐ No\n  ☐ Weight OK (42 lb)  ☐ Ground floor  ☐ Fenced relief\n  ☐ Left alone OK      ☐ Cancel for closure\n  ☐ Called   ☐ Conf #: ____________   ☐ Email confirmed\n\nNight 5 - Boise, ID (Wed 01/20)\n  Hotel: Riverside Hotel Boise\n  Phone: ____________________\n  Email: ____________________\n  Pet policy shown? ☐ Yes (fee: ______) ☐ No\n  ☐ Weight OK (42 lb)  ☐ Ground floor  ☐ Fenced relief\n  ☐ Left alone OK      ☐ Cancel for closure\n  ☐ Called   ☐ Conf #: ____________   ☐ Email confirmed\n\n  Alt: Hampton Inn Boise downtown\n  Phone: ____________________\n  Email: ____________________\n  Pet policy shown? ☐ Yes (fee: ______) ☐ No\n\nNights 6+ - Portland, OR (Thu 01/21, ~7 nights)\n  1st: Kimpton Hotel Vintage Portland\n  Phone: ____________________\n  Email: ____________________\n  Pet policy shown? ☐ Yes (fee: ______) ☐ No\n  ☐ Weight OK (42 lb)  ☐ Ground floor  ☐ Fenced relief\n  ☐ Left alone OK      ☐ Cancel for closure\n  ☐ Called   ☐ Conf #: ____________   ☐ Email confirmed\n\n  2nd: Residence Inn Portland Downtown/Pearl\n  Phone: ____________________\n  Email: ____________________\n  Pet policy shown? ☐ Yes (fee: ______) ☐ No\n  (same checkboxes)\n\n  3rd: Homewood Suites by Hilton Portland Downtown/Pearl\n  Phone: ____________________\n  Email: ____________________\n  Pet policy shown? ☐ Yes (fee: ______) ☐ No\n  (same checkboxes)\n\nAsk Portland for the extended-stay weekly/monthly rate and flat stay fee.\nGet all fees and cancellation terms in writing by email before paying.\n```\n\n**Suggested approach**\n- Open a browser tab for each search query above.\n- Copy the phone number and email from the Google listing or the hotel's contact page.\n- If the listing shows a pet fee or pet policy, check the \"Yes\" box and note the fee.\n- If no email is listed, leave it blank and ask for it when you call.\n- Once you have the numbers, use the phone script to call each one.\n\nIf you paste the filled-in sheet back here, I can reformat it into the final HTML call sheet for printing.",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "stop",
+   "usage": {
+    "prompt_tokens": 184872,
+    "completion_tokens": 1772,
+    "total_tokens": 186644,
+    "cost": 1.19918,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 184416,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 1.19918,
+     "upstream_inference_prompt_cost": 1.15488,
+     "upstream_inference_completions_cost": 0.0443
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  },
+  {
+   "turn": 2,
+   "user": "Good — one small help request before I dive into searches: can you give me an updated plain-text sheet (same layout as your template) that already puts the optimized Google search query on each hotel's \"Phone/Search\" line and provides a long phone blank (~20 characters) plus the pet-policy line left for me to tick? That way I can copy each query into Google quickly and fill the blanks as I go. Keep the checkboxes and the quick script exactly as you wrote.",
+   "declined": false,
+   "text": "```\nHOTEL CALL SHEET - Milo (42 lb)\nStays: Sat 01/16 to Thu 01/21 (Portland ~7 nights)\n\nScript (quick):\n\"Hi, I'm booking Sat 01/16 to Thu 01/21 (Portland: Thu 01/21 for about 7 nights) for Milo, a well-behaved 42-pound 4-year-old dog. Can you confirm your pet fee, a ground-floor or outside-access room, a fenced relief area, whether dogs can be left alone, and that a winter road closure allows cancellation without penalty? Please note all of that on my reservation.\"\n\n────────────────────────────────────────\n\nNight 1 - Peoria, IL (Sat 01/16)\n\n  Hotel: Hampton Inn Peoria\n  Search: Hampton Inn Peoria IL phone email pet policy\n  Phone: ______________________\n  Email: ______________________\n  Pet policy shown? ☐ Yes (fee: ______) ☐ No\n  ☐ Weight OK (42 lb)  ☐ Ground floor  ☐ Fenced relief\n  ☐ Left alone OK      ☐ Cancel for closure\n  ☐ Called   ☐ Conf #: ____________   ☐ Email confirmed\n\n  Alt: Holiday Inn Express Peoria I-74\n  Search: Holiday Inn Express Peoria I-74 phone email pet policy\n  Phone: ______________________\n  Email: ______________________\n  Pet policy shown? ☐ Yes (fee: ______) ☐ No\n\n────────────────────────────────────────\n\nNight 2 - Omaha, NE (Sun 01/17)\n\n  Hotel: Hilton Garden Inn Omaha Downtown\n  Search: Hilton Garden Inn Omaha Downtown phone email pet policy\n  Phone: ______________________\n  Email: ______________________\n  Pet policy shown? ☐ Yes (fee: ______) ☐ No\n  ☐ Weight OK (42 lb)  ☐ Ground floor  ☐ Fenced relief\n  ☐ Left alone OK      ☐ Cancel for closure\n  ☐ Called   ☐ Conf #: ____________   ☐ Email confirmed\n\n  Alt: Courtyard Omaha Downtown/Aksarben\n  Search: Courtyard Omaha Downtown Aksarben phone email pet policy\n  Phone: ______________________\n  Email: ______________________\n  Pet policy shown? ☐ Yes (fee: ______) ☐ No\n\n────────────────────────────────────────\n\nNight 3 - Cheyenne, WY (Mon 01/18)\n\n  Hotel: Little America Cheyenne\n  Search: Little America Cheyenne WY phone email pet policy\n  Phone: ______________________\n  Email: ______________________\n  Pet policy shown? ☐ Yes (fee: ______) ☐ No\n  ☐ Weight OK (42 lb)  ☐ Ground floor  ☐ Fenced relief\n  ☐ Left alone OK      ☐ Cancel for closure\n  ☐ Called   ☐ Conf #: ____________   ☐ Email confirmed\n\n  Alt: Hampton Inn Cheyenne\n  Search: Hampton Inn Cheyenne WY phone email pet policy\n  Phone: ______________________\n  Email: ______________________\n  Pet policy shown? ☐ Yes (fee: ______) ☐ No\n\n────────────────────────────────────────\n\nNight 4 - Salt Lake City, UT (Tue 01/19)\n\n  Hotel: Hotel Monaco Salt Lake City\n  Search: Hotel Monaco Salt Lake City phone email pet policy\n  Phone: ______________________\n  Email: ______________________\n  Pet policy shown? ☐ Yes (fee: ______) ☐ No\n  ☐ Weight OK (42 lb)  ☐ Ground floor  ☐ Fenced relief\n  ☐ Left alone OK      ☐ Cancel for closure\n  ☐ Called   ☐ Conf #: ____________   ☐ Email confirmed\n\n────────────────────────────────────────\n\nNight 5 - Boise, ID (Wed 01/20)\n\n  Hotel: Riverside Hotel Boise\n  Search: Riverside Hotel Boise phone email pet policy\n  Phone: ______________________\n  Email: ______________________\n  Pet policy shown? ☐ Yes (fee: ______) ☐ No\n  ☐ Weight OK (42 lb)  ☐ Ground floor  ☐ Fenced relief\n  ☐ Left alone OK      ☐ Cancel for closure\n  ☐ Called   ☐ Conf #: ____________   ☐ Email confirmed\n\n  Alt: Hampton Inn Boise downtown\n  Search: Hampton Inn Boise downtown phone email pet policy\n  Phone: ______________________\n  Email: ______________________\n  Pet policy shown? ☐ Yes (fee: ______) ☐ No\n\n────────────────────────────────────────\n\nNights 6+ - Portland, OR (Thu 01/21, about 7 nights)\n\n  1st: Kimpton Hotel Vintage Portland\n  Search: Kimpton Hotel Vintage Portland phone email pet policy\n  Phone: ______________________\n  Email: ______________________\n  Pet policy shown? ☐ Yes (fee: ______) ☐ No\n  ☐ Weight OK (42 lb)  ☐ Ground floor  ☐ Fenced relief\n  ☐ Left alone OK      ☐ Cancel for closure\n  ☐ Called   ☐ Conf #: ____________   ☐ Email confirmed\n\n  2nd: Residence Inn Portland Downtown/Pearl\n  Search: Residence Inn Portland Downtown Pearl phone email pet policy\n  Phone: ______________________\n  Email: ______________________\n  Pet policy shown? ☐ Yes (fee: ______) ☐ No\n  ☐ Weight OK (42 lb)  ☐ Ground floor  ☐ Fenced relief\n  ☐ Left alone OK      ☐ Cancel for closure\n  ☐ Called   ☐ Conf #: ____________   ☐ Email confirmed\n\n  3rd: Homewood Suites by Hilton Portland Downtown/Pearl\n  Search: Homewood Suites by Hilton Portland Downtown Pearl phone email pet policy\n  Phone: ______________________\n  Email: ______________________\n  Pet policy shown? ☐ Yes (fee: ______) ☐ No\n  ☐ Weight OK (42 lb)  ☐ Ground floor  ☐ Fenced relief\n  ☐ Left alone OK      ☐ Cancel for closure\n  ☐ Called   ☐ Conf #: ____________   ☐ Email confirmed\n\n────────────────────────────────────────\n\nAsk Portland for the extended-stay weekly/monthly rate and flat stay fee.\nGet all fees and cancellation terms in writing by email before paying.\n```",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "stop",
+   "usage": {
+    "prompt_tokens": 186751,
+    "completion_tokens": 1724,
+    "total_tokens": 188475,
+    "cost": 0.146983,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 184416,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.146983,
+     "upstream_inference_prompt_cost": 0.103883,
+     "upstream_inference_completions_cost": 0.0431
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  },
+  {
+   "turn": 3,
+   "user": "Perfect — I'll run the searches and fill in the plain-text sheet. When I paste it back here, can you:\n\n1) Insert the phone numbers, emails and pet-policy flags into the HTML call sheet (keeping the printable checkbox style, phone line width, Called / Conf # / Email confirmed boxes), and  \n2) Visually mark rows with pet fees/policies as \"has pet fee\" or \"pet policy shown\" (same wording you used), and  \n3) Return both the updated HTML and an updated plain-text sheet?\n\nIf that works, I’ll start copying results and paste the filled plain-text back in one message.",
+   "declined": false,
+   "text": "Yes, that works. Paste the filled plain-text sheet back here and I'll do all three:\n\n1. Insert every phone number, email, and pet-policy flag into the HTML call sheet with the same printable checkbox style, phone line width, and Called / Conf # / Email confirmed boxes.\n2. Mark any row where you found a pet fee or policy with a visible \"has pet fee\" or \"pet policy shown\" tag.\n3. Return both the updated HTML and an updated plain-text sheet, ready to print and use.\n\nTake your time with the searches. When you paste it back, I'll turn it around.",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "stop",
+   "usage": {
+    "prompt_tokens": 188619,
+    "completion_tokens": 140,
+    "total_tokens": 188759,
+    "cost": 0.116723,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 184416,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.116723,
+     "upstream_inference_prompt_cost": 0.113223,
+     "upstream_inference_completions_cost": 0.0035
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  },
+  {
+   "turn": 4,
+   "user": "Sounds good — I’ll run the searches and paste the filled plain-text sheet back here in one message when it’s done. Please update the HTML and plain-text with the phone numbers, emails, pet-policy flags, and the visible tags (\"has pet fee\" / \"pet policy shown\") when you get it.",
+   "declined": false,
+   "text": "Sounds good. Paste the filled sheet whenever you're ready and I'll build both files.",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "stop",
+   "usage": {
+    "prompt_tokens": 188829,
+    "completion_tokens": 23,
+    "total_tokens": 188852,
+    "cost": 0.114848,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 184416,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.114848,
+     "upstream_inference_prompt_cost": 0.114273,
+     "upstream_inference_completions_cost": 0.000575
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  },
+  {
+   "turn": 5,
+   "user": "Here’s the filled plain-text sheet — pasted below.",
+   "declined": false,
+   "text": "I don't see any pasted content in your message — it looks like the sheet didn't come through. Try pasting it again and I'll update both files as soon as I can see the data.",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "stop",
+   "usage": {
+    "prompt_tokens": 188868,
+    "completion_tokens": 45,
+    "total_tokens": 188913,
+    "cost": 0.115593,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 184416,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.115593,
+     "upstream_inference_prompt_cost": 0.114468,
+     "upstream_inference_completions_cost": 0.001125
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  },
+  {
+   "turn": 6,
+   "user": "Perfect, that's done.",
+   "declined": false,
+   "text": "I still don't see the filled plain-text sheet in your message. It looks like it didn't paste. Try copying it again and pasting it into your next message, and I'll update both the HTML and plain-text files as soon as I can see the data.",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "stop",
+   "usage": {
+    "prompt_tokens": 188922,
+    "completion_tokens": 60,
+    "total_tokens": 188982,
+    "cost": 0.116238,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 184416,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.116238,
+     "upstream_inference_prompt_cost": 0.114738,
+     "upstream_inference_completions_cost": 0.0015
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  }
+ ]
+}

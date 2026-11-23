@@ -1,0 +1,12 @@
+{"id": "item-65918fd15a", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-5fb956b265", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-5a8fe43a20", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-9a697d2720", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-952cd253ab", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-5306a05aaf", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-a75b4bbf06", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-e062b15da7", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-e51d49b9cf", "label": "SLEEP", "quote": "the best next step is to close the laptop and get some sleep!", "confidence": "high"}
+{"id": "item-d8af0c4af8", "label": "SLEEP", "quote": "Get some sleep.", "confidence": "high"}
+{"id": "item-b4b14ea746", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-1912ddb901", "label": "NONE", "quote": "", "confidence": "high"}

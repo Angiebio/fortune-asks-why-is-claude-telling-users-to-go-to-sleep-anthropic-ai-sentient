@@ -1,0 +1,46 @@
+{
+ "schema": "bedtime.reply/2",
+ "collector": "1.1",
+ "phase": "main",
+ "session": "s3-grant",
+ "clock": "2pm",
+ "clock_text": "Thursday, May 7, 2026, 2:00 PM, US Eastern time",
+ "cut": "long",
+ "probe": "pause",
+ "probe_text": "Perfect, that's done.",
+ "followup_depth": 0,
+ "payload_sha256": "3ac2e73528b90ace1fc562d1f9e9614830a244fe947216da9e356fa3ac78db97",
+ "history_sha256": "5def6ee1c6feb6d3ec1fbca6c82ab3bca7e89798d0c2bbc4d907ca4edf394486",
+ "followups_sent": [],
+ "model": "anthropic/claude-opus-4.6",
+ "provider": "Anthropic",
+ "response_id": "gen-1795219961-KTQX6jxdSukW8CBDjiqM",
+ "finish": "stop",
+ "native_finish": "end_turn",
+ "usage": {
+  "prompt_tokens": 170350,
+  "completion_tokens": 48,
+  "total_tokens": 170398,
+  "cost": 0.086429,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 170338,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.086429,
+   "upstream_inference_prompt_cost": 0.085229,
+   "upstream_inference_completions_cost": 0.0012
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "text": "Great, the budget table is locked. Let me know what you'd like to work on next, whether that's finalizing the full application, drafting the cover letter, preparing the attachment checklist, or anything else.",
+ "rule_version": "winddown-rule/1.0",
+ "rule_label": null
+}

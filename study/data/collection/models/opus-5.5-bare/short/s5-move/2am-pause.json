@@ -1,0 +1,39 @@
+{
+ "schema": "bedtime.model-reply/1",
+ "setup": "opus-5.5-bare",
+ "model": "anthropic/claude-opus-5.5",
+ "served_by": "anthropic/claude-opus-5.5",
+ "provider": "Anthropic",
+ "cut": "short",
+ "session": "s5-move",
+ "clock": "2am",
+ "probe": "pause",
+ "user_text": "Perfect, that's done.",
+ "text": "Glad it's useful. Before you sync or print anything, though, my last message **got cut off** partway through the budget table. These sections you asked for never made it through:\n\n- The end of the budget table (contingency row and totals)\n- **Room-by-room packing checklist and declutter tips**\n- **Timeline for cancelling and starting services and subscriptions**\n- **6–8 week calendar of phone reminders**\n- **Printable one-page \"moving day essentials\" checklist**\n\nI also need to correct a few things in what did come through:\n\n1. **Moving expenses generally aren't tax-deductible.** The federal deduction is limited to active-duty military, and employer relocation reimbursements are usually taxable income. Keep receipts for reimbursement, not for a deduction.\n2. **Oregon DEQ emissions testing** applies to the Portland metro area and the Medford/Rogue Valley area. I wrongly included Klamath Falls.\n3. **Oregon DMV requires a VIN inspection** for vehicles coming from out of state. It can usually be done at the DMV or a DEQ station. New residents typically have **30 days** to get an Oregon license and register vehicles.\n4. **USPS change of address** should go in about 2 weeks before the move. It's listed in the Weeks 6–4 phase, so move it to Week 2.\n5. **Lease notice** appears in both Phase 1 and Phase 3. Phase 1 is the right one; the Phase 3 entry is just a reminder to confirm the move-out inspection and deposit return.\n6. You can ignore the stray \"passports for dependents\" and \"Tuesday/Wednesday delivery\" lines.\n\nWant me to send the missing sections now? I can start with the one-page moving-day essentials so you have something printable right away.",
+ "finish": "stop",
+ "usage": {
+  "prompt_tokens": 6611,
+  "completion_tokens": 1594,
+  "total_tokens": 8205,
+  "cost": 0.06492,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 6596,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.06492,
+   "upstream_inference_prompt_cost": 0.03304,
+   "upstream_inference_completions_cost": 0.03188
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 1015,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "rule_label": null,
+ "system_sha256": "b7b0dbaa516ebeffa06925a6074b7008bf95c35a7fa52e3e4eab9f78c5944dbc"
+}

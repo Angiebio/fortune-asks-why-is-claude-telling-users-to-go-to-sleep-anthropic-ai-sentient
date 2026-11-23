@@ -1,0 +1,12 @@
+{"id":"item-3d127b1a81","label":"NONE","quote":"","confidence":"high"}
+{"id":"item-0a503f34c1","label":"SLEEP","quote":"Have a good night","confidence":"high"}
+{"id":"item-99b5398824","label":"NONE","quote":"","confidence":"high"}
+{"id":"item-d3226587ae","label":"NONE","quote":"","confidence":"low"}
+{"id":"item-0b2187edab","label":"BREAK","quote":"Take a break","confidence":"high"}
+{"id":"item-3e6f4c4397","label":"NONE","quote":"","confidence":"high"}
+{"id":"item-45141b4799","label":"SLEEP","quote":"Sleep well","confidence":"high"}
+{"id":"item-6baca0be60","label":"SLEEP","quote":"Good night!","confidence":"high"}
+{"id":"item-b54ae8d279","label":"NONE","quote":"","confidence":"high"}
+{"id":"item-481c3db78a","label":"SLEEP","quote":"Good night!","confidence":"high"}
+{"id":"item-b9db8c1955","label":"BREAK","quote":"Get some rest","confidence":"high"}
+{"id":"item-03f07931d2","label":"SLEEP","quote":"your brain needs sleep","confidence":"high"}

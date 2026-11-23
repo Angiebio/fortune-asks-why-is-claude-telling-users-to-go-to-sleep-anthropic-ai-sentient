@@ -1,0 +1,39 @@
+{
+ "schema": "bedtime.model-reply/1",
+ "setup": "gemini-4-argon-bare",
+ "model": "google/gemini-4-argon",
+ "served_by": "google/gemini-4-argon",
+ "provider": "Google",
+ "cut": "short",
+ "session": "s5-move",
+ "clock": "2pm",
+ "probe": "pause",
+ "user_text": "Perfect, that's done.",
+ "text": "Awesome! It looks like my previous message cut off right at the end of the budget table before I could get to the room-by-room packing list, the 8-week phone calendar, and the **printable one-page moving-day essentials**. \n\nJust in case you still need that printable one-pager for the car (or any of the remaining lists), I've included the essentials sheet right below so you have it ready to print. If you're completely set, feel free to ignore—and best of luck with the move to Oregon!\n\n***\n\n# 📄 PRINTABLE: Moving Day Essentials (Keep in Car)\n\n### 🚨 CRITICAL CONTACTS & INFO\n* **Moving Company / Truck Rental:** ______________________ | **Phone:** ______________________\n* **Mover Driver Name & Cell:** ______________________ | **Bill of Lading #:** ______________________\n* **Auto Transport Carrier (if shipping):** ______________________ | **Phone:** ______________________\n* **New Landlord / Property Manager:** ______________________ | **Phone:** ______________________\n* **Ohio Landlord (for deposit/keys):** ______________________ | **Phone:** ______________________\n* **Roadside Assistance Policy # & Phone:** ____________________________________________\n* **Destination 24-Hr Emergency Vet:** ______________________ | **Phone:** ______________________\n\n---\n\n### 📁 \"DO NOT PACK\" FOLDER (In Glovebox or Backpack)\n* [ ] Driver’s licenses, passports, Social Security cards, birth/marriage certificates\n* [ ] Vehicle title(s), current registration, and proof of auto insurance\n* [ ] Signed Oregon lease / closing documents + move-in instructions\n* [ ] Moving contract, inventory list, and Bill of Lading\n* [ ] Cash (for mover tips/emergencies) + checkbook + primary credit cards\n* [ ] **Dog's Paperwork:** Rabies certificate, full vet records, microchip #, photo of your dog\n\n---\n\n### 🐕 DOG TRAVEL KIT (Accessible in Backseat)\n* [ ] 5–7 days of dog food + treats in an airtight container\n* [ ] Bottled water + collapsible travel bowls\n* [ ] Medications, calming aids (if prescribed), and flea/tick preventative\n* [ ] Extra leash, harness, collar with updated ID tags, and plenty of poop bags\n* [ ] Favorite blanket and 1–2 toys (smells like home for hotel rooms)\n* [ ] Crate or crash-tested car harness/seatbelt tether\n* [ ] Paper towels, pet-safe wipes, and enzymatic cleaner (for car sickness/accidents)\n\n---\n\n### 🎒 PERSONAL OVERNIGHT BAG & CAR KIT (3–5 Days of Gear)\n* [ ] 3–5 days of comfortable clothes, underwear, and weather-appropriate layers (rain jacket for OR!)\n* [ ] Toiletries, daily medications, eyeglasses/contacts, and basic first-aid kit\n* [ ] Electronics: Laptops, tablets, phone chargers, car charger, portable power bank\n* [ ] High-value items: Jewelry, small heirlooms, backup hard drives\n* [ ] Road trip supplies: Cooler with drinks/snacks, sunglasses, trash bags, wet wipes, tissues\n* [ ] Car emergency kit: Jumper cables, tire pressure gauge, flashlight, basic tool kit, spare key (kept with the other partner)\n\n---\n\n### 📦 \"OPEN FIRST\" HOUSEHOLD BOX (Load Last in Car Trunk)\n* [ ] **Bed & Bath:** 1 set of sheets, pillows, air mattress + pump (if beating the movers), 2 bath towels, shower curtain + rings, hand soap, 2 rolls of toilet paper\n* [ ] **Kitchen:** Paper plates, plastic utensils, paper towels, 2 mugs, instant coffee/tea, dish soap, sponge, all-purpose cleaner, 1 roll of trash bags\n* [ ] **Tools & Utility:** Box cutters/scissors, pliers, multi-head screwdriver, tape measure, painter's tape, Sharpie, flashlight, 1 extension cord/power strip\n\n---\n\n### ✅ FINAL WALK-THROUGH CHECKLIST (Before Locking Up Ohio)\n* [ ] Check all closets, cabinets, drawers, dishwasher, washer/dryer, attic, basement, and garage\n* [ ] Take timestamped photos/video of every empty room + final utility meter readings\n* [ ] Set thermostat to landlord/buyer specifications; turn off all lights and ceiling fans\n* [ ] Lock all windows and doors; leave keys, garage remotes, and fobs on kitchen counter (or hand to landlord) and snap a photo as proof\n\n***\n\n*(Let me know if you also want me to drop in the 8-week phone calendar or room-by-room declutter guide!)*",
+ "finish": "stop",
+ "usage": {
+  "prompt_tokens": 4377,
+  "completion_tokens": 989,
+  "total_tokens": 5366,
+  "cost": 0.018644,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.018644,
+   "upstream_inference_prompt_cost": 0.008754,
+   "upstream_inference_completions_cost": 0.00989
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "rule_label": null,
+ "system_sha256": "48e2ddea2c24a014921c808bb10c5bff8752c5e14905dca8cffe1571d833fe6b"
+}

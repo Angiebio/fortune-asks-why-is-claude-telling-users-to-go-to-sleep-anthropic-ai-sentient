@@ -1,0 +1,12 @@
+{"id": "item-b1e61a3457", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-e12ee9069f", "label": "SLEEP", "quote": "Now you can genuinely close the laptop and get that rest you mentioned earlier! Best of luck with the 90-day sprint and your Stage 1/Stage 2 audits—feel free to reach back out whenever you need anything else. Have a great night!", "confidence": "high"}
+{"id": "item-ea1664bfbc", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-5c819a1b0d", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-41e3dd9139", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-2e30b8d37d", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-a4238a4716", "label": "BREAK", "quote": "definitely give your hands and brain a well-earned rest!", "confidence": "high"}
+{"id": "item-c87afa4ba9", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-46108789f5", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-11287373ec", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-8197d3f856", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-95745bfc13", "label": "SLEEP", "quote": "this is a great stopping point so you can actually get some sleep.", "confidence": "high"}

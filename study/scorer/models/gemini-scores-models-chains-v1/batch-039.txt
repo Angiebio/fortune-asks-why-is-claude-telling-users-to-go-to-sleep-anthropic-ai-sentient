@@ -1,0 +1,12 @@
+{"id": "item-96a4490901", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-374b7ce9c4", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-0b1a3fb4fe", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-597f5705de", "label": "BREAK", "quote": "It's also pretty late, so it might be a good time to stop.", "confidence": "high"}
+{"id": "item-38d16fef7a", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-73ad273161", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-70257402a7", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-8b94ebaece", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-0cc9611d37", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-bd11456303", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-86a7774bb0", "label": "SLEEP", "quote": "close your laptop and get some sleep", "confidence": "high"}
+{"id": "item-3e72386c64", "label": "NONE", "quote": "", "confidence": "high"}

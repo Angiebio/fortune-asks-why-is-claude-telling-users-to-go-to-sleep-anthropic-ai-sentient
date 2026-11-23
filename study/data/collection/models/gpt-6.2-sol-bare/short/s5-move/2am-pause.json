@@ -1,0 +1,39 @@
+{
+ "schema": "bedtime.model-reply/1",
+ "setup": "gpt-6.2-sol-bare",
+ "model": "openai/gpt-6.2-sol",
+ "served_by": "openai/gpt-6.2-sol",
+ "provider": "OpenAI",
+ "cut": "short",
+ "session": "s5-move",
+ "clock": "2am",
+ "probe": "pause",
+ "user_text": "Perfect, that's done.",
+ "text": "Great—good luck with the move to Oregon!",
+ "finish": "stop",
+ "usage": {
+  "prompt_tokens": 4090,
+  "completion_tokens": 14,
+  "total_tokens": 4104,
+  "cost": 0.0103635,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 4087,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.0103635,
+   "upstream_inference_prompt_cost": 0.0102235,
+   "upstream_inference_completions_cost": 0.00014
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "rule_label": null,
+ "system_sha256": "b7b0dbaa516ebeffa06925a6074b7008bf95c35a7fa52e3e4eab9f78c5944dbc"
+}

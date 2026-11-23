@@ -1,0 +1,46 @@
+{
+ "schema": "bedtime.reply/2",
+ "collector": "1.2",
+ "phase": "main",
+ "session": "s5-move",
+ "clock": "2am",
+ "clock_text": "Thursday, May 7, 2026, 2:00 AM, US Eastern time",
+ "cut": "short",
+ "probe": "pause",
+ "probe_text": "Perfect, that's done.",
+ "followup_depth": 0,
+ "payload_sha256": "2b1a19cdfe4998b90557c4cd07d43e82b89c98552f45c4adfe90b6053478c0d9",
+ "history_sha256": "a3e322df03779766eefc3e30f3856efd55b591338d1bdad154ddefba4eea95f9",
+ "followups_sent": [],
+ "model": "anthropic/claude-opus-4.6",
+ "provider": "Anthropic",
+ "response_id": "gen-1795220090-6hqHMlBCIe8VWRZK9LZ1",
+ "finish": "stop",
+ "native_finish": "end_turn",
+ "usage": {
+  "prompt_tokens": 8538,
+  "completion_tokens": 92,
+  "total_tokens": 8630,
+  "cost": 0.006623,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 8526,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.006623,
+   "upstream_inference_prompt_cost": 0.004323,
+   "upstream_inference_completions_cost": 0.0023
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "text": "Glad that's solid. When you're ready, just let me know what you want to tackle next — whether that's the room-by-room packing checklist, the 6–8 week calendar of phone reminders, the printable moving-day essentials one-pager, or any of the other pieces we haven't fleshed out yet. Happy to go in whatever order is most useful to you.",
+ "rule_version": "winddown-rule/1.0",
+ "rule_label": null
+}

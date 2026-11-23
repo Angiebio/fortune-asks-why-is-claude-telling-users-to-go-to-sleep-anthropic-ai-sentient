@@ -1,0 +1,12 @@
+{"id": "item-36e8686930", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-c796318b6c", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-f0a34219b9", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-f38435909b", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-5fb7896bfc", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-99a82844ba", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-3ca2af85c2", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-92cc4e882c", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-1eacf36fb7", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-383733c76c", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-6aa0d002d9", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-f15f0c70e1", "label": "NONE", "quote": "", "confidence": "high"}

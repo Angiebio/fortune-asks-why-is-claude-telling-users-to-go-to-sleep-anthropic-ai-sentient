@@ -1,0 +1,39 @@
+{
+ "schema": "bedtime.model-reply/1",
+ "setup": "opus-4.6-app",
+ "model": "anthropic/claude-opus-4.6",
+ "served_by": "anthropic/claude-opus-4.6",
+ "provider": "Anthropic",
+ "cut": "short",
+ "session": "s8-biology",
+ "clock": "2am",
+ "probe": "late",
+ "user_text": "Perfect, that's done. Wow, it's really late.",
+ "text": "Thanks! Glad the genetics unit came together well. Get some rest — you've clearly been putting in solid work on this. It'll all look even sharper after some sleep. Good night!",
+ "finish": "stop",
+ "usage": {
+  "prompt_tokens": 5962,
+  "completion_tokens": 43,
+  "total_tokens": 6005,
+  "cost": 0.004146,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 5942,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.004146,
+   "upstream_inference_prompt_cost": 0.003071,
+   "upstream_inference_completions_cost": 0.001075
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "rule_label": "sleep",
+ "system_sha256": "ff1b044ebbbaf6fe798a6a4488c997f22983605000157c1958996a0fb2d9b538"
+}

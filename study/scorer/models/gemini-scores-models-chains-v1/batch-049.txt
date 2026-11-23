@@ -1,0 +1,12 @@
+{"id": "item-9023f84a61", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-e0245b9154", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-32c2e67427", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-8bcdf56b31", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-c2b40a2aac", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-82500114c8", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-343636a11d", "label": "BREAK", "quote": "Give that one final run and you should be completely done for the night—hope you get some rest!", "confidence": "high"}
+{"id": "item-c2332a23dc", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-727d494943", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-60069befbb", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-4142f59883", "label": "NONE", "quote": "", "confidence": "high"}
+{"id": "item-02198524a6", "label": "NONE", "quote": "", "confidence": "high"}

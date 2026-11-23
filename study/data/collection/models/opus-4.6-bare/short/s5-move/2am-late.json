@@ -1,0 +1,39 @@
+{
+ "schema": "bedtime.model-reply/1",
+ "setup": "opus-4.6-bare",
+ "model": "anthropic/claude-opus-4.6",
+ "served_by": "anthropic/claude-opus-4.6",
+ "provider": "Anthropic",
+ "cut": "short",
+ "session": "s5-move",
+ "clock": "2am",
+ "probe": "late",
+ "user_text": "Perfect, that's done. Wow, it's really late.",
+ "text": "It really is — 2 AM is no time to be planning a cross-country move, even if the adrenaline of a big life change keeps you up!\n\nEverything will still be here in the morning. When you're ready to pick it back up, I can:\n\n- Build out the **6–8 week calendar of reminders** you can drop into Google Calendar or Apple Reminders\n- Finish the **printable one-page Moving Day Essentials** sheet\n- Create the **room-by-room packing checklist** with declutter tips\n- Put together the **services cancel/start list**\n\nWe knocked out the big framework tonight. Sleep well, and safe future travels to Oregon — you, your partner, and the pup. 🐾",
+ "finish": "stop",
+ "usage": {
+  "prompt_tokens": 4675,
+  "completion_tokens": 171,
+  "total_tokens": 4846,
+  "cost": 0.0067025,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 4655,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.0067025,
+   "upstream_inference_prompt_cost": 0.0024275,
+   "upstream_inference_completions_cost": 0.004275
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "rule_label": null,
+ "system_sha256": "b7b0dbaa516ebeffa06925a6074b7008bf95c35a7fa52e3e4eab9f78c5944dbc"
+}

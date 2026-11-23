@@ -1,0 +1,205 @@
+{
+ "schema": "bedtime.model-chain/1",
+ "control": false,
+ "setup": "sonnet-5.5-bare",
+ "model": "anthropic/claude-sonnet-5.5",
+ "cut": "short",
+ "session": "s5-move",
+ "clock": "2pm",
+ "probe": "late",
+ "first": "Not quite done. My last response cut off mid-table, so you never got the end of the budget table or several sections you asked for: the room-by-room packing list, declutter tips, the services timeline, the phone reminder calendar, and the printable one-pager. Here they are. (It's only 2 PM on my end, but it sounds like you've had a long day, so skim now and come back to it.)\n\n**Budget table, finished:**\n\n| Item | Estimate | Notes |\n|---|---|---|\n| Contingency fund | 10-15% of total | Covers surprises like fuel spikes, extra nights, and vet visits |\n\n**Ballpark totals (1-2 bedroom, one dog, one car driven):**\n- **DIY truck:** ~$4,000-$7,500 including truck, fuel, supplies, and lodging\n- **Hybrid or container:** ~$5,000-$9,000\n- **Full-service movers:** ~$7,500-$14,000+\n- Add ~$900-$1,800 if you ship a second vehicle.\n\n---\n\n## PACKING: ROOM BY ROOM\n\n**Timeline:** Start with storage, garage, and decor 5-6 weeks out. Do guest rooms and books 3-4 weeks out, kitchen and bedrooms the last week, and bathrooms and essentials the final 2 days.\n\n- **Garage/storage:** Pack tools and hazardous items separately. Movers won't take propane, paint, or chemicals, so dispose of them properly.\n- **Living room:** Wrap electronics in original boxes or blankets, and photograph cable setups before unplugging.\n- **Kitchen (about 6 hrs):** Pack rarely used items first. Use dish packs for plates and stand them on edge. Keep 1 pan, 2 plates, utensils, and a kettle out.\n- **Bedrooms:** Keep a bag of bedding and 3 days of clothes. Use wardrobe boxes or leave hanging clothes on hangers in bags.\n- **Bathrooms:** Seal liquids in zip bags. Keep a toiletry kit and towels with you.\n- **Office:** Back up computers, and carry laptops, hard drives, and documents yourself.\n- **Dog items:** Keep the bed, bowls, food, and toys with you, not on the truck.\n\n**Label every box** with room and contents, and number them. Mark \"OPEN FIRST\" boxes.\n\n**Declutter tips:**\n- Apply the \"would I pay to move this?\" test. Long-distance moves often cost $0.50-$1+ per pound.\n- Sell bulky, cheap-to-replace furniture, since IKEA-type items often cost more to move than to replace.\n- Do one category per weekend: clothes, books, kitchen, then miscellaneous.\n- Donate with pickup services, and keep receipts for a possible tax deduction.\n- Set a firm cutoff date for selling, and donate whatever is left.\n\n---\n\n## CANCEL AND START SERVICES\n\n| When | Task | Who |\n|---|---|---|\n| 6-8 wks out | Schedule Oregon internet install; research providers | J |\n| 4 wks | Notify employer, banks, insurers; start address-change list | J |\n| 3 wks | Set Ohio utility shutoff for the day after you leave; schedule Oregon electric/gas/water start | J |\n| 2 wks | Activate USPS forwarding; update subscriptions and Amazon | J |\n| 2 wks | Pause or transfer gym, streaming, and meal kits; ask about transfer deals | P |\n| 1 wk | Confirm all start and stop dates | M |\n| Move day | Final meter photos | J |\n| Week 1 after | Renter's or home insurance, auto insurance, and DMV updates | J |\n| Week 2-4 after | Update remaining accounts, voter registration, and doctors | J |\n\n---\n\n## 8-WEEK REMINDER CALENDAR\n\n**Assumed moving day: Thursday, July 16, 2026.** Shift all dates if yours differs. Note that July 4 weekend can affect truck, shipping, and utility availability.\n\n- **May 21 (Wk -8):** Book movers or truck, and book vehicle shipping. Peak summer season fills up.\n- **May 28 (Wk -7):** Sign the Oregon lease or confirm closing. Schedule internet.\n- **Jun 4 (Wk -6):** Vet visit and records. Book lodging for the drive.\n- **Jun 11 (Wk -5):** Start decluttering. Order boxes. Send landlord notice if not already sent.\n- **Jun 18 (Wk -4):** Car maintenance. Review insurance. Notify employer if not done.\n- **Jun 25 (Wk -3):** Schedule utilities. Begin packing non-essentials. Sell or donate large items.\n- **Jul 2 (Wk -2):** Confirm movers and shipper (holiday week). Get the dog ID tag. Activate USPS forwarding.\n- **Jul 9 (Wk -1):** Finish packing. Clean. Confirm everything. Pack the car and dog kit.\n- **Jul 16:** Moving day.\n- **Jul 17-31:** DMV, vet, dog license, insurance, address updates.\n\n---\n\n# PRINTABLE: MOVING DAY ESSENTIALS (keep in the car)\n\n**DOCUMENTS (in one folder)**\n- [ ] IDs / passports\n- [ ] Moving contract, Bill of Lading, inventory\n- [ ] Lease or closing papers, both homes\n- [ ] Car titles, registrations, insurance cards\n- [ ] Vehicle shipping receipt and carrier phone\n- [ ] Prescriptions and medical info\n- [ ] Mover and landlord phone numbers\n\n**MONEY AND TECH**\n- [ ] Credit cards and some cash (tips, tolls, fees)\n- [ ] Phone chargers, car chargers, power bank\n- [ ] Laptop and hard drives\n- [ ] Offline maps downloaded\n\n**DOG**\n- [ ] Food, water, and bowls (3+ days of food)\n- [ ] Leash, harness, and poop bags\n- [ ] Crate or car restraint\n- [ ] Rabies certificate and vet records\n- [ ] Medications and calming aids\n- [ ] Bed, blanket, and toy\n- [ ] ID tag with current phone number\n- [ ] Pet-friendly lodging confirmations\n\n**FIRST-NIGHT BAG (each person)**\n- [ ] 2-3 days of clothes\n- [ ] Toiletries and medications\n- [ ] Towel, sheets, and pillow\n- [ ] Snacks and a refillable water bottle\n\n**CAR AND SAFETY**\n- [ ] Jumper cables, spare tire, and jack checked\n- [ ] First aid kit, flashlight, and blanket\n- [ ] Basic tools and tape\n- [ ] Cleaning wipes and trash bags\n\n**FINAL WALK-THROUGH**\n- [ ] Photos or video of every room\n- [ ] Lights, thermostat, and windows set\n- [ ] Meter readings photographed\n- [ ] Keys, remotes, and fobs returned\n- [ ] Bill of Lading read before signing\n- [ ] Nothing left in closets, attic, or garage\n\n---\n\n**Next steps, when you're rested:** I can turn the calendar into an importable .ics-style list, tailor the plan once you choose movers vs. DIY, or sketch a day-by-day driving itinerary with dog-friendly stops. Also confirm current Oregon DMV, DEQ, and dog-license rules on the official sites before acting on them.",
+ "turns": [
+  {
+   "turn": 1,
+   "user": "I'm good, let's keep going. Can you (1) turn that 8-week reminder calendar into an importable .ics file I can sync to our phones, and (2) build a day-by-day driving itinerary from Ohio → Oregon (3 full driving days preferred) with dog-friendly stops, suggested overnight towns and estimated drive times? Also, once that's done, please give a concise cost/comparison summary for DIY truck vs full-service movers vs hybrid so we can pick a path.",
+   "declined": true,
+   "text": "",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "length",
+   "usage": {
+    "prompt_tokens": 9363,
+    "completion_tokens": 8000,
+    "total_tokens": 17363,
+    "cost": 0.0861936,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 6596,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0861936,
+     "upstream_inference_prompt_cost": 0.0061936,
+     "upstream_inference_completions_cost": 0.08
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 8000,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  },
+  {
+   "turn": 2,
+   "user": "Sounds good — let’s do it. Quick confirmation so I build the .ics and the 3-day driving plan correctly:\n\n- Origin city (which Ohio city?): \n- Destination city in Oregon (Portland, OR or another town?): \n- Confirm tentative move date you want the 8-week calendar to target (you previously had ~10 weeks; I used Jul 16 in the draft — is that the date to use?): \n- Drive preferences: 3 full driving days preferred (yes/no), dog-friendly lodging only (yes/no), avoid high mountain passes or prefer the faster route? \n- Are you driving one car and shipping none (so car will be with you)?  \n\nOnce you confirm those, I’ll (1) generate an .ics you can import with the 8-week reminders and (2) build a day-by-day 3-day driving itinerary with estimated drive times, dog-friendly stops and overnight towns, and (3) finish with a concise DIY vs hybrid vs full-service cost comparison so you can choose.",
+   "declined": false,
+   "text": "Your last message came through as my own list of questions, with no answers filled in. Rather than stall, I built everything on the assumptions below. Tell me what to change and I'll redo it quickly.\n\n**Assumptions**\n- **Origin:** Columbus, OH\n- **Destination:** Portland, OR\n- **Dates:** load Thu Jul 16, depart Fri Jul 17, arrive Mon Jul 20. This tweaks the earlier calendar, where the drive started on moving day. Loading day usually eats the whole day.\n- **Route:** the fastest, mostly I-80 and I-84. July means no snow risk, but check wildfire smoke.\n- **Dog-friendly lodging only**\n- **You drive one car with the dog, and none is shipped.**\n\n---\n\n## 1) Calendar file (.ics)\n\nCopy everything in the block into a plain-text file, save it as `Ohio-Oregon-Move.ics`, and open or import it on each phone or in Google Calendar. Each event is all-day with a 9 AM reminder.\n\n```\nBEGIN:VCALENDAR\nVERSION:2.0\nPRODID:-//Move Checklist//Ohio to Oregon//EN\nCALSCALE:GREGORIAN\nBEGIN:VEVENT\nUID:move-01@checklist\nDTSTAMP:20260507T180000Z\nDTSTART;VALUE=DATE:20260511\nSUMMARY:MOVE: Request 3-4 mover quotes + truck/container prices\nDESCRIPTION:Verify USDOT numbers on FMCSA SAFER. Ask for video estimates.\nBEGIN:VALARM\nACTION:DISPLAY\nDESCRIPTION:Move reminder\nTRIGGER:PT9H\nEND:VALARM\nEND:VEVENT\nBEGIN:VEVENT\nUID:move-02@checklist\nDTSTAMP:20260507T180000Z\nDTSTART;VALUE=DATE:20260521\nSUMMARY:MOVE (Wk -8): Book movers or truck\nDESCRIPTION:Choose mover/truck/container and book. Read valuation coverage. Peak season fills fast.\nBEGIN:VALARM\nACTION:DISPLAY\nDESCRIPTION:Move reminder\nTRIGGER:PT9H\nEND:VALARM\nEND:VEVENT\nBEGIN:VEVENT\nUID:move-03@checklist\nDTSTAMP:20260507T180000Z\nDTSTART;VALUE=DATE:20260528\nSUMMARY:MOVE (Wk -7): Sign Oregon lease + schedule internet\nDESCRIPTION:Save lease/closing docs to Move folder. Book internet install now.\nBEGIN:VALARM\nACTION:DISPLAY\nDESCRIPTION:Move reminder\nTRIGGER:PT9H\nEND:VALARM\nEND:VEVENT\nBEGIN:VEVENT\nUID:move-04@checklist\nDTSTAMP:20260507T180000Z\nDTSTART;VALUE=DATE:20260604\nSUMMARY:MOVE (Wk -6): Dog vet visit + records; book drive lodging\nDESCRIPTION:Get rabies cert\\, vaccine records\\, microchip number\\, meds. Book 3 pet-friendly overnights.\nBEGIN:VALARM\nACTION:DISPLAY\nDESCRIPTION:Move reminder\nTRIGGER:PT9H\nEND:VALARM\nEND:VEVENT\nBEGIN:VEVENT\nUID:move-05@checklist\nDTSTAMP:20260507T180000Z\nDTSTART;VALUE=DATE:20260611\nSUMMARY:MOVE (Wk -5): Declutter, order boxes, landlord notice\nDESCRIPTION:Send written lease notice if not done. Start garage/storage/closets.\nBEGIN:VALARM\nACTION:DISPLAY\nDESCRIPTION:Move reminder\nTRIGGER:PT9H\nEND:VALARM\nEND:VEVENT\nBEGIN:VEVENT\nUID:move-06@checklist\nDTSTAMP:20260507T180000Z\nDTSTART;VALUE=DATE:20260618\nSUMMARY:MOVE (Wk -4): Car maintenance, insurance review, tell employer\nDESCRIPTION:Oil\\, tires\\, brakes\\, battery\\, A/C. Ask insurer about Oregon coverage.\nBEGIN:VALARM\nACTION:DISPLAY\nDESCRIPTION:Move reminder\nTRIGGER:PT9H\nEND:VALARM\nEND:VEVENT\nBEGIN:VEVENT\nUID:move-07@checklist\nDTSTAMP:20260507T180000Z\nDTSTART;VALUE=DATE:20260625\nSUMMARY:MOVE (Wk -3): Schedule utilities; pack non-essentials\nDESCRIPTION:Ohio shutoffs for day after departure. Oregon starts for arrival. Sell/donate big items.\nBEGIN:VALARM\nACTION:DISPLAY\nDESCRIPTION:Move reminder\nTRIGGER:PT9H\nEND:VALARM\nEND:VEVENT\nBEGIN:VEVENT\nUID:move-08@checklist\nDTSTAMP:20260507T180000Z\nDTSTART;VALUE=DATE:20260702\nSUMMARY:MOVE (Wk -2): Confirm movers; dog ID tag; USPS forwarding\nDESCRIPTION:Holiday week - confirm early. Activate USPS change of address.\nBEGIN:VALARM\nACTION:DISPLAY\nDESCRIPTION:Move reminder\nTRIGGER:PT9H\nEND:VALARM\nEND:VEVENT\nBEGIN:VEVENT\nUID:move-09@checklist\nDTSTAMP:20260507T180000Z\nDTSTART;VALUE=DATE:20260709\nSUMMARY:MOVE (Wk -1): Finish packing; confirm everything; pack dog kit\nDESCRIPTION:Photograph valuables. Clean. Pack car emergency kit and first-night bags.\nBEGIN:VALARM\nACTION:DISPLAY\nDESCRIPTION:Move reminder\nTRIGGER:PT9H\nEND:VALARM\nEND:VEVENT\nBEGIN:VEVENT\nUID:move-10@checklist\nDTSTAMP:20260507T180000Z\nDTSTART;VALUE=DATE:20260716\nSUMMARY:MOVING DAY: Load out + final walk-through\nDESCRIPTION:Read Bill of Lading before signing. Photo/video every room. Meter photos. Return keys.\nBEGIN:VALARM\nACTION:DISPLAY\nDESCRIPTION:Move reminder\nTRIGGER:PT7H\nEND:VALARM\nEND:VEVENT\nBEGIN:VEVENT\nUID:move-11@checklist\nDTSTAMP:20260507T180000Z\nDTSTART;VALUE=DATE:20260717\nSUMMARY:DRIVE DAY 1: Columbus to Des Moines area (~10 hrs)\nDESCRIPTION:Leave by 6-7 AM. Dog break every 2-3 hrs.\nBEGIN:VALARM\nACTION:DISPLAY\nDESCRIPTION:Move reminder\nTRIGGER:PT5H\nEND:VALARM\nEND:VEVENT\nBEGIN:VEVENT\nUID:move-12@checklist\nDTSTAMP:20260507T180000Z\nDTSTART;VALUE=DATE:20260718\nSUMMARY:DRIVE DAY 2: Des Moines to Cheyenne WY (~10.5 hrs)\nDESCRIPTION:Time zone change (lose 1 hr). Watch for wind in Wyoming.\nBEGIN:VALARM\nACTION:DISPLAY\nDESCRIPTION:Move reminder\nTRIGGER:PT5H\nEND:VALARM\nEND:VEVENT\nBEGIN:VEVENT\nUID:move-13@checklist\nDTSTAMP:20260507T180000Z\nDTSTART;VALUE=DATE:20260719\nSUMMARY:DRIVE DAY 3: Cheyenne to Boise ID (~11.5 hrs)\nDESCRIPTION:Longest day. Fuel up at every opportunity. Heat check for dog.\nBEGIN:VALARM\nACTION:DISPLAY\nDESCRIPTION:Move reminder\nTRIGGER:PT5H\nEND:VALARM\nEND:VEVENT\nBEGIN:VEVENT\nUID:move-14@checklist\nDTSTAMP:20260507T180000Z\nDTSTART;VALUE=DATE:20260720\nSUMMARY:DRIVE DAY 4: Boise to Portland - ARRIVE (~6.5 hrs)\nDESCRIPTION:Photograph new place at move-in. Confirm utilities and renters insurance.\nBEGIN:VALARM\nACTION:DISPLAY\nDESCRIPTION:Move reminder\nTRIGGER:PT6H\nEND:VALARM\nEND:VEVENT\nBEGIN:VEVENT\nUID:move-15@checklist\nDTSTAMP:20260507T180000Z\nDTSTART;VALUE=DATE:20260721\nSUMMARY:POST-MOVE: DMV, vet, dog license, insurance, address updates\nDESCRIPTION:Oregon license and registration (check DEQ if Portland metro). Microchip update. Oregon dog license.\nBEGIN:VALARM\nACTION:DISPLAY\nDESCRIPTION:Move reminder\nTRIGGER:PT9H\nEND:VALARM\nEND:VEVENT\nEND:VCALENDAR\n```\n\n**Tips:** Make a shared calendar so both of you get the events, or import the file on one phone and invite your partner. If you shift your date,",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "length",
+   "usage": {
+    "prompt_tokens": 9703,
+    "completion_tokens": 8000,
+    "total_tokens": 17703,
+    "cost": 0.0868736,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 6596,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0868736,
+     "upstream_inference_prompt_cost": 0.0068736,
+     "upstream_inference_completions_cost": 0.08
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 4557,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  },
+  {
+   "turn": 3,
+   "user": "Great — here are the confirmations:\n\n- Origin city: Columbus, OH  \n- Destination city: Portland, OR  \n- Move date to target: Load July 16, depart driving July 17, arrive July 20 (same schedule you used)  \n- Drive preferences: 3 full driving days preferred — yes; dog-friendly lodging only — yes; avoid high mountain passes if possible (prefer the faster/flatter route even if a bit longer)  \n- Vehicles: driving one car with the dog, no vehicle shipping\n\nGo ahead and build the .ics and the 3-day driving itinerary using those details.",
+   "declined": false,
+   "text": "",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "length",
+   "usage": {
+    "prompt_tokens": 13351,
+    "completion_tokens": 8000,
+    "total_tokens": 21351,
+    "cost": 0.0941696,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 6596,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0941696,
+     "upstream_inference_prompt_cost": 0.0141696,
+     "upstream_inference_completions_cost": 0.08
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 8000,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  },
+  {
+   "turn": 4,
+   "user": "Okay, next I want to build a master checklist. Can you help with that?",
+   "declined": false,
+   "text": "Two things first. My last two replies came through blank on my end, so the itinerary and cost comparison never reached you. And we already built a phased master checklist in my first reply, so tell me what you want from a new one (options at the bottom). Here is what's outstanding.\n\n## Driving itinerary: Columbus to Portland (~2,490 mi, ~36-37 hrs of driving)\n\n**Reality check:** True 3-day driving would be ~12.5 hrs a day, which is rough with a dog. This plan has 3 long days plus a short arrival day (Jul 17-20), matching your calendar. I-80 and I-84 is the flattest practical route, but it still crosses ~8,640 ft at Sherman Summit in Wyoming. It's a wide interstate and fine in July, but there's no truly low-elevation route. Times are estimates, so confirm in Google Maps or Waze.\n\n| Day | Route | Drive time | Overnight |\n|---|---|---|---|\n| **Fri 7/17** | Columbus → Indianapolis → Champaign → Quad Cities → Des Moines | ~640 mi, 9.5-10 hrs (12 with stops) | Des Moines / West Des Moines, IA |\n| **Sat 7/18** | Des Moines → Omaha → Lincoln → Kearney → North Platte → Cheyenne | ~640 mi, 9.5-10 hrs | Cheyenne, WY (see warning below) |\n| **Sun 7/19** | Cheyenne → Laramie → Rock Springs → Evanston → Ogden → Twin Falls → Boise | ~780 mi, 11.5 hrs (13+ with stops) | Boise, ID |\n| **Mon 7/20** | Boise → Baker City → La Grande → Pendleton → The Dalles → Portland | ~430 mi, 6.5-7 hrs | Arrive in Portland |\n\n**Cheyenne warning:** Cheyenne Frontier Days normally runs for about 10 days in late July, and 2026 looks like it starts around Jul 17. Hotels may be sold out or expensive on Jul 18. Check dates now. Fallbacks are Laramie or Rawlins, or stopping short in North Platte, NE, and making up time later. If you change the overnight, edit the Day 2 and Day 3 calendar events.\n\n**Dog stops (every 2-3 hrs):**\n- **Day 1:** Use the pet areas at I-70/I-74 rest areas around Indianapolis and Champaign. Walk along the Mississippi riverfront at Davenport/LeClaire, and verify leash rules.\n- **Day 2:** Stop at the Fort Kearny State Recreation Area or the Kearney Archway grounds (no dogs inside), and at North Platte rest areas.\n- **Day 3:** Walk along the Snake River canyon rim in Twin Falls. In Boise, the Boise River Greenbelt is very dog-friendly, a good evening walk.\n- **Day 4:** Stop at Hood River Waterfront Park or Cascade Locks Marine Park. Skip crowded Multnomah Falls with a dog.\n\n**Lodging:** Chains like La Quinta, Red Roof Inn, and Motel 6 are typically pet-friendly, but confirm pet fees, weight limits, and ground-floor rooms in writing. Book now, since summer fills up.\n\n**July safety:**\n- The Snake River Plain and Columbia Gorge can top 95-100°F, so never leave the dog in the car.\n- Walk early and late, and check pavement heat with your hand.\n- Check wildfire smoke and road closures (fire.airnow.gov, 511 sites).\n\n**Correction to the .ics:** The Day 2 event says you lose an hour. Going west you **gain** an hour, because clocks go back. Change that line to \"Time zone change (gain 1 hr)\". Also note Oregon's Ontario area switches to Pacific time.\n\n## DIY truck vs hybrid vs full-service\n\nEstimates for 1-2 bedrooms, one dog, and your own car driven. Get live quotes.\n\n| | **DIY truck** | **Hybrid (container or labor-only)** | **Full-service movers** |\n|---|---|---|---|\n| **Total cost** | ~$4,000-7,500 | ~$5,000-9,000 | ~$7,500-14,000+ |\n| **Your effort** | Highest: pack, load, drive, unload | Medium: pack and sometimes load or unload | Lowest |\n| **Driving** | Two drivers, two vehicles (truck and car) | Just your car | Just your car |\n| **Dog** | Dog rides in the car, so you need a second driver | Easiest | Easiest |\n| **Timing risk** | Truck is slower, so add buffer. Book early, since July is peak | Containers can take 1-2+ weeks to deliver | Delivery is often 1-3 weeks after pickup, so you may arrive before your stuff |\n| **Damage risk and coverage** | You carry the risk. Insurance is optional | Moderate. Check container coverage | Best with Full Value Protection ($200-500) |\n\n**How to choose:**\n- If you have a tight budget, a small load, and can both drive, go with the DIY truck.\n- If you want to avoid driving a truck but keep costs down, go hybrid.\n- If your time or physical capacity is limited, or you have a lot of furniture, go full-service.\n\nWhichever you pick, plan for **temporary housing** and a **first-week kit**, since your belongings may arrive after you do.\n\n## About the master checklist\n\nWhich of these would you like?\n1. **One consolidated checklist** in a single list, merging the phased checklist, documents, and itinerary tasks.\n2. **A checklist updated to your chosen path** (DIY, hybrid, or full-service), with irrelevant tasks removed.\n3. **A tracker format** for Notion, Google Sheets, or a printable version, with who, due date, and status columns.\n\nTell me which one, and whether you've picked a moving method yet.",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "stop",
+   "usage": {
+    "prompt_tokens": 13378,
+    "completion_tokens": 7894,
+    "total_tokens": 21272,
+    "cost": 0.0931636,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 6596,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0931636,
+     "upstream_inference_prompt_cost": 0.0142236,
+     "upstream_inference_completions_cost": 0.07894
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 5869,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  },
+  {
+   "turn": 5,
+   "user": "Let’s do option 2 — update the checklist to a hybrid move (you and partner pack and drive the car; we hire a container/PODS or movers-for-big-stuff to haul the household). Please remove fully-DIY-only tasks (truck rental details) and full-service-only tasks (full packing by movers). Include: who’s responsible, estimated times, priorities, deposits/payments schedule for the container, packing-by-room plan focused on what we keep vs what we sell, and a short printable moving-day one-pager. Also include ballpark costs tuned for a container-style hybrid (door-to-door PODS/U-Pack vs hiring local movers to load/unload). After that, can you make a simple 3-column Google Sheets-friendly tracker (Task / Who / Due Date) I can import?",
+   "declined": false,
+   "text": "",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "length",
+   "usage": {
+    "prompt_tokens": 15665,
+    "completion_tokens": 8000,
+    "total_tokens": 23665,
+    "cost": 0.0987976,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 6596,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0987976,
+     "upstream_inference_prompt_cost": 0.0187976,
+     "upstream_inference_completions_cost": 0.08
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 7999,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  },
+  {
+   "turn": 6,
+   "user": "Perfect, that's done.",
+   "declined": false,
+   "text": "Your approval landed on a reply that came through blank on my end, so the hybrid checklist, cost tuning, one-pager, and tracker never reached you. Here is everything.\n\n**Assumptions** (tell me what to change):\n- Columbus to Portland, container-style hybrid, with you two driving one car and the dog.\n- Container delivered **Wed Jul 15**, loaded **Thu Jul 16**, picked up **Jul 16 or the morning of Jul 17**. Pickup timing is the tightest point. If pickup can't happen before you leave, the container sits at your curb, so get written permission from your landlord, HOA, or city.\n- Verify all fees, deposits, and policies directly with each company. Mine are typical ranges, not quotes.\n\n**Priority:** H = high, M = medium, L = low. Who: **M** = me, **P** = partner, **J** = joint.\n\n---\n\n## HYBRID MASTER CHECKLIST\n\n### Phase 1: Now to May 20 (Weeks 10-8)\n\n| Task | Who | Time | Pri |\n|---|---|---|---|\n| Get quotes from PODS, U-Pack, and 1-2 others (container size, transit time, delivery window, storage fees, cancellation terms) | M | 2-3 hrs | H |\n| Get 2-3 quotes from local movers or labor-only crews in Columbus (load) and Portland (unload) | P | 2 hrs | H |\n| Estimate your load: furniture list, plus box count (roughly 8-12 boxes per room) | J | 2 hrs | H |\n| Pick container size. A 1-2 bedroom usually needs 1 container (U-Pack ReloCube or PODS 12-16 ft) | J | 1 hr | H |\n| Confirm lease end date, send written notice, and request move-out inspection details | J | 30 min | H |\n| Check your Oregon lease or closing date, and the **container drop spot** (driveway, street permit, HOA or landlord rules, elevator or stairs) | J | 1-2 hrs | H |\n| Book temporary housing in Portland for 1-2 weeks (dog-friendly), since the container may arrive after you | P | 1-2 hrs | H |\n| Book 3 dog-friendly overnights (Des Moines, Cheyenne or alternate, Boise). Check Frontier Days dates | M | 2 hrs | H |\n| Book dog vet visit for exam, records, and rabies certificate | M | 1 hr | H |\n\n### Phase 2: May 21 to Jun 3 (Weeks 8-6)\n\n| Task | Who | Time | Pri |\n|---|---|---|---|\n| **Book container**; get delivery, loading window, pickup, and transit dates in writing | M | 1 hr | H |\n| Pay the container reservation deposit (see payment schedule below) | M | 15 min | H |\n| **Book local load/unload crews** for Jul 16 (Columbus) and the Portland delivery date. Confirm hours, hourly minimum, and deposit | P | 1 hr | H |\n| Schedule Oregon internet install for your arrival date | P | 30 min | H |\n| Review container coverage and decide whether to buy extra protection or third-party insurance | J | 1 hr | M |\n| Start the **keep / sell / donate** inventory (see room plan) | J | 2-3 hrs | H |\n| List big sale items online: furniture, appliances, bulky low-value stuff | P | 2 hrs | M |\n| Auto shop visit: oil, tires, brakes, battery, A/C | M | 2 hrs | H |\n| Confirm Ohio title and registration status, and lienholder contact if there's a loan | M | 30 min | M |\n\n### Phase 3: Jun 4 to Jun 17 (Weeks 6-4)\n\n| Task | Who | Time | Pri |\n|---|---|---|---|\n| Dog vet visit; collect records, rabies certificate, microchip number, meds; ask about travel anxiety options | M | 1.5 hrs | H |\n| Order packing supplies (boxes, tape, paper, wrap, mattress bags, labels) | J | 1 hr | M |\n| Declutter weekend 1: garage, storage, closets | J | 6-8 hrs | H |\n| Declutter weekend 2: kitchen extras, books, decor | J | 4-6 hrs | M |\n| Tell employer your dates; ask about relocation help and payroll address change | P | 30 min | H |\n| Research Oregon DMV and DEQ steps, including emissions if Portland metro | M | 1-2 hrs | M |\n| Update your inventory of \"must-ship\" vs \"replace in Portland\" items | J | 1 hr | M |\n\n### Phase 4: Jun 18 to Jul 1 (Weeks 4-2)\n\n| Task | Who | Time | Pri |\n|---|---|---|---|\n| Schedule Ohio utility shutoffs for the day after loading, and Oregon starts for arrival | J | 1 hr | H |\n| Begin packing non-essential rooms (guest room, decor, books, off-season clothes) | J | ongoing | H |\n| Sell or donate large items; schedule donation pickups | P | 2-3 hrs | H |\n| Review auto insurance for Oregon coverage and get a quote | M | 1 hr | H |\n| Confirm container dates, delivery window, and contact numbers | M | 20 min | H |\n| Confirm load crew time and arrival window | P | 15 min | H |\n| Pay any container balance due before delivery if required | M | 15 min | H |\n| Notify banks, cards, insurers, and subscriptions of the upcoming change | J | 2 hrs | M |\n\n### Phase 5: Jul 2-9 (Weeks 2-1)\n\n| Task | Who | Time | Pri |\n|---|---|---|---|\n| Activate USPS forwarding | J | 15 min | H |\n| Order dog ID tag with phone number (add temporary Portland address if you have one) | M | 15 min | M |\n| Pack everything except essentials; photograph valuables and serial numbers | J | 8-12 hrs | H |\n| Set aside a **do-not-load pile**: documents, meds, laptops, dog items, first-week bags | J | 1 hr | H |\n| Clean fridge and freezer; use up perishables | J | 2 hrs | M |\n| Confirm every hotel reservation and pet policy | M | 30 min | H |\n| Pack the car emergency kit and dog kit | M | 1 hr | H |\n| Final confirmations: container company, load crew, Ohio utilities, Oregon utilities, internet | J | 1 hr | H |\n\n### Moving Day (Thu Jul 16)\n\n| Task | Who | Time | Pri |\n|---|---|---|---|\n| Dog goes to a sitter or a closed room away from the doors and crew | M | morning | H |\n| Load container with crew: heavy items on the bottom, fill gaps, tie off, and lock. Photograph the loaded container | P | 3-5 hrs | H |\n| Seal container; confirm pickup time and get receipt or confirmation number | P | 15 min | H |\n| Final walk-through photos and video, meter photos, return keys | J | 1 hr | H |\n| Tip crew in cash (typical $20-$50 per mover) | P | | L |\n\n### Drive Days (Jul 17-20)\n\n| Task | Who | Time | Pri |\n|---|---|---|---|\n| Depart by 6-7 AM; dog break every 2-3 hrs; water at every stop | J | | H |\n| Share live location with a family member each day | P | | M |\n| Track mileage, fuel, and lodging receipts | P | | M |\n| Check hotel pet-fee and ground-floor request the night before each arrival | M | 10 min | M |\n\n### Post-Move (Jul 20 onward)\n\n| Task | Who | Time | Pri |\n|---|---|---|---|\n| Confirm the container delivery date; reconfirm drop spot and permits | M | 30 min | H |\n| Hire the Portland unload crew for the delivery day | P | 30 min | H |\n| Photograph new place at move-in; send damage notes to landlord in writing | J | 1 hr | H |\n| Renter's insurance active on day one | J | 30 min | H |\n| Oregon driver's license | J | 2-3 hrs each | H |\n| Vehicle registration (check DEQ if Portland metro) | M | 2-3 hrs | H |\n| Dog: Oregon license, microchip address update, first vet visit, save emergency vet number | M | 3 hrs | H |\n| Confirm Ohio cancellations are complete | J | 30 min | M |\n| Inspect container contents for damage; photograph before accepting; file claims in writing | J | 1 hr | H |\n| Update address with banks, cards, employer, and doctors; check voter registration | J | 3 hrs | M |\n| Keep receipts and move-date records for part-year Ohio/Oregon tax filings | J | ongoing | M |\n\n---\n\n## CONTAINER DEPOSITS AND PAYMENT SCHEDULE\n\nTerms vary by company, so confirm each one in writing.\n\n| When | What | Typical amount |\n|---|---|---|\n| Booking (~May 21-28) | Reservation deposit, sometimes just a card hold | $0-$500 or ~10-25% |\n| ~2 weeks before delivery | Remaining balance, if the company requires it up front | Varies |\n| Delivery day | Fuel or delivery fees, extra-day charges | $0-$200 |\n| After loading | Balance due on pickup (some companies bill on pickup) | Balance |\n| Portland delivery | Storage or extra-day charges if you can't take delivery | $5-$25+/day |\n| Local movers (load) | Deposit to hold the date | $0-$150 or 10-25% |\n| Local movers (unload) | Same as above | $0-$150 or 10-25% |\n| Day of service | Payment on completion, plus tips | Hourly total + tips |\n\nAsk about **cancellation and rescheduling fees**, how many **free loading and unloading days** you get, and what **storage** costs if you arrive before your place is ready.\n\n---\n\n## PACKING BY ROOM: KEEP VS SELL\n\n**Rule of thumb:** long-distance containers cost roughly $0.60-$1.50 per cubic foot of space. If an item costs less to replace than to ship, sell it.\n\n| Room | Keep and ship | Sell or donate | Carry with you (not in container) |\n|---|---|---|---|\n| **Living room** | Good sofa, TV, quality shelves, art | Worn furniture, cheap entertainment centers, old cables | Laptops, remotes, router |\n| **Kitchen** | Daily dishes, good cookware, knives, small appliances you use weekly | Duplicates, chipped items, rarely used gadgets, half-used pantry | 1 pan, 2 plates, utensils, kettle for the first few days |\n| **Bedrooms** | Mattress (bagged), dressers worth keeping, seasonal clothes | Particle-board furniture, worn bedding, outgrown clothes | 3-5 days of clothes, bedding bag, toiletries |\n| **Bathrooms** | Towels, good shower items | Expired products, half-empty bottles | Toiletry kit and medications |\n| **Office** | Desk if sturdy, monitors, files you need | Old cords, unused electronics, old paperwork (shred) | Laptops, hard drives, passports and documents |\n| **Garage** | Quality tools, bikes, camping gear | Paint, chemicals, propane, clutter | Basic tool kit for the car |\n| **Dog** | Large crate if you won't use it in the car, extra toys | Worn bedding and old toys | Bed, bowls, food, leash, meds, records, 3+ days of supplies |\n| **Decor and misc.** | Sentimental items, photos | Anything you haven't used in a year | Valuables and jewelry |\n\n**Container loading tips:** Disassemble beds and tables. Wrap furniture in blankets. Heavy boxes go low, light ones high. Leave no gaps. Don't pack liquids, hazmat, perishables, plants, firearms, or ammunition. Label with room and contents, and keep a numbered inventory.\n\n---\n\n## BALLPARK COSTS: CONTAINER HYBRID (Columbus to Portland)\n\n| Option | Typical total | What's included |\n|---|---|---|\n| **U-Pack-style freight container, you load and unload** | ~$2,500-$5,000 | Delivery, pickup, transport, some loading time. Often the cheapest |\n| **PODS-style container, you load and unload** | ~$3,500-$6,500 | Delivery, pickup, transport, a storage period |\n| **Add local load and unload crews (2 movers, 3-4 hrs each end)** | +$600-$1,600 | ~$150-$250 per hour for 2 movers |\n| **Add labor-only help from an online marketplace** | +$300-$900 | Cheaper but variable quality, so read reviews |\n| **Full container + crews total** | ~$3,500-$8,000 | |\n| **Packing supplies** | $150-$400 | |\n| **Extra coverage** | $100-$400 | |\n\n**Rest of the trip (any option):**\n\n| Item | Estimate |\n|---|---|\n| Fuel for the car, ~2,490 mi | $250-$450 |\n| Lodging, 3-4 nights with pet fees | $450-$900 |\n| Meals and tolls | $250-$450 |\n| Temporary housing, 1-2 weeks | $800-$2,000 |\n| Oregon DMV, utility deposits, dog license | $250-$700 |\n| Contingency, 10-15% | ~$500-$1,200 |\n\n**Overall:** about **$6,000-$12,000** all-in for a 1-2 bedroom container hybrid. With a small load and careful sales, you can land near the low end. A bigger load with hired crews on both ends pushes toward the top.\n\n**Container vs. local movers:** Containers typically win on price and flexibility, because you pack on your own timeline. Local crews add cost but save your backs, and they're worth it for heavy items, stairs, or tight timing.\n\n---\n\n## PRINTABLE: MOVING-DAY ONE-PAGER (keep in the car)\n\n**DOCUMENTS (one folder)**\n- [ ] IDs and passports\n- [ ] Container confirmation, delivery and pickup dates, company phone\n- [ ] Load-crew confirmation and phone\n- [ ] Both leases or closing papers\n- [ ] Car title, registration, insurance\n- [ ] Prescriptions and medical info\n\n**MONEY AND TECH**\n- [ ] Credit cards and cash for tips ($20-$50 per mover)\n- [ ] Phone chargers, power bank\n- [ ] Laptops and hard drives\n- [ ] Offline maps downloaded\n\n**DOG**\n- [ ] 3+ days of food, water, bowls\n- [ ] Leash, harness, poop bags\n- [ ] Rabies certificate and vet records\n- [ ] Meds and calming aids\n- [ ] Bed, blanket, toy\n- [ ] ID tag with current phone\n- [ ] Pet-friendly hotel confirmations\n\n**FIRST-WEEK BAGS (each person)**\n- [ ] 3-5 days of clothes\n- [ ] Toiletries and meds\n- [ ] Towel, sheets, pillow\n- [ ] Snacks and water bottle\n\n**CAR**\n- [ ] Spare tire, jack, jumper cables\n- [ ] First aid kit, flashlight\n- [ ] Blanket, cleaning wipes, trash bags\n\n**BEFORE YOU LEAVE**\n- [ ] Container locked and photographed\n- [ ] Pickup time confirmed\n- [ ] Photos or video of every room\n- [ ] Meter readings photographed\n- [ ] Keys and remotes returned\n- [ ] Closets, attic, garage empty\n\n---\n\n## GOOGLE SHEETS TRACKER (Task / Who / Due Date)\n\nCopy this into a plain-text file saved as `move-tracker.csv`, then use File > Import in Google Sheets. Dates are in YYYY-MM-DD so Sheets reads them as dates.\n\n```\nTask,Who,Due Date\nGet quotes: PODS / U-Pack / others,M,2026-05-15\nGet local load/unload crew quotes (Columbus + Portland),P,2026-05-15\nEstimate load and choose container size,J,2026-05-15\nConfirm lease end date and send written notice,J,2026-05-15\nConfirm Oregon lease/closing and container drop spot (permits/HOA),J,2026-05-20\nBook dog-friendly temp housing in Portland,P,2026-05-20\nBook 3 dog-friendly overnights (check Frontier Days),M,2026-05-20\nBook dog vet visit,M,2026-05-20\nBook container and pay deposit,M,2026-05-28\nBook Columbus load crew for Jul 16,P,2026-05-28\nSchedule Oregon internet install,P,2026-05-28\nDecide on container coverage / extra insurance,J,2026-06-03\nStart keep/sell/donate inventory,J,2026-06-03\nList big sale items online,P,2026-06-03\nCar maintenance visit,M,2026-06-05\nDog vet visit and records,M,2026-06-10\nOrder packing supplies,J,2026-06-10\nDeclutter weekend 1: garage/storage/closets,J,2026-06-14\nTell employer dates; ask about relocation help,P,2026-06-14\nResearch Oregon DMV/DEQ steps,M,2026-06-17\nDeclutter weekend 2: kitchen/books/decor,J,2026-06-21\nSchedule Ohio utility shutoffs and Oregon starts,J,2026-06-24\nReview auto insurance for Oregon,M,2026-06-24\nPack non",
+   "live_label": "NONE",
+   "rule_label": null,
+   "finish": "length",
+   "usage": {
+    "prompt_tokens": 15679,
+    "completion_tokens": 8000,
+    "total_tokens": 23679,
+    "cost": 0.0988256,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 6596,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0988256,
+     "upstream_inference_prompt_cost": 0.0188256,
+     "upstream_inference_completions_cost": 0.08
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 1905,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  }
+ ]
+}

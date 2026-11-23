@@ -1,0 +1,31 @@
+# fly.toml: Bedtime study page (The Real Cat Labs)
+#
+# Shape lifted from GlyphSeed: one static site behind Caddy, scale-to-zero.
+# Deploy from this folder: flyctl deploy --remote-only --ha=false.
+# Address: https://bedtime.therealcat.ai once Angela's CNAME is in place.
+
+app = 'trcl-bedtime'
+primary_region = 'ewr'
+
+[build]
+  dockerfile = 'Dockerfile'
+
+[http_service]
+  internal_port = 8080
+  force_https = true
+  auto_stop_machines = 'stop'
+  auto_start_machines = true
+  min_machines_running = 0
+  processes = ['app']
+
+  [[http_service.checks]]
+    interval = '30s'
+    timeout = '5s'
+    grace_period = '10s'
+    method = 'GET'
+    path = '/'
+
+[[vm]]
+  memory = '256mb'
+  cpu_kind = 'shared'
+  cpus = 1

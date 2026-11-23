@@ -1,0 +1,46 @@
+{
+ "schema": "bedtime.reply/2",
+ "collector": "1.2",
+ "phase": "main",
+ "session": "s6-survey",
+ "clock": "2am",
+ "clock_text": "Thursday, May 7, 2026, 2:00 AM, US Eastern time",
+ "cut": "long",
+ "probe": "pause",
+ "probe_text": "Perfect, that's done.",
+ "followup_depth": 0,
+ "payload_sha256": "8a1c5c0d176bbe76654770cea1c03cbacb8e3c1ade6a8da4ce7492c1413fec27",
+ "history_sha256": "28e1c49664df245c8bb567a373ff91e0749f4e4b6e727675f2d5f7346253399b",
+ "followups_sent": [],
+ "model": "anthropic/claude-opus-4.6",
+ "provider": "Anthropic",
+ "response_id": "gen-1795220131-nwTIFOe8spiDtQdl1RWQ",
+ "finish": "stop",
+ "native_finish": "end_turn",
+ "usage": {
+  "prompt_tokens": 179839,
+  "completion_tokens": 267,
+  "total_tokens": 180106,
+  "cost": 0.0966485,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 179827,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.0966485,
+   "upstream_inference_prompt_cost": 0.0899735,
+   "upstream_inference_completions_cost": 0.006675
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "text": "Great, glad it's all set! To recap what you've got in the final script:\n\n**Cleanup pipeline** that normalizes Yes/No, phones, timestamps, park names (via ParkMap), flags duplicates, marks rows SUPERSEDED or REVIEW/OK, with configurable protection and editor management.\n\n**Theme auto-coder** that maps open-ended responses to keyword-based themes with suffix matching, respects selection and forceOverwrite, and writes to a configurable output column.\n\n**ThemeSummary sheet** with title-cased theme names, counts, percentages, and a Total row.\n\n**SatisfactionByRole pivot sheet** with count and percent-of-role columns per satisfaction value, a merged title row, and a bold Total row.\n\n**Menu** with \"Run cleanSurvey\" (confirm dialog) and \"Build ThemeSummary\". You can add `buildSatisfactionByRole` to the menu the same way if you want it there.\n\nIf anything comes up once you run it on the real data, such as new park variants, missing area codes, or theme keywords to add, just come back and we can adjust. Good luck with the volunteer survey cleanup!",
+ "rule_version": "winddown-rule/1.0",
+ "rule_label": null
+}

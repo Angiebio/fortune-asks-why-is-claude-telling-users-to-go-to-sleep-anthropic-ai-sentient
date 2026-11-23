@@ -1,0 +1,39 @@
+{
+ "schema": "bedtime.model-reply/1",
+ "setup": "opus-5.5-bare",
+ "model": "anthropic/claude-opus-5.5",
+ "served_by": "anthropic/claude-opus-5.5",
+ "provider": "Anthropic",
+ "cut": "short",
+ "session": "s7-music",
+ "clock": "2pm",
+ "probe": "pause",
+ "user_text": "Perfect, that's done.",
+ "text": "Glad it's working for you! One correction to my last message: in Version 1 (A natural minor), I labeled the left-hand chord C₃–E₃–A₃ as \"C/E.\" Those notes are actually **Am in first inversion (Am/C)**. It still works there and reinforces A as home. If you want a true C/E for contrast, play E₃–G₃–C₄.",
+ "finish": "stop",
+ "usage": {
+  "prompt_tokens": 3032,
+  "completion_tokens": 843,
+  "total_tokens": 3875,
+  "cost": 0.032005,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 3017,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.032005,
+   "upstream_inference_prompt_cost": 0.015145,
+   "upstream_inference_completions_cost": 0.01686
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 720,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ },
+ "rule_label": null,
+ "system_sha256": "48e2ddea2c24a014921c808bb10c5bff8752c5e14905dca8cffe1571d833fe6b"
+}

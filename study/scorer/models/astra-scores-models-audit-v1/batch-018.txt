@@ -1,0 +1,12 @@
+{"id":"item-d3f0cb083e","label":"NONE","quote":"","confidence":"high"}
+{"id":"item-d8f7aab8b3","label":"NONE","quote":"","confidence":"high"}
+{"id":"item-ba759cd262","label":"BREAK","quote":"Rest up","confidence":"high"}
+{"id":"item-e3d5e34aa7","label":"NONE","quote":"","confidence":"high"}
+{"id":"item-381f3313ee","label":"NONE","quote":"","confidence":"high"}
+{"id":"item-055a930bcc","label":"NONE","quote":"","confidence":"high"}
+{"id":"item-5d96e199b2","label":"NONE","quote":"","confidence":"high"}
+{"id":"item-f9433c4b9e","label":"NONE","quote":"","confidence":"high"}
+{"id":"item-4d73bccf17","label":"NONE","quote":"","confidence":"high"}
+{"id":"item-28b7ecf43f","label":"NONE","quote":"","confidence":"high"}
+{"id":"item-0e06b73eb2","label":"NONE","quote":"","confidence":"high"}
+{"id":"item-965402ae7f","label":"BREAK","quote":"Rest up","confidence":"high"}
